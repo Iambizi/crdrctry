@@ -34,6 +34,7 @@ export interface Designer extends BaseEntity {
     instagram?: string;
     twitter?: string;
     linkedin?: string;
+    facebook?: string;
   };
 }
 
