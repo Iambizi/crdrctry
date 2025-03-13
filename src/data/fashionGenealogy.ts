@@ -710,6 +710,40 @@ export const brands: Brand[] = [
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
+  {
+    id: uuidv4(),
+    name: "Jacquemus",
+    foundedYear: 2009,
+    founder: "Simon Porte Jacquemus",
+    headquarters: "Paris, France",
+    specialties: ["ready-to-wear", "accessories", "footwear"],
+    pricePoint: "Contemporary Luxury",
+    markets: ["Global"],
+    website: "jacquemus.com",
+    social_media: {
+      instagram: "@jacquemus",
+      facebook: "@jacquemus",
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    name: "Ganni",
+    foundedYear: 2000,
+    founder: "Frans Truelsen",
+    headquarters: "Copenhagen, Denmark",
+    specialties: ["ready-to-wear", "accessories", "sustainable fashion"],
+    pricePoint: "Contemporary",
+    markets: ["Global"],
+    website: "ganni.com",
+    social_media: {
+      instagram: "@ganni",
+      facebook: "@ganniofficial",
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
 ];
 
 export const designers: Designer[] = [
@@ -1855,6 +1889,72 @@ export const designers: Designer[] = [
       "feminine silhouettes with an edge",
       "historical references",
     ],
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    name: "Simon Porte Jacquemus",
+    isActive: true,
+    status: DesignerStatus.ACTIVE,
+    biography:
+      "Self-taught French designer who founded his eponymous label at age 19, known for his playful, Mediterranean-inspired aesthetic",
+    birthYear: 1990,
+    nationality: "French",
+    signature_styles: [
+      "oversized silhouettes",
+      "micro bags",
+      "Mediterranean influences",
+      "architectural shapes",
+    ],
+    social_media: {
+      instagram: "@jacquemus",
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    name: "Ditte Reffstrup",
+    isActive: true,
+    status: DesignerStatus.ACTIVE,
+    biography:
+      "Creative Director of Ganni, who transformed the Danish brand into a global contemporary fashion phenomenon",
+    nationality: "Danish",
+    signature_styles: [
+      "Scandinavian cool",
+      "playful prints",
+      "colorful dresses",
+      "unexpected combinations",
+    ],
+    social_media: {
+      instagram: "@ditte_reffstrup",
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    name: "Nicolaj Reffstrup",
+    isActive: true,
+    status: DesignerStatus.ACTIVE,
+    biography:
+      "CEO of Ganni and husband of Ditte Reffstrup, focused on the business and sustainability aspects of the brand",
+    nationality: "Danish",
+    social_media: {
+      linkedin: "@nicolajreffstrup",
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    name: "Frans Truelsen",
+    isActive: false,
+    status: DesignerStatus.RETIRED,
+    biography:
+      "Original founder of Ganni who established it as a cashmere brand in Denmark",
+    nationality: "Danish",
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
@@ -3187,6 +3287,72 @@ export const tenures: Tenure[] = [
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
+  {
+    id: uuidv4(),
+    designerId: findId(designers, "Simon Porte Jacquemus"),
+    brandId: findId(brands, "Jacquemus"),
+    role: "Founder and Creative Director",
+    startYear: 2009,
+    isCurrentRole: true,
+    achievements: [
+      "LVMH Special Prize 2015",
+      "Staged iconic runway shows in lavender fields and wheat fields",
+    ],
+    notable_collections: [
+      "La Bomba SS18",
+      "Le Coup de Soleil SS19",
+      "L'Année 97 FW20",
+    ],
+    impact_description:
+      "Created a distinctive aesthetic that blends French heritage with modern sensibilities",
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    designerId: findId(designers, "Ditte Reffstrup"),
+    brandId: findId(brands, "Ganni"),
+    role: "Creative Director",
+    startYear: 2009,
+    isCurrentRole: true,
+    achievements: [
+      "Transformed Ganni into a global fashion phenomenon",
+      "Created the #GanniGirls community",
+    ],
+    notable_collections: ["SS19 Life on Earth", "FW20 Software"],
+    impact_description:
+      "Redefined Scandinavian style with a playful, colorful aesthetic",
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    designerId: findId(designers, "Nicolaj Reffstrup"),
+    brandId: findId(brands, "Ganni"),
+    role: "CEO",
+    startYear: 2009,
+    isCurrentRole: true,
+    achievements: [
+      "Led Ganni's international expansion",
+      "Implemented sustainability initiatives",
+    ],
+    impact_description:
+      "Grew Ganni from a small Danish brand to a global contemporary fashion label",
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    designerId: findId(designers, "Frans Truelsen"),
+    brandId: findId(brands, "Ganni"),
+    role: "Founder",
+    startYear: 2000,
+    endYear: 2009,
+    isCurrentRole: false,
+    impact_description: "Established Ganni as a cashmere brand in Denmark",
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
 ];
 
 export const relationships: Relationship[] = [
@@ -4216,6 +4382,37 @@ export const relationships: Relationship[] = [
     impact:
       "Created a successful luxury brand known for minimalist aesthetic and quality",
     collaboration_projects: ["The Row ready-to-wear", "The Row accessories"],
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    sourceDesignerId: findId(designers, "Ditte Reffstrup"),
+    targetDesignerId: findId(designers, "Nicolaj Reffstrup"),
+    brandId: findId(brands, "Ganni"),
+    type: RelationshipType.FAMILIAL,
+    startYear: 2009,
+    description:
+      "Husband and wife team who took over Ganni and transformed it into a global brand",
+    impact:
+      "Created a successful business partnership combining creative and business expertise",
+    collaboration_projects: [
+      "Ganni's global expansion",
+      "Ganni Responsibility initiatives",
+    ],
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    sourceDesignerId: findId(designers, "Frans Truelsen"),
+    targetDesignerId: findId(designers, "Ditte Reffstrup"),
+    brandId: findId(brands, "Ganni"),
+    type: RelationshipType.SUCCESSION,
+    startYear: 2009,
+    description:
+      "Ditte Reffstrup took over creative direction from founder Frans Truelsen",
+    impact: "Completely reimagined the brand's aesthetic and market position",
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
