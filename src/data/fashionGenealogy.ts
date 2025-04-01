@@ -4333,10 +4333,9 @@ export const relationships: Relationship[] = [
     sourceDesignerId: findId(designers, "Consuelo Castiglioni"),
     targetDesignerId: findId(designers, "Francesco Risso"),
     brandId: findId(brands, "Marni"),
-    role: "Founder",
+    type: RelationshipType.SUCCESSION,
     startYear: 1994,
     endYear: 2016,
-    isCurrentRole: false,
     description:
       "Francesco Risso succeeded Consuelo Castiglioni as Creative Director of Marni",
     createdAt: createTimestamp(),
