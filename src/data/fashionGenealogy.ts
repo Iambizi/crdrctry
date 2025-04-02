@@ -915,6 +915,7 @@ export const brands: Brand[] = [
     website: "simonerocha.com",
     social_media: {
       instagram: "@simonerocha_",
+      facebook: "simonerochalondon"
     },
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
@@ -952,6 +953,75 @@ export const brands: Brand[] = [
     },
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
+  },
+  {
+    id: uuidv4(),
+    name: "Peter Do",
+    foundedYear: 2018,
+    founder: "Peter Do",
+    parentCompany: "Independent",
+    headquarters: "New York, USA",
+    specialties: [
+      "Ready-to-wear",
+      "Womenswear",
+      "Tailoring",
+      "Accessories"
+    ],
+    pricePoint: "Contemporary Luxury",
+    markets: ["Global"],
+    website: "peterdo.net",
+    social_media: {
+      instagram: "@peterdopeter"
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp()
+  },
+  {
+    id: uuidv4(),
+    name: "Lemaire",
+    foundedYear: 1991,
+    founder: "Christophe Lemaire",
+    parentCompany: "Independent",
+    headquarters: "Paris, France",
+    specialties: [
+      "Ready-to-wear",
+      "Accessories",
+      "Leather goods",
+      "Minimalist Design"
+    ],
+    pricePoint: "Contemporary Luxury",
+    markets: ["Global"],
+    website: "lemaire.fr",
+    social_media: {
+      instagram: "@lemaire_official",
+      facebook: "lemaireparis"
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp()
+  },
+  {
+    id: uuidv4(),
+    name: "Fear of God",
+    foundedYear: 2013,
+    founder: "Jerry Lorenzo",
+    parentCompany: "Independent",
+    headquarters: "Los Angeles, USA",
+    specialties: [
+      "Ready-to-wear",
+      "Luxury Streetwear",
+      "Footwear",
+      "Accessories"
+    ],
+    pricePoint: "Contemporary Luxury",
+    markets: ["Global"],
+    website: "fearofgod.com",
+    social_media: {
+      instagram: "@fearofgod",
+      twitter: "@fearofgod",
+      facebook: "fearofgod"
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp()
   },
 ];
 
@@ -4346,7 +4416,9 @@ export const relationships: Relationship[] = [
     startYear: 1994,
     endYear: 2016,
     description:
-      "Francesco Risso succeeded Consuelo Castiglioni as Creative Director of Marni",
+      "Francesco Risso succeeded founder Consuelo Castiglioni",
+    impact:
+      "Maintained the brand's artistic spirit while bringing a more youthful energy",
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
@@ -4361,6 +4433,7 @@ export const relationships: Relationship[] = [
     startYear: 2005,
     endYear: 2012,
     description: "Raf Simons succeeded Jil Sander as Creative Director",
+    impact: "Revitalized the brand's minimalist aesthetic",
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
@@ -4374,6 +4447,7 @@ export const relationships: Relationship[] = [
     endYear: 2017,
     description:
       "Rodolfo Paglialunga succeeded Raf Simons as Creative Director",
+    impact: "Continued the brand's minimalist legacy",
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
@@ -4386,6 +4460,7 @@ export const relationships: Relationship[] = [
     startYear: 2017,
     description:
       "Luke and Lucie Meier succeeded Rodolfo Paglialunga as Co-Creative Directors",
+    impact: "Revitalized the brand's minimalist aesthetic for a new generation",
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
@@ -4398,6 +4473,7 @@ export const relationships: Relationship[] = [
     startYear: 2017,
     description:
       "Luke and Lucie Meier work together as Co-Creative Directors",
+    impact: "Combined their expertise to revitalize the minimalist brand",
     createdAt: createTimestamp(),
     updatedAt: createTimestamp(),
   },
