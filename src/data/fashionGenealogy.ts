@@ -925,34 +925,50 @@ export const brands: Brand[] = [
     name: "Jacquemus",
     foundedYear: 2009,
     founder: "Simon Porte Jacquemus",
+    parentCompany: "Independent",
     headquarters: "Paris, France",
-    specialties: ["ready-to-wear", "accessories", "footwear"],
+    specialties: [
+      "Ready-to-wear",
+      "Accessories",
+      "Leather goods",
+      "Footwear",
+      "Contemporary Design"
+    ],
     pricePoint: "Contemporary Luxury",
     markets: ["Global"],
     website: "jacquemus.com",
     social_media: {
       instagram: "@jacquemus",
-      facebook: "@jacquemus",
+      twitter: "@jacquemus",
+      facebook: "jacquemus"
     },
     createdAt: createTimestamp(),
-    updatedAt: createTimestamp(),
+    updatedAt: createTimestamp()
   },
   {
     id: uuidv4(),
     name: "Ganni",
     foundedYear: 2000,
-    founder: "Frans Truelsen",
+    founder: "Nicolaj Reffstrup and Ditte Reffstrup",
+    parentCompany: "L Catterton (Majority Stake)",
     headquarters: "Copenhagen, Denmark",
-    specialties: ["ready-to-wear", "accessories", "sustainable fashion"],
+    specialties: [
+      "Ready-to-wear",
+      "Accessories",
+      "Footwear",
+      "Sustainable Fashion",
+      "Scandinavian Design"
+    ],
     pricePoint: "Contemporary",
     markets: ["Global"],
     website: "ganni.com",
     social_media: {
       instagram: "@ganni",
-      facebook: "@ganniofficial",
+      twitter: "@ganni",
+      facebook: "ganniofficial"
     },
     createdAt: createTimestamp(),
-    updatedAt: createTimestamp(),
+    updatedAt: createTimestamp()
   },
   {
     id: uuidv4(),
@@ -1019,6 +1035,30 @@ export const brands: Brand[] = [
       instagram: "@fearofgod",
       twitter: "@fearofgod",
       facebook: "fearofgod"
+    },
+    createdAt: createTimestamp(),
+    updatedAt: createTimestamp()
+  },
+  {
+    id: uuidv4(),
+    name: "Bode",
+    foundedYear: 2016,
+    founder: "Emily Adams Bode",
+    parentCompany: "Independent",
+    headquarters: "New York, USA",
+    specialties: [
+      "Menswear",
+      "Sustainable Fashion",
+      "Historical Textiles",
+      "Upcycled Fashion",
+      "Handcrafted Pieces"
+    ],
+    pricePoint: "Contemporary Luxury",
+    markets: ["Global"],
+    website: "bodenewyork.com",
+    social_media: {
+      instagram: "@bode",
+      facebook: "bodenewyork"
     },
     createdAt: createTimestamp(),
     updatedAt: createTimestamp()
