@@ -6,10 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "verify": "ts-node -P scripts/tsconfig.json scripts/verifyData.ts",
+    "enrich": "ts-node -P scripts/tsconfig.json scripts/enrichData.ts"
   },
   "dependencies": {
     "@types/uuid": "^10.0.0",
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
     "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -17,11 +21,14 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/axios": "^0.14.4",
+    "@types/cheerio": "^0.22.35",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
