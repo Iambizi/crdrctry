@@ -21,7 +21,7 @@ const findId = (
   return item.id;
 };
 
-export const brands: Brand[] = [
+const brands: Brand[] = [
   // LVMH Group Brands
   {
     id: uuidv4(),
@@ -1389,7 +1389,7 @@ export const brands: Brand[] = [
   },
 ];
 
-export const designers: Designer[] = [
+const designers: Designer[] = [
   // Louis Vuitton Designers
   {
     id: uuidv4(),
@@ -2803,7 +2803,7 @@ export const designers: Designer[] = [
   },
 ];
 
-export const tenures: Tenure[] = [
+const tenures: Tenure[] = [
   // Louis Vuitton Tenures
   {
     id: uuidv4(),
@@ -4325,7 +4325,7 @@ export const tenures: Tenure[] = [
   },
 ];
 
-export const relationships: Relationship[] = [
+const relationships: Relationship[] = [
   // Louis Vuitton Family Relationships
   {
     id: uuidv4(),
@@ -5446,9 +5446,11 @@ export const relationships: Relationship[] = [
   },
 ];
 
-export default {
+const fashionGenealogyData = {
   brands,
   designers,
   tenures,
   relationships,
 };
+
+export default fashionGenealogyData;
