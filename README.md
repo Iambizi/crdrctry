@@ -1,5 +1,31 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Project Overview
+
+The Fashion Directory is a comprehensive database of fashion brands, designers, their relationships, and historical tenures. It aims to provide a detailed mapping of the fashion industry's interconnections and evolution over time.
+
+## Planned Features
+
+### API Development
+- REST/GraphQL endpoints for accessing fashion data
+- Complex relationship query interfaces
+- Admin interface for data updates
+
+### Analytics
+- Designer tenure pattern analysis
+- Brand influence network analysis
+- Ownership change tracking over time
+
+### Data Visualization
+- Interactive network graphs
+- Designer/brand relationship visualization
+- Fashion house evolution timelines
+
+### Search and Filter
+- Advanced designer search by era/style/brand
+- Brand filtering by price/market/parent
+- Timeline view of designer movements
+
 ## Getting Started
 
 First, run the development server:
