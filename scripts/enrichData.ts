@@ -1,7 +1,10 @@
+// TOP: Existing imports
 import fashionGenealogyData from '../src/data/fashionGenealogy.js';
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 import * as cheerio from 'cheerio';
+import fs from 'fs';
 
+// TYPES
 interface EnrichmentSource {
   name: string;
   url: string;
@@ -19,142 +22,108 @@ interface EnrichmentSuggestion {
   sources: EnrichmentSource[];
 }
 
-async function fetchWikipediaData(entityName: string): Promise<string | null> {
+// HELPER: Generic fetcher with fallback logging
+async function fetchWithFallback(name: string, site: string, url: string, selector: string): Promise<string | null> {
   try {
-    const response = await axios.get(`https://en.wikipedia.org/wiki/${encodeURIComponent(entityName)}`);
+    const response = await axios.get(url);
     const $ = cheerio.load(response.data);
-    // Remove unwanted elements
-    $('.reference').remove();
-    $('.mw-editsection').remove();
-    
-    // Get the main content
-    const content = $('#mw-content-text').text();
+    const content = $(selector).text().trim();
+
+    if (!content) {
+      console.warn(`[${site}] No relevant content found for "${name}". Selector "${selector}" may be outdated.`);
+      return null;
+    }
+
     return content;
   } catch (error) {
-    console.error(`Error fetching Wikipedia data for ${entityName}:`, error);
+    if (error instanceof AxiosError) {
+      console.error(`[${site}] Error fetching data for "${name}":`, error.message);
+    } else {
+      console.error(`[${site}] Unexpected error for "${name}":`, error);
+    }
     return null;
   }
 }
 
-async function fetchVogueData(entityName: string): Promise<string | null> {
-  try {
-    const response = await axios.get(`https://www.vogue.com/fashion-shows/designer/${encodeURIComponent(entityName)}`);
-    const $ = cheerio.load(response.data);
-    const content = $('.designer-header__bio').text();
-    return content;
-  } catch (error) {
-    console.error(`Error fetching Vogue data for ${entityName}:`, error);
-    return null;
-  }
-}
+// SOURCE-SPECIFIC SCRAPERS
+const scrapers = [
+  { name: 'Wikipedia', url: (n: string) => `https://en.wikipedia.org/wiki/${encodeURIComponent(n)}`, selector: '#mw-content-text' },
+  { name: 'Vogue', url: (n: string) => `https://www.vogue.com/fashion-shows/designer/${encodeURIComponent(n)}`, selector: '.designer-header__bio' },
+  { name: 'Business of Fashion', url: (n: string) => `https://www.businessoffashion.com/community/people/${encodeURIComponent(n)}`, selector: '.profile-header__bio' },
+  { name: 'FMD', url: (n: string) => `https://www.fashionmodeldirectory.com/designers/${encodeURIComponent(n)}/`, selector: '.bio' },
+  { name: 'L’Officiel', url: (n: string) => `https://www.lofficielusa.com/search?q=${encodeURIComponent(n)}`, selector: '.article-preview__title' },
+  { name: 'ShowStudio', url: (n: string) => `https://www.showstudio.com/search?q=${encodeURIComponent(n)}`, selector: '.search-results' },
+  { name: 'CFDA', url: (n: string) => `https://cfda.com/designer-directory/${encodeURIComponent(n)}`, selector: '.designer-content' },
+  { name: 'Not Just A Label', url: (n: string) => `https://www.notjustalabel.com/search/node/${encodeURIComponent(n)}`, selector: '.views-field-title' },
+  { name: 'Nowfashion', url: (n: string) => `https://www.nowfashion.com/search?q=${encodeURIComponent(n)}`, selector: '.show-list__item' },
+  { name: 'Fashionista', url: (n: string) => `https://fashionista.com/search?q=${encodeURIComponent(n)}`, selector: '.article-card__title' },
+  { name: 'WWD', url: (n: string) => `https://wwd.com/?s=${encodeURIComponent(n)}`, selector: '.search-result' }
+];
 
-async function fetchBOFData(entityName: string): Promise<string | null> {
-  try {
-    const response = await axios.get(`https://www.businessoffashion.com/community/people/${encodeURIComponent(entityName)}`);
-    const $ = cheerio.load(response.data);
-    const content = $('.profile-header__bio').text();
-    return content;
-  } catch (error) {
-    console.error(`Error fetching BOF data for ${entityName}:`, error);
-    return null;
-  }
-}
-
+// ENRICHMENT GENERATOR
 async function generateEnrichmentSuggestions(): Promise<EnrichmentSuggestion[]> {
   const suggestions: EnrichmentSuggestion[] = [];
   const { brands, designers, tenures } = fashionGenealogyData;
 
-  // Process brands without designers
+  const processEntity = async (
+    type: 'brand_association' | 'tenure',
+    name: string
+  ): Promise<EnrichmentSuggestion | null> => {
+    const sourceResults = await Promise.all(
+      scrapers.map(async scraper => {
+        const content = await fetchWithFallback(name, scraper.name, scraper.url(name), scraper.selector);
+        return content ? { name: scraper.name, url: scraper.url(name) } : null;
+      })
+    );
+
+    const validSources = sourceResults.filter(Boolean) as EnrichmentSource[];
+
+    if (validSources.length > 0) {
+      return {
+        type,
+        ...(type === 'brand_association' ? { brandName: name } : { designerName: name }),
+        confidence: validSources.length / scrapers.length,
+        sources: validSources
+      };
+    }
+    return null;
+  };
+
+  // Check brands with no known designer tenure
   for (const brand of brands) {
-    const brandTenures = tenures.filter(t => t.brandId === brand.id);
-    if (brandTenures.length === 0) {
-      console.log(`Processing ${brand.name}...`);
-      
-      // Fetch data from multiple sources
-      const [wikiData, vogueData, bofData] = await Promise.all([
-        fetchWikipediaData(brand.name),
-        fetchVogueData(brand.name),
-        fetchBOFData(brand.name)
-      ]);
-
-      const sources: EnrichmentSource[] = [];
-      if (wikiData) sources.push({ name: 'Wikipedia', url: `https://en.wikipedia.org/wiki/${encodeURIComponent(brand.name)}` });
-      if (vogueData) sources.push({ name: 'Vogue', url: `https://www.vogue.com/fashion-shows/designer/${encodeURIComponent(brand.name)}` });
-      if (bofData) sources.push({ name: 'Business of Fashion', url: `https://www.businessoffashion.com/community/people/${encodeURIComponent(brand.name)}` });
-
-      // Add suggestion if we found any data
-      if (sources.length > 0) {
-        suggestions.push({
-          type: 'brand_association',
-          brandName: brand.name,
-          confidence: sources.length / 3, // Confidence based on number of sources
-          sources
-        });
-      }
+    const hasTenure = tenures.some(t => t.brandId === brand.id);
+    if (!hasTenure) {
+      console.log(`Checking brand: ${brand.name}`);
+      const suggestion = await processEntity('brand_association', brand.name);
+      if (suggestion) suggestions.push(suggestion);
     }
   }
 
-  // Process designers without tenures
+  // Check designers with no known tenure
   for (const designer of designers) {
-    const designerTenures = tenures.filter(t => t.designerId === designer.id);
-    if (designerTenures.length === 0) {
-      console.log(`Processing ${designer.name}...`);
-      
-      // Fetch data from multiple sources
-      const [wikiData, vogueData, bofData] = await Promise.all([
-        fetchWikipediaData(designer.name),
-        fetchVogueData(designer.name),
-        fetchBOFData(designer.name)
-      ]);
-
-      const sources: EnrichmentSource[] = [];
-      if (wikiData) sources.push({ name: 'Wikipedia', url: `https://en.wikipedia.org/wiki/${encodeURIComponent(designer.name)}` });
-      if (vogueData) sources.push({ name: 'Vogue', url: `https://www.vogue.com/fashion-shows/designer/${encodeURIComponent(designer.name)}` });
-      if (bofData) sources.push({ name: 'Business of Fashion', url: `https://www.businessoffashion.com/community/people/${encodeURIComponent(designer.name)}` });
-
-      // Add suggestion if we found any data
-      if (sources.length > 0) {
-        suggestions.push({
-          type: 'tenure',
-          designerName: designer.name,
-          confidence: sources.length / 3,
-          sources
-        });
-      }
+    const hasTenure = tenures.some(t => t.designerId === designer.id);
+    if (!hasTenure) {
+      console.log(`Checking designer: ${designer.name}`);
+      const suggestion = await processEntity('tenure', designer.name);
+      if (suggestion) suggestions.push(suggestion);
     }
   }
 
   return suggestions;
 }
 
-// Run enrichment
+// RUN + EXPORT
 generateEnrichmentSuggestions().then(suggestions => {
-  console.log('\nData Enrichment Suggestions:');
-  console.log('---------------------------');
-  
-  // Group suggestions by type
-  const brandSuggestions = suggestions.filter(s => s.type === 'brand_association');
-  const tenureSuggestions = suggestions.filter(s => s.type === 'tenure');
+  console.log('\n✅ Enrichment Completed');
+  suggestions.forEach(s => {
+    console.log(`\n${s.type === 'tenure' ? s.designerName : s.brandName}`);
+    console.log(`Confidence: ${Math.round(s.confidence * 100)}%`);
+    s.sources.forEach(src => console.log(`- ${src.name}: ${src.url}`));
+  });
 
-  if (brandSuggestions.length > 0) {
-    console.log('\nBrands Needing Designer Associations:');
-    brandSuggestions.forEach(suggestion => {
-      console.log(`\n${suggestion.brandName}`);
-      console.log(`Confidence: ${Math.round(suggestion.confidence * 100)}%`);
-      console.log('Sources:');
-      suggestion.sources.forEach(source => console.log(`- ${source.name}: ${source.url}`));
-    });
-  }
-
-  if (tenureSuggestions.length > 0) {
-    console.log('\nDesigners Needing Tenure Information:');
-    tenureSuggestions.forEach(suggestion => {
-      console.log(`\n${suggestion.designerName}`);
-      console.log(`Confidence: ${Math.round(suggestion.confidence * 100)}%`);
-      console.log('Sources:');
-      suggestion.sources.forEach(source => console.log(`- ${source.name}: ${source.url}`));
-    });
-  }
-}).catch(error => {
-  console.error('Error running enrichment:', error);
+  const outputPath = './scripts/suggestions.json';
+  fs.writeFileSync(outputPath, JSON.stringify(suggestions, null, 2));
+  console.log(`\n💾 Saved to ${outputPath}`);
+}).catch(err => {
+  console.error('❌ Error during enrichment:', err.message || err);
 });
