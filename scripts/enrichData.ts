@@ -71,7 +71,6 @@ interface Scraper {
   url: (name: string) => string;
   selectors: ScraperSelectors;
   extractContent: ($: cheerio.CheerioAPI) => string;
-  rateLimit: number;
 }
 
 // FILE PATHS
@@ -125,7 +124,6 @@ const scrapers: Scraper[] = [
 
       return [...titles, ...content, ...dates, ...roles].join('\n');
     },
-    rateLimit: 5000 // 5 seconds between requests
   },
   {
     name: 'Vogue',
@@ -155,7 +153,6 @@ const scrapers: Scraper[] = [
 
       return [...titles, ...content, ...dates, ...roles].join('\n');
     },
-    rateLimit: 3000 // 3 seconds between requests
   },
   {
     name: 'WWD',
@@ -185,29 +182,70 @@ const scrapers: Scraper[] = [
 
       return [...titles, ...content, ...dates, ...roles].join('\n');
     },
-    rateLimit: 2000 // 2 seconds between requests
   }
 ];
 
-// RATE LIMITING
-const requestQueue = new Map<string, number>();
-
-function delay(ms: number): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, ms));
+// REQUEST HANDLING
+interface RequestQueueItem {
+  url: string;
+  retryCount: number;
+  lastAttempt: number;
 }
 
-async function rateLimitedRequest(url: string, scraper: Scraper): Promise<string> {
-  const now = Date.now();
-  const lastRequest = requestQueue.get(scraper.name) || 0;
-  const timeToWait = Math.max(0, lastRequest + scraper.rateLimit - now);
+class RequestQueue {
+  private queue: Map<string, RequestQueueItem> = new Map();
+  private maxRetries = 3;
+  private baseDelay = 5000; // 5 seconds base delay
 
-  if (timeToWait > 0) {
-    await delay(timeToWait);
+  async fetch(url: string): Promise<string> {
+    const queueItem = this.queue.get(url) || { url, retryCount: 0, lastAttempt: 0 };
+    
+    // Check if we need to wait based on rate limiting
+    const now = Date.now();
+    const timeSinceLastAttempt = now - queueItem.lastAttempt;
+    const delay = Math.max(0, this.getDelay(queueItem.retryCount) - timeSinceLastAttempt);
+    
+    if (delay > 0) {
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+
+    try {
+      queueItem.lastAttempt = Date.now();
+      const response = await axios.get(url);
+      this.queue.delete(url); // Success, remove from queue
+      return response.data;
+    } catch (error) {
+      if (axios.isAxiosError(error) && error.response?.status === 429 && queueItem.retryCount < this.maxRetries) {
+        queueItem.retryCount++;
+        this.queue.set(url, queueItem);
+        console.log(`Rate limited for ${url}, retry ${queueItem.retryCount} of ${this.maxRetries}`);
+        return this.fetch(url); // Retry with exponential backoff
+      }
+      throw error;
+    }
   }
 
-  const response = await axios.get(url);
-  requestQueue.set(scraper.name, Date.now());
-  return response.data;
+  private getDelay(retryCount: number): number {
+    return this.baseDelay * Math.pow(2, retryCount); // Exponential backoff
+  }
+}
+
+const requestQueue = new RequestQueue();
+
+// DATA FETCHING
+async function fetchContent(url: string): Promise<string> {
+  try {
+    const html = await requestQueue.fetch(url);
+    const $ = cheerio.load(html);
+    return $('body').html() || '';
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      console.error(`Failed to fetch content from ${url}:`, error.message);
+    } else {
+      console.error(`Unexpected error while fetching ${url}:`, error);
+    }
+    return '';
+  }
 }
 
 // FILE UTILITIES
@@ -231,7 +269,7 @@ function saveJsonFile<T>(filepath: string, data: T): void {
 // FETCH UTILITIES
 async function fetchWithFallback(name: string, scraper: Scraper): Promise<{ content: string; data: ExtractedData } | null> {
   try {
-    const html = await rateLimitedRequest(scraper.url(name), scraper);
+    const html = await fetchContent(scraper.url(name));
     const $ = cheerio.load(html) as cheerio.CheerioAPI;
     
     // Get all content pieces
