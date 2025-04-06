@@ -1,4 +1,3 @@
-// TOP: Existing imports
 import fashionGenealogyData from '../src/data/fashionGenealogy.js';
 import axios, { AxiosError } from 'axios';
 import * as cheerio from 'cheerio';
