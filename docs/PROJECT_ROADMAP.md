@@ -5,10 +5,19 @@
 ### 1. Complete & Verify Dataset
 - [x] Initial data extraction from chart
 - [ ] Cross-reference data sources:
-  - [ ] Wikipedia
-  - [ ] Vogue Runway
-  - [ ] Business of Fashion (BoF)
-  - [ ] Brand official websites
+  - [ ] Primary Sources:
+    - [ ] Wikipedia
+    - [ ] Vogue Runway
+    - [ ] Business of Fashion (BoF)
+    - [ ] Brand official websites
+  - [ ] Secondary Sources:
+    - [ ] Fashion Model Directory (FMD)
+    - [ ] L'Officiel USA
+    - [ ] ShowStudio
+    - [ ] CFDA Designer Directory
+    - [ ] Not Just A Label
+    - [ ] Nowfashion
+    - [ ] Women's Wear Daily (WWD)
 - [ ] Data verification status tracking
 - [ ] Convert TypeScript data to JSON/CSV format
 - [ ] Create data validation scripts

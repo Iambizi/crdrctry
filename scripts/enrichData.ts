@@ -1,112 +1,325 @@
-import fashionGenealogyData from '../src/data/fashionGenealogy.js';
-import axios, { AxiosError } from 'axios';
 import * as cheerio from 'cheerio';
-import fs from 'fs';
+import axios from 'axios';
+import * as fs from 'fs';
+import * as path from 'path';
+import fashionGenealogyData from '../src/data/fashionGenealogy.js';
 
 // TYPES
+interface FashionData {
+  brands: Array<{ id: string; name: string }>;
+  designers: Array<{ id: string; name: string }>;
+  tenures: Array<{ brandId: string; designerId: string }>;
+}
+
 interface EnrichmentSource {
   name: string;
   url: string;
-  lastVerified?: Date;
+}
+
+interface ExtractedData {
+  role?: string;
+  startYear?: number;
+  endYear?: number;
+  confidence: number;
 }
 
 interface EnrichmentSuggestion {
-  type: 'tenure' | 'designer' | 'brand_association';
+  type: 'brand_association' | 'tenure';
   brandName?: string;
   designerName?: string;
   role?: string;
   startYear?: number;
   endYear?: number;
   confidence: number;
-  sources: EnrichmentSource[];
+  sources: (EnrichmentSource & ExtractedData)[];
 }
 
-// HELPER: Generic fetcher with fallback logging
-async function fetchWithFallback(name: string, site: string, url: string, selector: string): Promise<string | null> {
+interface EnrichmentStatus {
+  entityId: string;
+  entityName: string;
+  entityType: 'brand' | 'designer';
+  status: 'verified' | 'pending' | 'failed';
+  lastChecked: string;
+  sourcesChecked: string[];
+  failureReason?: string;
+}
+
+interface EnrichedRelationship {
+  brandId: string;
+  brandName: string;
+  tenures: Array<{
+    designerId: string;
+    designerName: string;
+    role: string;
+    startYear: number;
+    endYear?: number;
+    confidence: number;
+    sources: (EnrichmentSource & ExtractedData)[];
+    verificationStatus: 'verified' | 'pending' | 'failed';
+  }>;
+}
+
+interface Scraper {
+  name: string;
+  url: (name: string) => string;
+  selectors: string[];
+  extractContent: (html: cheerio.CheerioAPI) => string;
+}
+
+// FILE PATHS
+const PATHS = {
+  statusTracker: './scripts/statusTracker.json',
+  knowledgeBase: './scripts/enrichedRelationships.json'
+};
+
+// TEXT PROCESSING
+const ROLE_PATTERNS = [
+  /(?:appointed|named|became|joined|serves? as|worked as|current|former)\s+(creative director|designer|head designer|artistic director|fashion director|chief designer)/i,
+  /(creative director|designer|head designer|artistic director|fashion director|chief designer)\s+(?:at|for|of)/i
+];
+
+const DATE_PATTERNS = [
+  /(?:from|since|in)\s+(\d{4})(?:\s*(?:to|until|-)?\s*(\d{4}|\bpresent\b))?/i,
+  /(\d{4})\s*(?:-|to|until)\s*(\d{4}|\bpresent\b)/i,
+  /(\d{4})\s*:\s*[^.;,]*(?:joined|appointed|became)/i
+];
+
+function extractStructuredData(text: string): ExtractedData {
+  const result: ExtractedData = { confidence: 0 };
+  
+  // Extract role with regex patterns
+  for (const pattern of ROLE_PATTERNS) {
+    const match = text.match(pattern);
+    if (match) {
+      result.role = match[1].toLowerCase();
+      result.confidence += 0.3;
+      break;
+    }
+  }
+
+  // Extract years with regex patterns
+  for (const pattern of DATE_PATTERNS) {
+    const match = text.match(pattern);
+    if (match) {
+      result.startYear = parseInt(match[1], 10);
+      result.endYear = match[2] && match[2].toLowerCase() !== 'present' ? parseInt(match[2], 10) : undefined;
+      result.confidence += 0.3;
+      break;
+    }
+  }
+
+  // Adjust confidence based on data completeness
+  if (result.role && result.startYear) {
+    result.confidence += 0.2;
+  }
+
+  return result;
+}
+
+// SOURCE CONFIGURATION
+const scrapers: Scraper[] = [
+  {
+    name: 'Business of Fashion',
+    url: (name: string) => `https://www.businessoffashion.com/search/?q=${encodeURIComponent(name)}`,
+    selectors: ['.article-card__title', '.article-card__description'],
+    extractContent: (html) => {
+      const titles = html('.article-card__title').map((_, el) => html(el).text()).get();
+      const descriptions = html('.article-card__description').map((_, el) => html(el).text()).get();
+      return [...titles, ...descriptions].join('\n');
+    }
+  },
+  {
+    name: 'Vogue',
+    url: (name: string) => `https://www.vogue.com/search?q=${encodeURIComponent(name)}`,
+    selectors: ['.summary-item__hed', '.summary-item__dek'],
+    extractContent: (html) => {
+      const titles = html('.summary-item__hed').map((_, el) => html(el).text()).get();
+      const descriptions = html('.summary-item__dek').map((_, el) => html(el).text()).get();
+      return [...titles, ...descriptions].join('\n');
+    }
+  },
+  {
+    name: 'WWD',
+    url: (name: string) => `https://wwd.com/search/${encodeURIComponent(name)}/`,
+    selectors: ['.article-title', '.article-excerpt'],
+    extractContent: (html) => {
+      const titles = html('.article-title').map((_, el) => html(el).text()).get();
+      const excerpts = html('.article-excerpt').map((_, el) => html(el).text()).get();
+      return [...titles, ...excerpts].join('\n');
+    }
+  }
+];
+
+// FILE UTILITIES
+function loadJsonFile<T>(filepath: string, defaultValue: T): T {
   try {
-    const response = await axios.get(url);
-    const $ = cheerio.load(response.data);
-    const content = $(selector).text().trim();
-
-    if (!content) {
-      console.warn(`[${site}] No relevant content found for "${name}". Selector "${selector}" may be outdated.`);
-      return null;
-    }
-
-    return content;
-  } catch (error) {
-    if (error instanceof AxiosError) {
-      console.error(`[${site}] Error fetching data for "${name}":`, error.message);
-    } else {
-      console.error(`[${site}] Unexpected error for "${name}":`, error);
-    }
-    return null;
+    const content = fs.readFileSync(filepath, 'utf-8');
+    return JSON.parse(content) as T;
+  } catch {
+    return defaultValue;
   }
 }
 
-// SOURCE-SPECIFIC SCRAPERS
-const scrapers = [
-  { name: 'Wikipedia', url: (n: string) => `https://en.wikipedia.org/wiki/${encodeURIComponent(n)}`, selector: '#mw-content-text' },
-  { name: 'Vogue', url: (n: string) => `https://www.vogue.com/fashion-shows/designer/${encodeURIComponent(n)}`, selector: '.designer-header__bio' },
-  { name: 'Business of Fashion', url: (n: string) => `https://www.businessoffashion.com/community/people/${encodeURIComponent(n)}`, selector: '.profile-header__bio' },
-  { name: 'FMD', url: (n: string) => `https://www.fashionmodeldirectory.com/designers/${encodeURIComponent(n)}/`, selector: '.bio' },
-  { name: 'L’Officiel', url: (n: string) => `https://www.lofficielusa.com/search?q=${encodeURIComponent(n)}`, selector: '.article-preview__title' },
-  { name: 'ShowStudio', url: (n: string) => `https://www.showstudio.com/search?q=${encodeURIComponent(n)}`, selector: '.search-results' },
-  { name: 'CFDA', url: (n: string) => `https://cfda.com/designer-directory/${encodeURIComponent(n)}`, selector: '.designer-content' },
-  { name: 'Not Just A Label', url: (n: string) => `https://www.notjustalabel.com/search/node/${encodeURIComponent(n)}`, selector: '.views-field-title' },
-  { name: 'Nowfashion', url: (n: string) => `https://www.nowfashion.com/search?q=${encodeURIComponent(n)}`, selector: '.show-list__item' },
-  { name: 'Fashionista', url: (n: string) => `https://fashionista.com/search?q=${encodeURIComponent(n)}`, selector: '.article-card__title' },
-  { name: 'WWD', url: (n: string) => `https://wwd.com/?s=${encodeURIComponent(n)}`, selector: '.search-result' }
-];
+function saveJsonFile<T>(filepath: string, data: T): void {
+  const dir = path.dirname(filepath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  fs.writeFileSync(filepath, JSON.stringify(data, null, 2));
+}
+
+// FETCH UTILITIES
+async function fetchWithFallback(name: string, scraper: Scraper): Promise<{ content: string; data: ExtractedData } | null> {
+  try {
+    const response = await axios.get(scraper.url(name));
+    const $ = cheerio.load(response.data) as cheerio.CheerioAPI;
+    
+    // Get all content pieces
+    const contentPieces = scraper.extractContent($);
+    const validContent = contentPieces.trim();
+
+    if (!validContent) {
+      console.warn(`[${scraper.name}] No relevant content found for "${name}". Selectors may be outdated.`);
+      return null;
+    }
+
+    // Extract structured data
+    const data = extractStructuredData(validContent);
+    return { content: validContent, data };
+  } catch (error) {
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.warn(`[${scraper.name}] Failed to fetch data for "${name}":`, errorMessage);
+    return null;
+  }
+}
 
 // ENRICHMENT GENERATOR
 async function generateEnrichmentSuggestions(): Promise<EnrichmentSuggestion[]> {
   const suggestions: EnrichmentSuggestion[] = [];
-  const { brands, designers, tenures } = fashionGenealogyData;
+  const { brands, designers, tenures } = fashionGenealogyData as FashionData;
+
+  // Load existing status and relationships
+  const statusTracker = loadJsonFile<EnrichmentStatus[]>(PATHS.statusTracker, []);
+  const knowledgeBase = loadJsonFile<EnrichedRelationship[]>(PATHS.knowledgeBase, []);
 
   const processEntity = async (
     type: 'brand_association' | 'tenure',
-    name: string
+    name: string,
+    id: string
   ): Promise<EnrichmentSuggestion | null> => {
+    // Check if already processed
+    const existingStatus = statusTracker.find(s => s.entityId === id);
+    if (existingStatus?.status === 'verified') {
+      console.log(`✓ ${name} already verified, skipping...`);
+      return null;
+    }
+
+    console.log(`\n🔍 Processing ${type === 'tenure' ? 'designer' : 'brand'}: ${name}`);
+    
     const sourceResults = await Promise.all(
       scrapers.map(async scraper => {
-        const content = await fetchWithFallback(name, scraper.name, scraper.url(name), scraper.selector);
-        return content ? { name: scraper.name, url: scraper.url(name) } : null;
+        const result = await fetchWithFallback(name, scraper);
+        return result ? {
+          name: scraper.name,
+          url: scraper.url(name),
+          role: result.data.role,
+          startYear: result.data.startYear,
+          endYear: result.data.endYear,
+          confidence: result.data.confidence
+        } : null;
       })
     );
 
-    const validSources = sourceResults.filter(Boolean) as EnrichmentSource[];
+    const validSources = sourceResults.filter(Boolean) as (EnrichmentSource & ExtractedData)[];
+    
+    // Calculate overall confidence and aggregate data
+    const overallConfidence = validSources.reduce((acc, src) => acc + src.confidence, 0) / scrapers.length;
+    const mostConfidentSource = validSources.sort((a, b) => b.confidence - a.confidence)[0];
+
+    const newStatus: EnrichmentStatus = {
+      entityId: id,
+      entityName: name,
+      entityType: type === 'tenure' ? 'designer' : 'brand',
+      status: validSources.length > 0 ? 'pending' : 'failed',
+      lastChecked: new Date().toISOString(),
+      sourcesChecked: scrapers.map(s => s.name),
+      failureReason: validSources.length === 0 ? 'No valid sources found' : undefined
+    };
+
+    // Update status tracker
+    const statusIndex = statusTracker.findIndex(s => s.entityId === id);
+    if (statusIndex >= 0) {
+      statusTracker[statusIndex] = newStatus;
+    } else {
+      statusTracker.push(newStatus);
+    }
 
     if (validSources.length > 0) {
-      return {
+      const suggestion: EnrichmentSuggestion = {
         type,
         ...(type === 'brand_association' ? { brandName: name } : { designerName: name }),
-        confidence: validSources.length / scrapers.length,
+        role: mostConfidentSource?.role,
+        startYear: mostConfidentSource?.startYear,
+        endYear: mostConfidentSource?.endYear,
+        confidence: overallConfidence,
         sources: validSources
       };
+
+      // Update knowledge base if it's a brand
+      if (type === 'brand_association') {
+        const relationship: EnrichedRelationship = {
+          brandId: id,
+          brandName: name,
+          tenures: []
+        };
+        
+        if (mostConfidentSource?.role && mostConfidentSource?.startYear) {
+          relationship.tenures.push({
+            designerId: '', // To be filled when we find matching designer
+            designerName: '', // To be filled when we find matching designer
+            role: mostConfidentSource.role,
+            startYear: mostConfidentSource.startYear,
+            endYear: mostConfidentSource.endYear,
+            confidence: mostConfidentSource.confidence,
+            sources: [mostConfidentSource],
+            verificationStatus: 'pending'
+          });
+        }
+        
+        const existingIndex = knowledgeBase.findIndex(r => r.brandId === id);
+        if (existingIndex >= 0) {
+          knowledgeBase[existingIndex] = relationship;
+        } else {
+          knowledgeBase.push(relationship);
+        }
+      }
+
+      return suggestion;
     }
     return null;
   };
 
-  // Check brands with no known designer tenure
+  // Process brands with no known tenure
   for (const brand of brands) {
     const hasTenure = tenures.some(t => t.brandId === brand.id);
     if (!hasTenure) {
-      console.log(`Checking brand: ${brand.name}`);
-      const suggestion = await processEntity('brand_association', brand.name);
+      const suggestion = await processEntity('brand_association', brand.name, brand.id);
       if (suggestion) suggestions.push(suggestion);
     }
   }
 
-  // Check designers with no known tenure
+  // Process designers with no known tenure
   for (const designer of designers) {
     const hasTenure = tenures.some(t => t.designerId === designer.id);
     if (!hasTenure) {
-      console.log(`Checking designer: ${designer.name}`);
-      const suggestion = await processEntity('tenure', designer.name);
+      const suggestion = await processEntity('tenure', designer.name, designer.id);
       if (suggestion) suggestions.push(suggestion);
     }
   }
+
+  // Save updated tracking data
+  saveJsonFile(PATHS.statusTracker, statusTracker);
+  saveJsonFile(PATHS.knowledgeBase, knowledgeBase);
 
   return suggestions;
 }
@@ -114,15 +327,39 @@ async function generateEnrichmentSuggestions(): Promise<EnrichmentSuggestion[]> 
 // RUN + EXPORT
 generateEnrichmentSuggestions().then(suggestions => {
   console.log('\n✅ Enrichment Completed');
+  
+  // Group suggestions by status
+  const statusTracker = loadJsonFile<EnrichmentStatus[]>(PATHS.statusTracker, []);
+  const verified = statusTracker.filter(s => s.status === 'verified').length;
+  const pending = statusTracker.filter(s => s.status === 'pending').length;
+  const failed = statusTracker.filter(s => s.status === 'failed').length;
+
+  console.log(`\n📊 Status Summary:`);
+  console.log(`Verified: ${verified}`);
+  console.log(`Pending: ${pending}`);
+  console.log(`Failed: ${failed}`);
+
+  // Group by confidence level
+  const highConfidence = suggestions.filter(s => s.confidence >= 0.7);
+  const mediumConfidence = suggestions.filter(s => s.confidence >= 0.4 && s.confidence < 0.7);
+  const lowConfidence = suggestions.filter(s => s.confidence < 0.4);
+
+  console.log(`\n🎯 Confidence Levels:`);
+  console.log(`High (>70%): ${highConfidence.length}`);
+  console.log(`Medium (40-70%): ${mediumConfidence.length}`);
+  console.log(`Low (<40%): ${lowConfidence.length}`);
+
   suggestions.forEach(s => {
-    console.log(`\n${s.type === 'tenure' ? s.designerName : s.brandName}`);
-    console.log(`Confidence: ${Math.round(s.confidence * 100)}%`);
+    const entity = s.type === 'tenure' ? s.designerName : s.brandName;
+    console.log(`\n${entity} (${Math.round(s.confidence * 100)}% confidence)`);
+    if (s.role) console.log(`Role: ${s.role}`);
+    if (s.startYear) console.log(`Period: ${s.startYear} - ${s.endYear || 'present'}`);
     s.sources.forEach(src => console.log(`- ${src.name}: ${src.url}`));
   });
 
-  const outputPath = './scripts/suggestions.json';
-  fs.writeFileSync(outputPath, JSON.stringify(suggestions, null, 2));
-  console.log(`\n💾 Saved to ${outputPath}`);
+  console.log('\n💾 Files saved:');
+  console.log(`- Status Tracker: ${PATHS.statusTracker}`);
+  console.log(`- Knowledge Base: ${PATHS.knowledgeBase}`);
 }).catch(err => {
   console.error('❌ Error during enrichment:', err.message || err);
 });
