@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio';
 import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
-import fashionGenealogyData from '../src/data/fashionGenealogy.js';
+import fashionGenealogyData from '../src/data/fashionGenealogy';
 
 // TYPES
 interface FashionData {
@@ -59,96 +59,156 @@ interface EnrichedRelationship {
   }>;
 }
 
+interface ScraperSelectors {
+  title: string[];
+  content: string[];
+  date: string[];
+  role: string[];
+}
+
 interface Scraper {
   name: string;
   url: (name: string) => string;
-  selectors: string[];
-  extractContent: (html: cheerio.CheerioAPI) => string;
+  selectors: ScraperSelectors;
+  extractContent: ($: cheerio.CheerioAPI) => string;
+  rateLimit: number;
 }
 
 // FILE PATHS
 const PATHS = {
   statusTracker: './scripts/statusTracker.json',
-  knowledgeBase: './scripts/enrichedRelationships.json'
+  knowledgeBase: './scripts/enrichedRelationships.json',
 };
 
 // TEXT PROCESSING
 const ROLE_PATTERNS = [
-  /(?:appointed|named|became|joined|serves? as|worked as|current|former)\s+(creative director|designer|head designer|artistic director|fashion director|chief designer)/i,
-  /(creative director|designer|head designer|artistic director|fashion director|chief designer)\s+(?:at|for|of)/i
+  /(?:appointed|named|became|joined|serves? as|worked as|current|former)\s+((?:creative|artistic|design|fashion|chief)\s+(?:director|designer|head|officer))/i,
+  /((?:creative|artistic|design|fashion|chief)\s+(?:director|designer|head|officer))\s+(?:at|for|of)/i,
+  /(?:lead|head)\s+(?:designer|creative)/i,
+  /(?:founder|co-founder|founding)\s+(?:and\s+)?(?:creative\s+)?(?:director|designer)/i
 ];
 
 const DATE_PATTERNS = [
   /(?:from|since|in)\s+(\d{4})(?:\s*(?:to|until|-)?\s*(\d{4}|\bpresent\b))?/i,
   /(\d{4})\s*(?:-|to|until)\s*(\d{4}|\bpresent\b)/i,
-  /(\d{4})\s*:\s*[^.;,]*(?:joined|appointed|became)/i
+  /(\d{4})\s*:\s*[^.;,]*(?:joined|appointed|became)/i,
+  /(?:started|founded|launched|established)\s+(?:in\s+)?(\d{4})/i
 ];
 
-function extractStructuredData(text: string): ExtractedData {
-  const result: ExtractedData = { confidence: 0 };
-  
-  // Extract role with regex patterns
-  for (const pattern of ROLE_PATTERNS) {
-    const match = text.match(pattern);
-    if (match) {
-      result.role = match[1].toLowerCase();
-      result.confidence += 0.3;
-      break;
-    }
-  }
-
-  // Extract years with regex patterns
-  for (const pattern of DATE_PATTERNS) {
-    const match = text.match(pattern);
-    if (match) {
-      result.startYear = parseInt(match[1], 10);
-      result.endYear = match[2] && match[2].toLowerCase() !== 'present' ? parseInt(match[2], 10) : undefined;
-      result.confidence += 0.3;
-      break;
-    }
-  }
-
-  // Adjust confidence based on data completeness
-  if (result.role && result.startYear) {
-    result.confidence += 0.2;
-  }
-
-  return result;
-}
-
-// SOURCE CONFIGURATION
+// SCRAPERS
 const scrapers: Scraper[] = [
   {
     name: 'Business of Fashion',
     url: (name: string) => `https://www.businessoffashion.com/search/?q=${encodeURIComponent(name)}`,
-    selectors: ['.article-card__title', '.article-card__description'],
-    extractContent: (html) => {
-      const titles = html('.article-card__title').map((_, el) => html(el).text()).get();
-      const descriptions = html('.article-card__description').map((_, el) => html(el).text()).get();
-      return [...titles, ...descriptions].join('\n');
-    }
+    selectors: {
+      title: ['.article-card__title', '.article__title'],
+      content: ['.article-card__description', '.article__body p'],
+      date: ['.article-card__meta time', '.article__meta time'],
+      role: ['.article-card__tag', '.article__tag']
+    } as ScraperSelectors,
+    extractContent: function($: cheerio.CheerioAPI): string {
+      const titles = this.selectors.title.map((selector: string) => 
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+      
+      const content = this.selectors.content.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const dates = this.selectors.date.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const roles = this.selectors.role.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      return [...titles, ...content, ...dates, ...roles].join('\n');
+    },
+    rateLimit: 2000 // 2 seconds between requests
   },
   {
     name: 'Vogue',
     url: (name: string) => `https://www.vogue.com/search?q=${encodeURIComponent(name)}`,
-    selectors: ['.summary-item__hed', '.summary-item__dek'],
-    extractContent: (html) => {
-      const titles = html('.summary-item__hed').map((_, el) => html(el).text()).get();
-      const descriptions = html('.summary-item__dek').map((_, el) => html(el).text()).get();
-      return [...titles, ...descriptions].join('\n');
-    }
+    selectors: {
+      title: ['.summary-item__hed', '.article__title'],
+      content: ['.summary-item__dek', '.article__body p'],
+      date: ['.summary-item__timestamp', '.article__date'],
+      role: ['.summary-item__tag', '.article__tag']
+    } as ScraperSelectors,
+    extractContent: function($: cheerio.CheerioAPI): string {
+      const titles = this.selectors.title.map((selector: string) => 
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+      
+      const content = this.selectors.content.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const dates = this.selectors.date.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const roles = this.selectors.role.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      return [...titles, ...content, ...dates, ...roles].join('\n');
+    },
+    rateLimit: 1500 // 1.5 seconds between requests
   },
   {
     name: 'WWD',
     url: (name: string) => `https://wwd.com/search/${encodeURIComponent(name)}/`,
-    selectors: ['.article-title', '.article-excerpt'],
-    extractContent: (html) => {
-      const titles = html('.article-title').map((_, el) => html(el).text()).get();
-      const excerpts = html('.article-excerpt').map((_, el) => html(el).text()).get();
-      return [...titles, ...excerpts].join('\n');
-    }
+    selectors: {
+      title: ['.article-title', '.headline'],
+      content: ['.article-excerpt', '.article-content p'],
+      date: ['.article-date', '.publish-date'],
+      role: ['.article-tag', '.category-tag']
+    } as ScraperSelectors,
+    extractContent: function($: cheerio.CheerioAPI): string {
+      const titles = this.selectors.title.map((selector: string) => 
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+      
+      const content = this.selectors.content.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const dates = this.selectors.date.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const roles = this.selectors.role.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      return [...titles, ...content, ...dates, ...roles].join('\n');
+    },
+    rateLimit: 1000 // 1 second between requests
   }
 ];
+
+// RATE LIMITING
+const requestQueue = new Map<string, number>();
+
+function delay(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function rateLimitedRequest(url: string, scraper: Scraper): Promise<string> {
+  const now = Date.now();
+  const lastRequest = requestQueue.get(scraper.name) || 0;
+  const timeToWait = Math.max(0, lastRequest + scraper.rateLimit - now);
+
+  if (timeToWait > 0) {
+    await delay(timeToWait);
+  }
+
+  const response = await axios.get(url);
+  requestQueue.set(scraper.name, Date.now());
+  return response.data;
+}
 
 // FILE UTILITIES
 function loadJsonFile<T>(filepath: string, defaultValue: T): T {
@@ -171,12 +231,12 @@ function saveJsonFile<T>(filepath: string, data: T): void {
 // FETCH UTILITIES
 async function fetchWithFallback(name: string, scraper: Scraper): Promise<{ content: string; data: ExtractedData } | null> {
   try {
-    const response = await axios.get(scraper.url(name));
-    const $ = cheerio.load(response.data) as cheerio.CheerioAPI;
+    const html = await rateLimitedRequest(scraper.url(name), scraper);
+    const $ = cheerio.load(html) as cheerio.CheerioAPI;
     
     // Get all content pieces
-    const contentPieces = scraper.extractContent($);
-    const validContent = contentPieces.trim();
+    const content = scraper.extractContent($);
+    const validContent = content.trim();
 
     if (!validContent) {
       console.warn(`[${scraper.name}] No relevant content found for "${name}". Selectors may be outdated.`);
@@ -322,6 +382,39 @@ async function generateEnrichmentSuggestions(): Promise<EnrichmentSuggestion[]> 
   saveJsonFile(PATHS.knowledgeBase, knowledgeBase);
 
   return suggestions;
+}
+
+// STRUCTURED DATA EXTRACTION
+function extractStructuredData(text: string): ExtractedData {
+  const result: ExtractedData = { confidence: 0 };
+  
+  // Extract role with regex patterns
+  for (const pattern of ROLE_PATTERNS) {
+    const match = text.match(pattern);
+    if (match) {
+      result.role = match[1].toLowerCase();
+      result.confidence += 0.3;
+      break;
+    }
+  }
+
+  // Extract years with regex patterns
+  for (const pattern of DATE_PATTERNS) {
+    const match = text.match(pattern);
+    if (match) {
+      result.startYear = parseInt(match[1], 10);
+      result.endYear = match[2] && match[2].toLowerCase() !== 'present' ? parseInt(match[2], 10) : undefined;
+      result.confidence += 0.3;
+      break;
+    }
+  }
+
+  // Adjust confidence based on data completeness
+  if (result.role && result.startYear) {
+    result.confidence += 0.2;
+  }
+
+  return result;
 }
 
 // RUN + EXPORT

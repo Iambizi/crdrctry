@@ -1,0 +1,722 @@
+[
+  {
+    "entityId": "624c9a5e-5f37-47e8-aa9e-c0af3d38ac36",
+    "entityName": "Marc Jacobs",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:07.168Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "a5636ee2-8447-46ef-b31d-33c402d37e17",
+    "entityName": "Brioni",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:07.977Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "e0f273d2-9572-4476-8f1e-9cf189fa49ae",
+    "entityName": "Delvaux",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:08.939Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "e6d56e21-d8d7-4b68-be80-51b697e4a0e3",
+    "entityName": "Dunhill",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:09.860Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "7361e09a-5309-4ab9-9fe6-77e7bcdf220b",
+    "entityName": "Cartier",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:10.654Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "28c5ab2a-9a8b-4001-98a6-9dd27f703aa8",
+    "entityName": "Van Cleef & Arpels",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:11.656Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "a6101bc9-08eb-4bd9-a224-18d9d9284a96",
+    "entityName": "Montblanc",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:12.504Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "457c154a-06f1-4346-93c0-11e2e2cf58af",
+    "entityName": "Piaget",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:15.802Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "e779d2ac-c942-478c-ba44-0f0458dc011a",
+    "entityName": "IWC Schaffhausen",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:16.595Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "f6a03df7-1fcd-4eb8-a675-8ad10d3c0ff6",
+    "entityName": "Jaeger-LeCoultre",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:17.644Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "5864febb-f215-465b-9834-fbf33bc6e0f7",
+    "entityName": "Brioni",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:18.021Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "cc5d7609-3539-4001-b3f7-ddae8fb5840c",
+    "entityName": "Peter Do",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:19.599Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "01de5efb-b670-4c34-87d4-646cbb0ec482",
+    "entityName": "Lemaire",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:20.505Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "4cbcdcc6-150d-4039-a266-a0ceb50814b1",
+    "entityName": "Fear of God",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:21.885Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "b31be40c-fa1b-4344-ac6b-4b494b6c6416",
+    "entityName": "Bode",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:22.774Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "88a4e219-3e81-4528-9875-fc90005e5557",
+    "entityName": "Alexander McQueen",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:23.634Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "61e134cf-88f4-4510-b1f2-e155d0d77719",
+    "entityName": "Lanvin",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:26.160Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "8942e342-a9e8-43cc-b213-232b352ec7e4",
+    "entityName": "Ferragamo",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:27.595Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "74c3006a-2cce-4cd6-96d5-70520f561a7f",
+    "entityName": "Moschino",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:28.607Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "b69c2fc0-4b20-44bc-91ef-d509eda8ed62",
+    "entityName": "Comme des Garçons",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:29.627Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "084a143d-4e66-4122-adbb-b4bfa1011371",
+    "entityName": "Issey Miyake",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:32.911Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "b0efa7d4-d19e-4fec-8a40-34e8b299afa1",
+    "entityName": "Undercover",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:33.757Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "52aa15a5-e9da-4cf3-bd87-20ea237c352d",
+    "entityName": "A Bathing Ape",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:34.555Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "36685699-ea79-4f2b-9a55-44698c5451ea",
+    "entityName": "Number Nine",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:35.468Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "6220b3e7-452a-41dd-9c64-2ee4ad8e3313",
+    "entityName": "The Soloist",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:36.560Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "01609bd9-d49b-49d7-bbb7-10ff8c3aae56",
+    "entityName": "Y/Project",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:37.337Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "7850685b-fcc8-4205-afc8-f701f2c33e72",
+    "entityName": "Dolce & Gabbana",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:38.342Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "0cb0fdcf-3d68-4e8a-83ba-a814a43c85ad",
+    "entityName": "Mugler",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:44.207Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "9dba26a3-4d9f-40af-9f6d-aa64c40a7efa",
+    "entityName": "Vetements",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:47.221Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "5931fd10-97c4-48a3-8aa2-8c4fec05a923",
+    "entityName": "Helmut Lang",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:48.156Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "eac44478-e345-4232-9825-fd1721312981",
+    "entityName": "Ann Demeulemeester",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:48.974Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "26326ef1-7756-411f-90d3-be94d8049408",
+    "entityName": "Vivienne Westwood",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:50.454Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "5643c754-23e3-4020-a31a-6b06b4533b4e",
+    "entityName": "Walter Van Beirendonck",
+    "entityType": "brand",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:55.384Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "69bf4197-6f78-48f8-99ea-2af236b921a7",
+    "entityName": "Georges Vuitton",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:57.180Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "477ab57b-5f91-4aa6-894f-b6f1ec049287",
+    "entityName": "Gaston-Louis Vuitton",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:51:58.617Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "2d50fd26-88d4-4de9-88ea-0908bfedf11a",
+    "entityName": "Nicolas Ghesquière",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:00.056Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "4805a3ff-06d9-4f88-9e0d-228ba7ba4256",
+    "entityName": "Aldo Gucci",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:00.853Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "60a0084b-8663-4602-8ae9-777ea1752ee6",
+    "entityName": "Maurizio Gucci",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:01.886Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "b0d9cd3d-4a4b-4595-adf6-f6ee7ea25d03",
+    "entityName": "Alber Elbaz",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:03.326Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "fad528ac-1c24-4eb5-9b54-8d12ddaf285e",
+    "entityName": "Tom Ford",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:04.043Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "eef2116a-afe3-4551-adaf-30a1a612b202",
+    "entityName": "Hedi Slimane",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:05.074Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "9b89f01e-7048-40d2-bfa8-c16f53a74d64",
+    "entityName": "Karl Lagerfeld",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:05.871Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "54f69842-7b73-4dd4-bf48-7698bb7119c2",
+    "entityName": "John Galliano",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:06.888Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "668b3f15-4742-4876-ae67-a21a35b5f5b0",
+    "entityName": "Raf Simons",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:07.742Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "aaac971b-25a3-4213-9580-42a44d8b56d1",
+    "entityName": "Stuart Vevers",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:09.852Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "abffc230-bfd4-47c1-9798-420a9bbdee83",
+    "entityName": "Michael Kors",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:10.697Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "5db4ff26-f041-49aa-9350-9f2c22f4b1fc",
+    "entityName": "Karl Lagerfeld",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:11.309Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "a687068b-cb9d-426c-87b1-1fbad175b9dd",
+    "entityName": "Renzo Rosso",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:12.172Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "882349be-8f83-4799-86c3-bc198afd0d73",
+    "entityName": "Martin Margiela",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:13.140Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "c2c462b7-9758-4bdc-8199-f5feb67c7eda",
+    "entityName": "John Galliano",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:13.667Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "5843a989-84af-4992-aaf9-2e8dcb86fa79",
+    "entityName": "Consuelo Castiglioni",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:14.578Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "e1fc9716-4484-47ce-8c49-157bbcb0437a",
+    "entityName": "Francesco Risso",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:15.700Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "54c983d6-54e8-4aea-9b30-5ace85fd4e21",
+    "entityName": "Jil Sander",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:16.857Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "fb9c1463-4a4f-4f35-b18f-1b27fb8247da",
+    "entityName": "Luke Meier",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:17.671Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "c7a403ac-ac7f-419c-a766-a335f3cdf0b9",
+    "entityName": "Lucie Meier",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:19.315Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "97627114-2239-43c3-bbda-202b481b3395",
+    "entityName": "Rei Kawakubo",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:20.179Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "0ed24dfe-e702-40ac-bf65-212413905f47",
+    "entityName": "Yohji Yamamoto",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:21.558Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "68d1bfae-0af8-41da-86f2-c01263ea6fb2",
+    "entityName": "Jun Takahashi",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:22.814Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "cca44ad5-ab08-497b-a835-5869fadadb13",
+    "entityName": "Glenn Martens",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:23.800Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  },
+  {
+    "entityId": "0127ad26-37ba-4658-a1a8-a5d57c6e7b05",
+    "entityName": "Nigo",
+    "entityType": "designer",
+    "status": "pending",
+    "lastChecked": "2025-04-06T04:52:24.609Z",
+    "sourcesChecked": [
+      "Business of Fashion",
+      "Vogue",
+      "WWD"
+    ]
+  }
+]
