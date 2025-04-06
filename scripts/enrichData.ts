@@ -101,10 +101,70 @@ const scrapers: Scraper[] = [
     name: 'Business of Fashion',
     url: (name: string) => `https://www.businessoffashion.com/search/?q=${encodeURIComponent(name)}`,
     selectors: {
-      title: ['.article-card__title', '.article__title'],
-      content: ['.article-card__description', '.article__body p'],
-      date: ['.article-card__meta time', '.article__meta time'],
-      role: ['.article-card__tag', '.article__tag']
+      title: ['.article-card__title', '.article__title', '.article__headline', '.search-result__title'],
+      content: ['.article-card__description', '.article__body p', '.article__content p', '.search-result__excerpt'],
+      date: ['.article-card__meta time', '.article__meta time', '.article__date', '.search-result__date'],
+      role: ['.article-card__tag', '.article__tag', '.article__category', '.search-result__tag']
+    } as ScraperSelectors,
+    extractContent: function($: cheerio.CheerioAPI): string {
+      const titles = this.selectors.title.map((selector: string) => 
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+      
+      const content = this.selectors.content.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const dates = this.selectors.date.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const roles = this.selectors.role.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      return [...titles, ...content, ...dates, ...roles].join('\n');
+    },
+    rateLimit: 5000 // 5 seconds between requests
+  },
+  {
+    name: 'Vogue',
+    url: (name: string) => `https://www.vogue.com/search?q=${encodeURIComponent(name)}`,
+    selectors: {
+      title: ['.summary-item__hed', '.article__title', '.headline', '.search-result__title'],
+      content: ['.summary-item__dek', '.article__body p', '.article__content p', '.search-result__excerpt'],
+      date: ['.summary-item__timestamp', '.article__date', '.publish-date', '.search-result__date'],
+      role: ['.summary-item__tag', '.article__tag', '.category-tag', '.search-result__tag']
+    } as ScraperSelectors,
+    extractContent: function($: cheerio.CheerioAPI): string {
+      const titles = this.selectors.title.map((selector: string) => 
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+      
+      const content = this.selectors.content.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const dates = this.selectors.date.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      const roles = this.selectors.role.map((selector: string) =>
+        $(selector).map((_, el) => $(el).text()).get()
+      ).flat();
+
+      return [...titles, ...content, ...dates, ...roles].join('\n');
+    },
+    rateLimit: 3000 // 3 seconds between requests
+  },
+  {
+    name: 'WWD',
+    url: (name: string) => `https://wwd.com/search/${encodeURIComponent(name)}/`,
+    selectors: {
+      title: ['.article-title', '.headline', '.search-result__title', '.article__headline'],
+      content: ['.article-excerpt', '.article-content p', '.search-result__excerpt', '.article__content p'],
+      date: ['.article-date', '.publish-date', '.search-result__date', '.article__date'],
+      role: ['.article-tag', '.category-tag', '.search-result__tag', '.article__category']
     } as ScraperSelectors,
     extractContent: function($: cheerio.CheerioAPI): string {
       const titles = this.selectors.title.map((selector: string) => 
@@ -126,66 +186,6 @@ const scrapers: Scraper[] = [
       return [...titles, ...content, ...dates, ...roles].join('\n');
     },
     rateLimit: 2000 // 2 seconds between requests
-  },
-  {
-    name: 'Vogue',
-    url: (name: string) => `https://www.vogue.com/search?q=${encodeURIComponent(name)}`,
-    selectors: {
-      title: ['.summary-item__hed', '.article__title'],
-      content: ['.summary-item__dek', '.article__body p'],
-      date: ['.summary-item__timestamp', '.article__date'],
-      role: ['.summary-item__tag', '.article__tag']
-    } as ScraperSelectors,
-    extractContent: function($: cheerio.CheerioAPI): string {
-      const titles = this.selectors.title.map((selector: string) => 
-        $(selector).map((_, el) => $(el).text()).get()
-      ).flat();
-      
-      const content = this.selectors.content.map((selector: string) =>
-        $(selector).map((_, el) => $(el).text()).get()
-      ).flat();
-
-      const dates = this.selectors.date.map((selector: string) =>
-        $(selector).map((_, el) => $(el).text()).get()
-      ).flat();
-
-      const roles = this.selectors.role.map((selector: string) =>
-        $(selector).map((_, el) => $(el).text()).get()
-      ).flat();
-
-      return [...titles, ...content, ...dates, ...roles].join('\n');
-    },
-    rateLimit: 1500 // 1.5 seconds between requests
-  },
-  {
-    name: 'WWD',
-    url: (name: string) => `https://wwd.com/search/${encodeURIComponent(name)}/`,
-    selectors: {
-      title: ['.article-title', '.headline'],
-      content: ['.article-excerpt', '.article-content p'],
-      date: ['.article-date', '.publish-date'],
-      role: ['.article-tag', '.category-tag']
-    } as ScraperSelectors,
-    extractContent: function($: cheerio.CheerioAPI): string {
-      const titles = this.selectors.title.map((selector: string) => 
-        $(selector).map((_, el) => $(el).text()).get()
-      ).flat();
-      
-      const content = this.selectors.content.map((selector: string) =>
-        $(selector).map((_, el) => $(el).text()).get()
-      ).flat();
-
-      const dates = this.selectors.date.map((selector: string) =>
-        $(selector).map((_, el) => $(el).text()).get()
-      ).flat();
-
-      const roles = this.selectors.role.map((selector: string) =>
-        $(selector).map((_, el) => $(el).text()).get()
-      ).flat();
-
-      return [...titles, ...content, ...dates, ...roles].join('\n');
-    },
-    rateLimit: 1000 // 1 second between requests
   }
 ];
 
@@ -393,7 +393,7 @@ function extractStructuredData(text: string): ExtractedData {
     const match = text.match(pattern);
     if (match) {
       result.role = match[1].toLowerCase();
-      result.confidence += 0.3;
+      result.confidence += 0.4; // Increased from 0.3
       break;
     }
   }
@@ -404,7 +404,7 @@ function extractStructuredData(text: string): ExtractedData {
     if (match) {
       result.startYear = parseInt(match[1], 10);
       result.endYear = match[2] && match[2].toLowerCase() !== 'present' ? parseInt(match[2], 10) : undefined;
-      result.confidence += 0.3;
+      result.confidence += 0.4; // Increased from 0.3
       break;
     }
   }
@@ -412,6 +412,11 @@ function extractStructuredData(text: string): ExtractedData {
   // Adjust confidence based on data completeness
   if (result.role && result.startYear) {
     result.confidence += 0.2;
+  }
+
+  // Add base confidence for any match
+  if (result.role || result.startYear) {
+    result.confidence += 0.1; // Add a small base confidence
   }
 
   return result;
