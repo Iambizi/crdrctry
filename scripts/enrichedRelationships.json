@@ -493,5 +493,4367 @@
     "brandId": "9898fd7f-b6e1-4334-a3ba-903ec192bba2",
     "brandName": "Walter Van Beirendonck",
     "tenures": []
+  },
+  {
+    "brandId": "c1200b4f-4482-40fe-b9e2-352bc6913600",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Louis%20Vuitton",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e3447dd3-ce25-4325-8a3f-8c2a55dd93de",
+    "brandName": "Givenchy",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Givenchy",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8f02f10d-a2b3-4d00-a32a-29ce0c3f22f8",
+    "brandName": "Fendi",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 1986,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Fendi",
+            "confidence": 0.5,
+            "startYear": 1986
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d23e2c5f-62c4-436c-9be1-0ddc1fdf53d9",
+    "brandName": "Celine",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Celine",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e52517f7-51c3-4cb4-804d-1c1a169cd4cc",
+    "brandName": "Loewe",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Loewe",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "fd4df578-111c-4222-9c1c-99319f0e68b1",
+    "brandName": "Marc Jacobs",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Marc%20Jacobs",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f2c55eb6-5c72-443b-a294-7bd5317dfa1d",
+    "brandName": "Balenciaga",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Balenciaga",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c7c0ff53-3f84-41b4-a464-22c7fa0c329a",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Gucci",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "82ad27f7-85d5-48d4-ac73-0fb585d60fad",
+    "brandName": "Saint Laurent",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Saint%20Laurent",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "acd90bf9-23f2-4bf1-a089-01f16267c106",
+    "brandName": "Bottega Veneta",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Bottega%20Veneta",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b62101c7-a41e-4584-adef-8983a3f10251",
+    "brandName": "Brioni",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Brioni",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "431bc2c8-7668-42b1-a7e2-eab8b0daa05c",
+    "brandName": "Chloé",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Chlo%C3%A9",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "0ed08213-566d-4c0c-98c9-f0878bf47b43",
+    "brandName": "Alaïa",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Ala%C3%AFa",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f1941a7-176a-407f-8775-ad889f7ee249",
+    "brandName": "Delvaux",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Delvaux",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "735810ba-d08d-472d-9043-692eed6407d0",
+    "brandName": "Dunhill",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Dunhill",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5d7c9c21-7625-4a24-86b8-fb914e3d8c90",
+    "brandName": "Cartier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Cartier",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "673b099a-882c-47a0-b13f-b51164ed48a4",
+    "brandName": "Van Cleef & Arpels",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Van%20Cleef%20%26%20Arpels",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "30439cce-f6db-4a49-b3e5-f9b1792fb05a",
+    "brandName": "Montblanc",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Montblanc",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9d7d5556-f0cf-4e2e-9e35-4f1705bbf0ca",
+    "brandName": "Piaget",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Piaget",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3a211a85-d9a9-4d0b-bcfb-05c3eff534dd",
+    "brandName": "IWC Schaffhausen",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=IWC%20Schaffhausen",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5650ee5b-51b3-427d-a506-fffb947dcf89",
+    "brandName": "Jaeger-LeCoultre",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jaeger-LeCoultre",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "010afd0e-1001-4016-bfc9-c7406531051f",
+    "brandName": "Prada",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Prada",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9a427269-5de3-4853-afb0-a7be33b8be3d",
+    "brandName": "Miu Miu",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Miu%20Miu",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e8c3aa90-6ffb-4a0f-a7be-b86c19b10989",
+    "brandName": "Church's",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Church's",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "220e4acf-6c61-4ab3-bcfe-2aaa2cd72137",
+    "brandName": "Car Shoe",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 2025,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Car%20Shoe",
+            "confidence": 0.5,
+            "startYear": 2025
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f0cc7aa9-4400-4460-b410-26de9b3cdc84",
+    "brandName": "Diesel",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Diesel",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "04fc75c1-1189-4d24-b524-ee537e2d7209",
+    "brandName": "Maison Margiela",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Maison%20Margiela",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "79c2c477-c3af-4940-b1ce-b8863db85cbe",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Marni",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8d84d5c5-e440-49fa-9d13-10ba1aa92886",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jil%20Sander",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3b9454aa-5c2a-4e2f-be09-e720a77fc9f5",
+    "brandName": "Coach",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Coach",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e5457879-c3ae-4b2d-b958-dfd98574070b",
+    "brandName": "Kate Spade",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Kate%20Spade",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "14001e09-d88f-464d-bc3b-03586a6522bb",
+    "brandName": "Stuart Weitzman",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Stuart%20Weitzman",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "7c1a0055-9b01-4035-a6c2-1a844a6226df",
+    "brandName": "Valentino",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Valentino",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "7004260e-632f-4b14-aa0c-74dc95e2c17e",
+    "brandName": "Balmain",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Balmain",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6aa72e41-01b6-4aed-8c04-c2e132b9b50b",
+    "brandName": "Versace",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Versace",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "78ecd2ab-cccc-4386-8662-1da16f3b543d",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Michael%20Kors",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9d1df780-2028-4753-8723-28517d3c4d37",
+    "brandName": "Jimmy Choo",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jimmy%20Choo",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "541650bf-4b42-4242-ad0d-e56557e60c3e",
+    "brandName": "Jean Paul Gaultier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jean%20Paul%20Gaultier",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e8a7b4c6-26c0-4132-b540-8883c140761e",
+    "brandName": "Nina Ricci",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Nina%20Ricci",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5842d50d-5245-41be-9d0c-56fce14bb49f",
+    "brandName": "Carolina Herrera",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Carolina%20Herrera",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "7a7ac38a-aff8-4767-8948-b5f8b5124de3",
+    "brandName": "Brioni",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Brioni",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "70d249d9-5cc8-4554-a53b-ea09c688f5d0",
+    "brandName": "Dries Van Noten",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 2024,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Dries%20Van%20Noten",
+            "confidence": 0.5,
+            "startYear": 2024
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ab6a87f7-11de-4382-a23d-f3a38ae70a9d",
+    "brandName": "Chanel",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Chanel",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "015b7a89-4212-403a-9d67-02624767d7c7",
+    "brandName": "Hermès",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Herm%C3%A8s",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "dd7f5c9c-fbc3-4c76-aa8c-46634ab6a150",
+    "brandName": "The Row",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=The%20Row",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "a5d7fe8c-0f6d-45cf-beaa-a1fee78fde85",
+    "brandName": "Rick Owens",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Rick%20Owens",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6242d8dc-7ee2-4c42-a965-51e3c35ce9c7",
+    "brandName": "Marine Serre",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Marine%20Serre",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "63358831-ef26-49ff-972b-52711e16ff79",
+    "brandName": "Simone Rocha",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 2024,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Simone%20Rocha",
+            "confidence": 0.5,
+            "startYear": 2024
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5946963c-a7d2-40f4-af75-a03432b87d2b",
+    "brandName": "Jacquemus",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jacquemus",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64802789-8b93-4788-baac-62e32d413127",
+    "brandName": "Wales Bonner",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Wales%20Bonner",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "67d777de-88e6-4a04-8272-9b3858a0fd3e",
+    "brandName": "Ganni",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Ganni",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "620a7f48-3730-4b0b-96f3-e1f5d3193ff9",
+    "brandName": "Peter Do",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Peter%20Do",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f05705d9-f76f-48f3-be18-a364fff0abbf",
+    "brandName": "Lemaire",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Lemaire",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e20749b9-3b35-4edb-a2fc-95de10b57434",
+    "brandName": "Fear of God",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Fear%20of%20God",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cae4088f-9aaa-411d-90c4-917e95bfa4ba",
+    "brandName": "Bode",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Bode",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bb5b88cd-411a-4024-a1d6-c53bcfec2f5d",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Alexander%20McQueen",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8e0bffbe-b0c6-47a3-96ac-0f17ee6ff5ae",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Lanvin",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "0f3547ce-1987-4d4a-b9a2-9b2b50c9ee94",
+    "brandName": "Ferragamo",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Ferragamo",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c033ebe2-d831-4ef5-8cd4-7f7fcb4f7680",
+    "brandName": "Moschino",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Moschino",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8e61b197-0159-457e-9a85-f2580a471c0b",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Comme%20des%20Gar%C3%A7ons",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4bb66d7b-0063-4f29-93bf-552459b0be86",
+    "brandName": "Issey Miyake",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Issey%20Miyake",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bdf671f8-bd89-4cde-97a1-495422aaa786",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Undercover",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "81b5750d-e772-4074-93bc-556690224967",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=A%20Bathing%20Ape",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2bbe9243-135a-4123-9978-f8c97ca04aae",
+    "brandName": "Number Nine",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Number%20Nine",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2a0922df-ae76-4226-a877-2cea41774202",
+    "brandName": "The Soloist",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=The%20Soloist",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e5ddf6dc-cd56-47f2-9f4c-cb7fdc56743d",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Y%2FProject",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "1a59b5ff-4c49-4f3c-ba15-3ce353dbb892",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Dolce%20%26%20Gabbana",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "7bdc240f-889b-46fa-b465-62aff0789ec2",
+    "brandName": "Mugler",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Mugler",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "16809f25-08a8-46df-b179-3be9cad52f84",
+    "brandName": "Vetements",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Vetements",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ba7af76a-1293-4268-a224-4781fdeaefad",
+    "brandName": "Helmut Lang",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 2024,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Helmut%20Lang",
+            "confidence": 0.5,
+            "startYear": 2024
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "a766c424-3372-40b6-bea0-16602f3adc0f",
+    "brandName": "Ann Demeulemeester",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Ann%20Demeulemeester",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "a54a0cad-1838-4685-840f-282f351a2e22",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Louis%20Vuitton",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e1e7e042-01a3-4d7c-a1ff-7ab96729acdb",
+    "brandName": "Vivienne Westwood",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Vivienne%20Westwood",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "a934f8ff-65a1-4bb2-9496-f9759afdc907",
+    "brandName": "Walter Van Beirendonck",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Walter%20Van%20Beirendonck",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "68b1be5b-939d-41a6-ab5f-eff6d613ff7c",
+    "brandName": "Georges Vuitton",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Georges%20Vuitton",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5bbc0467-08f3-4af6-85a1-4ed1cb1e6a85",
+    "brandName": "Marc Jacobs",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Marc%20Jacobs",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "000fbb5a-f316-40db-9be3-012f5a20417c",
+    "brandName": "Gaston-Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Gaston-Louis%20Vuitton",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ba0e4e77-8495-4a10-a3c4-22d041342d05",
+    "brandName": "Nicolas Ghesquière",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Nicolas%20Ghesqui%C3%A8re",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "0c6ed97a-a711-4c12-862f-6cbf8ad6f1c7",
+    "brandName": "Virgil Abloh",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Virgil%20Abloh",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e7a67005-a20d-42a7-ac9a-c6db33d01ceb",
+    "brandName": "Pharrell Williams",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Pharrell%20Williams",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3dabfb11-cce9-48c9-8375-34e545e1b536",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Alexander%20McQueen",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4860c91c-1ae4-4a0e-8c75-538ed5614c1c",
+    "brandName": "Hubert de Givenchy",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 2024,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Hubert%20de%20Givenchy",
+            "confidence": 0.5,
+            "startYear": 2024
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ac0a7b78-83c0-496e-94fb-858172bca8e6",
+    "brandName": "John Galliano",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=John%20Galliano",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "beaa34b9-c9d8-46dd-9916-28ddc92fc8af",
+    "brandName": "Julien MacDonald",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Julien%20MacDonald",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f2aa02f9-5ad4-46c0-905c-6f12aaca2c79",
+    "brandName": "Riccardo Tisci",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Riccardo%20Tisci",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3729eb5c-024c-42f5-b048-cf4f94745ddd",
+    "brandName": "Clare Waight Keller",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Clare%20Waight%20Keller",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9bc2c5ce-b5c7-47c8-8444-8e85ae4c410a",
+    "brandName": "Matthew Williams",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Matthew%20Williams",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "628f30cb-85a5-400a-b67a-730a086097f5",
+    "brandName": "Adele Fendi",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Adele%20Fendi",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "90932db0-1eb2-40f0-af41-6b439c869965",
+    "brandName": "Edoardo Fendi",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Edoardo%20Fendi",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ca12ef32-b702-4d8c-8a5e-336da45c6d96",
+    "brandName": "Karl Lagerfeld",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Karl%20Lagerfeld",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4751b55f-4673-465d-88df-aedf6116e471",
+    "brandName": "Kim Jones",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Kim%20Jones",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "dbc62fda-7799-4cbe-b4c9-ec75525675ed",
+    "brandName": "Silvia Venturini Fendi",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Silvia%20Venturini%20Fendi",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "022aa58a-2331-4074-8cb9-c94540bca42a",
+    "brandName": "Stuart Vevers",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Stuart%20Vevers",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5472133b-8b70-43cd-bb3f-ae228a461299",
+    "brandName": "Jonathan Anderson",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jonathan%20Anderson",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "83139df2-d6cd-43b4-a27d-7c39a27f8f45",
+    "brandName": "Céline Vipiana",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=C%C3%A9line%20Vipiana",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5ab87b30-e37d-4a6f-916f-051643e3c547",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Michael%20Kors",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d86c01a2-6fff-4cbd-9820-ee6d596087fe",
+    "brandName": "Roberto Menichetti",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Roberto%20Menichetti",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "15d3aced-8d62-4da2-9154-246f07f5a5b4",
+    "brandName": "Ivana Omazic",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Ivana%20Omazic",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "14dc3c51-c8f8-41ac-b256-3774bbb31c17",
+    "brandName": "Phoebe Philo",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Phoebe%20Philo",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8f601353-5f45-46f5-b0b7-1e05362947eb",
+    "brandName": "Hedi Slimane",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Hedi%20Slimane",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "aaf350d0-b990-4390-b7aa-aba3555a4da5",
+    "brandName": "Nicolas Ghesquière",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Nicolas%20Ghesqui%C3%A8re",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "74c13c4a-52bb-400e-8809-0dd066f93731",
+    "brandName": "Cristóbal Balenciaga",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Crist%C3%B3bal%20Balenciaga",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "921027fd-a29c-4706-b39d-dda599ad7da0",
+    "brandName": "Alexander Wang",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Alexander%20Wang",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5bb255cc-7930-4ffe-939b-e9a7ebcba0fb",
+    "brandName": "Demna Gvasalia",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Demna%20Gvasalia",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2ace1f0c-3064-4dd1-bc97-6f92a809a040",
+    "brandName": "Guccio Gucci",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Guccio%20Gucci",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "545c22cf-b330-44cd-85f1-ad69c3b50359",
+    "brandName": "Aldo Gucci",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Aldo%20Gucci",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "79645786-61e5-4948-ab94-a4679d1ac9ce",
+    "brandName": "Maurizio Gucci",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Maurizio%20Gucci",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3ba40749-300d-49c6-b3d7-f4f83aa49a02",
+    "brandName": "Tom Ford",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Tom%20Ford",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6e14b4e7-f283-4c23-83d0-91908a3af66c",
+    "brandName": "Frida Giannini",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Frida%20Giannini",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ab284517-4310-4536-9ead-94b8fc11a2d3",
+    "brandName": "Alessandro Michele",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Alessandro%20Michele",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c34653f3-153a-4b3b-afa5-d5aff38019b7",
+    "brandName": "Tom Ford",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Tom%20Ford",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "616f0d48-7ac8-452f-9606-721ba1b8eec8",
+    "brandName": "Yves Saint Laurent",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Yves%20Saint%20Laurent",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ff947171-b8a1-48d7-be7a-9e5c759c94ff",
+    "brandName": "Sabato De Sarno",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Sabato%20De%20Sarno",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "de45afe3-2cbe-45c0-86c1-996596a72d4f",
+    "brandName": "Alber Elbaz",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Alber%20Elbaz",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b49c1c18-48f9-459e-8780-bb3437d49c04",
+    "brandName": "Stefano Pilati",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Stefano%20Pilati",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8845d7af-64b1-47ba-8c14-da4af8d5f86a",
+    "brandName": "Hedi Slimane",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Hedi%20Slimane",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d2e94e98-9250-4469-b014-e74153216764",
+    "brandName": "Anthony Vaccarello",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Anthony%20Vaccarello",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "539d2041-6a47-475b-b8fc-3ac6abfe5e84",
+    "brandName": "Michele Taddei",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Michele%20Taddei",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9cfdf19c-393c-4451-bef1-ba92079b61aa",
+    "brandName": "Tomas Maier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Tomas%20Maier",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "0b85fe86-a5d2-46f3-b4f1-4dbd7eea2474",
+    "brandName": "Daniel Lee",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Daniel%20Lee",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "35288481-b501-4345-a93f-ce518e1788fd",
+    "brandName": "Karl Lagerfeld",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Karl%20Lagerfeld",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2fe99995-1b16-40d9-9522-bb53d6f511b0",
+    "brandName": "Matthieu Blazy",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Matthieu%20Blazy",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "56e60d23-efca-453b-9255-dde9a502d477",
+    "brandName": "Gaby Aghion",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Gaby%20Aghion",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9defe553-e811-4b20-8b9f-c9b7e9767ddc",
+    "brandName": "Stella McCartney",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Stella%20McCartney",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3b3f4625-b30b-4883-b4e6-a254040d75c7",
+    "brandName": "Paulo Anderson",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Paulo%20Anderson",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e18ca4af-71ca-414e-94c7-cf74c2418af3",
+    "brandName": "Hannah MacGibbon",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Hannah%20MacGibbon",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "46514112-bbc6-42a6-be8b-4345186ad626",
+    "brandName": "Natacha Ramsay-Levi",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Natacha%20Ramsay-Levi",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f8d96a80-961a-464d-b78d-b98cc76a5c5d",
+    "brandName": "Gabriela Hearst",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Gabriela%20Hearst",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9726080c-7a36-4350-b70d-591f92f41715",
+    "brandName": "Azzedine Alaïa",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Azzedine%20Ala%C3%AFa",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3c9f7d1f-467e-4893-b55a-41b38e445d8c",
+    "brandName": "Pieter Mulier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Pieter%20Mulier",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bf351d50-b86b-48ca-a4ee-1f9580ff550e",
+    "brandName": "Mario Prada",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Mario%20Prada",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "49121c90-8ff8-4496-a78b-654ec49cb0a6",
+    "brandName": "Miuccia Prada",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Miuccia%20Prada",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f455251e-c999-4d40-9390-fa28378cbf33",
+    "brandName": "Raf Simons",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Raf%20Simons",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "84ca194f-ec92-407e-9bc7-c940669926cd",
+    "brandName": "Thomas Church",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Thomas%20Church",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "a5ff8aa8-490c-428b-a9cb-de02c325188b",
+    "brandName": "Gianni Mostile",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Gianni%20Mostile",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "650de210-974d-460f-a6af-24e247687f85",
+    "brandName": "John Galliano",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=John%20Galliano",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "95afacaf-b30b-42e6-870c-490d036d5477",
+    "brandName": "Renzo Rosso",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Renzo%20Rosso",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "16db6f46-e621-402a-87c3-2a7b2d8ae676",
+    "brandName": "Glenn Martens",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Glenn%20Martens",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "1f3fd10f-daae-43df-9632-e057a28ed8e8",
+    "brandName": "Martin Margiela",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Martin%20Margiela",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c434c5c7-1350-4084-941e-dcc37dae1b83",
+    "brandName": "Consuelo Castiglioni",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Consuelo%20Castiglioni",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9b63fef5-56a7-4bfe-abe3-cb5020ba76a0",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jil%20Sander",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e03c7992-ce6e-40e7-bdb4-f8bb93d3359b",
+    "brandName": "Raf Simons",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Raf%20Simons",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c9bae099-b6d1-4fac-876a-7a152e8708eb",
+    "brandName": "Francesco Risso",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Francesco%20Risso",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f84c5c32-870b-460b-afdf-686c01395174",
+    "brandName": "Rodolfo Paglialunga",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Rodolfo%20Paglialunga",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "7ae7db88-970c-49b5-9f7c-c0cab5ec99d3",
+    "brandName": "Luke Meier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Luke%20Meier",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3be7be0f-5bcf-46d9-b34b-85715c27776b",
+    "brandName": "Bonnie Cashin",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Bonnie%20Cashin",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "83bdc762-63aa-4380-b7b8-45375f022cc8",
+    "brandName": "Lucie Meier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Lucie%20Meier",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "52ed2636-9abf-4c6f-9a35-22829932bde8",
+    "brandName": "Miles Cahn",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Miles%20Cahn",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f816fc94-1f46-47f6-a47f-fc5967eae415",
+    "brandName": "Reed Krakoff",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Reed%20Krakoff",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d89b697c-e175-406e-9120-4803a41a8bbe",
+    "brandName": "Stuart Vevers",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Stuart%20Vevers",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "a78ec9b2-79da-4e78-b1a6-ed0e438e0a43",
+    "brandName": "Kate Spade",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Kate%20Spade",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8f8e388c-c710-46e0-b309-7f86def98fb8",
+    "brandName": "Deborah Lloyd",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Deborah%20Lloyd",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c45642d8-f421-4825-a1a3-92377212ac1d",
+    "brandName": "Nicola Glass",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Nicola%20Glass",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c58fb448-da62-44a4-8d57-26728f57d496",
+    "brandName": "Tom Mora",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Tom%20Mora",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "0b064e11-c37e-4fe3-a053-7e2b050b4480",
+    "brandName": "Jennifer Lyu",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jennifer%20Lyu",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6464c841-b062-413a-902c-54a136c082d5",
+    "brandName": "Stuart Weitzman",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Stuart%20Weitzman",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6c893b93-61ce-47fa-9d9c-936834f4afcc",
+    "brandName": "Giovanni Morelli",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Giovanni%20Morelli",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "13fcf4c5-c0b2-459a-b13a-99c0c5c54248",
+    "brandName": "Edmundo Castillo",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Edmundo%20Castillo",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "75909b6c-f265-4b5d-a88d-0f88fb4b6258",
+    "brandName": "Valentino Garavani",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Valentino%20Garavani",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9362bb66-2af1-47b3-b60c-4a9398cb69ff",
+    "brandName": "Maria Grazia Chiuri",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Maria%20Grazia%20Chiuri",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bdfa2f59-3dbe-4598-bf90-8008644abc01",
+    "brandName": "Pierpaolo Piccioli",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Pierpaolo%20Piccioli",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "7219416a-8ecd-417c-b694-4c1fe908ce84",
+    "brandName": "Pierre Balmain",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Pierre%20Balmain",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "192aabd7-df50-4663-b72c-96a20d1417d5",
+    "brandName": "Oscar de la Renta",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Oscar%20de%20la%20Renta",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4e0c54b9-4479-4ae9-af0a-f79c797f8c1f",
+    "brandName": "Christophe Decarnin",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Christophe%20Decarnin",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5b3b1f3a-3c1b-40b9-9d78-cb5674d064bf",
+    "brandName": "Olivier Rousteing",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Olivier%20Rousteing",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "55284653-5c77-4076-baed-e4385b2770bd",
+    "brandName": "Jimmy Choo",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jimmy%20Choo",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f33c3662-f9e0-4012-ab02-511104aab90f",
+    "brandName": "Gianni Versace",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Gianni%20Versace",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d07878d4-84ed-4707-990f-a91146f68442",
+    "brandName": "Donatella Versace",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Donatella%20Versace",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d27da568-83e4-4a25-80a7-970a6df090d4",
+    "brandName": "Tamara Mellon",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Tamara%20Mellon",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5f8feb8f-b261-41c3-a944-126c54b41142",
+    "brandName": "Sandra Choi",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Sandra%20Choi",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5eba4a13-b094-4cf4-b7e9-8f69705abfcc",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Michael%20Kors",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "aa62b2b7-b3f4-4506-930b-8b462477e289",
+    "brandName": "Jean Paul Gaultier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jean%20Paul%20Gaultier",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8bcd17b2-f059-42da-929c-c6397c5f88a2",
+    "brandName": "Carolina Herrera",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Carolina%20Herrera",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3d4e1790-5417-4fe4-9ea4-61951a25a1b7",
+    "brandName": "Florence Tétier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Florence%20T%C3%A9tier",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5d5d31db-f4a5-4fe7-82c1-c3024b784406",
+    "brandName": "Harris Reed",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Harris%20Reed",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6a2bcda0-b373-4d47-ac94-881416977b82",
+    "brandName": "Dries Van Noten",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 2024,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Dries%20Van%20Noten",
+            "confidence": 0.5,
+            "startYear": 2024
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ffddcd0e-0c1c-4c93-8ef8-ef3548c0a48e",
+    "brandName": "Karl Lagerfeld",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Karl%20Lagerfeld",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "3f7f1d17-0ecf-4028-a11c-a8648f8d4a17",
+    "brandName": "Wes Gordon",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Wes%20Gordon",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d09b5fe9-dff3-4573-b1db-102b22e394af",
+    "brandName": "Gabrielle 'Coco' Chanel",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Gabrielle%20'Coco'%20Chanel",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "a18d72b4-39ba-4b1e-ba1e-0da8177c8575",
+    "brandName": "Virginie Viard",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Virginie%20Viard",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b77f4d12-713f-477d-97c7-3e86fb672408",
+    "brandName": "Thierry Hermès",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Thierry%20Herm%C3%A8s",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "0f374ef1-7cb5-40b5-871b-f72084378070",
+    "brandName": "Jean-Louis Dumas",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jean-Louis%20Dumas",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8dd5157c-7bac-4e9d-bfa4-88fcdeba9495",
+    "brandName": "Pierre-Alexis Dumas",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Pierre-Alexis%20Dumas",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "0a3c175c-383e-456b-aac6-97bf49c41842",
+    "brandName": "Mary-Kate Olsen",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Mary-Kate%20Olsen",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5a4c0a7b-aa4b-437b-b286-be7564b3bc6b",
+    "brandName": "Ashley Olsen",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Ashley%20Olsen",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b649594e-8af3-4dc0-99d6-d8c7a5941de9",
+    "brandName": "Marine Serre",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Marine%20Serre",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b31b6191-76f4-4429-bf5c-40dbb9b5bd37",
+    "brandName": "Rick Owens",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Rick%20Owens",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "78ef9113-a3c1-408f-8908-0badb95402fc",
+    "brandName": "Simone Rocha",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 2024,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Simone%20Rocha",
+            "confidence": 0.5,
+            "startYear": 2024
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "fc7d4f8f-5520-40f0-a158-f0b5453661e6",
+    "brandName": "Grace Wales Bonner",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 2025,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Grace%20Wales%20Bonner",
+            "confidence": 0.5,
+            "startYear": 2025
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "8fe9e929-f550-4fe7-b327-4a42ba602a75",
+    "brandName": "Simon Porte Jacquemus",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Simon%20Porte%20Jacquemus",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2ca93914-44b1-4083-b4df-28232bf482a1",
+    "brandName": "Ditte Reffstrup",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Ditte%20Reffstrup",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d43f160b-d577-463a-b0b6-71a67b6ebf88",
+    "brandName": "Renzo Rosso",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Renzo%20Rosso",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "78234c88-06a5-409f-ae41-4abdcc972465",
+    "brandName": "Frans Truelsen",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Frans%20Truelsen",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "27f878f5-c9b3-4831-9931-2b47281320b7",
+    "brandName": "Martin Margiela",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Martin%20Margiela",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "714bf26c-d0c5-402f-bf2f-14c6fa7595be",
+    "brandName": "Nicolaj Reffstrup",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Nicolaj%20Reffstrup",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ab4471a8-4a31-4d24-a158-2a9d9a74fb97",
+    "brandName": "Consuelo Castiglioni",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Consuelo%20Castiglioni",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "437a61b3-b523-41dd-a450-8a6b4bb8c6d1",
+    "brandName": "Francesco Risso",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Francesco%20Risso",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "10b1de71-4277-41b3-94a7-498039c0c7e4",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jil%20Sander",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cf277321-35bd-4d8e-b61f-a20233aaf592",
+    "brandName": "John Galliano",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=John%20Galliano",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "82e3a369-7d6b-4cca-b586-cccd1b096412",
+    "brandName": "Luke Meier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Luke%20Meier",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f1f5dc7a-5d40-42e6-bfc4-e66728731ac6",
+    "brandName": "Lucie Meier",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Lucie%20Meier",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "550243ee-4479-46a8-8f58-bc7d93be7855",
+    "brandName": "Glenn Martens",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "creative director",
+        "startYear": 0,
+        "confidence": 0.5,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Glenn%20Martens",
+            "confidence": 0.5,
+            "role": "creative director"
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9220d16d-b39d-4a64-a75c-36b681e1f360",
+    "brandName": "Rei Kawakubo",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Rei%20Kawakubo",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "99227e49-6ef6-4ccf-8fbf-0c78cef03aad",
+    "brandName": "Yohji Yamamoto",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Yohji%20Yamamoto",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d9319dcd-d721-4b4e-b6b9-a1c67d50ccb0",
+    "brandName": "Jun Takahashi",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Jun%20Takahashi",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f1eb36f0-c268-4f94-954a-cd24f1059372",
+    "brandName": "Nigo",
+    "tenures": [
+      {
+        "designerId": "",
+        "designerName": "",
+        "role": "",
+        "startYear": 0,
+        "confidence": 0.1,
+        "sources": [
+          {
+            "name": "Business of Fashion",
+            "url": "https://www.businessoffashion.com/search/?q=Nigo",
+            "confidence": 0.1
+          }
+        ],
+        "verificationStatus": "pending"
+      }
+    ]
   }
 ]
