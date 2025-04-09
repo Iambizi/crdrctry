@@ -981,29 +981,6 @@
       "updatedAt": "2025-04-09T02:53:33.918Z"
     },
     {
-      "id": "5f49ddd6-c1a3-4005-8c82-fe90b91ca48b",
-      "name": "Brioni",
-      "foundedYear": 1945,
-      "founder": "Nazareno Fonticoli",
-      "parentCompany": "Kering",
-      "headquarters": "Rome, Italy",
-      "specialties": [
-        "Menswear",
-        "Tailoring",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "brioni.com",
-      "social_media": {
-        "instagram": "brioni_official"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
       "id": "b3910e42-571d-4f9f-8076-31e69b35e66a",
       "name": "Chanel",
       "foundedYear": 1910,

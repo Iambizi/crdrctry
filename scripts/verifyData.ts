@@ -52,7 +52,23 @@ function verifyData(): VerificationResult {
 
     // Check if brand has any designers
     const brandTenures = fashionGenealogyData.tenures.filter(t => t.brandId === brand.id);
-    if (brandTenures.length === 0) {
+    const brandRelationships = fashionGenealogyData.relationships.filter(r => r.brandId === brand.id);
+    const designerIds = new Set([
+      ...brandTenures.map(t => t.designerId),
+      ...brandRelationships.map(r => r.sourceDesignerId),
+      ...brandRelationships.map(r => r.targetDesignerId)
+    ]);
+    
+    // Debug logging
+    if (brand.name === "Brioni") {
+      console.log("Brioni debug:");
+      console.log("Brand ID:", brand.id);
+      console.log("Tenures found:", brandTenures.length);
+      console.log("Relationships found:", brandRelationships.length);
+      console.log("Designer IDs:", Array.from(designerIds));
+    }
+    
+    if (designerIds.size === 0) {
       result.warnings.push(`Brand ${brand.name} has no associated designers`);
       result.stats.brandsWithoutDesigners.push(brand.name);
     }
