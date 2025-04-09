@@ -56,14 +56,28 @@ export interface Brand extends BaseEntity {
   };
 }
 
+export enum Department {
+  JEWELRY = "Jewelry",
+  WATCHES = "Watches",
+  READY_TO_WEAR = "Ready-to-Wear",
+  ACCESSORIES = "Accessories",
+  LEATHER_GOODS = "Leather Goods",
+  MENSWEAR = "Menswear",
+  WOMENSWEAR = "Womenswear",
+  HAUTE_COUTURE = "Haute Couture",
+  ALL_DEPARTMENTS = "All Departments"
+}
+
 export interface Tenure extends BaseEntity {
   designerId: string;
   brandId: string;
   role: string;
+  department?: Department;
   startYear: number;
   endYear?: number;
   isCurrentRole: boolean;
   achievements?: string[];
+  notableWorks?: string[];
   notable_collections?: string[];
   impact_description?: string;
 }
@@ -78,4 +92,31 @@ export interface Relationship extends BaseEntity {
   description?: string;
   impact?: string;
   collaboration_projects?: string[];
+}
+
+export interface EnrichedDesigner {
+  name: string;
+  tenures: Array<{
+    brand: string;
+    role: string;
+    startYear: number;
+    endYear: number | null;
+    achievements?: string[];
+    confidence: number;
+  }>;
+}
+
+export interface EnrichedBrandDesigner {
+  name: string;
+  role: string;
+  department?: Department;
+  startYear: number;
+  endYear: number | null;
+  notableWorks?: string[];
+  confidence: number;
+}
+
+export interface EnrichedBrand {
+  name: string;
+  designers: EnrichedBrandDesigner[];
 }

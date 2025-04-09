@@ -1,0 +1,564 @@
+{
+  "designers": [
+    {
+      "name": "Georges Vuitton",
+      "tenures": [
+        {
+          "brand": "Louis Vuitton",
+          "role": "Family Business Leader & Executive",
+          "startYear": 1892,
+          "endYear": 1936,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Nicolas Ghesquière",
+      "tenures": [
+        {
+          "brand": "Balenciaga",
+          "role": "Creative Director",
+          "startYear": 1997,
+          "endYear": 2012,
+          "confidence": 0.9
+        },
+        {
+          "brand": "Louis Vuitton",
+          "role": "Creative Director",
+          "startYear": 2013,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Aldo Gucci",
+      "tenures": [
+        {
+          "brand": "Gucci",
+          "role": "Co-founder & Executive",
+          "startYear": 1953,
+          "endYear": 1983,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Maurizio Gucci",
+      "tenures": [
+        {
+          "brand": "Gucci",
+          "role": "CEO & Chairman",
+          "startYear": 1988,
+          "endYear": 1993,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Alber Elbaz",
+      "tenures": [
+        {
+          "brand": "Lanvin",
+          "role": "Creative Director",
+          "startYear": 2001,
+          "endYear": 2015,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Tom Ford",
+      "tenures": [
+        {
+          "brand": "Gucci",
+          "role": "Creative Director",
+          "startYear": 1994,
+          "endYear": 2004,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Hedi Slimane",
+      "tenures": [
+        {
+          "brand": "Dior Homme",
+          "role": "Creative Director",
+          "startYear": 2000,
+          "endYear": 2007,
+          "confidence": 0.9
+        },
+        {
+          "brand": "Celine",
+          "role": "Creative Director",
+          "startYear": 2018,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Karl Lagerfeld",
+      "tenures": [
+        {
+          "brand": "Chanel",
+          "role": "Creative Director",
+          "startYear": 1983,
+          "endYear": 2019,
+          "confidence": 0.9
+        },
+        {
+          "brand": "Fendi",
+          "role": "Creative Director",
+          "startYear": 1965,
+          "endYear": 2018,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "John Galliano",
+      "tenures": [
+        {
+          "brand": "Dior",
+          "role": "Creative Director",
+          "startYear": 1996,
+          "endYear": 2011,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Raf Simons",
+      "tenures": [
+        {
+          "brand": "Christian Dior",
+          "role": "Creative Director",
+          "startYear": 2012,
+          "endYear": 2015,
+          "confidence": 0.9
+        },
+        {
+          "brand": "Calvin Klein",
+          "role": "Chief Creative Officer",
+          "startYear": 2016,
+          "endYear": 2018,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Stuart Vevers",
+      "tenures": [
+        {
+          "brand": "Loewe",
+          "role": "Creative Director",
+          "startYear": 2013,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Michael Kors",
+      "tenures": [
+        {
+          "brand": "Michael Kors",
+          "role": "Founder & Creative Director",
+          "startYear": 1981,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Renzo Rosso",
+      "tenures": [
+        {
+          "brand": "Diesel",
+          "role": "Founder & Creative Director",
+          "startYear": 1978,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Martin Margiela",
+      "tenures": [
+        {
+          "brand": "Maison Martin Margiela",
+          "role": "Head Designer & Creative Director",
+          "startYear": 1988,
+          "endYear": 2009,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Consuelo Castiglioni",
+      "tenures": [
+        {
+          "brand": "Marni",
+          "role": "Co-founder & Creative Director",
+          "startYear": 1994,
+          "endYear": 2016,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Francesco Risso",
+      "tenures": [
+        {
+          "brand": "Marni",
+          "role": "Creative Director",
+          "startYear": 2017,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Jil Sander",
+      "tenures": [
+        {
+          "brand": "Jil Sander",
+          "role": "Founder & Lead Designer",
+          "startYear": 1968,
+          "endYear": 2000,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Rei Kawakubo",
+      "tenures": [
+        {
+          "brand": "Comme des Garçons",
+          "role": "Founder & Creative Director",
+          "startYear": 1969,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Yohji Yamamoto",
+      "tenures": [
+        {
+          "brand": "Yohji Yamamoto",
+          "role": "Founder & Creative Director",
+          "startYear": 1972,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Jun Takahashi",
+      "tenures": [
+        {
+          "brand": "Undercover",
+          "role": "Founder & Creative Director",
+          "startYear": 1993,
+          "endYear": null,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Glenn Martens",
+      "tenures": [
+        {
+          "brand": "Y/Project",
+          "role": "Creative Director",
+          "startYear": 2017,
+          "endYear": null,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Nigo",
+      "tenures": [
+        {
+          "brand": "A Bathing Ape",
+          "role": "Founder & Creative Director",
+          "startYear": 1993,
+          "endYear": 2013,
+          "confidence": 0.5
+        }
+      ]
+    }
+  ],
+  "brands": [
+    {
+      "name": "Marc Jacobs",
+      "designers": [
+        {
+          "name": "Marc Jacobs",
+          "role": "Founder & Creative Director",
+          "startYear": 1984,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Peter Do",
+      "designers": [
+        {
+          "name": "Peter Do",
+          "role": "Founder & Creative Director",
+          "startYear": 2018,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Lemaire",
+      "designers": [
+        {
+          "name": "Christophe Lemaire",
+          "role": "Founder & Creative Director",
+          "startYear": 2011,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Fear of God",
+      "designers": [
+        {
+          "name": "Jerry Lorenzo",
+          "role": "Founder & Creative Director",
+          "startYear": 2012,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Bode",
+      "designers": [
+        {
+          "name": "Emily Adams Bode",
+          "role": "Founder & Creative Director",
+          "startYear": 2016,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Alexander McQueen",
+      "designers": [
+        {
+          "name": "Alexander McQueen",
+          "role": "Founder & Creative Director",
+          "startYear": 1992,
+          "endYear": 2010,
+          "confidence": 0.9
+        },
+        {
+          "name": "Sarah Burton",
+          "role": "Creative Director",
+          "startYear": 2010,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Lanvin",
+      "designers": [
+        {
+          "name": "Alber Elbaz",
+          "role": "Creative Director",
+          "startYear": 2001,
+          "endYear": 2015,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Ferragamo",
+      "designers": [
+        {
+          "name": "Salvatore Ferragamo",
+          "role": "Founder & Original Designer",
+          "startYear": 1927,
+          "endYear": 1960,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Moschino",
+      "designers": [
+        {
+          "name": "Franco Moschino",
+          "role": "Founder & Creative Director",
+          "startYear": 1983,
+          "endYear": 1994,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Comme des Garçons",
+      "designers": [
+        {
+          "name": "Rei Kawakubo",
+          "role": "Founder & Creative Director",
+          "startYear": 1969,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Issey Miyake",
+      "designers": [
+        {
+          "name": "Issey Miyake",
+          "role": "Founder & Creative Director",
+          "startYear": 1970,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Undercover",
+      "designers": [
+        {
+          "name": "Jun Takahashi",
+          "role": "Founder & Creative Director",
+          "startYear": 1993,
+          "endYear": null,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "A Bathing Ape",
+      "designers": [
+        {
+          "name": "Nigo",
+          "role": "Founder & Creative Director",
+          "startYear": 1993,
+          "endYear": 2013,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Y/Project",
+      "designers": [
+        {
+          "name": "Glenn Martens",
+          "role": "Creative Director",
+          "startYear": 2017,
+          "endYear": null,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Dolce & Gabbana",
+      "designers": [
+        {
+          "name": "Domenico Dolce",
+          "role": "Co-founder & Creative Director",
+          "startYear": 1985,
+          "endYear": null,
+          "confidence": 0.9
+        },
+        {
+          "name": "Stefano Gabbana",
+          "role": "Co-founder & Creative Director",
+          "startYear": 1985,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Mugler",
+      "designers": [
+        {
+          "name": "Thierry Mugler",
+          "role": "Founder & Creative Director",
+          "startYear": 1973,
+          "endYear": 2002,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Vetements",
+      "designers": [
+        {
+          "name": "Demna Gvasalia",
+          "role": "Creative Director",
+          "startYear": 2014,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Helmut Lang",
+      "designers": [
+        {
+          "name": "Helmut Lang",
+          "role": "Founder & Creative Director",
+          "startYear": 1986,
+          "endYear": 2005,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Ann Demeulemeester",
+      "designers": [
+        {
+          "name": "Ann Demeulemeester",
+          "role": "Founder & Creative Director",
+          "startYear": 1985,
+          "endYear": 2000,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Vivienne Westwood",
+      "designers": [
+        {
+          "name": "Vivienne Westwood",
+          "role": "Founder & Creative Director",
+          "startYear": 1971,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Walter Van Beirendonck",
+      "designers": [
+        {
+          "name": "Walter Van Beirendonck",
+          "role": "Founder & Creative Director",
+          "startYear": 1985,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ]
+    }
+  ]
+}
