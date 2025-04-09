@@ -142,8 +142,20 @@ async function generateEnrichmentSuggestions(): Promise<
     }
 
     for (const tenure of enrichedDesigner.tenures) {
-      const brand = genealogyData.brands.find((b) => b.name === tenure.brand);
-      if (!brand) continue;
+      // Find or create brand
+      let brand = genealogyData.brands.find((b) => b.name === tenure.brand);
+      if (!brand) {
+        const now = new Date();
+        brand = {
+          id: uuidv4(),
+          name: tenure.brand,
+          foundedYear: tenure.startYear, // Use the tenure start year as an approximation
+          founder: enrichedDesigner.name, // If the designer's tenure starts at the founding year, they're likely the founder
+          createdAt: now,
+          updatedAt: now,
+        };
+        genealogyData.brands.push(brand);
+      }
 
       const now = new Date();
 
@@ -203,15 +215,15 @@ async function generateEnrichmentSuggestions(): Promise<
 
       // Update status
       const status: EnrichmentStatus = {
-        entityId: existingDesigner.id,
-        entityName: enrichedDesigner.name,
-        entityType: "designer",
+        entityId: brand.id,
+        entityName: brand.name,
+        entityType: "brand",
         status: "pending",
         timestamp: new Date().toISOString(),
       };
 
       const existingStatusIndex = statusTracker.findIndex(
-        (s) => s.entityId === existingDesigner.id
+        (s) => s.entityId === brand.id
       );
       if (existingStatusIndex !== -1) {
         statusTracker[existingStatusIndex] = status;

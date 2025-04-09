@@ -317,6 +317,170 @@
           "confidence": 0.5
         }
       ]
+    },
+    {
+      "name": "Luke Meier",
+      "tenures": [
+        {
+          "brand": "Supreme",
+          "role": "Design Director",
+          "department": "Menswear",
+          "startYear": 2004,
+          "endYear": 2014,
+          "achievements": [
+            "Helped develop Supreme's iconic streetwear aesthetic",
+            "Expanded product range while maintaining brand identity",
+            "Oversaw period of significant brand growth and global recognition",
+            "Contributed to Supreme's influential position in streetwear"
+          ],
+          "confidence": 0.8
+        },
+        {
+          "brand": "OAMC (Over All Master Cloth)",
+          "role": "Co-Founder and Creative Director",
+          "department": "Menswear",
+          "startYear": 2013,
+          "endYear": null,
+          "achievements": [
+            "Created luxury menswear brand blending streetwear with high-end tailoring",
+            "Developed technical innovations in menswear construction",
+            "Established reputation for minimalist, military-influenced aesthetic",
+            "Successfully positioned brand between streetwear and luxury"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "brand": "Jil Sander",
+          "role": "Co-Creative Director",
+          "department": "All Departments",
+          "startYear": 2017,
+          "endYear": null,
+          "achievements": [
+            "Revitalized Jil Sander with fresh minimalist approach",
+            "Successfully balanced house codes with contemporary relevance",
+            "Expanded accessories and footwear offerings",
+            "Brought technical expertise from streetwear to luxury context",
+            "Created cohesive vision alongside wife Lucie Meier"
+          ],
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Lucie Meier",
+      "tenures": [
+        {
+          "brand": "Louis Vuitton",
+          "role": "Designer",
+          "department": "Womenswear",
+          "startYear": 2005,
+          "endYear": 2008,
+          "achievements": [
+            "Worked under Marc Jacobs during influential period",
+            "Contributed to ready-to-wear collections",
+            "Early career development at major luxury house"
+          ],
+          "confidence": 0.7
+        },
+        {
+          "brand": "Balenciaga",
+          "role": "Designer",
+          "department": "Womenswear",
+          "startYear": 2008,
+          "endYear": 2011,
+          "achievements": [
+            "Worked under Nicolas Ghesquière",
+            "Contributed to critically acclaimed collections",
+            "Developed expertise in architectural silhouettes"
+          ],
+          "confidence": 0.7
+        },
+        {
+          "brand": "Dior",
+          "role": "Head Designer of Women's Collections",
+          "department": "Womenswear",
+          "startYear": 2014,
+          "endYear": 2016,
+          "achievements": [
+            "Worked under Raf Simons initially",
+            "Part of interim design team after Simons' departure",
+            "Co-responsible for collections with Serge Ruffieux before Maria Grazia Chiuri",
+            "Maintained house aesthetic during transitional period"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "brand": "Jil Sander",
+          "role": "Co-Creative Director",
+          "department": "All Departments",
+          "startYear": 2017,
+          "endYear": null,
+          "achievements": [
+            "Brought womenswear expertise to complement husband Luke Meier's background",
+            "Created sophisticated, refined collections respecting Jil Sander's minimalist legacy",
+            "Introduced softer elements while maintaining architectural precision",
+            "Successfully modernized the brand for contemporary audience",
+            "Expanded brand offerings while maintaining design coherence"
+          ],
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Gaston-Louis Vuitton",
+      "tenures": [
+        {
+          "brand": "Louis Vuitton",
+          "role": "Director",
+          "department": "All Departments",
+          "startYear": 1936,
+          "endYear": 1970,
+          "achievements": [
+            "Third generation of the Vuitton family to lead the company",
+            "Expanded product offerings beyond luggage and trunks",
+            "Notable collector of travel-related objects that influenced designs",
+            "Developed the iconic LV Monogram Canvas, building on his father's work",
+            "Created the Steamer Bag, an early predecessor to the modern tote",
+            "Oversaw international expansion during post-war period"
+          ],
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Takahiro Miyashita",
+      "tenures": [
+        {
+          "brand": "Number Nine",
+          "role": "Founder and Designer",
+          "department": "Menswear",
+          "startYear": 1996,
+          "endYear": 2009,
+          "achievements": [
+            "Hybrid rock-inspired collections with punk and grunge influences",
+            "Touch Me I'm Sick collection (2006)",
+            "The High Streets collection (2003)",
+            "Groundbreaking denim processing techniques",
+            "Revolution final collection (2009)"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "brand": "The Soloist",
+          "role": "Founder and Designer",
+          "department": "Menswear",
+          "startYear": 2010,
+          "endYear": null,
+          "achievements": [
+            "Experimental silhouettes with technical detailing",
+            "Seasonal collections named with sequential 's' designations",
+            "Collaboration with Salomon footwear",
+            "Revolutionary garment construction techniques",
+            "Famous 'Alternative' collection with Johnny Depp imagery"
+          ],
+          "confidence": 0.9
+        }
+      ]
     }
   ],
   "brands": [
