@@ -85,14 +85,48 @@ async function generateEnrichmentSuggestions(): Promise<
   );
 
   // Load and prepare to update the main dataset
-  const genealogyData = { ...fashionGenealogyData };
+  const genealogyData = {
+    ...fashionGenealogyData,
+    designers: [...fashionGenealogyData.designers],
+    brands: [...fashionGenealogyData.brands],
+    tenures: [...fashionGenealogyData.tenures],
+    relationships: [...fashionGenealogyData.relationships],
+  };
 
   // Process designer tenures from enriched data
   for (const enrichedDesigner of enrichedData.designers as EnrichedDesigner[]) {
-    const designer = genealogyData.designers.find(
+    // Find all instances of this designer and merge them
+    const existingDesigners = genealogyData.designers.filter(
       (d) => d.name === enrichedDesigner.name
     );
-    let existingDesigner = designer;
+
+    let existingDesigner: typeof genealogyData.designers[0] | undefined;
+    if (existingDesigners.length > 0) {
+      // Keep the first instance and remove others
+      const designer = existingDesigners[0];
+      existingDesigner = designer;
+      
+      // Remove duplicate designers
+      genealogyData.designers = genealogyData.designers.filter(
+        (d) => d.name !== enrichedDesigner.name || d.id === designer.id
+      );
+
+      // Update all references to use the kept designer's ID
+      for (const duplicate of existingDesigners.slice(1)) {
+        // Update tenure references
+        genealogyData.tenures = genealogyData.tenures.map((t) => ({
+          ...t,
+          designerId: t.designerId === duplicate.id ? designer.id : t.designerId
+        }));
+
+        // Update relationship references
+        genealogyData.relationships = genealogyData.relationships.map((r) => ({
+          ...r,
+          sourceDesignerId: r.sourceDesignerId === duplicate.id ? designer.id : r.sourceDesignerId,
+          targetDesignerId: r.targetDesignerId === duplicate.id ? designer.id : r.targetDesignerId
+        }));
+      }
+    }
 
     if (!existingDesigner) {
       const now = new Date();
@@ -116,9 +150,10 @@ async function generateEnrichmentSuggestions(): Promise<
       // Create tenure in main dataset
       const newTenure: Tenure = {
         id: uuidv4(),
-        brandId: brand.id,
         designerId: existingDesigner.id,
+        brandId: brand.id,
         role: tenure.role,
+        department: tenure.department as Department,
         startYear: tenure.startYear,
         endYear: tenure.endYear || undefined,
         isCurrentRole: !tenure.endYear,
@@ -153,6 +188,7 @@ async function generateEnrichmentSuggestions(): Promise<
             designerId: existingDesigner.id,
             designerName: enrichedDesigner.name,
             role: tenure.role,
+            department: tenure.department,
             startYear: tenure.startYear,
             endYear: tenure.endYear || undefined,
             achievements: tenure.achievements,
@@ -217,8 +253,8 @@ async function generateEnrichmentSuggestions(): Promise<
       // Create tenure in main dataset
       const newTenure: Tenure = {
         id: uuidv4(),
-        brandId: brand.id,
         designerId: existingDesigner.id,
+        brandId: brand.id,
         role: designer.role,
         department: designer.department as Department,
         startYear: designer.startYear,

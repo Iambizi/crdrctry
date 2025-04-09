@@ -6183,5 +6183,4069 @@
         "verificationStatus": "pending"
       }
     ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "d0821baa-badf-48a1-b9c8-82e1a214d7cf",
+        "designerName": "Georges Vuitton",
+        "role": "Family Business Leader & Executive",
+        "startYear": 1892,
+        "endYear": 1936,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c2bb89a5-6296-4594-bbd8-5f5fc8bf31c2",
+    "brandName": "Balenciaga",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "startYear": 1997,
+        "endYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "049ae4ec-e665-49cb-b89b-bbb929ed39c0",
+        "designerName": "Aldo Gucci",
+        "role": "Co-founder & Executive",
+        "startYear": 1953,
+        "endYear": 1983,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "ceced058-cf96-4cfe-a182-871f344705b6",
+        "designerName": "Maurizio Gucci",
+        "role": "CEO & Chairman",
+        "startYear": 1988,
+        "endYear": 1993,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "14abc2b2-396f-47f9-8307-a944d1f39fe0",
+        "designerName": "Tom Ford",
+        "role": "Creative Director",
+        "startYear": 1994,
+        "endYear": 2004,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bb23c533-8f65-4fc0-8c5f-4e662a85b29d",
+    "brandName": "Celine",
+    "tenures": [
+      {
+        "designerId": "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2",
+        "designerName": "Hedi Slimane",
+        "role": "Creative Director",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b3910e42-571d-4f9f-8076-31e69b35e66a",
+    "brandName": "Chanel",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "startYear": 1983,
+        "endYear": 2019,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f63cb98-35e6-47c7-bfac-4a416807ea0d",
+    "brandName": "Fendi",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "startYear": 1965,
+        "endYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ef9b2053-025b-400b-9262-3b856333eeb5",
+    "brandName": "Loewe",
+    "tenures": [
+      {
+        "designerId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
+        "designerName": "Stuart Vevers",
+        "role": "Creative Director",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c3a86baa-2e54-4757-a72c-9bc60a6c04e4",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "50ea08be-7956-4f6d-b544-b9ac8971b959",
+        "designerName": "Michael Kors",
+        "role": "Founder & Creative Director",
+        "startYear": 1981,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4390d41f-af38-4b67-8933-29ab902a97c3",
+    "brandName": "Diesel",
+    "tenures": [
+      {
+        "designerId": "473db2d1-1841-48f5-9209-e7859a4674d0",
+        "designerName": "Renzo Rosso",
+        "role": "Founder & Creative Director",
+        "startYear": 1978,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "3029baf9-16fe-45e1-abeb-f4df6343a414",
+        "designerName": "Consuelo Castiglioni",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1994,
+        "endYear": 2016,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "0a98f4fd-d607-47ce-81ce-76ca2d892d61",
+        "designerName": "Francesco Risso",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e3c29fc8-df3b-4f84-ab38-24cec99042b8",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "1e475018-82ab-42aa-a30c-2690e8e0a952",
+        "designerName": "Jil Sander",
+        "role": "Founder & Lead Designer",
+        "startYear": 1968,
+        "endYear": 2000,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
+    "brandName": "Marc Jacobs",
+    "tenures": [
+      {
+        "designerId": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
+        "designerName": "Marc Jacobs",
+        "role": "Founder & Creative Director",
+        "startYear": 1984,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2466ef4d-d7f7-4aaf-a90c-48b1b5040d1d",
+    "brandName": "Peter Do",
+    "tenures": [
+      {
+        "designerId": "1a772d69-b073-446d-9663-ea5126a0d5a1",
+        "designerName": "Peter Do",
+        "role": "Founder & Creative Director",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9c6545c3-92d9-49c3-97e0-f380595f269e",
+    "brandName": "Lemaire",
+    "tenures": [
+      {
+        "designerId": "33248d72-602b-4ef4-8608-625292369b0f",
+        "designerName": "Christophe Lemaire",
+        "role": "Founder & Creative Director",
+        "startYear": 2011,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d54884e0-d729-4927-becb-69e48351b417",
+    "brandName": "Fear of God",
+    "tenures": [
+      {
+        "designerId": "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb",
+        "designerName": "Jerry Lorenzo",
+        "role": "Founder & Creative Director",
+        "startYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5f69b00f-dbe3-405a-a870-40f7120522f9",
+    "brandName": "Bode",
+    "tenures": [
+      {
+        "designerId": "866e28ed-97a5-462c-a36a-5d1fb0c8396f",
+        "designerName": "Emily Adams Bode",
+        "role": "Founder & Creative Director",
+        "startYear": 2016,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "dda55774-a2ce-4a3d-8c58-583c216b730a",
+        "designerName": "Alexander McQueen",
+        "role": "Founder & Creative Director",
+        "startYear": 1992,
+        "endYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
+        "designerName": "Sarah Burton",
+        "role": "Creative Director",
+        "startYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b5bfbf33-feea-412b-9b5d-1f0b1b680b29",
+    "brandName": "Ferragamo",
+    "tenures": [
+      {
+        "designerId": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
+        "designerName": "Salvatore Ferragamo",
+        "role": "Founder & Original Designer",
+        "startYear": 1927,
+        "endYear": 1960,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "458244eb-d50c-4604-b1d3-041dd9121738",
+    "brandName": "Moschino",
+    "tenures": [
+      {
+        "designerId": "1dd57296-e0d1-41d3-8551-be79597b40aa",
+        "designerName": "Franco Moschino",
+        "role": "Founder & Creative Director",
+        "startYear": 1983,
+        "endYear": 1994,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "07da85b5-961b-4454-a42c-ce2ed1948dfc",
+    "brandName": "Issey Miyake",
+    "tenures": [
+      {
+        "designerId": "0e0d4241-6dba-4874-a971-3268fee55897",
+        "designerName": "Issey Miyake",
+        "role": "Founder & Creative Director",
+        "startYear": 1970,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "f0a34c65-a960-4932-b0f4-b1a733cdd7ed",
+        "designerName": "Domenico Dolce",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "443ee067-2213-4307-9671-c19e09bf21d4",
+        "designerName": "Stefano Gabbana",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+    "brandName": "Mugler",
+    "tenures": [
+      {
+        "designerId": "04328830-5606-4cd5-b88f-7bc874623767",
+        "designerName": "Thierry Mugler",
+        "role": "Founder & Creative Director",
+        "startYear": 1973,
+        "endYear": 2002,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d21c5e34-9209-406c-9613-90ff51bccb16",
+    "brandName": "Vetements",
+    "tenures": [
+      {
+        "designerId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
+        "designerName": "Demna Gvasalia",
+        "role": "Creative Director",
+        "startYear": 2014,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cdf1f5a5-6061-4fce-801c-b7b6c577b0d5",
+    "brandName": "Helmut Lang",
+    "tenures": [
+      {
+        "designerId": "b780392f-3fbf-475d-8291-4b05be489529",
+        "designerName": "Helmut Lang",
+        "role": "Founder & Creative Director",
+        "startYear": 1986,
+        "endYear": 2005,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5c87366b-feba-47ed-9955-ba8f5bdd48a1",
+    "brandName": "Ann Demeulemeester",
+    "tenures": [
+      {
+        "designerId": "c94c8b03-b1bc-401b-86d6-8a48c9caddb3",
+        "designerName": "Ann Demeulemeester",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "endYear": 2000,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "54fa24ed-6e35-4436-aa6e-72e8aa42a701",
+    "brandName": "Vivienne Westwood",
+    "tenures": [
+      {
+        "designerId": "d03976f7-28a2-492b-b8cd-10ea2e56a272",
+        "designerName": "Vivienne Westwood",
+        "role": "Founder & Creative Director",
+        "startYear": 1971,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "fc04c2e8-53f9-4ab2-bba9-ece8923b0d76",
+    "brandName": "Walter Van Beirendonck",
+    "tenures": [
+      {
+        "designerId": "2084a058-5a10-4083-bbcf-ed574a6e0bce",
+        "designerName": "Walter Van Beirendonck",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "d0821baa-badf-48a1-b9c8-82e1a214d7cf",
+        "designerName": "Georges Vuitton",
+        "role": "Family Business Leader & Executive",
+        "startYear": 1892,
+        "endYear": 1936,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c2bb89a5-6296-4594-bbd8-5f5fc8bf31c2",
+    "brandName": "Balenciaga",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "startYear": 1997,
+        "endYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "049ae4ec-e665-49cb-b89b-bbb929ed39c0",
+        "designerName": "Aldo Gucci",
+        "role": "Co-founder & Executive",
+        "startYear": 1953,
+        "endYear": 1983,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "ceced058-cf96-4cfe-a182-871f344705b6",
+        "designerName": "Maurizio Gucci",
+        "role": "CEO & Chairman",
+        "startYear": 1988,
+        "endYear": 1993,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "14abc2b2-396f-47f9-8307-a944d1f39fe0",
+        "designerName": "Tom Ford",
+        "role": "Creative Director",
+        "startYear": 1994,
+        "endYear": 2004,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bb23c533-8f65-4fc0-8c5f-4e662a85b29d",
+    "brandName": "Celine",
+    "tenures": [
+      {
+        "designerId": "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2",
+        "designerName": "Hedi Slimane",
+        "role": "Creative Director",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b3910e42-571d-4f9f-8076-31e69b35e66a",
+    "brandName": "Chanel",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "startYear": 1983,
+        "endYear": 2019,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f63cb98-35e6-47c7-bfac-4a416807ea0d",
+    "brandName": "Fendi",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "startYear": 1965,
+        "endYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ef9b2053-025b-400b-9262-3b856333eeb5",
+    "brandName": "Loewe",
+    "tenures": [
+      {
+        "designerId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
+        "designerName": "Stuart Vevers",
+        "role": "Creative Director",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c3a86baa-2e54-4757-a72c-9bc60a6c04e4",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "50ea08be-7956-4f6d-b544-b9ac8971b959",
+        "designerName": "Michael Kors",
+        "role": "Founder & Creative Director",
+        "startYear": 1981,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4390d41f-af38-4b67-8933-29ab902a97c3",
+    "brandName": "Diesel",
+    "tenures": [
+      {
+        "designerId": "473db2d1-1841-48f5-9209-e7859a4674d0",
+        "designerName": "Renzo Rosso",
+        "role": "Founder & Creative Director",
+        "startYear": 1978,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "3029baf9-16fe-45e1-abeb-f4df6343a414",
+        "designerName": "Consuelo Castiglioni",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1994,
+        "endYear": 2016,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "0a98f4fd-d607-47ce-81ce-76ca2d892d61",
+        "designerName": "Francesco Risso",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e3c29fc8-df3b-4f84-ab38-24cec99042b8",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "1e475018-82ab-42aa-a30c-2690e8e0a952",
+        "designerName": "Jil Sander",
+        "role": "Founder & Lead Designer",
+        "startYear": 1968,
+        "endYear": 2000,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
+    "brandName": "Marc Jacobs",
+    "tenures": [
+      {
+        "designerId": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
+        "designerName": "Marc Jacobs",
+        "role": "Founder & Creative Director",
+        "startYear": 1984,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2466ef4d-d7f7-4aaf-a90c-48b1b5040d1d",
+    "brandName": "Peter Do",
+    "tenures": [
+      {
+        "designerId": "1a772d69-b073-446d-9663-ea5126a0d5a1",
+        "designerName": "Peter Do",
+        "role": "Founder & Creative Director",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9c6545c3-92d9-49c3-97e0-f380595f269e",
+    "brandName": "Lemaire",
+    "tenures": [
+      {
+        "designerId": "33248d72-602b-4ef4-8608-625292369b0f",
+        "designerName": "Christophe Lemaire",
+        "role": "Founder & Creative Director",
+        "startYear": 2011,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d54884e0-d729-4927-becb-69e48351b417",
+    "brandName": "Fear of God",
+    "tenures": [
+      {
+        "designerId": "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb",
+        "designerName": "Jerry Lorenzo",
+        "role": "Founder & Creative Director",
+        "startYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5f69b00f-dbe3-405a-a870-40f7120522f9",
+    "brandName": "Bode",
+    "tenures": [
+      {
+        "designerId": "866e28ed-97a5-462c-a36a-5d1fb0c8396f",
+        "designerName": "Emily Adams Bode",
+        "role": "Founder & Creative Director",
+        "startYear": 2016,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "dda55774-a2ce-4a3d-8c58-583c216b730a",
+        "designerName": "Alexander McQueen",
+        "role": "Founder & Creative Director",
+        "startYear": 1992,
+        "endYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
+        "designerName": "Sarah Burton",
+        "role": "Creative Director",
+        "startYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b5bfbf33-feea-412b-9b5d-1f0b1b680b29",
+    "brandName": "Ferragamo",
+    "tenures": [
+      {
+        "designerId": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
+        "designerName": "Salvatore Ferragamo",
+        "role": "Founder & Original Designer",
+        "startYear": 1927,
+        "endYear": 1960,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "458244eb-d50c-4604-b1d3-041dd9121738",
+    "brandName": "Moschino",
+    "tenures": [
+      {
+        "designerId": "1dd57296-e0d1-41d3-8551-be79597b40aa",
+        "designerName": "Franco Moschino",
+        "role": "Founder & Creative Director",
+        "startYear": 1983,
+        "endYear": 1994,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "07da85b5-961b-4454-a42c-ce2ed1948dfc",
+    "brandName": "Issey Miyake",
+    "tenures": [
+      {
+        "designerId": "0e0d4241-6dba-4874-a971-3268fee55897",
+        "designerName": "Issey Miyake",
+        "role": "Founder & Creative Director",
+        "startYear": 1970,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "f0a34c65-a960-4932-b0f4-b1a733cdd7ed",
+        "designerName": "Domenico Dolce",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "443ee067-2213-4307-9671-c19e09bf21d4",
+        "designerName": "Stefano Gabbana",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+    "brandName": "Mugler",
+    "tenures": [
+      {
+        "designerId": "04328830-5606-4cd5-b88f-7bc874623767",
+        "designerName": "Thierry Mugler",
+        "role": "Founder & Creative Director",
+        "startYear": 1973,
+        "endYear": 2002,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d21c5e34-9209-406c-9613-90ff51bccb16",
+    "brandName": "Vetements",
+    "tenures": [
+      {
+        "designerId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
+        "designerName": "Demna Gvasalia",
+        "role": "Creative Director",
+        "startYear": 2014,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cdf1f5a5-6061-4fce-801c-b7b6c577b0d5",
+    "brandName": "Helmut Lang",
+    "tenures": [
+      {
+        "designerId": "b780392f-3fbf-475d-8291-4b05be489529",
+        "designerName": "Helmut Lang",
+        "role": "Founder & Creative Director",
+        "startYear": 1986,
+        "endYear": 2005,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5c87366b-feba-47ed-9955-ba8f5bdd48a1",
+    "brandName": "Ann Demeulemeester",
+    "tenures": [
+      {
+        "designerId": "c94c8b03-b1bc-401b-86d6-8a48c9caddb3",
+        "designerName": "Ann Demeulemeester",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "endYear": 2000,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "54fa24ed-6e35-4436-aa6e-72e8aa42a701",
+    "brandName": "Vivienne Westwood",
+    "tenures": [
+      {
+        "designerId": "d03976f7-28a2-492b-b8cd-10ea2e56a272",
+        "designerName": "Vivienne Westwood",
+        "role": "Founder & Creative Director",
+        "startYear": 1971,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "fc04c2e8-53f9-4ab2-bba9-ece8923b0d76",
+    "brandName": "Walter Van Beirendonck",
+    "tenures": [
+      {
+        "designerId": "2084a058-5a10-4083-bbcf-ed574a6e0bce",
+        "designerName": "Walter Van Beirendonck",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "d0821baa-badf-48a1-b9c8-82e1a214d7cf",
+        "designerName": "Georges Vuitton",
+        "role": "Family Business Leader & Executive",
+        "department": "All Departments",
+        "startYear": 1892,
+        "endYear": 1936,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c2bb89a5-6296-4594-bbd8-5f5fc8bf31c2",
+    "brandName": "Balenciaga",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1997,
+        "endYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "049ae4ec-e665-49cb-b89b-bbb929ed39c0",
+        "designerName": "Aldo Gucci",
+        "role": "Co-founder & Executive",
+        "department": "All Departments",
+        "startYear": 1953,
+        "endYear": 1983,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "ceced058-cf96-4cfe-a182-871f344705b6",
+        "designerName": "Maurizio Gucci",
+        "role": "CEO & Chairman",
+        "department": "All Departments",
+        "startYear": 1988,
+        "endYear": 1993,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "14abc2b2-396f-47f9-8307-a944d1f39fe0",
+        "designerName": "Tom Ford",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1994,
+        "endYear": 2004,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bb23c533-8f65-4fc0-8c5f-4e662a85b29d",
+    "brandName": "Celine",
+    "tenures": [
+      {
+        "designerId": "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2",
+        "designerName": "Hedi Slimane",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b3910e42-571d-4f9f-8076-31e69b35e66a",
+    "brandName": "Chanel",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1983,
+        "endYear": 2019,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f63cb98-35e6-47c7-bfac-4a416807ea0d",
+    "brandName": "Fendi",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1965,
+        "endYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ef9b2053-025b-400b-9262-3b856333eeb5",
+    "brandName": "Loewe",
+    "tenures": [
+      {
+        "designerId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
+        "designerName": "Stuart Vevers",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c3a86baa-2e54-4757-a72c-9bc60a6c04e4",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "50ea08be-7956-4f6d-b544-b9ac8971b959",
+        "designerName": "Michael Kors",
+        "role": "Founder & Creative Director",
+        "department": "All Departments",
+        "startYear": 1981,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4390d41f-af38-4b67-8933-29ab902a97c3",
+    "brandName": "Diesel",
+    "tenures": [
+      {
+        "designerId": "473db2d1-1841-48f5-9209-e7859a4674d0",
+        "designerName": "Renzo Rosso",
+        "role": "Founder & Creative Director",
+        "department": "All Departments",
+        "startYear": 1978,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "3029baf9-16fe-45e1-abeb-f4df6343a414",
+        "designerName": "Consuelo Castiglioni",
+        "role": "Co-founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1994,
+        "endYear": 2016,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "0a98f4fd-d607-47ce-81ce-76ca2d892d61",
+        "designerName": "Francesco Risso",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2017,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e3c29fc8-df3b-4f84-ab38-24cec99042b8",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "1e475018-82ab-42aa-a30c-2690e8e0a952",
+        "designerName": "Jil Sander",
+        "role": "Founder & Lead Designer",
+        "department": "Ready-to-Wear",
+        "startYear": 1968,
+        "endYear": 2000,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
+    "brandName": "Marc Jacobs",
+    "tenures": [
+      {
+        "designerId": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
+        "designerName": "Marc Jacobs",
+        "role": "Founder & Creative Director",
+        "startYear": 1984,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2466ef4d-d7f7-4aaf-a90c-48b1b5040d1d",
+    "brandName": "Peter Do",
+    "tenures": [
+      {
+        "designerId": "1a772d69-b073-446d-9663-ea5126a0d5a1",
+        "designerName": "Peter Do",
+        "role": "Founder & Creative Director",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9c6545c3-92d9-49c3-97e0-f380595f269e",
+    "brandName": "Lemaire",
+    "tenures": [
+      {
+        "designerId": "33248d72-602b-4ef4-8608-625292369b0f",
+        "designerName": "Christophe Lemaire",
+        "role": "Founder & Creative Director",
+        "startYear": 2011,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d54884e0-d729-4927-becb-69e48351b417",
+    "brandName": "Fear of God",
+    "tenures": [
+      {
+        "designerId": "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb",
+        "designerName": "Jerry Lorenzo",
+        "role": "Founder & Creative Director",
+        "startYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5f69b00f-dbe3-405a-a870-40f7120522f9",
+    "brandName": "Bode",
+    "tenures": [
+      {
+        "designerId": "866e28ed-97a5-462c-a36a-5d1fb0c8396f",
+        "designerName": "Emily Adams Bode",
+        "role": "Founder & Creative Director",
+        "startYear": 2016,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "dda55774-a2ce-4a3d-8c58-583c216b730a",
+        "designerName": "Alexander McQueen",
+        "role": "Founder & Creative Director",
+        "startYear": 1992,
+        "endYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
+        "designerName": "Sarah Burton",
+        "role": "Creative Director",
+        "startYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b5bfbf33-feea-412b-9b5d-1f0b1b680b29",
+    "brandName": "Ferragamo",
+    "tenures": [
+      {
+        "designerId": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
+        "designerName": "Salvatore Ferragamo",
+        "role": "Founder & Original Designer",
+        "startYear": 1927,
+        "endYear": 1960,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "458244eb-d50c-4604-b1d3-041dd9121738",
+    "brandName": "Moschino",
+    "tenures": [
+      {
+        "designerId": "1dd57296-e0d1-41d3-8551-be79597b40aa",
+        "designerName": "Franco Moschino",
+        "role": "Founder & Creative Director",
+        "startYear": 1983,
+        "endYear": 1994,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "07da85b5-961b-4454-a42c-ce2ed1948dfc",
+    "brandName": "Issey Miyake",
+    "tenures": [
+      {
+        "designerId": "0e0d4241-6dba-4874-a971-3268fee55897",
+        "designerName": "Issey Miyake",
+        "role": "Founder & Creative Director",
+        "startYear": 1970,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "f0a34c65-a960-4932-b0f4-b1a733cdd7ed",
+        "designerName": "Domenico Dolce",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "443ee067-2213-4307-9671-c19e09bf21d4",
+        "designerName": "Stefano Gabbana",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+    "brandName": "Mugler",
+    "tenures": [
+      {
+        "designerId": "04328830-5606-4cd5-b88f-7bc874623767",
+        "designerName": "Thierry Mugler",
+        "role": "Founder & Creative Director",
+        "startYear": 1973,
+        "endYear": 2002,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d21c5e34-9209-406c-9613-90ff51bccb16",
+    "brandName": "Vetements",
+    "tenures": [
+      {
+        "designerId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
+        "designerName": "Demna Gvasalia",
+        "role": "Creative Director",
+        "startYear": 2014,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cdf1f5a5-6061-4fce-801c-b7b6c577b0d5",
+    "brandName": "Helmut Lang",
+    "tenures": [
+      {
+        "designerId": "b780392f-3fbf-475d-8291-4b05be489529",
+        "designerName": "Helmut Lang",
+        "role": "Founder & Creative Director",
+        "startYear": 1986,
+        "endYear": 2005,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5c87366b-feba-47ed-9955-ba8f5bdd48a1",
+    "brandName": "Ann Demeulemeester",
+    "tenures": [
+      {
+        "designerId": "c94c8b03-b1bc-401b-86d6-8a48c9caddb3",
+        "designerName": "Ann Demeulemeester",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "endYear": 2000,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "54fa24ed-6e35-4436-aa6e-72e8aa42a701",
+    "brandName": "Vivienne Westwood",
+    "tenures": [
+      {
+        "designerId": "d03976f7-28a2-492b-b8cd-10ea2e56a272",
+        "designerName": "Vivienne Westwood",
+        "role": "Founder & Creative Director",
+        "startYear": 1971,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "fc04c2e8-53f9-4ab2-bba9-ece8923b0d76",
+    "brandName": "Walter Van Beirendonck",
+    "tenures": [
+      {
+        "designerId": "2084a058-5a10-4083-bbcf-ed574a6e0bce",
+        "designerName": "Walter Van Beirendonck",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "d0821baa-badf-48a1-b9c8-82e1a214d7cf",
+        "designerName": "Georges Vuitton",
+        "role": "Family Business Leader & Executive",
+        "department": "All Departments",
+        "startYear": 1892,
+        "endYear": 1936,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c2bb89a5-6296-4594-bbd8-5f5fc8bf31c2",
+    "brandName": "Balenciaga",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1997,
+        "endYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "049ae4ec-e665-49cb-b89b-bbb929ed39c0",
+        "designerName": "Aldo Gucci",
+        "role": "Co-founder & Executive",
+        "department": "All Departments",
+        "startYear": 1953,
+        "endYear": 1983,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "ceced058-cf96-4cfe-a182-871f344705b6",
+        "designerName": "Maurizio Gucci",
+        "role": "CEO & Chairman",
+        "department": "All Departments",
+        "startYear": 1988,
+        "endYear": 1993,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "14abc2b2-396f-47f9-8307-a944d1f39fe0",
+        "designerName": "Tom Ford",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1994,
+        "endYear": 2004,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bb23c533-8f65-4fc0-8c5f-4e662a85b29d",
+    "brandName": "Celine",
+    "tenures": [
+      {
+        "designerId": "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2",
+        "designerName": "Hedi Slimane",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b3910e42-571d-4f9f-8076-31e69b35e66a",
+    "brandName": "Chanel",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1983,
+        "endYear": 2019,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f63cb98-35e6-47c7-bfac-4a416807ea0d",
+    "brandName": "Fendi",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1965,
+        "endYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ef9b2053-025b-400b-9262-3b856333eeb5",
+    "brandName": "Loewe",
+    "tenures": [
+      {
+        "designerId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
+        "designerName": "Stuart Vevers",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c3a86baa-2e54-4757-a72c-9bc60a6c04e4",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "50ea08be-7956-4f6d-b544-b9ac8971b959",
+        "designerName": "Michael Kors",
+        "role": "Founder & Creative Director",
+        "department": "All Departments",
+        "startYear": 1981,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4390d41f-af38-4b67-8933-29ab902a97c3",
+    "brandName": "Diesel",
+    "tenures": [
+      {
+        "designerId": "473db2d1-1841-48f5-9209-e7859a4674d0",
+        "designerName": "Renzo Rosso",
+        "role": "Founder & Creative Director",
+        "department": "All Departments",
+        "startYear": 1978,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "3029baf9-16fe-45e1-abeb-f4df6343a414",
+        "designerName": "Consuelo Castiglioni",
+        "role": "Co-founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1994,
+        "endYear": 2016,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "0a98f4fd-d607-47ce-81ce-76ca2d892d61",
+        "designerName": "Francesco Risso",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2017,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e3c29fc8-df3b-4f84-ab38-24cec99042b8",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "1e475018-82ab-42aa-a30c-2690e8e0a952",
+        "designerName": "Jil Sander",
+        "role": "Founder & Lead Designer",
+        "department": "Ready-to-Wear",
+        "startYear": 1968,
+        "endYear": 2000,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
+    "brandName": "Marc Jacobs",
+    "tenures": [
+      {
+        "designerId": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
+        "designerName": "Marc Jacobs",
+        "role": "Founder & Creative Director",
+        "startYear": 1984,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2466ef4d-d7f7-4aaf-a90c-48b1b5040d1d",
+    "brandName": "Peter Do",
+    "tenures": [
+      {
+        "designerId": "1a772d69-b073-446d-9663-ea5126a0d5a1",
+        "designerName": "Peter Do",
+        "role": "Founder & Creative Director",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9c6545c3-92d9-49c3-97e0-f380595f269e",
+    "brandName": "Lemaire",
+    "tenures": [
+      {
+        "designerId": "33248d72-602b-4ef4-8608-625292369b0f",
+        "designerName": "Christophe Lemaire",
+        "role": "Founder & Creative Director",
+        "startYear": 2011,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d54884e0-d729-4927-becb-69e48351b417",
+    "brandName": "Fear of God",
+    "tenures": [
+      {
+        "designerId": "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb",
+        "designerName": "Jerry Lorenzo",
+        "role": "Founder & Creative Director",
+        "startYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5f69b00f-dbe3-405a-a870-40f7120522f9",
+    "brandName": "Bode",
+    "tenures": [
+      {
+        "designerId": "866e28ed-97a5-462c-a36a-5d1fb0c8396f",
+        "designerName": "Emily Adams Bode",
+        "role": "Founder & Creative Director",
+        "startYear": 2016,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "dda55774-a2ce-4a3d-8c58-583c216b730a",
+        "designerName": "Alexander McQueen",
+        "role": "Founder & Creative Director",
+        "startYear": 1992,
+        "endYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
+        "designerName": "Sarah Burton",
+        "role": "Creative Director",
+        "startYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b5bfbf33-feea-412b-9b5d-1f0b1b680b29",
+    "brandName": "Ferragamo",
+    "tenures": [
+      {
+        "designerId": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
+        "designerName": "Salvatore Ferragamo",
+        "role": "Founder & Original Designer",
+        "startYear": 1927,
+        "endYear": 1960,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "458244eb-d50c-4604-b1d3-041dd9121738",
+    "brandName": "Moschino",
+    "tenures": [
+      {
+        "designerId": "1dd57296-e0d1-41d3-8551-be79597b40aa",
+        "designerName": "Franco Moschino",
+        "role": "Founder & Creative Director",
+        "startYear": 1983,
+        "endYear": 1994,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "07da85b5-961b-4454-a42c-ce2ed1948dfc",
+    "brandName": "Issey Miyake",
+    "tenures": [
+      {
+        "designerId": "0e0d4241-6dba-4874-a971-3268fee55897",
+        "designerName": "Issey Miyake",
+        "role": "Founder & Creative Director",
+        "startYear": 1970,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "f0a34c65-a960-4932-b0f4-b1a733cdd7ed",
+        "designerName": "Domenico Dolce",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "443ee067-2213-4307-9671-c19e09bf21d4",
+        "designerName": "Stefano Gabbana",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+    "brandName": "Mugler",
+    "tenures": [
+      {
+        "designerId": "04328830-5606-4cd5-b88f-7bc874623767",
+        "designerName": "Thierry Mugler",
+        "role": "Founder & Creative Director",
+        "startYear": 1973,
+        "endYear": 2002,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d21c5e34-9209-406c-9613-90ff51bccb16",
+    "brandName": "Vetements",
+    "tenures": [
+      {
+        "designerId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
+        "designerName": "Demna Gvasalia",
+        "role": "Creative Director",
+        "startYear": 2014,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cdf1f5a5-6061-4fce-801c-b7b6c577b0d5",
+    "brandName": "Helmut Lang",
+    "tenures": [
+      {
+        "designerId": "b780392f-3fbf-475d-8291-4b05be489529",
+        "designerName": "Helmut Lang",
+        "role": "Founder & Creative Director",
+        "startYear": 1986,
+        "endYear": 2005,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5c87366b-feba-47ed-9955-ba8f5bdd48a1",
+    "brandName": "Ann Demeulemeester",
+    "tenures": [
+      {
+        "designerId": "c94c8b03-b1bc-401b-86d6-8a48c9caddb3",
+        "designerName": "Ann Demeulemeester",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "endYear": 2000,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "54fa24ed-6e35-4436-aa6e-72e8aa42a701",
+    "brandName": "Vivienne Westwood",
+    "tenures": [
+      {
+        "designerId": "d03976f7-28a2-492b-b8cd-10ea2e56a272",
+        "designerName": "Vivienne Westwood",
+        "role": "Founder & Creative Director",
+        "startYear": 1971,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "fc04c2e8-53f9-4ab2-bba9-ece8923b0d76",
+    "brandName": "Walter Van Beirendonck",
+    "tenures": [
+      {
+        "designerId": "2084a058-5a10-4083-bbcf-ed574a6e0bce",
+        "designerName": "Walter Van Beirendonck",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "d0821baa-badf-48a1-b9c8-82e1a214d7cf",
+        "designerName": "Georges Vuitton",
+        "role": "Family Business Leader & Executive",
+        "department": "All Departments",
+        "startYear": 1892,
+        "endYear": 1936,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c2bb89a5-6296-4594-bbd8-5f5fc8bf31c2",
+    "brandName": "Balenciaga",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1997,
+        "endYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "049ae4ec-e665-49cb-b89b-bbb929ed39c0",
+        "designerName": "Aldo Gucci",
+        "role": "Co-founder & Executive",
+        "department": "All Departments",
+        "startYear": 1953,
+        "endYear": 1983,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "ceced058-cf96-4cfe-a182-871f344705b6",
+        "designerName": "Maurizio Gucci",
+        "role": "CEO & Chairman",
+        "department": "All Departments",
+        "startYear": 1988,
+        "endYear": 1993,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "14abc2b2-396f-47f9-8307-a944d1f39fe0",
+        "designerName": "Tom Ford",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1994,
+        "endYear": 2004,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bb23c533-8f65-4fc0-8c5f-4e662a85b29d",
+    "brandName": "Celine",
+    "tenures": [
+      {
+        "designerId": "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2",
+        "designerName": "Hedi Slimane",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b3910e42-571d-4f9f-8076-31e69b35e66a",
+    "brandName": "Chanel",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1983,
+        "endYear": 2019,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f63cb98-35e6-47c7-bfac-4a416807ea0d",
+    "brandName": "Fendi",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1965,
+        "endYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ef9b2053-025b-400b-9262-3b856333eeb5",
+    "brandName": "Loewe",
+    "tenures": [
+      {
+        "designerId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
+        "designerName": "Stuart Vevers",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c3a86baa-2e54-4757-a72c-9bc60a6c04e4",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "50ea08be-7956-4f6d-b544-b9ac8971b959",
+        "designerName": "Michael Kors",
+        "role": "Founder & Creative Director",
+        "department": "All Departments",
+        "startYear": 1981,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4390d41f-af38-4b67-8933-29ab902a97c3",
+    "brandName": "Diesel",
+    "tenures": [
+      {
+        "designerId": "473db2d1-1841-48f5-9209-e7859a4674d0",
+        "designerName": "Renzo Rosso",
+        "role": "Founder & Creative Director",
+        "department": "All Departments",
+        "startYear": 1978,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "3029baf9-16fe-45e1-abeb-f4df6343a414",
+        "designerName": "Consuelo Castiglioni",
+        "role": "Co-founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1994,
+        "endYear": 2016,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "0a98f4fd-d607-47ce-81ce-76ca2d892d61",
+        "designerName": "Francesco Risso",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2017,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e3c29fc8-df3b-4f84-ab38-24cec99042b8",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "1e475018-82ab-42aa-a30c-2690e8e0a952",
+        "designerName": "Jil Sander",
+        "role": "Founder & Lead Designer",
+        "department": "Ready-to-Wear",
+        "startYear": 1968,
+        "endYear": 2000,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
+    "brandName": "Marc Jacobs",
+    "tenures": [
+      {
+        "designerId": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
+        "designerName": "Marc Jacobs",
+        "role": "Founder & Creative Director",
+        "startYear": 1984,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2466ef4d-d7f7-4aaf-a90c-48b1b5040d1d",
+    "brandName": "Peter Do",
+    "tenures": [
+      {
+        "designerId": "1a772d69-b073-446d-9663-ea5126a0d5a1",
+        "designerName": "Peter Do",
+        "role": "Founder & Creative Director",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9c6545c3-92d9-49c3-97e0-f380595f269e",
+    "brandName": "Lemaire",
+    "tenures": [
+      {
+        "designerId": "33248d72-602b-4ef4-8608-625292369b0f",
+        "designerName": "Christophe Lemaire",
+        "role": "Founder & Creative Director",
+        "startYear": 2011,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d54884e0-d729-4927-becb-69e48351b417",
+    "brandName": "Fear of God",
+    "tenures": [
+      {
+        "designerId": "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb",
+        "designerName": "Jerry Lorenzo",
+        "role": "Founder & Creative Director",
+        "startYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5f69b00f-dbe3-405a-a870-40f7120522f9",
+    "brandName": "Bode",
+    "tenures": [
+      {
+        "designerId": "866e28ed-97a5-462c-a36a-5d1fb0c8396f",
+        "designerName": "Emily Adams Bode",
+        "role": "Founder & Creative Director",
+        "startYear": 2016,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "dda55774-a2ce-4a3d-8c58-583c216b730a",
+        "designerName": "Alexander McQueen",
+        "role": "Founder & Creative Director",
+        "startYear": 1992,
+        "endYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
+        "designerName": "Sarah Burton",
+        "role": "Creative Director",
+        "startYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b5bfbf33-feea-412b-9b5d-1f0b1b680b29",
+    "brandName": "Ferragamo",
+    "tenures": [
+      {
+        "designerId": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
+        "designerName": "Salvatore Ferragamo",
+        "role": "Founder & Original Designer",
+        "startYear": 1927,
+        "endYear": 1960,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "458244eb-d50c-4604-b1d3-041dd9121738",
+    "brandName": "Moschino",
+    "tenures": [
+      {
+        "designerId": "1dd57296-e0d1-41d3-8551-be79597b40aa",
+        "designerName": "Franco Moschino",
+        "role": "Founder & Creative Director",
+        "startYear": 1983,
+        "endYear": 1994,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "07da85b5-961b-4454-a42c-ce2ed1948dfc",
+    "brandName": "Issey Miyake",
+    "tenures": [
+      {
+        "designerId": "0e0d4241-6dba-4874-a971-3268fee55897",
+        "designerName": "Issey Miyake",
+        "role": "Founder & Creative Director",
+        "startYear": 1970,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "f0a34c65-a960-4932-b0f4-b1a733cdd7ed",
+        "designerName": "Domenico Dolce",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "443ee067-2213-4307-9671-c19e09bf21d4",
+        "designerName": "Stefano Gabbana",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+    "brandName": "Mugler",
+    "tenures": [
+      {
+        "designerId": "04328830-5606-4cd5-b88f-7bc874623767",
+        "designerName": "Thierry Mugler",
+        "role": "Founder & Creative Director",
+        "startYear": 1973,
+        "endYear": 2002,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d21c5e34-9209-406c-9613-90ff51bccb16",
+    "brandName": "Vetements",
+    "tenures": [
+      {
+        "designerId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
+        "designerName": "Demna Gvasalia",
+        "role": "Creative Director",
+        "startYear": 2014,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cdf1f5a5-6061-4fce-801c-b7b6c577b0d5",
+    "brandName": "Helmut Lang",
+    "tenures": [
+      {
+        "designerId": "b780392f-3fbf-475d-8291-4b05be489529",
+        "designerName": "Helmut Lang",
+        "role": "Founder & Creative Director",
+        "startYear": 1986,
+        "endYear": 2005,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5c87366b-feba-47ed-9955-ba8f5bdd48a1",
+    "brandName": "Ann Demeulemeester",
+    "tenures": [
+      {
+        "designerId": "c94c8b03-b1bc-401b-86d6-8a48c9caddb3",
+        "designerName": "Ann Demeulemeester",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "endYear": 2000,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "54fa24ed-6e35-4436-aa6e-72e8aa42a701",
+    "brandName": "Vivienne Westwood",
+    "tenures": [
+      {
+        "designerId": "d03976f7-28a2-492b-b8cd-10ea2e56a272",
+        "designerName": "Vivienne Westwood",
+        "role": "Founder & Creative Director",
+        "startYear": 1971,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "fc04c2e8-53f9-4ab2-bba9-ece8923b0d76",
+    "brandName": "Walter Van Beirendonck",
+    "tenures": [
+      {
+        "designerId": "2084a058-5a10-4083-bbcf-ed574a6e0bce",
+        "designerName": "Walter Van Beirendonck",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "d0821baa-badf-48a1-b9c8-82e1a214d7cf",
+        "designerName": "Georges Vuitton",
+        "role": "Family Business Leader & Executive",
+        "department": "All Departments",
+        "startYear": 1892,
+        "endYear": 1936,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c2bb89a5-6296-4594-bbd8-5f5fc8bf31c2",
+    "brandName": "Balenciaga",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1997,
+        "endYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+    "brandName": "Louis Vuitton",
+    "tenures": [
+      {
+        "designerId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+        "designerName": "Nicolas Ghesquière",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "049ae4ec-e665-49cb-b89b-bbb929ed39c0",
+        "designerName": "Aldo Gucci",
+        "role": "Co-founder & Executive",
+        "department": "All Departments",
+        "startYear": 1953,
+        "endYear": 1983,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "ceced058-cf96-4cfe-a182-871f344705b6",
+        "designerName": "Maurizio Gucci",
+        "role": "CEO & Chairman",
+        "department": "All Departments",
+        "startYear": 1988,
+        "endYear": 1993,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+    "brandName": "Gucci",
+    "tenures": [
+      {
+        "designerId": "14abc2b2-396f-47f9-8307-a944d1f39fe0",
+        "designerName": "Tom Ford",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1994,
+        "endYear": 2004,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "bb23c533-8f65-4fc0-8c5f-4e662a85b29d",
+    "brandName": "Celine",
+    "tenures": [
+      {
+        "designerId": "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2",
+        "designerName": "Hedi Slimane",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b3910e42-571d-4f9f-8076-31e69b35e66a",
+    "brandName": "Chanel",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1983,
+        "endYear": 2019,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f63cb98-35e6-47c7-bfac-4a416807ea0d",
+    "brandName": "Fendi",
+    "tenures": [
+      {
+        "designerId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+        "designerName": "Karl Lagerfeld",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1965,
+        "endYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ef9b2053-025b-400b-9262-3b856333eeb5",
+    "brandName": "Loewe",
+    "tenures": [
+      {
+        "designerId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
+        "designerName": "Stuart Vevers",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2013,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "c3a86baa-2e54-4757-a72c-9bc60a6c04e4",
+    "brandName": "Michael Kors",
+    "tenures": [
+      {
+        "designerId": "50ea08be-7956-4f6d-b544-b9ac8971b959",
+        "designerName": "Michael Kors",
+        "role": "Founder & Creative Director",
+        "department": "All Departments",
+        "startYear": 1981,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "4390d41f-af38-4b67-8933-29ab902a97c3",
+    "brandName": "Diesel",
+    "tenures": [
+      {
+        "designerId": "473db2d1-1841-48f5-9209-e7859a4674d0",
+        "designerName": "Renzo Rosso",
+        "role": "Founder & Creative Director",
+        "department": "All Departments",
+        "startYear": 1978,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "3029baf9-16fe-45e1-abeb-f4df6343a414",
+        "designerName": "Consuelo Castiglioni",
+        "role": "Co-founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1994,
+        "endYear": 2016,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6f439505-ea45-4502-a966-fc0247e05895",
+    "brandName": "Marni",
+    "tenures": [
+      {
+        "designerId": "0a98f4fd-d607-47ce-81ce-76ca2d892d61",
+        "designerName": "Francesco Risso",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2017,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "e3c29fc8-df3b-4f84-ab38-24cec99042b8",
+    "brandName": "Jil Sander",
+    "tenures": [
+      {
+        "designerId": "1e475018-82ab-42aa-a30c-2690e8e0a952",
+        "designerName": "Jil Sander",
+        "role": "Founder & Lead Designer",
+        "department": "Ready-to-Wear",
+        "startYear": 1968,
+        "endYear": 2000,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "department": "Ready-to-Wear",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
+    "brandName": "Marc Jacobs",
+    "tenures": [
+      {
+        "designerId": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
+        "designerName": "Marc Jacobs",
+        "role": "Founder & Creative Director",
+        "startYear": 1984,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "2466ef4d-d7f7-4aaf-a90c-48b1b5040d1d",
+    "brandName": "Peter Do",
+    "tenures": [
+      {
+        "designerId": "1a772d69-b073-446d-9663-ea5126a0d5a1",
+        "designerName": "Peter Do",
+        "role": "Founder & Creative Director",
+        "startYear": 2018,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9c6545c3-92d9-49c3-97e0-f380595f269e",
+    "brandName": "Lemaire",
+    "tenures": [
+      {
+        "designerId": "33248d72-602b-4ef4-8608-625292369b0f",
+        "designerName": "Christophe Lemaire",
+        "role": "Founder & Creative Director",
+        "startYear": 2011,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d54884e0-d729-4927-becb-69e48351b417",
+    "brandName": "Fear of God",
+    "tenures": [
+      {
+        "designerId": "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb",
+        "designerName": "Jerry Lorenzo",
+        "role": "Founder & Creative Director",
+        "startYear": 2012,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5f69b00f-dbe3-405a-a870-40f7120522f9",
+    "brandName": "Bode",
+    "tenures": [
+      {
+        "designerId": "866e28ed-97a5-462c-a36a-5d1fb0c8396f",
+        "designerName": "Emily Adams Bode",
+        "role": "Founder & Creative Director",
+        "startYear": 2016,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "dda55774-a2ce-4a3d-8c58-583c216b730a",
+        "designerName": "Alexander McQueen",
+        "role": "Founder & Creative Director",
+        "startYear": 1992,
+        "endYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+    "brandName": "Alexander McQueen",
+    "tenures": [
+      {
+        "designerId": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
+        "designerName": "Sarah Burton",
+        "role": "Creative Director",
+        "startYear": 2010,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+    "brandName": "Lanvin",
+    "tenures": [
+      {
+        "designerId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+        "designerName": "Alber Elbaz",
+        "role": "Creative Director",
+        "startYear": 2001,
+        "endYear": 2015,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "b5bfbf33-feea-412b-9b5d-1f0b1b680b29",
+    "brandName": "Ferragamo",
+    "tenures": [
+      {
+        "designerId": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
+        "designerName": "Salvatore Ferragamo",
+        "role": "Founder & Original Designer",
+        "startYear": 1927,
+        "endYear": 1960,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "458244eb-d50c-4604-b1d3-041dd9121738",
+    "brandName": "Moschino",
+    "tenures": [
+      {
+        "designerId": "1dd57296-e0d1-41d3-8551-be79597b40aa",
+        "designerName": "Franco Moschino",
+        "role": "Founder & Creative Director",
+        "startYear": 1983,
+        "endYear": 1994,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+    "brandName": "Comme des Garçons",
+    "tenures": [
+      {
+        "designerId": "5e776e52-f21e-4e74-911a-4f881d744326",
+        "designerName": "Rei Kawakubo",
+        "role": "Founder & Creative Director",
+        "startYear": 1969,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "07da85b5-961b-4454-a42c-ce2ed1948dfc",
+    "brandName": "Issey Miyake",
+    "tenures": [
+      {
+        "designerId": "0e0d4241-6dba-4874-a971-3268fee55897",
+        "designerName": "Issey Miyake",
+        "role": "Founder & Creative Director",
+        "startYear": 1970,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cfcab79d-db4b-4911-a26d-74be464fc522",
+    "brandName": "Undercover",
+    "tenures": [
+      {
+        "designerId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+        "designerName": "Jun Takahashi",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+    "brandName": "A Bathing Ape",
+    "tenures": [
+      {
+        "designerId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+        "designerName": "Nigo",
+        "role": "Founder & Creative Director",
+        "startYear": 1993,
+        "endYear": 2013,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+    "brandName": "Y/Project",
+    "tenures": [
+      {
+        "designerId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+        "designerName": "Glenn Martens",
+        "role": "Creative Director",
+        "startYear": 2017,
+        "confidence": 0.5,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "f0a34c65-a960-4932-b0f4-b1a733cdd7ed",
+        "designerName": "Domenico Dolce",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "96abce58-7225-4001-b0fd-5be50040cd3f",
+    "brandName": "Dolce & Gabbana",
+    "tenures": [
+      {
+        "designerId": "443ee067-2213-4307-9671-c19e09bf21d4",
+        "designerName": "Stefano Gabbana",
+        "role": "Co-founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+    "brandName": "Mugler",
+    "tenures": [
+      {
+        "designerId": "04328830-5606-4cd5-b88f-7bc874623767",
+        "designerName": "Thierry Mugler",
+        "role": "Founder & Creative Director",
+        "startYear": 1973,
+        "endYear": 2002,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "d21c5e34-9209-406c-9613-90ff51bccb16",
+    "brandName": "Vetements",
+    "tenures": [
+      {
+        "designerId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
+        "designerName": "Demna Gvasalia",
+        "role": "Creative Director",
+        "startYear": 2014,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "cdf1f5a5-6061-4fce-801c-b7b6c577b0d5",
+    "brandName": "Helmut Lang",
+    "tenures": [
+      {
+        "designerId": "b780392f-3fbf-475d-8291-4b05be489529",
+        "designerName": "Helmut Lang",
+        "role": "Founder & Creative Director",
+        "startYear": 1986,
+        "endYear": 2005,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "5c87366b-feba-47ed-9955-ba8f5bdd48a1",
+    "brandName": "Ann Demeulemeester",
+    "tenures": [
+      {
+        "designerId": "c94c8b03-b1bc-401b-86d6-8a48c9caddb3",
+        "designerName": "Ann Demeulemeester",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "endYear": 2000,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "54fa24ed-6e35-4436-aa6e-72e8aa42a701",
+    "brandName": "Vivienne Westwood",
+    "tenures": [
+      {
+        "designerId": "d03976f7-28a2-492b-b8cd-10ea2e56a272",
+        "designerName": "Vivienne Westwood",
+        "role": "Founder & Creative Director",
+        "startYear": 1971,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
+  },
+  {
+    "brandId": "fc04c2e8-53f9-4ab2-bba9-ece8923b0d76",
+    "brandName": "Walter Van Beirendonck",
+    "tenures": [
+      {
+        "designerId": "2084a058-5a10-4083-bbcf-ed574a6e0bce",
+        "designerName": "Walter Van Beirendonck",
+        "role": "Founder & Creative Director",
+        "startYear": 1985,
+        "confidence": 0.9,
+        "sources": [],
+        "verificationStatus": "pending"
+      }
+    ]
   }
 ]

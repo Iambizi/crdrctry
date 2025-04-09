@@ -99,6 +99,7 @@ export interface EnrichedDesigner {
   tenures: Array<{
     brand: string;
     role: string;
+    department?: Department;
     startYear: number;
     endYear: number | null;
     achievements?: string[];
