@@ -59,15 +59,6 @@ function verifyData(): VerificationResult {
       ...brandRelationships.map(r => r.targetDesignerId)
     ]);
     
-    // Debug logging
-    if (brand.name === "Brioni") {
-      console.log("Brioni debug:");
-      console.log("Brand ID:", brand.id);
-      console.log("Tenures found:", brandTenures.length);
-      console.log("Relationships found:", brandRelationships.length);
-      console.log("Designer IDs:", Array.from(designerIds));
-    }
-    
     if (designerIds.size === 0) {
       result.warnings.push(`Brand ${brand.name} has no associated designers`);
       result.stats.brandsWithoutDesigners.push(brand.name);
