@@ -811,7 +811,7 @@
       "name": "Versace",
       "foundedYear": 1978,
       "founder": "Gianni Versace",
-      "parentCompany": "Capri Holdings",
+      "parentCompany": "Prada Group",
       "headquarters": "Milan, Italy",
       "specialties": [
         "Haute Couture",
@@ -830,7 +830,7 @@
         "facebook": "versace"
       },
       "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
+      "updatedAt": "2025-04-12T01:55:32.068Z"
     },
     {
       "id": "c7554fa9-1dd9-4f12-ab05-76de04b88493",
@@ -1800,6 +1800,122 @@
       "founder": "Takahiro Miyashita",
       "createdAt": "2025-04-09T03:58:55.728Z",
       "updatedAt": "2025-04-09T03:58:55.728Z"
+    },
+    {
+      "id": "fd636768-3706-4a2c-8347-9e39b4bc352c",
+      "name": "Tom Ford",
+      "foundedYear": 2005,
+      "founder": "Tom Ford",
+      "parentCompany": "Estée Lauder Companies",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Ready-to-Wear",
+        "Accessories",
+        "Beauty",
+        "Eyewear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "tomford.com",
+      "social_media": {
+        "instagram": "tomford"
+      },
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-12T01:50:23.598Z"
+    },
+    {
+      "id": "7cfcf27a-878a-4623-90fc-d5d493985575",
+      "name": "Christian Lacroix",
+      "foundedYear": 1987,
+      "founder": "Christian Lacroix",
+      "parentCompany": "Sociedad Textil Lonia",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-Wear",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "christian-lacroix.com",
+      "social_media": {
+        "instagram": "christianlacroix"
+      },
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-12T01:55:32.069Z"
+    },
+    {
+      "id": "d3db2c35-81e3-40b3-821c-f602d0dea9d8",
+      "name": "Bonpoint",
+      "foundedYear": 1975,
+      "founder": "Marie-France Cohen",
+      "parentCompany": "Youngor Group",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Childrenswear",
+        "Accessories",
+        "Beauty"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "bonpoint.com",
+      "social_media": {
+        "instagram": "bonpoint"
+      },
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-12T01:55:32.069Z"
+    },
+    {
+      "id": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
+      "name": "Thomas Pink",
+      "foundedYear": 1984,
+      "founder": "Peter Mullen",
+      "parentCompany": "CP Brands Group",
+      "headquarters": "London, UK",
+      "specialties": [
+        "Menswear",
+        "Shirts",
+        "Accessories"
+      ],
+      "pricePoint": "Premium",
+      "markets": [
+        "Global"
+      ],
+      "website": "thomaspink.com",
+      "social_media": {
+        "instagram": "thomaspink"
+      },
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-12T01:55:32.069Z"
+    },
+    {
+      "id": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
+      "name": "Vera Wang",
+      "foundedYear": 1990,
+      "founder": "Vera Wang",
+      "parentCompany": "WHP Global",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Bridal",
+        "Ready-to-Wear",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "verawang.com",
+      "social_media": {
+        "instagram": "verawanggang"
+      },
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-12T01:55:32.069Z"
     }
   ],
   "designers": [
@@ -3336,6 +3452,32 @@
       "isActive": true,
       "createdAt": "2025-04-09T04:23:03.225Z",
       "updatedAt": "2025-04-09T04:23:03.225Z"
+    },
+    {
+      "id": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+      "name": "Demna",
+      "status": "ACTIVE",
+      "isActive": true,
+      "currentRole": "Artistic Director at Gucci"
+    },
+    {
+      "id": "ddb5fa27-4345-4382-8419-fe18ceaca410",
+      "name": "Haider Ackermann",
+      "status": "ACTIVE",
+      "isActive": true,
+      "currentRole": "Creative Director at Tom Ford"
+    },
+    {
+      "id": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
+      "name": "Casey Cadwallader",
+      "status": "INACTIVE",
+      "isActive": false,
+      "currentRole": "Former Creative Director at Mugler",
+      "achievements": [
+        "Revitalized Mugler's ready-to-wear line",
+        "Introduced innovative digital fashion shows",
+        "Collaborated with major celebrities"
+      ]
     }
   ],
   "tenures": [
@@ -3704,9 +3846,10 @@
       "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
       "role": "Creative Director",
       "startYear": 2023,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "endYear": 2025
     },
     {
       "id": "93acccb3-bdff-4274-9849-a60e2fb7cc4b",
@@ -5001,9 +5144,10 @@
       "designerId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
       "role": "Creative Director",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "createdAt": "2025-04-09T02:53:33.926Z",
-      "updatedAt": "2025-04-09T02:53:33.926Z"
+      "updatedAt": "2025-04-09T02:53:33.926Z",
+      "endYear": 2013
     },
     {
       "id": "fbad26fd-8279-4e33-a149-d015b4d815ec",
@@ -5460,10 +5604,11 @@
       "designerId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
       "role": "Creative Director",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T03:24:25.819Z",
-      "updatedAt": "2025-04-09T03:24:25.819Z"
+      "updatedAt": "2025-04-09T03:24:25.819Z",
+      "endYear": 2013
     },
     {
       "id": "9df8578e-af82-45d6-8595-b59d0159b0fa",
@@ -5952,10 +6097,11 @@
       "brandId": "ef9b2053-025b-400b-9262-3b856333eeb5",
       "role": "Creative Director",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T03:29:17.933Z",
-      "updatedAt": "2025-04-09T03:29:17.933Z"
+      "updatedAt": "2025-04-09T03:29:17.933Z",
+      "endYear": 2013
     },
     {
       "id": "a88410df-b893-4a2a-a321-1f96df185325",
@@ -6455,10 +6601,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T03:30:42.272Z",
-      "updatedAt": "2025-04-09T03:30:42.272Z"
+      "updatedAt": "2025-04-09T03:30:42.272Z",
+      "endYear": 2013
     },
     {
       "id": "82eb6b6b-a5e5-4eae-97ce-7385469db644",
@@ -6967,10 +7114,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T03:31:20.781Z",
-      "updatedAt": "2025-04-09T03:31:20.781Z"
+      "updatedAt": "2025-04-09T03:31:20.781Z",
+      "endYear": 2013
     },
     {
       "id": "3204e12f-5688-4a44-9483-3bd75cc8134e",
@@ -7479,10 +7627,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T03:35:22.534Z",
-      "updatedAt": "2025-04-09T03:35:22.534Z"
+      "updatedAt": "2025-04-09T03:35:22.534Z",
+      "endYear": 2013
     },
     {
       "id": "2ade4339-ef03-4846-9150-b3e8e160efab",
@@ -7991,10 +8140,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T03:39:07.345Z",
-      "updatedAt": "2025-04-09T03:39:07.345Z"
+      "updatedAt": "2025-04-09T03:39:07.345Z",
+      "endYear": 2013
     },
     {
       "id": "7d85d932-7692-470f-9b65-d9f74009bf49",
@@ -8555,10 +8705,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T03:44:58.235Z",
-      "updatedAt": "2025-04-09T03:44:58.235Z"
+      "updatedAt": "2025-04-09T03:44:58.235Z",
+      "endYear": 2013
     },
     {
       "id": "154b0f06-56fc-48c2-9ac2-949ea8eaeec9",
@@ -9144,10 +9295,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T03:58:55.725Z",
-      "updatedAt": "2025-04-09T03:58:55.725Z"
+      "updatedAt": "2025-04-09T03:58:55.725Z",
+      "endYear": 2013
     },
     {
       "id": "434f75a0-00dd-4690-8289-1424908e7097",
@@ -9913,10 +10065,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T04:15:24.840Z",
-      "updatedAt": "2025-04-09T04:15:24.840Z"
+      "updatedAt": "2025-04-09T04:15:24.840Z",
+      "endYear": 2013
     },
     {
       "id": "54736ea5-653a-4b85-9a28-c44843f377f0",
@@ -11367,10 +11520,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T04:23:03.221Z",
-      "updatedAt": "2025-04-09T04:23:03.221Z"
+      "updatedAt": "2025-04-09T04:23:03.221Z",
+      "endYear": 2013
     },
     {
       "id": "d5f9eae6-dcdb-4aa8-938e-a70e43b19bcd",
@@ -13063,10 +13217,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T04:25:10.859Z",
-      "updatedAt": "2025-04-09T04:25:10.859Z"
+      "updatedAt": "2025-04-09T04:25:10.859Z",
+      "endYear": 2013
     },
     {
       "id": "4c22e84b-f2d7-43b8-9e01-dfde19ff467e",
@@ -14759,10 +14914,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T04:30:39.393Z",
-      "updatedAt": "2025-04-09T04:30:39.393Z"
+      "updatedAt": "2025-04-09T04:30:39.393Z",
+      "endYear": 2013
     },
     {
       "id": "5b1fcffb-db94-4caa-a72b-2dc4aea10ef7",
@@ -16455,10 +16611,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T04:32:51.885Z",
-      "updatedAt": "2025-04-09T04:32:51.885Z"
+      "updatedAt": "2025-04-09T04:32:51.885Z",
+      "endYear": 2013
     },
     {
       "id": "19bfd947-668a-4fbd-8385-2bb5e8aeec78",
@@ -18151,10 +18308,11 @@
       "role": "Creative Director",
       "department": "Ready-to-Wear",
       "startYear": 2013,
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "achievements": [],
       "createdAt": "2025-04-09T04:36:00.528Z",
-      "updatedAt": "2025-04-09T04:36:00.528Z"
+      "updatedAt": "2025-04-09T04:36:00.528Z",
+      "endYear": 2013
     },
     {
       "id": "b371e703-adec-49b9-b041-b22186607090",
@@ -19659,6 +19817,205 @@
       "notableWorks": [],
       "createdAt": "2025-04-09T04:36:00.533Z",
       "updatedAt": "2025-04-09T04:36:00.533Z"
+    },
+    {
+      "id": "3e632026-91b8-4216-920d-73e9ea02cb60",
+      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+      "role": "Artistic Director",
+      "department": "All Categories",
+      "startYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Appointed as Gucci's new Artistic Director",
+        "First collection debut pending"
+      ],
+      "createdAt": "2025-04-12T01:35:40.293Z",
+      "updatedAt": "2025-04-12T01:35:40.296Z",
+      "endYear": 2025
+    },
+    {
+      "id": "60f44891-ea9a-4d5a-a9a1-9346af85b16a",
+      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+      "role": "Artistic Director",
+      "department": "All Categories",
+      "startYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Appointed as Gucci's new Artistic Director",
+        "First collection debut pending",
+        "Tasked with reinventing Gucci's aesthetic"
+      ],
+      "createdAt": "2025-04-12T01:47:31.919Z",
+      "updatedAt": "2025-04-12T01:47:31.920Z",
+      "endYear": 2025
+    },
+    {
+      "id": "8f3b56ed-109f-4c1d-892e-0aeb062c7e60",
+      "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+      "designerId": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
+      "role": "Creative Director",
+      "department": "All Categories",
+      "startYear": 2018,
+      "isCurrentRole": false,
+      "achievements": [
+        "Modernized Mugler's signature silhouettes",
+        "Expanded brand's digital presence",
+        "Successful celebrity collaborations"
+      ],
+      "createdAt": "2025-04-12T01:47:31.920Z",
+      "updatedAt": "2025-04-12T01:47:31.920Z"
+    },
+    {
+      "id": "7f09e5a7-9383-4200-947e-e18fab0c12e6",
+      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+      "role": "Artistic Director",
+      "department": "All Departments",
+      "startYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Appointed as Gucci's new Artistic Director",
+        "First collection debut pending",
+        "Tasked with reinventing Gucci's aesthetic"
+      ],
+      "createdAt": "2025-04-12T01:49:48.138Z",
+      "updatedAt": "2025-04-12T01:49:48.138Z",
+      "endYear": 2025
+    },
+    {
+      "id": "8e70a737-13a2-4324-b9c1-ee15a69e89c2",
+      "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+      "designerId": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2018,
+      "endYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Modernized Mugler's signature silhouettes",
+        "Expanded brand's digital presence",
+        "Successful celebrity collaborations"
+      ],
+      "createdAt": "2025-04-12T01:49:48.139Z",
+      "updatedAt": "2025-04-12T01:49:48.139Z"
+    },
+    {
+      "id": "f31e8a4f-d913-4b55-89e7-c83306790280",
+      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+      "role": "Artistic Director",
+      "department": "All Departments",
+      "startYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Appointed as Gucci's new Artistic Director",
+        "First collection debut pending",
+        "Tasked with reinventing Gucci's aesthetic"
+      ],
+      "createdAt": "2025-04-12T01:50:23.599Z",
+      "updatedAt": "2025-04-12T01:50:23.599Z",
+      "endYear": 2025
+    },
+    {
+      "id": "b1e506ba-973f-47c1-a898-ed29c99d2027",
+      "brandId": "fd636768-3706-4a2c-8347-9e39b4bc352c",
+      "designerId": "ddb5fa27-4345-4382-8419-fe18ceaca410",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Debut collection for Tom Ford",
+        "New direction focusing on subtle sensuality",
+        "Evolution of Tom Ford's luxury aesthetic"
+      ],
+      "createdAt": "2025-04-12T01:50:23.601Z",
+      "updatedAt": "2025-04-12T01:50:23.601Z",
+      "endYear": 2025
+    },
+    {
+      "id": "6bc4a6df-4f8d-4a4e-a20d-bda60149b9d4",
+      "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+      "designerId": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2018,
+      "endYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Modernized Mugler's signature silhouettes",
+        "Expanded brand's digital presence",
+        "Successful celebrity collaborations"
+      ],
+      "createdAt": "2025-04-12T01:50:23.602Z",
+      "updatedAt": "2025-04-12T01:50:23.602Z"
+    },
+    {
+      "id": "0db18dc1-3ec5-41ee-a589-93fef0ce32f8",
+      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2025,
+      "isCurrentRole": true,
+      "achievements": [
+        "Appointed as Creative Director of Gucci in January 2025",
+        "First collection to be presented in September 2025"
+      ],
+      "createdAt": "2025-04-12T01:55:32.066Z",
+      "updatedAt": "2025-04-12T01:55:32.066Z"
+    },
+    {
+      "id": "eb9c30df-f004-4634-955a-418821a2c17f",
+      "brandId": "fd636768-3706-4a2c-8347-9e39b4bc352c",
+      "designerId": "ddb5fa27-4345-4382-8419-fe18ceaca410",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2025,
+      "isCurrentRole": true,
+      "achievements": [
+        "Named Creative Director under new Estée Lauder ownership",
+        "Debut collection presented in March 2025"
+      ],
+      "createdAt": "2025-04-12T01:55:32.067Z",
+      "updatedAt": "2025-04-12T01:55:32.067Z"
+    },
+    {
+      "id": "f65183ec-1457-4f85-9fba-971f910f170c",
+      "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+      "designerId": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2017,
+      "endYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Successfully modernized the brand's aesthetic while respecting its heritage",
+        "Expanded brand visibility through innovative digital presentations",
+        "Collaborated with H&M on a highly successful collection"
+      ],
+      "createdAt": "2025-04-12T01:55:32.067Z",
+      "updatedAt": "2025-04-12T01:55:32.067Z"
+    },
+    {
+      "id": "f41b77dd-caa1-42de-a84c-e59ab2330aeb",
+      "brandId": "ef9b2053-025b-400b-9262-3b856333eeb5",
+      "designerId": "f7660190-938a-40cb-8f36-eddeaae8f856",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2013,
+      "endYear": 2025,
+      "isCurrentRole": false,
+      "achievements": [
+        "Transformed Loewe into a powerful cultural brand over 11-year tenure",
+        "Successfully merged creation and curation in his design approach",
+        "Expanded brand through initiatives like Paula's Ibiza acquisition",
+        "Established Loewe as a leader in craft and artistic collaboration"
+      ],
+      "createdAt": "2025-04-12T01:55:32.068Z",
+      "updatedAt": "2025-04-12T01:55:32.068Z"
     }
   ],
   "relationships": [
