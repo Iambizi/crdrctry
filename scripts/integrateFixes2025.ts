@@ -4,44 +4,24 @@ import { Designer, Brand, Tenure, Relationship, DesignerStatus, Department } fro
 
 // Load data files
 const fashionGenealogyPath = path.join(__dirname, '../src/data/fashionGenealogy.json');
-const fashionFixesPath = path.join(__dirname, '../src/data/updates/2025-fashion-fixes.json');
+const fashionFixes2025Path = path.join(__dirname, '../src/data/updates/2025-fashion-fixes.json');
 
-const fashionGenealogyData = JSON.parse(fs.readFileSync(fashionGenealogyPath, 'utf-8'));
-const fashionFixes2025 = JSON.parse(fs.readFileSync(fashionFixesPath, 'utf-8'));
-
-interface DesignerUpdate {
-  id: string;
-  name: string;
-  isActive: boolean;
-  status: string;
-  currentRole?: string;
-  source?: string;
-  confidence: number;
-  createdAt: string;
-  updatedAt: string;
+interface FashionGenealogyData {
+  designers: Designer[];
+  brands: Brand[];
+  tenures: Tenure[];
+  relationships: Relationship[];
 }
 
 interface HistoricalDesigner {
   id: string;
   name: string;
   role: string;
-  department: string;
+  department?: string;
   startYear: number;
   endYear?: number | null;
   isCurrentRole: boolean;
-  achievements: string[];
-  notableWorks?: string[];
-  confidence: number;
-  createdAt: string;
-  updatedAt: string;
-}
-
-interface BrandHistoricalData {
-  id: string;
-  brandName: string;
-  historicalDesigners: HistoricalDesigner[];
-  relationships: Relationship[];
-  confidence: number;
+  achievements?: string[];
   createdAt: string;
   updatedAt: string;
 }
@@ -50,82 +30,96 @@ interface DesignerTenure {
   id: string;
   brand: string;
   role: string;
-  department: string;
+  department?: string;
   startYear: number;
   endYear?: number | null;
   isCurrentRole: boolean;
-  achievements: string[];
-  confidence: number;
+  achievements?: string[];
   createdAt: string;
   updatedAt: string;
 }
 
-interface DesignerTenureUpdate {
-  id: string;
-  designerId: string;
-  name: string;
+interface FashionFixes2025 {
+  historicalBrands: Array<{
+    brandName: string;
+    designers: HistoricalDesigner[];
+  }>;
   tenures: DesignerTenure[];
-  confidence: number;
-  createdAt: string;
-  updatedAt: string;
 }
 
-interface TimestampUpdate {
-  id: string;
-  name: string;
-  createdAt: string;
-  updatedAt: string;
-}
+// Load data
+const fashionGenealogyData: FashionGenealogyData = JSON.parse(fs.readFileSync(fashionGenealogyPath, 'utf-8'));
+const fashionFixes2025: FashionFixes2025 = JSON.parse(fs.readFileSync(fashionFixes2025Path, 'utf-8'));
 
-interface FashionData {
-  designers: Designer[];
-  brands: Brand[];
-  tenures: Tenure[];
-  relationships: Relationship[];
-}
+// Create a deep clone of the data for updates
+const updatedData: FashionGenealogyData = JSON.parse(JSON.stringify(fashionGenealogyData));
 
-// Deep clone the existing data to avoid mutations
-const updatedData: FashionData = JSON.parse(JSON.stringify(fashionGenealogyData));
-
-// Helper function to check if a date string is valid ISO 8601
-const isValidISODate = (dateStr: string): boolean => {
-  const date = new Date(dateStr);
-  return date instanceof Date && !isNaN(date.getTime());
-};
-
-// Helper function to validate designer status
-const isValidDesignerStatus = (status: string): status is DesignerStatus => {
-  return ['ACTIVE', 'RETIRED', 'DECEASED'].includes(status.toUpperCase());
-};
-
-// Helper function to convert string to DesignerStatus
-const toDesignerStatus = (status: string): DesignerStatus => {
-  const upperStatus = status.toUpperCase();
-  switch (upperStatus) {
-    case 'ACTIVE':
-      return DesignerStatus.ACTIVE;
-    case 'RETIRED':
-      return DesignerStatus.RETIRED;
-    case 'DECEASED':
-      return DesignerStatus.DECEASED;
-    default:
-      throw new Error(`Invalid designer status: ${status}`);
+// Helper function to generate unique IDs
+const generateUniqueId = (prefix: string, existingIds: string[]): string => {
+  let counter = 1;
+  let newId = `${prefix}-${counter}`;
+  while (existingIds.includes(newId)) {
+    counter++;
+    newId = `${prefix}-${counter}`;
   }
+  return newId;
 };
 
 // Helper function to convert string to Department
-const toDepartment = (department: string): Department => {
-  const validDepartments: { [key: string]: Department } = {
-    'menswear': Department.MENSWEAR,
-    'womenswear': Department.WOMENSWEAR,
-    'accessories': Department.ACCESSORIES,
-    'ready-to-wear': Department.READY_TO_WEAR,
-    'leather-goods': Department.LEATHER_GOODS,
+const toDepartment = (department: string | undefined): Department | undefined => {
+  if (!department) return undefined;
+  const validDepartments: Record<string, Department> = {
     'jewelry': Department.JEWELRY,
     'watches': Department.WATCHES,
-    'haute-couture': Department.HAUTE_COUTURE
+    'ready-to-wear': Department.READY_TO_WEAR,
+    'accessories': Department.ACCESSORIES,
+    'leather goods': Department.LEATHER_GOODS,
+    'menswear': Department.MENSWEAR,
+    'womenswear': Department.WOMENSWEAR,
+    'haute couture': Department.HAUTE_COUTURE,
+    'all departments': Department.ALL_DEPARTMENTS
   };
   return validDepartments[department.toLowerCase()] || Department.ALL_DEPARTMENTS;
+};
+
+// Helper function to ensure tenure exists
+const ensureTenureExists = (designerId: string, brandId: string, tenure: Partial<Tenure> & { department?: string | Department }): void => {
+  const existingTenure = updatedData.tenures.find(t =>
+    t.designerId === designerId &&
+    t.brandId === brandId &&
+    t.role === tenure.role
+  );
+
+  if (!existingTenure) {
+    const newTenure: Tenure = {
+      id: generateUniqueId('tnr', updatedData.tenures.map(t => t.id)),
+      designerId,
+      brandId,
+      role: tenure.role || 'Creative Director',
+      department: typeof tenure.department === 'string' ? toDepartment(tenure.department) : tenure.department || Department.ALL_DEPARTMENTS,
+      startYear: tenure.startYear || new Date().getFullYear(),
+      endYear: tenure.endYear || undefined,
+      isCurrentRole: tenure.isCurrentRole || false,
+      achievements: tenure.achievements || [],
+      notableWorks: [],
+      notable_collections: [],
+      impact_description: '',
+      createdAt: new Date(),
+      updatedAt: new Date()
+    };
+    updatedData.tenures.push(newTenure);
+    console.log(`Added new tenure for ${designerId} at ${brandId}`);
+  } else {
+    Object.assign(existingTenure, {
+      department: typeof tenure.department === 'string' ? toDepartment(tenure.department) : tenure.department || existingTenure.department,
+      startYear: tenure.startYear || existingTenure.startYear,
+      endYear: tenure.endYear || existingTenure.endYear,
+      isCurrentRole: tenure.isCurrentRole || existingTenure.isCurrentRole,
+      achievements: tenure.achievements || existingTenure.achievements,
+      updatedAt: new Date()
+    });
+    console.log(`Updated tenure for ${designerId} at ${brandId}`);
+  }
 };
 
 // Helper function to find designer by ID or name
@@ -138,71 +132,29 @@ const findBrand = (brands: Brand[], idOrName: string): Brand | undefined => {
   return brands.find(b => b.id === idOrName || b.name === idOrName);
 };
 
-// Helper function to generate a unique ID
-const generateUniqueId = (prefix: string, existingIds: string[]): string => {
-  let counter = 1;
-  let newId = `${prefix}-${counter}`;
-  while (existingIds.includes(newId)) {
-    counter++;
-    newId = `${prefix}-${counter}`;
-  }
-  return newId;
-};
-
-// Update designer statuses
-console.log('Updating designer statuses...');
-if (fashionFixes2025.designerStatusUpdates?.updates) {
-  fashionFixes2025.designerStatusUpdates.updates.forEach((update: DesignerUpdate) => {
-    if (!isValidDesignerStatus(update.status)) {
-      console.warn(`Invalid status "${update.status}" for designer ${update.name}`);
-      return;
-    }
-    if (!isValidISODate(update.createdAt) || !isValidISODate(update.updatedAt)) {
-      console.warn(`Invalid dates for designer ${update.name}`);
-      return;
-    }
-
-    const existingDesigner = findDesigner(updatedData.designers, update.id);
-    if (existingDesigner) {
-      Object.assign(existingDesigner, {
-        status: toDesignerStatus(update.status),
-        isActive: update.isActive,
-        currentRole: update.currentRole,
-        updatedAt: new Date(update.updatedAt)
-      });
-      console.log(`Updated status for designer ${update.name}`);
-    } else {
-      const newDesigner: Designer = {
-        id: update.id,
-        name: update.name,
-        status: toDesignerStatus(update.status),
-        isActive: update.isActive,
-        currentRole: update.currentRole,
-        createdAt: new Date(update.createdAt),
-        updatedAt: new Date(update.updatedAt)
-      };
-      updatedData.designers.push(newDesigner);
-      console.log(`Added new designer ${update.name}`);
-    }
-  });
-}
-
-// Update historical brand data
+// Process historical brand data
 console.log('\nUpdating historical brand data...');
-if (fashionFixes2025.historicalBrandData?.updates) {
-  fashionFixes2025.historicalBrandData.updates.forEach((brandData: BrandHistoricalData) => {
+if (fashionFixes2025.historicalBrands) {
+  fashionFixes2025.historicalBrands.forEach((brandData: { brandName: string, designers: HistoricalDesigner[] }) => {
     const existingBrand = findBrand(updatedData.brands, brandData.brandName);
+
     if (existingBrand) {
-      // Update or add historical designers
-      brandData.historicalDesigners.forEach((designer: HistoricalDesigner) => {
-        const existingDesigner = findDesigner(updatedData.designers, designer.name);
-        if (!existingDesigner) {
+      // Process each designer
+      brandData.designers.forEach((designer: HistoricalDesigner) => {
+        // Add or update designer
+        const existingDesigner = findDesigner(updatedData.designers, designer.id);
+        if (existingDesigner) {
+          Object.assign(existingDesigner, {
+            name: designer.name,
+            updatedAt: new Date(designer.updatedAt)
+          });
+          console.log(`Updated historical designer ${designer.name}`);
+        } else {
           const newDesigner: Designer = {
             id: designer.id,
             name: designer.name,
-            status: designer.isCurrentRole ? DesignerStatus.ACTIVE : DesignerStatus.RETIRED,
-            isActive: designer.isCurrentRole,
-            currentRole: designer.role,
+            status: DesignerStatus.ACTIVE,
+            isActive: true,
             createdAt: new Date(designer.createdAt),
             updatedAt: new Date(designer.updatedAt)
           };
@@ -211,125 +163,48 @@ if (fashionFixes2025.historicalBrandData?.updates) {
         }
 
         // Add or update tenure
-        const existingTenure = updatedData.tenures?.find(t => 
-          t.designerId === designer.id && t.brandId === existingBrand.id
-        );
-
-        if (existingTenure) {
-          Object.assign(existingTenure, {
-            role: designer.role,
-            department: toDepartment(designer.department),
-            startYear: designer.startYear,
-            endYear: designer.endYear || undefined,
-            isCurrentRole: designer.isCurrentRole,
-            updatedAt: new Date(designer.updatedAt)
-          });
-          console.log(`Updated tenure for ${designer.name} at ${brandData.brandName}`);
-        } else {
-          const newTenure: Tenure = {
-            id: generateUniqueId('tnr', updatedData.tenures.map(t => t.id)),
-            designerId: designer.id,
-            brandId: existingBrand.id,
-            role: designer.role,
-            department: toDepartment(designer.department),
-            startYear: designer.startYear,
-            endYear: designer.endYear || undefined,
-            isCurrentRole: designer.isCurrentRole,
-            createdAt: new Date(designer.createdAt),
-            updatedAt: new Date(designer.updatedAt)
-          };
-          updatedData.tenures.push(newTenure);
-          console.log(`Added new tenure for ${designer.name} at ${brandData.brandName}`);
-        }
-      });
-
-      // Add relationships
-      if (brandData.relationships) {
-        brandData.relationships.forEach((relationship: Relationship) => {
-          const existingRelationship = updatedData.relationships.find(r =>
-            r.sourceDesignerId === relationship.sourceDesignerId &&
-            r.targetDesignerId === relationship.targetDesignerId &&
-            r.brandId === relationship.brandId
-          );
-
-          if (!existingRelationship) {
-            const newRelationship: Relationship = {
-              ...relationship,
-              id: generateUniqueId('rel', updatedData.relationships.map(r => r.id))
-            };
-            updatedData.relationships.push(newRelationship);
-            console.log(`Added new relationship between ${relationship.sourceDesignerId} and ${relationship.targetDesignerId}`);
-          }
+        ensureTenureExists(designer.id, existingBrand.id, {
+          role: designer.role,
+          department: toDepartment(designer.department),
+          startYear: designer.startYear,
+          endYear: designer.endYear || undefined,
+          isCurrentRole: designer.isCurrentRole,
+          achievements: designer.achievements,
+          createdAt: new Date(designer.createdAt),
+          updatedAt: new Date(designer.updatedAt)
         });
-      }
+      });
     }
   });
 }
 
 // Update designer tenures
 console.log('\nUpdating designer tenures...');
-if (fashionFixes2025.designerTenures?.updates) {
-  fashionFixes2025.designerTenures.updates.forEach((update: DesignerTenureUpdate) => {
-    const existingDesigner = findDesigner(updatedData.designers, update.designerId);
-    if (existingDesigner) {
-      update.tenures.forEach((tenure: DesignerTenure) => {
-        const existingBrand = findBrand(updatedData.brands, tenure.brand);
-        if (existingBrand) {
-          const existingTenure = updatedData.tenures?.find(t =>
-            t.designerId === update.designerId && t.brandId === existingBrand.id
-          );
+if (fashionFixes2025.tenures) {
+  fashionFixes2025.tenures.forEach((tenure: DesignerTenure) => {
+    const designer = findDesigner(updatedData.designers, tenure.id);
+    const brand = findBrand(updatedData.brands, tenure.brand);
 
-          if (existingTenure) {
-            Object.assign(existingTenure, {
-              role: tenure.role,
-              department: toDepartment(tenure.department),
-              startYear: tenure.startYear,
-              endYear: tenure.endYear || undefined,
-              isCurrentRole: tenure.isCurrentRole,
-              updatedAt: new Date(tenure.updatedAt)
-            });
-            console.log(`Updated tenure for ${update.name} at ${tenure.brand}`);
-          } else {
-            const newTenure: Tenure = {
-              id: generateUniqueId('tnr', updatedData.tenures.map(t => t.id)),
-              designerId: update.designerId,
-              brandId: existingBrand.id,
-              role: tenure.role,
-              department: toDepartment(tenure.department),
-              startYear: tenure.startYear,
-              endYear: tenure.endYear || undefined,
-              isCurrentRole: tenure.isCurrentRole,
-              createdAt: new Date(tenure.createdAt),
-              updatedAt: new Date(tenure.updatedAt)
-            };
-            updatedData.tenures.push(newTenure);
-            console.log(`Added new tenure for ${update.name} at ${tenure.brand}`);
-          }
-        }
+    if (designer && brand) {
+      ensureTenureExists(designer.id, brand.id, {
+        role: tenure.role,
+        department: toDepartment(tenure.department),
+        startYear: tenure.startYear,
+        endYear: tenure.endYear || undefined,
+        isCurrentRole: tenure.isCurrentRole,
+        achievements: tenure.achievements,
+        createdAt: new Date(tenure.createdAt),
+        updatedAt: new Date(tenure.updatedAt)
       });
     }
   });
 }
 
-// Update timestamps for designers missing them
-console.log('\nUpdating missing timestamps...');
-if (fashionFixes2025.designerTimestampUpdates?.updates) {
-  fashionFixes2025.designerTimestampUpdates.updates.forEach((update: TimestampUpdate) => {
-    const existingDesigner = findDesigner(updatedData.designers, update.name);
-    if (existingDesigner) {
-      if (!existingDesigner.createdAt) existingDesigner.createdAt = new Date(update.createdAt);
-      if (!existingDesigner.updatedAt) existingDesigner.updatedAt = new Date(update.updatedAt);
-      console.log(`Updated timestamps for ${update.name}`);
-    }
-  });
-}
-
-// Save the updated data
+// Save updated data
 fs.writeFileSync(fashionGenealogyPath, JSON.stringify(updatedData, null, 2));
-
 console.log('\nIntegration complete. Updated statistics:');
 console.log('--------------------------------------');
 console.log(`Total Designers: ${updatedData.designers.length}`);
 console.log(`Total Brands: ${updatedData.brands.length}`);
-console.log(`Total Tenures: ${updatedData.tenures?.length || 0}`);
+console.log(`Total Tenures: ${updatedData.tenures.length}`);
 console.log(`Total Relationships: ${updatedData.relationships.length}`);

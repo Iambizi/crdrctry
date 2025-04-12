@@ -6,9 +6,9 @@ export enum RelationshipType {
 }
 
 export enum DesignerStatus {
-  ACTIVE = "active",
-  RETIRED = "retired",
-  DECEASED = "deceased",
+  ACTIVE = "ACTIVE",
+  RETIRED = "RETIRED",
+  DECEASED = "DECEASED",
 }
 
 export interface BaseEntity {
@@ -74,7 +74,7 @@ export interface Tenure extends BaseEntity {
   role: string;
   department?: Department;
   startYear: number;
-  endYear?: number;
+  endYear?: number | null;
   isCurrentRole: boolean;
   achievements?: string[];
   notableWorks?: string[];
@@ -92,6 +92,37 @@ export interface Relationship extends BaseEntity {
   description?: string;
   impact?: string;
   collaboration_projects?: string[];
+}
+
+export interface HistoricalDesigner {
+  id: string;
+  name: string;
+  role: string;
+  department?: string;
+  startYear: number;
+  endYear?: number | null;
+  isCurrentRole: boolean;
+  achievements?: string[];
+  notableWorks?: string[];
+  notable_collections?: string[];
+  impact_description?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface DesignerTenure {
+  brand: string;
+  role: string;
+  department?: string;
+  startYear: number;
+  endYear?: number | null;
+  isCurrentRole: boolean;
+  achievements?: string[];
+  notableWorks?: string[];
+  notable_collections?: string[];
+  impact_description?: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface EnrichedDesigner {

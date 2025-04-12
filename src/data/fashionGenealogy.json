@@ -1929,6 +1929,46 @@
       },
       "createdAt": "2025-04-12T01:50:23.598Z",
       "updatedAt": "2025-04-11T00:00:00Z"
+    },
+    {
+      "id": "brand-1",
+      "name": "christian-lacroix",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.128Z",
+      "updatedAt": "2025-04-12T04:54:38.128Z"
+    },
+    {
+      "id": "brand-2",
+      "name": "bonpoint",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.130Z",
+      "updatedAt": "2025-04-12T04:54:38.130Z"
+    },
+    {
+      "id": "brand-3",
+      "name": "thomas-pink",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.131Z",
+      "updatedAt": "2025-04-12T04:54:38.131Z"
+    },
+    {
+      "id": "brand-4",
+      "name": "vera-wang",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
+    },
+    {
+      "id": "brand-5",
+      "name": "ralph-lauren",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
     }
   ],
   "designers": [
@@ -3636,7 +3676,7 @@
     {
       "id": "tm-2025-002",
       "name": "Takahiro Miyashita",
-      "status": "deceased",
+      "status": "DECEASED",
       "isActive": false,
       "currentRole": null,
       "createdAt": "2025-04-11T00:00:00Z",
@@ -3744,7 +3784,7 @@
     {
       "id": "pd-2025-002",
       "name": "Peter Do",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Creative Director at Helmut Lang",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3753,7 +3793,7 @@
     {
       "id": "cl-2025-002",
       "name": "Christophe Lemaire",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Creative Director at Uniqlo U and Co-Founder of Lemaire",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3762,7 +3802,7 @@
     {
       "id": "jl-2025-002",
       "name": "Jerry Lorenzo",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Founder and Creative Director at Fear of God, Global Head of Adidas Basketball",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3771,7 +3811,7 @@
     {
       "id": "eab-2025-002",
       "name": "Emily Adams Bode",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Founder and Creative Director at Bode",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3780,7 +3820,7 @@
     {
       "id": "sb-2025-002",
       "name": "Sarah Burton",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Independent Designer (former Creative Director at Alexander McQueen)",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3789,7 +3829,7 @@
     {
       "id": "sf-2025-002",
       "name": "Salvatore Ferragamo",
-      "status": "deceased",
+      "status": "DECEASED",
       "isActive": false,
       "currentRole": null,
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3798,7 +3838,7 @@
     {
       "id": "fm-2025-002",
       "name": "Franco Moschino",
-      "status": "deceased",
+      "status": "DECEASED",
       "isActive": false,
       "currentRole": null,
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3807,7 +3847,7 @@
     {
       "id": "im-2025-002",
       "name": "Issey Miyake",
-      "status": "deceased",
+      "status": "DECEASED",
       "isActive": false,
       "currentRole": null,
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3816,7 +3856,7 @@
     {
       "id": "dd-2025-002",
       "name": "Domenico Dolce",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Co-Founder and Co-Creative Director at Dolce & Gabbana",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3825,7 +3865,7 @@
     {
       "id": "sg-2025-002",
       "name": "Stefano Gabbana",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Co-Founder and Co-Creative Director at Dolce & Gabbana",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3834,7 +3874,7 @@
     {
       "id": "hl-2025-002",
       "name": "Helmut Lang",
-      "status": "retired",
+      "status": "RETIRED",
       "isActive": false,
       "currentRole": "Artist (retired from fashion design)",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3843,7 +3883,7 @@
     {
       "id": "ad-2025-002",
       "name": "Ann Demeulemeester",
-      "status": "retired",
+      "status": "RETIRED",
       "isActive": false,
       "currentRole": "Artist and Designer (retired from eponymous brand)",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3852,7 +3892,7 @@
     {
       "id": "vw-2025-002",
       "name": "Vivienne Westwood",
-      "status": "deceased",
+      "status": "DECEASED",
       "isActive": false,
       "currentRole": null,
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3861,7 +3901,7 @@
     {
       "id": "wvb-2025-002",
       "name": "Walter Van Beirendonck",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Creative Director at Walter Van Beirendonck, Professor at Royal Academy of Fine Arts Antwerp",
       "createdAt": "2025-04-12T14:30:00.000Z",
@@ -3870,11 +3910,51 @@
     {
       "id": "tm-2025-003",
       "name": "Takahiro Miyashita",
-      "status": "active",
+      "status": "ACTIVE",
       "isActive": true,
       "currentRole": "Founder and Designer at TAKAHIROMIYASHITA TheSoloist.",
       "createdAt": "2025-04-12T14:30:00.000Z",
       "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "gv-hist-001",
+      "name": "gv-hist-001",
+      "status": "active",
+      "isActive": true,
+      "createdAt": "2025-04-12T04:54:38.129Z",
+      "updatedAt": "2025-04-12T04:54:38.129Z"
+    },
+    {
+      "id": "bc-hist-001",
+      "name": "bc-hist-001",
+      "status": "active",
+      "isActive": true,
+      "createdAt": "2025-04-12T04:54:38.130Z",
+      "updatedAt": "2025-04-12T04:54:38.130Z"
+    },
+    {
+      "id": "pm-hist-001",
+      "name": "pm-hist-001",
+      "status": "active",
+      "isActive": true,
+      "createdAt": "2025-04-12T04:54:38.131Z",
+      "updatedAt": "2025-04-12T04:54:38.131Z"
+    },
+    {
+      "id": "jr-hist-001",
+      "name": "jr-hist-001",
+      "status": "active",
+      "isActive": true,
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
+    },
+    {
+      "id": "rl-hist-001",
+      "name": "rl-hist-001",
+      "status": "active",
+      "isActive": true,
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
     }
   ],
   "tenures": [
@@ -33450,6 +33530,145 @@
       "confidence": 0.9,
       "createdAt": "2025-04-12T14:30:00Z",
       "updatedAt": "2025-04-12T14:30:00Z"
+    },
+    {
+      "id": "rel-10",
+      "sourceDesignerId": "cl-hist-001",
+      "targetDesignerId": "sw-hist-001",
+      "brandId": "brand-1",
+      "type": "mentorship",
+      "startYear": 1992,
+      "endYear": 2009,
+      "description": "Walckhoff served as Lacroix's assistant and studio director for 17 years before succeeding him as Creative Director",
+      "collaboration_projects": [
+        "Ready-to-wear collections",
+        "Accessories lines"
+      ],
+      "createdAt": "2025-04-12T04:54:38.129Z",
+      "updatedAt": "2025-04-12T04:54:38.129Z"
+    },
+    {
+      "id": "rel-11",
+      "sourceDesignerId": "cl-hist-001",
+      "targetDesignerId": "gv-hist-001",
+      "brandId": "brand-1",
+      "type": "mentorship",
+      "startYear": 1997,
+      "endYear": 2001,
+      "description": "Giambattista Valli served as Art Director at Lacroix before establishing his own couture house",
+      "collaboration_projects": [
+        "Ready-to-wear collections",
+        "Jeans line"
+      ],
+      "createdAt": "2025-04-12T04:54:38.130Z",
+      "updatedAt": "2025-04-12T04:54:38.130Z"
+    },
+    {
+      "id": "rel-12",
+      "sourceDesignerId": "mfc-hist-001",
+      "targetDesignerId": "ci-hist-001",
+      "brandId": "brand-2",
+      "type": "succession",
+      "startYear": 2007,
+      "endYear": null,
+      "description": "Innamorato took over creative direction after Cohen sold the company to EPI Group",
+      "collaboration_projects": [],
+      "createdAt": "2025-04-12T04:54:38.130Z",
+      "updatedAt": "2025-04-12T04:54:38.130Z"
+    },
+    {
+      "id": "rel-13",
+      "sourceDesignerId": "mfc-hist-001",
+      "targetDesignerId": "bc-hist-001",
+      "brandId": "brand-2",
+      "type": "familial",
+      "startYear": 1975,
+      "endYear": 2007,
+      "description": "Bernard Cohen and Marie-France Cohen were husband and wife who founded and developed Bonpoint together",
+      "collaboration_projects": [
+        "Original store concept",
+        "Brand development"
+      ],
+      "createdAt": "2025-04-12T04:54:38.130Z",
+      "updatedAt": "2025-04-12T04:54:38.130Z"
+    },
+    {
+      "id": "rel-14",
+      "sourceDesignerId": "jm-hist-001",
+      "targetDesignerId": "pm-hist-001",
+      "brandId": "brand-3",
+      "type": "familial",
+      "startYear": 1984,
+      "endYear": 1999,
+      "description": "James and Peter Mullen were brothers who co-founded Thomas Pink and established its design aesthetic",
+      "collaboration_projects": [
+        "Original shirt designs",
+        "Jermyn Street store concept"
+      ],
+      "createdAt": "2025-04-12T04:54:38.131Z",
+      "updatedAt": "2025-04-12T04:54:38.131Z"
+    },
+    {
+      "id": "rel-15",
+      "sourceDesignerId": "jr-hist-001",
+      "targetDesignerId": "nt-hist-001",
+      "brandId": "brand-3",
+      "type": "succession",
+      "startYear": 2021,
+      "endYear": null,
+      "description": "Tentis succeeded Ray after LVMH sold the brand back to the Mullen family",
+      "collaboration_projects": [
+        "Brand relaunch strategy"
+      ],
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
+    },
+    {
+      "id": "rel-16",
+      "sourceDesignerId": "vw-hist-001",
+      "targetDesignerId": "jd-hist-001",
+      "brandId": "brand-4",
+      "type": "mentorship",
+      "startYear": 2008,
+      "endYear": 2017,
+      "description": "Wang mentored Dahlin in bridal design, empowering her to develop collections while maintaining the brand vision",
+      "collaboration_projects": [
+        "White by Vera Wang",
+        "Vera Wang Luxe"
+      ],
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
+    },
+    {
+      "id": "rel-17",
+      "sourceDesignerId": "rl-hist-001",
+      "targetDesignerId": "vw-hist-001",
+      "brandId": "brand-5",
+      "type": "mentorship",
+      "startYear": 1987,
+      "endYear": 1989,
+      "description": "Wang worked as design director at Ralph Lauren before founding her own company",
+      "collaboration_projects": [
+        "Ralph Lauren womenswear collections"
+      ],
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
+    },
+    {
+      "id": "rel-18",
+      "sourceDesignerId": "vw-hist-001",
+      "targetDesignerId": "pd-hist-001",
+      "brandId": "brand-4",
+      "type": "collaboration",
+      "startYear": 2016,
+      "endYear": null,
+      "description": "Creative partnership focusing on brand identity and visual direction",
+      "collaboration_projects": [
+        "Brand identity refresh",
+        "Digital strategy"
+      ],
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
     }
   ]
 }
