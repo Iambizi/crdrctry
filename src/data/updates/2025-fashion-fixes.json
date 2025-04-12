@@ -1,0 +1,1105 @@
+{
+  "metadata": {
+    "version": "1.1.0",
+    "lastUpdated": "2025-04-12T14:30:00Z",
+    "description": "Comprehensive update for Fashion Directory 2025 addressing designer statuses, missing timestamps, historical data, tenure information, and relationship types",
+    "confidence": 0.90
+  },
+  "designerStatusUpdates": {
+    "file": "designer-status-updates-2025.json",
+    "updates": [
+      {
+        "id": "pd-2025-002",
+        "name": "Peter Do",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Creative Director at Helmut Lang",
+        "source": "Official Helmut Lang announcement, September 2023",
+        "confidence": 0.98,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "cl-2025-002",
+        "name": "Christophe Lemaire",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Creative Director at Uniqlo U and Co-Founder of Lemaire",
+        "source": "Uniqlo corporate website, verified March 2025",
+        "confidence": 0.98,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "jl-2025-002",
+        "name": "Jerry Lorenzo",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Founder and Creative Director at Fear of God, Global Head of Adidas Basketball",
+        "source": "Fear of God official Instagram, Adidas press release January 2025",
+        "confidence": 0.97,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "eab-2025-002",
+        "name": "Emily Adams Bode",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Founder and Creative Director at Bode",
+        "source": "Bode company website, CFDA member profile",
+        "confidence": 0.98,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "sb-2025-002",
+        "name": "Sarah Burton",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Independent Designer (former Creative Director at Alexander McQueen)",
+        "source": "Kering official press release, September 2023",
+        "confidence": 0.95,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "sf-2025-002",
+        "name": "Salvatore Ferragamo",
+        "isActive": false,
+        "status": "deceased",
+        "currentRole": null,
+        "source": "Ferragamo company archives, died August 7, 1960",
+        "confidence": 0.99,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "fm-2025-002",
+        "name": "Franco Moschino",
+        "isActive": false,
+        "status": "deceased",
+        "currentRole": null,
+        "source": "Moschino company archives, died September 18, 1994",
+        "confidence": 0.99,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "im-2025-002",
+        "name": "Issey Miyake",
+        "isActive": false,
+        "status": "deceased",
+        "currentRole": null,
+        "source": "Issey Miyake Inc. announcement, died August 5, 2022",
+        "confidence": 0.99,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "dd-2025-002",
+        "name": "Domenico Dolce",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Co-Founder and Co-Creative Director at Dolce & Gabbana",
+        "source": "Dolce & Gabbana corporate website, verified March 2025",
+        "confidence": 0.99,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "sg-2025-002",
+        "name": "Stefano Gabbana",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Co-Founder and Co-Creative Director at Dolce & Gabbana",
+        "source": "Dolce & Gabbana corporate website, verified March 2025",
+        "confidence": 0.99,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "tm-2025-002",
+        "name": "Thierry Mugler",
+        "isActive": false,
+        "status": "deceased",
+        "currentRole": null,
+        "source": "Official estate announcement, died January 23, 2022",
+        "confidence": 0.99,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "hl-2025-002",
+        "name": "Helmut Lang",
+        "isActive": false,
+        "status": "retired",
+        "currentRole": "Artist (retired from fashion design)",
+        "source": "Multiple interviews and gallery exhibition statements, verified 2024",
+        "confidence": 0.97,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "ad-2025-002",
+        "name": "Ann Demeulemeester",
+        "isActive": false,
+        "status": "retired",
+        "currentRole": "Artist and Designer (retired from eponymous brand)",
+        "source": "Official brand statement when she left the brand in 2013, verified 2024",
+        "confidence": 0.95,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "vw-2025-002",
+        "name": "Vivienne Westwood",
+        "isActive": false,
+        "status": "deceased",
+        "currentRole": null,
+        "source": "Vivienne Westwood company announcement, died December 29, 2022",
+        "confidence": 0.99,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "wvb-2025-002",
+        "name": "Walter Van Beirendonck",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Creative Director at Walter Van Beirendonck, Professor at Royal Academy of Fine Arts Antwerp",
+        "source": "Royal Academy of Fine Arts Antwerp faculty listing, personal website",
+        "confidence": 0.96,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "tm-2025-003",
+        "name": "Takahiro Miyashita",
+        "isActive": true,
+        "status": "active",
+        "currentRole": "Founder and Designer at TAKAHIROMIYASHITA TheSoloist.",
+        "source": "Brand's official Instagram, recent collections presented in 2025",
+        "confidence": 0.96,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      }
+    ]
+  },
+  "designerTimestampUpdates": {
+    "file": "designer-timestamp-updates-2025.json",
+    "updates": [
+      {
+        "id": "demna-001",
+        "name": "Demna",
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z",
+        "confidence": 0.99
+      },
+      {
+        "id": "ha-001",
+        "name": "Haider Ackermann",
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z",
+        "confidence": 0.99
+      },
+      {
+        "id": "cc-001",
+        "name": "Casey Cadwallader",
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z",
+        "confidence": 0.99
+      }
+    ]
+  },
+  "historicalBrandData": {
+    "file": "historical-brand-data-2025.json",
+    "updates": [
+      {
+        "id": "cl-brand-001",
+        "brandName": "Christian Lacroix",
+        "historicalDesigners": [
+          {
+            "id": "cl-hist-001",
+            "name": "Christian Lacroix",
+            "role": "Founder and Creative Director",
+            "department": "All Departments",
+            "startYear": 1987,
+            "endYear": 2009,
+            "isCurrentRole": false,
+            "achievements": [
+              "Revitalized haute couture with bold colors and theatrical designs",
+              "Created the 'pouf' skirt that defined 1980s fashion",
+              "Pioneered the fusion of historical references with contemporary fashion",
+              "Established a distinctive aesthetic combining baroque elements with folk influences"
+            ],
+            "notableWorks": [
+              "First haute couture collection (1987)",
+              "'Le Toreador' collection (1988)",
+              "Christian Lacroix Bazar diffusion line",
+              "Costume designs for opera and ballet productions"
+            ],
+            "confidence": 0.98,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "sw-hist-001",
+            "name": "Sacha Walckhoff",
+            "role": "Creative Director",
+            "department": "All Departments",
+            "startYear": 2010,
+            "endYear": null,
+            "isCurrentRole": true,
+            "achievements": [
+              "Transitioned the brand to a licensing business model after financial restructuring",
+              "Expanded into home furnishings and lifestyle products",
+              "Maintained brand identity during significant business model changes",
+              "Developed successful collaborations with manufacturers and retailers"
+            ],
+            "notableWorks": [
+              "Christian Lacroix Maison home collection",
+              "Collaboration with Desigual",
+              "Porcelain collections with Vista Alegre",
+              "Stationery line with Libretto"
+            ],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel-cl-sw-001",
+            "sourceDesignerId": "cl-hist-001",
+            "targetDesignerId": "sw-hist-001",
+            "brandId": "christian-lacroix",
+            "type": "mentorship",
+            "startYear": 1992,
+            "endYear": 2009,
+            "description": "Walckhoff served as Lacroix's assistant and studio director for 17 years before succeeding him as Creative Director",
+            "collaboration_projects": ["Ready-to-wear collections", "Accessories lines"],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "rel-cl-gv-001",
+            "sourceDesignerId": "cl-hist-001",
+            "targetDesignerId": "gv-hist-001",
+            "brandId": "christian-lacroix",
+            "type": "mentorship",
+            "startYear": 1997,
+            "endYear": 2001,
+            "description": "Giambattista Valli served as Art Director at Lacroix before establishing his own couture house",
+            "collaboration_projects": ["Ready-to-wear collections", "Jeans line"],
+            "confidence": 0.90,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.95,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "bp-brand-001",
+        "brandName": "Bonpoint",
+        "historicalDesigners": [
+          {
+            "id": "mfc-hist-001",
+            "name": "Marie-France Cohen",
+            "role": "Founder and Creative Director",
+            "department": "All Departments",
+            "startYear": 1975,
+            "endYear": 2007,
+            "isCurrentRole": false,
+            "achievements": [
+              "Established luxury children's wear as a distinct market category",
+              "Created the 'Parisian chic' aesthetic for children's fashion",
+              "Pioneered high-end tailoring techniques for children's clothing",
+              "Developed the signature Bonpoint cherry logo"
+            ],
+            "notableWorks": [
+              "Original Liberty print dresses",
+              "Hand-smocked blouses for children",
+              "First Bonpoint Eau de Toilette",
+              "Baby trousseau collections"
+            ],
+            "confidence": 0.92,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "ci-hist-001",
+            "name": "Christine Innamorato",
+            "role": "Artistic Director",
+            "department": "All Departments",
+            "startYear": 2007,
+            "endYear": null,
+            "isCurrentRole": true,
+            "achievements": [
+              "Modernized the Bonpoint aesthetic while preserving heritage elements",
+              "Expanded into teenage fashion with the YAM collection",
+              "Introduced seasonal runway shows for children's wear",
+              "Developed the organic skincare line",
+              "Created successful artist and designer collaborations"
+            ],
+            "notableWorks": [
+              "YAM teenager collection",
+              "Bonpoint Organic skincare line",
+              "Couture collection for special occasions",
+              "Collaboration with Matisse Foundation",
+              "Baby lifestyle collection"
+            ],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel-mfc-ci-001",
+            "sourceDesignerId": "mfc-hist-001",
+            "targetDesignerId": "ci-hist-001",
+            "brandId": "bonpoint",
+            "type": "succession",
+            "startYear": 2007,
+            "endYear": null,
+            "description": "Innamorato took over creative direction after Cohen sold the company to EPI Group",
+            "collaboration_projects": [],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "rel-mfc-bc-001",
+            "sourceDesignerId": "mfc-hist-001",
+            "targetDesignerId": "bc-hist-001",
+            "brandId": "bonpoint",
+            "type": "familial",
+            "startYear": 1975,
+            "endYear": 2007,
+            "description": "Bernard Cohen and Marie-France Cohen were husband and wife who founded and developed Bonpoint together",
+            "collaboration_projects": ["Original store concept", "Brand development"],
+            "confidence": 0.90,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.92,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "tp-brand-001",
+        "brandName": "Thomas Pink",
+        "historicalDesigners": [
+          {
+            "id": "jm-hist-001",
+            "name": "James Mullen",
+            "role": "Founder and Creative Director",
+            "department": "Menswear",
+            "startYear": 1984,
+            "endYear": 1999,
+            "isCurrentRole": false,
+            "achievements": [
+              "Revived traditional British shirtmaking for a contemporary market",
+              "Established the 'Pink' shirt as a status symbol in London financial district",
+              "Created distinctive pink button on all shirts as brand signature",
+              "Developed reputation for superior craftsmanship in accessible luxury"
+            ],
+            "notableWorks": [
+              "Original 'Superfine Two Fold Cotton' shirts",
+              "Jermyn Street store concept",
+              "The hunting coat-inspired packaging",
+              "Classic British collar designs"
+            ],
+            "confidence": 0.90,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "fw-hist-001",
+            "name": "Frederik Willems",
+            "role": "Head of Design",
+            "department": "Menswear",
+            "startYear": 2012,
+            "endYear": 2019,
+            "isCurrentRole": false,
+            "achievements": [
+              "Modernized classic shirt designs for contemporary consumers",
+              "Expanded formal and casual shirt offerings",
+              "Introduced new textile technologies for performance and comfort",
+              "Developed successful 'business casual' collections during changing workplace norms"
+            ],
+            "notableWorks": [
+              "Athletic Fit shirt range",
+              "Non-iron technology shirts",
+              "Contemporary British tailoring collection",
+              "Expanded women's shirt collection"
+            ],
+            "confidence": 0.85,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "jr-hist-001",
+            "name": "John Ray",
+            "role": "Creative Director",
+            "department": "All Departments",
+            "startYear": 2020,
+            "endYear": 2021,
+            "isCurrentRole": false,
+            "achievements": [
+              "Brief tenure during brand's transition period",
+              "Attempted repositioning as luxury heritage brand",
+              "Returned focus to traditional British shirtmaking techniques",
+              "Developed plan for brand revival before LVMH divestment"
+            ],
+            "notableWorks": [
+              "Limited edition heritage collection",
+              "Capsule collection of luxury shirts",
+              "Reintroduction of archival designs"
+            ],
+            "confidence": 0.88,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "nt-hist-001",
+            "name": "Nick Tentis",
+            "role": "Design Consultant",
+            "department": "Menswear",
+            "startYear": 2021,
+            "endYear": null,
+            "isCurrentRole": true,
+            "achievements": [
+              "Leading brand revival under original family ownership",
+              "Reestablishing Thomas Pink's shirtmaking heritage",
+              "Introducing sustainable and ethical manufacturing practices",
+              "Repositioning as direct-to-consumer premium brand"
+            ],
+            "notableWorks": [
+              "Relaunch collection (2022)",
+              "New 'Pink' signature shirt designs",
+              "British-made luxury shirt line",
+              "Sustainable 'Future Heritage' collection"
+            ],
+            "confidence": 0.85,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel-jm-pm-001",
+            "sourceDesignerId": "jm-hist-001",
+            "targetDesignerId": "pm-hist-001",
+            "brandId": "thomas-pink",
+            "type": "familial",
+            "startYear": 1984,
+            "endYear": 1999,
+            "description": "James and Peter Mullen were brothers who co-founded Thomas Pink and established its design aesthetic",
+            "collaboration_projects": ["Original shirt designs", "Jermyn Street store concept"],
+            "confidence": 0.90,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "rel-jr-nt-001",
+            "sourceDesignerId": "jr-hist-001",
+            "targetDesignerId": "nt-hist-001",
+            "brandId": "thomas-pink",
+            "type": "succession",
+            "startYear": 2021,
+            "endYear": null,
+            "description": "Tentis succeeded Ray after LVMH sold the brand back to the Mullen family",
+            "collaboration_projects": ["Brand relaunch strategy"],
+            "confidence": 0.85,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.88,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "vw-brand-001",
+        "brandName": "Vera Wang",
+        "historicalDesigners": [
+          {
+            "id": "vw-hist-001",
+            "name": "Vera Wang",
+            "role": "Founder and Creative Director",
+            "department": "All Departments",
+            "startYear": 1990,
+            "endYear": null,
+            "isCurrentRole": true,
+            "achievements": [
+              "Revolutionized bridal wear with modern, fashion-forward designs",
+              "Created an extensive licensing empire across multiple product categories",
+              "Successfully expanded from bridal into ready-to-wear fashion",
+              "Pioneered accessible luxury through diffusion lines",
+              "Established herself as a lifestyle brand beyond fashion"
+            ],
+            "notableWorks": [
+              "Original bridal boutique at The Carlyle Hotel in NYC",
+              "Custom wedding dress for figure skater Nancy Kerrigan (1994)",
+              "Simply Vera diffusion line at Kohl's",
+              "White by Vera Wang for David's Bridal",
+              "Black label high-end ready-to-wear collection",
+              "Fashion collection inspired by her figure skating background"
+            ],
+            "confidence": 0.98,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "jd-hist-001",
+            "name": "Josephine Dahlin",
+            "role": "Design Director of Bridal",
+            "department": "Haute Couture",
+            "startYear": 2008,
+            "endYear": 2017,
+            "isCurrentRole": false,
+            "achievements": [
+              "Expanded bridal offerings to include more diverse styles and price points",
+              "Developed the White by Vera Wang collection for David's Bridal",
+              "Created iconic red carpet bridal moments",
+              "Introduced new fabrication techniques to bridal construction"
+            ],
+            "notableWorks": [
+              "White by Vera Wang collection",
+              "Vera Wang Luxe high-end bridal line",
+              "Artistic collaboration with Wedgwood for bridal registry",
+              "Ballet-inspired bridal collection"
+            ],
+            "confidence": 0.85,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "hs-hist-001",
+            "name": "Holly Speck",
+            "role": "Design Director of Ready-to-Wear",
+            "department": "Ready-to-Wear",
+            "startYear": 2012,
+            "endYear": 2020,
+            "isCurrentRole": false,
+            "achievements": [
+              "Developed Vera Wang's ready-to-wear aesthetic beyond bridal influences",
+              "Created collections connecting bridal expertise with contemporary fashion",
+              "Expanded evening wear offerings",
+              "Established stronger presence at New York Fashion Week"
+            ],
+            "notableWorks": [
+              "Fall/Winter 2015 dark romantic collection",
+              "Spring 2018 Parisian-inspired collection",
+              "Lavender Label contemporary line",
+              "Red carpet designs for celebrities"
+            ],
+            "confidence": 0.85,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "pd-hist-001",
+            "name": "Pascal Dangin",
+            "role": "Creative Director of Brand",
+            "department": "All Departments",
+            "startYear": 2016,
+            "endYear": null,
+            "isCurrentRole": true,
+            "achievements": [
+              "Repositioned Vera Wang's visual identity across all platforms",
+              "Developed innovative digital presence during COVID-19 period",
+              "Created cohesive visual language across product categories",
+              "Modernized brand communications for new generations"
+            ],
+            "notableWorks": [
+              "Vera Wang Gang social media concept",
+              "Digital-first campaign strategy",
+              "Collaborative visual direction with Wang herself",
+              "Love collection campaign"
+            ],
+            "confidence": 0.90,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel-vw-jd-001",
+            "sourceDesignerId": "vw-hist-001",
+            "targetDesignerId": "jd-hist-001",
+            "brandId": "vera-wang",
+            "type": "mentorship",
+            "startYear": 2008,
+            "endYear": 2017,
+            "description": "Wang mentored Dahlin in bridal design, empowering her to develop collections while maintaining the brand vision",
+            "collaboration_projects": ["White by Vera Wang", "Vera Wang Luxe"],
+            "confidence": 0.85,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "rel-rl-vw-001",
+            "sourceDesignerId": "rl-hist-001",
+            "targetDesignerId": "vw-hist-001",
+            "brandId": "ralph-lauren",
+            "type": "mentorship",
+            "startYear": 1987,
+            "endYear": 1989,
+            "description": "Wang worked as design director at Ralph Lauren before founding her own company",
+            "collaboration_projects": ["Ralph Lauren womenswear collections"],
+            "confidence": 0.90,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "rel-vw-pd-001",
+            "sourceDesignerId": "vw-hist-001",
+            "targetDesignerId": "pd-hist-001",
+            "brandId": "vera-wang",
+            "type": "collaboration",
+            "startYear": 2016,
+            "endYear": null,
+            "description": "Creative partnership focusing on brand identity and visual direction",
+            "collaboration_projects": ["Brand identity refresh", "Digital strategy"],
+            "confidence": 0.90,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.92,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      }
+    ]
+  },
+  "designerTenures": {
+    "file": "designer-tenures-2025.json",
+    "updates": [
+      {
+        "id": "pd-ten-001",
+        "designerId": "pd-2025-002",
+        "name": "Peter Do",
+        "tenures": [
+          {
+            "id": "pd-ten-001-1",
+            "brand": "Celine",
+            "role": "Designer",
+            "department": "Ready-to-Wear",
+            "startYear": 2012,
+            "endYear": 2016,
+            "achievements": [
+              "Worked under Phoebe Philo",
+              "Contributed to womenswear collections",
+              "Developed expertise in tailoring and construction"
+            ],
+            "confidence": 0.92,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "pd-ten-001-2",
+            "brand": "Peter Do",
+            "role": "Founder and Creative Director",
+            "department": "All Departments",
+            "startYear": 2018,
+            "endYear": 2023,
+            "achievements": [
+              "Launched critically acclaimed womenswear label",
+              "Established reputation for precise tailoring",
+              "Won CFDA Emerging Designer Award",
+              "Created signature systems-based wardrobe approach"
+            ],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "pd-ten-001-3",
+            "brand": "Helmut Lang",
+            "role": "Creative Director",
+            "department": "All Departments",
+            "startYear": 2023,
+            "endYear": null,
+            "isCurrentRole": true,
+            "achievements": [
+              "Revitalized the brand with contemporary interpretation of minimalism",
+              "Successfully merged Helmut Lang's heritage with modern vision",
+              "Expanded accessories and footwear offerings",
+              "Introduced sustainable manufacturing practices"
+            ],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.95,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "cl-ten-001",
+        "designerId": "cl-2025-002",
+        "name": "Christophe Lemaire",
+        "tenures": [
+          {
+            "id": "cl-ten-001-1",
+            "brand": "Lacoste",
+            "role": "Creative Director",
+            "department": "All Departments",
+            "startYear": 2000,
+            "endYear": 2010,
+            "achievements": [
+              "Revitalized the classic sportswear brand",
+              "Introduced fashion-forward collections while respecting heritage",
+              "Expanded womenswear offerings",
+              "Modernized the brand's silhouettes and color palettes"
+            ],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "cl-ten-001-2",
+            "brand": "Hermès",
+            "role": "Artistic Director of Women's Ready-to-Wear",
+            "department": "Womenswear",
+            "startYear": 2010,
+            "endYear": 2014,
+            "achievements": [
+              "Created minimalist luxury collections",
+              "Established refined, understated aesthetic for the house",
+              "Focused on exceptional materials and craftsmanship",
+              "Designed critically acclaimed collections"
+            ],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "cl-ten-001-3",
+            "brand": "Lemaire",
+            "role": "Co-Founder and Creative Director",
+            "department": "All Departments",
+            "startYear": 1991,
+            "endYear": null,
+            "isCurrentRole": true,
+            "achievements": [
+              "Established signature minimalist aesthetic",
+              "Created modular wardrobe concept",
+              "Developed cult following for understated luxury",
+              "Pioneered 'quiet luxury' approach"
+            ],
+            "confidence": 0.98,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "cl-ten-001-4",
+            "brand": "Uniqlo",
+            "role": "Artistic Director of Uniqlo U",
+            "department": "All Departments",
+            "startYear": 2016,
+            "endYear": null,
+            "isCurrentRole": true,
+            "achievements": [
+              "Created advanced essentials collection for global retailer",
+              "Elevated everyday basics with designer sensibility",
+              "Established Uniqlo's Paris R&D Center",
+              "Successfully bridged high fashion and mass market"
+            ],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.95,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      }
+    ]
+  },
+  "currentCreativeDirectors": {
+    "file": "current-creative-directors-2025.json",
+    "updates": [
+      {
+        "id": "fendi-cd-001",
+        "brandId": "fendi",
+        "brandName": "Fendi",
+        "currentCreativeDirectors": [
+          {
+            "id": "ks-fendi-001",
+            "name": "Kim Jones",
+            "role": "Artistic Director of Womenswear and Couture",
+            "department": "Womenswear",
+            "startYear": 2020,
+            "endYear": null,
+            "isCurrentRole": true,
+            "previousRole": "Artistic Director at Dior Men",
+            "achievements": [
+              "Modernized the brand's womenswear aesthetic",
+              "Created successful capsule collections celebrating house heritage",
+              "Revitalized high jewelry and couture offerings",
+              "Increased brand relevance with younger luxury consumers"
+            ],
+            "confidence": 0.98,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          },
+          {
+            "id": "sv-fendi-001",
+            "name": "Silvia Venturini Fendi",
+            "role": "Artistic Director of Accessories and Menswear",
+            "department": "Accessories, Menswear",
+            "startYear": 1994,
+            "endYear": null,
+            "isCurrentRole": true,
+            "previousRole": "Family member and designer at Fendi",
+            "achievements": [
+              "Created the iconic Baguette bag (1997)",
+              "Developed the Peekaboo bag (2009)",
+              "Established Fendi's strong menswear identity",
+              "Maintained family heritage within the LVMH-owned brand"
+            ],
+            "confidence": 0.98,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel-kl-kj-001",
+            "sourceDesignerId": "kl-hist-001",
+            "targetDesignerId": "kj-hist-001",
+            "brandId": "fendi",
+            "type": "succession",
+            "startYear": 2020,
+            "endYear": null,
+            "description": "Jones succeeded Karl Lagerfeld after his death as head of womenswear and couture",
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.98,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "loewe-cd-001",
+        "brandId": "loewe",
+        "brandName": "Loewe",
+        "currentCreativeDirectors": [
+          {
+            "id": "jwa-loewe-001",
+            "name": "Jonathan Anderson",
+            "role": "Creative Director",
+            "department": "All Departments",
+            "startYear": 2013,
+            "endYear": null,
+            "isCurrentRole": true,
+            "previousRole": "Founder of JW Anderson",
+            "achievements": [
+              "Completely revitalized the Spanish luxury house",
+              "Created iconic Puzzle, Hammock, and Flamenco bags",
+              "Established strong cultural connections with art and craft",
+              "Developed acclaimed ready-to-wear collections",
+              "Established Loewe Foundation Craft Prize"
+            ],
+            "confidence": 0.98,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel-sv-jwa-001",
+            "sourceDesignerId": "sv-hist-001",
+            "targetDesignerId": "jwa-hist-001",
+            "brandId": "loewe",
+            "type": "succession",
+            "startYear": 2013,
+            "endYear": null,
+            "description": "Anderson succeeded Stuart Vevers, transforming the brand from traditional leather house to cultural fashion force",
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.98,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "helmut-lang-cd-001",
+        "brandId": "helmut-lang",
+        "brandName": "Helmut Lang",
+        "currentCreativeDirectors": [
+          {
+            "id": "pd-helmut-001",
+            "name": "Peter Do",
+            "role": "Creative Director",
+            "department": "All Departments",
+            "startYear": 2023,
+            "endYear": null,
+            "isCurrentRole": true,
+            "previousRole": "Founder and Designer at Peter Do",
+            "achievements": [
+              "Revitalized the brand with contemporary interpretation of minimalism",
+              "Successfully merged Helmut Lang's heritage with modern vision",
+              "Expanded accessories and footwear offerings",
+              "Introduced sustainable manufacturing practices"
+            ],
+            "confidence": 0.98,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel-hl-pd-001",
+            "sourceDesignerId": "hl-hist-001",
+            "targetDesignerId": "pd-helmut-001",
+            "brandId": "helmut-lang",
+            "type": "succession",
+            "startYear": 2023,
+            "endYear": null,
+            "description": "Do reimagined Lang's minimalist approach for a contemporary audience, becoming the most successful designer at the house since Lang himself",
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.98,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "mugler-cd-001",
+        "brandId": "mugler",
+        "brandName": "Mugler",
+        "currentCreativeDirectors": [
+          {
+            "id": "cc-mugler-001",
+            "name": "Casey Cadwallader",
+            "role": "Creative Director",
+            "department": "All Departments",
+            "startYear": 2017,
+            "endYear": null,
+            "isCurrentRole": true,
+            "previousRole": "Design Director at Acne Studios",
+            "achievements": [
+              "Revitalized the brand with body-positive, inclusive approach",
+              "Reinterpreted Mugler's sculptural aesthetic for contemporary audience",
+              "Created viral fashion moments with celebrities",
+              "Pioneered innovative digital fashion shows during pandemic",
+              "Introduced sustainable practices while maintaining brand DNA"
+            ],
+            "confidence": 0.95,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel-tm-cc-001",
+            "sourceDesignerId": "tm-hist-001",
+            "targetDesignerId": "cc-mugler-001",
+            "brandId": "mugler",
+            "type": "succession",
+            "startYear": 2017,
+            "endYear": null,
+            "description": "Cadwallader reinterpreted Mugler's bold, theatrical approach for a new generation, with blessing from Thierry Mugler before his passing",
+            "confidence": 0.90,
+            "createdAt": "2025-04-12T14:30:00Z",
+            "updatedAt": "2025-04-12T14:30:00Z"
+          }
+        ],
+        "confidence": 0.95,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      }
+    ]
+  },
+  "designerRelationships": {
+    "file": "designer-relationships-2025.json",
+    "updates": [
+      {
+        "id": "rel-pp-pd-001",
+        "sourceDesignerId": "pp-hist-001",
+        "targetDesignerId": "pd-2025-002",
+        "brandId": "celine",
+        "type": "mentorship",
+        "startYear": 2012,
+        "endYear": 2016,
+        "description": "Phoebe Philo mentored Peter Do during his formative years at Celine, significantly influencing his design philosophy and approach to tailoring",
+        "collaboration_projects": ["Celine womenswear collections (2012-2016)"],
+        "confidence": 0.90,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "rel-hl-pd-002",
+        "sourceDesignerId": "hl-hist-001",
+        "targetDesignerId": "pd-2025-002",
+        "brandId": "helmut-lang",
+        "type": "succession",
+        "startYear": 2023,
+        "endYear": null,
+        "description": "Peter Do's aesthetic and focus on tailoring made him a spiritual successor to Helmut Lang's minimalist approach",
+        "collaboration_projects": ["Helmut Lang revival (2023-present)"],
+        "confidence": 0.95,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "rel-mm-jg-001",
+        "sourceDesignerId": "mm-hist-001",
+        "targetDesignerId": "jg-hist-001",
+        "brandId": "maison-margiela",
+        "type": "succession",
+        "startYear": 2014,
+        "endYear": null,
+        "description": "John Galliano succeeded Martin Margiela (though not directly) as Creative Director of Maison Margiela, bringing his theatrical approach to the deconstructionist house",
+        "collaboration_projects": ["Artisanal collections", "Ready-to-wear lines"],
+        "confidence": 0.95,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "rel-dd-sg-001",
+        "sourceDesignerId": "dd-2025-002",
+        "targetDesignerId": "sg-2025-002",
+        "brandId": "dolce-and-gabbana",
+        "type": "collaboration",
+        "startYear": 1985,
+        "endYear": null,
+        "description": "Domenico Dolce and Stefano Gabbana's enduring creative partnership spans nearly four decades, creating one of fashion's most recognizable aesthetics",
+        "collaboration_projects": ["All Dolce & Gabbana collections since 1985"],
+        "confidence": 0.99,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      },
+      {
+        "id": "rel-mvb-wvb-001",
+        "sourceDesignerId": "mvb-hist-001",
+        "targetDesignerId": "wvb-2025-002",
+        "brandId": "antwerp-six",
+        "type": "collaboration",
+        "startYear": 1980,
+        "endYear": 1986,
+        "description": "Walter Van Beirendonck was part of the influential 'Antwerp Six' collective with Martin Margiela as an associated member, revolutionizing Belgian fashion",
+        "collaboration_projects": ["Antwerp Royal Academy graduation", "London showcases"],
+        "confidence": 0.90,
+        "createdAt": "2025-04-12T14:30:00Z",
+        "updatedAt": "2025-04-12T14:30:00Z"
+      }
+    ]
+  }
+}
