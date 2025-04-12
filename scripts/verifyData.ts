@@ -1,5 +1,10 @@
-import { Brand, Designer, Relationship, Tenure } from '../src/types/fashion';
-import fashionGenealogyData from '../src/data/fashionGenealogy';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+import { Brand, Designer, Relationship, Tenure, DesignerStatus, RelationshipType } from '../src/types/fashion';
+
+// Load fashion genealogy data
+const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
+const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8'));
 
 interface VerificationResult {
   isValid: boolean;
@@ -97,12 +102,12 @@ function verifyData(): VerificationResult {
     }
 
     // Designer associations
-    const brandTenures = fashionGenealogyData.tenures.filter(t => t.brandId === brand.id);
-    const brandRelationships = fashionGenealogyData.relationships.filter(r => r.brandId === brand.id);
+    const brandTenures = fashionGenealogyData.tenures.filter((t: Tenure) => t.brandId === brand.id);
+    const brandRelationships = fashionGenealogyData.relationships.filter((r: Relationship) => r.brandId === brand.id);
     const designerIds = new Set([
-      ...brandTenures.map(t => t.designerId),
-      ...brandRelationships.map(r => r.sourceDesignerId),
-      ...brandRelationships.map(r => r.targetDesignerId)
+      ...brandTenures.map((t: Tenure) => t.designerId),
+      ...brandRelationships.map((r: Relationship) => r.sourceDesignerId),
+      ...brandRelationships.map((r: Relationship) => r.targetDesignerId)
     ]);
     
     const hasHadDesigners = brandTenures.length > 0;
@@ -111,7 +116,7 @@ function verifyData(): VerificationResult {
       result.stats.brandsWithoutDesigners.push(brand.name);
     }
 
-    const hasCurrentCD = brandTenures.some(t => t.isCurrentRole);
+    const hasCurrentCD = brandTenures.some((t: Tenure) => t.isCurrentRole);
     if (!hasCurrentCD) {
       console.log(`Note: ${brand.name} currently has no active Creative Director`);
     }
@@ -145,7 +150,7 @@ function verifyData(): VerificationResult {
       result.isValid = false;
     }
 
-    if (!['active', 'retired', 'deceased'].includes(designer.status)) {
+    if (!Object.values(DesignerStatus).includes(designer.status)) {
       result.errors.push(`Designer ${designer.name}: invalid status value`);
       result.isValid = false;
     }
@@ -172,7 +177,7 @@ function verifyData(): VerificationResult {
     }
 
     // Tenure associations
-    const designerTenures = fashionGenealogyData.tenures.filter(t => t.designerId === designer.id);
+    const designerTenures = fashionGenealogyData.tenures.filter((t: Tenure) => t.designerId === designer.id);
     if (designerTenures.length === 0) {
       result.warnings.push(`Designer ${designer.name} has no associated tenures`);
       result.stats.designersWithoutTenures.push(designer.name);
@@ -204,8 +209,8 @@ function verifyData(): VerificationResult {
     });
 
     // Reference validation
-    const designer = fashionGenealogyData.designers.find(d => d.id === tenure.designerId);
-    const brand = fashionGenealogyData.brands.find(b => b.id === tenure.brandId);
+    const designer = fashionGenealogyData.designers.find((d: Designer) => d.id === tenure.designerId);
+    const brand = fashionGenealogyData.brands.find((b: Brand) => b.id === tenure.brandId);
 
     if (!designer) {
       result.errors.push(`Tenure ${tenure.id} references non-existent designer`);
@@ -268,9 +273,9 @@ function verifyData(): VerificationResult {
     });
 
     // Reference validation
-    const sourceDesigner = fashionGenealogyData.designers.find(d => d.id === relationship.sourceDesignerId);
-    const targetDesigner = fashionGenealogyData.designers.find(d => d.id === relationship.targetDesignerId);
-    const brand = fashionGenealogyData.brands.find(b => b.id === relationship.brandId);
+    const sourceDesigner = fashionGenealogyData.designers.find((d: Designer) => d.id === relationship.sourceDesignerId);
+    const targetDesigner = fashionGenealogyData.designers.find((d: Designer) => d.id === relationship.targetDesignerId);
+    const brand = fashionGenealogyData.brands.find((b: Brand) => b.id === relationship.brandId);
 
     if (!sourceDesigner) {
       result.errors.push(`Relationship ${relationship.id} references non-existent source designer`);
@@ -286,8 +291,8 @@ function verifyData(): VerificationResult {
     }
 
     // Type validation
-    if (!['mentorship', 'succession', 'collaboration', 'familial'].includes(relationship.type)) {
-      result.errors.push(`Relationship ${relationship.id}: invalid relationship type`);
+    if (!Object.values(RelationshipType).includes(relationship.type)) {
+      result.errors.push(`Relationship ${relationship.id}: invalid type value`);
       result.isValid = false;
     }
 

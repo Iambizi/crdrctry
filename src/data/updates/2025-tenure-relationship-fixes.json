@@ -1,0 +1,132 @@
+{
+  "tenureUpdates": [
+    {
+      "id": "tnr-13",
+      "updates": {
+        "isCurrentRole": false
+      }
+    },
+    {
+      "id": "tnr-14",
+      "updates": {
+        "isCurrentRole": false
+      }
+    },
+    {
+      "id": "tnr-16",
+      "updates": {
+        "isCurrentRole": false
+      }
+    }
+  ],
+  "brandUpdates": [
+    {
+      "id": "louis-vuitton",
+      "name": "Louis Vuitton",
+      "foundedYear": 1854,
+      "founder": "Louis Vuitton",
+      "headquarters": "Paris, France",
+      "website": "louisvuitton.com",
+      "socialMedia": {
+        "instagram": "@louisvuitton"
+      },
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "balenciaga",
+      "name": "Balenciaga",
+      "foundedYear": 1919,
+      "founder": "Cristóbal Balenciaga",
+      "headquarters": "Paris, France",
+      "website": "balenciaga.com",
+      "socialMedia": {
+        "instagram": "@balenciaga"
+      },
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "prada",
+      "name": "Prada",
+      "foundedYear": 1913,
+      "founder": "Mario Prada",
+      "headquarters": "Milan, Italy",
+      "website": "prada.com",
+      "socialMedia": {
+        "instagram": "@prada"
+      },
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "ralph-lauren",
+      "name": "Ralph Lauren",
+      "foundedYear": 1967,
+      "founder": "Ralph Lauren",
+      "headquarters": "New York City, USA",
+      "website": "ralphlauren.com",
+      "socialMedia": {
+        "instagram": "@ralphlauren"
+      },
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    }
+  ],
+  "relationshipUpdates": [
+    {
+      "id": "rel-1",
+      "updates": {
+        "brandId": "louis-vuitton"
+      }
+    },
+    {
+      "id": "rel-2",
+      "updates": {
+        "brandId": "louis-vuitton"
+      }
+    },
+    {
+      "id": "rel-3",
+      "updates": {
+        "brandId": "louis-vuitton"
+      }
+    },
+    {
+      "id": "rel-4",
+      "updates": {
+        "brandId": "balenciaga"
+      }
+    },
+    {
+      "id": "rel-5",
+      "updates": {
+        "brandId": "prada"
+      }
+    },
+    {
+      "id": "rel-6",
+      "updates": {
+        "brandId": "prada"
+      }
+    },
+    {
+      "id": "rel-7",
+      "updates": {
+        "brandId": "ralph-lauren"
+      }
+    },
+    {
+      "id": "rel-8",
+      "updates": {
+        "brandId": "ralph-lauren"
+      }
+    },
+    {
+      "id": "rel-9",
+      "updates": {
+        "brandId": "ralph-lauren"
+      }
+    }
+  ]
+}
