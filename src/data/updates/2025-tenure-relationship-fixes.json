@@ -1,132 +1,572 @@
 {
-  "tenureUpdates": [
+  "tenures": [
     {
-      "id": "tnr-13",
-      "updates": {
-        "isCurrentRole": false
-      }
-    },
-    {
-      "id": "tnr-14",
-      "updates": {
-        "isCurrentRole": false
-      }
-    },
-    {
-      "id": "tnr-16",
-      "updates": {
-        "isCurrentRole": false
-      }
-    }
-  ],
-  "brandUpdates": [
-    {
-      "id": "louis-vuitton",
-      "name": "Louis Vuitton",
-      "foundedYear": 1854,
-      "founder": "Louis Vuitton",
-      "headquarters": "Paris, France",
-      "website": "louisvuitton.com",
-      "socialMedia": {
-        "instagram": "@louisvuitton"
-      },
+      "id": "tnr-pd-001",
+      "designerId": "peter-do",
+      "brandId": "celine",
+      "role": "Designer",
+      "department": "Ready-to-Wear",
+      "startYear": 2012,
+      "endYear": 2016,
+      "isCurrentRole": false,
+      "achievements": [
+        "Worked closely with Phoebe Philo",
+        "Contributed to womenswear collections",
+        "Developed technical expertise in tailoring",
+        "Helped establish Celine's minimalist aesthetic"
+      ],
       "createdAt": "2025-04-12T14:30:00.000Z",
       "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "balenciaga",
-      "name": "Balenciaga",
-      "foundedYear": 1919,
-      "founder": "Cristóbal Balenciaga",
-      "headquarters": "Paris, France",
-      "website": "balenciaga.com",
-      "socialMedia": {
-        "instagram": "@balenciaga"
-      },
+      "id": "tnr-pd-002",
+      "designerId": "peter-do",
+      "brandId": "peter-do",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 2018,
+      "endYear": 2023,
+      "isCurrentRole": false,
+      "achievements": [
+        "Launched critically acclaimed womenswear label",
+        "Established reputation for precise tailoring",
+        "Won CFDA Emerging Designer Award",
+        "Created signature systems-based wardrobe approach",
+        "Pioneered innovative pattern cutting techniques"
+      ],
       "createdAt": "2025-04-12T14:30:00.000Z",
       "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "prada",
-      "name": "Prada",
-      "foundedYear": 1913,
-      "founder": "Mario Prada",
-      "headquarters": "Milan, Italy",
-      "website": "prada.com",
-      "socialMedia": {
-        "instagram": "@prada"
-      },
+      "id": "tnr-pd-003",
+      "designerId": "peter-do",
+      "brandId": "helmut-lang",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2023,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Revitalized the brand with contemporary interpretation of minimalism",
+        "Successfully merged Helmut Lang's heritage with modern vision",
+        "Expanded accessories and footwear offerings",
+        "Introduced sustainable manufacturing practices",
+        "Developed acclaimed debut collection for SS24"
+      ],
       "createdAt": "2025-04-12T14:30:00.000Z",
       "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "ralph-lauren",
-      "name": "Ralph Lauren",
-      "foundedYear": 1967,
-      "founder": "Ralph Lauren",
-      "headquarters": "New York City, USA",
-      "website": "ralphlauren.com",
-      "socialMedia": {
-        "instagram": "@ralphlauren"
-      },
+      "id": "tnr-cl-001",
+      "designerId": "christophe-lemaire",
+      "brandId": "lemaire",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 1991,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Established signature minimalist aesthetic",
+        "Created modular wardrobe concept",
+        "Developed cult following for understated luxury",
+        "Pioneered 'quiet luxury' approach",
+        "Built independent Paris-based luxury brand"
+      ],
       "createdAt": "2025-04-12T14:30:00.000Z",
       "updatedAt": "2025-04-12T14:30:00.000Z"
-    }
-  ],
-  "relationshipUpdates": [
-    {
-      "id": "rel-1",
-      "updates": {
-        "brandId": "louis-vuitton"
-      }
     },
     {
-      "id": "rel-2",
-      "updates": {
-        "brandId": "louis-vuitton"
-      }
+      "id": "tnr-cl-002",
+      "designerId": "christophe-lemaire",
+      "brandId": "lacoste",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2000,
+      "endYear": 2010,
+      "isCurrentRole": false,
+      "achievements": [
+        "Revitalized the classic sportswear brand",
+        "Introduced fashion-forward collections while respecting heritage",
+        "Expanded womenswear offerings",
+        "Modernized the brand's silhouettes and color palettes",
+        "Created successful runway collections for a sports-oriented brand"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "rel-3",
-      "updates": {
-        "brandId": "louis-vuitton"
-      }
+      "id": "tnr-cl-003",
+      "designerId": "christophe-lemaire",
+      "brandId": "hermes",
+      "role": "Artistic Director of Women's Ready-to-Wear",
+      "department": "Womenswear",
+      "startYear": 2010,
+      "endYear": 2014,
+      "isCurrentRole": false,
+      "achievements": [
+        "Created minimalist luxury collections",
+        "Established refined, understated aesthetic for the house",
+        "Focused on exceptional materials and craftsmanship",
+        "Designed critically acclaimed collections",
+        "Brought relaxed elegance to a traditional luxury house"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "rel-4",
-      "updates": {
-        "brandId": "balenciaga"
-      }
+      "id": "tnr-cl-004",
+      "designerId": "christophe-lemaire",
+      "brandId": "uniqlo",
+      "role": "Artistic Director of Uniqlo U",
+      "department": "All Departments",
+      "startYear": 2016,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Created advanced essentials collection for global retailer",
+        "Elevated everyday basics with designer sensibility",
+        "Established Uniqlo's Paris R&D Center",
+        "Successfully bridged high fashion and mass market",
+        "Developed innovative fabrications for accessible price points"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "rel-5",
-      "updates": {
-        "brandId": "prada"
-      }
+      "id": "tnr-jl-001",
+      "designerId": "jerry-lorenzo",
+      "brandId": "fear-of-god",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 2013,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Pioneered luxury streetwear category",
+        "Developed signature aesthetic merging streetwear with tailoring",
+        "Created successful collaborations with Nike, Ermenegildo Zegna",
+        "Launched accessible Essentials line",
+        "Established independent luxury house without traditional fashion background"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "rel-6",
-      "updates": {
-        "brandId": "prada"
-      }
+      "id": "tnr-jl-002",
+      "designerId": "jerry-lorenzo",
+      "brandId": "adidas",
+      "role": "Global Head of Adidas Basketball",
+      "department": "Accessories",
+      "startYear": 2020,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Redirected Adidas Basketball creative strategy",
+        "Created Fear of God Athletics sub-brand",
+        "Merged performance sportswear with luxury aesthetic",
+        "Developed new silhouettes for basketball category",
+        "Brought fashion credibility to sports performance category"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "rel-7",
-      "updates": {
-        "brandId": "ralph-lauren"
-      }
+      "id": "tnr-eab-001",
+      "designerId": "emily-adams-bode",
+      "brandId": "bode",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 2016,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "First female designer to show at New York Fashion Week: Men's",
+        "Pioneered use of antique textiles and quilting techniques in luxury fashion",
+        "Won CFDA Emerging Designer of the Year (2019)",
+        "Received LVMH Prize finalist recognition (2019)",
+        "Established new approach to sustainable luxury through material reuse"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "rel-8",
-      "updates": {
-        "brandId": "ralph-lauren"
-      }
+      "id": "tnr-sb-001",
+      "designerId": "sarah-burton",
+      "brandId": "alexander-mcqueen",
+      "role": "Designer",
+      "department": "Ready-to-Wear",
+      "startYear": 1997,
+      "endYear": 2010,
+      "isCurrentRole": false,
+      "achievements": [
+        "Worked directly alongside Lee Alexander McQueen",
+        "Contributed to iconic runway collections",
+        "Developed expertise in couture techniques",
+        "Became Head of Womenswear in 2000",
+        "Assisted in development of McQueen's theatrical presentations"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     },
     {
-      "id": "rel-9",
-      "updates": {
-        "brandId": "ralph-lauren"
-      }
+      "id": "tnr-sb-002",
+      "designerId": "sarah-burton",
+      "brandId": "alexander-mcqueen",
+      "role": "Creative Director",
+      "department": "All Departments",
+      "startYear": 2010,
+      "endYear": 2023,
+      "isCurrentRole": false,
+      "achievements": [
+        "Designed Catherine Middleton's royal wedding dress (2011)",
+        "Maintained McQueen's legacy while developing own aesthetic",
+        "Created critically acclaimed runway collections",
+        "Expanded accessories and menswear offerings",
+        "Received OBE for services to fashion industry"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-sf-001",
+      "designerId": "salvatore-ferragamo",
+      "brandId": "ferragamo",
+      "role": "Founder and Designer",
+      "department": "Accessories",
+      "startYear": 1927,
+      "endYear": 1960,
+      "isCurrentRole": false,
+      "achievements": [
+        "Created innovative shoe designs including the cage heel and wedge heel",
+        "Filed over 300 patents related to footwear design",
+        "Developed orthopaedic shoe techniques",
+        "Used alternative materials during WWII resource shortages",
+        "Established luxury footwear house in Florence, Italy"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-fm-001",
+      "designerId": "franco-moschino",
+      "brandId": "gianni-versace",
+      "role": "Designer",
+      "department": "Ready-to-Wear",
+      "startYear": 1977,
+      "endYear": 1983,
+      "isCurrentRole": false,
+      "achievements": [
+        "Worked as assistant designer to Gianni Versace",
+        "Contributed to early Versace collections",
+        "Developed expertise in Italian luxury design",
+        "Learned high-end pattern cutting and production techniques"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-fm-002",
+      "designerId": "franco-moschino",
+      "brandId": "moschino",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 1983,
+      "endYear": 1994,
+      "isCurrentRole": false,
+      "achievements": [
+        "Created irreverent fashion with social commentary",
+        "Pioneered satirical approach to luxury fashion",
+        "Established Cheap and Chic diffusion line (1988)",
+        "Became known for surrealist designs and tongue-in-cheek collections",
+        "Used fashion as medium for social and environmental messaging"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-im-001",
+      "designerId": "issey-miyake",
+      "brandId": "issey-miyake",
+      "role": "Founder and Designer",
+      "department": "All Departments",
+      "startYear": 1970,
+      "endYear": 2022,
+      "isCurrentRole": false,
+      "achievements": [
+        "Pioneered innovative pleating techniques",
+        "Created Pleats Please line (1993)",
+        "Developed A-POC (A Piece of Cloth) concept (1998)",
+        "Merged traditional Japanese aesthetics with modern technology",
+        "Revolutionized fabric treatments in fashion design"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-im-002",
+      "designerId": "issey-miyake",
+      "brandId": "miyake-design-studio",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 1970,
+      "endYear": 2022,
+      "isCurrentRole": false,
+      "achievements": [
+        "Established research-focused design studio",
+        "Created L'Eau d'Issey fragrance (1992)",
+        "Developed BAO BAO geometric bag concept",
+        "Founded Reality Lab for material innovation (2007)",
+        "Created 132 5. concept using mathematical algorithms for folding"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-dd-001",
+      "designerId": "domenico-dolce",
+      "brandId": "dolce-and-gabbana",
+      "role": "Co-Founder and Co-Creative Director",
+      "department": "All Departments",
+      "startYear": 1985,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Established iconic Sicilian-inspired aesthetic",
+        "Pioneered Mediterranean luxury fashion identity",
+        "Created signature corset designs that defined 1990s fashion",
+        "Developed successful Alta Moda haute couture line (2012)",
+        "Built global luxury fashion house from independent beginnings"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-sg-001",
+      "designerId": "stefano-gabbana",
+      "brandId": "dolce-and-gabbana",
+      "role": "Co-Founder and Co-Creative Director",
+      "department": "All Departments",
+      "startYear": 1985,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Created distinctive advertising campaigns",
+        "Developed brand's opulent aesthetic",
+        "Pioneered celebrity-focused marketing in luxury fashion",
+        "Established successful beauty and fragrance lines",
+        "Created signature prints and embellishment techniques"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-tm-001",
+      "designerId": "thierry-mugler",
+      "brandId": "mugler",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 1974,
+      "endYear": 2002,
+      "isCurrentRole": false,
+      "achievements": [
+        "Created architectural, futuristic designs",
+        "Pioneered theatrical fashion shows",
+        "Developed iconic Angel fragrance (1992)",
+        "Created costumes for films, music videos, and stage productions",
+        "Designed dramatic silhouettes with exaggerated proportions"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-tm-002",
+      "designerId": "thierry-mugler",
+      "brandId": "mugler",
+      "role": "Creative Advisor",
+      "department": "All Departments",
+      "startYear": 2013,
+      "endYear": 2022,
+      "isCurrentRole": false,
+      "achievements": [
+        "Collaborated on selected projects after retirement from fashion",
+        "Created costumes for Cirque du Soleil's Zumanity",
+        "Directed Beyoncé's I Am... World Tour costumes",
+        "Consulted on brand revival strategy",
+        "Collaborated on museum retrospectives of his work"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-hl-001",
+      "designerId": "helmut-lang",
+      "brandId": "helmut-lang",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 1986,
+      "endYear": 2005,
+      "isCurrentRole": false,
+      "achievements": [
+        "Pioneered minimalist aesthetic in luxury fashion",
+        "Introduced high-tech fabrics and utilitarian details",
+        "First designer to show collections online (1998)",
+        "Created influential denim and t-shirt designs",
+        "Revolutionized fashion show formats and timing"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-ad-001",
+      "designerId": "ann-demeulemeester",
+      "brandId": "ann-demeulemeester",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 1985,
+      "endYear": 2013,
+      "isCurrentRole": false,
+      "achievements": [
+        "Core member of influential Antwerp Six",
+        "Developed poetic, romantic-punk aesthetic",
+        "Pioneered androgynous approach to fashion design",
+        "Created signature elongated silhouettes",
+        "Built independent fashion house with cult following"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-ad-002",
+      "designerId": "ann-demeulemeester",
+      "brandId": "ann-demeulemeester-serax",
+      "role": "Designer",
+      "department": "Accessories",
+      "startYear": 2019,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Created porcelain, glass and home collections",
+        "Translated fashion aesthetic to interior design",
+        "Developed distinctive lighting designs",
+        "Applied fashion sensibility to tableware",
+        "Expanded creative vision into new categories"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-vw-001",
+      "designerId": "vivienne-westwood",
+      "brandId": "sex",
+      "role": "Co-Founder and Designer",
+      "department": "Ready-to-Wear",
+      "startYear": 1974,
+      "endYear": 1976,
+      "isCurrentRole": false,
+      "achievements": [
+        "Pioneered punk fashion aesthetic with Malcolm McLaren",
+        "Created influential bondage-inspired designs",
+        "Dressed the Sex Pistols and punk movement",
+        "Developed distressed and deconstructed techniques",
+        "Established Kings Road boutique as center of punk movement"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-vw-002",
+      "designerId": "vivienne-westwood",
+      "brandId": "vivienne-westwood",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 1981,
+      "endYear": 2022,
+      "isCurrentRole": false,
+      "achievements": [
+        "Pioneered the 'New Romantic' look",
+        "Created the mini-crini (1985)",
+        "Developed signature corsetry and historical references",
+        "Introduced political and environmental activism to fashion",
+        "Established unique tartan patterns and orb logo"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-wvb-001",
+      "designerId": "walter-van-beirendonck",
+      "brandId": "walter-van-beirendonck",
+      "role": "Founder and Creative Director",
+      "department": "All Departments",
+      "startYear": 1983,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Core member of influential Antwerp Six",
+        "Created bold, colorful avant-garde designs",
+        "Developed W.&L.T. (Wild and Lethal Trash) line (1993-1999)",
+        "Pioneered use of political messages in high fashion",
+        "Established distinctive aesthetic combining technology and ethnography"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-wvb-002",
+      "designerId": "walter-van-beirendonck",
+      "brandId": "royal-academy-antwerp",
+      "role": "Head of Fashion Department",
+      "department": "All Departments",
+      "startYear": 2007,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Mentored new generation of Belgian designers",
+        "Developed innovative fashion education curriculum",
+        "Curated groundbreaking fashion exhibitions",
+        "Preserved and expanded Antwerp's fashion influence",
+        "Created platform for experimental fashion design"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-tm-003",
+      "designerId": "takahiro-miyashita",
+      "brandId": "number-nine",
+      "role": "Founder and Designer",
+      "department": "Menswear",
+      "startYear": 1996,
+      "endYear": 2009,
+      "isCurrentRole": false,
+      "achievements": [
+        "Created influential Japanese streetwear with rock influences",
+        "Developed cult 'Touch Me I'm Sick' collection (2003)",
+        "Pioneered vintage Americana reinterpretation in Japan",
+        "Created innovative denim treatments and techniques",
+        "Established unique grunge-meets-couture aesthetic"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "tnr-tm-004",
+      "designerId": "takahiro-miyashita",
+      "brandId": "takahiromiyashita-thesoloist",
+      "role": "Founder and Designer",
+      "department": "Menswear",
+      "startYear": 2010,
+      "endYear": null,
+      "isCurrentRole": true,
+      "achievements": [
+        "Created conceptual collections with sequential naming system",
+        "Developed technical approaches to menswear construction",
+        "Established cult following for experimental designs",
+        "Created successful collaborations with Converse and Kazuki Kuraishi",
+        "Pioneered hybrid tailoring techniques merging formal and casual elements"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     }
   ]
 }
