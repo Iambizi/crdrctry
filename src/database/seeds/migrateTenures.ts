@@ -56,13 +56,24 @@ async function getExistingRecordMaps(): Promise<DesignerBrandMap> {
   return maps;
 }
 
+// Helper functions for filtering tenures
+export async function getTenuresByDesigner(designerId: string): Promise<Tenure[]> {
+  const tenures = await loadTenureData();
+  return tenures.filter((tenure) => tenure.designer === designerId);
+}
+
+export async function getTenuresByBrand(brandId: string): Promise<Tenure[]> {
+  const tenures = await loadTenureData();
+  return tenures.filter((tenure) => tenure.brand === brandId);
+}
+
 function transformTenure(
   tenure: Tenure,
   recordMaps: DesignerBrandMap
 ): CreateTenure | null {
   // Get PocketBase IDs for the designer and brand
-  const designerId = recordMaps.designers.get(tenure.designer_id);
-  const brandId = recordMaps.brands.get(tenure.brand_id);
+  const designerId = recordMaps.designers.get(tenure.designer);
+  const brandId = recordMaps.brands.get(tenure.brand);
 
   if (!designerId || !brandId) {
     return null; // Skip if we can't find the related records
@@ -70,8 +81,8 @@ function transformTenure(
 
   // Transform the tenure data to match our PocketBase schema
   return {
-    designer_id: designerId,
-    brand_id: brandId,
+    designer: designerId,
+    brand: brandId,
     role: tenure.role || "Designer",
     department: tenure.department,
     start_year: tenure.start_year,
@@ -81,9 +92,6 @@ function transformTenure(
     notable_works: tenure.notable_works || [],
     notable_collections: tenure.notable_collections || [],
     impact_description: tenure.impact_description,
-    // PocketBase relations
-    designer: designerId,
-    brand: brandId,
   };
 }
 
@@ -91,10 +99,10 @@ async function validateTenure(tenure: CreateTenure): Promise<string[]> {
   const errors: string[] = [];
 
   // Validate required fields
-  if (!tenure.designer_id) {
+  if (!tenure.designer) {
     errors.push("Designer ID is required");
   }
-  if (!tenure.brand_id) {
+  if (!tenure.brand) {
     errors.push("Brand ID is required");
   }
   if (!tenure.role) {

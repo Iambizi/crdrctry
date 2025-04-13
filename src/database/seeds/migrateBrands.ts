@@ -17,26 +17,22 @@ async function loadBrandData(): Promise<Brand[]> {
   return data.brands || [];
 }
 
-function transformBrand(brand: Brand): CreateBrand {
-  // Transform the brand data to match our PocketBase schema
+const transformBrand = (brand: Brand): CreateBrand => {
   return {
     name: brand.name,
     founded_year: brand.founded_year,
     founder: brand.founder,
-    category: brand.category || "luxury_fashion", // Default category
+    category: brand.category || "luxury_fashion",
     parent_company: brand.parent_company,
-    parent_brand: brand.parent_brand,
-    logo_url: brand.logo_url,
     headquarters: brand.headquarters,
-    specialties: brand.specialties || [],
+    specialties: brand.specialties,
     price_point: brand.price_point,
-    markets: brand.markets || [],
+    markets: brand.markets,
     website: brand.website,
-    has_historical_data: Boolean(brand.has_historical_data),
-    notes: brand.notes,
-    social_media: brand.social_media || {},
+    social_media: brand.social_media,
+    logo_url: brand.logo_url
   };
-}
+};
 
 async function validateBrand(brand: CreateBrand): Promise<string[]> {
   const errors: string[] = [];

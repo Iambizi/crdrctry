@@ -57,53 +57,43 @@ export interface Brand extends BaseRecord {
   founder: string;
   category: BrandCategory;
   parent_company?: string;
-  parent_brand?: string;
-  logo_url?: string;
   headquarters?: string;
   specialties?: string[];
   price_point?: string;
   markets?: string[];
   website?: string;
-  has_historical_data: boolean;
-  notes?: string;
   social_media?: Record<string, string>;
+  logo_url?: string;
 }
 
 export interface Tenure extends BaseRecord {
   collectionId: string;
   collectionName: "tenures";
-  designer_id: string;
-  brand_id: string;
+  designer: string;
+  brand: string;
   role: string;
   department?: Department;
   start_year: number;
-  end_year?: number;
+  end_year?: number | null;
   is_current_role: boolean;
   achievements?: string[];
   notable_works?: string[];
   notable_collections?: string[];
   impact_description?: string;
-  // PocketBase relations
-  designer: string; // Relation to designers collection
-  brand: string; // Relation to brands collection
 }
 
 export interface Relationship extends BaseRecord {
   collectionId: string;
   collectionName: "relationships";
-  source_designer_id: string;
-  target_designer_id: string;
-  brand_id: string;
+  source_designer: string;
+  target_designer: string;
+  brand: string;
   type: RelationshipType;
   start_year?: number;
   end_year?: number;
   description?: string;
   impact?: string;
   collaboration_projects?: string[];
-  // PocketBase relations
-  source_designer: string; // Relation to designers collection
-  target_designer: string; // Relation to designers collection
-  brand: string; // Relation to brands collection
 }
 
 // Type helper for creating new records

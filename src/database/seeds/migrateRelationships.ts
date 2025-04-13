@@ -124,19 +124,15 @@ function transformRelationship(
   }
 
   return {
-    source_designer_id: sourceDesignerId,
-    target_designer_id: targetDesignerId,
-    brand_id: brandId,
+    source_designer: sourceDesignerId,
+    target_designer: targetDesignerId,
+    brand: brandId,
     type: relationship.type as RelationshipType,
     start_year: relationship.start_year,
     end_year: relationship.end_year,
     description: relationship.description,
     impact: relationship.impact,
     collaboration_projects: relationship.collaboration_projects || [],
-    // PocketBase relations
-    source_designer: sourceDesignerId,
-    target_designer: targetDesignerId,
-    brand: brandId,
   };
 }
 
@@ -146,13 +142,13 @@ async function validateRelationship(
   const errors: string[] = [];
 
   // Validate required fields
-  if (!relationship.source_designer_id) {
+  if (!relationship.source_designer) {
     errors.push("Source designer ID is required");
   }
-  if (!relationship.target_designer_id) {
+  if (!relationship.target_designer) {
     errors.push("Target designer ID is required");
   }
-  if (!relationship.brand_id) {
+  if (!relationship.brand) {
     errors.push("Brand ID is required");
   }
   if (!relationship.type) {
