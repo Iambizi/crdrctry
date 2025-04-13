@@ -1,14 +1,10 @@
-import { pb } from "../client";
-import { batchUpsert } from "../utils/batchOperations";
+import { withTransaction } from "../client";
 import { Brand, CreateBrand } from "../types/types";
-import * as fs from "fs/promises";
-import * as path from "path";
+import path from "path";
+import fs from "fs/promises";
+import { fileURLToPath } from 'url';
 
-interface BrandMigrationStats {
-  total: number;
-  processed: number;
-  errors: Array<{ id: string; error: string }>;
-}
+const __filename = fileURLToPath(import.meta.url);
 
 async function loadBrandData(): Promise<Brand[]> {
   const dataPath = path.join(process.cwd(), "src/data/fashionGenealogy.json");
@@ -17,7 +13,7 @@ async function loadBrandData(): Promise<Brand[]> {
   return data.brands || [];
 }
 
-const transformBrand = (brand: Brand): CreateBrand => {
+function transformBrand(brand: Brand): CreateBrand {
   return {
     name: brand.name,
     founded_year: brand.founded_year,
@@ -32,7 +28,7 @@ const transformBrand = (brand: Brand): CreateBrand => {
     social_media: brand.social_media,
     logo_url: brand.logo_url
   };
-};
+}
 
 async function validateBrand(brand: CreateBrand): Promise<string[]> {
   const errors: string[] = [];
@@ -87,80 +83,49 @@ async function validateBrand(brand: CreateBrand): Promise<string[]> {
   return errors;
 }
 
-export async function migrateBrands(
-  options: {
-    dryRun?: boolean;
-    onProgress?: (stats: BrandMigrationStats) => void;
-  } = {}
-): Promise<BrandMigrationStats> {
-  const stats: BrandMigrationStats = {
-    total: 0,
-    processed: 0,
-    errors: [],
-  };
+export async function migrateBrands(): Promise<void> {
+  const brands = await loadBrandData();
+  let created = 0;
+  let errors = 0;
 
-  try {
-    // Load brand data
-    const brands = await loadBrandData();
-    stats.total = brands.length;
-
-    // Transform and validate brands
-    const validBrands = [];
+  await withTransaction(async (client) => {
     for (const brand of brands) {
-      const transformed = transformBrand(brand);
-      const validationErrors = await validateBrand(transformed);
+      const transformedBrand = transformBrand(brand);
+      const validationErrors = await validateBrand(transformedBrand);
 
       if (validationErrors.length > 0) {
-        stats.errors.push({
-          id: brand.id || "unknown",
-          error: validationErrors.join(", "),
-        });
+        console.error(`Validation errors for brand ${brand.name}:`, validationErrors);
+        errors++;
         continue;
       }
 
-      validBrands.push(transformed);
+      try {
+        await client.collection("brands").create(transformedBrand);
+        created++;
+      } catch (error) {
+        if (error instanceof Error) {
+          console.error(`Error creating brand ${brand.name}:`, error.message);
+        } else {
+          console.error(`Error creating brand ${brand.name}:`, error);
+        }
+        errors++;
+      }
     }
+  });
 
-    if (!options.dryRun && validBrands.length > 0) {
-      // Perform the actual migration using PocketBase batch operations
-      await batchUpsert(pb, "brands", validBrands, {
-        onProgress: (processed) => {
-          stats.processed = processed;
-          options.onProgress?.(stats);
-        },
-      });
-    }
-
-    return stats;
-  } catch (error) {
-    console.error("Brand migration failed:", error);
-    throw error;
-  }
+  console.log(`Brand migration complete:
+    Created: ${created}
+    Errors: ${errors}
+  `);
 }
 
 // CLI execution
-if (require.main === module) {
+if (import.meta.url === `file://${__filename}`) {
   (async () => {
     try {
       console.log("Starting brand migration...");
-      const stats = await migrateBrands({
-        onProgress: (stats) => {
-          console.log(`Processed ${stats.processed}/${stats.total} brands`);
-          if (stats.errors.length > 0) {
-            console.log(`Encountered ${stats.errors.length} errors`);
-          }
-        },
-      });
-
-      console.log("Migration completed:", {
-        total: stats.total,
-        processed: stats.processed,
-        errors: stats.errors.length,
-      });
-
-      if (stats.errors.length > 0) {
-        console.log("Errors:", stats.errors);
-      }
+      await migrateBrands();
+      console.log("Migration completed");
     } catch (error) {
       console.error("Migration failed:", error);
       process.exit(1);

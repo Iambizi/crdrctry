@@ -1,14 +1,10 @@
-import { pb } from "../client";
-import { batchUpsert } from "../utils/batchOperations";
+import { withTransaction } from "../client";
 import { Designer, CreateDesigner } from "../types/types";
-import * as fs from "fs/promises";
-import * as path from "path";
+import path from "path";
+import fs from "fs/promises";
+import { fileURLToPath } from 'url';
 
-interface DesignerMigrationStats {
-  total: number;
-  processed: number;
-  errors: Array<{ id: string; error: string }>;
-}
+const __filename = fileURLToPath(import.meta.url);
 
 async function loadDesignerData(): Promise<Designer[]> {
   const dataPath = path.join(process.cwd(), "src/data/fashionGenealogy.json");
@@ -18,21 +14,20 @@ async function loadDesignerData(): Promise<Designer[]> {
 }
 
 function transformDesigner(designer: Designer): CreateDesigner {
-  // Transform the designer data to match our PocketBase schema
   return {
     name: designer.name,
-    current_role: designer.current_role,
-    is_active: designer.status === "ACTIVE",
-    status: designer.status,
-    biography: designer.biography,
-    image_url: designer.image_url,
-    nationality: designer.nationality,
     birth_year: designer.birth_year,
     death_year: designer.death_year,
+    nationality: designer.nationality,
+    education: designer.education,
     awards: designer.awards || [],
-    education: designer.education || [],
     signature_styles: designer.signature_styles || [],
-    social_media: designer.social_media || {},
+    biography: designer.biography,
+    image_url: designer.image_url,
+    social_media: designer.social_media,
+    status: designer.status || "ACTIVE",
+    current_role: designer.current_role,
+    is_active: designer.status === "ACTIVE"
   };
 }
 
@@ -44,97 +39,52 @@ async function validateDesigner(designer: CreateDesigner): Promise<string[]> {
     errors.push("Name is required");
   }
 
-  // Validate years
-  if (
-    designer.birth_year &&
-    designer.death_year &&
-    designer.birth_year > designer.death_year
-  ) {
-    errors.push("Birth year must be before death year");
-  }
-
-  // Validate status
-  if (!["ACTIVE", "RETIRED", "DECEASED"].includes(designer.status)) {
-    errors.push("Invalid status value");
-  }
-
   return errors;
 }
 
-export async function migrateDesigners(
-  options: {
-    dryRun?: boolean;
-    onProgress?: (stats: DesignerMigrationStats) => void;
-  } = {}
-): Promise<DesignerMigrationStats> {
-  const stats: DesignerMigrationStats = {
-    total: 0,
-    processed: 0,
-    errors: [],
-  };
+export async function migrateDesigners(): Promise<void> {
+  const designers = await loadDesignerData();
+  let created = 0;
+  let errors = 0;
 
-  try {
-    // Load designer data
-    const designers = await loadDesignerData();
-    stats.total = designers.length;
-
-    // Transform and validate designers
-    const validDesigners = [];
+  await withTransaction(async (client) => {
     for (const designer of designers) {
-      const transformed = transformDesigner(designer);
-      const validationErrors = await validateDesigner(transformed);
+      const transformedDesigner = transformDesigner(designer);
+      const validationErrors = await validateDesigner(transformedDesigner);
 
       if (validationErrors.length > 0) {
-        stats.errors.push({
-          id: designer.id || "unknown",
-          error: validationErrors.join(", "),
-        });
+        console.error(`Validation errors for designer ${designer.name}:`, validationErrors);
+        errors++;
         continue;
       }
 
-      validDesigners.push(transformed);
+      try {
+        await client.collection("designers").create(transformedDesigner);
+        created++;
+      } catch (error) {
+        if (error instanceof Error) {
+          console.error(`Error creating designer ${designer.name}:`, error.message);
+        } else {
+          console.error(`Error creating designer ${designer.name}:`, error);
+        }
+        errors++;
+      }
     }
+  });
 
-    if (!options.dryRun && validDesigners.length > 0) {
-      // Perform the actual migration using PocketBase batch operations
-      await batchUpsert(pb, "designers", validDesigners, {
-        onProgress: (processed) => {
-          stats.processed = processed;
-          options.onProgress?.(stats);
-        },
-      });
-    }
-
-    return stats;
-  } catch (error) {
-    console.error("Designer migration failed:", error);
-    throw error;
-  }
+  console.log(`Designer migration complete:
+    Created: ${created}
+    Errors: ${errors}
+  `);
 }
 
 // CLI execution
-if (require.main === module) {
+if (import.meta.url === `file://${__filename}`) {
   (async () => {
     try {
       console.log("Starting designer migration...");
-      const stats = await migrateDesigners({
-        onProgress: (stats) => {
-          console.log(`Processed ${stats.processed}/${stats.total} designers`);
-          if (stats.errors.length > 0) {
-            console.log(`Encountered ${stats.errors.length} errors`);
-          }
-        },
-      });
-
-      console.log("Migration completed:", {
-        total: stats.total,
-        processed: stats.processed,
-        errors: stats.errors.length,
-      });
-
-      if (stats.errors.length > 0) {
-        console.log("Errors:", stats.errors);
-      }
+      await migrateDesigners();
+      console.log("Migration completed");
     } catch (error) {
       console.error("Migration failed:", error);
       process.exit(1);

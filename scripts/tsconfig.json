@@ -1,18 +1,22 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2020",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "resolveJsonModule": true,
-    "baseUrl": "..",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "skipLibCheck": true
   },
-  "include": ["*.ts"],
+  "include": ["./**/*"],
   "exclude": ["node_modules"]
 }

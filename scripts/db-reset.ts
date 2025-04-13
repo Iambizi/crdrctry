@@ -1,4 +1,6 @@
+import 'dotenv/config';
 import { execSync } from 'child_process';
+import { initPocketBase } from '../src/database/client';
 import { migrateBrands } from '../src/database/seeds/migrateBrands';
 import { migrateDesigners } from '../src/database/seeds/migrateDesigners';
 import { migrateTenures } from '../src/database/seeds/migrateTenures';
@@ -8,6 +10,10 @@ async function resetDatabase() {
   console.log('🔄 Resetting database...');
   
   try {
+    // Initialize PocketBase client
+    console.log('🔌 Initializing PocketBase client...');
+    await initPocketBase();
+
     // Run PocketBase migrations
     console.log('📦 Running migrations...');
     execSync('./pocketbase migrate up', { stdio: 'inherit' });

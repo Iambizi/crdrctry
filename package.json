@@ -2,21 +2,22 @@
   "name": "creativedirectory",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "verify": "ts-node -P scripts/tsconfig.json scripts/verifyData.ts",
-    "enrich": "ts-node -P scripts/tsconfig.json scripts/enrichData.ts",
-    "db:reset": "ts-node -P scripts/tsconfig.json scripts/db-reset.ts"
+    "verify": "tsx scripts/verifyData.ts",
+    "enrich": "tsx scripts/enrichData.ts",
+    "db:reset": "tsx scripts/db-reset.ts"
   },
   "dependencies": {
     "@types/node-fetch": "2",
     "@types/uuid": "^10.0.0",
     "axios": "^1.8.4",
     "cheerio": "^1.0.0",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
     "next": "15.2.1",
     "node-fetch": "2",
     "openai": "^4.91.1",
@@ -34,7 +35,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
     "typescript": "^5"
   }
 }
