@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "verify": "ts-node -P scripts/tsconfig.json scripts/verifyData.ts",
-    "enrich": "ts-node -P scripts/tsconfig.json scripts/enrichData.ts"
+    "enrich": "ts-node -P scripts/tsconfig.json scripts/enrichData.ts",
+    "db:reset": "ts-node -P scripts/tsconfig.json scripts/db-reset.ts"
   },
   "dependencies": {
     "@types/node-fetch": "2",

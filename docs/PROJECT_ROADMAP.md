@@ -22,63 +22,63 @@
 - [ ] Convert TypeScript data to JSON/CSV format
 - [ ] Create data validation scripts
 
-### 2. Database Implementation (PostgreSQL via Supabase)
-- [ ] Supabase Project Setup
-- [ ] Table Creation:
-  ```sql
-  -- Designers table
-  CREATE TABLE designers (
-    id UUID PRIMARY KEY,
-    name TEXT NOT NULL,
-    nationality TEXT,
-    birth_year INTEGER,
-    is_active BOOLEAN,
-    created_at TIMESTAMP,
-    updated_at TIMESTAMP
-  );
+### 2. Database Implementation (PocketBase)
+- [ ] PocketBase Project Setup
+- [ ] Collection Creation:
+  ```typescript
+  // Designers collection
+  interface Designer {
+    id: string;
+    name: string;
+    nationality?: string;
+    birth_year?: number;
+    is_active: boolean;
+    created: string;
+    updated: string;
+  }
 
-  -- Brands table
-  CREATE TABLE brands (
-    id UUID PRIMARY KEY,
-    name TEXT NOT NULL,
-    founded_year INTEGER,
-    parent_company TEXT,
-    headquarters TEXT,
-    created_at TIMESTAMP,
-    updated_at TIMESTAMP
-  );
+  // Brands collection
+  interface Brand {
+    id: string;
+    name: string;
+    founded_year?: number;
+    parent_company?: string;
+    headquarters?: string;
+    created: string;
+    updated: string;
+  }
 
-  -- Tenures table (many-to-many)
-  CREATE TABLE tenures (
-    id UUID PRIMARY KEY,
-    designer_id UUID REFERENCES designers(id),
-    brand_id UUID REFERENCES brands(id),
-    role TEXT NOT NULL,
-    start_year INTEGER NOT NULL,
-    end_year INTEGER,
-    is_current_role BOOLEAN,
-    created_at TIMESTAMP,
-    updated_at TIMESTAMP
-  );
+  // Tenures collection (many-to-many)
+  interface Tenure {
+    id: string;
+    designer: string; // relation to designers collection
+    brand: string;    // relation to brands collection
+    role: string;
+    start_year: number;
+    end_year?: number;
+    is_current_role: boolean;
+    created: string;
+    updated: string;
+  }
 
-  -- Relationships table
-  CREATE TABLE relationships (
-    id UUID PRIMARY KEY,
-    source_designer_id UUID REFERENCES designers(id),
-    target_designer_id UUID REFERENCES designers(id),
-    brand_id UUID REFERENCES brands(id),
-    type TEXT NOT NULL,
-    description TEXT,
-    created_at TIMESTAMP,
-    updated_at TIMESTAMP
-  );
+  // Relationships collection
+  interface Relationship {
+    id: string;
+    source_designer: string; // relation to designers collection
+    target_designer: string; // relation to designers collection
+    brand: string;          // relation to brands collection
+    type: string;
+    description?: string;
+    created: string;
+    updated: string;
+  }
   ```
-- [ ] Database constraints and indexes
+- [ ] Database schema validation rules
 - [ ] Data migration scripts
 - [ ] Basic CRUD functions
 
 ### 3. Developer/Admin Interface
-- [ ] Supabase Dashboard Configuration
+- [ ] PocketBase Admin UI Configuration
 - [ ] Custom Admin UI:
   - [ ] Data verification interface
   - [ ] Entry editor
@@ -155,7 +155,7 @@
 
 ### Week 1-2: Data & Database
 - Complete data verification
-- Set up Supabase
+- Set up PocketBase
 - Implement basic admin interface
 
 ### Week 3-4: API & Systems

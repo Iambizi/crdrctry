@@ -3,7 +3,7 @@
 ## 📌 General Project Structure
 
 - This project is an **interactive fashion genealogy tool** that visualizes creative director successions, mentorships, and brand relationships.
-- The stack is **Next.js (TypeScript) + Supabase (PostgreSQL) + D3.js or Cytoscape.js for visualization**.
+- The stack is **Next.js (TypeScript) + PocketBase + D3.js or Cytoscape.js for visualization**.
 - All code must follow the **Modular Component Structure** using the `/components` directory.
 
 ## 📌 Folder Structure & Import Aliases
@@ -17,10 +17,10 @@
   - `@/data/*` → Static JSON files
   - `@/context/*` → Global state management (Zustand or Context API)
 
-## 📌 Database & API Integration (Supabase)
+## 📌 Database & API Integration (PocketBase)
 
-- Fetch **brands, designers, mentorships, and successions** from Supabase.
-- Use **`@supabase/supabase-js`** to handle database queries.
+- Fetch **brands, designers, mentorships, and successions** from PocketBase.
+- Use **`pocketbase`** to handle database queries.
 - Define API routes under `/pages/api/*`:
   - `GET /api/designers` → Fetch all designers
   - `GET /api/brands` → Fetch all brands
@@ -50,6 +50,6 @@
 
 - When generating components, always follow **this structure**:
   1. Define **TypeScript types** (`@/types`).
-  2. Fetch data from **Supabase** (`@/utils`).
+  2. Fetch data from **PocketBase** (`@/utils`).
   3. Implement UI in **React Components** (`@/components`).
   4. Connect components to **State Management** (`@/context`).
