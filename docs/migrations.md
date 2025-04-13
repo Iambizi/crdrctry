@@ -66,7 +66,7 @@ All migrations are stored in the `pb_migrations` directory in sequential order:
 To reset the database and reseed all data:
 
 ```bash
-npm run db:reset
+yarn db:reset
 ```
 
 This will:
