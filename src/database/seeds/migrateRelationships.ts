@@ -11,10 +11,13 @@ async function loadRelationshipData(): Promise<Relationship[]> {
   const dataPath = path.join(process.cwd(), "src/data/fashionGenealogy.json");
   const rawData = await fs.readFile(dataPath, "utf-8");
   const data = JSON.parse(rawData);
-  return data.relationships || [];
+  return (data.relationships || []).filter((r: Relationship) => r.source_designer && r.target_designer && r.brand);
 }
 
 async function findDesignerId(name: string, client: PocketBase): Promise<string> {
+  if (!name) {
+    throw new Error("Designer name is required");
+  }
   try {
     const records = await client.collection("designers").getList(1, 1, {
       filter: `name = "${name}"`,
@@ -30,6 +33,9 @@ async function findDesignerId(name: string, client: PocketBase): Promise<string>
 }
 
 async function findBrandId(name: string, client: PocketBase): Promise<string> {
+  if (!name) {
+    throw new Error("Brand name is required");
+  }
   try {
     const records = await client.collection("brands").getList(1, 1, {
       filter: `name = "${name}"`,

@@ -1,12 +1,40 @@
 import PocketBase from 'pocketbase';
+import 'dotenv/config';
+
+const POCKETBASE_URL = process.env.POCKETBASE_URL;
+if (!POCKETBASE_URL) {
+  throw new Error('POCKETBASE_URL environment variable is required');
+}
 
 // Initialize PocketBase client
 export async function initPocketBase(): Promise<PocketBase> {
-  if (!process.env.POCKETBASE_URL) {
-    throw new Error("Missing POCKETBASE_URL environment variable");
-  }
+  const client = new PocketBase(POCKETBASE_URL);
   
-  return new PocketBase(process.env.POCKETBASE_URL);
+  try {
+    const email = process.env.POCKETBASE_ADMIN_EMAIL;
+    const password = process.env.POCKETBASE_ADMIN_PASSWORD;
+    
+    if (!email || !password) {
+      throw new Error('POCKETBASE_ADMIN_EMAIL and POCKETBASE_ADMIN_PASSWORD environment variables are required');
+    }
+
+    // Try to authenticate as admin
+    const authData = await client.admins.authWithPassword(email, password);
+    console.log('Successfully authenticated with PocketBase');
+
+    // Set the auth store to persist the token
+    client.authStore.save(authData.token, authData.record);
+
+    // Verify that we have admin access
+    if (!client.authStore.isValid) {
+      throw new Error('Failed to authenticate with PocketBase');
+    }
+
+    return client;
+  } catch (error) {
+    console.error('Failed to authenticate with PocketBase:', error);
+    throw error;
+  }
 }
 
 // Helper function to check database connection
@@ -36,16 +64,34 @@ export function handleDatabaseError(error: Error & { data?: unknown; status?: nu
 
 // Type-safe transaction helper
 export async function withTransaction<T>(
-  operation: (client: PocketBase) => Promise<T>
+  callback: (client: PocketBase) => Promise<T>
 ): Promise<T> {
+  const client = await initPocketBase();
   try {
-    const client = await initPocketBase();
-    const result = await operation(client);
-    return result;
+    return await callback(client);
   } catch (error) {
     if (error instanceof Error) {
-      handleDatabaseError(error as Error & { data?: unknown; status?: number });
+      console.error('Database error:', error.message);
+    } else {
+      console.error('Unknown database error:', error);
     }
     throw error;
   }
+}
+
+// CLI execution
+if (import.meta.url === `file://${process.argv[1]}`) {
+  (async () => {
+    try {
+      const client = await initPocketBase();
+      console.log('Successfully connected to PocketBase');
+      
+      // Test listing collections
+      const collections = await client.collections.getList(1, 50);
+      console.log('Collections:', collections.items.map(c => c.name));
+    } catch (error) {
+      console.error('Error:', error);
+      process.exit(1);
+    }
+  })();
 }

@@ -10,7 +10,9 @@ async function loadBrandData(): Promise<Brand[]> {
   const dataPath = path.join(process.cwd(), "src/data/fashionGenealogy.json");
   const rawData = await fs.readFile(dataPath, "utf-8");
   const data = JSON.parse(rawData);
-  return data.brands || [];
+  const brands = data.brands || [];
+  console.log(`Loaded ${brands.length} brands from JSON`);
+  return brands;
 }
 
 function transformBrand(brand: Brand): CreateBrand {
@@ -21,13 +23,27 @@ function transformBrand(brand: Brand): CreateBrand {
     category: brand.category || "luxury_fashion",
     parent_company: brand.parent_company,
     headquarters: brand.headquarters,
-    specialties: brand.specialties,
+    specialties: brand.specialties || [],
     price_point: brand.price_point,
-    markets: brand.markets,
-    website: brand.website,
-    social_media: brand.social_media,
-    logo_url: brand.logo_url
+    markets: brand.markets || [],
+    website: brand.website ? ensureValidUrl(brand.website) : undefined,
+    social_media: brand.social_media || {},
+    logo_url: brand.logo_url ? ensureValidUrl(brand.logo_url) : undefined
   };
+}
+
+function ensureValidUrl(url: string): string | undefined {
+  if (!url) return undefined;
+  try {
+    // Add https:// if no protocol is specified
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      url = 'https://' + url;
+    }
+    new URL(url);
+    return url;
+  } catch {
+    return undefined;
+  }
 }
 
 async function validateBrand(brand: CreateBrand): Promise<string[]> {
@@ -39,44 +55,10 @@ async function validateBrand(brand: CreateBrand): Promise<string[]> {
   }
 
   // Validate founded_year if provided
-  if (brand.founded_year !== null) {
+  if (brand.founded_year !== null && brand.founded_year !== undefined) {
     const currentYear = new Date().getFullYear();
     if (brand.founded_year < 1800 || brand.founded_year > currentYear) {
       errors.push(`Founded year must be between 1800 and ${currentYear}`);
-    }
-  }
-
-  // Validate category
-  const validCategories = [
-    "luxury_fashion",
-    "design_studio",
-    "collaboration_line",
-    "historical_retail",
-    "designer_label",
-    "educational_institution",
-    "collaboration_partner",
-  ];
-  if (!validCategories.includes(brand.category)) {
-    errors.push(
-      `Invalid category. Must be one of: ${validCategories.join(", ")}`
-    );
-  }
-
-  // Validate website URL if provided
-  if (brand.website) {
-    try {
-      new URL(brand.website);
-    } catch {
-      errors.push("Invalid website URL format");
-    }
-  }
-
-  // Validate logo_url if provided
-  if (brand.logo_url) {
-    try {
-      new URL(brand.logo_url);
-    } catch {
-      errors.push("Invalid logo URL format");
     }
   }
 
@@ -84,11 +66,13 @@ async function validateBrand(brand: CreateBrand): Promise<string[]> {
 }
 
 export async function migrateBrands(): Promise<void> {
+  console.log('Starting brand migration...');
   const brands = await loadBrandData();
   let created = 0;
   let errors = 0;
 
   await withTransaction(async (client) => {
+    console.log('Connected to PocketBase, starting brand creation...');
     for (const brand of brands) {
       const transformedBrand = transformBrand(brand);
       const validationErrors = await validateBrand(transformedBrand);
@@ -100,6 +84,7 @@ export async function migrateBrands(): Promise<void> {
       }
 
       try {
+        console.log(`Creating brand: ${brand.name}`);
         await client.collection("brands").create(transformedBrand);
         created++;
       } catch (error) {
