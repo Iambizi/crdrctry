@@ -14,7 +14,8 @@
     "migrate:brands": "tsx src/database/seeds/migrateBrands.ts",
     "migrate:designers": "tsx src/database/seeds/migrateDesigners.ts",
     "migrate:tenures": "tsx src/database/seeds/migrateTenures.ts",
-    "migrate:all": "yarn db:reset && yarn migrate:brands && yarn migrate:designers && yarn migrate:tenures"
+    "migrate:relationships": "tsx src/database/seeds/migrateRelationships.ts",
+    "migrate:all": "yarn db:reset && yarn migrate:brands && yarn migrate:designers && yarn migrate:tenures && yarn migrate:relationships"
   },
   "dependencies": {
     "@types/node-fetch": "2",

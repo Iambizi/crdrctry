@@ -82,35 +82,30 @@ async function loadDesignerData(): Promise<RawDesigner[]> {
 
 async function createDesigner(designer: RawDesigner, client: PocketBase): Promise<void> {
   try {
-    // Check if designer already exists
-    const existing = await client.collection('designers').getFirstListItem(`name = "${designer.name}"`);
-    if (existing) {
+    console.log(`Creating designer: ${designer.name}`);
+    await client.collection('designers').create({
+      name: designer.name,
+      biography: designer.biography || '',
+      education: designer.education || [],
+      awards: designer.awards || [],
+      social_media: designer.social_media || {},
+      profile_image: designer.profile_image || '',
+      birth_year: designer.birth_year,
+      death_year: designer.death_year,
+      nationality: designer.nationality || '',
+      signature_styles: designer.signature_styles || [],
+      status: designer.status || 'Unknown',
+      current_role: designer.current_role || '',
+      is_active: designer.is_active ?? false
+    });
+  } catch (error) {
+    // If it's a duplicate record error, that's fine
+    if (error instanceof ClientResponseError && error.status === 400 && error.response?.data?.name?.code === "validation_not_unique") {
       console.log(`Designer already exists: ${designer.name}`);
       return;
     }
-  } catch (error) {
-    // 404 means designer doesn't exist, which is what we want
-    if (error instanceof ClientResponseError && error.status !== 404) {
-      throw error;
-    }
+    throw error;
   }
-
-  console.log(`Creating designer: ${designer.name}`);
-  await client.collection('designers').create({
-    name: designer.name,
-    biography: designer.biography || '',
-    education: designer.education || [],
-    awards: designer.awards || [],
-    social_media: designer.social_media || {},
-    profile_image: designer.profile_image || '',
-    birth_year: designer.birth_year,
-    death_year: designer.death_year,
-    nationality: designer.nationality || '',
-    signature_styles: designer.signature_styles || [],
-    status: designer.status || 'Unknown',
-    current_role: designer.current_role || '',
-    is_active: designer.is_active || false
-  });
 }
 
 export async function migrateDesigners(): Promise<void> {

@@ -19,11 +19,10 @@ async function findDesignerId(name: string, client: PocketBase): Promise<string>
     throw new Error("Designer name is required");
   }
   try {
-    const records = await client.collection("designers").getList(1, 1, {
-      filter: `name = "${name}"`,
-    });
-    if (records.items.length > 0) {
-      return records.items[0].id;
+    const records = await client.collection("designers").getFullList();
+    const match = records.find(r => r.name.toLowerCase() === name.toLowerCase());
+    if (match) {
+      return match.id;
     }
     throw new Error(`Designer not found: ${name}`);
   } catch (error) {
@@ -37,11 +36,10 @@ async function findBrandId(name: string, client: PocketBase): Promise<string> {
     throw new Error("Brand name is required");
   }
   try {
-    const records = await client.collection("brands").getList(1, 1, {
-      filter: `name = "${name}"`,
-    });
-    if (records.items.length > 0) {
-      return records.items[0].id;
+    const records = await client.collection("brands").getFullList();
+    const match = records.find(r => r.name.toLowerCase() === name.toLowerCase());
+    if (match) {
+      return match.id;
     }
     throw new Error(`Brand not found: ${name}`);
   } catch (error) {

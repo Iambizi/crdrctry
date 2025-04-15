@@ -166,24 +166,13 @@ async function findDesignerId(name: string, client: PocketBase): Promise<string>
   if (!name) {
     throw new Error("Designer name is required");
   }
-  
-  const searchName = name.toLowerCase();
-  
   try {
-    const cache = await loadDesignerCache(client);
-    const id = cache.get(searchName);
-    if (!id) {
-      // If not found in cache, try to find it directly in the database
-      const records = await client.collection("designers").getFullList();
-      const match = records.find(r => r.name && r.name.toLowerCase() === searchName);
-      if (match) {
-        const id = match.id;
-        designerCache?.set(searchName, id); // Update cache
-        return id;
-      }
-      throw new Error(`Designer not found: ${name}`);
+    const records = await client.collection("designers").getFullList();
+    const match = records.find(r => r.name.toLowerCase() === name.toLowerCase());
+    if (match) {
+      return match.id;
     }
-    return id;
+    throw new Error(`Designer not found: ${name}`);
   } catch (error) {
     console.error(`Error finding designer ${name}:`, error);
     throw error;
@@ -194,24 +183,13 @@ async function findBrandId(name: string, client: PocketBase): Promise<string> {
   if (!name) {
     throw new Error("Brand name is required");
   }
-  
-  const searchName = name.toLowerCase();
-  
   try {
-    const cache = await loadBrandCache(client);
-    const id = cache.get(searchName);
-    if (!id) {
-      // If not found in cache, try to find it directly in the database
-      const records = await client.collection("brands").getFullList();
-      const match = records.find(r => r.name && r.name.toLowerCase() === searchName);
-      if (match) {
-        const id = match.id;
-        brandCache?.set(searchName, id); // Update cache
-        return id;
-      }
-      throw new Error(`Brand not found: ${name}`);
+    const records = await client.collection("brands").getFullList();
+    const match = records.find(r => r.name.toLowerCase() === name.toLowerCase());
+    if (match) {
+      return match.id;
     }
-    return id;
+    throw new Error(`Brand not found: ${name}`);
   } catch (error) {
     console.error(`Error finding brand ${name}:`, error);
     throw error;

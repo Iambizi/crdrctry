@@ -7,6 +7,7 @@ const COLLECTIONS = {
     DESIGNERS: 'designers',
     BRANDS: 'brands',
     TENURES: 'tenures',
+    RELATIONSHIPS: 'relationships'
 };
 
 // Helper function to safely delete a collection
@@ -37,7 +38,8 @@ async function resetDatabase() {
 
         // --- Delete existing collections ---
         console.log('🧹 Deleting existing collections in reverse order of dependency...');
-        // Delete tenures first as it depends on designers and brands
+        // Delete relationships and tenures first as they depend on designers and brands
+        await deleteCollectionIfExists(client, COLLECTIONS.RELATIONSHIPS);
         await deleteCollectionIfExists(client, COLLECTIONS.TENURES);
         // Then delete designers and brands
         await deleteCollectionIfExists(client, COLLECTIONS.DESIGNERS);
@@ -158,6 +160,66 @@ async function resetDatabase() {
             ]
         });
         console.log(`✅ Created ${COLLECTIONS.TENURES} collection (ID: ${tenuresCollection.id})`);
+
+        // 4. Relationships collection
+        console.log(`Creating collection: ${COLLECTIONS.RELATIONSHIPS}...`);
+        const relationshipsCollection = await client.collections.create({
+            name: COLLECTIONS.RELATIONSHIPS,
+            type: 'base',
+            schema: [
+                {
+                    name: 'source_designer',
+                    type: 'relation',
+                    required: true,
+                    options: {
+                        collectionId: designersCollection.id,
+                        cascadeDelete: true,
+                        maxSelect: 1,
+                        minSelect: 1,
+                        displayFields: ['name']
+                    }
+                },
+                {
+                    name: 'target_designer',
+                    type: 'relation',
+                    required: true,
+                    options: {
+                        collectionId: designersCollection.id,
+                        cascadeDelete: true,
+                        maxSelect: 1,
+                        minSelect: 1,
+                        displayFields: ['name']
+                    }
+                },
+                {
+                    name: 'brand',
+                    type: 'relation',
+                    required: true,
+                    options: {
+                        collectionId: brandsCollection.id,
+                        cascadeDelete: true,
+                        maxSelect: 1,
+                        minSelect: 1,
+                        displayFields: ['name']
+                    }
+                },
+                {
+                    name: 'type',
+                    type: 'select',
+                    required: true,
+                    options: {
+                        maxSelect: 1,
+                        values: ['Mentor', 'Collaborator', 'Successor', 'Predecessor', 'Competitor', 'Other']
+                    }
+                },
+                { name: 'start_year', type: 'number', required: false },
+                { name: 'end_year', type: 'number', required: false },
+                { name: 'description', type: 'text', required: false },
+                { name: 'impact', type: 'text', required: false },
+                { name: 'collaboration_projects', type: 'json', required: false }
+            ]
+        });
+        console.log(`✅ Created ${COLLECTIONS.RELATIONSHIPS} collection (ID: ${relationshipsCollection.id})`);
 
         console.log('✅ Database schema reset complete!');
 

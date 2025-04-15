@@ -70,31 +70,26 @@ async function loadBrandData(): Promise<RawBrand[]> {
 
 async function createBrand(brand: RawBrand, client: PocketBase): Promise<void> {
   try {
-    // Check if brand already exists
-    const existing = await client.collection('brands').getFirstListItem(`name = "${brand.name}"`);
-    if (existing) {
+    console.log(`Creating brand: ${brand.name}`);
+    await client.collection('brands').create({
+      name: brand.name,
+      description: brand.description || '',
+      founding_year: brand.founding_year,
+      headquarters: brand.headquarters || '',
+      parent_company: brand.parent_company || '',
+      categories: brand.categories || [],
+      website: brand.website || '',
+      social_media: brand.social_media || {},
+      logo_url: brand.logo_url || ''
+    });
+  } catch (error) {
+    // If it's a duplicate record error, that's fine
+    if (error instanceof ClientResponseError && error.status === 400 && error.response?.data?.name?.code === "validation_not_unique") {
       console.log(`Brand already exists: ${brand.name}`);
       return;
     }
-  } catch (error) {
-    // 404 means brand doesn't exist, which is what we want
-    if (error instanceof ClientResponseError && error.status !== 404) {
-      throw error;
-    }
+    throw error;
   }
-
-  console.log(`Creating brand: ${brand.name}`);
-  await client.collection('brands').create({
-    name: brand.name,
-    description: brand.description || '',
-    founding_year: brand.founding_year,
-    headquarters: brand.headquarters || '',
-    parent_company: brand.parent_company || '',
-    categories: brand.categories || [],
-    website: brand.website || '',
-    social_media: brand.social_media || {},
-    logo_url: brand.logo_url || ''
-  });
 }
 
 export async function migrateBrands(): Promise<void> {
