@@ -1,114 +1,151 @@
-import { withTransaction } from '../client';
-import { readFileSync } from 'fs';
-import { join } from 'path';
-import PocketBase from 'pocketbase';
+import { withTransaction } from "../client";
+import path from "path";
+import fs from "fs/promises";
+import { fileURLToPath } from 'url';
+import PocketBase, { ClientResponseError } from 'pocketbase';
 
-interface Designer {
+const __filename = fileURLToPath(import.meta.url);
+
+interface RawDesigner {
+  id: string;
   name: string;
+  biography?: string;
+  education?: string[];
+  awards?: string[];
+  social_media?: Record<string, string>;
+  profile_image?: string;
   birth_year?: number;
   death_year?: number;
   nationality?: string;
-  education?: string[];
-  awards?: string[];
   signature_styles?: string[];
-  biography?: string;
-  image_url?: string;
-  social_media?: Record<string, string>;
-  status?: string;
+  status?: 'Active' | 'Inactive' | 'Retired' | 'Deceased' | 'Unknown';
   current_role?: string;
   is_active?: boolean;
 }
 
-// Load designer data from JSON file
-async function loadDesignerData(): Promise<Designer[]> {
-  try {
-    const dataPath = join(process.cwd(), 'src/data/fashionGenealogy.json');
-    const rawData = readFileSync(dataPath, 'utf8');
-    const data = JSON.parse(rawData);
-    const designers = data.designers || [];
-    console.log(`Loaded ${designers.length} designers from JSON`);
-    console.log('First designer:', JSON.stringify(designers[0], null, 2));
-    return designers;
-  } catch (error) {
-    console.error('Error loading designer data:', error);
-    throw error;
-  }
+interface DesignerData {
+  designers: Array<{
+    id: string;
+    name?: string;
+    biography?: string;
+    education?: string[];
+    awards?: string[];
+    social_media?: Record<string, string>;
+    profile_image?: string;
+    birth_year?: string | number;
+    death_year?: string | number;
+    nationality?: string;
+    signature_styles?: string[];
+    status?: string;
+    current_role?: string;
+    is_active?: boolean;
+  }>;
 }
 
-// Create a designer record
-async function createDesigner(designer: Designer, client: PocketBase): Promise<void> {
+async function loadDesignerData(): Promise<RawDesigner[]> {
+  const dataPath = path.join(process.cwd(), "src/data/fashionGenealogy.json");
+  const rawData = await fs.readFile(dataPath, "utf-8");
+  const data = JSON.parse(rawData) as DesignerData;
+  
+  console.log(`Loaded ${data.designers?.length || 0} designers from JSON`);
+  
+  // Transform and validate designers
+  const designers = (data.designers || []).map((d): RawDesigner => ({
+    id: d.id,
+    name: d.name?.trim() || '',
+    biography: d.biography?.trim(),
+    education: Array.isArray(d.education) ? d.education : [],
+    awards: Array.isArray(d.awards) ? d.awards : [],
+    social_media: typeof d.social_media === 'object' ? d.social_media : {},
+    profile_image: d.profile_image?.trim(),
+    birth_year: typeof d.birth_year === 'string' ? Number(d.birth_year) : d.birth_year,
+    death_year: typeof d.death_year === 'string' ? Number(d.death_year) : d.death_year,
+    nationality: d.nationality?.trim(),
+    signature_styles: Array.isArray(d.signature_styles) ? d.signature_styles : [],
+    status: d.status as RawDesigner['status'] || 'Unknown',
+    current_role: d.current_role?.trim(),
+    is_active: Boolean(d.is_active)
+  }));
+
+  // Filter out invalid designers
+  const validDesigners = designers.filter(d => {
+    const isValid = Boolean(d.name);
+    if (!isValid) {
+      console.log('Invalid designer:', d);
+    }
+    return isValid;
+  });
+
+  console.log(`Found ${validDesigners.length} valid designers`);
+  return validDesigners;
+}
+
+async function createDesigner(designer: RawDesigner, client: PocketBase): Promise<void> {
   try {
     // Check if designer already exists
-    const existingDesigners = await client.collection('designers').getList(1, 1, {
-      filter: `name = "${designer.name}"`
-    });
-    
-    if (existingDesigners.items.length > 0) {
-      console.log(`Designer ${designer.name} already exists, skipping...`);
+    const existing = await client.collection('designers').getFirstListItem(`name = "${designer.name}"`);
+    if (existing) {
+      console.log(`Designer already exists: ${designer.name}`);
       return;
     }
-
-    // Create new designer
-    console.log(`Creating designer: ${designer.name}`);
-    await client.collection('designers').create({
-      name: designer.name,
-      birth_year: designer.birth_year || null,
-      death_year: designer.death_year || null,
-      nationality: designer.nationality || '',
-      education: designer.education || [],
-      awards: designer.awards || [],
-      signature_styles: designer.signature_styles || [],
-      biography: designer.biography || '',
-      image_url: designer.image_url || '',
-      social_media: designer.social_media || {},
-      status: designer.status || 'active',
-      current_role: designer.current_role || '',
-      is_active: designer.is_active !== false
-    });
   } catch (error) {
-    console.error(`Error creating designer ${designer.name}:`, error);
-    throw error;
+    // 404 means designer doesn't exist, which is what we want
+    if (error instanceof ClientResponseError && error.status !== 404) {
+      throw error;
+    }
   }
+
+  console.log(`Creating designer: ${designer.name}`);
+  await client.collection('designers').create({
+    name: designer.name,
+    biography: designer.biography || '',
+    education: designer.education || [],
+    awards: designer.awards || [],
+    social_media: designer.social_media || {},
+    profile_image: designer.profile_image || '',
+    birth_year: designer.birth_year,
+    death_year: designer.death_year,
+    nationality: designer.nationality || '',
+    signature_styles: designer.signature_styles || [],
+    status: designer.status || 'Unknown',
+    current_role: designer.current_role || '',
+    is_active: designer.is_active || false
+  });
 }
 
-// Migrate designers
 export async function migrateDesigners(): Promise<void> {
   console.log('Starting designer migration...');
-  
-  try {
-    const designers = await loadDesignerData();
-    console.log(`Found ${designers.length} designers to migrate`);
-    
-    let created = 0;
-    let errors = 0;
-    const skipped = 0;
+  const designers = await loadDesignerData();
+  let created = 0;
+  let errors = 0;
 
-    await withTransaction(async (client) => {
-      for (const designer of designers) {
-        try {
-          await createDesigner(designer, client);
-          created++;
-        } catch (error) {
-          console.error(`Error creating designer ${designer.name}:`, error);
-          errors++;
-        }
+  await withTransaction(async (client) => {
+    for (const designer of designers) {
+      try {
+        await createDesigner(designer, client);
+        created++;
+      } catch (error) {
+        console.error(`Error creating designer ${designer.name}:`, error);
+        errors++;
       }
-    });
+    }
+  });
 
-    console.log('Designer migration complete:');
-    console.log(`    Created: ${created}`);
-    console.log(`    Skipped: ${skipped}`);
-    console.log(`    Errors: ${errors}`);
-    console.log('  ');
-  } catch (error) {
-    console.error('Error during designer migration:', error);
-    throw error;
-  }
+  console.log(`Designer migration complete:
+    Created: ${created}
+    Errors: ${errors}
+  `);
 }
 
-// Run migration if this file is executed directly
-if (import.meta.url === `file://${process.argv[1]}`) {
-  migrateDesigners()
-    .then(() => console.log('Migration completed'))
-    .catch(console.error);
+// CLI execution
+if (import.meta.url === `file://${__filename}`) {
+  (async () => {
+    try {
+      await migrateDesigners();
+      console.log('Migration completed');
+    } catch (error) {
+      console.error('Migration failed:', error);
+      process.exit(1);
+    }
+  })();
 }

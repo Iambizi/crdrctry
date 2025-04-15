@@ -10,7 +10,11 @@
     "lint": "next lint",
     "verify": "tsx scripts/verifyData.ts",
     "enrich": "tsx scripts/enrichData.ts",
-    "db:reset": "tsx scripts/db-reset.ts"
+    "db:reset": "tsx scripts/db-reset.ts",
+    "migrate:brands": "tsx src/database/seeds/migrateBrands.ts",
+    "migrate:designers": "tsx src/database/seeds/migrateDesigners.ts",
+    "migrate:tenures": "tsx src/database/seeds/migrateTenures.ts",
+    "migrate:all": "yarn db:reset && yarn migrate:brands && yarn migrate:designers && yarn migrate:tenures"
   },
   "dependencies": {
     "@types/node-fetch": "2",

@@ -53,14 +53,11 @@ export interface Brand extends BaseRecord {
   collectionId: string;
   collectionName: "brands";
   name: string;
-  founded_year: number;
-  founder: string;
-  category: BrandCategory;
-  parent_company?: string;
+  description?: string;
+  founding_year?: number;
   headquarters?: string;
-  specialties?: string[];
-  price_point?: string;
-  markets?: string[];
+  parent_company?: string;
+  categories?: string[];
   website?: string;
   social_media?: Record<string, string>;
   logo_url?: string;
@@ -71,7 +68,7 @@ export interface Tenure extends BaseRecord {
   collectionName: "tenures";
   designer: string;
   brand: string;
-  role: string;
+  role: string | undefined;
   department?: Department;
   start_year: number;
   end_year?: number | null;
