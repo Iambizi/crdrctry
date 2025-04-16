@@ -1,5 +1,5 @@
 import { withTransaction } from "../client";
-import { Relationship, CreateRelationship } from "../types/types";
+import { CreateRelationship, RelationshipType } from "../types/types";
 import path from "path";
 import fs from "fs/promises";
 import { fileURLToPath } from 'url';
@@ -7,51 +7,97 @@ import PocketBase from 'pocketbase';
 
 const __filename = fileURLToPath(import.meta.url);
 
-async function loadRelationshipData(): Promise<Relationship[]> {
+interface RawRelationship {
+  id: string;
+  sourceDesignerId: string;
+  targetDesignerId: string;
+  brandId: string;
+  type: RelationshipType;
+  startYear?: number;
+  endYear?: number;
+  description?: string;
+  impact?: string;
+  collaborationProjects?: string[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+async function loadRelationshipData(): Promise<RawRelationship[]> {
   const dataPath = path.join(process.cwd(), "src/data/fashionGenealogy.json");
   const rawData = await fs.readFile(dataPath, "utf-8");
   const data = JSON.parse(rawData);
-  return (data.relationships || []).filter((r: Relationship) => r.source_designer && r.target_designer && r.brand);
+  return (data.relationships || []).filter((r: RawRelationship) => {
+    return r.sourceDesignerId && r.targetDesignerId && r.brandId;
+  });
 }
 
-async function findDesignerId(name: string, client: PocketBase): Promise<string> {
+async function findOrCreateDesigner(name: string, client: PocketBase): Promise<string> {
   if (!name) {
     throw new Error("Designer name is required");
   }
   try {
     const records = await client.collection("designers").getFullList();
-    const searchName = name.toLowerCase();
-    const match = records.find(r => r.name && r.name.toLowerCase() === searchName);
+    const match = records.find(r => r.name && r.name.toLowerCase() === name.toLowerCase());
     if (match) {
       return match.id;
     }
-    throw new Error(`Designer not found: ${name}`);
+    // Designer not found, create them
+    console.log(`Creating missing designer: ${name}`);
+    const newDesigner = await client.collection("designers").create({
+      name: name,
+      current_role: '',
+      status: 'Unknown',
+      is_active: false,
+      biography: '',
+      education: [],
+      awards: [],
+      social_media: {},
+      profile_image: '',
+      nationality: '',
+      signature_styles: []
+    });
+    return newDesigner.id;
   } catch (error) {
-    console.error(`Error finding designer ${name}:`, error);
+    console.error(`Error finding/creating designer ${name}:`, error);
     throw error;
   }
 }
 
-async function findBrandId(name: string, client: PocketBase): Promise<string> {
+async function findOrCreateBrand(name: string, client: PocketBase): Promise<string> {
   if (!name) {
     throw new Error("Brand name is required");
   }
   try {
     const records = await client.collection("brands").getFullList();
-    const searchName = name.toLowerCase();
-    const match = records.find(r => r.name && r.name.toLowerCase() === searchName);
+    const match = records.find(r => r.name && r.name.toLowerCase() === name.toLowerCase());
     if (match) {
       return match.id;
     }
-    throw new Error(`Brand not found: ${name}`);
+    // Brand not found, create it
+    console.log(`Creating missing brand: ${name}`);
+    const newBrand = await client.collection("brands").create({
+      name: name,
+      description: '',
+      founding_year: null,
+      headquarters: '',
+      parent_company: '',
+      website: '',
+      social_media: {},
+      logo: '',
+      specialties: [],
+      price_range: '',
+      market_segment: '',
+      is_active: true
+    });
+    return newBrand.id;
   } catch (error) {
-    console.error(`Error finding brand ${name}:`, error);
+    console.error(`Error finding/creating brand ${name}:`, error);
     throw error;
   }
 }
 
 function transformRelationship(
-  relationship: Relationship,
+  relationship: RawRelationship,
   sourceDesignerId: string,
   targetDesignerId: string,
   brandId: string
@@ -61,11 +107,11 @@ function transformRelationship(
     target_designer: targetDesignerId,
     brand: brandId,
     type: relationship.type,
-    start_year: relationship.start_year,
-    end_year: relationship.end_year,
+    start_year: relationship.startYear,
+    end_year: relationship.endYear,
     description: relationship.description,
     impact: relationship.impact,
-    collaboration_projects: relationship.collaboration_projects || [],
+    collaboration_projects: relationship.collaborationProjects || [],
   };
 }
 
@@ -97,9 +143,9 @@ export async function migrateRelationships(): Promise<void> {
   await withTransaction(async (client) => {
     for (const relationship of relationships) {
       try {
-        const sourceDesignerId = await findDesignerId(relationship.source_designer, client);
-        const targetDesignerId = await findDesignerId(relationship.target_designer, client);
-        const brandId = await findBrandId(relationship.brand, client);
+        const sourceDesignerId = await findOrCreateDesigner(relationship.sourceDesignerId, client);
+        const targetDesignerId = await findOrCreateDesigner(relationship.targetDesignerId, client);
+        const brandId = await findOrCreateBrand(relationship.brandId, client);
 
         const transformedRelationship = transformRelationship(
           relationship,
@@ -112,7 +158,7 @@ export async function migrateRelationships(): Promise<void> {
 
         if (validationErrors.length > 0) {
           console.error(
-            `Validation errors for relationship between ${relationship.source_designer} and ${relationship.target_designer}:`,
+            `Validation errors for relationship between ${relationship.sourceDesignerId} and ${relationship.targetDesignerId}:`,
             validationErrors
           );
           errors++;
@@ -122,17 +168,10 @@ export async function migrateRelationships(): Promise<void> {
         await client.collection("relationships").create(transformedRelationship);
         created++;
       } catch (error) {
-        if (error instanceof Error) {
-          console.error(
-            `Error creating relationship between ${relationship.source_designer} and ${relationship.target_designer}:`,
-            error.message
-          );
-        } else {
-          console.error(
-            `Error creating relationship between ${relationship.source_designer} and ${relationship.target_designer}:`,
-            error
-          );
-        }
+        console.error(
+          `Error creating relationship between ${relationship.sourceDesignerId} and ${relationship.targetDesignerId}:`,
+          error
+        );
         errors++;
       }
     }
