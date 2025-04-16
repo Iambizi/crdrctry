@@ -162,36 +162,67 @@ async function loadBrandCache(client: PocketBase): Promise<Map<string, string>> 
   return brandCache;
 }
 
-async function findDesignerId(name: string, client: PocketBase): Promise<string> {
+async function findOrCreateDesigner(name: string, role: string | undefined, client: PocketBase): Promise<string> {
   if (!name) {
     throw new Error("Designer name is required");
   }
   try {
     const records = await client.collection("designers").getFullList();
-    const match = records.find(r => r.name.toLowerCase() === name.toLowerCase());
+    const match = records.find(r => r.name && r.name.toLowerCase() === name.toLowerCase());
     if (match) {
       return match.id;
     }
-    throw new Error(`Designer not found: ${name}`);
+    // Designer not found, create them
+    console.log(`Creating missing designer: ${name}`);
+    const newDesigner = await client.collection("designers").create({
+      name: name,
+      current_role: role || '',
+      status: 'Unknown',
+      is_active: false,
+      biography: '',
+      education: [],
+      awards: [],
+      social_media: {},
+      profile_image: '',
+      nationality: '',
+      signature_styles: []
+    });
+    return newDesigner.id;
   } catch (error) {
-    console.error(`Error finding designer ${name}:`, error);
+    console.error(`Error finding/creating designer ${name}:`, error);
     throw error;
   }
 }
 
-async function findBrandId(name: string, client: PocketBase): Promise<string> {
+async function findOrCreateBrand(name: string, client: PocketBase): Promise<string> {
   if (!name) {
     throw new Error("Brand name is required");
   }
   try {
     const records = await client.collection("brands").getFullList();
-    const match = records.find(r => r.name.toLowerCase() === name.toLowerCase());
+    const match = records.find(r => r.name && r.name.toLowerCase() === name.toLowerCase());
     if (match) {
       return match.id;
     }
-    throw new Error(`Brand not found: ${name}`);
+    // Brand not found, create it
+    console.log(`Creating missing brand: ${name}`);
+    const newBrand = await client.collection("brands").create({
+      name: name,
+      description: '',
+      founding_year: null,
+      headquarters: '',
+      parent_company: '',
+      website: '',
+      social_media: {},
+      logo: '',
+      specialties: [],
+      price_range: '',
+      market_segment: '',
+      is_active: true
+    });
+    return newBrand.id;
   } catch (error) {
-    console.error(`Error finding brand ${name}:`, error);
+    console.error(`Error finding/creating brand ${name}:`, error);
     throw error;
   }
 }
@@ -246,8 +277,8 @@ export async function migrateTenures(): Promise<void> {
     // Now process tenures
     for (const tenure of tenures) {
       try {
-        const designerId = await findDesignerId(tenure.designer, client);
-        const brandId = await findBrandId(tenure.brand, client);
+        const designerId = await findOrCreateDesigner(tenure.designer, tenure.role, client);
+        const brandId = await findOrCreateBrand(tenure.brand, client);
         const transformedTenure = transformTenure(tenure, designerId, brandId);
         const validationErrors = await validateTenure(transformedTenure);
 
@@ -260,11 +291,7 @@ export async function migrateTenures(): Promise<void> {
         await client.collection("tenures").create(transformedTenure);
         created++;
       } catch (error) {
-        if (error instanceof Error) {
-          console.error(`Error creating tenure ${tenure.designer} at ${tenure.brand}:`, error.message);
-        } else {
-          console.error(`Error creating tenure ${tenure.designer} at ${tenure.brand}:`, error);
-        }
+        console.error(`Error creating tenure ${tenure.designer} at ${tenure.brand}:`, error);
         errors++;
       }
     }

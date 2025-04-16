@@ -20,7 +20,8 @@ async function findDesignerId(name: string, client: PocketBase): Promise<string>
   }
   try {
     const records = await client.collection("designers").getFullList();
-    const match = records.find(r => r.name.toLowerCase() === name.toLowerCase());
+    const searchName = name.toLowerCase();
+    const match = records.find(r => r.name && r.name.toLowerCase() === searchName);
     if (match) {
       return match.id;
     }
@@ -37,7 +38,8 @@ async function findBrandId(name: string, client: PocketBase): Promise<string> {
   }
   try {
     const records = await client.collection("brands").getFullList();
-    const match = records.find(r => r.name.toLowerCase() === name.toLowerCase());
+    const searchName = name.toLowerCase();
+    const match = records.find(r => r.name && r.name.toLowerCase() === searchName);
     if (match) {
       return match.id;
     }

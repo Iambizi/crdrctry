@@ -23,6 +23,20 @@ interface RawDesigner {
   is_active?: boolean;
 }
 
+interface RawTenure {
+  designer: string;
+  brand: string;
+  role?: string;
+  department?: string;
+  start_year: number;
+  end_year?: number;
+  is_current_role?: boolean;
+  achievements?: string[];
+  notable_works?: string[];
+  notable_collections?: string[];
+  impact_description?: string;
+}
+
 interface DesignerData {
   designers: Array<{
     id: string;
@@ -40,6 +54,7 @@ interface DesignerData {
     current_role?: string;
     is_active?: boolean;
   }>;
+  tenures: RawTenure[];
 }
 
 async function loadDesignerData(): Promise<RawDesigner[]> {
@@ -48,9 +63,10 @@ async function loadDesignerData(): Promise<RawDesigner[]> {
   const data = JSON.parse(rawData) as DesignerData;
   
   console.log(`Loaded ${data.designers?.length || 0} designers from JSON`);
+  console.log(`Found ${data.tenures?.length || 0} tenures`);
   
-  // Transform and validate designers
-  const designers = (data.designers || []).map((d): RawDesigner => ({
+  // First, transform and validate designers from the designers list
+  const designersFromList = (data.designers || []).map((d): RawDesigner => ({
     id: d.id,
     name: d.name?.trim() || '',
     biography: d.biography?.trim(),
@@ -67,8 +83,29 @@ async function loadDesignerData(): Promise<RawDesigner[]> {
     is_active: Boolean(d.is_active)
   }));
 
+  // Then, get unique designers from tenures
+  const designersFromTenures = (data.tenures || [])
+    .filter(t => t && t.designer) // Filter out null/undefined tenures and designers
+    .map((t): RawDesigner => ({
+      id: `tenure_${t.designer}`,
+      name: t.designer.trim(),
+      current_role: t.role,
+      is_active: t.is_current_role ?? false,
+      status: t.is_current_role ? 'Active' : 'Unknown'
+    }));
+
+  // Combine both lists and remove duplicates by name
+  const allDesigners = [...designersFromList, ...designersFromTenures];
+  const uniqueDesigners = allDesigners.reduce((acc, designer) => {
+    const existingDesigner = acc.find(d => d.name.toLowerCase() === designer.name.toLowerCase());
+    if (!existingDesigner && designer.name) {
+      acc.push(designer);
+    }
+    return acc;
+  }, [] as RawDesigner[]);
+
   // Filter out invalid designers
-  const validDesigners = designers.filter(d => {
+  const validDesigners = uniqueDesigners.filter(d => {
     const isValid = Boolean(d.name);
     if (!isValid) {
       console.log('Invalid designer:', d);
@@ -76,7 +113,7 @@ async function loadDesignerData(): Promise<RawDesigner[]> {
     return isValid;
   });
 
-  console.log(`Found ${validDesigners.length} valid designers`);
+  console.log(`Found ${validDesigners.length} valid unique designers`);
   return validDesigners;
 }
 
