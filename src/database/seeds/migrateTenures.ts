@@ -1,11 +1,14 @@
-import { withTransaction } from "../client";
 import { Tenure, CreateTenure } from "../types/types";
 import path from "path";
 import fs from "fs/promises";
 import { fileURLToPath } from 'url';
 import PocketBase from 'pocketbase';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
+const pb = new PocketBase(process.env.POCKETBASE_URL);
 
 interface RawDesigner {
   id: string;
@@ -18,7 +21,6 @@ interface RawBrand {
 }
 
 interface RawTenure {
-  id: string;
   designerId: string;
   brandId: string;
   role?: string;
@@ -37,216 +39,68 @@ async function loadTenureData(): Promise<Tenure[]> {
   const rawData = await fs.readFile(dataPath, "utf-8");
   const data = JSON.parse(rawData);
   
-  console.log('Raw data loaded. Found:');
-  console.log(`- ${data.designers?.length || 0} designers`);
-  console.log(`- ${data.brands?.length || 0} brands`);
-  console.log(`- ${data.tenures?.length || 0} tenures`);
+  console.log('Raw data loaded');
   
   // First, build maps of IDs to names
   const designerMap = new Map(data.designers.map((d: RawDesigner) => [d.id, d.name]));
   const brandMap = new Map(data.brands.map((b: RawBrand) => [b.id, b.name]));
   
-  console.log('\nMaps created:');
-  console.log(`- Designer map size: ${designerMap.size}`);
-  console.log(`- Brand map size: ${brandMap.size}`);
-  
   // Transform tenures to use names instead of IDs
-  const tenures = (data.tenures || []).map((t: RawTenure) => {
+  const tenures = data.tenures.map((t: RawTenure) => {
     const designer = designerMap.get(t.designerId);
     const brand = brandMap.get(t.brandId);
     
-    if (!designer) {
-      console.log(`Warning: Designer not found for ID ${t.designerId}`);
-    }
-    if (!brand) {
-      console.log(`Warning: Brand not found for ID ${t.brandId}`);
-    }
-    
     return {
-      ...t,
       designer,
       brand,
-      start_year: Number(t.startYear),
-      end_year: t.endYear ? Number(t.endYear) : undefined,
+      role: t.role,
+      department: t.department,
+      start_year: t.startYear,
+      end_year: t.endYear,
       is_current_role: t.isCurrentRole,
-      notable_works: t.notableWorks,
-      notable_collections: t.notableCollections,
-      impact_description: t.impactDescription,
+      achievements: t.achievements || [],
+      notable_works: t.notableWorks || [],
+      notable_collections: t.notableCollections || [],
+      impact_description: t.impactDescription || '',
     };
   });
   
-  const validTenures = tenures.filter((t: Tenure) => {
-    const isValid = t.designer && t.brand && t.start_year;
-    if (!isValid) {
-      console.log(`Invalid tenure: ${JSON.stringify({
-        start_year: t.start_year,
-      })}`);
-    }
-    return isValid;
-  });
-  
-  console.log(`\nTenures processed:`);
-  console.log(`- Total tenures: ${tenures.length}`);
-  console.log(`- Valid tenures: ${validTenures.length}`);
-  console.log(`- Invalid tenures: ${tenures.length - validTenures.length}`);
-  
-  if (validTenures.length > 0) {
-    console.log('\nFirst valid tenure:', JSON.stringify(validTenures[0], null, 2));
-  }
-  
-  return validTenures;
-}
-
-// Cache for designers and brands
-let designerCache: Map<string, string> | null = null;
-let brandCache: Map<string, string> | null = null;
-
-async function waitForCollection(client: PocketBase, collection: string, expectedCount: number): Promise<void> {
-  let attempts = 0;
-  const maxAttempts = 15;
-  const delay = 2000; // 2 seconds
-
-  while (attempts < maxAttempts) {
-    const records = await client.collection(collection).getFullList();
-    console.log(`Found ${records.length} ${collection} (expected ${expectedCount})`);
-    
-    if (records.length >= expectedCount) {
+  // Get unique tenures by designer and brand
+  const uniqueTenures = new Map();
+  tenures.forEach((tenure: Tenure) => {
+    // Skip invalid tenures
+    if (!tenure.designer || !tenure.brand || !tenure.start_year) {
+      console.log(`Skipping invalid tenure:`, tenure);
       return;
     }
     
-    console.log(`Waiting for ${collection} to be created (attempt ${attempts + 1}/${maxAttempts})...`);
-    await new Promise(resolve => setTimeout(resolve, delay));
-    attempts++;
-  }
+    const key = `${tenure.designer.toLowerCase()}-${tenure.brand.toLowerCase()}-${tenure.start_year}`;
+    if (!uniqueTenures.has(key)) {
+      uniqueTenures.set(key, tenure);
+    }
+  });
   
-  throw new Error(`Timeout waiting for ${collection} to be created`);
+  const validTenures = Array.from(uniqueTenures.values());
+  console.log(`Found ${validTenures.length} valid unique tenures`);
+  return validTenures;
 }
 
-async function loadDesignerCache(client: PocketBase): Promise<Map<string, string>> {
-  if (!designerCache) {
-    // Wait for designers to be created
-    await waitForCollection(client, 'designers', 178);
-    
-    const records = await client.collection("designers").getFullList();
-    designerCache = new Map();
-    
-    // Build a case-insensitive cache
-    for (const record of records) {
-      if (record.name) {  // Only cache records with a name
-        designerCache.set(record.name.toLowerCase(), record.id);
-      }
-    }
-    
-    console.log(`Loaded ${designerCache.size} designers into cache`);
-  }
-  return designerCache;
-}
-
-async function loadBrandCache(client: PocketBase): Promise<Map<string, string>> {
-  if (!brandCache) {
-    // Wait for brands to be created
-    await waitForCollection(client, 'brands', 100);
-    
-    const records = await client.collection("brands").getFullList();
-    brandCache = new Map();
-    
-    // Build a case-insensitive cache
-    for (const record of records) {
-      if (record.name) {  // Only cache records with a name
-        brandCache.set(record.name.toLowerCase(), record.id);
-      }
-    }
-    
-    console.log(`Loaded ${brandCache.size} brands into cache`);
-  }
-  return brandCache;
-}
-
-async function findOrCreateDesigner(name: string, role: string | undefined, client: PocketBase): Promise<string> {
-  if (!name) {
-    throw new Error("Designer name is required");
-  }
+async function authenticateAdmin() {
   try {
-    const records = await client.collection("designers").getFullList();
-    const match = records.find(r => r.name && r.name.toLowerCase() === name.toLowerCase());
-    if (match) {
-      return match.id;
-    }
-    // Designer not found, create them
-    console.log(`Creating missing designer: ${name}`);
-    const newDesigner = await client.collection("designers").create({
-      name: name,
-      current_role: role || '',
-      status: 'Unknown',
-      is_active: false,
-      biography: '',
-      education: [],
-      awards: [],
-      social_media: {},
-      profile_image: '',
-      nationality: '',
-      signature_styles: []
-    });
-    return newDesigner.id;
+    await pb.admins.authWithPassword(
+      process.env.POCKETBASE_ADMIN_EMAIL!,
+      process.env.POCKETBASE_ADMIN_PASSWORD!
+    );
+    console.log('Successfully authenticated with PocketBase');
   } catch (error) {
-    console.error(`Error finding/creating designer ${name}:`, error);
+    console.error('Failed to authenticate with PocketBase:', error);
     throw error;
   }
-}
-
-async function findOrCreateBrand(name: string, client: PocketBase): Promise<string> {
-  if (!name) {
-    throw new Error("Brand name is required");
-  }
-  try {
-    const records = await client.collection("brands").getFullList();
-    const match = records.find(r => r.name && r.name.toLowerCase() === name.toLowerCase());
-    if (match) {
-      return match.id;
-    }
-    // Brand not found, create it
-    console.log(`Creating missing brand: ${name}`);
-    const newBrand = await client.collection("brands").create({
-      name: name,
-      description: '',
-      founding_year: null,
-      headquarters: '',
-      parent_company: '',
-      website: '',
-      social_media: {},
-      logo: '',
-      specialties: [],
-      price_range: '',
-      market_segment: '',
-      is_active: true
-    });
-    return newBrand.id;
-  } catch (error) {
-    console.error(`Error finding/creating brand ${name}:`, error);
-    throw error;
-  }
-}
-
-function transformTenure(tenure: Tenure, designerId: string, brandId: string): CreateTenure {
-  return {
-    designer: designerId,
-    brand: brandId,
-    role: tenure.role || "Designer",
-    department: tenure.department,
-    start_year: tenure.start_year,
-    end_year: tenure.end_year,
-    is_current_role: Boolean(tenure.is_current_role),
-    achievements: tenure.achievements || [],
-    notable_works: tenure.notable_works || [],
-    notable_collections: tenure.notable_collections || [],
-    impact_description: tenure.impact_description,
-  };
 }
 
 async function validateTenure(tenure: CreateTenure): Promise<string[]> {
   const errors: string[] = [];
 
-  // Validate required fields
   if (!tenure.designer) {
     errors.push("Designer is required");
   }
@@ -261,44 +115,100 @@ async function validateTenure(tenure: CreateTenure): Promise<string[]> {
 }
 
 export async function migrateTenures(): Promise<void> {
+  console.log("Starting tenure migration...");
   const tenures = await loadTenureData();
   let created = 0;
+  let skipped = 0;
   let errors = 0;
 
-  await withTransaction(async (client) => {
-    // Reset caches
-    designerCache = null;
-    brandCache = null;
+  await authenticateAdmin();
 
-    // Load caches first
-    await loadDesignerCache(client);
-    await loadBrandCache(client);
-
-    // Now process tenures
-    for (const tenure of tenures) {
-      try {
-        const designerId = await findOrCreateDesigner(tenure.designer, tenure.role, client);
-        const brandId = await findOrCreateBrand(tenure.brand, client);
-        const transformedTenure = transformTenure(tenure, designerId, brandId);
-        const validationErrors = await validateTenure(transformedTenure);
-
-        if (validationErrors.length > 0) {
-          console.error(`Validation errors for tenure ${tenure.designer} at ${tenure.brand}:`, validationErrors);
-          errors++;
-          continue;
-        }
-
-        await client.collection("tenures").create(transformedTenure);
-        created++;
-      } catch (error) {
-        console.error(`Error creating tenure ${tenure.designer} at ${tenure.brand}:`, error);
-        errors++;
-      }
+  // First, delete all existing records
+  try {
+    const existingTenures = await pb.collection('tenures').getFullList();
+    console.log(`Found ${existingTenures.length} existing tenures, deleting...`);
+    for (const tenure of existingTenures) {
+      await pb.collection('tenures').delete(tenure.id);
     }
-  });
+    console.log('Deleted all existing tenures');
+  } catch (error) {
+    console.error('Error deleting existing tenures:', error);
+  }
+
+  // Create a Set to track processed tenures
+  const processedTenures = new Set<string>();
+
+  for (const tenure of tenures) {
+    try {
+      // Create a unique key for this tenure
+      const key = `${tenure.designer.toLowerCase()}-${tenure.brand.toLowerCase()}-${tenure.start_year}`;
+      
+      // Skip if we've already processed this tenure
+      if (processedTenures.has(key)) {
+        console.log(`Skipping duplicate tenure: ${tenure.designer} at ${tenure.brand}`);
+        skipped++;
+        continue;
+      }
+
+      // Create missing brand if needed
+      let brandRecord = await pb.collection('brands').getFirstListItem(`name = '${tenure.brand.replace(/'/g, "\\'")}'`).catch(() => null);
+      if (!brandRecord) {
+        console.log(`Creating missing brand: ${tenure.brand}`);
+        brandRecord = await pb.collection('brands').create({
+          name: tenure.brand,
+          description: '',
+          founding_year: tenure.start_year,
+        });
+        if (!brandRecord) throw new Error(`Failed to create brand: ${tenure.brand}`);
+      }
+
+      // Create missing designer if needed
+      let designerRecord = await pb.collection('designers').getFirstListItem(`name = '${tenure.designer.replace(/'/g, "\\'")}'`).catch(() => null);
+      if (!designerRecord) {
+        console.log(`Creating missing designer: ${tenure.designer}`);
+        designerRecord = await pb.collection('designers').create({
+          name: tenure.designer,
+          current_role: tenure.role || '',
+          is_active: tenure.is_current_role || false,
+          status: tenure.is_current_role ? 'ACTIVE' : 'INACTIVE',
+        });
+        if (!designerRecord) throw new Error(`Failed to create designer: ${tenure.designer}`);
+      }
+
+      const transformedTenure: CreateTenure = {
+        designer: designerRecord.id,
+        brand: brandRecord.id,
+        role: tenure.role || '',
+        department: tenure.department || undefined,
+        start_year: tenure.start_year,
+        end_year: tenure.end_year,
+        is_current_role: tenure.is_current_role || false,
+        achievements: tenure.achievements || [],
+        notable_works: tenure.notable_works || [],
+        notable_collections: tenure.notable_collections || [],
+        impact_description: tenure.impact_description || '',
+      };
+
+      const validationErrors = await validateTenure(transformedTenure);
+      if (validationErrors.length > 0) {
+        console.error(`Validation errors for tenure ${tenure.designer} at ${tenure.brand}:`, validationErrors);
+        errors++;
+        continue;
+      }
+
+      console.log(`Creating tenure: ${tenure.designer} at ${tenure.brand}`);
+      await pb.collection("tenures").create(transformedTenure);
+      processedTenures.add(key);
+      created++;
+    } catch (error) {
+      console.error(`Error creating tenure ${tenure.designer} at ${tenure.brand}:`, error);
+      errors++;
+    }
+  }
 
   console.log(`Tenure migration complete:
     Created: ${created}
+    Skipped: ${skipped}
     Errors: ${errors}
   `);
 }

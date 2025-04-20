@@ -1,170 +1,133 @@
-import { withTransaction } from "../client";
+import { Designer, CreateDesigner } from "../types/types";
 import path from "path";
 import fs from "fs/promises";
 import { fileURLToPath } from 'url';
-import PocketBase, { ClientResponseError } from 'pocketbase';
+import PocketBase from 'pocketbase';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
+const pb = new PocketBase(process.env.POCKETBASE_URL);
 
-interface RawDesigner {
-  id: string;
-  name: string;
-  biography?: string;
-  education?: string[];
-  awards?: string[];
-  social_media?: Record<string, string>;
-  profile_image?: string;
-  birth_year?: number;
-  death_year?: number;
-  nationality?: string;
-  signature_styles?: string[];
-  status?: 'Active' | 'Inactive' | 'Retired' | 'Deceased' | 'Unknown';
-  current_role?: string;
-  is_active?: boolean;
-}
-
-interface RawTenure {
-  designer: string;
-  brand: string;
-  role?: string;
-  department?: string;
-  start_year: number;
-  end_year?: number;
-  is_current_role?: boolean;
-  achievements?: string[];
-  notable_works?: string[];
-  notable_collections?: string[];
-  impact_description?: string;
-}
-
-interface DesignerData {
-  designers: Array<{
-    id: string;
-    name?: string;
-    biography?: string;
-    education?: string[];
-    awards?: string[];
-    social_media?: Record<string, string>;
-    profile_image?: string;
-    birth_year?: string | number;
-    death_year?: string | number;
-    nationality?: string;
-    signature_styles?: string[];
-    status?: string;
-    current_role?: string;
-    is_active?: boolean;
-  }>;
-  tenures: RawTenure[];
-}
-
-async function loadDesignerData(): Promise<RawDesigner[]> {
+async function loadDesignerData(): Promise<Designer[]> {
   const dataPath = path.join(process.cwd(), "src/data/fashionGenealogy.json");
   const rawData = await fs.readFile(dataPath, "utf-8");
-  const data = JSON.parse(rawData) as DesignerData;
+  const data = JSON.parse(rawData);
   
   console.log(`Loaded ${data.designers?.length || 0} designers from JSON`);
-  console.log(`Found ${data.tenures?.length || 0} tenures`);
   
-  // First, transform and validate designers from the designers list
-  const designersFromList = (data.designers || []).map((d): RawDesigner => ({
-    id: d.id,
-    name: d.name?.trim() || '',
-    biography: d.biography?.trim(),
-    education: Array.isArray(d.education) ? d.education : [],
-    awards: Array.isArray(d.awards) ? d.awards : [],
-    social_media: typeof d.social_media === 'object' ? d.social_media : {},
-    profile_image: d.profile_image?.trim(),
-    birth_year: typeof d.birth_year === 'string' ? Number(d.birth_year) : d.birth_year,
-    death_year: typeof d.death_year === 'string' ? Number(d.death_year) : d.death_year,
-    nationality: d.nationality?.trim(),
-    signature_styles: Array.isArray(d.signature_styles) ? d.signature_styles : [],
-    status: d.status as RawDesigner['status'] || 'Unknown',
-    current_role: d.current_role?.trim(),
-    is_active: Boolean(d.is_active)
-  }));
-
-  // Then, get unique designers from tenures
-  const designersFromTenures = (data.tenures || [])
-    .filter(t => t && t.designer) // Filter out null/undefined tenures and designers
-    .map((t): RawDesigner => ({
-      id: `tenure_${t.designer}`,
-      name: t.designer.trim(),
-      current_role: t.role,
-      is_active: t.is_current_role ?? false,
-      status: t.is_current_role ? 'Active' : 'Unknown'
-    }));
-
-  // Combine both lists and remove duplicates by name
-  const allDesigners = [...designersFromList, ...designersFromTenures];
-  const uniqueDesigners = allDesigners.reduce((acc, designer) => {
-    const existingDesigner = acc.find(d => d.name.toLowerCase() === designer.name.toLowerCase());
-    if (!existingDesigner && designer.name) {
-      acc.push(designer);
+  // Get unique designers by name
+  const uniqueDesigners = new Map();
+  data.designers.forEach((designer: Designer) => {
+    if (!uniqueDesigners.has(designer.name.toLowerCase())) {
+      uniqueDesigners.set(designer.name.toLowerCase(), designer);
     }
-    return acc;
-  }, [] as RawDesigner[]);
-
-  // Filter out invalid designers
-  const validDesigners = uniqueDesigners.filter(d => {
-    const isValid = Boolean(d.name);
-    if (!isValid) {
-      console.log('Invalid designer:', d);
-    }
-    return isValid;
   });
-
-  console.log(`Found ${validDesigners.length} valid unique designers`);
-  return validDesigners;
+  
+  const designers = Array.from(uniqueDesigners.values());
+  console.log(`Found ${designers.length} valid unique designers`);
+  return designers;
 }
 
-async function createDesigner(designer: RawDesigner, client: PocketBase): Promise<void> {
+async function authenticateAdmin() {
   try {
-    console.log(`Creating designer: ${designer.name}`);
-    await client.collection('designers').create({
-      name: designer.name,
-      biography: designer.biography || '',
-      education: designer.education || [],
-      awards: designer.awards || [],
-      social_media: designer.social_media || {},
-      profile_image: designer.profile_image || '',
-      birth_year: designer.birth_year,
-      death_year: designer.death_year,
-      nationality: designer.nationality || '',
-      signature_styles: designer.signature_styles || [],
-      status: designer.status || 'Unknown',
-      current_role: designer.current_role || '',
-      is_active: designer.is_active ?? false
-    });
+    await pb.admins.authWithPassword(
+      process.env.POCKETBASE_ADMIN_EMAIL!,
+      process.env.POCKETBASE_ADMIN_PASSWORD!
+    );
+    console.log('Successfully authenticated with PocketBase');
   } catch (error) {
-    // If it's a duplicate record error, that's fine
-    if (error instanceof ClientResponseError && error.status === 400 && error.response?.data?.name?.code === "validation_not_unique") {
-      console.log(`Designer already exists: ${designer.name}`);
-      return;
-    }
+    console.error('Failed to authenticate with PocketBase:', error);
     throw error;
   }
 }
 
+async function validateDesigner(designer: CreateDesigner): Promise<string[]> {
+  const errors: string[] = [];
+
+  if (!designer.name) {
+    errors.push("Name is required");
+  }
+  if (designer.is_active === undefined) {
+    errors.push("is_active is required");
+  }
+  if (!designer.status) {
+    errors.push("status is required");
+  }
+
+  return errors;
+}
+
 export async function migrateDesigners(): Promise<void> {
-  console.log('Starting designer migration...');
+  console.log("Starting designer migration...");
   const designers = await loadDesignerData();
   let created = 0;
+  let skipped = 0;
   let errors = 0;
 
-  await withTransaction(async (client) => {
-    for (const designer of designers) {
-      try {
-        await createDesigner(designer, client);
-        created++;
-      } catch (error) {
-        console.error(`Error creating designer ${designer.name}:`, error);
-        errors++;
-      }
+  await authenticateAdmin();
+
+  // First, delete all existing records
+  try {
+    const existingDesigners = await pb.collection('designers').getFullList();
+    console.log(`Found ${existingDesigners.length} existing designers, deleting...`);
+    for (const designer of existingDesigners) {
+      await pb.collection('designers').delete(designer.id);
     }
-  });
+    console.log('Deleted all existing designers');
+  } catch (error) {
+    console.error('Error deleting existing designers:', error);
+  }
+
+  // Create a Set to track unique designer names
+  const processedDesigners = new Set<string>();
+
+  for (const designer of designers) {
+    try {
+      // Skip if we've already processed this designer name
+      if (processedDesigners.has(designer.name.toLowerCase())) {
+        console.log(`Skipping duplicate designer: ${designer.name}`);
+        skipped++;
+        continue;
+      }
+
+      const transformedDesigner: CreateDesigner = {
+        name: designer.name,
+        current_role: designer.current_role || '',
+        is_active: designer.is_active !== undefined ? designer.is_active : true,
+        status: designer.status || 'ACTIVE',
+        biography: designer.biography || '',
+        image_url: designer.image_url || '',
+        nationality: designer.nationality || '',
+        birth_year: designer.birth_year,
+        death_year: designer.death_year,
+        awards: designer.awards || [],
+        education: designer.education || [],
+        signature_styles: designer.signature_styles || [],
+        social_media: designer.social_media || {},
+      };
+
+      const validationErrors = await validateDesigner(transformedDesigner);
+      if (validationErrors.length > 0) {
+        console.error(`Validation errors for designer ${designer.name}:`, validationErrors);
+        errors++;
+        continue;
+      }
+
+      console.log(`Creating designer: ${designer.name}`);
+      await pb.collection("designers").create(transformedDesigner);
+      processedDesigners.add(designer.name.toLowerCase());
+      created++;
+    } catch (error) {
+      console.error(`Error creating designer ${designer.name}:`, error);
+      errors++;
+    }
+  }
 
   console.log(`Designer migration complete:
     Created: ${created}
+    Skipped: ${skipped}
     Errors: ${errors}
   `);
 }
@@ -173,10 +136,11 @@ export async function migrateDesigners(): Promise<void> {
 if (import.meta.url === `file://${__filename}`) {
   (async () => {
     try {
+      console.log("Starting designer migration...");
       await migrateDesigners();
-      console.log('Migration completed');
+      console.log("Migration completed");
     } catch (error) {
-      console.error('Migration failed:', error);
+      console.error("Migration failed:", error);
       process.exit(1);
     }
   })();

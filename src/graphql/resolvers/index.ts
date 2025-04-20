@@ -64,10 +64,20 @@ export const resolvers = {
           filter,
         });
         console.log('📊 Found designers:', result.items.length);
-        return result.items as Designer[];
+        
+        // Ensure all required fields are present
+        const validDesigners = result.items.filter(designer => 
+          designer && 
+          designer.id && 
+          designer.name && 
+          designer.is_active !== undefined && 
+          designer.status
+        );
+        
+        return validDesigners as Designer[];
       } catch (error) {
         console.error('❌ Error fetching designers:', error);
-        return [];
+        throw error; // Let Apollo handle the error instead of returning null
       }
     },
     brand: async (_: unknown, { id }: QueryArgs) => {
