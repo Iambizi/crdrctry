@@ -1,18 +1,18 @@
 type Designer {
   id: ID!
   name: String!
-  current_role: String
-  is_active: Boolean!
+  currentRole: String
+  isActive: Boolean!
   status: DesignerStatus!
   biography: String
-  image_url: String
+  imageUrl: String
   nationality: String
-  birth_year: Int
-  death_year: Int
+  birthYear: Int
+  deathYear: Int
   awards: [String!]
   education: [String!]
-  signature_styles: [String!]
-  social_media: JSON
+  signatureStyles: [String!]
+  socialMedia: JSON
   tenures: [Tenure!]
   relationships: [Relationship!]
 }
@@ -21,13 +21,13 @@ type Brand {
   id: ID!
   name: String!
   description: String
-  founding_year: Int
+  foundedYear: Int
   headquarters: String
-  parent_company: String
-  categories: [String!]
+  parentCompany: String
+  category: String!
   website: String
-  social_media: JSON
-  logo_url: String
+  socialMedia: JSON
+  logoUrl: String
   designers: [Designer!]
   tenures: [Tenure!]
 }
@@ -38,26 +38,26 @@ type Tenure {
   brand: Brand!
   role: String
   department: Department
-  start_year: Int!
-  end_year: Int
-  is_current_role: Boolean!
+  startYear: Int!
+  endYear: Int
+  isCurrentRole: Boolean!
   achievements: [String!]
-  notable_works: [String!]
-  notable_collections: [String!]
-  impact_description: String
+  notableWorks: [String!]
+  notableCollections: [String!]
+  impactDescription: String
 }
 
 type Relationship {
   id: ID!
-  source_designer: Designer!
-  target_designer: Designer!
+  sourceDesigner: Designer!
+  targetDesigner: Designer!
   brand: Brand!
   type: RelationshipType!
-  start_year: Int
-  end_year: Int
+  startYear: Int
+  endYear: Int
   description: String
   impact: String
-  collaboration_projects: [String!]
+  collaborationProjects: [String!]
 }
 
 enum DesignerStatus {
@@ -74,15 +74,15 @@ enum RelationshipType {
 }
 
 enum Department {
-  Jewelry
-  Watches
-  ReadyToWear
-  Accessories
-  LeatherGoods
-  Menswear
-  Womenswear
-  HauteCouture
-  AllDepartments
+  jewelry
+  watches
+  readyToWear
+  accessories
+  leatherGoods
+  menswear
+  womenswear
+  hauteCouture
+  allDepartments
 }
 
 scalar JSON

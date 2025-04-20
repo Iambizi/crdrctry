@@ -1,20 +1,21 @@
 export enum RelationshipType {
-  MENTORSHIP = "mentorship",
-  SUCCESSION = "succession",
-  COLLABORATION = "collaboration",
-  FAMILIAL = "familial",
+  mentorship = "mentorship",
+  succession = "succession",
+  collaboration = "collaboration",
+  familial = "familial",
 }
 
 export enum DesignerStatus {
-  ACTIVE = "ACTIVE",
-  RETIRED = "RETIRED",
-  DECEASED = "DECEASED",
+  active = "ACTIVE",
+  retired = "RETIRED",
+  deceased = "DECEASED",
 }
 
+// Base type for all entities
 export interface BaseEntity {
-  id: string;
-  createdAt: Date;
-  updatedAt: Date;
+  id?: string;
+  createdAt?: string | Date;
+  updatedAt?: string | Date;
 }
 
 export interface Designer extends BaseEntity {
@@ -29,8 +30,8 @@ export interface Designer extends BaseEntity {
   deathYear?: number;
   awards?: string[];
   education?: string[];
-  signature_styles?: string[];
-  social_media?: {
+  signatureStyles?: string[];
+  socialMedia?: {
     instagram?: string;
     twitter?: string;
     linkedin?: string;
@@ -44,7 +45,7 @@ export interface Brand extends BaseEntity {
   founder: string;
   parentCompany?: string;
   parentBrand?: string;
-  category?: 'luxury_fashion' | 'design_studio' | 'collaboration_line' | 'historical_retail' | 'designer_label' | 'educational_institution' | 'collaboration_partner';
+  category?: 'luxuryFashion' | 'designStudio' | 'collaborationLine' | 'historicalRetail' | 'designerLabel' | 'educationalInstitution' | 'collaborationPartner';
   logoUrl?: string;
   headquarters?: string;
   specialties?: string[];
@@ -54,7 +55,7 @@ export interface Brand extends BaseEntity {
   hasHistoricalData?: boolean;
   notes?: string;
   lastCategorized?: string;
-  social_media?: {
+  socialMedia?: {
     instagram?: string;
     twitter?: string;
     facebook?: string;
@@ -62,15 +63,15 @@ export interface Brand extends BaseEntity {
 }
 
 export enum Department {
-  JEWELRY = "Jewelry",
-  WATCHES = "Watches",
-  READY_TO_WEAR = "Ready-to-Wear",
-  ACCESSORIES = "Accessories",
-  LEATHER_GOODS = "Leather Goods",
-  MENSWEAR = "Menswear",
-  WOMENSWEAR = "Womenswear",
-  HAUTE_COUTURE = "Haute Couture",
-  ALL_DEPARTMENTS = "All Departments"
+  jewelry = "Jewelry",
+  watches = "Watches",
+  readyToWear = "Ready-to-Wear",
+  accessories = "Accessories",
+  leatherGoods = "Leather Goods",
+  menswear = "Menswear",
+  womenswear = "Womenswear",
+  hauteCouture = "Haute Couture",
+  allDepartments = "All Departments"
 }
 
 export interface Tenure extends BaseEntity {
@@ -83,8 +84,8 @@ export interface Tenure extends BaseEntity {
   isCurrentRole: boolean;
   achievements?: string[];
   notableWorks?: string[];
-  notable_collections?: string[];
-  impact_description?: string;
+  notableCollections?: string[];
+  impactDescription?: string;
 }
 
 export interface Relationship extends BaseEntity {
@@ -96,7 +97,7 @@ export interface Relationship extends BaseEntity {
   endYear?: number;
   description?: string;
   impact?: string;
-  collaboration_projects?: string[];
+  collaborationProjects?: string[];
 }
 
 export interface HistoricalDesigner {
@@ -109,8 +110,8 @@ export interface HistoricalDesigner {
   isCurrentRole: boolean;
   achievements?: string[];
   notableWorks?: string[];
-  notable_collections?: string[];
-  impact_description?: string;
+  notableCollections?: string[];
+  impactDescription?: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -124,8 +125,8 @@ export interface DesignerTenure {
   isCurrentRole: boolean;
   achievements?: string[];
   notableWorks?: string[];
-  notable_collections?: string[];
-  impact_description?: string;
+  notableCollections?: string[];
+  impactDescription?: string;
   createdAt: string;
   updatedAt: string;
 }

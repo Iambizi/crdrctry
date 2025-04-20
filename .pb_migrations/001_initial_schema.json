@@ -43,8 +43,8 @@
           }
         },
         {
-          "id": "birth_year",
-          "name": "birth_year",
+          "id": "birthYear",
+          "name": "birthYear",
           "type": "number",
           "system": false,
           "required": false,
@@ -54,8 +54,8 @@
           }
         },
         {
-          "id": "death_year",
-          "name": "death_year",
+          "id": "deathYear",
+          "name": "deathYear",
           "type": "number",
           "system": false,
           "required": false,
@@ -83,8 +83,47 @@
           "required": false
         },
         {
-          "id": "notable_works",
-          "name": "notable_works",
+          "id": "notableWorks",
+          "name": "notableWorks",
+          "type": "json",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "currentRole",
+          "name": "currentRole",
+          "type": "text",
+          "system": false,
+          "required": false,
+          "options": {
+            "min": 0,
+            "max": 255
+          }
+        },
+        {
+          "id": "isActive",
+          "name": "isActive",
+          "type": "bool",
+          "system": false,
+          "required": true
+        },
+        {
+          "id": "status",
+          "name": "status",
+          "type": "select",
+          "system": false,
+          "required": true,
+          "options": {
+            "values": [
+              "ACTIVE",
+              "RETIRED",
+              "DECEASED"
+            ]
+          }
+        },
+        {
+          "id": "socialMedia",
+          "name": "socialMedia",
           "type": "json",
           "system": false,
           "required": false
@@ -119,8 +158,8 @@
           }
         },
         {
-          "id": "founded_year",
-          "name": "founded_year",
+          "id": "foundedYear",
+          "name": "foundedYear",
           "type": "number",
           "system": false,
           "required": false,
@@ -148,18 +187,19 @@
           "required": true,
           "options": {
             "values": [
-              "luxury_fashion",
-              "ready_to_wear",
-              "haute_couture",
-              "accessories",
-              "jewelry",
-              "leather_goods"
+              "luxuryFashion",
+              "designStudio",
+              "collaborationLine",
+              "historicalRetail",
+              "designerLabel",
+              "educationalInstitution",
+              "collaborationPartner"
             ]
           }
         },
         {
-          "id": "parent_company",
-          "name": "parent_company",
+          "id": "parentCompany",
+          "name": "parentCompany",
           "type": "text",
           "system": false,
           "required": false,
@@ -171,6 +211,35 @@
         {
           "id": "headquarters",
           "name": "headquarters",
+          "type": "text",
+          "system": false,
+          "required": false,
+          "options": {
+            "min": 0,
+            "max": 255
+          }
+        },
+        {
+          "id": "socialMedia",
+          "name": "socialMedia",
+          "type": "json",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "website",
+          "name": "website",
+          "type": "text",
+          "system": false,
+          "required": false,
+          "options": {
+            "min": 0,
+            "max": 255
+          }
+        },
+        {
+          "id": "logoUrl",
+          "name": "logoUrl",
           "type": "text",
           "system": false,
           "required": false,
@@ -253,8 +322,8 @@
           }
         },
         {
-          "id": "start_year",
-          "name": "start_year",
+          "id": "startYear",
+          "name": "startYear",
           "type": "number",
           "system": false,
           "required": false,
@@ -264,8 +333,8 @@
           }
         },
         {
-          "id": "end_year",
-          "name": "end_year",
+          "id": "endYear",
+          "name": "endYear",
           "type": "number",
           "system": false,
           "required": false,
@@ -275,8 +344,8 @@
           }
         },
         {
-          "id": "is_current_role",
-          "name": "is_current_role",
+          "id": "isCurrentRole",
+          "name": "isCurrentRole",
           "type": "bool",
           "system": false,
           "required": false
@@ -290,7 +359,7 @@
       "indexes": [
         "CREATE INDEX idx_tenure_designer ON tenures (designer)",
         "CREATE INDEX idx_tenure_brand ON tenures (brand)",
-        "CREATE UNIQUE INDEX idx_unique_tenure ON tenures (designer, brand, role, start_year)"
+        "CREATE UNIQUE INDEX idx_unique_tenure ON tenures (designer, brand, role, startYear)"
       ]
     },
     {
@@ -300,8 +369,8 @@
       "system": false,
       "schema": [
         {
-          "id": "source_designer",
-          "name": "source_designer",
+          "id": "sourceDesigner",
+          "name": "sourceDesigner",
           "type": "relation",
           "system": false,
           "required": true,
@@ -313,8 +382,8 @@
           }
         },
         {
-          "id": "target_designer",
-          "name": "target_designer",
+          "id": "targetDesigner",
+          "name": "targetDesigner",
           "type": "relation",
           "system": false,
           "required": true,
@@ -354,8 +423,8 @@
           }
         },
         {
-          "id": "start_year",
-          "name": "start_year",
+          "id": "startYear",
+          "name": "startYear",
           "type": "number",
           "system": false,
           "required": false,
@@ -365,8 +434,8 @@
           }
         },
         {
-          "id": "end_year",
-          "name": "end_year",
+          "id": "endYear",
+          "name": "endYear",
           "type": "number",
           "system": false,
           "required": false,
@@ -398,8 +467,8 @@
           }
         },
         {
-          "id": "collaboration_projects",
-          "name": "collaboration_projects",
+          "id": "collaborationProjects",
+          "name": "collaborationProjects",
           "type": "json",
           "system": false,
           "required": false
@@ -411,10 +480,10 @@
       "updateRule": "",
       "deleteRule": "",
       "indexes": [
-        "CREATE INDEX idx_relationship_source ON relationships (source_designer)",
-        "CREATE INDEX idx_relationship_target ON relationships (target_designer)",
+        "CREATE INDEX idx_relationship_source ON relationships (sourceDesigner)",
+        "CREATE INDEX idx_relationship_target ON relationships (targetDesigner)",
         "CREATE INDEX idx_relationship_brand ON relationships (brand)",
-        "CREATE UNIQUE INDEX idx_unique_relationship ON relationships (source_designer, target_designer, brand, type)"
+        "CREATE UNIQUE INDEX idx_unique_relationship ON relationships (sourceDesigner, targetDesigner, brand, type)"
       ]
     }
   ]

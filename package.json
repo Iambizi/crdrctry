@@ -9,15 +9,15 @@
     "start": "next start",
     "lint": "next lint",
     "verify": "tsx scripts/verifyData.ts",
-    "enrich": "tsx scripts/enrichData.ts",
-    "db:reset": "tsx scripts/db-reset.ts",
     "migrate:brands": "tsx src/database/seeds/migrateBrands.ts",
     "migrate:designers": "tsx src/database/seeds/migrateDesigners.ts",
     "migrate:tenures": "tsx src/database/seeds/migrateTenures.ts",
     "migrate:relationships": "tsx src/database/seeds/migrateRelationships.ts",
-    "migrate:all": "yarn db:reset && yarn migrate:brands && yarn migrate:designers && yarn migrate:tenures && yarn migrate:relationships",
+    "migrate:all": "yarn migrate:brands && yarn migrate:designers && yarn migrate:tenures && yarn migrate:relationships",
     "graphql": "tsx src/graphql/server.ts",
-    "start:server": "ts-node --esm src/graphql/server.ts"
+    "start:server": "ts-node --esm src/graphql/server.ts",
+    "convert-data": "NODE_OPTIONS='--loader ts-node/esm' ts-node scripts/convertFieldNames.ts",
+    "migrate:fields": "tsx scripts/migrateFieldsToCamelCase.ts"
   },
   "dependencies": {
     "@apollo/server": "^4.12.0",
@@ -45,12 +45,13 @@
     "@types/axios": "^0.14.4",
     "@types/cheerio": "^0.22.35",
     "@types/express": "4.17.13",
-    "@types/node": "^20",
+    "@types/node": "^22.14.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.3",
-    "typescript": "^5"
+    "typescript": "^5.8.3"
   }
 }

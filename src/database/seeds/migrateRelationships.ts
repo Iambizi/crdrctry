@@ -45,16 +45,16 @@ async function findOrCreateDesigner(name: string, client: PocketBase): Promise<s
     console.log(`Creating missing designer: ${name}`);
     const newDesigner = await client.collection("designers").create({
       name: name,
-      current_role: '',
-      status: 'Unknown',
-      is_active: false,
+      currentRole: '',
+      status: 'active',
+      isActive: false,
       biography: '',
       education: [],
       awards: [],
-      social_media: {},
-      profile_image: '',
+      socialMedia: {},
+      imageUrl: '',
       nationality: '',
-      signature_styles: []
+      signatureStyles: []
     });
     return newDesigner.id;
   } catch (error) {
@@ -78,16 +78,16 @@ async function findOrCreateBrand(name: string, client: PocketBase): Promise<stri
     const newBrand = await client.collection("brands").create({
       name: name,
       description: '',
-      founding_year: null,
+      foundingYear: null,
       headquarters: '',
-      parent_company: '',
+      parentCompany: '',
       website: '',
-      social_media: {},
-      logo: '',
+      socialMedia: {},
+      logoUrl: '',
       specialties: [],
-      price_range: '',
-      market_segment: '',
-      is_active: true
+      priceRange: '',
+      marketSegment: '',
+      isActive: true
     });
     return newBrand.id;
   } catch (error) {
@@ -103,15 +103,15 @@ function transformRelationship(
   brandId: string
 ): CreateRelationship {
   return {
-    source_designer: sourceDesignerId,
-    target_designer: targetDesignerId,
-    brand: brandId,
+    sourceDesignerId,
+    targetDesignerId,
+    brandId,
     type: relationship.type,
-    start_year: relationship.startYear,
-    end_year: relationship.endYear,
+    startYear: relationship.startYear,
+    endYear: relationship.endYear,
     description: relationship.description,
     impact: relationship.impact,
-    collaboration_projects: relationship.collaborationProjects || [],
+    collaborationProjects: relationship.collaborationProjects || [],
   };
 }
 
@@ -119,13 +119,13 @@ async function validateRelationship(relationship: CreateRelationship): Promise<s
   const errors: string[] = [];
 
   // Validate required fields
-  if (!relationship.source_designer) {
+  if (!relationship.sourceDesignerId) {
     errors.push("Source designer is required");
   }
-  if (!relationship.target_designer) {
+  if (!relationship.targetDesignerId) {
     errors.push("Target designer is required");
   }
-  if (!relationship.brand) {
+  if (!relationship.brandId) {
     errors.push("Brand is required");
   }
   if (!relationship.type) {

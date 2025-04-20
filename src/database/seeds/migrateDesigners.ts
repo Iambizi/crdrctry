@@ -49,8 +49,8 @@ async function validateDesigner(designer: CreateDesigner): Promise<string[]> {
   if (!designer.name) {
     errors.push("Name is required");
   }
-  if (designer.is_active === undefined) {
-    errors.push("is_active is required");
+  if (designer.isActive === undefined) {
+    errors.push("isActive is required");
   }
   if (!designer.status) {
     errors.push("status is required");
@@ -94,18 +94,18 @@ export async function migrateDesigners(): Promise<void> {
 
       const transformedDesigner: CreateDesigner = {
         name: designer.name,
-        current_role: designer.current_role || '',
-        is_active: designer.is_active !== undefined ? designer.is_active : true,
-        status: designer.status || 'ACTIVE',
+        currentRole: designer.currentRole || '',
+        isActive: designer.isActive !== undefined ? designer.isActive : true,
+        status: designer.status || 'active',
         biography: designer.biography || '',
-        image_url: designer.image_url || '',
+        imageUrl: designer.imageUrl || '',
         nationality: designer.nationality || '',
-        birth_year: designer.birth_year,
-        death_year: designer.death_year,
+        birthYear: designer.birthYear,
+        deathYear: designer.deathYear,
         awards: designer.awards || [],
         education: designer.education || [],
-        signature_styles: designer.signature_styles || [],
-        social_media: designer.social_media || {},
+        signatureStyles: designer.signatureStyles || [],
+        socialMedia: designer.socialMedia || {},
       };
 
       const validationErrors = await validateDesigner(transformedDesigner);

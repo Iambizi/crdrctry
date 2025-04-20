@@ -56,7 +56,7 @@ export const resolvers = {
         if (status) filter += `status = "${status}"`;
         if (isActive !== undefined) {
           filter += filter ? ' && ' : '';
-          filter += `is_active = ${isActive}`;
+          filter += `isActive = ${isActive}`;
         }
 
         console.log('🔍 Fetching designers with filter:', filter || 'none');
@@ -70,7 +70,7 @@ export const resolvers = {
           designer && 
           designer.id && 
           designer.name && 
-          designer.is_active !== undefined && 
+          designer.isActive !== undefined && 
           designer.status
         );
         
@@ -115,10 +115,10 @@ export const resolvers = {
     tenures: async (_: unknown, { designerId, brandId, department, limit = 10, offset = 0 }: QueryArgs) => {
       try {
         let filter = '';
-        if (designerId) filter += `designer = "${designerId}"`;
+        if (designerId) filter += `designerId = "${designerId}"`;
         if (brandId) {
           filter += filter ? ' && ' : '';
-          filter += `brand = "${brandId}"`;
+          filter += `brandId = "${brandId}"`;
         }
         if (department) {
           filter += filter ? ' && ' : '';
@@ -148,14 +148,14 @@ export const resolvers = {
     relationships: async (_: unknown, { sourceDesignerId, targetDesignerId, brandId, type, limit = 10, offset = 0 }: QueryArgs) => {
       try {
         let filter = '';
-        if (sourceDesignerId) filter += `source_designer = "${sourceDesignerId}"`;
+        if (sourceDesignerId) filter += `sourceDesignerId = "${sourceDesignerId}"`;
         if (targetDesignerId) {
           filter += filter ? ' && ' : '';
-          filter += `target_designer = "${targetDesignerId}"`;
+          filter += `targetDesignerId = "${targetDesignerId}"`;
         }
         if (brandId) {
           filter += filter ? ' && ' : '';
-          filter += `brand = "${brandId}"`;
+          filter += `brandId = "${brandId}"`;
         }
         if (type) {
           filter += filter ? ' && ' : '';
@@ -178,7 +178,7 @@ export const resolvers = {
     tenures: async (parent: Designer) => {
       try {
         const result = await pb.collection('tenures').getList(1, 50, {
-          filter: `designer = "${parent.id}"`,
+          filter: `designerId = "${parent.id}"`,
         });
         console.log('📊 Found tenures for designer:', result.items.length);
         return result.items as Tenure[];
@@ -190,7 +190,7 @@ export const resolvers = {
     relationships: async (parent: Designer) => {
       try {
         const result = await pb.collection('relationships').getList(1, 50, {
-          filter: `source_designer = "${parent.id}" || target_designer = "${parent.id}"`,
+          filter: `sourceDesignerId = "${parent.id}" || targetDesignerId = "${parent.id}"`,
         });
         console.log('📊 Found relationships for designer:', result.items.length);
         return result.items as Relationship[];
@@ -204,9 +204,9 @@ export const resolvers = {
     designers: async (parent: Brand) => {
       try {
         const tenures = await pb.collection('tenures').getList(1, 50, {
-          filter: `brand = "${parent.id}"`,
+          filter: `brandId = "${parent.id}"`,
         });
-        const designerIds = [...new Set(tenures.items.map(t => t.designer))];
+        const designerIds = [...new Set(tenures.items.map(t => t.designerId))];
         const designers = await Promise.all(
           designerIds.map(id => pb.collection('designers').getOne(id))
         );
@@ -220,7 +220,7 @@ export const resolvers = {
     tenures: async (parent: Brand) => {
       try {
         const result = await pb.collection('tenures').getList(1, 50, {
-          filter: `brand = "${parent.id}"`,
+          filter: `brandId = "${parent.id}"`,
         });
         console.log('📊 Found tenures for brand:', result.items.length);
         return result.items as Tenure[];
@@ -233,7 +233,7 @@ export const resolvers = {
   Tenure: {
     designer: async (parent: Tenure) => {
       try {
-        const record = await pb.collection('designers').getOne(parent.designer);
+        const record = await pb.collection('designers').getOne(parent.designerId);
         return record as Designer;
       } catch (error) {
         console.error('❌ Error fetching tenure designer:', error);
@@ -242,7 +242,7 @@ export const resolvers = {
     },
     brand: async (parent: Tenure) => {
       try {
-        const record = await pb.collection('brands').getOne(parent.brand);
+        const record = await pb.collection('brands').getOne(parent.brandId);
         return record as Brand;
       } catch (error) {
         console.error('❌ Error fetching tenure brand:', error);
@@ -251,18 +251,18 @@ export const resolvers = {
     },
   },
   Relationship: {
-    source_designer: async (parent: Relationship) => {
+    sourceDesigner: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('designers').getOne(parent.source_designer);
+        const record = await pb.collection('designers').getOne(parent.sourceDesignerId);
         return record as Designer;
       } catch (error) {
         console.error('❌ Error fetching relationship source designer:', error);
         throw error;
       }
     },
-    target_designer: async (parent: Relationship) => {
+    targetDesigner: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('designers').getOne(parent.target_designer);
+        const record = await pb.collection('designers').getOne(parent.targetDesignerId);
         return record as Designer;
       } catch (error) {
         console.error('❌ Error fetching relationship target designer:', error);
@@ -271,7 +271,7 @@ export const resolvers = {
     },
     brand: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('brands').getOne(parent.brand);
+        const record = await pb.collection('brands').getOne(parent.brandId);
         return record as Brand;
       } catch (error) {
         console.error('❌ Error fetching relationship brand:', error);

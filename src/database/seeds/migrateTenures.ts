@@ -47,21 +47,21 @@ async function loadTenureData(): Promise<Tenure[]> {
   
   // Transform tenures to use names instead of IDs
   const tenures = data.tenures.map((t: RawTenure) => {
-    const designer = designerMap.get(t.designerId);
-    const brand = brandMap.get(t.brandId);
+    const designerId = designerMap.get(t.designerId);
+    const brandId = brandMap.get(t.brandId);
     
     return {
-      designer,
-      brand,
+      designerId,
+      brandId,
       role: t.role,
       department: t.department,
-      start_year: t.startYear,
-      end_year: t.endYear,
-      is_current_role: t.isCurrentRole,
+      startYear: t.startYear,
+      endYear: t.endYear,
+      isCurrentRole: t.isCurrentRole,
       achievements: t.achievements || [],
-      notable_works: t.notableWorks || [],
-      notable_collections: t.notableCollections || [],
-      impact_description: t.impactDescription || '',
+      notableWorks: t.notableWorks || [],
+      notableCollections: t.notableCollections || [],
+      impactDescription: t.impactDescription || '',
     };
   });
   
@@ -69,12 +69,12 @@ async function loadTenureData(): Promise<Tenure[]> {
   const uniqueTenures = new Map();
   tenures.forEach((tenure: Tenure) => {
     // Skip invalid tenures
-    if (!tenure.designer || !tenure.brand || !tenure.start_year) {
+    if (!tenure.designerId || !tenure.brandId || !tenure.startYear) {
       console.log(`Skipping invalid tenure:`, tenure);
       return;
     }
     
-    const key = `${tenure.designer.toLowerCase()}-${tenure.brand.toLowerCase()}-${tenure.start_year}`;
+    const key = `${tenure.designerId.toLowerCase()}-${tenure.brandId.toLowerCase()}-${tenure.startYear}`;
     if (!uniqueTenures.has(key)) {
       uniqueTenures.set(key, tenure);
     }
@@ -101,13 +101,13 @@ async function authenticateAdmin() {
 async function validateTenure(tenure: CreateTenure): Promise<string[]> {
   const errors: string[] = [];
 
-  if (!tenure.designer) {
-    errors.push("Designer is required");
+  if (!tenure.designerId) {
+    errors.push("Designer ID is required");
   }
-  if (!tenure.brand) {
-    errors.push("Brand is required");
+  if (!tenure.brandId) {
+    errors.push("Brand ID is required");
   }
-  if (!tenure.start_year) {
+  if (!tenure.startYear) {
     errors.push("Start year is required");
   }
 
@@ -141,67 +141,67 @@ export async function migrateTenures(): Promise<void> {
   for (const tenure of tenures) {
     try {
       // Create a unique key for this tenure
-      const key = `${tenure.designer.toLowerCase()}-${tenure.brand.toLowerCase()}-${tenure.start_year}`;
+      const key = `${tenure.designerId.toLowerCase()}-${tenure.brandId.toLowerCase()}-${tenure.startYear}`;
       
       // Skip if we've already processed this tenure
       if (processedTenures.has(key)) {
-        console.log(`Skipping duplicate tenure: ${tenure.designer} at ${tenure.brand}`);
+        console.log(`Skipping duplicate tenure: ${tenure.designerId} at ${tenure.brandId}`);
         skipped++;
         continue;
       }
 
       // Create missing brand if needed
-      let brandRecord = await pb.collection('brands').getFirstListItem(`name = '${tenure.brand.replace(/'/g, "\\'")}'`).catch(() => null);
+      let brandRecord = await pb.collection('brands').getFirstListItem(`name = '${tenure.brandId.replace(/'/g, "\\'")}'`).catch(() => null);
       if (!brandRecord) {
-        console.log(`Creating missing brand: ${tenure.brand}`);
+        console.log(`Creating missing brand: ${tenure.brandId}`);
         brandRecord = await pb.collection('brands').create({
-          name: tenure.brand,
+          name: tenure.brandId,
           description: '',
-          founding_year: tenure.start_year,
+          foundingYear: tenure.startYear,
         });
-        if (!brandRecord) throw new Error(`Failed to create brand: ${tenure.brand}`);
+        if (!brandRecord) throw new Error(`Failed to create brand: ${tenure.brandId}`);
       }
 
       // Create missing designer if needed
-      let designerRecord = await pb.collection('designers').getFirstListItem(`name = '${tenure.designer.replace(/'/g, "\\'")}'`).catch(() => null);
+      let designerRecord = await pb.collection('designers').getFirstListItem(`name = '${tenure.designerId.replace(/'/g, "\\'")}'`).catch(() => null);
       if (!designerRecord) {
-        console.log(`Creating missing designer: ${tenure.designer}`);
+        console.log(`Creating missing designer: ${tenure.designerId}`);
         designerRecord = await pb.collection('designers').create({
-          name: tenure.designer,
-          current_role: tenure.role || '',
-          is_active: tenure.is_current_role || false,
-          status: tenure.is_current_role ? 'ACTIVE' : 'INACTIVE',
+          name: tenure.designerId,
+          currentRole: tenure.role || '',
+          isActive: tenure.isCurrentRole || false,
+          status: tenure.isCurrentRole ? 'active' : 'inactive',
         });
-        if (!designerRecord) throw new Error(`Failed to create designer: ${tenure.designer}`);
+        if (!designerRecord) throw new Error(`Failed to create designer: ${tenure.designerId}`);
       }
 
       const transformedTenure: CreateTenure = {
-        designer: designerRecord.id,
-        brand: brandRecord.id,
+        designerId: designerRecord.id,
+        brandId: brandRecord.id,
         role: tenure.role || '',
         department: tenure.department || undefined,
-        start_year: tenure.start_year,
-        end_year: tenure.end_year,
-        is_current_role: tenure.is_current_role || false,
+        startYear: tenure.startYear,
+        endYear: tenure.endYear,
+        isCurrentRole: tenure.isCurrentRole || false,
         achievements: tenure.achievements || [],
-        notable_works: tenure.notable_works || [],
-        notable_collections: tenure.notable_collections || [],
-        impact_description: tenure.impact_description || '',
+        notableWorks: tenure.notableWorks || [],
+        notableCollections: tenure.notableCollections || [],
+        impactDescription: tenure.impactDescription || '',
       };
 
       const validationErrors = await validateTenure(transformedTenure);
       if (validationErrors.length > 0) {
-        console.error(`Validation errors for tenure ${tenure.designer} at ${tenure.brand}:`, validationErrors);
+        console.error(`Validation errors for tenure ${tenure.designerId} at ${tenure.brandId}:`, validationErrors);
         errors++;
         continue;
       }
 
-      console.log(`Creating tenure: ${tenure.designer} at ${tenure.brand}`);
+      console.log(`Creating tenure: ${tenure.designerId} at ${tenure.brandId}`);
       await pb.collection("tenures").create(transformedTenure);
       processedTenures.add(key);
       created++;
     } catch (error) {
-      console.error(`Error creating tenure ${tenure.designer} at ${tenure.brand}:`, error);
+      console.error(`Error creating tenure ${tenure.designerId} at ${tenure.brandId}:`, error);
       errors++;
     }
   }

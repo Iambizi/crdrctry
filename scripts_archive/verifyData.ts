@@ -4,12 +4,7 @@ import { Brand, Designer, Relationship, Tenure, DesignerStatus, RelationshipType
 
 // Load fashion genealogy data
 const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
-const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8')) as {
-  brands: Brand[];
-  designers: Designer[];
-  tenures: Tenure[];
-  relationships: Relationship[];
-};
+const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8'));
 
 interface VerificationResult {
   isValid: boolean;
@@ -56,8 +51,8 @@ function verifyData(): VerificationResult {
   fashionGenealogyData.brands.forEach((brand: Brand) => {
     // Required fields
     const requiredFields = [
-      { field: 'id', value: brand.id || '' },
-      { field: 'name', value: brand.name || '' },
+      { field: 'id', value: brand.id },
+      { field: 'name', value: brand.name },
       { field: 'foundedYear', value: brand.foundedYear },
       { field: 'founder', value: brand.founder },
       { field: 'createdAt', value: brand.createdAt },
@@ -66,9 +61,9 @@ function verifyData(): VerificationResult {
 
     requiredFields.forEach(({ field, value }) => {
       if (!value) {
-        result.errors.push(`Brand ${brand.name || brand.id || 'unknown'} missing required field: ${field}`);
-        if (!result.stats.incompleteData.brands.includes(brand.id || '')) {
-          result.stats.incompleteData.brands.push(brand.id || '');
+        result.errors.push(`Brand ${brand.name || brand.id} missing required field: ${field}`);
+        if (!result.stats.incompleteData.brands.includes(brand.id)) {
+          result.stats.incompleteData.brands.push(brand.id);
         }
         result.isValid = false;
       }
@@ -101,8 +96,8 @@ function verifyData(): VerificationResult {
       result.isValid = false;
     }
 
-    if (brand.socialMedia && typeof brand.socialMedia !== 'object') {
-      result.errors.push(`Brand ${brand.name}: socialMedia must be an object`);
+    if (brand.social_media && typeof brand.social_media !== 'object') {
+      result.errors.push(`Brand ${brand.name}: social_media must be an object`);
       result.isValid = false;
     }
 
@@ -110,9 +105,9 @@ function verifyData(): VerificationResult {
     const brandTenures = fashionGenealogyData.tenures.filter((t: Tenure) => t.brandId === brand.id);
     const brandRelationships = fashionGenealogyData.relationships.filter((r: Relationship) => r.brandId === brand.id);
     const designerIds = new Set([
-      ...brandTenures.map((t: Tenure) => t.designerId || ''),
-      ...brandRelationships.map((r: Relationship) => r.sourceDesignerId || ''),
-      ...brandRelationships.map((r: Relationship) => r.targetDesignerId || '')
+      ...brandTenures.map((t: Tenure) => t.designerId),
+      ...brandRelationships.map((r: Relationship) => r.sourceDesignerId),
+      ...brandRelationships.map((r: Relationship) => r.targetDesignerId)
     ]);
     
     const hasHadDesigners = brandTenures.length > 0;
@@ -120,38 +115,43 @@ function verifyData(): VerificationResult {
       result.warnings.push(`Brand ${brand.name} has no historical designer data`);
       result.stats.brandsWithoutDesigners.push(brand.name);
     }
+
+    const hasCurrentCD = brandTenures.some((t: Tenure) => t.isCurrentRole);
+    if (!hasCurrentCD) {
+      console.log(`Note: ${brand.name} currently has no active Creative Director`);
+    }
   });
 
   // Verify Designers
   fashionGenealogyData.designers.forEach((designer: Designer) => {
     // Required fields
     const requiredFields = [
-      { field: 'id', value: designer.id || '' },
-      { field: 'name', value: designer.name || '' },
+      { field: 'id', value: designer.id },
+      { field: 'name', value: designer.name },
+      { field: 'isActive', value: designer.isActive !== undefined },
       { field: 'status', value: designer.status },
-      { field: 'isActive', value: designer.isActive },
       { field: 'createdAt', value: designer.createdAt },
       { field: 'updatedAt', value: designer.updatedAt }
     ];
 
     requiredFields.forEach(({ field, value }) => {
-      if (value === undefined || value === null) {
-        result.errors.push(`Designer ${designer.name || designer.id || 'unknown'} missing required field: ${field}`);
-        if (!result.stats.incompleteData.designers.includes(designer.id || '')) {
-          result.stats.incompleteData.designers.push(designer.id || '');
+      if (!value) {
+        result.errors.push(`Designer ${designer.name || designer.id} missing required field: ${field}`);
+        if (!result.stats.incompleteData.designers.includes(designer.id)) {
+          result.stats.incompleteData.designers.push(designer.id);
         }
         result.isValid = false;
       }
     });
 
     // Type validation
-    if (!Object.values(DesignerStatus).includes(designer.status)) {
-      result.errors.push(`Designer ${designer.name}: invalid status value`);
+    if (typeof designer.isActive !== 'boolean') {
+      result.errors.push(`Designer ${designer.name}: isActive must be a boolean`);
       result.isValid = false;
     }
 
-    if (typeof designer.isActive !== 'boolean') {
-      result.errors.push(`Designer ${designer.name}: isActive must be a boolean`);
+    if (!Object.values(DesignerStatus).includes(designer.status)) {
+      result.errors.push(`Designer ${designer.name}: invalid status value`);
       result.isValid = false;
     }
 
@@ -176,15 +176,10 @@ function verifyData(): VerificationResult {
       result.isValid = false;
     }
 
-    if (designer.signatureStyles && !Array.isArray(designer.signatureStyles)) {
-      result.errors.push(`Designer ${designer.name}: signatureStyles must be an array`);
-      result.isValid = false;
-    }
-
     // Tenure associations
     const designerTenures = fashionGenealogyData.tenures.filter((t: Tenure) => t.designerId === designer.id);
     if (designerTenures.length === 0) {
-      result.warnings.push(`Designer ${designer.name} has no tenures`);
+      result.warnings.push(`Designer ${designer.name} has no associated tenures`);
       result.stats.designersWithoutTenures.push(designer.name);
     }
   });
@@ -193,22 +188,21 @@ function verifyData(): VerificationResult {
   fashionGenealogyData.tenures.forEach((tenure: Tenure) => {
     // Required fields
     const requiredFields = [
-      { field: 'id', value: tenure.id || '' },
-      { field: 'designerId', value: tenure.designerId || '' },
-      { field: 'brandId', value: tenure.brandId || '' },
+      { field: 'id', value: tenure.id },
+      { field: 'designerId', value: tenure.designerId },
+      { field: 'brandId', value: tenure.brandId },
       { field: 'role', value: tenure.role },
-      { field: 'department', value: tenure.department },
       { field: 'startYear', value: tenure.startYear },
-      { field: 'isCurrentRole', value: tenure.isCurrentRole },
+      { field: 'isCurrentRole', value: tenure.isCurrentRole !== undefined },
       { field: 'createdAt', value: tenure.createdAt },
       { field: 'updatedAt', value: tenure.updatedAt }
     ];
 
     requiredFields.forEach(({ field, value }) => {
-      if (value === undefined || value === null) {
-        result.errors.push(`Tenure ${tenure.id || 'unknown'} missing required field: ${field}`);
-        if (!result.stats.incompleteData.tenures.includes(tenure.id || '')) {
-          result.stats.incompleteData.tenures.push(tenure.id || '');
+      if (!value) {
+        result.errors.push(`Tenure ${tenure.id} missing required field: ${field}`);
+        if (!result.stats.incompleteData.tenures.includes(tenure.id)) {
+          result.stats.incompleteData.tenures.push(tenure.id);
         }
         result.isValid = false;
       }
@@ -253,31 +247,26 @@ function verifyData(): VerificationResult {
       result.errors.push(`Tenure ${tenure.id}: notableWorks must be an array`);
       result.isValid = false;
     }
-
-    if (tenure.notableCollections && !Array.isArray(tenure.notableCollections)) {
-      result.errors.push(`Tenure ${tenure.id}: notableCollections must be an array`);
-      result.isValid = false;
-    }
   });
 
   // Verify Relationships
   fashionGenealogyData.relationships.forEach((relationship: Relationship) => {
     // Required fields
     const requiredFields = [
-      { field: 'id', value: relationship.id || '' },
-      { field: 'sourceDesignerId', value: relationship.sourceDesignerId || '' },
-      { field: 'targetDesignerId', value: relationship.targetDesignerId || '' },
-      { field: 'brandId', value: relationship.brandId || '' },
+      { field: 'id', value: relationship.id },
+      { field: 'sourceDesignerId', value: relationship.sourceDesignerId },
+      { field: 'targetDesignerId', value: relationship.targetDesignerId },
+      { field: 'brandId', value: relationship.brandId },
       { field: 'type', value: relationship.type },
       { field: 'createdAt', value: relationship.createdAt },
       { field: 'updatedAt', value: relationship.updatedAt }
     ];
 
     requiredFields.forEach(({ field, value }) => {
-      if (value === undefined || value === null) {
-        result.errors.push(`Relationship ${relationship.id || 'unknown'} missing required field: ${field}`);
-        if (!result.stats.incompleteData.relationships.includes(relationship.id || '')) {
-          result.stats.incompleteData.relationships.push(relationship.id || '');
+      if (!value) {
+        result.errors.push(`Relationship ${relationship.id} missing required field: ${field}`);
+        if (!result.stats.incompleteData.relationships.includes(relationship.id)) {
+          result.stats.incompleteData.relationships.push(relationship.id);
         }
         result.isValid = false;
       }
@@ -318,8 +307,8 @@ function verifyData(): VerificationResult {
     }
 
     // Optional fields type validation
-    if (relationship.collaborationProjects && !Array.isArray(relationship.collaborationProjects)) {
-      result.errors.push(`Relationship ${relationship.id}: collaborationProjects must be an array`);
+    if (relationship.collaboration_projects && !Array.isArray(relationship.collaboration_projects)) {
+      result.errors.push(`Relationship ${relationship.id}: collaboration_projects must be an array`);
       result.isValid = false;
     }
   });

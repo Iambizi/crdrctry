@@ -1,2089 +1,4 @@
 {
-  "brands": [
-    {
-      "id": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
-      "name": "Louis Vuitton",
-      "foundedYear": 1854,
-      "founder": "Louis Vuitton",
-      "parentCompany": "LVMH",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Leather goods",
-        "Ready-to-wear",
-        "Accessories",
-        "Luxury goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "louisvuitton.com",
-      "social_media": {
-        "instagram": "@louisvuitton",
-        "twitter": "@LouisVuitton",
-        "facebook": "louisvuitton"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "c7527c27-bd89-40b2-a6c7-1705eaced380",
-      "name": "Givenchy",
-      "foundedYear": 1952,
-      "founder": "Hubert de Givenchy",
-      "parentCompany": "LVMH",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "givenchy.com",
-      "social_media": {
-        "instagram": "@givenchy",
-        "twitter": "@Givenchy",
-        "facebook": "givenchy"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "6f63cb98-35e6-47c7-bfac-4a416807ea0d",
-      "name": "Fendi",
-      "foundedYear": 1925,
-      "founder": "Adele Fendi",
-      "parentCompany": "LVMH",
-      "headquarters": "Rome, Italy",
-      "specialties": [
-        "Fur",
-        "Leather goods",
-        "Ready-to-wear",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "fendi.com",
-      "social_media": {
-        "instagram": "@fendi",
-        "twitter": "@Fendi",
-        "facebook": "fendi"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "bb23c533-8f65-4fc0-8c5f-4e662a85b29d",
-      "name": "Celine",
-      "foundedYear": 1945,
-      "founder": "Céline Vipiana",
-      "parentCompany": "LVMH",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Ready-to-wear",
-        "Leather goods",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "celine.com",
-      "social_media": {
-        "instagram": "@celine",
-        "twitter": "@Celine",
-        "facebook": "celine"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "ef9b2053-025b-400b-9262-3b856333eeb5",
-      "name": "Loewe",
-      "foundedYear": 1846,
-      "founder": "Enrique Loewe Roessberg",
-      "parentCompany": "LVMH",
-      "headquarters": "Madrid, Spain",
-      "specialties": [
-        "Leather goods",
-        "Ready-to-wear",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "loewe.com",
-      "social_media": {
-        "instagram": "@loewe",
-        "twitter": "@LOEWE",
-        "facebook": "loewe"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
-      "name": "Marc Jacobs",
-      "foundedYear": 1984,
-      "founder": "Marc Jacobs",
-      "parentCompany": "LVMH",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "marcjacobs.com",
-      "social_media": {
-        "instagram": "@marcjacobs",
-        "twitter": "@MarcJacobsIntl",
-        "facebook": "marcjacobs"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "c2bb89a5-6296-4594-bbd8-5f5fc8bf31c2",
-      "name": "Balenciaga",
-      "foundedYear": 1919,
-      "founder": "Cristóbal Balenciaga",
-      "parentCompany": "Kering",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Footwear"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "balenciaga.com",
-      "social_media": {
-        "instagram": "@balenciaga",
-        "twitter": "@BALENCIAGA"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "name": "Gucci",
-      "foundedYear": 1921,
-      "founder": "Guccio Gucci",
-      "parentCompany": "Kering",
-      "headquarters": "Florence, Italy",
-      "specialties": [
-        "Leather goods",
-        "Ready-to-wear",
-        "Accessories",
-        "Footwear"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "gucci.com",
-      "social_media": {
-        "instagram": "@gucci",
-        "twitter": "@gucci",
-        "facebook": "gucci"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "523d1f9a-23d2-4dbd-812d-13c8ea579212",
-      "name": "Saint Laurent",
-      "foundedYear": 1961,
-      "founder": "Yves Saint Laurent",
-      "parentCompany": "Kering",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Leather goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "ysl.com",
-      "social_media": {
-        "instagram": "@ysl",
-        "twitter": "@YSL",
-        "facebook": "ysl"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "c52529eb-316e-44d8-9ae1-495b705cc2c5",
-      "name": "Bottega Veneta",
-      "foundedYear": 1966,
-      "founder": "Michele Taddei",
-      "parentCompany": "Kering",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "Leather goods",
-        "Ready-to-wear",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "bottegaveneta.com",
-      "social_media": {
-        "instagram": "@bottegaveneta"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "cfcb0080-0cd4-4edc-ad70-fde59a52f92a",
-      "name": "Brioni",
-      "foundedYear": 1945,
-      "founder": "Nazareno Fonticoli",
-      "parentCompany": "Kering",
-      "headquarters": "Rome, Italy",
-      "specialties": [
-        "Menswear",
-        "Tailoring",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "brioni.com",
-      "social_media": {
-        "instagram": "brioni_official"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "72bfbff7-3ee8-4182-80cc-37e5759fe860",
-      "name": "Chloé",
-      "foundedYear": 1952,
-      "founder": "Gaby Aghion",
-      "parentCompany": "Richemont",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Ready-to-wear",
-        "Leather goods",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "chloe.com",
-      "social_media": {
-        "instagram": "@chloe",
-        "twitter": "@chloefashion",
-        "facebook": "chloe"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "b24a8e9a-782b-4fe4-be28-05ba8e2f05ef",
-      "name": "Alaïa",
-      "foundedYear": 1981,
-      "founder": "Azzedine Alaïa",
-      "parentCompany": "Richemont",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Footwear"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "maison-alaia.com",
-      "social_media": {
-        "instagram": "@maisonalaia",
-        "facebook": "maisonalaia"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "34815c15-ec8d-4f14-988c-fe19f216f1c8",
-      "name": "Delvaux",
-      "foundedYear": 1829,
-      "founder": "Charles Delvaux",
-      "parentCompany": "Richemont",
-      "headquarters": "Brussels, Belgium",
-      "specialties": [
-        "Leather goods",
-        "Luxury handbags",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "delvaux.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "74477659-7740-4d72-b181-8cfc6c54abed",
-      "name": "Dunhill",
-      "foundedYear": 1893,
-      "founder": "Alfred Dunhill",
-      "parentCompany": "Richemont",
-      "headquarters": "London, United Kingdom",
-      "specialties": [
-        "Menswear",
-        "Leather goods",
-        "Accessories",
-        "Luxury goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "dunhill.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "2eaa24cb-0949-460d-bfd7-8dd6c24e4c65",
-      "name": "Cartier",
-      "foundedYear": 1847,
-      "founder": "Louis-François Cartier",
-      "parentCompany": "Richemont",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Jewelry",
-        "Watches",
-        "Leather goods",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "cartier.com",
-      "social_media": {
-        "instagram": "@cartier",
-        "twitter": "@Cartier",
-        "facebook": "cartier"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "2470d613-b21c-4c0d-ba0e-b93af7552dc0",
-      "name": "Van Cleef & Arpels",
-      "foundedYear": 1906,
-      "founder": "Alfred Van Cleef and Salomon Arpels",
-      "parentCompany": "Richemont",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "High Jewelry",
-        "Watches",
-        "Luxury goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "vancleefarpels.com",
-      "social_media": {
-        "instagram": "@vancleefarpels",
-        "twitter": "@VanCleefArpels",
-        "facebook": "vancleefarpels"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "0912f696-2859-4ae6-8425-f211d8e633a9",
-      "name": "Montblanc",
-      "foundedYear": 1906,
-      "founder": "Claus-Johannes Voss, Alfred Nehemias, and August Eberstein",
-      "parentCompany": "Richemont",
-      "headquarters": "Hamburg, Germany",
-      "specialties": [
-        "Writing Instruments",
-        "Watches",
-        "Leather goods",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "montblanc.com",
-      "social_media": {
-        "instagram": "@montblanc",
-        "twitter": "@montblanc_world",
-        "facebook": "montblanc"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "5da1d1bc-f4d7-4ca0-9651-7a38c19042a1",
-      "name": "Piaget",
-      "foundedYear": 1874,
-      "founder": "Georges Édouard Piaget",
-      "parentCompany": "Richemont",
-      "headquarters": "Geneva, Switzerland",
-      "specialties": [
-        "Luxury Watches",
-        "Fine Jewelry",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "piaget.com",
-      "social_media": {
-        "instagram": "@piaget",
-        "twitter": "@Piaget",
-        "facebook": "piaget"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "b930b009-4a22-4b02-8e30-432883e58390",
-      "name": "IWC Schaffhausen",
-      "foundedYear": 1868,
-      "founder": "Florentine Ariosto Jones",
-      "parentCompany": "Richemont",
-      "headquarters": "Schaffhausen, Switzerland",
-      "specialties": [
-        "Luxury Watches",
-        "Chronographs",
-        "Complications"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "iwc.com",
-      "social_media": {
-        "instagram": "@iwcwatches",
-        "twitter": "@IWC",
-        "facebook": "iwcwatches"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "name": "Jaeger-LeCoultre",
-      "foundedYear": 1833,
-      "founder": "Antoine LeCoultre",
-      "parentCompany": "Richemont",
-      "headquarters": "Le Sentier, Switzerland",
-      "specialties": [
-        "Luxury Watches",
-        "Complications",
-        "High Horology"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "jaeger-lecoultre.com",
-      "social_media": {
-        "instagram": "@jaegerlecoultre",
-        "twitter": "@jaegerlecoultre",
-        "facebook": "jaegerlecoultre"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "d193e0d6-a6e4-4711-81d6-e15a774a2333",
-      "name": "Prada",
-      "foundedYear": 1913,
-      "founder": "Mario Prada",
-      "parentCompany": "Prada Group",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "Leather goods",
-        "Ready-to-wear",
-        "Accessories",
-        "Footwear"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "prada.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "8b597728-bd63-49dd-be58-7e41e6d6c408",
-      "name": "Miu Miu",
-      "foundedYear": 1993,
-      "founder": "Miuccia Prada",
-      "parentCompany": "Prada Group",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "Ready-to-wear",
-        "Leather goods",
-        "Accessories",
-        "Footwear"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "miumiu.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "2dd8f086-c399-437b-bd7e-6729a5152b22",
-      "name": "Church's",
-      "foundedYear": 1873,
-      "founder": "Thomas Church",
-      "parentCompany": "Prada Group",
-      "headquarters": "Northampton, United Kingdom",
-      "specialties": [
-        "Footwear",
-        "Leather goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "church-footwear.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "b3ee5307-0ba1-40fb-8622-5d4bd3c42a75",
-      "name": "Car Shoe",
-      "foundedYear": 1963,
-      "founder": "Gianni Mostile",
-      "parentCompany": "Prada Group",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "Footwear",
-        "Leather goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "carshoe.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "4390d41f-af38-4b67-8933-29ab902a97c3",
-      "name": "Diesel",
-      "foundedYear": 1978,
-      "founder": "Renzo Rosso",
-      "parentCompany": "OTB Group",
-      "headquarters": "Breganze, Italy",
-      "specialties": [
-        "denim",
-        "casual wear",
-        "lifestyle products"
-      ],
-      "pricePoint": "Premium",
-      "markets": [
-        "Global"
-      ],
-      "website": "diesel.com",
-      "social_media": {
-        "instagram": "@diesel",
-        "facebook": "@diesel"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "1cfe3490-ecec-4710-a722-ea2c386931e1",
-      "name": "Maison Margiela",
-      "foundedYear": 1988,
-      "founder": "Martin Margiela",
-      "parentCompany": "OTB Group",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "avant-garde fashion",
-        "deconstructed designs",
-        "conceptual fashion"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "maisonmargiela.com",
-      "social_media": {
-        "instagram": "@maisonmargiela"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "6f439505-ea45-4502-a966-fc0247e05895",
-      "name": "Marni",
-      "foundedYear": 1994,
-      "founder": "Consuelo Castiglioni",
-      "parentCompany": "OTB Group",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "ready-to-wear",
-        "accessories",
-        "experimental designs"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "marni.com",
-      "social_media": {
-        "instagram": "@marni"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "e3c29fc8-df3b-4f84-ab38-24cec99042b8",
-      "name": "Jil Sander",
-      "foundedYear": 1968,
-      "founder": "Jil Sander",
-      "parentCompany": "OTB Group",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "minimalist fashion",
-        "high-quality materials",
-        "precise tailoring"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "jilsander.com",
-      "social_media": {
-        "instagram": "@jilsander"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "ffe048f7-ae35-4b33-a45c-36253b5f1ce4",
-      "name": "Coach",
-      "foundedYear": 1941,
-      "founder": "Miles Cahn",
-      "parentCompany": "Tapestry Inc.",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Leather goods",
-        "Ready-to-wear",
-        "Accessories",
-        "Footwear"
-      ],
-      "pricePoint": "Accessible Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "coach.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "0b0e41b3-457f-4248-9ef3-e6118fa99e18",
-      "name": "Kate Spade",
-      "foundedYear": 1993,
-      "founder": "Kate Spade",
-      "parentCompany": "Tapestry Inc.",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Handbags",
-        "Ready-to-wear",
-        "Accessories",
-        "Lifestyle"
-      ],
-      "pricePoint": "Accessible Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "katespade.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "430723b9-22be-4d78-9528-6b27337c8f10",
-      "name": "Stuart Weitzman",
-      "foundedYear": 1986,
-      "founder": "Stuart Weitzman",
-      "parentCompany": "Tapestry Inc.",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Footwear",
-        "Accessories",
-        "Handbags"
-      ],
-      "pricePoint": "Accessible Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "stuartweitzman.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "17882975-9040-4c59-b2fd-c5f44bfc1008",
-      "name": "Valentino",
-      "foundedYear": 1960,
-      "founder": "Valentino Garavani",
-      "parentCompany": "Mayhoola for Investments",
-      "headquarters": "Rome, Italy",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Leather goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "valentino.com",
-      "social_media": {
-        "instagram": "@maisonvalentino",
-        "twitter": "@MaisonValentino",
-        "facebook": "valentino"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "f43f1a8f-a305-43ae-a162-d86737537fcf",
-      "name": "Balmain",
-      "foundedYear": 1945,
-      "founder": "Pierre Balmain",
-      "parentCompany": "Mayhoola for Investments",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "balmain.com",
-      "social_media": {
-        "instagram": "@balmain",
-        "twitter": "@Balmain",
-        "facebook": "balmain"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "d36ddc62-5f4b-422a-9167-473edea6498d",
-      "name": "Versace",
-      "foundedYear": 1978,
-      "founder": "Gianni Versace",
-      "parentCompany": "Prada Group",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Leather goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "versace.com",
-      "social_media": {
-        "instagram": "@versace",
-        "twitter": "@Versace",
-        "facebook": "versace"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-12T01:55:32.068Z"
-    },
-    {
-      "id": "c7554fa9-1dd9-4f12-ab05-76de04b88493",
-      "name": "Jimmy Choo",
-      "foundedYear": 1996,
-      "founder": "Jimmy Choo",
-      "parentCompany": "Capri Holdings",
-      "headquarters": "London, United Kingdom",
-      "specialties": [
-        "Footwear",
-        "Accessories",
-        "Leather goods"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "jimmychoo.com",
-      "social_media": {
-        "instagram": "@jimmychoo",
-        "twitter": "@jimmychoo",
-        "facebook": "jimmychoo"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "c3a86baa-2e54-4757-a72c-9bc60a6c04e4",
-      "name": "Michael Kors",
-      "foundedYear": 1981,
-      "founder": "Michael Kors",
-      "parentCompany": "Capri Holdings",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Footwear",
-        "Leather goods"
-      ],
-      "pricePoint": "Accessible Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "michaelkors.com",
-      "social_media": {
-        "instagram": "@michaelkors",
-        "twitter": "@MichaelKors",
-        "facebook": "michaelkors"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "2b5bb24f-6465-4847-ba52-df99b7c99582",
-      "name": "Jean Paul Gaultier",
-      "foundedYear": 1976,
-      "founder": "Jean Paul Gaultier",
-      "parentCompany": "Puig",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Perfumes",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "jeanpaulgaultier.com",
-      "social_media": {
-        "instagram": "jeanpaulgaultier",
-        "twitter": "JPGaultier"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "f570194d-ebac-4e0b-a574-1252a8d0cc77",
-      "name": "Nina Ricci",
-      "foundedYear": 1932,
-      "founder": "Maria Nina Ricci",
-      "parentCompany": "Puig",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "ninaricci.com",
-      "social_media": {
-        "instagram": "ninaricci",
-        "twitter": "NinaRicci"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "7a7d8704-b9e8-4a0d-815f-81af81bbc6f3",
-      "name": "Carolina Herrera",
-      "foundedYear": 1981,
-      "founder": "Carolina Herrera",
-      "parentCompany": "Puig",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Ready-to-wear",
-        "Bridal",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "carolinaherrera.com",
-      "social_media": {
-        "instagram": "carolinaherrera",
-        "twitter": "HouseofHerrera"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "5a501808-1fa2-4e0b-bd00-64addc1f63b9",
-      "name": "Dries Van Noten",
-      "foundedYear": 1986,
-      "founder": "Dries Van Noten",
-      "parentCompany": "Puig",
-      "headquarters": "Antwerp, Belgium",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Shoes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "driesvannoten.com",
-      "social_media": {
-        "instagram": "driesvannoten"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "b3910e42-571d-4f9f-8076-31e69b35e66a",
-      "name": "Chanel",
-      "foundedYear": 1910,
-      "founder": "Gabrielle 'Coco' Chanel",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "haute couture",
-        "ready-to-wear",
-        "luxury goods",
-        "perfumes",
-        "cosmetics",
-        "accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "chanel.com",
-      "social_media": {
-        "instagram": "@chanelofficial",
-        "twitter": "@CHANEL",
-        "facebook": "@chanel"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "07c213f3-2a39-462a-8264-845afdba3fdf",
-      "name": "Hermès",
-      "foundedYear": 1837,
-      "founder": "Thierry Hermès",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "leather goods",
-        "lifestyle accessories",
-        "ready-to-wear",
-        "perfumery",
-        "luxury goods"
-      ],
-      "pricePoint": "Ultra-Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "hermes.com",
-      "social_media": {
-        "instagram": "@hermes",
-        "facebook": "@hermes"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "60cbec26-00cd-4e5e-9419-ea0d28542cf5",
-      "name": "The Row",
-      "foundedYear": 2006,
-      "founder": "Mary-Kate and Ashley Olsen",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "ready-to-wear",
-        "accessories",
-        "minimalist luxury"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "therow.com",
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "482b1869-7fcd-4cd8-b7e1-b9ccaa156f41",
-      "name": "Rick Owens",
-      "foundedYear": 1994,
-      "founder": "Rick Owens",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "avant-garde fashion",
-        "ready-to-wear",
-        "footwear",
-        "furniture design"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "rickowens.eu",
-      "social_media": {
-        "instagram": "@rickowensonline"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "876f187f-dc5a-4a6b-965a-cc2b1b848b1a",
-      "name": "Marine Serre",
-      "foundedYear": 2017,
-      "founder": "Marine Serre",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "sustainable fashion",
-        "upcycled materials",
-        "futuristic sportswear"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "marineserre.com",
-      "social_media": {
-        "instagram": "@marineserre_official"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "00e044e0-bb3a-48e5-87a4-6b7e3a43cf12",
-      "name": "Wales Bonner",
-      "foundedYear": 2014,
-      "founder": "Grace Wales Bonner",
-      "headquarters": "London, UK",
-      "specialties": [
-        "menswear",
-        "cultural exploration",
-        "luxury fashion"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "walesbonner.net",
-      "social_media": {
-        "instagram": "@walesbonner"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "0871e9f8-ce1d-461e-8d20-3c75f95ee07a",
-      "name": "Simone Rocha",
-      "foundedYear": 2010,
-      "founder": "Simone Rocha",
-      "headquarters": "London, UK",
-      "specialties": [
-        "womenswear",
-        "accessories",
-        "romantic modern fashion"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "simonerocha.com",
-      "social_media": {
-        "instagram": "@simonerocha_",
-        "facebook": "simonerochalondon"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "0ea1371e-aa00-4ba0-b03a-3b5b7c92de1c",
-      "name": "Jacquemus",
-      "foundedYear": 2009,
-      "founder": "Simon Porte Jacquemus",
-      "parentCompany": "Independent",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Leather goods",
-        "Footwear",
-        "Contemporary Design"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "jacquemus.com",
-      "social_media": {
-        "instagram": "@jacquemus",
-        "twitter": "@jacquemus",
-        "facebook": "jacquemus"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "27801e73-5a6c-461e-8d91-c9274cb7e12d",
-      "name": "Ganni",
-      "foundedYear": 2000,
-      "founder": "Nicolaj Reffstrup and Ditte Reffstrup",
-      "parentCompany": "L Catterton (Majority Stake)",
-      "headquarters": "Copenhagen, Denmark",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Footwear",
-        "Sustainable Fashion",
-        "Scandinavian Design"
-      ],
-      "pricePoint": "Contemporary",
-      "markets": [
-        "Global"
-      ],
-      "website": "ganni.com",
-      "social_media": {
-        "instagram": "@ganni",
-        "twitter": "@ganni",
-        "facebook": "ganniofficial"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "2466ef4d-d7f7-4aaf-a90c-48b1b5040d1d",
-      "name": "Peter Do",
-      "foundedYear": 2018,
-      "founder": "Peter Do",
-      "parentCompany": "Independent",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Ready-to-wear",
-        "Womenswear",
-        "Tailoring",
-        "Accessories"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "peterdo.net",
-      "social_media": {
-        "instagram": "@peterdopeter"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "9c6545c3-92d9-49c3-97e0-f380595f269e",
-      "name": "Lemaire",
-      "foundedYear": 1991,
-      "founder": "Christophe Lemaire",
-      "parentCompany": "Independent",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Leather goods",
-        "Minimalist Design"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "lemaire.fr",
-      "social_media": {
-        "instagram": "@lemaire_official",
-        "facebook": "lemaireparis"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "d54884e0-d729-4927-becb-69e48351b417",
-      "name": "Fear of God",
-      "foundedYear": 2013,
-      "founder": "Jerry Lorenzo",
-      "parentCompany": "Independent",
-      "headquarters": "Los Angeles, USA",
-      "specialties": [
-        "Ready-to-wear",
-        "Luxury Streetwear",
-        "Footwear",
-        "Accessories"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "fearofgod.com",
-      "social_media": {
-        "instagram": "@fearofgod",
-        "twitter": "@fearofgod",
-        "facebook": "fearofgod"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "5f69b00f-dbe3-405a-a870-40f7120522f9",
-      "name": "Bode",
-      "foundedYear": 2016,
-      "founder": "Emily Adams Bode",
-      "parentCompany": "Independent",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Menswear",
-        "Sustainable Fashion",
-        "Historical Textiles",
-        "Upcycled Fashion",
-        "Handcrafted Pieces"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "bodenewyork.com",
-      "social_media": {
-        "instagram": "@bode",
-        "facebook": "bodenewyork"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
-      "name": "Alexander McQueen",
-      "foundedYear": 1992,
-      "founder": "Alexander McQueen",
-      "parentCompany": "Kering",
-      "headquarters": "London, United Kingdom",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "alexandermcqueen.com",
-      "social_media": {
-        "instagram": "@alexandermcqueen",
-        "twitter": "@McQueen",
-        "facebook": "alexandermcqueen"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "86fe4fba-4230-4de2-9708-8042d61f43b3",
-      "name": "Lanvin",
-      "foundedYear": 1889,
-      "founder": "Jeanne Lanvin",
-      "parentCompany": "Lanvin Group",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "lanvin.com",
-      "social_media": {
-        "instagram": "@lanvinofficial",
-        "twitter": "@LANVINofficial",
-        "facebook": "lanvin"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "b5bfbf33-feea-412b-9b5d-1f0b1b680b29",
-      "name": "Ferragamo",
-      "foundedYear": 1927,
-      "founder": "Salvatore Ferragamo",
-      "parentCompany": "Ferragamo Group",
-      "headquarters": "Florence, Italy",
-      "specialties": [
-        "Leather goods",
-        "Footwear",
-        "Ready-to-wear",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "ferragamo.com",
-      "social_media": {
-        "instagram": "@ferragamo",
-        "twitter": "@Ferragamo",
-        "facebook": "ferragamo"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "458244eb-d50c-4604-b1d3-041dd9121738",
-      "name": "Moschino",
-      "foundedYear": 1983,
-      "founder": "Franco Moschino",
-      "parentCompany": "Aeffe",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "moschino.com",
-      "social_media": {
-        "instagram": "@moschino",
-        "twitter": "@Moschino",
-        "facebook": "moschino"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "64a0b837-8085-4ee2-a5d0-4874cef91303",
-      "name": "Comme des Garçons",
-      "foundedYear": 1969,
-      "founder": "Rei Kawakubo",
-      "parentCompany": "Comme des Garçons",
-      "headquarters": "Tokyo, Japan",
-      "specialties": [
-        "Ready-to-wear",
-        "Avant-garde fashion",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "comme-des-garcons.com",
-      "social_media": {
-        "instagram": "@commedesgarcons"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "07da85b5-961b-4454-a42c-ce2ed1948dfc",
-      "name": "Issey Miyake",
-      "foundedYear": 1970,
-      "founder": "Issey Miyake",
-      "parentCompany": "Issey Miyake Inc.",
-      "headquarters": "Tokyo, Japan",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "isseymiyake.com",
-      "social_media": {
-        "instagram": "@isseymiyakeofficial",
-        "facebook": "isseymiyake"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "cfcab79d-db4b-4911-a26d-74be464fc522",
-      "name": "Undercover",
-      "foundedYear": 1990,
-      "founder": "Jun Takahashi",
-      "parentCompany": "Undercover",
-      "headquarters": "Tokyo, Japan",
-      "specialties": [
-        "Ready-to-wear",
-        "Streetwear",
-        "Accessories"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "undercoverism.com",
-      "social_media": {
-        "instagram": "@undercover_lab"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
-      "name": "A Bathing Ape",
-      "foundedYear": 1993,
-      "founder": "Nigo",
-      "parentCompany": "I.T Group",
-      "headquarters": "Tokyo, Japan",
-      "specialties": [
-        "Streetwear",
-        "Accessories",
-        "Footwear"
-      ],
-      "pricePoint": "Contemporary",
-      "markets": [
-        "Global"
-      ],
-      "website": "bape.com",
-      "social_media": {
-        "instagram": "@bape_japan",
-        "twitter": "@BAPEOFFICIAL",
-        "facebook": "bape"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "8a75b274-cfee-4183-abb4-9aaeba17b896",
-      "name": "Number Nine",
-      "foundedYear": 1997,
-      "founder": "Takahiro Miyashita",
-      "parentCompany": "Independent",
-      "headquarters": "Tokyo, Japan",
-      "specialties": [
-        "Ready-to-wear",
-        "Avant-garde fashion"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "numbernine.jp",
-      "social_media": {
-        "instagram": "@numbernine_official"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "789471b7-7eac-4e23-99e8-6b871012245b",
-      "name": "The Soloist",
-      "foundedYear": 2010,
-      "founder": "Takahiro Miyashita",
-      "parentCompany": "Independent",
-      "headquarters": "Tokyo, Japan",
-      "specialties": [
-        "Ready-to-wear",
-        "Avant-garde fashion"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "takahiromiyashita-thesoloist.com",
-      "social_media": {
-        "instagram": "@takahiromiyashita_thesoloist"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
-      "name": "Y/Project",
-      "foundedYear": 2010,
-      "founder": "Yohan Serfaty",
-      "parentCompany": "Independent",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Ready-to-wear",
-        "Avant-garde fashion",
-        "Accessories"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "yproject.fr",
-      "social_media": {
-        "instagram": "@yproject_official"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "96abce58-7225-4001-b0fd-5be50040cd3f",
-      "name": "Dolce & Gabbana",
-      "foundedYear": 1985,
-      "founder": "Domenico Dolce and Stefano Gabbana",
-      "parentCompany": "Independent",
-      "headquarters": "Milan, Italy",
-      "specialties": [
-        "Ready-to-wear",
-        "Leather goods",
-        "Accessories",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "dolcegabbana.com",
-      "social_media": {
-        "instagram": "@dolcegabbana",
-        "twitter": "@dolcegabbana",
-        "facebook": "DolceGabbana"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
-      "name": "Mugler",
-      "foundedYear": 1974,
-      "founder": "Thierry Mugler",
-      "parentCompany": "L'Oréal",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Ready-to-wear",
-        "Haute Couture",
-        "Perfumes"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "mugler.com",
-      "social_media": {
-        "instagram": "@mugler",
-        "twitter": "@Mugler",
-        "facebook": "mugler"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "d21c5e34-9209-406c-9613-90ff51bccb16",
-      "name": "Vetements",
-      "foundedYear": 2014,
-      "founder": "Demna Gvasalia",
-      "parentCompany": "Independent",
-      "headquarters": "Zurich, Switzerland",
-      "specialties": [
-        "Ready-to-wear",
-        "Streetwear",
-        "Footwear"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "vetementswebsite.com",
-      "social_media": {
-        "instagram": "@vetements_official"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "cdf1f5a5-6061-4fce-801c-b7b6c577b0d5",
-      "name": "Helmut Lang",
-      "foundedYear": 1986,
-      "founder": "Helmut Lang",
-      "parentCompany": "Fast Retailing",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Denim"
-      ],
-      "pricePoint": "Contemporary Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "helmutlang.com",
-      "social_media": {
-        "instagram": "@helmutlang",
-        "twitter": "@helmutlang",
-        "facebook": "helmutlang"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-11T00:00:00Z"
-    },
-    {
-      "id": "5c87366b-feba-47ed-9955-ba8f5bdd48a1",
-      "name": "Ann Demeulemeester",
-      "foundedYear": 1985,
-      "founder": "Ann Demeulemeester",
-      "parentCompany": "Claes Iversen",
-      "headquarters": "Antwerp, Belgium",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Footwear"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "anndemeulemeester.com",
-      "social_media": {
-        "instagram": "@anndemeulemeester_official"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "54fa24ed-6e35-4436-aa6e-72e8aa42a701",
-      "name": "Vivienne Westwood",
-      "foundedYear": 1971,
-      "founder": "Vivienne Westwood",
-      "parentCompany": "Independent",
-      "headquarters": "London, United Kingdom",
-      "specialties": [
-        "Ready-to-wear",
-        "Accessories",
-        "Bridal"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "viviennewestwood.com",
-      "social_media": {
-        "instagram": "@viviennewestwood",
-        "twitter": "@FollowWestwood",
-        "facebook": "viviennewestwood"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "fc04c2e8-53f9-4ab2-bba9-ece8923b0d76",
-      "name": "Walter Van Beirendonck",
-      "foundedYear": 1983,
-      "founder": "Walter Van Beirendonck",
-      "parentCompany": "Independent",
-      "headquarters": "Antwerp, Belgium",
-      "specialties": [
-        "Ready-to-wear",
-        "Avant-garde fashion"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "waltervanbeirendonck.com",
-      "social_media": {
-        "instagram": "@waltervanbeirendonck_official"
-      },
-      "createdAt": "2025-04-09T02:53:33.918Z",
-      "updatedAt": "2025-04-09T02:53:33.918Z"
-    },
-    {
-      "id": "d0967c6d-4a3f-4f84-9529-50d201255e75",
-      "name": "Dior Homme",
-      "foundedYear": 2000,
-      "founder": "Hedi Slimane",
-      "createdAt": "2025-04-09T03:44:58.235Z",
-      "updatedAt": "2025-04-09T03:44:58.235Z"
-    },
-    {
-      "id": "ae225759-09cc-4132-8b81-b8c5155f62e0",
-      "name": "Dior",
-      "foundedYear": 1996,
-      "founder": "John Galliano",
-      "createdAt": "2025-04-09T03:44:58.235Z",
-      "updatedAt": "2025-04-09T03:44:58.235Z"
-    },
-    {
-      "id": "522018f0-bea0-491c-b2ee-b4bd77bf28af",
-      "name": "Christian Dior",
-      "foundedYear": 2012,
-      "founder": "Raf Simons",
-      "createdAt": "2025-04-09T03:44:58.235Z",
-      "updatedAt": "2025-04-09T03:44:58.235Z"
-    },
-    {
-      "id": "1f154536-b632-4301-bd6d-3d13ca2b176a",
-      "name": "Calvin Klein",
-      "foundedYear": 2016,
-      "founder": "Raf Simons",
-      "createdAt": "2025-04-09T03:44:58.235Z",
-      "updatedAt": "2025-04-09T03:44:58.235Z"
-    },
-    {
-      "id": "e890de1a-961a-464b-8917-355d3afa4e66",
-      "name": "Maison Martin Margiela",
-      "foundedYear": 1988,
-      "founder": "Martin Margiela",
-      "createdAt": "2025-04-09T03:44:58.235Z",
-      "updatedAt": "2025-04-09T03:44:58.235Z"
-    },
-    {
-      "id": "54bce20b-7f1a-4c2c-891a-9af0e2c317ed",
-      "name": "Yohji Yamamoto",
-      "foundedYear": 1972,
-      "founder": "Yohji Yamamoto",
-      "createdAt": "2025-04-09T03:44:58.236Z",
-      "updatedAt": "2025-04-09T03:44:58.236Z"
-    },
-    {
-      "id": "f9f9abb8-5728-4cab-8f53-608698af4238",
-      "name": "Supreme",
-      "foundedYear": 2004,
-      "founder": "Luke Meier",
-      "createdAt": "2025-04-09T03:58:55.726Z",
-      "updatedAt": "2025-04-09T03:58:55.726Z"
-    },
-    {
-      "id": "f9513d11-b6a5-49aa-9d18-ee7e0e46160e",
-      "name": "OAMC (Over All Master Cloth)",
-      "foundedYear": 2013,
-      "founder": "Luke Meier",
-      "createdAt": "2025-04-09T03:58:55.727Z",
-      "updatedAt": "2025-04-09T03:58:55.727Z"
-    },
-    {
-      "id": "09997aa2-cdf9-4d8c-8c7a-b39e1dc427eb",
-      "name": "TAKAHIROMIYASHITA TheSoloist.",
-      "foundedYear": 2010,
-      "founder": "Takahiro Miyashita",
-      "createdAt": "2025-04-09T03:58:55.728Z",
-      "updatedAt": "2025-04-09T03:58:55.728Z"
-    },
-    {
-      "id": "fd636768-3706-4a2c-8347-9e39b4bc352c",
-      "name": "Tom Ford",
-      "foundedYear": 2005,
-      "founder": "Tom Ford",
-      "parentCompany": "Estée Lauder Companies",
-      "headquarters": "New York, USA",
-      "specialties": [
-        "Ready-to-Wear",
-        "Accessories",
-        "Beauty",
-        "Eyewear"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "tomford.com",
-      "social_media": {
-        "instagram": "tomford"
-      },
-      "createdAt": "2025-04-12T01:50:23.598Z",
-      "updatedAt": "2025-04-12T01:50:23.598Z"
-    },
-    {
-      "id": "7cfcf27a-878a-4623-90fc-d5d493985575",
-      "name": "Christian Lacroix",
-      "foundedYear": 1987,
-      "founder": "Christian Lacroix",
-      "parentCompany": "LVMH (1987-2005), Falic Fashion Group (2005-2009)",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Haute Couture",
-        "Ready-to-wear",
-        "Accessories",
-        "Home Decor"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "christian-lacroix.com",
-      "social_media": {
-        "instagram": "@christianlacroix",
-        "twitter": "@LACROIX",
-        "facebook": "christianlacroix"
-      },
-      "createdAt": "2025-04-12T01:50:23.598Z",
-      "updatedAt": "2025-04-11T00:00:00Z"
-    },
-    {
-      "id": "d3db2c35-81e3-40b3-821c-f602d0dea9d8",
-      "name": "Bonpoint",
-      "foundedYear": 1975,
-      "founder": "Marie-France Cohen",
-      "parentCompany": "EPI Group (since 2007)",
-      "headquarters": "Paris, France",
-      "specialties": [
-        "Children's Wear",
-        "Baby Accessories",
-        "Childcare Products",
-        "Fragrances"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "bonpoint.com",
-      "social_media": {
-        "instagram": "@bonpoint",
-        "twitter": "@BonpointParis",
-        "facebook": "bonpoint"
-      },
-      "createdAt": "2025-04-12T01:50:23.598Z",
-      "updatedAt": "2025-04-11T00:00:00Z"
-    },
-    {
-      "id": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
-      "name": "Thomas Pink",
-      "foundedYear": 1984,
-      "founder": "James, Peter and John Mullen",
-      "parentCompany": "LVMH (1999-2021), Sold back to Mullen family (2021-present)",
-      "headquarters": "London, United Kingdom",
-      "specialties": [
-        "Shirts",
-        "Menswear",
-        "Accessories",
-        "Tailoring"
-      ],
-      "pricePoint": "Premium",
-      "markets": [
-        "Global"
-      ],
-      "website": "thomaspink.com",
-      "social_media": {
-        "instagram": "@thomaspink",
-        "twitter": "@Thomas_Pink",
-        "facebook": "thomaspink"
-      },
-      "createdAt": "2025-04-12T01:50:23.598Z",
-      "updatedAt": "2025-04-11T00:00:00Z"
-    },
-    {
-      "id": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
-      "name": "Vera Wang",
-      "foundedYear": 1990,
-      "founder": "Vera Wang",
-      "parentCompany": null,
-      "headquarters": "New York, United States",
-      "specialties": [
-        "Bridal Wear",
-        "Ready-to-wear",
-        "Accessories",
-        "Home Products"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Global"
-      ],
-      "website": "verawang.com",
-      "social_media": {
-        "instagram": "@verawanggang",
-        "twitter": "@VeraWang",
-        "facebook": "verawang"
-      },
-      "createdAt": "2025-04-12T01:50:23.598Z",
-      "updatedAt": "2025-04-11T00:00:00Z"
-    },
-    {
-      "id": "brand-1",
-      "name": "christian-lacroix",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T04:54:38.128Z",
-      "updatedAt": "2025-04-12T04:54:38.128Z"
-    },
-    {
-      "id": "brand-3",
-      "name": "thomas-pink",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T04:54:38.131Z",
-      "updatedAt": "2025-04-12T04:54:38.131Z"
-    },
-    {
-      "id": "brand-4",
-      "name": "vera-wang",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T04:54:38.132Z",
-      "updatedAt": "2025-04-12T04:54:38.132Z"
-    },
-    {
-      "id": "brand-5",
-      "name": "ralph-lauren",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T04:54:38.132Z",
-      "updatedAt": "2025-04-12T04:54:38.132Z"
-    },
-    {
-      "id": "ralph-lauren",
-      "name": "Ralph Lauren",
-      "foundedYear": 1967,
-      "founder": "Ralph Lauren",
-      "headquarters": "New York City, USA",
-      "website": "ralphlauren.com",
-      "socialMedia": {
-        "instagram": "@ralphlauren"
-      },
-      "createdAt": "2025-04-12T14:30:00.000Z",
-      "updatedAt": "2025-04-12T14:30:00.000Z"
-    },
-    {
-      "id": "lacoste",
-      "name": "lacoste",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.931Z",
-      "updatedAt": "2025-04-12T16:47:52.931Z",
-      "hasHistoricalData": true,
-      "category": "collaboration_partner",
-      "notes": "Non-luxury sportswear brand with designer collaborations",
-      "lastCategorized": "2025-04-12T17:13:07.097Z"
-    },
-    {
-      "id": "uniqlo",
-      "name": "uniqlo",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.931Z",
-      "updatedAt": "2025-04-12T16:47:52.931Z",
-      "hasHistoricalData": true,
-      "category": "collaboration_partner",
-      "notes": "Mass-market retailer with luxury designer collaborations",
-      "lastCategorized": "2025-04-12T17:13:07.097Z"
-    },
-    {
-      "id": "adidas",
-      "name": "Adidas",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.931Z",
-      "updatedAt": "2025-04-12T16:47:52.931Z",
-      "hasHistoricalData": true,
-      "category": "collaboration_partner",
-      "notes": "Sportswear brand with luxury designer collaborations",
-      "lastCategorized": "2025-04-12T17:13:07.097Z"
-    },
-    {
-      "id": "gianni-versace",
-      "name": "Versace",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.932Z",
-      "updatedAt": "2025-04-12T16:47:52.932Z",
-      "hasHistoricalData": true,
-      "notes": "Should be referenced as Versace",
-      "lastCategorized": "2025-04-12T17:13:07.096Z"
-    },
-    {
-      "id": "miyake-design-studio",
-      "name": "Miyake Design Studio",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.932Z",
-      "updatedAt": "2025-04-12T16:47:52.932Z",
-      "hasHistoricalData": true,
-      "category": "design_studio",
-      "notes": "Design studio/innovation hub, not primary brand",
-      "lastCategorized": "2025-04-12T17:13:07.097Z"
-    },
-    {
-      "id": "ann-demeulemeester-serax",
-      "name": "Ann Demeulemeester Serax",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.933Z",
-      "updatedAt": "2025-04-12T16:47:52.933Z",
-      "hasHistoricalData": true,
-      "category": "collaboration_line",
-      "parentBrand": "ann-demeulemeester",
-      "notes": "Homeware collaboration line, separate from main fashion label",
-      "lastCategorized": "2025-04-12T17:13:07.097Z"
-    },
-    {
-      "id": "sex",
-      "name": "SEX",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.933Z",
-      "updatedAt": "2025-04-12T16:47:52.933Z",
-      "hasHistoricalData": true,
-      "category": "historical_retail",
-      "notes": "Historical retail location/cultural incubator, not a traditional brand",
-      "lastCategorized": "2025-04-12T17:13:07.097Z"
-    },
-    {
-      "id": "walter-van-beirendonck",
-      "name": "walter-van-beirendonck",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.933Z",
-      "updatedAt": "2025-04-12T16:47:52.933Z",
-      "hasHistoricalData": true,
-      "category": "designer_label",
-      "notes": "Designer name, not brand - needs proper brand format",
-      "lastCategorized": "2025-04-12T17:13:07.097Z"
-    },
-    {
-      "id": "royal-academy-antwerp",
-      "name": "Royal Academy Antwerp",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.933Z",
-      "updatedAt": "2025-04-12T16:47:52.933Z",
-      "hasHistoricalData": true,
-      "category": "educational_institution",
-      "notes": "Educational institution, not a brand",
-      "lastCategorized": "2025-04-12T17:13:07.097Z"
-    }
-  ],
   "designers": [
     {
       "id": "a2ae963a-f6cc-4a86-a1c7-813370faeea4",
@@ -2857,18 +772,18 @@
       "biography": "Founder of Jean Paul Gaultier and iconic French fashion designer",
       "nationality": "French",
       "birthYear": 1952,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Corsets",
         "Marine stripes",
         "Avant-garde designs"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "jeanpaulgaultier",
         "twitter": "JPGaultier",
         "linkedin": "jean-paul-gaultier"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "81a62145-0eb4-4794-8dad-9c29da21cd49",
@@ -2877,12 +792,12 @@
       "status": "RETIRED",
       "currentRole": "Creative Director of Jean Paul Gaultier",
       "nationality": "French",
-      "social_media": {
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "socialMedia": {
         "instagram": "florencetetier",
         "linkedin": "florence-tetier"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "b0a0906a-289f-433e-8a69-5d303d05e143",
@@ -2892,16 +807,16 @@
       "currentRole": "Creative Director of Nina Ricci",
       "nationality": "British-American",
       "birthYear": 1996,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Gender-fluid fashion",
         "Romantic silhouettes"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "harris_reed",
         "linkedin": "harris-reed"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "e7c0abe1-c0c8-4c91-9083-a1c28b3ef8c6",
@@ -2911,17 +826,17 @@
       "biography": "Founder of Carolina Herrera and Venezuelan-American fashion designer",
       "nationality": "Venezuelan-American",
       "birthYear": 1939,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Elegant evening wear",
         "White shirts",
         "Classic silhouettes"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "carolinaherrera",
         "linkedin": "carolina-herrera"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "4fed4179-fdec-4c26-87fc-c24aa9119eee",
@@ -2931,17 +846,17 @@
       "currentRole": "Creative Director of Carolina Herrera",
       "nationality": "American",
       "birthYear": 1986,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Modern elegance",
         "Bold colors",
         "Feminine silhouettes"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "wesgordon",
         "linkedin": "wes-gordon"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "a792d49d-fe3a-43ce-98ec-f9f7bf8e69f4",
@@ -2951,17 +866,17 @@
       "biography": "Founder and Creative Director of Dries Van Noten",
       "nationality": "Belgian",
       "birthYear": 1958,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Eclectic prints",
         "Rich textiles",
         "Artistic collaborations"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "driesvannoten",
         "linkedin": "dries-van-noten"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "95340026-9500-40bd-83ee-d3305fb892b2",
@@ -2972,13 +887,13 @@
       "birthYear": 1883,
       "deathYear": 1971,
       "nationality": "French",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "little black dress",
         "Chanel suit",
         "quilted handbags"
-      ],
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      ]
     },
     {
       "id": "b4900562-e984-492b-95a6-e7e5d3d8653d",
@@ -2987,12 +902,12 @@
       "status": "RETIRED",
       "biography": "Succeeded Karl Lagerfeld as creative director of Chanel in 2019, after working alongside him for over 30 years",
       "nationality": "French",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "refined elegance",
         "practical luxury"
-      ],
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      ]
     },
     {
       "id": "895a0d9b-0f55-4922-b1a9-f21fd2835ddf",
@@ -3036,13 +951,13 @@
       "biography": "Co-founder of The Row with her twin sister Ashley Olsen",
       "birthYear": 1986,
       "nationality": "American",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "minimalism",
         "quality fabrics",
         "understated luxury"
-      ],
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      ]
     },
     {
       "id": "51fb89e2-afff-4ad3-9979-8485851402ce",
@@ -3052,13 +967,13 @@
       "biography": "Co-founder of The Row with her twin sister Mary-Kate Olsen",
       "birthYear": 1986,
       "nationality": "American",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "minimalism",
         "quality fabrics",
         "understated luxury"
-      ],
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      ]
     },
     {
       "id": "f0797d48-5973-46be-b7c4-cda0339efeb4",
@@ -3068,14 +983,14 @@
       "biography": "American-born designer known for his avant-garde, gothic aesthetic",
       "birthYear": 1962,
       "nationality": "American",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "draped silhouettes",
         "monochromatic palette",
         "architectural shapes",
         "brutalist aesthetic"
-      ],
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      ]
     },
     {
       "id": "5fad7133-f8e6-4afd-8c13-9680a5eb1b7b",
@@ -3085,13 +1000,13 @@
       "biography": "French designer known for her futuristic, sustainable approach and crescent moon motif",
       "birthYear": 1991,
       "nationality": "French",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "crescent moon print",
         "upcycled materials",
         "futuristic sportswear"
-      ],
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      ]
     },
     {
       "id": "460c6c39-e226-4d68-8457-e54344c06c77",
@@ -3100,13 +1015,13 @@
       "status": "RETIRED",
       "biography": "British designer exploring cultural identity through her menswear-focused label",
       "nationality": "British",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "cultural hybridity",
         "refined tailoring",
         "intellectual approach"
-      ],
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      ]
     },
     {
       "id": "544cdbcd-f4b0-406f-ba03-8c8f8f2c8e22",
@@ -3115,14 +1030,14 @@
       "status": "RETIRED",
       "biography": "Irish designer known for her romantic yet modern aesthetic, daughter of designer John Rocha",
       "nationality": "Irish",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "pearls",
         "tulle",
         "feminine silhouettes with an edge",
         "historical references"
-      ],
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      ]
     },
     {
       "id": "2e0f42d1-0e4b-41a9-a956-b65ce68788a1",
@@ -3132,17 +1047,17 @@
       "biography": "Self-taught French designer who founded his eponymous label at age 19, known for his playful, Mediterranean-inspired aesthetic",
       "birthYear": 1990,
       "nationality": "French",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "oversized silhouettes",
         "micro bags",
         "Mediterranean influences",
         "architectural shapes"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "@jacquemus"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "dcf26136-a31c-4ab5-ac6d-b69c70bcafd7",
@@ -3151,17 +1066,17 @@
       "status": "RETIRED",
       "biography": "Creative Director of Ganni, who transformed the Danish brand into a global contemporary fashion phenomenon",
       "nationality": "Danish",
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Scandinavian cool",
         "playful prints",
         "colorful dresses",
         "unexpected combinations"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "@ditte_reffstrup"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "65c9b634-088f-4bb5-936a-1cc2469391a3",
@@ -3170,11 +1085,11 @@
       "status": "RETIRED",
       "biography": "CEO of Ganni and husband of Ditte Reffstrup, focused on the business and sustainability aspects of the brand",
       "nationality": "Danish",
-      "social_media": {
-        "linkedin": "@nicolajreffstrup"
-      },
       "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "socialMedia": {
+        "linkedin": "@nicolajreffstrup"
+      }
     },
     {
       "id": "cbdb910b-5c86-448b-b19e-f2336e8c3bec",
@@ -3194,17 +1109,17 @@
       "currentRole": "Founder and Creative Director of Comme des Garçons",
       "nationality": "Japanese",
       "birthYear": 1942,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Avant-garde",
         "Deconstructionism",
         "Conceptual fashion",
         "Asymmetry"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "@commedesgarcons"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "b1d8f217-a475-4f2a-8d0d-33bbda9fe335",
@@ -3214,17 +1129,17 @@
       "currentRole": "Founder and Creative Director of Yohji Yamamoto",
       "nationality": "Japanese",
       "birthYear": 1943,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Avant-garde",
         "Minimalism",
         "Monochromatic",
         "Deconstruction"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "@yohjiyamamotoofficial"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "f96d6172-371f-41e7-91c2-3cc49c606c51",
@@ -3234,17 +1149,17 @@
       "currentRole": "Founder and Creative Director of Undercover",
       "nationality": "Japanese",
       "birthYear": 1969,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Punk aesthetic",
         "Streetwear",
         "Avant-garde",
         "Subcultural references"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "@undercover_lab"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
@@ -3254,18 +1169,18 @@
       "currentRole": "Creative Director of Kenzo",
       "nationality": "Japanese",
       "birthYear": 1970,
-      "signature_styles": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "signatureStyles": [
         "Streetwear",
         "Japanese street culture",
         "Hip-hop influences",
         "Americana"
       ],
-      "social_media": {
+      "socialMedia": {
         "instagram": "@nigo",
         "twitter": "@nigoldeneye"
-      },
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z"
+      }
     },
     {
       "id": "1a772d69-b073-446d-9663-ea5126a0d5a1",
@@ -3793,6 +1708,2091 @@
       "createdAt": "2025-04-12T14:30:00.000Z",
       "updatedAt": "2025-04-12T14:30:00.000Z",
       "biography": "Legendary American fashion designer and founder of Ralph Lauren Corporation"
+    }
+  ],
+  "brands": [
+    {
+      "id": "12325cd7-4671-45a8-bbf6-6ae8e0db6282",
+      "name": "Louis Vuitton",
+      "foundedYear": 1854,
+      "founder": "Louis Vuitton",
+      "parentCompany": "LVMH",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Leather goods",
+        "Ready-to-wear",
+        "Accessories",
+        "Luxury goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "louisvuitton.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@louisvuitton",
+        "twitter": "@LouisVuitton",
+        "facebook": "louisvuitton"
+      }
+    },
+    {
+      "id": "c7527c27-bd89-40b2-a6c7-1705eaced380",
+      "name": "Givenchy",
+      "foundedYear": 1952,
+      "founder": "Hubert de Givenchy",
+      "parentCompany": "LVMH",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "givenchy.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@givenchy",
+        "twitter": "@Givenchy",
+        "facebook": "givenchy"
+      }
+    },
+    {
+      "id": "6f63cb98-35e6-47c7-bfac-4a416807ea0d",
+      "name": "Fendi",
+      "foundedYear": 1925,
+      "founder": "Adele Fendi",
+      "parentCompany": "LVMH",
+      "headquarters": "Rome, Italy",
+      "specialties": [
+        "Fur",
+        "Leather goods",
+        "Ready-to-wear",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "fendi.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@fendi",
+        "twitter": "@Fendi",
+        "facebook": "fendi"
+      }
+    },
+    {
+      "id": "bb23c533-8f65-4fc0-8c5f-4e662a85b29d",
+      "name": "Celine",
+      "foundedYear": 1945,
+      "founder": "Céline Vipiana",
+      "parentCompany": "LVMH",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Ready-to-wear",
+        "Leather goods",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "celine.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@celine",
+        "twitter": "@Celine",
+        "facebook": "celine"
+      }
+    },
+    {
+      "id": "ef9b2053-025b-400b-9262-3b856333eeb5",
+      "name": "Loewe",
+      "foundedYear": 1846,
+      "founder": "Enrique Loewe Roessberg",
+      "parentCompany": "LVMH",
+      "headquarters": "Madrid, Spain",
+      "specialties": [
+        "Leather goods",
+        "Ready-to-wear",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "loewe.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@loewe",
+        "twitter": "@LOEWE",
+        "facebook": "loewe"
+      }
+    },
+    {
+      "id": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
+      "name": "Marc Jacobs",
+      "foundedYear": 1984,
+      "founder": "Marc Jacobs",
+      "parentCompany": "LVMH",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "marcjacobs.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@marcjacobs",
+        "twitter": "@MarcJacobsIntl",
+        "facebook": "marcjacobs"
+      }
+    },
+    {
+      "id": "c2bb89a5-6296-4594-bbd8-5f5fc8bf31c2",
+      "name": "Balenciaga",
+      "foundedYear": 1919,
+      "founder": "Cristóbal Balenciaga",
+      "parentCompany": "Kering",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Footwear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "balenciaga.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@balenciaga",
+        "twitter": "@BALENCIAGA"
+      }
+    },
+    {
+      "id": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
+      "name": "Gucci",
+      "foundedYear": 1921,
+      "founder": "Guccio Gucci",
+      "parentCompany": "Kering",
+      "headquarters": "Florence, Italy",
+      "specialties": [
+        "Leather goods",
+        "Ready-to-wear",
+        "Accessories",
+        "Footwear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "gucci.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@gucci",
+        "twitter": "@gucci",
+        "facebook": "gucci"
+      }
+    },
+    {
+      "id": "523d1f9a-23d2-4dbd-812d-13c8ea579212",
+      "name": "Saint Laurent",
+      "foundedYear": 1961,
+      "founder": "Yves Saint Laurent",
+      "parentCompany": "Kering",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Leather goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "ysl.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@ysl",
+        "twitter": "@YSL",
+        "facebook": "ysl"
+      }
+    },
+    {
+      "id": "c52529eb-316e-44d8-9ae1-495b705cc2c5",
+      "name": "Bottega Veneta",
+      "foundedYear": 1966,
+      "founder": "Michele Taddei",
+      "parentCompany": "Kering",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "Leather goods",
+        "Ready-to-wear",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "bottegaveneta.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@bottegaveneta"
+      }
+    },
+    {
+      "id": "cfcb0080-0cd4-4edc-ad70-fde59a52f92a",
+      "name": "Brioni",
+      "foundedYear": 1945,
+      "founder": "Nazareno Fonticoli",
+      "parentCompany": "Kering",
+      "headquarters": "Rome, Italy",
+      "specialties": [
+        "Menswear",
+        "Tailoring",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "brioni.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "brioni_official"
+      }
+    },
+    {
+      "id": "72bfbff7-3ee8-4182-80cc-37e5759fe860",
+      "name": "Chloé",
+      "foundedYear": 1952,
+      "founder": "Gaby Aghion",
+      "parentCompany": "Richemont",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Ready-to-wear",
+        "Leather goods",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "chloe.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@chloe",
+        "twitter": "@chloefashion",
+        "facebook": "chloe"
+      }
+    },
+    {
+      "id": "b24a8e9a-782b-4fe4-be28-05ba8e2f05ef",
+      "name": "Alaïa",
+      "foundedYear": 1981,
+      "founder": "Azzedine Alaïa",
+      "parentCompany": "Richemont",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Footwear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "maison-alaia.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@maisonalaia",
+        "facebook": "maisonalaia"
+      }
+    },
+    {
+      "id": "34815c15-ec8d-4f14-988c-fe19f216f1c8",
+      "name": "Delvaux",
+      "foundedYear": 1829,
+      "founder": "Charles Delvaux",
+      "parentCompany": "Richemont",
+      "headquarters": "Brussels, Belgium",
+      "specialties": [
+        "Leather goods",
+        "Luxury handbags",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "delvaux.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "74477659-7740-4d72-b181-8cfc6c54abed",
+      "name": "Dunhill",
+      "foundedYear": 1893,
+      "founder": "Alfred Dunhill",
+      "parentCompany": "Richemont",
+      "headquarters": "London, United Kingdom",
+      "specialties": [
+        "Menswear",
+        "Leather goods",
+        "Accessories",
+        "Luxury goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "dunhill.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "2eaa24cb-0949-460d-bfd7-8dd6c24e4c65",
+      "name": "Cartier",
+      "foundedYear": 1847,
+      "founder": "Louis-François Cartier",
+      "parentCompany": "Richemont",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Jewelry",
+        "Watches",
+        "Leather goods",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "cartier.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@cartier",
+        "twitter": "@Cartier",
+        "facebook": "cartier"
+      }
+    },
+    {
+      "id": "2470d613-b21c-4c0d-ba0e-b93af7552dc0",
+      "name": "Van Cleef & Arpels",
+      "foundedYear": 1906,
+      "founder": "Alfred Van Cleef and Salomon Arpels",
+      "parentCompany": "Richemont",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "High Jewelry",
+        "Watches",
+        "Luxury goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "vancleefarpels.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@vancleefarpels",
+        "twitter": "@VanCleefArpels",
+        "facebook": "vancleefarpels"
+      }
+    },
+    {
+      "id": "0912f696-2859-4ae6-8425-f211d8e633a9",
+      "name": "Montblanc",
+      "foundedYear": 1906,
+      "founder": "Claus-Johannes Voss, Alfred Nehemias, and August Eberstein",
+      "parentCompany": "Richemont",
+      "headquarters": "Hamburg, Germany",
+      "specialties": [
+        "Writing Instruments",
+        "Watches",
+        "Leather goods",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "montblanc.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@montblanc",
+        "twitter": "@montblanc_world",
+        "facebook": "montblanc"
+      }
+    },
+    {
+      "id": "5da1d1bc-f4d7-4ca0-9651-7a38c19042a1",
+      "name": "Piaget",
+      "foundedYear": 1874,
+      "founder": "Georges Édouard Piaget",
+      "parentCompany": "Richemont",
+      "headquarters": "Geneva, Switzerland",
+      "specialties": [
+        "Luxury Watches",
+        "Fine Jewelry",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "piaget.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@piaget",
+        "twitter": "@Piaget",
+        "facebook": "piaget"
+      }
+    },
+    {
+      "id": "b930b009-4a22-4b02-8e30-432883e58390",
+      "name": "IWC Schaffhausen",
+      "foundedYear": 1868,
+      "founder": "Florentine Ariosto Jones",
+      "parentCompany": "Richemont",
+      "headquarters": "Schaffhausen, Switzerland",
+      "specialties": [
+        "Luxury Watches",
+        "Chronographs",
+        "Complications"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "iwc.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@iwcwatches",
+        "twitter": "@IWC",
+        "facebook": "iwcwatches"
+      }
+    },
+    {
+      "id": "5baaac71-be8a-4213-afff-706249ec4bdf",
+      "name": "Jaeger-LeCoultre",
+      "foundedYear": 1833,
+      "founder": "Antoine LeCoultre",
+      "parentCompany": "Richemont",
+      "headquarters": "Le Sentier, Switzerland",
+      "specialties": [
+        "Luxury Watches",
+        "Complications",
+        "High Horology"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "jaeger-lecoultre.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@jaegerlecoultre",
+        "twitter": "@jaegerlecoultre",
+        "facebook": "jaegerlecoultre"
+      }
+    },
+    {
+      "id": "d193e0d6-a6e4-4711-81d6-e15a774a2333",
+      "name": "Prada",
+      "foundedYear": 1913,
+      "founder": "Mario Prada",
+      "parentCompany": "Prada Group",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "Leather goods",
+        "Ready-to-wear",
+        "Accessories",
+        "Footwear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "prada.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "8b597728-bd63-49dd-be58-7e41e6d6c408",
+      "name": "Miu Miu",
+      "foundedYear": 1993,
+      "founder": "Miuccia Prada",
+      "parentCompany": "Prada Group",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "Ready-to-wear",
+        "Leather goods",
+        "Accessories",
+        "Footwear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "miumiu.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "2dd8f086-c399-437b-bd7e-6729a5152b22",
+      "name": "Church's",
+      "foundedYear": 1873,
+      "founder": "Thomas Church",
+      "parentCompany": "Prada Group",
+      "headquarters": "Northampton, United Kingdom",
+      "specialties": [
+        "Footwear",
+        "Leather goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "church-footwear.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "b3ee5307-0ba1-40fb-8622-5d4bd3c42a75",
+      "name": "Car Shoe",
+      "foundedYear": 1963,
+      "founder": "Gianni Mostile",
+      "parentCompany": "Prada Group",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "Footwear",
+        "Leather goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "carshoe.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "4390d41f-af38-4b67-8933-29ab902a97c3",
+      "name": "Diesel",
+      "foundedYear": 1978,
+      "founder": "Renzo Rosso",
+      "parentCompany": "OTB Group",
+      "headquarters": "Breganze, Italy",
+      "specialties": [
+        "denim",
+        "casual wear",
+        "lifestyle products"
+      ],
+      "pricePoint": "Premium",
+      "markets": [
+        "Global"
+      ],
+      "website": "diesel.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@diesel",
+        "facebook": "@diesel"
+      }
+    },
+    {
+      "id": "1cfe3490-ecec-4710-a722-ea2c386931e1",
+      "name": "Maison Margiela",
+      "foundedYear": 1988,
+      "founder": "Martin Margiela",
+      "parentCompany": "OTB Group",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "avant-garde fashion",
+        "deconstructed designs",
+        "conceptual fashion"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "maisonmargiela.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@maisonmargiela"
+      }
+    },
+    {
+      "id": "6f439505-ea45-4502-a966-fc0247e05895",
+      "name": "Marni",
+      "foundedYear": 1994,
+      "founder": "Consuelo Castiglioni",
+      "parentCompany": "OTB Group",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "ready-to-wear",
+        "accessories",
+        "experimental designs"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "marni.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@marni"
+      }
+    },
+    {
+      "id": "e3c29fc8-df3b-4f84-ab38-24cec99042b8",
+      "name": "Jil Sander",
+      "foundedYear": 1968,
+      "founder": "Jil Sander",
+      "parentCompany": "OTB Group",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "minimalist fashion",
+        "high-quality materials",
+        "precise tailoring"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "jilsander.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@jilsander"
+      }
+    },
+    {
+      "id": "ffe048f7-ae35-4b33-a45c-36253b5f1ce4",
+      "name": "Coach",
+      "foundedYear": 1941,
+      "founder": "Miles Cahn",
+      "parentCompany": "Tapestry Inc.",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Leather goods",
+        "Ready-to-wear",
+        "Accessories",
+        "Footwear"
+      ],
+      "pricePoint": "Accessible Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "coach.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "0b0e41b3-457f-4248-9ef3-e6118fa99e18",
+      "name": "Kate Spade",
+      "foundedYear": 1993,
+      "founder": "Kate Spade",
+      "parentCompany": "Tapestry Inc.",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Handbags",
+        "Ready-to-wear",
+        "Accessories",
+        "Lifestyle"
+      ],
+      "pricePoint": "Accessible Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "katespade.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "430723b9-22be-4d78-9528-6b27337c8f10",
+      "name": "Stuart Weitzman",
+      "foundedYear": 1986,
+      "founder": "Stuart Weitzman",
+      "parentCompany": "Tapestry Inc.",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Footwear",
+        "Accessories",
+        "Handbags"
+      ],
+      "pricePoint": "Accessible Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "stuartweitzman.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "17882975-9040-4c59-b2fd-c5f44bfc1008",
+      "name": "Valentino",
+      "foundedYear": 1960,
+      "founder": "Valentino Garavani",
+      "parentCompany": "Mayhoola for Investments",
+      "headquarters": "Rome, Italy",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Leather goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "valentino.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@maisonvalentino",
+        "twitter": "@MaisonValentino",
+        "facebook": "valentino"
+      }
+    },
+    {
+      "id": "f43f1a8f-a305-43ae-a162-d86737537fcf",
+      "name": "Balmain",
+      "foundedYear": 1945,
+      "founder": "Pierre Balmain",
+      "parentCompany": "Mayhoola for Investments",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "balmain.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@balmain",
+        "twitter": "@Balmain",
+        "facebook": "balmain"
+      }
+    },
+    {
+      "id": "d36ddc62-5f4b-422a-9167-473edea6498d",
+      "name": "Versace",
+      "foundedYear": 1978,
+      "founder": "Gianni Versace",
+      "parentCompany": "Prada Group",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Leather goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "versace.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-12T01:55:32.068Z",
+      "socialMedia": {
+        "instagram": "@versace",
+        "twitter": "@Versace",
+        "facebook": "versace"
+      }
+    },
+    {
+      "id": "c7554fa9-1dd9-4f12-ab05-76de04b88493",
+      "name": "Jimmy Choo",
+      "foundedYear": 1996,
+      "founder": "Jimmy Choo",
+      "parentCompany": "Capri Holdings",
+      "headquarters": "London, United Kingdom",
+      "specialties": [
+        "Footwear",
+        "Accessories",
+        "Leather goods"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "jimmychoo.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@jimmychoo",
+        "twitter": "@jimmychoo",
+        "facebook": "jimmychoo"
+      }
+    },
+    {
+      "id": "c3a86baa-2e54-4757-a72c-9bc60a6c04e4",
+      "name": "Michael Kors",
+      "foundedYear": 1981,
+      "founder": "Michael Kors",
+      "parentCompany": "Capri Holdings",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Footwear",
+        "Leather goods"
+      ],
+      "pricePoint": "Accessible Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "michaelkors.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@michaelkors",
+        "twitter": "@MichaelKors",
+        "facebook": "michaelkors"
+      }
+    },
+    {
+      "id": "2b5bb24f-6465-4847-ba52-df99b7c99582",
+      "name": "Jean Paul Gaultier",
+      "foundedYear": 1976,
+      "founder": "Jean Paul Gaultier",
+      "parentCompany": "Puig",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Perfumes",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "jeanpaulgaultier.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "jeanpaulgaultier",
+        "twitter": "JPGaultier"
+      }
+    },
+    {
+      "id": "f570194d-ebac-4e0b-a574-1252a8d0cc77",
+      "name": "Nina Ricci",
+      "foundedYear": 1932,
+      "founder": "Maria Nina Ricci",
+      "parentCompany": "Puig",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "ninaricci.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "ninaricci",
+        "twitter": "NinaRicci"
+      }
+    },
+    {
+      "id": "7a7d8704-b9e8-4a0d-815f-81af81bbc6f3",
+      "name": "Carolina Herrera",
+      "foundedYear": 1981,
+      "founder": "Carolina Herrera",
+      "parentCompany": "Puig",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Ready-to-wear",
+        "Bridal",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "carolinaherrera.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "carolinaherrera",
+        "twitter": "HouseofHerrera"
+      }
+    },
+    {
+      "id": "5a501808-1fa2-4e0b-bd00-64addc1f63b9",
+      "name": "Dries Van Noten",
+      "foundedYear": 1986,
+      "founder": "Dries Van Noten",
+      "parentCompany": "Puig",
+      "headquarters": "Antwerp, Belgium",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Shoes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "driesvannoten.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "driesvannoten"
+      }
+    },
+    {
+      "id": "b3910e42-571d-4f9f-8076-31e69b35e66a",
+      "name": "Chanel",
+      "foundedYear": 1910,
+      "founder": "Gabrielle 'Coco' Chanel",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "haute couture",
+        "ready-to-wear",
+        "luxury goods",
+        "perfumes",
+        "cosmetics",
+        "accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "chanel.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@chanelofficial",
+        "twitter": "@CHANEL",
+        "facebook": "@chanel"
+      }
+    },
+    {
+      "id": "07c213f3-2a39-462a-8264-845afdba3fdf",
+      "name": "Hermès",
+      "foundedYear": 1837,
+      "founder": "Thierry Hermès",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "leather goods",
+        "lifestyle accessories",
+        "ready-to-wear",
+        "perfumery",
+        "luxury goods"
+      ],
+      "pricePoint": "Ultra-Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "hermes.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@hermes",
+        "facebook": "@hermes"
+      }
+    },
+    {
+      "id": "60cbec26-00cd-4e5e-9419-ea0d28542cf5",
+      "name": "The Row",
+      "foundedYear": 2006,
+      "founder": "Mary-Kate and Ashley Olsen",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "ready-to-wear",
+        "accessories",
+        "minimalist luxury"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "therow.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z"
+    },
+    {
+      "id": "482b1869-7fcd-4cd8-b7e1-b9ccaa156f41",
+      "name": "Rick Owens",
+      "foundedYear": 1994,
+      "founder": "Rick Owens",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "avant-garde fashion",
+        "ready-to-wear",
+        "footwear",
+        "furniture design"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "rickowens.eu",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@rickowensonline"
+      }
+    },
+    {
+      "id": "876f187f-dc5a-4a6b-965a-cc2b1b848b1a",
+      "name": "Marine Serre",
+      "foundedYear": 2017,
+      "founder": "Marine Serre",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "sustainable fashion",
+        "upcycled materials",
+        "futuristic sportswear"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "marineserre.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@marineserre_official"
+      }
+    },
+    {
+      "id": "00e044e0-bb3a-48e5-87a4-6b7e3a43cf12",
+      "name": "Wales Bonner",
+      "foundedYear": 2014,
+      "founder": "Grace Wales Bonner",
+      "headquarters": "London, UK",
+      "specialties": [
+        "menswear",
+        "cultural exploration",
+        "luxury fashion"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "walesbonner.net",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@walesbonner"
+      }
+    },
+    {
+      "id": "0871e9f8-ce1d-461e-8d20-3c75f95ee07a",
+      "name": "Simone Rocha",
+      "foundedYear": 2010,
+      "founder": "Simone Rocha",
+      "headquarters": "London, UK",
+      "specialties": [
+        "womenswear",
+        "accessories",
+        "romantic modern fashion"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "simonerocha.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@simonerocha_",
+        "facebook": "simonerochalondon"
+      }
+    },
+    {
+      "id": "0ea1371e-aa00-4ba0-b03a-3b5b7c92de1c",
+      "name": "Jacquemus",
+      "foundedYear": 2009,
+      "founder": "Simon Porte Jacquemus",
+      "parentCompany": "Independent",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Leather goods",
+        "Footwear",
+        "Contemporary Design"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "jacquemus.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@jacquemus",
+        "twitter": "@jacquemus",
+        "facebook": "jacquemus"
+      }
+    },
+    {
+      "id": "27801e73-5a6c-461e-8d91-c9274cb7e12d",
+      "name": "Ganni",
+      "foundedYear": 2000,
+      "founder": "Nicolaj Reffstrup and Ditte Reffstrup",
+      "parentCompany": "L Catterton (Majority Stake)",
+      "headquarters": "Copenhagen, Denmark",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Footwear",
+        "Sustainable Fashion",
+        "Scandinavian Design"
+      ],
+      "pricePoint": "Contemporary",
+      "markets": [
+        "Global"
+      ],
+      "website": "ganni.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@ganni",
+        "twitter": "@ganni",
+        "facebook": "ganniofficial"
+      }
+    },
+    {
+      "id": "2466ef4d-d7f7-4aaf-a90c-48b1b5040d1d",
+      "name": "Peter Do",
+      "foundedYear": 2018,
+      "founder": "Peter Do",
+      "parentCompany": "Independent",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Ready-to-wear",
+        "Womenswear",
+        "Tailoring",
+        "Accessories"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "peterdo.net",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@peterdopeter"
+      }
+    },
+    {
+      "id": "9c6545c3-92d9-49c3-97e0-f380595f269e",
+      "name": "Lemaire",
+      "foundedYear": 1991,
+      "founder": "Christophe Lemaire",
+      "parentCompany": "Independent",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Leather goods",
+        "Minimalist Design"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "lemaire.fr",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@lemaire_official",
+        "facebook": "lemaireparis"
+      }
+    },
+    {
+      "id": "d54884e0-d729-4927-becb-69e48351b417",
+      "name": "Fear of God",
+      "foundedYear": 2013,
+      "founder": "Jerry Lorenzo",
+      "parentCompany": "Independent",
+      "headquarters": "Los Angeles, USA",
+      "specialties": [
+        "Ready-to-wear",
+        "Luxury Streetwear",
+        "Footwear",
+        "Accessories"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "fearofgod.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@fearofgod",
+        "twitter": "@fearofgod",
+        "facebook": "fearofgod"
+      }
+    },
+    {
+      "id": "5f69b00f-dbe3-405a-a870-40f7120522f9",
+      "name": "Bode",
+      "foundedYear": 2016,
+      "founder": "Emily Adams Bode",
+      "parentCompany": "Independent",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Menswear",
+        "Sustainable Fashion",
+        "Historical Textiles",
+        "Upcycled Fashion",
+        "Handcrafted Pieces"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "bodenewyork.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@bode",
+        "facebook": "bodenewyork"
+      }
+    },
+    {
+      "id": "f351d9b1-f44b-4fbe-9f59-5c048fac7721",
+      "name": "Alexander McQueen",
+      "foundedYear": 1992,
+      "founder": "Alexander McQueen",
+      "parentCompany": "Kering",
+      "headquarters": "London, United Kingdom",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "alexandermcqueen.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@alexandermcqueen",
+        "twitter": "@McQueen",
+        "facebook": "alexandermcqueen"
+      }
+    },
+    {
+      "id": "86fe4fba-4230-4de2-9708-8042d61f43b3",
+      "name": "Lanvin",
+      "foundedYear": 1889,
+      "founder": "Jeanne Lanvin",
+      "parentCompany": "Lanvin Group",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "lanvin.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@lanvinofficial",
+        "twitter": "@LANVINofficial",
+        "facebook": "lanvin"
+      }
+    },
+    {
+      "id": "b5bfbf33-feea-412b-9b5d-1f0b1b680b29",
+      "name": "Ferragamo",
+      "foundedYear": 1927,
+      "founder": "Salvatore Ferragamo",
+      "parentCompany": "Ferragamo Group",
+      "headquarters": "Florence, Italy",
+      "specialties": [
+        "Leather goods",
+        "Footwear",
+        "Ready-to-wear",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "ferragamo.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@ferragamo",
+        "twitter": "@Ferragamo",
+        "facebook": "ferragamo"
+      }
+    },
+    {
+      "id": "458244eb-d50c-4604-b1d3-041dd9121738",
+      "name": "Moschino",
+      "foundedYear": 1983,
+      "founder": "Franco Moschino",
+      "parentCompany": "Aeffe",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "moschino.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@moschino",
+        "twitter": "@Moschino",
+        "facebook": "moschino"
+      }
+    },
+    {
+      "id": "64a0b837-8085-4ee2-a5d0-4874cef91303",
+      "name": "Comme des Garçons",
+      "foundedYear": 1969,
+      "founder": "Rei Kawakubo",
+      "parentCompany": "Comme des Garçons",
+      "headquarters": "Tokyo, Japan",
+      "specialties": [
+        "Ready-to-wear",
+        "Avant-garde fashion",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "comme-des-garcons.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@commedesgarcons"
+      }
+    },
+    {
+      "id": "07da85b5-961b-4454-a42c-ce2ed1948dfc",
+      "name": "Issey Miyake",
+      "foundedYear": 1970,
+      "founder": "Issey Miyake",
+      "parentCompany": "Issey Miyake Inc.",
+      "headquarters": "Tokyo, Japan",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "isseymiyake.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@isseymiyakeofficial",
+        "facebook": "isseymiyake"
+      }
+    },
+    {
+      "id": "cfcab79d-db4b-4911-a26d-74be464fc522",
+      "name": "Undercover",
+      "foundedYear": 1990,
+      "founder": "Jun Takahashi",
+      "parentCompany": "Undercover",
+      "headquarters": "Tokyo, Japan",
+      "specialties": [
+        "Ready-to-wear",
+        "Streetwear",
+        "Accessories"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "undercoverism.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@undercover_lab"
+      }
+    },
+    {
+      "id": "ed215f30-31b2-4219-aaa5-7e57fb0aec14",
+      "name": "A Bathing Ape",
+      "foundedYear": 1993,
+      "founder": "Nigo",
+      "parentCompany": "I.T Group",
+      "headquarters": "Tokyo, Japan",
+      "specialties": [
+        "Streetwear",
+        "Accessories",
+        "Footwear"
+      ],
+      "pricePoint": "Contemporary",
+      "markets": [
+        "Global"
+      ],
+      "website": "bape.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@bape_japan",
+        "twitter": "@BAPEOFFICIAL",
+        "facebook": "bape"
+      }
+    },
+    {
+      "id": "8a75b274-cfee-4183-abb4-9aaeba17b896",
+      "name": "Number Nine",
+      "foundedYear": 1997,
+      "founder": "Takahiro Miyashita",
+      "parentCompany": "Independent",
+      "headquarters": "Tokyo, Japan",
+      "specialties": [
+        "Ready-to-wear",
+        "Avant-garde fashion"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "numbernine.jp",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@numbernine_official"
+      }
+    },
+    {
+      "id": "789471b7-7eac-4e23-99e8-6b871012245b",
+      "name": "The Soloist",
+      "foundedYear": 2010,
+      "founder": "Takahiro Miyashita",
+      "parentCompany": "Independent",
+      "headquarters": "Tokyo, Japan",
+      "specialties": [
+        "Ready-to-wear",
+        "Avant-garde fashion"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "takahiromiyashita-thesoloist.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@takahiromiyashita_thesoloist"
+      }
+    },
+    {
+      "id": "9357e23f-df5d-4c38-b3f9-b3a743cbb863",
+      "name": "Y/Project",
+      "foundedYear": 2010,
+      "founder": "Yohan Serfaty",
+      "parentCompany": "Independent",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Ready-to-wear",
+        "Avant-garde fashion",
+        "Accessories"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "yproject.fr",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@yproject_official"
+      }
+    },
+    {
+      "id": "96abce58-7225-4001-b0fd-5be50040cd3f",
+      "name": "Dolce & Gabbana",
+      "foundedYear": 1985,
+      "founder": "Domenico Dolce and Stefano Gabbana",
+      "parentCompany": "Independent",
+      "headquarters": "Milan, Italy",
+      "specialties": [
+        "Ready-to-wear",
+        "Leather goods",
+        "Accessories",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "dolcegabbana.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@dolcegabbana",
+        "twitter": "@dolcegabbana",
+        "facebook": "DolceGabbana"
+      }
+    },
+    {
+      "id": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
+      "name": "Mugler",
+      "foundedYear": 1974,
+      "founder": "Thierry Mugler",
+      "parentCompany": "L'Oréal",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Ready-to-wear",
+        "Haute Couture",
+        "Perfumes"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "mugler.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@mugler",
+        "twitter": "@Mugler",
+        "facebook": "mugler"
+      }
+    },
+    {
+      "id": "d21c5e34-9209-406c-9613-90ff51bccb16",
+      "name": "Vetements",
+      "foundedYear": 2014,
+      "founder": "Demna Gvasalia",
+      "parentCompany": "Independent",
+      "headquarters": "Zurich, Switzerland",
+      "specialties": [
+        "Ready-to-wear",
+        "Streetwear",
+        "Footwear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "vetementswebsite.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@vetements_official"
+      }
+    },
+    {
+      "id": "cdf1f5a5-6061-4fce-801c-b7b6c577b0d5",
+      "name": "Helmut Lang",
+      "foundedYear": 1986,
+      "founder": "Helmut Lang",
+      "parentCompany": "Fast Retailing",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Denim"
+      ],
+      "pricePoint": "Contemporary Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "helmutlang.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-11T00:00:00Z",
+      "socialMedia": {
+        "instagram": "@helmutlang",
+        "twitter": "@helmutlang",
+        "facebook": "helmutlang"
+      }
+    },
+    {
+      "id": "5c87366b-feba-47ed-9955-ba8f5bdd48a1",
+      "name": "Ann Demeulemeester",
+      "foundedYear": 1985,
+      "founder": "Ann Demeulemeester",
+      "parentCompany": "Claes Iversen",
+      "headquarters": "Antwerp, Belgium",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Footwear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "anndemeulemeester.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@anndemeulemeester_official"
+      }
+    },
+    {
+      "id": "54fa24ed-6e35-4436-aa6e-72e8aa42a701",
+      "name": "Vivienne Westwood",
+      "foundedYear": 1971,
+      "founder": "Vivienne Westwood",
+      "parentCompany": "Independent",
+      "headquarters": "London, United Kingdom",
+      "specialties": [
+        "Ready-to-wear",
+        "Accessories",
+        "Bridal"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "viviennewestwood.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@viviennewestwood",
+        "twitter": "@FollowWestwood",
+        "facebook": "viviennewestwood"
+      }
+    },
+    {
+      "id": "fc04c2e8-53f9-4ab2-bba9-ece8923b0d76",
+      "name": "Walter Van Beirendonck",
+      "foundedYear": 1983,
+      "founder": "Walter Van Beirendonck",
+      "parentCompany": "Independent",
+      "headquarters": "Antwerp, Belgium",
+      "specialties": [
+        "Ready-to-wear",
+        "Avant-garde fashion"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "waltervanbeirendonck.com",
+      "createdAt": "2025-04-09T02:53:33.918Z",
+      "updatedAt": "2025-04-09T02:53:33.918Z",
+      "socialMedia": {
+        "instagram": "@waltervanbeirendonck_official"
+      }
+    },
+    {
+      "id": "d0967c6d-4a3f-4f84-9529-50d201255e75",
+      "name": "Dior Homme",
+      "foundedYear": 2000,
+      "founder": "Hedi Slimane",
+      "createdAt": "2025-04-09T03:44:58.235Z",
+      "updatedAt": "2025-04-09T03:44:58.235Z"
+    },
+    {
+      "id": "ae225759-09cc-4132-8b81-b8c5155f62e0",
+      "name": "Dior",
+      "foundedYear": 1996,
+      "founder": "John Galliano",
+      "createdAt": "2025-04-09T03:44:58.235Z",
+      "updatedAt": "2025-04-09T03:44:58.235Z"
+    },
+    {
+      "id": "522018f0-bea0-491c-b2ee-b4bd77bf28af",
+      "name": "Christian Dior",
+      "foundedYear": 2012,
+      "founder": "Raf Simons",
+      "createdAt": "2025-04-09T03:44:58.235Z",
+      "updatedAt": "2025-04-09T03:44:58.235Z"
+    },
+    {
+      "id": "1f154536-b632-4301-bd6d-3d13ca2b176a",
+      "name": "Calvin Klein",
+      "foundedYear": 2016,
+      "founder": "Raf Simons",
+      "createdAt": "2025-04-09T03:44:58.235Z",
+      "updatedAt": "2025-04-09T03:44:58.235Z"
+    },
+    {
+      "id": "e890de1a-961a-464b-8917-355d3afa4e66",
+      "name": "Maison Martin Margiela",
+      "foundedYear": 1988,
+      "founder": "Martin Margiela",
+      "createdAt": "2025-04-09T03:44:58.235Z",
+      "updatedAt": "2025-04-09T03:44:58.235Z"
+    },
+    {
+      "id": "54bce20b-7f1a-4c2c-891a-9af0e2c317ed",
+      "name": "Yohji Yamamoto",
+      "foundedYear": 1972,
+      "founder": "Yohji Yamamoto",
+      "createdAt": "2025-04-09T03:44:58.236Z",
+      "updatedAt": "2025-04-09T03:44:58.236Z"
+    },
+    {
+      "id": "f9f9abb8-5728-4cab-8f53-608698af4238",
+      "name": "Supreme",
+      "foundedYear": 2004,
+      "founder": "Luke Meier",
+      "createdAt": "2025-04-09T03:58:55.726Z",
+      "updatedAt": "2025-04-09T03:58:55.726Z"
+    },
+    {
+      "id": "f9513d11-b6a5-49aa-9d18-ee7e0e46160e",
+      "name": "OAMC (Over All Master Cloth)",
+      "foundedYear": 2013,
+      "founder": "Luke Meier",
+      "createdAt": "2025-04-09T03:58:55.727Z",
+      "updatedAt": "2025-04-09T03:58:55.727Z"
+    },
+    {
+      "id": "09997aa2-cdf9-4d8c-8c7a-b39e1dc427eb",
+      "name": "TAKAHIROMIYASHITA TheSoloist.",
+      "foundedYear": 2010,
+      "founder": "Takahiro Miyashita",
+      "createdAt": "2025-04-09T03:58:55.728Z",
+      "updatedAt": "2025-04-09T03:58:55.728Z"
+    },
+    {
+      "id": "fd636768-3706-4a2c-8347-9e39b4bc352c",
+      "name": "Tom Ford",
+      "foundedYear": 2005,
+      "founder": "Tom Ford",
+      "parentCompany": "Estée Lauder Companies",
+      "headquarters": "New York, USA",
+      "specialties": [
+        "Ready-to-Wear",
+        "Accessories",
+        "Beauty",
+        "Eyewear"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "tomford.com",
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-12T01:50:23.598Z",
+      "socialMedia": {
+        "instagram": "tomford"
+      }
+    },
+    {
+      "id": "7cfcf27a-878a-4623-90fc-d5d493985575",
+      "name": "Christian Lacroix",
+      "foundedYear": 1987,
+      "founder": "Christian Lacroix",
+      "parentCompany": "LVMH (1987-2005), Falic Fashion Group (2005-2009)",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-wear",
+        "Accessories",
+        "Home Decor"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "christian-lacroix.com",
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-11T00:00:00Z",
+      "socialMedia": {
+        "instagram": "@christianlacroix",
+        "twitter": "@LACROIX",
+        "facebook": "christianlacroix"
+      }
+    },
+    {
+      "id": "d3db2c35-81e3-40b3-821c-f602d0dea9d8",
+      "name": "Bonpoint",
+      "foundedYear": 1975,
+      "founder": "Marie-France Cohen",
+      "parentCompany": "EPI Group (since 2007)",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Children's Wear",
+        "Baby Accessories",
+        "Childcare Products",
+        "Fragrances"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "bonpoint.com",
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-11T00:00:00Z",
+      "socialMedia": {
+        "instagram": "@bonpoint",
+        "twitter": "@BonpointParis",
+        "facebook": "bonpoint"
+      }
+    },
+    {
+      "id": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
+      "name": "Thomas Pink",
+      "foundedYear": 1984,
+      "founder": "James, Peter and John Mullen",
+      "parentCompany": "LVMH (1999-2021), Sold back to Mullen family (2021-present)",
+      "headquarters": "London, United Kingdom",
+      "specialties": [
+        "Shirts",
+        "Menswear",
+        "Accessories",
+        "Tailoring"
+      ],
+      "pricePoint": "Premium",
+      "markets": [
+        "Global"
+      ],
+      "website": "thomaspink.com",
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-11T00:00:00Z",
+      "socialMedia": {
+        "instagram": "@thomaspink",
+        "twitter": "@Thomas_Pink",
+        "facebook": "thomaspink"
+      }
+    },
+    {
+      "id": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
+      "name": "Vera Wang",
+      "foundedYear": 1990,
+      "founder": "Vera Wang",
+      "parentCompany": null,
+      "headquarters": "New York, United States",
+      "specialties": [
+        "Bridal Wear",
+        "Ready-to-wear",
+        "Accessories",
+        "Home Products"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Global"
+      ],
+      "website": "verawang.com",
+      "createdAt": "2025-04-12T01:50:23.598Z",
+      "updatedAt": "2025-04-11T00:00:00Z",
+      "socialMedia": {
+        "instagram": "@verawanggang",
+        "twitter": "@VeraWang",
+        "facebook": "verawang"
+      }
+    },
+    {
+      "id": "brand-1",
+      "name": "christian-lacroix",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.128Z",
+      "updatedAt": "2025-04-12T04:54:38.128Z"
+    },
+    {
+      "id": "brand-3",
+      "name": "thomas-pink",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.131Z",
+      "updatedAt": "2025-04-12T04:54:38.131Z"
+    },
+    {
+      "id": "brand-4",
+      "name": "vera-wang",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
+    },
+    {
+      "id": "brand-5",
+      "name": "ralph-lauren",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z"
+    },
+    {
+      "id": "ralph-lauren",
+      "name": "Ralph Lauren",
+      "foundedYear": 1967,
+      "founder": "Ralph Lauren",
+      "headquarters": "New York City, USA",
+      "website": "ralphlauren.com",
+      "socialMedia": {
+        "instagram": "@ralphlauren"
+      },
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "lacoste",
+      "name": "lacoste",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.931Z",
+      "updatedAt": "2025-04-12T16:47:52.931Z",
+      "hasHistoricalData": true,
+      "category": "collaboration_partner",
+      "notes": "Non-luxury sportswear brand with designer collaborations",
+      "lastCategorized": "2025-04-12T17:13:07.097Z"
+    },
+    {
+      "id": "uniqlo",
+      "name": "uniqlo",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.931Z",
+      "updatedAt": "2025-04-12T16:47:52.931Z",
+      "hasHistoricalData": true,
+      "category": "collaboration_partner",
+      "notes": "Mass-market retailer with luxury designer collaborations",
+      "lastCategorized": "2025-04-12T17:13:07.097Z"
+    },
+    {
+      "id": "adidas",
+      "name": "Adidas",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.931Z",
+      "updatedAt": "2025-04-12T16:47:52.931Z",
+      "hasHistoricalData": true,
+      "category": "collaboration_partner",
+      "notes": "Sportswear brand with luxury designer collaborations",
+      "lastCategorized": "2025-04-12T17:13:07.097Z"
+    },
+    {
+      "id": "gianni-versace",
+      "name": "Versace",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.932Z",
+      "updatedAt": "2025-04-12T16:47:52.932Z",
+      "hasHistoricalData": true,
+      "notes": "Should be referenced as Versace",
+      "lastCategorized": "2025-04-12T17:13:07.096Z"
+    },
+    {
+      "id": "miyake-design-studio",
+      "name": "Miyake Design Studio",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.932Z",
+      "updatedAt": "2025-04-12T16:47:52.932Z",
+      "hasHistoricalData": true,
+      "category": "design_studio",
+      "notes": "Design studio/innovation hub, not primary brand",
+      "lastCategorized": "2025-04-12T17:13:07.097Z"
+    },
+    {
+      "id": "ann-demeulemeester-serax",
+      "name": "Ann Demeulemeester Serax",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.933Z",
+      "updatedAt": "2025-04-12T16:47:52.933Z",
+      "hasHistoricalData": true,
+      "category": "collaboration_line",
+      "parentBrand": "ann-demeulemeester",
+      "notes": "Homeware collaboration line, separate from main fashion label",
+      "lastCategorized": "2025-04-12T17:13:07.097Z"
+    },
+    {
+      "id": "sex",
+      "name": "SEX",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.933Z",
+      "updatedAt": "2025-04-12T16:47:52.933Z",
+      "hasHistoricalData": true,
+      "category": "historical_retail",
+      "notes": "Historical retail location/cultural incubator, not a traditional brand",
+      "lastCategorized": "2025-04-12T17:13:07.097Z"
+    },
+    {
+      "id": "walter-van-beirendonck",
+      "name": "walter-van-beirendonck",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.933Z",
+      "updatedAt": "2025-04-12T16:47:52.933Z",
+      "hasHistoricalData": true,
+      "category": "designer_label",
+      "notes": "Designer name, not brand - needs proper brand format",
+      "lastCategorized": "2025-04-12T17:13:07.097Z"
+    },
+    {
+      "id": "royal-academy-antwerp",
+      "name": "Royal Academy Antwerp",
+      "foundedYear": 2025,
+      "founder": "Unknown",
+      "createdAt": "2025-04-12T16:47:52.933Z",
+      "updatedAt": "2025-04-12T16:47:52.933Z",
+      "hasHistoricalData": true,
+      "category": "educational_institution",
+      "notes": "Educational institution, not a brand",
+      "lastCategorized": "2025-04-12T17:13:07.097Z"
     }
   ],
   "tenures": [
@@ -4931,13 +4931,13 @@
       "startYear": 1976,
       "endYear": 2020,
       "isCurrentRole": false,
-      "notable_collections": [
-        "Haute Couture Spring 2020 - Last Show"
-      ],
-      "impact_description": "Revolutionized fashion with avant-garde designs and iconic collections",
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Haute Couture Spring 2020 - Last Show"
+      ],
+      "impactDescription": "Revolutionized fashion with avant-garde designs and iconic collections"
     },
     {
       "id": "5367edbb-a8d6-4e7d-9077-2a1fc444c05a",
@@ -4946,13 +4946,13 @@
       "role": "Creative Director",
       "startYear": 2021,
       "isCurrentRole": true,
-      "notable_collections": [
-        "Haute Couture Spring 2022"
-      ],
-      "impact_description": "Bringing fresh perspective while honoring house codes",
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Haute Couture Spring 2022"
+      ],
+      "impactDescription": "Bringing fresh perspective while honoring house codes"
     },
     {
       "id": "df714496-8c82-4d4f-b20a-d132e5236f53",
@@ -4961,13 +4961,13 @@
       "role": "Creative Director",
       "startYear": 2023,
       "isCurrentRole": true,
-      "notable_collections": [
-        "Ready-to-wear Fall 2023"
-      ],
-      "impact_description": "Introducing gender-fluid aesthetics to the historic house",
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Ready-to-wear Fall 2023"
+      ],
+      "impactDescription": "Introducing gender-fluid aesthetics to the historic house"
     },
     {
       "id": "3d19e77a-b2a8-4a1a-8216-c4aafee6de41",
@@ -4977,13 +4977,13 @@
       "startYear": 1981,
       "endYear": 2018,
       "isCurrentRole": false,
-      "notable_collections": [
-        "Spring 2018 - Final Collection as Creative Director"
-      ],
-      "impact_description": "Established a legacy of elegant American fashion",
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Spring 2018 - Final Collection as Creative Director"
+      ],
+      "impactDescription": "Established a legacy of elegant American fashion"
     },
     {
       "id": "94681888-5724-44c3-91bb-27e757274887",
@@ -4992,14 +4992,14 @@
       "role": "Creative Director",
       "startYear": 2018,
       "isCurrentRole": true,
-      "notable_collections": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "department": "All Departments",
+      "notableCollections": [
         "Resort 2024",
         "Spring 2024"
       ],
-      "impact_description": "Modernizing the house while maintaining its elegant DNA",
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "impactDescription": "Modernizing the house while maintaining its elegant DNA"
     },
     {
       "id": "18c94b7d-b489-4b68-bd99-5e762291e39c",
@@ -5008,14 +5008,14 @@
       "role": "Founder and Creative Director",
       "startYear": 1986,
       "isCurrentRole": true,
-      "notable_collections": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "department": "All Departments",
+      "notableCollections": [
         "Spring 2024",
         "Fall 2023"
       ],
-      "impact_description": "Creating unique artistic vision through prints and textiles",
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "impactDescription": "Creating unique artistic vision through prints and textiles"
     },
     {
       "id": "8faffc22-54bc-40d0-96c3-923cde1a55d6",
@@ -5030,13 +5030,13 @@
         "Introduced Chanel No. 5 perfume",
         "Revolutionized women's fashion"
       ],
-      "notable_collections": [
-        "1920s flapper-inspired collections",
-        "Post-war comeback collection 1954"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "1920s flapper-inspired collections",
+        "Post-war comeback collection 1954"
+      ]
     },
     {
       "id": "6ce03060-4901-4b86-bac6-91b3f6877ac8",
@@ -5051,13 +5051,13 @@
         "Introduced the interlocking CC logo",
         "Created iconic runway shows"
       ],
-      "notable_collections": [
-        "Fall/Winter 2014 Supermarket",
-        "Fall 2017 Space Center"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Fall/Winter 2014 Supermarket",
+        "Fall 2017 Space Center"
+      ]
     },
     {
       "id": "dfd0640a-c6e4-41c6-968f-89803c617102",
@@ -5069,13 +5069,13 @@
       "achievements": [
         "Maintained Chanel's legacy while bringing a more understated approach"
       ],
-      "notable_collections": [
-        "Spring/Summer 2020 Rooftop Collection",
-        "Fall/Winter 2021 Ski Lodge"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Spring/Summer 2020 Rooftop Collection",
+        "Fall/Winter 2021 Ski Lodge"
+      ]
     },
     {
       "id": "309d61d2-a267-41a7-9150-b480f565f6f4",
@@ -5133,13 +5133,13 @@
         "CFDA Womenswear Designer of the Year (multiple times)",
         "Established a minimalist luxury aesthetic"
       ],
-      "notable_collections": [
-        "Fall 2019 Collection",
-        "Spring 2020 Collection"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Fall 2019 Collection",
+        "Spring 2020 Collection"
+      ]
     },
     {
       "id": "7d0e928f-55c3-409d-bf6c-8e8cd526258a",
@@ -5152,13 +5152,13 @@
         "CFDA Womenswear Designer of the Year (multiple times)",
         "Established a minimalist luxury aesthetic"
       ],
-      "notable_collections": [
-        "Fall 2019 Collection",
-        "Spring 2020 Collection"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Fall 2019 Collection",
+        "Spring 2020 Collection"
+      ]
     },
     {
       "id": "9b947cd3-c805-494b-b5a1-105d9b00c9e0",
@@ -5171,13 +5171,13 @@
         "CFDA Lifetime Achievement Award",
         "Created a distinctive avant-garde aesthetic"
       ],
-      "notable_collections": [
-        "Vicious SS14",
-        "Glitter FW19"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Vicious SS14",
+        "Glitter FW19"
+      ]
     },
     {
       "id": "2ecf9a7d-0396-4c24-9e0f-480a0a0873c3",
@@ -5190,13 +5190,13 @@
         "LVMH Prize winner 2017",
         "Pioneer in sustainable luxury fashion"
       ],
-      "notable_collections": [
-        "Radiation SS19",
-        "Mind Melange Motor SS20"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Radiation SS19",
+        "Mind Melange Motor SS20"
+      ]
     },
     {
       "id": "8309afeb-f110-4956-a759-e278fc47f567",
@@ -5209,13 +5209,13 @@
         "LVMH Young Designer Prize 2016",
         "BFC/Vogue Designer Fashion Fund 2019"
       ],
-      "notable_collections": [
-        "Lovers Rock SS20",
-        "Essence SS21"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Lovers Rock SS20",
+        "Essence SS21"
+      ]
     },
     {
       "id": "9ca0e53b-ab28-4060-854e-7e67717fb865",
@@ -5228,13 +5228,13 @@
         "British Designer of the Year Womenswear 2016",
         "H&M collaboration 2021"
       ],
-      "notable_collections": [
-        "Fall 2014 Collection",
-        "Spring 2020 Collection"
-      ],
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "notableCollections": [
+        "Fall 2014 Collection",
+        "Spring 2020 Collection"
+      ]
     },
     {
       "id": "dce6c894-4766-423d-b6ed-80ec5580aee5",
@@ -5247,15 +5247,15 @@
         "LVMH Special Prize 2015",
         "Staged iconic runway shows in lavender fields and wheat fields"
       ],
-      "notable_collections": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "department": "All Departments",
+      "notableCollections": [
         "La Bomba SS18",
         "Le Coup de Soleil SS19",
         "L'Année 97 FW20"
       ],
-      "impact_description": "Created a distinctive aesthetic that blends French heritage with modern sensibilities",
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "impactDescription": "Created a distinctive aesthetic that blends French heritage with modern sensibilities"
     },
     {
       "id": "c9ed3eb7-dadb-4693-b1ac-ca279e0668bf",
@@ -5268,14 +5268,14 @@
         "Transformed Ganni into a global fashion phenomenon",
         "Created the #GanniGirls community"
       ],
-      "notable_collections": [
+      "createdAt": "2025-04-09T02:53:33.919Z",
+      "updatedAt": "2025-04-09T02:53:33.919Z",
+      "department": "All Departments",
+      "notableCollections": [
         "SS19 Life on Earth",
         "FW20 Software"
       ],
-      "impact_description": "Redefined Scandinavian style with a playful, colorful aesthetic",
-      "createdAt": "2025-04-09T02:53:33.919Z",
-      "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "impactDescription": "Redefined Scandinavian style with a playful, colorful aesthetic"
     },
     {
       "id": "a7ea7c7a-28d0-435c-8d90-4dacdc816b1a",
@@ -5288,10 +5288,10 @@
         "Led Ganni's international expansion",
         "Implemented sustainability initiatives"
       ],
-      "impact_description": "Grew Ganni from a small Danish brand to a global contemporary fashion label",
       "createdAt": "2025-04-09T02:53:33.919Z",
       "updatedAt": "2025-04-09T02:53:33.919Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Grew Ganni from a small Danish brand to a global contemporary fashion label"
     },
     {
       "id": "56cdc82f-1bb2-4529-afd6-35224f986f7b",
@@ -5301,10 +5301,10 @@
       "startYear": 2000,
       "endYear": 2009,
       "isCurrentRole": false,
-      "impact_description": "Established Ganni as a cashmere brand in Denmark",
       "createdAt": "2025-04-09T02:53:33.920Z",
       "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Established Ganni as a cashmere brand in Denmark"
     },
     {
       "id": "537f17e0-5f8c-45b5-974d-9a7f93863c98",
@@ -5317,10 +5317,10 @@
         "Built Diesel into a global denim brand",
         "Pioneered premium denim market"
       ],
-      "impact_description": "Revolutionized the denim industry with innovative designs and marketing",
       "createdAt": "2025-04-09T02:53:33.920Z",
       "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Revolutionized the denim industry with innovative designs and marketing"
     },
     {
       "id": "ae07d2f0-260c-4853-9006-1b4eb8c6c17f",
@@ -5334,14 +5334,14 @@
         "Pioneered deconstructed fashion",
         "Created iconic designs like Tabi boots"
       ],
-      "notable_collections": [
+      "createdAt": "2025-04-09T02:53:33.920Z",
+      "updatedAt": "2025-04-09T02:53:33.920Z",
+      "department": "All Departments",
+      "notableCollections": [
         "Artisanal Collection",
         "Replica line"
       ],
-      "impact_description": "Fundamentally challenged fashion conventions with conceptual designs",
-      "createdAt": "2025-04-09T02:53:33.920Z",
-      "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "impactDescription": "Fundamentally challenged fashion conventions with conceptual designs"
     },
     {
       "id": "f039d0f5-fec4-453a-a6be-c4394df45d70",
@@ -5354,14 +5354,14 @@
         "Artisanal collections",
         "Revitalized the brand while respecting its heritage"
       ],
-      "notable_collections": [
+      "createdAt": "2025-04-09T02:53:33.920Z",
+      "updatedAt": "2025-04-09T02:53:33.920Z",
+      "department": "All Departments",
+      "notableCollections": [
         "Artisanal SS 2017",
         "Artisanal FW 2018"
       ],
-      "impact_description": "Brought a new theatrical perspective while honoring Margiela's conceptual approach",
-      "createdAt": "2025-04-09T02:53:33.920Z",
-      "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "impactDescription": "Brought a new theatrical perspective while honoring Margiela's conceptual approach"
     },
     {
       "id": "7e72eb5e-f6e7-4ea5-b731-b621c9dd9e1d",
@@ -5375,10 +5375,10 @@
         "Built Marni into a respected luxury brand",
         "Distinctive prints and silhouettes"
       ],
-      "impact_description": "Created a unique aesthetic that appealed to intellectual fashion consumers",
       "createdAt": "2025-04-09T02:53:33.920Z",
       "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Created a unique aesthetic that appealed to intellectual fashion consumers"
     },
     {
       "id": "1fc469af-7b91-49a6-b5bd-e852cee4222e",
@@ -5391,14 +5391,14 @@
         "Brought a youthful energy to Marni",
         "Expanded artistic collaborations"
       ],
-      "notable_collections": [
+      "createdAt": "2025-04-09T02:53:33.920Z",
+      "updatedAt": "2025-04-09T02:53:33.920Z",
+      "department": "All Departments",
+      "notableCollections": [
         "SS 2019",
         "FW 2020"
       ],
-      "impact_description": "Maintained Marni's artistic spirit while bringing a fresh perspective",
-      "createdAt": "2025-04-09T02:53:33.920Z",
-      "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "impactDescription": "Maintained Marni's artistic spirit while bringing a fresh perspective"
     },
     {
       "id": "5e7dee3a-00fe-428b-8c68-15e99df6a475",
@@ -5412,10 +5412,10 @@
         "Pioneered minimalist luxury fashion",
         "Built a global brand"
       ],
-      "impact_description": "Defined modern minimalism in fashion",
       "createdAt": "2025-04-09T02:53:33.920Z",
       "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Defined modern minimalism in fashion"
     },
     {
       "id": "c741a67d-65cc-41c9-925d-af349d637680",
@@ -5425,10 +5425,10 @@
       "startYear": 2003,
       "endYear": 2004,
       "isCurrentRole": false,
-      "impact_description": "Brief return to her eponymous brand",
       "createdAt": "2025-04-09T02:53:33.920Z",
       "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Brief return to her eponymous brand"
     },
     {
       "id": "38dece24-340c-43f7-a6fa-08d222e4ee9a",
@@ -5438,10 +5438,10 @@
       "startYear": 2012,
       "endYear": 2013,
       "isCurrentRole": false,
-      "impact_description": "Second return to her eponymous brand",
       "createdAt": "2025-04-09T02:53:33.920Z",
       "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Second return to her eponymous brand"
     },
     {
       "id": "e27b50a7-13fb-4b94-850b-f75f93dbce8e",
@@ -5453,10 +5453,10 @@
       "achievements": [
         "Revitalized the brand's minimalist aesthetic for a new generation"
       ],
-      "impact_description": "Brought a modern sensibility to Jil Sander's minimalist legacy",
       "createdAt": "2025-04-09T02:53:33.920Z",
       "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Brought a modern sensibility to Jil Sander's minimalist legacy"
     },
     {
       "id": "042ecfd5-987e-4d47-8522-82d0dd6bfbf5",
@@ -5468,10 +5468,10 @@
       "achievements": [
         "Revitalized the brand's minimalist aesthetic for a new generation"
       ],
-      "impact_description": "Brought a modern sensibility to Jil Sander's minimalist legacy",
       "createdAt": "2025-04-09T02:53:33.920Z",
       "updatedAt": "2025-04-09T02:53:33.920Z",
-      "department": "All Departments"
+      "department": "All Departments",
+      "impactDescription": "Brought a modern sensibility to Jil Sander's minimalist legacy"
     },
     {
       "id": "70c1aaa4-8b81-4750-9066-f90b70b539d5",
@@ -22224,12 +22224,12 @@
       "startYear": 2006,
       "description": "Twin sisters who co-founded and jointly design for The Row",
       "impact": "Created a successful luxury brand known for minimalist aesthetic and quality",
-      "collaboration_projects": [
+      "createdAt": "2025-04-09T02:53:33.920Z",
+      "updatedAt": "2025-04-09T02:53:33.920Z",
+      "collaborationProjects": [
         "The Row ready-to-wear",
         "The Row accessories"
-      ],
-      "createdAt": "2025-04-09T02:53:33.920Z",
-      "updatedAt": "2025-04-09T02:53:33.920Z"
+      ]
     },
     {
       "id": "4dff0359-bc9e-4a97-927c-e82d745598de",
@@ -22240,12 +22240,12 @@
       "startYear": 2009,
       "description": "Husband and wife team who took over Ganni and transformed it into a global brand",
       "impact": "Created a successful business partnership combining creative and business expertise",
-      "collaboration_projects": [
+      "createdAt": "2025-04-09T02:53:33.920Z",
+      "updatedAt": "2025-04-09T02:53:33.920Z",
+      "collaborationProjects": [
         "Ganni's global expansion",
         "Ganni Responsibility initiatives"
-      ],
-      "createdAt": "2025-04-09T02:53:33.920Z",
-      "updatedAt": "2025-04-09T02:53:33.920Z"
+      ]
     },
     {
       "id": "10c614a9-d560-40bf-88ff-4b0af1efb88c",
@@ -22293,11 +22293,11 @@
       "startYear": 2017,
       "description": "Husband and wife team who jointly lead Jil Sander",
       "impact": "Combined their expertise to revitalize the minimalist brand",
-      "collaboration_projects": [
-        "Jil Sander collections since 2017"
-      ],
       "createdAt": "2025-04-09T02:53:33.920Z",
-      "updatedAt": "2025-04-09T02:53:33.920Z"
+      "updatedAt": "2025-04-09T02:53:33.920Z",
+      "collaborationProjects": [
+        "Jil Sander collections since 2017"
+      ]
     },
     {
       "id": "05288be9-20a6-4c0b-9dba-b1124c759fe2",
@@ -33951,13 +33951,13 @@
       "startYear": 2008,
       "endYear": 2017,
       "description": "Wang mentored Dahlin in bridal design, empowering her to develop collections while maintaining the brand vision",
-      "collaboration_projects": [
-        "White by Vera Wang",
-        "Vera Wang Luxe"
-      ],
       "confidence": 0.85,
       "createdAt": "2025-04-12T14:30:00Z",
-      "updatedAt": "2025-04-12T14:30:00Z"
+      "updatedAt": "2025-04-12T14:30:00Z",
+      "collaborationProjects": [
+        "White by Vera Wang",
+        "Vera Wang Luxe"
+      ]
     },
     {
       "id": "rel-8",
@@ -33968,12 +33968,12 @@
       "startYear": 1987,
       "endYear": 1989,
       "description": "Wang worked as design director at Ralph Lauren before founding her own company",
-      "collaboration_projects": [
-        "Ralph Lauren womenswear collections"
-      ],
       "confidence": 0.9,
       "createdAt": "2025-04-12T14:30:00Z",
-      "updatedAt": "2025-04-12T14:30:00Z"
+      "updatedAt": "2025-04-12T14:30:00Z",
+      "collaborationProjects": [
+        "Ralph Lauren womenswear collections"
+      ]
     },
     {
       "id": "rel-9",
@@ -33984,13 +33984,13 @@
       "startYear": 2016,
       "endYear": null,
       "description": "Creative partnership focusing on brand identity and visual direction",
-      "collaboration_projects": [
-        "Brand identity refresh",
-        "Digital strategy"
-      ],
       "confidence": 0.9,
       "createdAt": "2025-04-12T14:30:00Z",
-      "updatedAt": "2025-04-12T14:30:00Z"
+      "updatedAt": "2025-04-12T14:30:00Z",
+      "collaborationProjects": [
+        "Brand identity refresh",
+        "Digital strategy"
+      ]
     },
     {
       "id": "rel-10",
@@ -34001,12 +34001,12 @@
       "startYear": 1992,
       "endYear": 2009,
       "description": "Walckhoff served as Lacroix's assistant and studio director for 17 years before succeeding him as Creative Director",
-      "collaboration_projects": [
+      "createdAt": "2025-04-12T04:54:38.129Z",
+      "updatedAt": "2025-04-12T04:54:38.129Z",
+      "collaborationProjects": [
         "Ready-to-wear collections",
         "Accessories lines"
-      ],
-      "createdAt": "2025-04-12T04:54:38.129Z",
-      "updatedAt": "2025-04-12T04:54:38.129Z"
+      ]
     },
     {
       "id": "rel-11",
@@ -34017,12 +34017,12 @@
       "startYear": 1997,
       "endYear": 2001,
       "description": "Giambattista Valli served as Art Director at Lacroix before establishing his own couture house",
-      "collaboration_projects": [
+      "createdAt": "2025-04-12T04:54:38.130Z",
+      "updatedAt": "2025-04-12T04:54:38.130Z",
+      "collaborationProjects": [
         "Ready-to-wear collections",
         "Jeans line"
-      ],
-      "createdAt": "2025-04-12T04:54:38.130Z",
-      "updatedAt": "2025-04-12T04:54:38.130Z"
+      ]
     },
     {
       "id": "rel-14",
@@ -34033,12 +34033,12 @@
       "startYear": 1984,
       "endYear": 1999,
       "description": "James and Peter Mullen were brothers who co-founded Thomas Pink and established its design aesthetic",
-      "collaboration_projects": [
+      "createdAt": "2025-04-12T04:54:38.131Z",
+      "updatedAt": "2025-04-12T04:54:38.131Z",
+      "collaborationProjects": [
         "Original shirt designs",
         "Jermyn Street store concept"
-      ],
-      "createdAt": "2025-04-12T04:54:38.131Z",
-      "updatedAt": "2025-04-12T04:54:38.131Z"
+      ]
     },
     {
       "id": "rel-15",
@@ -34049,11 +34049,11 @@
       "startYear": 2021,
       "endYear": null,
       "description": "Tentis succeeded Ray after LVMH sold the brand back to the Mullen family",
-      "collaboration_projects": [
-        "Brand relaunch strategy"
-      ],
       "createdAt": "2025-04-12T04:54:38.132Z",
-      "updatedAt": "2025-04-12T04:54:38.132Z"
+      "updatedAt": "2025-04-12T04:54:38.132Z",
+      "collaborationProjects": [
+        "Brand relaunch strategy"
+      ]
     },
     {
       "id": "rel-16",
@@ -34064,12 +34064,12 @@
       "startYear": 2008,
       "endYear": 2017,
       "description": "Wang mentored Dahlin in bridal design, empowering her to develop collections while maintaining the brand vision",
-      "collaboration_projects": [
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z",
+      "collaborationProjects": [
         "White by Vera Wang",
         "Vera Wang Luxe"
-      ],
-      "createdAt": "2025-04-12T04:54:38.132Z",
-      "updatedAt": "2025-04-12T04:54:38.132Z"
+      ]
     },
     {
       "id": "rel-17",
@@ -34080,11 +34080,11 @@
       "startYear": 1987,
       "endYear": 1989,
       "description": "Wang worked as design director at Ralph Lauren before founding her own company",
-      "collaboration_projects": [
-        "Ralph Lauren womenswear collections"
-      ],
       "createdAt": "2025-04-12T04:54:38.132Z",
-      "updatedAt": "2025-04-12T04:54:38.132Z"
+      "updatedAt": "2025-04-12T04:54:38.132Z",
+      "collaborationProjects": [
+        "Ralph Lauren womenswear collections"
+      ]
     },
     {
       "id": "rel-18",
@@ -34095,12 +34095,12 @@
       "startYear": 2016,
       "endYear": null,
       "description": "Creative partnership focusing on brand identity and visual direction",
-      "collaboration_projects": [
+      "createdAt": "2025-04-12T04:54:38.132Z",
+      "updatedAt": "2025-04-12T04:54:38.132Z",
+      "collaborationProjects": [
         "Brand identity refresh",
         "Digital strategy"
-      ],
-      "createdAt": "2025-04-12T04:54:38.132Z",
-      "updatedAt": "2025-04-12T04:54:38.132Z"
+      ]
     }
   ]
 }

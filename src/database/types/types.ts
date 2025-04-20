@@ -1,112 +1,94 @@
-export type DesignerStatus = "ACTIVE" | "RETIRED" | "DECEASED";
-export type RelationshipType =
-  | "mentorship"
-  | "succession"
-  | "collaboration"
-  | "familial";
-export type Department =
-  | "Jewelry"
-  | "Watches"
-  | "Ready-to-Wear"
-  | "Accessories"
-  | "Leather Goods"
-  | "Menswear"
-  | "Womenswear"
-  | "Haute Couture"
-  | "All Departments";
-
-export type BrandCategory =
-  | "luxury_fashion"
-  | "design_studio"
-  | "collaboration_line"
-  | "historical_retail"
-  | "designer_label"
-  | "educational_institution"
-  | "collaboration_partner";
+import { Brand as BaseBrand, Designer as BaseDesigner, Tenure as BaseTenure, Relationship as BaseRelationship, Department, RelationshipType, DesignerStatus } from '../../types/fashion';
 
 // Base type for PocketBase records
 interface BaseRecord {
   id: string;
   created: string;
   updated: string;
+  collectionId: string;
+  collectionName: string;
 }
 
-export interface Designer extends BaseRecord {
+// Extend base types with PocketBase fields, overriding any conflicting fields
+export interface Designer extends Omit<BaseDesigner, keyof BaseRecord> {
+  id: string;
+  created: string;
+  updated: string;
   collectionId: string;
   collectionName: "designers";
   name: string;
-  current_role?: string;
-  is_active: boolean;
   status: DesignerStatus;
+  isActive: boolean;
+  currentRole?: string;
   biography?: string;
-  image_url?: string;
+  imageUrl?: string;
   nationality?: string;
-  birth_year?: number;
-  death_year?: number;
+  birthYear?: number;
+  deathYear?: number;
   awards?: string[];
   education?: string[];
-  signature_styles?: string[];
-  social_media?: Record<string, string>;
+  signatureStyles?: string[];
+  socialMedia?: Record<string, string>;
 }
 
-export interface Brand extends BaseRecord {
+export interface Brand extends Omit<BaseBrand, keyof BaseRecord> {
+  id: string;
+  created: string;
+  updated: string;
   collectionId: string;
   collectionName: "brands";
   name: string;
   description?: string;
-  founding_year?: number;
+  foundingYear?: number;
   headquarters?: string;
-  parent_company?: string;
+  parentCompany?: string;
   categories?: string[];
   website?: string;
-  social_media?: Record<string, string>;
-  logo_url?: string;
+  socialMedia?: Record<string, string>;
+  logoUrl?: string;
 }
 
-export interface Tenure extends BaseRecord {
+export interface Tenure extends Omit<BaseTenure, keyof BaseRecord> {
+  id: string;
+  created: string;
+  updated: string;
   collectionId: string;
   collectionName: "tenures";
-  designer: string;
-  brand: string;
-  role: string | undefined;
-  department?: Department;
-  start_year: number;
-  end_year?: number | null;
-  is_current_role: boolean;
+  designerId: string;
+  brandId: string;
+  role: string;
+  department: Department;
+  startYear: number;
+  endYear?: number;
+  isCurrentRole: boolean;
   achievements?: string[];
-  notable_works?: string[];
-  notable_collections?: string[];
-  impact_description?: string;
+  notableWorks?: string[];
+  notableCollections?: string[];
+  impactDescription?: string;
 }
 
-export interface Relationship extends BaseRecord {
+export interface Relationship extends Omit<BaseRelationship, keyof BaseRecord> {
+  id: string;
+  created: string;
+  updated: string;
   collectionId: string;
   collectionName: "relationships";
-  source_designer: string;
-  target_designer: string;
-  brand: string;
+  sourceDesignerId: string;
+  targetDesignerId: string;
+  brandId: string;
   type: RelationshipType;
-  start_year?: number;
-  end_year?: number;
+  startYear?: number;
+  endYear?: number;
   description?: string;
   impact?: string;
-  collaboration_projects?: string[];
+  collaborationProjects?: string[];
 }
 
 // Type helper for creating new records
-export type CreateDesigner = Omit<
-  Designer,
-  keyof BaseRecord | "collectionId" | "collectionName"
->;
-export type CreateBrand = Omit<
-  Brand,
-  keyof BaseRecord | "collectionId" | "collectionName"
->;
-export type CreateTenure = Omit<
-  Tenure,
-  keyof BaseRecord | "collectionId" | "collectionName"
->;
-export type CreateRelationship = Omit<
-  Relationship,
-  keyof BaseRecord | "collectionId" | "collectionName"
->;
+export type CreateDesigner = Omit<Designer, keyof BaseRecord>;
+export type CreateBrand = Omit<Brand, keyof BaseRecord>;
+export type CreateTenure = Omit<Tenure, keyof BaseRecord>;
+export type CreateRelationship = Omit<Relationship, keyof BaseRecord>;
+
+// Re-export types from fashion.ts for convenience
+export { Department, RelationshipType, DesignerStatus };

@@ -88,14 +88,20 @@ export async function migrateBrands(): Promise<void> {
 
       const transformedBrand: CreateBrand = {
         name: brand.name,
-        description: brand.description || '',
-        founding_year: brand.founding_year || undefined,
-        headquarters: brand.headquarters || '',
-        parent_company: brand.parent_company || '',
-        categories: brand.categories || [],
-        website: brand.website || '',
-        social_media: brand.social_media || {},
-        logo_url: brand.logo_url || '',
+        foundedYear: brand.foundedYear,
+        founder: brand.founder,
+        parentCompany: brand.parentCompany,
+        headquarters: brand.headquarters,
+        specialties: brand.specialties,
+        pricePoint: brand.pricePoint,
+        markets: brand.markets,
+        website: brand.website,
+        socialMedia: brand.socialMedia,
+        logoUrl: brand.logoUrl,
+        category: brand.category,
+        hasHistoricalData: brand.hasHistoricalData,
+        notes: brand.notes,
+        lastCategorized: brand.lastCategorized
       };
 
       const validationErrors = await validateBrand(transformedBrand);
