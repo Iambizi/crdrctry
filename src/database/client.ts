@@ -64,9 +64,10 @@ export function handleDatabaseError(error: Error & { data?: unknown; status?: nu
 
 // Type-safe transaction helper
 export async function withTransaction<T>(
-  callback: (client: PocketBase) => Promise<T>
+  callback: (client: PocketBase) => Promise<T>,
+  existingClient?: PocketBase
 ): Promise<T> {
-  const client = await initPocketBase();
+  const client = existingClient || await initPocketBase();
   try {
     return await callback(client);
   } catch (error) {

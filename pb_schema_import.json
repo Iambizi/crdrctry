@@ -1,0 +1,511 @@
+[
+  {
+    "id": "fd_designers",
+    "name": "designers",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "name",
+        "name": "name",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "unique": true,
+        "options": {
+          "min": 1,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "biography",
+        "name": "biography",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 2000,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "nationality",
+        "name": "nationality",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 100,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "birthYear",
+        "name": "birthYear",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 1800,
+          "max": null
+        }
+      },
+      {
+        "id": "deathYear",
+        "name": "deathYear",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 1800,
+          "max": null
+        }
+      },
+      {
+        "id": "education",
+        "name": "education",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "awards",
+        "name": "awards",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "signatureStyles",
+        "name": "signatureStyles",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "currentRole",
+        "name": "currentRole",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "isActive",
+        "name": "isActive",
+        "type": "bool",
+        "system": false,
+        "required": true,
+        "options": {}
+      },
+      {
+        "id": "status",
+        "name": "status",
+        "type": "select",
+        "system": false,
+        "required": true,
+        "options": {
+          "maxSelect": 1,
+          "values": [
+            "ACTIVE",
+            "RETIRED",
+            "DECEASED"
+          ]
+        }
+      },
+      {
+        "id": "socialMedia",
+        "name": "socialMedia",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "imageUrl",
+        "name": "imageUrl",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 500,
+          "pattern": ""
+        }
+      }
+    ],
+    "listRule": "",
+    "viewRule": "",
+    "createRule": "",
+    "updateRule": "",
+    "deleteRule": ""
+  },
+  {
+    "id": "fd_brands",
+    "name": "brands",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "name",
+        "name": "name",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "unique": true,
+        "options": {
+          "min": 1,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 2000,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "foundedYear",
+        "name": "foundedYear",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 1800,
+          "max": null
+        }
+      },
+      {
+        "id": "headquarters",
+        "name": "headquarters",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "parentCompany",
+        "name": "parentCompany",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "categories",
+        "name": "categories",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "website",
+        "name": "website",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "socialMedia",
+        "name": "socialMedia",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "logoUrl",
+        "name": "logoUrl",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255,
+          "pattern": ""
+        }
+      }
+    ],
+    "listRule": "",
+    "viewRule": "",
+    "createRule": "",
+    "updateRule": "",
+    "deleteRule": ""
+  },
+  {
+    "id": "fd_tenures",
+    "name": "tenures",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "designer",
+        "name": "designer",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": 1,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "brand",
+        "name": "brand",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": 1,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "role",
+        "name": "role",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": 1,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "department",
+        "name": "department",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "startYear",
+        "name": "startYear",
+        "type": "number",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": 1800,
+          "max": null
+        }
+      },
+      {
+        "id": "endYear",
+        "name": "endYear",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 1800,
+          "max": null
+        }
+      },
+      {
+        "id": "isCurrentRole",
+        "name": "isCurrentRole",
+        "type": "bool",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "confidence",
+        "name": "confidence",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      {
+        "id": "achievements",
+        "name": "achievements",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "notableWorks",
+        "name": "notableWorks",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "notableCollections",
+        "name": "notableCollections",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "impactDescription",
+        "name": "impactDescription",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 1000,
+          "pattern": ""
+        }
+      }
+    ],
+    "listRule": "",
+    "viewRule": "",
+    "createRule": "",
+    "updateRule": "",
+    "deleteRule": ""
+  },
+  {
+    "id": "fd_relationships",
+    "name": "relationships",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "sourceDesigner",
+        "name": "sourceDesigner",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": 1,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "targetDesigner",
+        "name": "targetDesigner",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": 1,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "brand",
+        "name": "brand",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": 1,
+          "max": 255,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "type",
+        "name": "type",
+        "type": "select",
+        "system": false,
+        "required": true,
+        "options": {
+          "maxSelect": 1,
+          "values": [
+            "mentorship",
+            "succession",
+            "collaboration",
+            "familial"
+          ]
+        }
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 1000,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "startYear",
+        "name": "startYear",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 1800,
+          "max": null
+        }
+      },
+      {
+        "id": "endYear",
+        "name": "endYear",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": 1800,
+          "max": null
+        }
+      },
+      {
+        "id": "collaborationProjects",
+        "name": "collaborationProjects",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      }
+    ],
+    "listRule": "",
+    "viewRule": "",
+    "createRule": "",
+    "updateRule": "",
+    "deleteRule": ""
+  }
+]

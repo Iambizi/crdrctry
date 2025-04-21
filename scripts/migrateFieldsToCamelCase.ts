@@ -83,10 +83,10 @@ async function main() {
     console.log('🔐 Successfully authenticated with PocketBase');
 
     // Migrate each collection
-    await migrateCollection('designers', designerFieldMap);
-    await migrateCollection('brands', brandFieldMap);
-    await migrateCollection('tenures', tenureFieldMap);
-    await migrateCollection('relationships', relationshipFieldMap);
+    await migrateCollection('fd_designers', designerFieldMap);
+    await migrateCollection('fd_brands', brandFieldMap);
+    await migrateCollection('fd_tenures', tenureFieldMap);
+    await migrateCollection('fd_relationships', relationshipFieldMap);
 
     console.log('\n🎉 All migrations complete!');
   } catch (error) {

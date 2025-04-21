@@ -1,14 +1,13 @@
+import PocketBase from 'pocketbase';
+import path from 'path';
+import fs from 'fs/promises';
+import { fileURLToPath } from 'url';
 import { withTransaction } from "../client";
 import { CreateRelationship, RelationshipType } from "../types/types";
-import path from "path";
-import fs from "fs/promises";
-import { fileURLToPath } from 'url';
-import PocketBase from 'pocketbase';
 
 const __filename = fileURLToPath(import.meta.url);
 
 interface RawRelationship {
-  id: string;
   sourceDesignerId: string;
   targetDesignerId: string;
   brandId: string;
@@ -16,183 +15,124 @@ interface RawRelationship {
   startYear?: number;
   endYear?: number;
   description?: string;
-  impact?: string;
   collaborationProjects?: string[];
-  createdAt: string;
-  updatedAt: string;
 }
 
 async function loadRelationshipData(): Promise<RawRelationship[]> {
-  const dataPath = path.join(process.cwd(), "src/data/fashionGenealogy.json");
-  const rawData = await fs.readFile(dataPath, "utf-8");
-  const data = JSON.parse(rawData);
-  return (data.relationships || []).filter((r: RawRelationship) => {
-    return r.sourceDesignerId && r.targetDesignerId && r.brandId;
-  });
+  const filePath = path.join(path.dirname(__filename), '../../data/relationships.json');
+  const data = await fs.readFile(filePath, 'utf-8');
+  return JSON.parse(data).map((r: RawRelationship) => ({
+    ...r,
+    collaborationProjects: r.collaborationProjects || []
+  }));
 }
 
-async function findOrCreateDesigner(name: string, client: PocketBase): Promise<string> {
-  if (!name) {
-    throw new Error("Designer name is required");
-  }
+async function findDesignerName(id: string, client: PocketBase): Promise<string> {
   try {
-    const records = await client.collection("designers").getFullList();
-    const match = records.find(r => r.name && r.name.toLowerCase() === name.toLowerCase());
-    if (match) {
-      return match.id;
+    const record = await client.collection("designers").getOne(id);
+    if (!record || !record.name) {
+      throw new Error(`Designer ${id} not found or missing name`);
     }
-    // Designer not found, create them
-    console.log(`Creating missing designer: ${name}`);
-    const newDesigner = await client.collection("designers").create({
-      name: name,
-      currentRole: '',
-      status: 'active',
-      isActive: false,
-      biography: '',
-      education: [],
-      awards: [],
-      socialMedia: {},
-      imageUrl: '',
-      nationality: '',
-      signatureStyles: []
-    });
-    return newDesigner.id;
+    return record.name;
   } catch (error) {
-    console.error(`Error finding/creating designer ${name}:`, error);
+    console.error(`Error finding designer ${id}:`, error);
     throw error;
   }
 }
 
-async function findOrCreateBrand(name: string, client: PocketBase): Promise<string> {
-  if (!name) {
-    throw new Error("Brand name is required");
-  }
+async function findBrandName(id: string, client: PocketBase): Promise<string> {
   try {
-    const records = await client.collection("brands").getFullList();
-    const match = records.find(r => r.name && r.name.toLowerCase() === name.toLowerCase());
-    if (match) {
-      return match.id;
+    const record = await client.collection("brands").getOne(id);
+    if (!record || !record.name) {
+      throw new Error(`Brand ${id} not found or missing name`);
     }
-    // Brand not found, create it
-    console.log(`Creating missing brand: ${name}`);
-    const newBrand = await client.collection("brands").create({
-      name: name,
-      description: '',
-      foundingYear: null,
-      headquarters: '',
-      parentCompany: '',
-      website: '',
-      socialMedia: {},
-      logoUrl: '',
-      specialties: [],
-      priceRange: '',
-      marketSegment: '',
-      isActive: true
-    });
-    return newBrand.id;
+    return record.name;
   } catch (error) {
-    console.error(`Error finding/creating brand ${name}:`, error);
+    console.error(`Error finding brand ${id}:`, error);
     throw error;
   }
 }
 
 function transformRelationship(
   relationship: RawRelationship,
-  sourceDesignerId: string,
-  targetDesignerId: string,
-  brandId: string
+  sourceDesignerName: string,
+  targetDesignerName: string,
+  brandName: string
 ): CreateRelationship {
   return {
-    sourceDesignerId,
-    targetDesignerId,
-    brandId,
+    sourceDesigner: sourceDesignerName,
+    targetDesigner: targetDesignerName,
+    brand: brandName,
     type: relationship.type,
     startYear: relationship.startYear,
     endYear: relationship.endYear,
     description: relationship.description,
-    impact: relationship.impact,
-    collaborationProjects: relationship.collaborationProjects || [],
+    collaborationProjects: relationship.collaborationProjects || []
   };
 }
 
 async function validateRelationship(relationship: CreateRelationship): Promise<string[]> {
   const errors: string[] = [];
 
-  // Validate required fields
-  if (!relationship.sourceDesignerId) {
+  if (!relationship.sourceDesigner) {
     errors.push("Source designer is required");
   }
-  if (!relationship.targetDesignerId) {
+  if (!relationship.targetDesigner) {
     errors.push("Target designer is required");
   }
-  if (!relationship.brandId) {
+  if (!relationship.brand) {
     errors.push("Brand is required");
   }
   if (!relationship.type) {
-    errors.push("Relationship type is required");
+    errors.push("Type is required");
   }
 
   return errors;
 }
 
-export async function migrateRelationships(): Promise<void> {
-  const relationships = await loadRelationshipData();
+export async function migrateRelationships(relationships: RawRelationship[], pocketBaseClient: PocketBase): Promise<{ created: number; errors: number }> {
   let created = 0;
   let errors = 0;
+  const processedRelationships = new Set<string>();
 
-  await withTransaction(async (client) => {
+  await withTransaction(async (client: PocketBase) => {
     for (const relationship of relationships) {
       try {
-        const sourceDesignerId = await findOrCreateDesigner(relationship.sourceDesignerId, client);
-        const targetDesignerId = await findOrCreateDesigner(relationship.targetDesignerId, client);
-        const brandId = await findOrCreateBrand(relationship.brandId, client);
+        const sourceDesignerName = await findDesignerName(relationship.sourceDesignerId, client);
+        const targetDesignerName = await findDesignerName(relationship.targetDesignerId, client);
+        const brandName = await findBrandName(relationship.brandId, client);
 
         const transformedRelationship = transformRelationship(
           relationship,
-          sourceDesignerId,
-          targetDesignerId,
-          brandId
+          sourceDesignerName,
+          targetDesignerName,
+          brandName
         );
 
         const validationErrors = await validateRelationship(transformedRelationship);
-
         if (validationErrors.length > 0) {
-          console.error(
-            `Validation errors for relationship between ${relationship.sourceDesignerId} and ${relationship.targetDesignerId}:`,
-            validationErrors
-          );
+          console.error(`Validation errors for relationship ${relationship.sourceDesignerId} -> ${relationship.targetDesignerId}:`, validationErrors);
           errors++;
           continue;
         }
 
-        await client.collection("relationships").create(transformedRelationship);
+        console.log(`Creating relationship: ${relationship.sourceDesignerId} -> ${relationship.targetDesignerId}`);
+        await client.collection("fd_relationships").create(transformedRelationship);
+        processedRelationships.add(JSON.stringify([relationship.sourceDesignerId, relationship.targetDesignerId, relationship.brandId]));
         created++;
       } catch (error) {
-        console.error(
-          `Error creating relationship between ${relationship.sourceDesignerId} and ${relationship.targetDesignerId}:`,
-          error
-        );
+        console.error(`Error processing relationship ${relationship.sourceDesignerId} -> ${relationship.targetDesignerId}:`, error);
         errors++;
       }
     }
-  });
+  }, pocketBaseClient);
 
-  console.log(`Relationship migration complete:
-    Created: ${created}
-    Errors: ${errors}
-  `);
+  console.log(`Created ${created} relationships with ${errors} errors`);
+  return { created, errors };
 }
 
 // CLI execution
-if (import.meta.url === `file://${__filename}`) {
-  (async () => {
-    try {
-      console.log("Starting relationship migration...");
-      await migrateRelationships();
-      console.log("Migration completed");
-    } catch (error) {
-      console.error("Migration failed:", error);
-      process.exit(1);
-    }
-  })();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  const relationships = await loadRelationshipData();
+  await migrateRelationships(relationships, new PocketBase(process.env.POCKETBASE_URL));
 }

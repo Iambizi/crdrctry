@@ -17,7 +17,8 @@
     "graphql": "tsx src/graphql/server.ts",
     "start:server": "ts-node --esm src/graphql/server.ts",
     "convert-data": "NODE_OPTIONS='--loader ts-node/esm' ts-node scripts/convertFieldNames.ts",
-    "migrate:fields": "tsx scripts/migrateFieldsToCamelCase.ts"
+    "migrate:fields": "tsx scripts/migrateFieldsToCamelCase.ts",
+    "db:reset": "tsx scripts/resetAndPopulateDb.ts"
   },
   "dependencies": {
     "@apollo/server": "^4.12.0",

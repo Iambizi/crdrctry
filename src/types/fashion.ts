@@ -158,3 +158,10 @@ export interface EnrichedBrand {
   name: string;
   designers: EnrichedBrandDesigner[];
 }
+
+export interface FashionGenealogyData {
+  brands: Brand[];
+  designers: Designer[];
+  tenures: Tenure[];
+  relationships: Relationship[];
+}

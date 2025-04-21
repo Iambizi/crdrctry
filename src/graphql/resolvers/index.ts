@@ -43,7 +43,7 @@ export const resolvers = {
   Query: {
     designer: async (_: unknown, { id }: QueryArgs) => {
       try {
-        const record = await pb.collection('designers').getOne(id!);
+        const record = await pb.collection('fd_designers').getOne(id!);
         return record as Designer;
       } catch (error) {
         console.error('Error fetching designer:', error);
@@ -60,7 +60,7 @@ export const resolvers = {
         }
 
         console.log('🔍 Fetching designers with filter:', filter || 'none');
-        const result = await pb.collection('designers').getList(offset / limit + 1, limit, {
+        const result = await pb.collection('fd_designers').getList(offset / limit + 1, limit, {
           filter,
         });
         console.log('📊 Found designers:', result.items.length);
@@ -82,7 +82,7 @@ export const resolvers = {
     },
     brand: async (_: unknown, { id }: QueryArgs) => {
       try {
-        const record = await pb.collection('brands').getOne(id!);
+        const record = await pb.collection('fd_brands').getOne(id!);
         return record as Brand;
       } catch (error) {
         console.error('Error fetching brand:', error);
@@ -93,7 +93,7 @@ export const resolvers = {
       try {
         const filter = category ? `categories ~ "${category}"` : '';
         console.log('🔍 Fetching brands with filter:', filter || 'none');
-        const result = await pb.collection('brands').getList(offset / limit + 1, limit, {
+        const result = await pb.collection('fd_brands').getList(offset / limit + 1, limit, {
           filter,
         });
         console.log('📊 Found brands:', result.items.length);
@@ -105,7 +105,7 @@ export const resolvers = {
     },
     tenure: async (_: unknown, { id }: QueryArgs) => {
       try {
-        const record = await pb.collection('tenures').getOne(id!);
+        const record = await pb.collection('fd_tenures').getOne(id!);
         return record as Tenure;
       } catch (error) {
         console.error('Error fetching tenure:', error);
@@ -126,7 +126,7 @@ export const resolvers = {
         }
 
         console.log('🔍 Fetching tenures with filter:', filter || 'none');
-        const result = await pb.collection('tenures').getList(offset / limit + 1, limit, {
+        const result = await pb.collection('fd_tenures').getList(offset / limit + 1, limit, {
           filter,
         });
         console.log('📊 Found tenures:', result.items.length);
@@ -138,7 +138,7 @@ export const resolvers = {
     },
     relationship: async (_: unknown, { id }: QueryArgs) => {
       try {
-        const record = await pb.collection('relationships').getOne(id!);
+        const record = await pb.collection('fd_relationships').getOne(id!);
         return record as Relationship;
       } catch (error) {
         console.error('Error fetching relationship:', error);
@@ -163,7 +163,7 @@ export const resolvers = {
         }
 
         console.log('🔍 Fetching relationships with filter:', filter || 'none');
-        const result = await pb.collection('relationships').getList(offset / limit + 1, limit, {
+        const result = await pb.collection('fd_relationships').getList(offset / limit + 1, limit, {
           filter,
         });
         console.log('📊 Found relationships:', result.items.length);
@@ -177,7 +177,7 @@ export const resolvers = {
   Designer: {
     tenures: async (parent: Designer) => {
       try {
-        const result = await pb.collection('tenures').getList(1, 50, {
+        const result = await pb.collection('fd_tenures').getList(1, 50, {
           filter: `designerId = "${parent.id}"`,
         });
         console.log('📊 Found tenures for designer:', result.items.length);
@@ -189,7 +189,7 @@ export const resolvers = {
     },
     relationships: async (parent: Designer) => {
       try {
-        const result = await pb.collection('relationships').getList(1, 50, {
+        const result = await pb.collection('fd_relationships').getList(1, 50, {
           filter: `sourceDesignerId = "${parent.id}" || targetDesignerId = "${parent.id}"`,
         });
         console.log('📊 Found relationships for designer:', result.items.length);
@@ -203,12 +203,12 @@ export const resolvers = {
   Brand: {
     designers: async (parent: Brand) => {
       try {
-        const tenures = await pb.collection('tenures').getList(1, 50, {
+        const tenures = await pb.collection('fd_tenures').getList(1, 50, {
           filter: `brandId = "${parent.id}"`,
         });
         const designerIds = [...new Set(tenures.items.map(t => t.designerId))];
         const designers = await Promise.all(
-          designerIds.map(id => pb.collection('designers').getOne(id))
+          designerIds.map(id => pb.collection('fd_designers').getOne(id))
         );
         console.log('📊 Found designers for brand:', designers.length);
         return designers as Designer[];
@@ -219,7 +219,7 @@ export const resolvers = {
     },
     tenures: async (parent: Brand) => {
       try {
-        const result = await pb.collection('tenures').getList(1, 50, {
+        const result = await pb.collection('fd_tenures').getList(1, 50, {
           filter: `brandId = "${parent.id}"`,
         });
         console.log('📊 Found tenures for brand:', result.items.length);
@@ -233,7 +233,7 @@ export const resolvers = {
   Tenure: {
     designer: async (parent: Tenure) => {
       try {
-        const record = await pb.collection('designers').getOne(parent.designerId);
+        const record = await pb.collection('fd_designers').getOne(parent.designerId);
         return record as Designer;
       } catch (error) {
         console.error('❌ Error fetching tenure designer:', error);
@@ -242,7 +242,7 @@ export const resolvers = {
     },
     brand: async (parent: Tenure) => {
       try {
-        const record = await pb.collection('brands').getOne(parent.brandId);
+        const record = await pb.collection('fd_brands').getOne(parent.brandId);
         return record as Brand;
       } catch (error) {
         console.error('❌ Error fetching tenure brand:', error);
@@ -253,7 +253,7 @@ export const resolvers = {
   Relationship: {
     sourceDesigner: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('designers').getOne(parent.sourceDesignerId);
+        const record = await pb.collection('fd_designers').getOne(parent.sourceDesignerId);
         return record as Designer;
       } catch (error) {
         console.error('❌ Error fetching relationship source designer:', error);
@@ -262,7 +262,7 @@ export const resolvers = {
     },
     targetDesigner: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('designers').getOne(parent.targetDesignerId);
+        const record = await pb.collection('fd_designers').getOne(parent.targetDesignerId);
         return record as Designer;
       } catch (error) {
         console.error('❌ Error fetching relationship target designer:', error);
@@ -271,7 +271,7 @@ export const resolvers = {
     },
     brand: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('brands').getOne(parent.brandId);
+        const record = await pb.collection('fd_brands').getOne(parent.brandId);
         return record as Brand;
       } catch (error) {
         console.error('❌ Error fetching relationship brand:', error);

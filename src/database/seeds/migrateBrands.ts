@@ -64,10 +64,10 @@ export async function migrateBrands(): Promise<void> {
 
   // First, delete all existing records
   try {
-    const existingBrands = await pb.collection('brands').getFullList();
+    const existingBrands = await pb.collection('fd_brands').getFullList();
     console.log(`Found ${existingBrands.length} existing brands, deleting...`);
     for (const brand of existingBrands) {
-      await pb.collection('brands').delete(brand.id);
+      await pb.collection('fd_brands').delete(brand.id);
     }
     console.log('Deleted all existing brands');
   } catch (error) {
@@ -112,7 +112,7 @@ export async function migrateBrands(): Promise<void> {
       }
 
       console.log(`Creating brand: ${brand.name}`);
-      await pb.collection("brands").create(transformedBrand);
+      await pb.collection("fd_brands").create(transformedBrand);
       processedBrands.add(brand.name.toLowerCase());
       created++;
     } catch (error) {

@@ -15,7 +15,7 @@ export interface Designer extends Omit<BaseDesigner, keyof BaseRecord> {
   created: string;
   updated: string;
   collectionId: string;
-  collectionName: "designers";
+  collectionName: "fd_designers";
   name: string;
   status: DesignerStatus;
   isActive: boolean;
@@ -36,10 +36,11 @@ export interface Brand extends Omit<BaseBrand, keyof BaseRecord> {
   created: string;
   updated: string;
   collectionId: string;
-  collectionName: "brands";
+  collectionName: "fd_brands";
   name: string;
   description?: string;
-  foundingYear?: number;
+  foundedYear: number;
+  founder: string;
   headquarters?: string;
   parentCompany?: string;
   categories?: string[];
@@ -53,9 +54,9 @@ export interface Tenure extends Omit<BaseTenure, keyof BaseRecord> {
   created: string;
   updated: string;
   collectionId: string;
-  collectionName: "tenures";
-  designerId: string;
-  brandId: string;
+  collectionName: "fd_tenures";
+  designer: string;
+  brand: string;
   role: string;
   department: Department;
   startYear: number;
@@ -72,23 +73,44 @@ export interface Relationship extends Omit<BaseRelationship, keyof BaseRecord> {
   created: string;
   updated: string;
   collectionId: string;
-  collectionName: "relationships";
-  sourceDesignerId: string;
-  targetDesignerId: string;
-  brandId: string;
+  collectionName: "fd_relationships";
+  sourceDesigner: string;
+  targetDesigner: string;
+  brand: string;
   type: RelationshipType;
   startYear?: number;
   endYear?: number;
   description?: string;
-  impact?: string;
   collaborationProjects?: string[];
 }
 
-// Type helper for creating new records
+// Type helper for creating new records - omit PocketBase system fields
 export type CreateDesigner = Omit<Designer, keyof BaseRecord>;
 export type CreateBrand = Omit<Brand, keyof BaseRecord>;
-export type CreateTenure = Omit<Tenure, keyof BaseRecord>;
-export type CreateRelationship = Omit<Relationship, keyof BaseRecord>;
+export type CreateTenure = {
+  designer: string;
+  brand: string;
+  role: string;
+  department: Department;
+  startYear: number;
+  endYear?: number;
+  isCurrentRole: boolean;
+  achievements?: string[];
+  notableWorks?: string[];
+  notableCollections?: string[];
+  impactDescription?: string;
+};
+
+export type CreateRelationship = {
+  sourceDesigner: string;
+  targetDesigner: string;
+  brand: string;
+  type: RelationshipType;
+  startYear?: number;
+  endYear?: number;
+  description?: string;
+  collaborationProjects?: string[];
+};
 
 // Re-export types from fashion.ts for convenience
 export { Department, RelationshipType, DesignerStatus };

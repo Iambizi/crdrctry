@@ -1,8 +1,11 @@
 import { readFileSync } from 'fs';
-import { join } from 'path';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 import { Brand, Designer, Relationship, Tenure, DesignerStatus, RelationshipType } from '../src/types/fashion';
 
 // Load fashion genealogy data
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
 const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8')) as {
   brands: Brand[];

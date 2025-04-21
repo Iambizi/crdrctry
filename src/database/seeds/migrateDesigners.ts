@@ -70,10 +70,10 @@ export async function migrateDesigners(): Promise<void> {
 
   // First, delete all existing records
   try {
-    const existingDesigners = await pb.collection('designers').getFullList();
+    const existingDesigners = await pb.collection('fd_designers').getFullList();
     console.log(`Found ${existingDesigners.length} existing designers, deleting...`);
     for (const designer of existingDesigners) {
-      await pb.collection('designers').delete(designer.id);
+      await pb.collection('fd_designers').delete(designer.id);
     }
     console.log('Deleted all existing designers');
   } catch (error) {
@@ -116,7 +116,7 @@ export async function migrateDesigners(): Promise<void> {
       }
 
       console.log(`Creating designer: ${designer.name}`);
-      await pb.collection("designers").create(transformedDesigner);
+      await pb.collection("fd_designers").create(transformedDesigner);
       processedDesigners.add(designer.name.toLowerCase());
       created++;
     } catch (error) {

@@ -101,11 +101,11 @@ async function authenticateAdmin() {
 async function validateTenure(tenure: CreateTenure): Promise<string[]> {
   const errors: string[] = [];
 
-  if (!tenure.designerId) {
-    errors.push("Designer ID is required");
+  if (!tenure.designer) {
+    errors.push("Designer is required");
   }
-  if (!tenure.brandId) {
-    errors.push("Brand ID is required");
+  if (!tenure.brand) {
+    errors.push("Brand is required");
   }
   if (!tenure.startYear) {
     errors.push("Start year is required");
@@ -125,10 +125,10 @@ export async function migrateTenures(): Promise<void> {
 
   // First, delete all existing records
   try {
-    const existingTenures = await pb.collection('tenures').getFullList();
+    const existingTenures = await pb.collection('fd_tenures').getFullList();
     console.log(`Found ${existingTenures.length} existing tenures, deleting...`);
     for (const tenure of existingTenures) {
-      await pb.collection('tenures').delete(tenure.id);
+      await pb.collection('fd_tenures').delete(tenure.id);
     }
     console.log('Deleted all existing tenures');
   } catch (error) {
@@ -151,10 +151,10 @@ export async function migrateTenures(): Promise<void> {
       }
 
       // Create missing brand if needed
-      let brandRecord = await pb.collection('brands').getFirstListItem(`name = '${tenure.brandId.replace(/'/g, "\\'")}'`).catch(() => null);
+      let brandRecord = await pb.collection('fd_brands').getFirstListItem(`name = '${tenure.brandId.replace(/'/g, "\\'")}'`).catch(() => null);
       if (!brandRecord) {
         console.log(`Creating missing brand: ${tenure.brandId}`);
-        brandRecord = await pb.collection('brands').create({
+        brandRecord = await pb.collection('fd_brands').create({
           name: tenure.brandId,
           description: '',
           foundingYear: tenure.startYear,
@@ -163,10 +163,10 @@ export async function migrateTenures(): Promise<void> {
       }
 
       // Create missing designer if needed
-      let designerRecord = await pb.collection('designers').getFirstListItem(`name = '${tenure.designerId.replace(/'/g, "\\'")}'`).catch(() => null);
+      let designerRecord = await pb.collection('fd_designers').getFirstListItem(`name = '${tenure.designerId.replace(/'/g, "\\'")}'`).catch(() => null);
       if (!designerRecord) {
         console.log(`Creating missing designer: ${tenure.designerId}`);
-        designerRecord = await pb.collection('designers').create({
+        designerRecord = await pb.collection('fd_designers').create({
           name: tenure.designerId,
           currentRole: tenure.role || '',
           isActive: tenure.isCurrentRole || false,
@@ -175,21 +175,24 @@ export async function migrateTenures(): Promise<void> {
         if (!designerRecord) throw new Error(`Failed to create designer: ${tenure.designerId}`);
       }
 
-      const transformedTenure: CreateTenure = {
-        designerId: designerRecord.id,
-        brandId: brandRecord.id,
-        role: tenure.role || '',
-        department: tenure.department || undefined,
+      const brand = await pb.collection('fd_brands').getOne(brandRecord.id);
+      const designer = await pb.collection('fd_designers').getOne(designerRecord.id);
+
+      const tenureData: CreateTenure = {
+        designer: designer.name,
+        brand: brand.name,
+        role: designer.currentRole,
+        department: designer.department || 'allDepartments',
         startYear: tenure.startYear,
-        endYear: tenure.endYear,
-        isCurrentRole: tenure.isCurrentRole || false,
-        achievements: tenure.achievements || [],
-        notableWorks: tenure.notableWorks || [],
-        notableCollections: tenure.notableCollections || [],
-        impactDescription: tenure.impactDescription || '',
+        endYear: tenure.endYear || undefined,
+        isCurrentRole: !tenure.endYear,
+        achievements: designer.achievements || [],
+        notableWorks: designer.notableWorks || [],
+        notableCollections: [],
+        impactDescription: ''
       };
 
-      const validationErrors = await validateTenure(transformedTenure);
+      const validationErrors = await validateTenure(tenureData);
       if (validationErrors.length > 0) {
         console.error(`Validation errors for tenure ${tenure.designerId} at ${tenure.brandId}:`, validationErrors);
         errors++;
@@ -197,7 +200,7 @@ export async function migrateTenures(): Promise<void> {
       }
 
       console.log(`Creating tenure: ${tenure.designerId} at ${tenure.brandId}`);
-      await pb.collection("tenures").create(transformedTenure);
+      await pb.collection("fd_tenures").create(tenureData);
       processedTenures.add(key);
       created++;
     } catch (error) {
