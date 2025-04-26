@@ -1,0 +1,27 @@
+{
+  "collections": [
+    {
+      "id": "test_minimal_id",
+      "name": "test_minimal",
+      "type": "base",
+      "system": false,
+      "schema": [
+        {
+          "id": "customField",
+          "name": "customField",
+          "type": "text",
+          "system": false,
+          "required": false,
+          "unique": false,
+          "options": { "min": 1, "max": 255, "pattern": "" }
+        }
+      ],
+      "listRule": "",
+      "viewRule": "",
+      "createRule": "",
+      "updateRule": "",
+      "deleteRule": ""
+    }
+  ],
+  "deleteMissing": false
+}

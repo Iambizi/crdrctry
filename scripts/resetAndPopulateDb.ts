@@ -180,3 +180,16 @@ async function main() {
 }
 
 main();
+
+    await populateCollection("fd_designers", designers);
+    await populateCollection("fd_tenures", tenures);
+    await populateCollection("fd_relationships", relationships);
+
+    console.log("\n🎉 Database reset and population complete!");
+  } catch (error) {
+    console.error("❌ Reset and population failed:", error);
+    throw error;
+  }
+}
+
+main();
