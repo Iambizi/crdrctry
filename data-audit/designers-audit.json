@@ -1,0 +1,2719 @@
+[
+  {
+    "id": "a2ae963a-f6cc-4a86-a1c7-813370faeea4",
+    "name": "Louis Vuitton",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "d0821baa-badf-48a1-b9c8-82e1a214d7cf",
+    "name": "Georges Vuitton",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "cca588ce-625e-47f0-a47d-85153b7b044e",
+    "name": "Gaston-Louis Vuitton",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
+    "name": "Marc Jacobs",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+    "name": "Nicolas Ghesquière",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "571d1c07-2f73-4544-ab90-fc39e05d7ad3",
+    "name": "Virgil Abloh",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "47f27ff5-897e-4669-8a64-10d83dfc7c09",
+    "name": "Pharrell Williams",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "bdfe16f6-ebe4-4a18-bbea-f7d792d3afc8",
+    "name": "Hubert de Givenchy",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "4a3e7917-2911-4597-8b25-02eac8744cb5",
+    "name": "John Galliano",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "dda55774-a2ce-4a3d-8c58-583c216b730a",
+    "name": "Alexander McQueen",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "fc35089e-37e7-4b0e-bb94-26ed1648e304",
+    "name": "Julien MacDonald",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1e1e342c-aa6c-4eee-9768-9a716bc19990",
+    "name": "Riccardo Tisci",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "4fb630e1-a962-4651-a15c-7b1f888e308f",
+    "name": "Clare Waight Keller",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "6138d66d-3f7f-4ef8-91c1-1572fdc2eb6d",
+    "name": "Matthew Williams",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "8f2033b5-7960-46a1-9ab1-7d01890c8deb",
+    "name": "Adele Fendi",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "3b5a3b45-cfbf-47ac-85b1-0e17ab312289",
+    "name": "Edoardo Fendi",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+    "name": "Karl Lagerfeld",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "62702d3b-00ce-455a-a873-4eb0a2d13fe9",
+    "name": "Silvia Venturini Fendi",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "fe79787d-de67-4877-ac5c-a5bd52a58b7b",
+    "name": "Kim Jones",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
+    "name": "Stuart Vevers",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "f7660190-938a-40cb-8f36-eddeaae8f856",
+    "name": "Jonathan Anderson",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "f1e41535-554b-4d37-84c0-9d4fb09224f3",
+    "name": "Céline Vipiana",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "50ea08be-7956-4f6d-b544-b9ac8971b959",
+    "name": "Michael Kors",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "22496433-aee1-4855-baf2-340a0ff61119",
+    "name": "Roberto Menichetti",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "129f8911-7e36-4e4b-b782-dfb473706a6e",
+    "name": "Ivana Omazic",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "bc687ee4-ddb7-4daf-b7e1-8efd90f0c816",
+    "name": "Phoebe Philo",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2",
+    "name": "Hedi Slimane",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "ad0bd110-5654-4e56-9249-d88204ae7d5d",
+    "name": "Cristóbal Balenciaga",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "239ea875-d02f-4cd8-99fc-f1fad2a39c04",
+    "name": "Alexander Wang",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
+    "name": "Demna Gvasalia",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b2c3ecbf-268b-4a31-b138-212fd822bab0",
+    "name": "Guccio Gucci",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "049ae4ec-e665-49cb-b89b-bbb929ed39c0",
+    "name": "Aldo Gucci",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "ceced058-cf96-4cfe-a182-871f344705b6",
+    "name": "Maurizio Gucci",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "14abc2b2-396f-47f9-8307-a944d1f39fe0",
+    "name": "Tom Ford",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "0589227e-9bb3-40a8-a891-49b1c226d25a",
+    "name": "Frida Giannini",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "31bf177e-3c3e-4608-93a7-02e608b82c3f",
+    "name": "Alessandro Michele",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "abc6cace-ab64-470d-8518-a9ab75af109d",
+    "name": "Sabato De Sarno",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "905c8da2-58eb-4ea8-8cc4-ad68d765d861",
+    "name": "Yves Saint Laurent",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+    "name": "Alber Elbaz",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "c138dc6c-c59b-4b8e-9f12-633ffc39a571",
+    "name": "Stefano Pilati",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1a2bf02b-0bdb-4842-adf9-ab5ef108ea5b",
+    "name": "Anthony Vaccarello",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "81a6dc10-9960-481d-8267-45a2470a1105",
+    "name": "Michele Taddei",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "02c5d9ec-d075-4802-966e-eba7b20664d9",
+    "name": "Tomas Maier",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "3512d005-d5ad-409c-b670-aa0f31613ebf",
+    "name": "Daniel Lee",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "46aa8ec5-776c-4b22-a827-828604415463",
+    "name": "Matthieu Blazy",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "06f0f52a-4b1d-467a-858f-0dc49ec4d9d6",
+    "name": "Gaby Aghion",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "7fafe2d0-b468-4d4b-bf85-11ba679e5d58",
+    "name": "Stella McCartney",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "dcaf117b-cdb2-4836-a047-fe725bed0de7",
+    "name": "Paulo Anderson",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "97b791ba-6e50-4764-bbc8-30879b91c517",
+    "name": "Hannah MacGibbon",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "64947dba-f343-4532-8bc8-6d15f6513f44",
+    "name": "Natacha Ramsay-Levi",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "12e953ab-1bff-4c1c-b316-9a8aeccedaaf",
+    "name": "Gabriela Hearst",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b7e5c54f-58c7-4fb0-b579-075c0f92d917",
+    "name": "Azzedine Alaïa",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "d957fad5-6e5a-4a24-a80a-2b484c234caa",
+    "name": "Pieter Mulier",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "e1ef2ebb-b9cc-49e1-a121-48a6dc8b6143",
+    "name": "Mario Prada",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "c3f00fd8-c970-4405-87c6-a856fc4902eb",
+    "name": "Miuccia Prada",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "20dd8b1f-3b8e-400f-93ca-5fa3cef0e8fd",
+    "name": "Raf Simons",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "9e09b662-8c1e-44c6-bcd5-1839d2122fe7",
+    "name": "Thomas Church",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "a5be6909-5b7c-48e2-8a3e-444caadf5eaa",
+    "name": "Gianni Mostile",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "473db2d1-1841-48f5-9209-e7859a4674d0",
+    "name": "Renzo Rosso",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+    "name": "Glenn Martens",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "0a95e39f-bf74-4b38-973c-148cf8e9cf71",
+    "name": "Martin Margiela",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "3029baf9-16fe-45e1-abeb-f4df6343a414",
+    "name": "Consuelo Castiglioni",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "0a98f4fd-d607-47ce-81ce-76ca2d892d61",
+    "name": "Francesco Risso",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1e475018-82ab-42aa-a30c-2690e8e0a952",
+    "name": "Jil Sander",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "063788ec-f063-4ab0-95b3-f4663945cb40",
+    "name": "Rodolfo Paglialunga",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "903ffc76-bb70-4ae0-b2ca-d88d5e912771",
+    "name": "Luke Meier",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "79bc1d07-cf73-4269-9954-cb2d4260193b",
+    "name": "Lucie Meier",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "023b3642-2ec8-464e-896f-e2005d0bc1b8",
+    "name": "Miles Cahn",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "e146d15b-00bc-428a-9485-f24edf3429ec",
+    "name": "Bonnie Cashin",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "75805711-208c-4d0c-8307-ecc941d97878",
+    "name": "Reed Krakoff",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "fbab5efc-be22-4bc1-bfc5-77c5696f9c28",
+    "name": "Kate Spade",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "abc1f4d1-9881-4433-bc2c-3cbf35c56ab4",
+    "name": "Deborah Lloyd",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "afdda864-4217-432c-877d-a8d352bbc02a",
+    "name": "Nicola Glass",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "25cadabf-7ca6-4d35-b8f9-2b42733f47d3",
+    "name": "Tom Mora",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "4036b9e4-200d-429b-88b0-fa7539732c50",
+    "name": "Jennifer Lyu",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "2fa17c25-46e6-42ec-b8ee-c9811e1756be",
+    "name": "Stuart Weitzman",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "6ac23e0a-1be3-4f9f-a384-002da1faecac",
+    "name": "Giovanni Morelli",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "7ceed3de-df4d-465c-945b-6a92b34b20e9",
+    "name": "Edmundo Castillo",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "9d38d8cb-3926-47ef-8f27-4037416a4089",
+    "name": "Valentino Garavani",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "18bcf5f4-221f-4e54-b59d-57e77329a477",
+    "name": "Maria Grazia Chiuri",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1b0a7a5b-daa0-4a3a-94e4-0679b8899f4f",
+    "name": "Pierpaolo Piccioli",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1117a0a3-dfd7-4594-8756-9e426edc8439",
+    "name": "Pierre Balmain",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "c09c3ead-b1d3-4128-958d-96d3e677ad6e",
+    "name": "Oscar de la Renta",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "d475431f-6bb2-4b44-8539-2da479e33f78",
+    "name": "Christophe Decarnin",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "e1fa5eba-feb3-4ab0-b6af-3073f9a48ea3",
+    "name": "Olivier Rousteing",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "871be417-3ba1-44f4-bf50-1832be8ab40f",
+    "name": "Gianni Versace",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b981593b-e7ae-48c2-b3ea-1b849f72b6b4",
+    "name": "Donatella Versace",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b8c4958b-3f01-492a-886a-0b27114bdc21",
+    "name": "Jimmy Choo",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "3b5cf580-5556-462c-bccb-ceae32c18cb3",
+    "name": "Tamara Mellon",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "ab4b7a4e-8d91-481b-a499-f6cb67f613e6",
+    "name": "Sandra Choi",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "508787c2-652e-473f-8e72-a21a36ebbacb",
+    "name": "Jean Paul Gaultier",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "81a62145-0eb4-4794-8dad-9c29da21cd49",
+    "name": "Florence Tétier",
+    "missingFields": [
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b0a0906a-289f-433e-8a69-5d303d05e143",
+    "name": "Harris Reed",
+    "missingFields": [
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "e7c0abe1-c0c8-4c91-9083-a1c28b3ef8c6",
+    "name": "Carolina Herrera",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "4fed4179-fdec-4c26-87fc-c24aa9119eee",
+    "name": "Wes Gordon",
+    "missingFields": [
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "a792d49d-fe3a-43ce-98ec-f9f7bf8e69f4",
+    "name": "Dries Van Noten",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "95340026-9500-40bd-83ee-d3305fb892b2",
+    "name": "Gabrielle 'Coco' Chanel",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b4900562-e984-492b-95a6-e7e5d3d8653d",
+    "name": "Virginie Viard",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "895a0d9b-0f55-4922-b1a9-f21fd2835ddf",
+    "name": "Thierry Hermès",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "af2be333-72c9-4cf9-b038-d299ec83e13e",
+    "name": "Jean-Louis Dumas",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "7241ba70-ee10-4f43-b15e-5be0b6810077",
+    "name": "Pierre-Alexis Dumas",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "ba810a06-29ff-4bda-a014-056521891cee",
+    "name": "Mary-Kate Olsen",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "51fb89e2-afff-4ad3-9979-8485851402ce",
+    "name": "Ashley Olsen",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "f0797d48-5973-46be-b7c4-cda0339efeb4",
+    "name": "Rick Owens",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "5fad7133-f8e6-4afd-8c13-9680a5eb1b7b",
+    "name": "Marine Serre",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "460c6c39-e226-4d68-8457-e54344c06c77",
+    "name": "Grace Wales Bonner",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "544cdbcd-f4b0-406f-ba03-8c8f8f2c8e22",
+    "name": "Simone Rocha",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "2e0f42d1-0e4b-41a9-a956-b65ce68788a1",
+    "name": "Simon Porte Jacquemus",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "dcf26136-a31c-4ab5-ac6d-b69c70bcafd7",
+    "name": "Ditte Reffstrup",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "65c9b634-088f-4bb5-936a-1cc2469391a3",
+    "name": "Nicolaj Reffstrup",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "cbdb910b-5c86-448b-b19e-f2336e8c3bec",
+    "name": "Frans Truelsen",
+    "missingFields": [
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "5e776e52-f21e-4e74-911a-4f881d744326",
+    "name": "Rei Kawakubo",
+    "missingFields": [
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b1d8f217-a475-4f2a-8d0d-33bbda9fe335",
+    "name": "Yohji Yamamoto",
+    "missingFields": [
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+    "name": "Jun Takahashi",
+    "missingFields": [
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+    "name": "Nigo",
+    "missingFields": [
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1a772d69-b073-446d-9663-ea5126a0d5a1",
+    "name": "Peter Do",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "33248d72-602b-4ef4-8608-625292369b0f",
+    "name": "Christophe Lemaire",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb",
+    "name": "Jerry Lorenzo",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "866e28ed-97a5-462c-a36a-5d1fb0c8396f",
+    "name": "Emily Adams Bode",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
+    "name": "Sarah Burton",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
+    "name": "Salvatore Ferragamo",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1dd57296-e0d1-41d3-8551-be79597b40aa",
+    "name": "Franco Moschino",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "0e0d4241-6dba-4874-a971-3268fee55897",
+    "name": "Issey Miyake",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "f0a34c65-a960-4932-b0f4-b1a733cdd7ed",
+    "name": "Domenico Dolce",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "443ee067-2213-4307-9671-c19e09bf21d4",
+    "name": "Stefano Gabbana",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "04328830-5606-4cd5-b88f-7bc874623767",
+    "name": "Thierry Mugler",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b780392f-3fbf-475d-8291-4b05be489529",
+    "name": "Helmut Lang",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "c94c8b03-b1bc-401b-86d6-8a48c9caddb3",
+    "name": "Ann Demeulemeester",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "d03976f7-28a2-492b-b8cd-10ea2e56a272",
+    "name": "Vivienne Westwood",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "2084a058-5a10-4083-bbcf-ed574a6e0bce",
+    "name": "Walter Van Beirendonck",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "d534fa1c-949b-44de-a473-e7223e12cd30",
+    "name": "Takahiro Miyashita",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "aef70abd-6517-479a-ba91-cd46a2dff8f4",
+    "name": "Pierre Rainero",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b211bbb2-ce40-4c01-b744-062b27581494",
+    "name": "Jacqueline Karachi",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "c7429c62-eaca-417b-887e-d786285942a9",
+    "name": "Marie-Christine Laroche",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "61301534-1600-421f-bad1-1ddda9a16e50",
+    "name": "Carole Forestier-Kasapi",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "08ca61c2-54f4-4eca-be32-0af115551378",
+    "name": "Cyrille Vigneron",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "2d52a8dd-cc4c-4853-a363-78ab49e79d36",
+    "name": "Jeanne Toussaint",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "606a70d6-5aa6-40a1-b686-6decdb495b97",
+    "name": "Nicolas Bos",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "846447ec-f8d6-484c-bfff-412588dd70a4",
+    "name": "Claude Arpels",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "803b88b3-336a-455c-a7c6-76b6e64d6a95",
+    "name": "René Sim Lacaze",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "403a5315-33a6-4f4b-8b12-32066234d060",
+    "name": "Zaim Kamal",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+    "name": "Marco Tomasetta",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "f18c8ec3-6d4f-49d7-8ae9-fe696199ff82",
+    "name": "Davide Cerrato",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "6900195d-eae9-44cd-8e7c-8c18aa2164ef",
+    "name": "Yves Piaget",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "f3c735bf-aeda-42fa-bac4-8ed747334d5d",
+    "name": "Stéphanie Sivrière",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "9af5a21b-35d0-4f37-9853-de1f293106a6",
+    "name": "Franck Touzeau",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "5360d91e-4d67-442c-9488-d9da9317a2a3",
+    "name": "Christian Knoop",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
+    "name": "Kurt Klaus",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
+    "name": "Georges Kern",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
+    "name": "Janek Deleskiewicz",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
+    "name": "Lionel Favre",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
+    "name": "Jérôme Lambert",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "1f42050f-ff0b-4044-8526-98f3512a26d5",
+    "name": "Norbert Stumpfl",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "ae8ba877-d13d-4c29-be15-89b7032fbb9f",
+    "name": "Brendan Mullane",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "5efbd993-8725-47b4-bba3-09cd2b75be37",
+    "name": "Justin Thornton",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "9174f753-30ee-4ff0-8330-704de490371f",
+    "name": "Thea Bregazzi",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "f008ee73-54ad-4796-b5a4-40eff9f8a8ca",
+    "name": "Christina Zeller",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "74b1131d-2776-404b-af1d-9432d17e2a2d",
+    "name": "Mark Weston",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "e0f5a1b9-8ec1-47ac-bc76-aac8a8d33e36",
+    "name": "John Ray",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+    "name": "Demna",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "ddb5fa27-4345-4382-8419-fe18ceaca410",
+    "name": "Haider Ackermann",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
+    "name": "Casey Cadwallader",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "cl-hist-001",
+    "name": "Christian Lacroix",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "sw-hist-001",
+    "name": "Sacha Walckhoff",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "mfc-hist-001",
+    "name": "Marie-France Cohen",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "ci-hist-001",
+    "name": "Christine Innamorato",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "jm-hist-001",
+    "name": "James Mullen",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "fw-hist-001",
+    "name": "Frederik Willems",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "nt-hist-001",
+    "name": "Nick Tentis",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "vw-hist-001",
+    "name": "Vera Wang",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "jd-hist-001",
+    "name": "Josephine Dahlin",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "hs-hist-001",
+    "name": "Holly Speck",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "pd-hist-001",
+    "name": "Pascal Dangin",
+    "missingFields": [
+      "nationality",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "gv-hist-001",
+    "name": "Giambattista Valli",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "bc-hist-001",
+    "name": "Bernard Cohen",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "pm-hist-001",
+    "name": "Peter Mullen",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "jr-hist-001",
+    "name": "jr-hist-001",
+    "missingFields": [
+      "nationality",
+      "currentRole",
+      "biography"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  },
+  {
+    "id": "rl-hist-001",
+    "name": "Ralph Lauren",
+    "missingFields": [
+      "nationality",
+      "currentRole"
+    ],
+    "incompleteFields": [],
+    "emptyArrays": [
+      "education",
+      "awards",
+      "signatureStyles"
+    ],
+    "zeroValues": []
+  }
+]

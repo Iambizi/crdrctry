@@ -1,0 +1,19 @@
+{
+  "totalBrands": 99,
+  "brandsWithIssues": 99,
+  "totalDesigners": 178,
+  "designersWithIssues": 178,
+  "commonIssues": {
+    "brands": {
+      "missingFields": 261,
+      "incompleteFields": 7,
+      "emptyArrays": 31
+    },
+    "designers": {
+      "missingFields": 422,
+      "incompleteFields": 0,
+      "emptyArrays": 515,
+      "zeroValues": 0
+    }
+  }
+}

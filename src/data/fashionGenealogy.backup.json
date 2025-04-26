@@ -3644,7 +3644,7 @@
     {
       "id": "brand-1",
       "name": "christian-lacroix",
-      "foundedYear": 2025,
+      "foundedYear": 1987,
       "founder": "Unknown",
       "createdAt": "2025-04-12T04:54:38.128Z",
       "updatedAt": "2025-04-12T04:54:38.128Z"
@@ -3652,7 +3652,7 @@
     {
       "id": "brand-3",
       "name": "thomas-pink",
-      "foundedYear": 2025,
+      "foundedYear": 1984,
       "founder": "Unknown",
       "createdAt": "2025-04-12T04:54:38.131Z",
       "updatedAt": "2025-04-12T04:54:38.131Z"
@@ -3660,7 +3660,7 @@
     {
       "id": "brand-4",
       "name": "vera-wang",
-      "foundedYear": 2025,
+      "foundedYear": 1990,
       "founder": "Unknown",
       "createdAt": "2025-04-12T04:54:38.132Z",
       "updatedAt": "2025-04-12T04:54:38.132Z"
@@ -3668,7 +3668,7 @@
     {
       "id": "brand-5",
       "name": "ralph-lauren",
-      "foundedYear": 2025,
+      "foundedYear": 1967,
       "founder": "Unknown",
       "createdAt": "2025-04-12T04:54:38.132Z",
       "updatedAt": "2025-04-12T04:54:38.132Z"
@@ -3689,7 +3689,7 @@
     {
       "id": "lacoste",
       "name": "lacoste",
-      "foundedYear": 2025,
+      "foundedYear": 1933,
       "founder": "Unknown",
       "createdAt": "2025-04-12T16:47:52.931Z",
       "updatedAt": "2025-04-12T16:47:52.931Z",
@@ -3701,7 +3701,7 @@
     {
       "id": "uniqlo",
       "name": "uniqlo",
-      "foundedYear": 2025,
+      "foundedYear": 1949,
       "founder": "Unknown",
       "createdAt": "2025-04-12T16:47:52.931Z",
       "updatedAt": "2025-04-12T16:47:52.931Z",
@@ -3713,7 +3713,7 @@
     {
       "id": "adidas",
       "name": "Adidas",
-      "foundedYear": 2025,
+      "foundedYear": 1949,
       "founder": "Unknown",
       "createdAt": "2025-04-12T16:47:52.931Z",
       "updatedAt": "2025-04-12T16:47:52.931Z",
@@ -3723,77 +3723,66 @@
       "lastCategorized": "2025-04-12T17:13:07.097Z"
     },
     {
-      "id": "gianni-versace",
-      "name": "Versace",
-      "foundedYear": 2025,
-      "founder": "Unknown",
-      "createdAt": "2025-04-12T16:47:52.932Z",
-      "updatedAt": "2025-04-12T16:47:52.932Z",
-      "hasHistoricalData": true,
-      "notes": "Should be referenced as Versace",
-      "lastCategorized": "2025-04-12T17:13:07.096Z"
-    },
-    {
       "id": "miyake-design-studio",
       "name": "Miyake Design Studio",
-      "foundedYear": 2025,
-      "founder": "Unknown",
+      "foundedYear": 1970,
+      "founder": "Issey Miyake",
       "createdAt": "2025-04-12T16:47:52.932Z",
       "updatedAt": "2025-04-12T16:47:52.932Z",
       "hasHistoricalData": true,
       "category": "design_studio",
-      "notes": "Design studio/innovation hub, not primary brand",
+      "notes": "Design studio founded by Issey Miyake in 1970 to support innovation and product development across Issey Miyake collections. Functions as an innovation hub rather than a consumer-facing brand.",
       "lastCategorized": "2025-04-12T17:13:07.097Z"
     },
     {
       "id": "ann-demeulemeester-serax",
       "name": "Ann Demeulemeester Serax",
-      "foundedYear": 2025,
-      "founder": "Unknown",
+      "foundedYear": 2020,
+      "founder": "Ann Demeulemeester",
       "createdAt": "2025-04-12T16:47:52.933Z",
       "updatedAt": "2025-04-12T16:47:52.933Z",
       "hasHistoricalData": true,
       "category": "collaboration_line",
       "parentBrand": "ann-demeulemeester",
-      "notes": "Homeware collaboration line, separate from main fashion label",
+      "notes": "Homeware and tableware collaboration line between Ann Demeulemeester and Serax, launched in 2020 under Ann Demeulemeester's artistic direction, separate from the main fashion label.",
       "lastCategorized": "2025-04-12T17:13:07.097Z"
     },
     {
       "id": "sex",
       "name": "SEX",
-      "foundedYear": 2025,
-      "founder": "Unknown",
+      "foundedYear": 1974,
+      "founder": "Vivienne Westwood and Malcolm McLaren",
       "createdAt": "2025-04-12T16:47:52.933Z",
       "updatedAt": "2025-04-12T16:47:52.933Z",
       "hasHistoricalData": true,
       "category": "historical_retail",
-      "notes": "Historical retail location/cultural incubator, not a traditional brand",
+      "notes": "Historical retail location and cultural incubator founded by Vivienne Westwood and Malcolm McLaren in 1974, pivotal to the punk movement; not a traditional fashion brand.",
       "lastCategorized": "2025-04-12T17:13:07.097Z"
     },
     {
       "id": "walter-van-beirendonck",
-      "name": "walter-van-beirendonck",
-      "foundedYear": 2025,
-      "founder": "Unknown",
+      "name": "Walter Van Beirendonck",
+      "foundedYear": 1983,
+      "founder": "Walter Van Beirendonck",
       "createdAt": "2025-04-12T16:47:52.933Z",
       "updatedAt": "2025-04-12T16:47:52.933Z",
       "hasHistoricalData": true,
       "category": "designer_label",
-      "notes": "Designer name, not brand - needs proper brand format",
+      "notes": "Eponymous designer label launched by Walter Van Beirendonck in 1983; part of the Antwerp Six movement.",
       "lastCategorized": "2025-04-12T17:13:07.097Z"
     },
     {
       "id": "royal-academy-antwerp",
-      "name": "Royal Academy Antwerp",
-      "foundedYear": 2025,
-      "founder": "Unknown",
+      "name": "Royal Academy of Fine Arts Antwerp",
+      "foundedYear": 1663,
+      "founder": "David Teniers the Younger (under city patronage)",
       "createdAt": "2025-04-12T16:47:52.933Z",
       "updatedAt": "2025-04-12T16:47:52.933Z",
       "hasHistoricalData": true,
       "category": "educational_institution",
-      "notes": "Educational institution, not a brand",
+      "notes": "Historic educational institution founded in 1663, known for its Fine Arts and Fashion departments. Produced influential designers such as the Antwerp Six. Not a commercial brand.",
       "lastCategorized": "2025-04-12T17:13:07.097Z"
-    }
+    }    
   ],
   "tenures": [
     {
