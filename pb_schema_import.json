@@ -330,7 +330,7 @@
           "name": "startYear",
           "type": "number",
           "system": false,
-          "required": true,
+          "required": false,
           "min": 1800,
           "noDecimal": true
         },

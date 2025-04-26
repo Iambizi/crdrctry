@@ -45,7 +45,7 @@ export interface Brand extends BaseEntity {
   founder: string;
   parentCompany?: string;
   parentBrand?: string;
-  category?: 'luxuryFashion' | 'designStudio' | 'collaborationLine' | 'historicalRetail' | 'designerLabel' | 'educationalInstitution' | 'collaborationPartner';
+  category?: 'luxury_fashion' | 'design_studio' | 'collaboration_line' | 'historical_retail' | 'designer_label' | 'educational_institution' | 'collaboration_partner';
   logoUrl?: string;
   headquarters?: string;
   specialties?: string[];

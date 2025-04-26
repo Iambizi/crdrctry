@@ -1,4 +1,4 @@
-import PocketBase from 'pocketbase';
+import PocketBase, { ClientResponseError } from 'pocketbase';
 import { readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -17,61 +17,50 @@ const __dirname = dirname(__filename);
 // Initialize PocketBase
 const pb = new PocketBase(process.env.POCKETBASE_URL);
 
-async function deleteCollection(collectionName: string) {
-  console.log(`🗑️  Deleting all records from ${collectionName}...`);
-  try {
-    let page = 1;
-    let hasMore = true;
-    
-    while (hasMore) {
-      const records = await pb.collection(collectionName).getList(page, 100);
-      if (records.items.length === 0) {
-        hasMore = false;
-        continue;
-      }
-      
-      // Delete all records in this page in parallel
-      await Promise.all(
-        records.items.map(async (record) => {
-          await pb.collection(collectionName).delete(record.id);
-          process.stdout.write('.');
-        })
-      );
-      
-      page++;
-    }
-    console.log('\n✅ Deletion complete');
-  } catch (error) {
-    console.error(`❌ Error deleting records from ${collectionName}:`, error);
-    throw error; // Propagate error
-  }
-}
-
-async function deleteAllRecords() {
-  try {
-    // Delete all collections in parallel
-    await Promise.all([
-      deleteCollection('fd_relationships'),
-      deleteCollection('fd_tenures'),
-      deleteCollection('fd_designers'),
-      deleteCollection('fd_brands')
-    ]);
-    console.log('\n✅ All collections cleared');
-  } catch (error) {
-    console.error('❌ Error during deletion:', error);
-    throw error;
-  }
-}
-
 async function populateCollection<T extends Record<string, unknown>>(collectionName: string, data: T[]) {
   console.log(`\n📥 Populating ${collectionName}...`);
   try {
+    const createdRecords = new Map<string, string>();
+    const nameToOriginalIdMap = new Map<string, string>();
+
     for (const item of data) {
-      console.log('Inserting item:', JSON.stringify(item, null, 2));
-      await pb.collection(collectionName).create(item);
-      process.stdout.write('.');
+      try {
+        console.log('Inserting item:', JSON.stringify(item, null, 2));
+        const record = await pb.collection(collectionName).create(item);
+        
+        // Store the mapping between name and new ID for brands and designers
+        if ('name' in item && typeof item.name === 'string') {
+          createdRecords.set(item.name, record.id);
+        }
+
+        // Store mapping between original ID and new ID if available
+        if ('id' in item && typeof item.id === 'string') {
+          nameToOriginalIdMap.set(item.id, record.id);
+        }
+
+        process.stdout.write('.');
+      } catch (error) {
+        if (error instanceof ClientResponseError && error.response?.data?.name?.code === 'validation_not_unique') {
+          const itemName = 'name' in item && typeof item.name === 'string' ? item.name : 'unknown';
+          console.warn(`⚠️  Duplicate name found for ${itemName}, skipping...`);
+          // If this is a duplicate, try to get the existing record's ID
+          try {
+            const existingRecords = await pb.collection(collectionName).getList(1, 1, {
+              filter: `name = "${itemName}"`
+            });
+            if (existingRecords.items.length > 0) {
+              createdRecords.set(itemName, existingRecords.items[0].id);
+            }
+          } catch (lookupError) {
+            console.error(`❌ Error looking up existing record:`, lookupError);
+          }
+        } else {
+          throw error;
+        }
+      }
     }
     console.log('\n✅ Population complete');
+    return createdRecords;
   } catch (error) {
     console.error(`❌ Error populating ${collectionName}:`, error);
     throw error;
@@ -91,25 +80,35 @@ async function main() {
     const dataPath = join(__dirname, '../src/data/fashionGenealogy.json');
     const data = JSON.parse(readFileSync(dataPath, 'utf-8')) as FashionGenealogyData;
 
-    // Delete existing records
-    await deleteAllRecords();
-
     // Transform and extract data
-    const brandsMap = new Map<string, CreateBrand>();
+    const brandsToCreate = new Map<string, CreateBrand>();
     const designers: CreateDesigner[] = [];
     const tenures: CreateTenure[] = [];
     const relationships: CreateRelationship[] = [];
 
     // Process brands first
     for (const brand of data.brands) {
-      brandsMap.set(brand.name, {
+      // Convert category to snake_case
+      const categoryMap: Record<string, string> = {
+        luxuryFashion: 'luxury_fashion',
+        designStudio: 'design_studio',
+        collaborationLine: 'collaboration_line',
+        historicalRetail: 'historical_retail',
+        designerLabel: 'designer_label',
+        educationalInstitution: 'educational_institution',
+        collaborationPartner: 'collaboration_partner'
+      };
+
+      const category = categoryMap[brand.category || ''] || 'luxury_fashion';
+
+      brandsToCreate.set(brand.name, {
         name: brand.name,
         description: '', // This will be added later
         foundedYear: brand.foundedYear || 0,
         founder: brand.founder || '',
         headquarters: brand.headquarters || '',
         parentCompany: brand.parentCompany || '',
-        category: brand.category || 'luxuryFashion',
+        category: category as 'luxury_fashion' | 'design_studio' | 'collaboration_line' | 'historical_retail' | 'designer_label' | 'educational_institution' | 'collaboration_partner',
         website: brand.website || '',
         socialMedia: brand.socialMedia || {},
         logoUrl: brand.logoUrl || ''
@@ -135,11 +134,31 @@ async function main() {
       });
     }
 
-    // Process tenures
+    // Populate brands and designers first to get their IDs
+    const brandIdMap = await populateCollection('fd_brands', Array.from(brandsToCreate.values()));
+    const designerIdMap = await populateCollection('fd_designers', designers);
+
+    // Process tenures with the new IDs
     for (const tenure of data.tenures) {
+      const designer = data.designers.find(d => d.id === tenure.designerId);
+      const brand = data.brands.find(b => b.id === tenure.brandId);
+
+      if (!designer || !brand) {
+        console.warn(`⚠️  Skipping tenure: missing designer or brand reference`);
+        continue;
+      }
+
+      const designerId = designerIdMap.get(designer.name);
+      const brandId = brandIdMap.get(brand.name);
+
+      if (!designerId || !brandId) {
+        console.warn(`⚠️  Skipping tenure: could not find new IDs for ${designer.name} or ${brand.name}`);
+        continue;
+      }
+
       tenures.push({
-        designer: tenure.designerId,
-        brand: tenure.brandId,
+        designer: designerId,
+        brand: brandId,
         role: tenure.role || '',
         department: tenure.department || Department.allDepartments,
         startYear: tenure.startYear,
@@ -152,12 +171,30 @@ async function main() {
       });
     }
 
-    // Process relationships
+    // Process relationships with the new IDs
     for (const relationship of data.relationships) {
+      const sourceDesigner = data.designers.find(d => d.id === relationship.sourceDesignerId);
+      const targetDesigner = data.designers.find(d => d.id === relationship.targetDesignerId);
+      const brand = data.brands.find(b => b.id === relationship.brandId);
+
+      if (!sourceDesigner || !targetDesigner || !brand) {
+        console.warn(`⚠️  Skipping relationship: missing designer or brand reference`);
+        continue;
+      }
+
+      const sourceDesignerId = designerIdMap.get(sourceDesigner.name);
+      const targetDesignerId = designerIdMap.get(targetDesigner.name);
+      const brandId = brandIdMap.get(brand.name);
+
+      if (!sourceDesignerId || !targetDesignerId || !brandId) {
+        console.warn(`⚠️  Skipping relationship: could not find new IDs`);
+        continue;
+      }
+
       relationships.push({
-        sourceDesigner: relationship.sourceDesignerId,
-        targetDesigner: relationship.targetDesignerId,
-        brand: relationship.brandId,
+        sourceDesigner: sourceDesignerId,
+        targetDesigner: targetDesignerId,
+        brand: brandId,
         type: relationship.type || RelationshipType.collaboration,
         startYear: relationship.startYear,
         endYear: relationship.endYear,
@@ -166,15 +203,13 @@ async function main() {
       });
     }
 
-    // Populate with new data in the correct order
-    await populateCollection('fd_brands', Array.from(brandsMap.values()));
-    await populateCollection('fd_designers', designers);
+    // Populate tenures and relationships
     await populateCollection('fd_tenures', tenures);
     await populateCollection('fd_relationships', relationships);
 
-    console.log('\n🎉 Database reset and population complete!');
+    console.log('\n🎉 Database population complete!');
   } catch (error) {
-    console.error('❌ Reset and population failed:', error);
+    console.error('❌ Population failed:', error);
     throw error;
   }
 }
