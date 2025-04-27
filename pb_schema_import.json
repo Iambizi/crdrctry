@@ -96,6 +96,30 @@
           "system": false,
           "required": true,
           "values": ["ACTIVE", "RETIRED", "DECEASED"]
+        },
+        {
+          "id": "field_verificationStatus",
+          "name": "verificationStatus",
+          "type": "select",
+          "system": false,
+          "required": true,
+          "values": ["VERIFIED", "UNVERIFIED", "PENDING"]
+        },
+        {
+          "id": "field_confidence",
+          "name": "confidence",
+          "type": "number",
+          "system": false,
+          "required": false,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "id": "field_sources",
+          "name": "sources",
+          "type": "json",
+          "system": false,
+          "required": false
         }
       ],
       "indexes": [
@@ -197,6 +221,30 @@
           "type": "url",
           "system": false,
           "required": false
+        },
+        {
+          "id": "field_verificationStatus",
+          "name": "verificationStatus",
+          "type": "select",
+          "system": false,
+          "required": true,
+          "values": ["VERIFIED", "UNVERIFIED", "PENDING"]
+        },
+        {
+          "id": "field_confidence",
+          "name": "confidence",
+          "type": "number",
+          "system": false,
+          "required": false,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "id": "field_sources",
+          "name": "sources",
+          "type": "json",
+          "system": false,
+          "required": false
         }
       ],
       "indexes": [
@@ -267,6 +315,30 @@
         {
           "id": "field_achievements",
           "name": "achievements",
+          "type": "json",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "field_verificationStatus",
+          "name": "verificationStatus",
+          "type": "select",
+          "system": false,
+          "required": true,
+          "values": ["VERIFIED", "UNVERIFIED", "PENDING"]
+        },
+        {
+          "id": "field_confidence",
+          "name": "confidence",
+          "type": "number",
+          "system": false,
+          "required": false,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "id": "field_sources",
+          "name": "sources",
           "type": "json",
           "system": false,
           "required": false
@@ -353,6 +425,30 @@
         {
           "id": "field_collaborationProjects",
           "name": "collaborationProjects",
+          "type": "json",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "field_verificationStatus",
+          "name": "verificationStatus",
+          "type": "select",
+          "system": false,
+          "required": true,
+          "values": ["VERIFIED", "UNVERIFIED", "PENDING"]
+        },
+        {
+          "id": "field_confidence",
+          "name": "confidence",
+          "type": "number",
+          "system": false,
+          "required": false,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "id": "field_sources",
+          "name": "sources",
           "type": "json",
           "system": false,
           "required": false

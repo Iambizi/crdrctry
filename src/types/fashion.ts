@@ -11,11 +11,35 @@ export enum DesignerStatus {
   deceased = "DECEASED",
 }
 
+export enum VerificationStatus {
+  verified = "VERIFIED",
+  unverified = "UNVERIFIED",
+  pending = "PENDING"
+}
+
+export enum Department {
+  jewelry = "Jewelry",
+  watches = "Watches",
+  readyToWear = "Ready-to-Wear",
+  accessories = "Accessories",
+  leatherGoods = "Leather Goods",
+  menswear = "Menswear",
+  womenswear = "Womenswear",
+  hauteCouture = "Haute Couture",
+  allDepartments = "All Departments"
+}
+
 // Base type for all entities
 export interface BaseEntity {
   id?: string;
   createdAt?: string | Date;
   updatedAt?: string | Date;
+  /** Confidence score (0-1) indicating data reliability */
+  confidence?: number;
+  /** Verification status of the entity */
+  verificationStatus?: VerificationStatus;
+  /** List of sources used to verify the information */
+  sources?: string[];
 }
 
 export interface Designer extends BaseEntity {
@@ -60,18 +84,6 @@ export interface Brand extends BaseEntity {
     twitter?: string;
     facebook?: string;
   };
-}
-
-export enum Department {
-  jewelry = "Jewelry",
-  watches = "Watches",
-  readyToWear = "Ready-to-Wear",
-  accessories = "Accessories",
-  leatherGoods = "Leather Goods",
-  menswear = "Menswear",
-  womenswear = "Womenswear",
-  hauteCouture = "Haute Couture",
-  allDepartments = "All Departments"
 }
 
 export interface Tenure extends BaseEntity {
