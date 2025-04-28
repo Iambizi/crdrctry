@@ -1,3 +1,4 @@
+// Enums for standardized values
 export enum RelationshipType {
   mentorship = "mentorship",
   succession = "succession",
@@ -27,6 +28,26 @@ export enum Department {
   womenswear = "Womenswear",
   hauteCouture = "Haute Couture",
   allDepartments = "All Departments"
+}
+
+export enum PricePoint {
+  contemporary = "Contemporary",
+  entryLuxury = "Entry Luxury",
+  luxury = "Luxury",
+  ultraLuxury = "Ultra Luxury",
+  hauteCouture = "Haute Couture"
+}
+
+export enum Market {
+  westernEurope = "Western Europe",
+  northAmerica = "North America",
+  eastAsia = "East Asia",
+  southeastAsia = "Southeast Asia",
+  middleEast = "Middle East",
+  latinAmerica = "Latin America",
+  oceania = "Oceania",
+  africa = "Africa",
+  global = "Global"
 }
 
 // Base type for all entities
@@ -61,6 +82,11 @@ export interface Designer extends BaseEntity {
     linkedin?: string;
     facebook?: string;
   };
+  // Verification fields
+  confidence?: number; // Score between 0.0 and 1.0
+  verificationStatus?: VerificationStatus;
+  sources?: string[]; // URLs to official sources, press releases, etc.
+  lastVerified?: string; // ISO 8601 date
 }
 
 export interface Brand extends BaseEntity {
@@ -73,8 +99,8 @@ export interface Brand extends BaseEntity {
   logoUrl?: string;
   headquarters?: string;
   specialties?: string[];
-  pricePoint?: string;
-  markets?: string[];
+  pricePoint?: PricePoint;
+  markets?: Market[];
   website?: string;
   hasHistoricalData?: boolean;
   notes?: string;
@@ -84,6 +110,11 @@ export interface Brand extends BaseEntity {
     twitter?: string;
     facebook?: string;
   };
+  // Verification fields
+  confidence?: number; // Score between 0.0 and 1.0
+  verificationStatus?: VerificationStatus;
+  sources?: string[]; // URLs to official sources, press releases, etc.
+  lastVerified?: string; // ISO 8601 date
 }
 
 export interface Tenure extends BaseEntity {

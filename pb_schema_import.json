@@ -223,6 +223,41 @@
           "required": false
         },
         {
+          "id": "field_pricePoint",
+          "name": "pricePoint",
+          "type": "select",
+          "system": false,
+          "required": false,
+          "values": [
+            "Contemporary",
+            "Entry Luxury",
+            "Luxury",
+            "Ultra Luxury",
+            "Haute Couture"
+          ]
+        },
+        {
+          "id": "field_markets",
+          "name": "markets",
+          "type": "select",
+          "system": false,
+          "required": false,
+          "values": [
+            "Western Europe",
+            "North America",
+            "East Asia",
+            "Southeast Asia",
+            "Middle East",
+            "Latin America",
+            "Oceania",
+            "Africa",
+            "Global"
+          ],
+          "options": {
+            "maxSelect": -1
+          }
+        },
+        {
           "id": "field_verificationStatus",
           "name": "verificationStatus",
           "type": "select",
