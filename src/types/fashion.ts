@@ -31,11 +31,10 @@ export enum Department {
 }
 
 export enum PricePoint {
-  contemporary = "Contemporary",
-  entryLuxury = "Entry Luxury",
-  luxury = "Luxury",
-  ultraLuxury = "Ultra Luxury",
-  hauteCouture = "Haute Couture"
+  ULTRA_LUXURY = 'Ultra Luxury',
+  LUXURY = 'Luxury',
+  ENTRY_LUXURY = 'Entry Luxury',
+  CONTEMPORARY = 'Contemporary'
 }
 
 export enum Market {
@@ -61,6 +60,8 @@ export interface BaseEntity {
   verificationStatus?: VerificationStatus;
   /** List of sources used to verify the information */
   sources?: string[];
+  /** ISO 8601 date of last verification */
+  lastVerified?: string;
 }
 
 export interface Designer extends BaseEntity {
@@ -86,7 +87,6 @@ export interface Designer extends BaseEntity {
   confidence?: number; // Score between 0.0 and 1.0
   verificationStatus?: VerificationStatus;
   sources?: string[]; // URLs to official sources, press releases, etc.
-  lastVerified?: string; // ISO 8601 date
 }
 
 export interface Brand extends BaseEntity {
@@ -104,7 +104,6 @@ export interface Brand extends BaseEntity {
   website?: string;
   hasHistoricalData?: boolean;
   notes?: string;
-  lastCategorized?: string;
   socialMedia?: {
     instagram?: string;
     twitter?: string;
@@ -114,7 +113,6 @@ export interface Brand extends BaseEntity {
   confidence?: number; // Score between 0.0 and 1.0
   verificationStatus?: VerificationStatus;
   sources?: string[]; // URLs to official sources, press releases, etc.
-  lastVerified?: string; // ISO 8601 date
 }
 
 export interface Tenure extends BaseEntity {

@@ -209,13 +209,6 @@
           "required": false
         },
         {
-          "id": "field_socialMedia",
-          "name": "socialMedia",
-          "type": "json",
-          "system": false,
-          "required": false
-        },
-        {
           "id": "field_logoUrl",
           "name": "logoUrl",
           "type": "url",
@@ -232,8 +225,7 @@
             "Contemporary",
             "Entry Luxury",
             "Luxury",
-            "Ultra Luxury",
-            "Haute Couture"
+            "Ultra Luxury"
           ]
         },
         {
@@ -256,6 +248,44 @@
           "options": {
             "maxSelect": -1
           }
+        },
+        {
+          "id": "field_parentBrand",
+          "name": "parentBrand",
+          "type": "text",
+          "system": false,
+          "required": false,
+          "min": 0,
+          "max": 255,
+          "pattern": ""
+        },
+        {
+          "id": "field_hasHistoricalData",
+          "name": "hasHistoricalData",
+          "type": "bool",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "field_notes",
+          "name": "notes",
+          "type": "editor",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "field_socialMedia",
+          "name": "socialMedia",
+          "type": "json",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "field_lastVerified",
+          "name": "lastVerified",
+          "type": "date",
+          "system": false,
+          "required": false
         },
         {
           "id": "field_verificationStatus",
