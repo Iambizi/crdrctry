@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-04-29T01:12:16.753Z",
+  "timestamp": "2025-04-29T01:41:53.160Z",
   "nonUuidEntities": {
     "brands": [],
     "designers": [],
@@ -8,6 +8,35 @@
   },
   "invalidReferences": {
     "tenures": [
+      {
+        "index": 90,
+        "tenure": {
+          "id": "8ba25481-5377-4420-aedc-378626c2aeb9",
+          "designerId": "871be417-3ba1-44f4-bf50-1832be8ab40f",
+          "brandId": "d36ddc62-5f4b-422a-9167-473edea6498d",
+          "role": "Founder and Creative Director",
+          "startYear": 1978,
+          "endYear": 1997,
+          "isCurrentRole": false,
+          "createdAt": "2025-04-09T02:53:33.919Z",
+          "updatedAt": "2025-04-09T02:53:33.919Z",
+          "department": "All Departments"
+        }
+      },
+      {
+        "index": 91,
+        "tenure": {
+          "id": "faed151d-abaf-4dfb-a7da-88ef77919f65",
+          "designerId": "b981593b-e7ae-48c2-b3ea-1b849f72b6b4",
+          "brandId": "d36ddc62-5f4b-422a-9167-473edea6498d",
+          "role": "Chief Creative Officer",
+          "startYear": 1997,
+          "isCurrentRole": true,
+          "createdAt": "2025-04-09T02:53:33.919Z",
+          "updatedAt": "2025-04-09T02:53:33.919Z",
+          "department": "All Departments"
+        }
+      },
       {
         "index": 584,
         "tenure": {
@@ -4257,6 +4286,34 @@
     ],
     "relationships": [
       {
+        "index": 78,
+        "relationship": {
+          "id": "b2831d03-668f-4266-ae51-c51b361d03d8",
+          "sourceDesignerId": "871be417-3ba1-44f4-bf50-1832be8ab40f",
+          "targetDesignerId": "b981593b-e7ae-48c2-b3ea-1b849f72b6b4",
+          "brandId": "d36ddc62-5f4b-422a-9167-473edea6498d",
+          "type": "collaboration",
+          "startYear": 1997,
+          "description": "Co-Creative Directors at Versace",
+          "createdAt": "2025-04-09T02:53:33.920Z",
+          "updatedAt": "2025-04-09T02:53:33.920Z"
+        }
+      },
+      {
+        "index": 79,
+        "relationship": {
+          "id": "bb5b437e-9d06-4a9e-9dd2-2a40c287640f",
+          "sourceDesignerId": "b981593b-e7ae-48c2-b3ea-1b849f72b6b4",
+          "targetDesignerId": "ab4b7a4e-8d91-481b-a499-f6cb67f613e6",
+          "brandId": "d36ddc62-5f4b-422a-9167-473edea6498d",
+          "type": "collaboration",
+          "startYear": 2013,
+          "description": "Sandra Choi joined Versace as Creative Director",
+          "createdAt": "2025-04-09T02:53:33.920Z",
+          "updatedAt": "2025-04-09T02:53:33.920Z"
+        }
+      },
+      {
         "index": 553,
         "relationship": {
           "id": "8f286052-15ca-4e63-ab30-3ce69c3fcb50",
@@ -7040,25 +7097,6 @@
           "collaborationProjects": [
             "Brand identity refresh",
             "Digital strategy"
-          ]
-        }
-      },
-      {
-        "index": 1207,
-        "relationship": {
-          "id": "rel-10",
-          "sourceDesignerId": "1424ea9f-28f7-4661-b799-285914e5175c",
-          "targetDesignerId": "09fdc493-c26f-4072-b05b-966a0f5c3045",
-          "brandId": "cececf4e-866f-43b0-8e3e-49a0dbe3b1dc",
-          "type": "mentorship",
-          "startYear": 1992,
-          "endYear": 2009,
-          "description": "Walckhoff served as Lacroix's assistant and studio director for 17 years before succeeding him as Creative Director",
-          "createdAt": "2025-04-12T04:54:38.129Z",
-          "updatedAt": "2025-04-12T04:54:38.129Z",
-          "collaborationProjects": [
-            "Ready-to-wear collections",
-            "Accessories lines"
           ]
         }
       },
