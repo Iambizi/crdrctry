@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Brand, Designer, Relationship, Tenure } from '../src/types/fashion';
@@ -23,15 +23,15 @@ interface ValidationResult {
     totalDesigners: number;
     totalTenures: number;
     totalRelationships: number;
-    duplicateIds: {
-      brands: string[];
-      designers: string[];
-      tenures: string[];
-      relationships: string[];
+    nonUuidEntities: {
+      brands: Array<{ id: string; name: string }>;
+      designers: Array<{ id: string; name: string }>;
+      tenures: Array<{ id: string; brandId: string; designerId: string }>;
+      relationships: Array<{ id: string; sourceId: string; targetId: string; brandId: string }>;
     };
     invalidReferences: {
-      tenures: string[];
-      relationships: string[];
+      tenures: Array<{ index: number; tenure: Tenure }>;
+      relationships: Array<{ index: number; relationship: Relationship }>;
     };
   };
 }
@@ -51,7 +51,7 @@ function validateDataIntegrity(): ValidationResult {
       totalDesigners: fashionGenealogyData.designers.length,
       totalTenures: fashionGenealogyData.tenures.length,
       totalRelationships: fashionGenealogyData.relationships.length,
-      duplicateIds: {
+      nonUuidEntities: {
         brands: [],
         designers: [],
         tenures: [],
@@ -77,14 +77,14 @@ function validateDataIntegrity(): ValidationResult {
     } else {
       if (seenIds.has(designer.id)) {
         result.errors.push(`Duplicate ID found: ${designer.id}`);
-        result.stats.duplicateIds.designers.push(designer.id);
         result.isValid = false;
       } else {
         seenIds.add(designer.id);
         designerIds.add(designer.id);
       }
       if (!isValidUUID(designer.id)) {
-        result.errors.push(`Invalid UUID format: ${designer.id}`);
+        result.errors.push(`Invalid UUID format for designer: ${designer.id}`);
+        result.stats.nonUuidEntities.designers.push({ id: designer.id, name: designer.name });
         result.isValid = false;
       }
     }
@@ -98,14 +98,14 @@ function validateDataIntegrity(): ValidationResult {
     } else {
       if (seenIds.has(brand.id)) {
         result.errors.push(`Duplicate ID found: ${brand.id}`);
-        result.stats.duplicateIds.brands.push(brand.id);
         result.isValid = false;
       } else {
         seenIds.add(brand.id);
         brandIds.add(brand.id);
       }
       if (!isValidUUID(brand.id)) {
-        result.errors.push(`Invalid UUID format: ${brand.id}`);
+        result.errors.push(`Invalid UUID format for brand: ${brand.id}`);
+        result.stats.nonUuidEntities.brands.push({ id: brand.id, name: brand.name });
         result.isValid = false;
       }
     }
@@ -113,36 +113,52 @@ function validateDataIntegrity(): ValidationResult {
 
   // Validate tenure references
   fashionGenealogyData.tenures.forEach((tenure, index) => {
+    let hasError = false;
     if (!designerIds.has(tenure.designerId)) {
       result.errors.push(`Tenure ${index} references non-existent designer ID: ${tenure.designerId}`);
-      result.stats.invalidReferences.tenures.push(tenure.designerId);
+      hasError = true;
       result.isValid = false;
     }
     if (!brandIds.has(tenure.brandId)) {
       result.errors.push(`Tenure ${index} references non-existent brand ID: ${tenure.brandId}`);
-      result.stats.invalidReferences.tenures.push(tenure.brandId);
+      hasError = true;
       result.isValid = false;
+    }
+    if (hasError) {
+      result.stats.invalidReferences.tenures.push({ index, tenure });
     }
   });
 
   // Validate relationship references
   fashionGenealogyData.relationships.forEach((rel, index) => {
+    let hasError = false;
     if (!designerIds.has(rel.sourceDesignerId)) {
       result.errors.push(`Relationship ${index} references non-existent source designer ID: ${rel.sourceDesignerId}`);
-      result.stats.invalidReferences.relationships.push(rel.sourceDesignerId);
+      hasError = true;
       result.isValid = false;
     }
     if (!designerIds.has(rel.targetDesignerId)) {
       result.errors.push(`Relationship ${index} references non-existent target designer ID: ${rel.targetDesignerId}`);
-      result.stats.invalidReferences.relationships.push(rel.targetDesignerId);
+      hasError = true;
       result.isValid = false;
     }
     if (!brandIds.has(rel.brandId)) {
       result.errors.push(`Relationship ${index} references non-existent brand ID: ${rel.brandId}`);
-      result.stats.invalidReferences.relationships.push(rel.brandId);
+      hasError = true;
       result.isValid = false;
     }
+    if (hasError) {
+      result.stats.invalidReferences.relationships.push({ index, relationship: rel });
+    }
   });
+
+  // Save detailed report
+  const reportPath = join(__dirname, '../src/data/integrity_report.json');
+  writeFileSync(reportPath, JSON.stringify({
+    timestamp: new Date().toISOString(),
+    nonUuidEntities: result.stats.nonUuidEntities,
+    invalidReferences: result.stats.invalidReferences
+  }, null, 2));
 
   return result;
 }
@@ -170,10 +186,17 @@ try {
   Total Tenures: ${result.stats.totalTenures}
   Total Relationships: ${result.stats.totalRelationships}
   
-  Duplicate IDs found: ${Object.values(result.stats.duplicateIds).flat().length}
-  Invalid References found: ${Object.values(result.stats.invalidReferences).flat().length}
+  Non-UUID Entities:
+  - Brands: ${result.stats.nonUuidEntities.brands.length}
+  - Designers: ${result.stats.nonUuidEntities.designers.length}
   
-  Overall Status: ${result.isValid ? '✅ Valid' : '❌ Invalid'}`);
+  Invalid References:
+  - Tenures: ${result.stats.invalidReferences.tenures.length}
+  - Relationships: ${result.stats.invalidReferences.relationships.length}
+  
+  Overall Status: ${result.isValid ? '✅ Valid' : '❌ Invalid'}
+  
+  Detailed report saved to: src/data/integrity_report.json`);
 
 } catch (error) {
   console.error('Failed to validate data:', error);

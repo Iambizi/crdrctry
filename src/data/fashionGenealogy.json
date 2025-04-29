@@ -4588,7 +4588,7 @@
       "verificationStatus": "VERIFIED"
     },
     {
-      "id": "cl-hist-001",
+      "id": "1424ea9f-28f7-4661-b799-285914e5175c",
       "name": "Christian Lacroix",
       "status": "RETIRED",
       "isActive": false,
@@ -4623,7 +4623,7 @@
       "verificationStatus": "VERIFIED"
     },
     {
-      "id": "sw-hist-001",
+      "id": "09fdc493-c26f-4072-b05b-966a0f5c3045",
       "name": "Sacha Walckhoff",
       "status": "RETIRED",
       "isActive": true,
@@ -4652,7 +4652,7 @@
       "verificationStatus": "VERIFIED"
     },
     {
-      "id": "mfc-hist-001",
+      "id": "e1f2a3b4-5c6d-4e7f-8a9b-0c1d2e3f4a5b",
       "name": "Marie-France Cohen",
       "status": "RETIRED",
       "isActive": false,
@@ -4682,7 +4682,7 @@
       }
     },
     {
-      "id": "ci-hist-001",
+      "id": "f2a3b4c5-6d7e-4f8a-9b0c-1d2e3f4a5b6c",
       "name": "Christine Innamorato",
       "status": "RETIRED",
       "isActive": true,
@@ -7864,7 +7864,7 @@
             "lastVerified": "2025-04-11"
           },
           {
-            "id": "ralph-lauren",
+            "id": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
             "name": "Ralph Lauren",
             "foundedYear": 1967,
             "founder": "Ralph Lauren",
@@ -7904,7 +7904,7 @@
             "lastVerified": "2025-04-12"
           },
           {
-            "id": "lacoste",
+            "id": "a1b2c3d4-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
             "name": "Lacoste",
             "foundedYear": 1933,
             "founder": "René Lacoste and André Gillier",
@@ -7942,7 +7942,7 @@
             "lastVerified": "2025-04-12"
           },
           {
-            "id": "uniqlo",
+            "id": "b2c3d4e5-6f7a-4b8c-9d0e-1f2a3b4c5d6e",
             "name": "Uniqlo",
             "foundedYear": 1949,
             "founder": "Tadashi Yanai",
@@ -7979,7 +7979,7 @@
             "lastVerified": "2025-04-12"
           },
           {
-            "id": "adidas",
+            "id": "a986f5f1-d9ab-4a6a-b145-8960cce4e277",
             "name": "Adidas",
             "foundedYear": 1949,
             "founder": "Adolf Dassler",
@@ -8017,7 +8017,7 @@
             "lastVerified": "2025-04-12"
           },
           {
-            "id": "miyake-design-studio",
+            "id": "640a5564-832c-418e-b876-e5b8d82ee7f5",
             "name": "Miyake Design Studio",
             "foundedYear": 1970,
             "founder": "Issey Miyake",
@@ -8052,7 +8052,7 @@
             "lastVerified": "2025-04-12"
           },
           {
-            "id": "ann-demeulemeester-serax",
+            "id": "7b65e007-8225-4a29-9ec3-82fb41b744de",
             "name": "Ann Demeulemeester Serax",
             "foundedYear": 2020,
             "founder": "Ann Demeulemeester",
@@ -8085,7 +8085,7 @@
             "lastVerified": "2025-04-12"
           },
           {
-            "id": "sex",
+            "id": "3404e57b-3fc5-435a-91f9-d76cc03703f3",
             "name": "SEX",
             "foundedYear": 1974,
             "founder": "Vivienne Westwood and Malcolm McLaren",
@@ -8115,7 +8115,7 @@
             "lastVerified": "2025-04-12"
           },
           {
-            "id": "walter-van-beirendonck",
+            "id": "da0b678d-2d4a-4d94-bdf0-53b75ccfaa63",
             "name": "Walter Van Beirendonck",
             "foundedYear": 1983,
             "founder": "Walter Van Beirendonck",
@@ -8150,7 +8150,7 @@
             "lastVerified": "2025-04-12"
           },
           {
-            "id": "royal-academy-antwerp",
+            "id": "6aaa8d1a-cafd-4503-a9f0-2e75a3404044",
             "name": "Royal Academy of Fine Arts Antwerp",
             "foundedYear": 1663,
             "founder": "David Teniers the Younger",
@@ -25423,7 +25423,7 @@
     },
     {
       "id": "tnr-1",
-      "designerId": "cl-hist-001",
+      "designerId": "1424ea9f-28f7-4661-b799-285914e5175c",
       "brandId": "7cfcf27a-878a-4623-90fc-d5d493985575",
       "role": "Founder and Creative Director",
       "department": "All Departments",
@@ -25435,7 +25435,7 @@
     },
     {
       "id": "tnr-2",
-      "designerId": "sw-hist-001",
+      "designerId": "09fdc493-c26f-4072-b05b-966a0f5c3045",
       "brandId": "7cfcf27a-878a-4623-90fc-d5d493985575",
       "role": "Creative Director",
       "department": "All Departments",
@@ -25446,7 +25446,7 @@
     },
     {
       "id": "tnr-3",
-      "designerId": "mfc-hist-001",
+      "designerId": "e1f2a3b4-5c6d-4e7f-8a9b-0c1d2e3f4a5b",
       "brandId": "d3db2c35-81e3-40b3-821c-f602d0dea9d8",
       "role": "Founder and Creative Director",
       "department": "All Departments",
@@ -25458,7 +25458,7 @@
     },
     {
       "id": "tnr-4",
-      "designerId": "ci-hist-001",
+      "designerId": "f2a3b4c5-6d7e-4f8a-9b0c-1d2e3f4a5b6c",
       "brandId": "d3db2c35-81e3-40b3-821c-f602d0dea9d8",
       "role": "Artistic Director",
       "department": "All Departments",
@@ -25469,7 +25469,7 @@
     },
     {
       "id": "tnr-5",
-      "designerId": "jm-hist-001",
+      "designerId": "69c7362e-b3cb-4f96-83e8-41d52548c09c",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "role": "Founder and Creative Director",
       "department": "Menswear",
@@ -25493,7 +25493,7 @@
     },
     {
       "id": "tnr-7",
-      "designerId": "jr-hist-001",
+      "designerId": "3ee6bbed-96d0-452b-9089-42aa00c86d59",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "role": "Creative Director",
       "department": "All Departments",
@@ -25505,7 +25505,7 @@
     },
     {
       "id": "tnr-8",
-      "designerId": "nt-hist-001",
+      "designerId": "6f4de092-4350-4566-8655-1a7153a1362f",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "role": "Design Consultant",
       "department": "Menswear",
@@ -25516,7 +25516,7 @@
     },
     {
       "id": "tnr-9",
-      "designerId": "vw-hist-001",
+      "designerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
       "brandId": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
       "role": "Founder and Creative Director",
       "department": "All Departments",
@@ -25527,7 +25527,7 @@
     },
     {
       "id": "tnr-10",
-      "designerId": "jd-hist-001",
+      "designerId": "1d41e2c8-4fae-497d-b09d-acb5b63a490a",
       "brandId": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
       "role": "Design Director of Bridal",
       "department": "All Departments",
@@ -25551,7 +25551,7 @@
     },
     {
       "id": "tnr-12",
-      "designerId": "pd-hist-001",
+      "designerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
       "brandId": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
       "role": "Creative Director of Brand",
       "department": "All Departments",
@@ -25562,8 +25562,8 @@
     },
     {
       "id": "tnr-hist-004",
-      "designerId": "rl-hist-001",
-      "brandId": "ralph-lauren",
+      "designerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
+      "brandId": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
       "role": "Founder and Chief Creative Officer",
       "department": "All Departments",
       "startYear": 1967,
@@ -38328,9 +38328,9 @@
     },
     {
       "id": "rel-7",
-      "sourceDesignerId": "vw-hist-001",
-      "targetDesignerId": "jd-hist-001",
-      "brandId": "ralph-lauren",
+      "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
+      "targetDesignerId": "1d41e2c8-4fae-497d-b09d-acb5b63a490a",
+      "brandId": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
       "type": "mentorship",
       "startYear": 2008,
       "endYear": 2017,
@@ -38345,9 +38345,9 @@
     },
     {
       "id": "rel-8",
-      "sourceDesignerId": "rl-hist-001",
-      "targetDesignerId": "vw-hist-001",
-      "brandId": "ralph-lauren",
+      "sourceDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
+      "targetDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
+      "brandId": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
       "type": "mentorship",
       "startYear": 1987,
       "endYear": 1989,
@@ -38361,9 +38361,9 @@
     },
     {
       "id": "rel-9",
-      "sourceDesignerId": "vw-hist-001",
-      "targetDesignerId": "pd-hist-001",
-      "brandId": "ralph-lauren",
+      "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
+      "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "brandId": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
       "type": "collaboration",
       "startYear": 2016,
       "endYear": null,
@@ -38378,9 +38378,9 @@
     },
     {
       "id": "rel-10",
-      "sourceDesignerId": "cl-hist-001",
-      "targetDesignerId": "sw-hist-001",
-      "brandId": "brand-1",
+      "sourceDesignerId": "1424ea9f-28f7-4661-b799-285914e5175c",
+      "targetDesignerId": "09fdc493-c26f-4072-b05b-966a0f5c3045",
+      "brandId": "cececf4e-866f-43b0-8e3e-49a0dbe3b1dc",
       "type": "mentorship",
       "startYear": 1992,
       "endYear": 2009,
@@ -38394,9 +38394,9 @@
     },
     {
       "id": "rel-11",
-      "sourceDesignerId": "cl-hist-001",
-      "targetDesignerId": "gv-hist-001",
-      "brandId": "brand-1",
+      "sourceDesignerId": "1424ea9f-28f7-4661-b799-285914e5175c",
+      "targetDesignerId": "c56a11ea-6b3a-4606-9436-87c216e443c2",
+      "brandId": "cececf4e-866f-43b0-8e3e-49a0dbe3b1dc",
       "type": "mentorship",
       "startYear": 1997,
       "endYear": 2001,
@@ -38410,9 +38410,9 @@
     },
     {
       "id": "rel-14",
-      "sourceDesignerId": "jm-hist-001",
-      "targetDesignerId": "pm-hist-001",
-      "brandId": "brand-3",
+      "sourceDesignerId": "69c7362e-b3cb-4f96-83e8-41d52548c09c",
+      "targetDesignerId": "2e87d560-a7e5-4387-8386-2707f6b8f5d6",
+      "brandId": "f9f89df5-acf6-4344-a1cd-3f17c75ee787",
       "type": "familial",
       "startYear": 1984,
       "endYear": 1999,
@@ -38426,9 +38426,9 @@
     },
     {
       "id": "rel-15",
-      "sourceDesignerId": "jr-hist-001",
-      "targetDesignerId": "nt-hist-001",
-      "brandId": "brand-3",
+      "sourceDesignerId": "3ee6bbed-96d0-452b-9089-42aa00c86d59",
+      "targetDesignerId": "6f4de092-4350-4566-8655-1a7153a1362f",
+      "brandId": "f9f89df5-acf6-4344-a1cd-3f17c75ee787",
       "type": "succession",
       "startYear": 2021,
       "endYear": null,
@@ -38441,9 +38441,9 @@
     },
     {
       "id": "rel-16",
-      "sourceDesignerId": "vw-hist-001",
-      "targetDesignerId": "jd-hist-001",
-      "brandId": "brand-4",
+      "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
+      "targetDesignerId": "1d41e2c8-4fae-497d-b09d-acb5b63a490a",
+      "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "type": "mentorship",
       "startYear": 2008,
       "endYear": 2017,
@@ -38457,9 +38457,9 @@
     },
     {
       "id": "rel-17",
-      "sourceDesignerId": "rl-hist-001",
-      "targetDesignerId": "vw-hist-001",
-      "brandId": "brand-5",
+      "sourceDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
+      "targetDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
+      "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
       "type": "mentorship",
       "startYear": 1987,
       "endYear": 1989,
@@ -38472,9 +38472,9 @@
     },
     {
       "id": "rel-18",
-      "sourceDesignerId": "vw-hist-001",
-      "targetDesignerId": "pd-hist-001",
-      "brandId": "brand-4",
+      "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
+      "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "type": "collaboration",
       "startYear": 2016,
       "endYear": null,
