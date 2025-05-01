@@ -1,8 +1,5087 @@
 {
-  "mappings": {},
+  "mappings": {
+    "giambattista-valli": {
+      "oldId": "giambattista-valli",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [
+        {
+          "id": "tnr-gv-001",
+          "role": "Founder and Creative Director",
+          "startYear": 2005,
+          "endYear": null
+        }
+      ],
+      "affectedRelationships": []
+    },
+    "d9406b45-4e84-4ef7-9ac7-fe6198b61db8": {
+      "oldId": "d9406b45-4e84-4ef7-9ac7-fe6198b61db8",
+      "designerName": "Karl Lagerfeld",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "58020df7-38df-45a8-8af7-47ce3eec48be",
+          "type": "both"
+        },
+        {
+          "id": "57a74b27-f57f-4ead-80e9-f9c74a70a7cd",
+          "type": "both"
+        },
+        {
+          "id": "f735d589-775a-49f6-b709-61a31221d1a4",
+          "type": "both"
+        },
+        {
+          "id": "44383080-a901-46df-806f-e43257ff1fd3",
+          "type": "both"
+        },
+        {
+          "id": "5d7e2617-69ce-45f1-88e8-8ea05d6f52ca",
+          "type": "both"
+        },
+        {
+          "id": "697bb92a-a132-4952-91f3-733bfbf57198",
+          "type": "both"
+        },
+        {
+          "id": "9c7abcb2-a7ee-416d-a72b-13e74ce83c6b",
+          "type": "both"
+        },
+        {
+          "id": "f42e6e6d-9a2f-4fa7-b580-2fb782b55fc6",
+          "type": "both"
+        },
+        {
+          "id": "59b106c5-cc60-429c-9c00-206719cc0ef8",
+          "type": "both"
+        },
+        {
+          "id": "9af47532-0787-4728-89eb-45acc33764cc",
+          "type": "both"
+        },
+        {
+          "id": "7353b158-1fb1-4845-82ac-662ebe9d1abb",
+          "type": "both"
+        },
+        {
+          "id": "cf4793a5-bac4-45ed-a0c9-c53162ab9010",
+          "type": "both"
+        },
+        {
+          "id": "ff63d371-596e-4f6a-8005-1ad3f20d8ace",
+          "type": "both"
+        },
+        {
+          "id": "9c83cac8-8d12-4b92-b916-291fe30e5cf2",
+          "type": "both"
+        },
+        {
+          "id": "b14a5615-d567-4f00-8c3c-9bd6036c6f3d",
+          "type": "both"
+        },
+        {
+          "id": "0fecb859-31a6-42c5-a7c7-c3ae2735140e",
+          "type": "both"
+        },
+        {
+          "id": "af738319-1e36-45cb-8736-f87739585cc3",
+          "type": "both"
+        },
+        {
+          "id": "48414d84-bcaf-4de7-91dd-60abee52e98a",
+          "type": "both"
+        },
+        {
+          "id": "5c4d8f0d-140c-4323-8d60-7de52512bb27",
+          "type": "both"
+        },
+        {
+          "id": "d76efd61-410f-4f1a-83df-b0e38e7ed264",
+          "type": "both"
+        },
+        {
+          "id": "7445369b-f720-45ee-a7a9-9859f7b91dd3",
+          "type": "both"
+        },
+        {
+          "id": "54357447-bb8a-40aa-a947-da87d80b380b",
+          "type": "both"
+        },
+        {
+          "id": "0163f6c3-d713-4c3c-9898-9bd914ee3ba2",
+          "type": "both"
+        },
+        {
+          "id": "93e9edf0-e9ea-4c52-945a-21c512f371a7",
+          "type": "both"
+        },
+        {
+          "id": "4b3b9aa4-c547-4d23-8a67-1257bea1b66f",
+          "type": "both"
+        },
+        {
+          "id": "70cd2a59-8cb8-4d21-95f0-0561d7360070",
+          "type": "both"
+        },
+        {
+          "id": "90e5aea8-c1bb-49e6-bffd-59c0aaf011cd",
+          "type": "both"
+        },
+        {
+          "id": "7243f711-0d97-45df-b902-c48ecfd596a2",
+          "type": "both"
+        },
+        {
+          "id": "60efa706-e91f-41b4-8f38-486e28c5d3f0",
+          "type": "both"
+        },
+        {
+          "id": "5c64975f-7538-4aef-983a-9fd3fbb5a122",
+          "type": "both"
+        },
+        {
+          "id": "75956023-2069-47d9-ae88-62adc9bc9587",
+          "type": "both"
+        }
+      ]
+    },
+    "bc687ee4-ddb7-4daf-b7e1-8efd90f0c816": {
+      "oldId": "bc687ee4-ddb7-4daf-b7e1-8efd90f0c816",
+      "designerName": "Phoebe Philo",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "9ea376a4-528a-48f1-951b-69e19b3acbf0",
+          "type": "both"
+        }
+      ]
+    },
+    "4fb630e1-a962-4651-a15c-7b1f888e308f": {
+      "oldId": "4fb630e1-a962-4651-a15c-7b1f888e308f",
+      "designerName": "Clare Waight Keller",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "9b47c7d3-5fd4-47b5-8c5e-43e548a5cae5",
+          "type": "both"
+        }
+      ]
+    },
+    "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2": {
+      "oldId": "46db4f4b-3108-4bd7-bc82-752f0aa7c9b2",
+      "designerName": "Hedi Slimane",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "efe186f7-e96c-499f-a42d-3bde05a46180",
+          "type": "both"
+        },
+        {
+          "id": "31d43c7d-cd44-4018-bb49-18e61f497497",
+          "type": "both"
+        },
+        {
+          "id": "4342dd6e-5f09-41d2-819f-ee5b9b5f2c7c",
+          "type": "both"
+        },
+        {
+          "id": "1a4f943d-981b-4134-b744-2e9fbe092c02",
+          "type": "both"
+        },
+        {
+          "id": "ce43176f-0ed0-4977-b752-2f2cc82cf7c4",
+          "type": "both"
+        },
+        {
+          "id": "e0d9d7e2-7916-4d97-bb15-4fbd7112f535",
+          "type": "both"
+        },
+        {
+          "id": "7a14ba93-1f5f-483f-a849-9c9482732ebf",
+          "type": "both"
+        },
+        {
+          "id": "889fb8bc-4fcc-4de7-8b86-06250a9fb23a",
+          "type": "both"
+        },
+        {
+          "id": "e70a9620-d1c2-48c5-9d35-f37a7df3cb5d",
+          "type": "both"
+        },
+        {
+          "id": "4bf2e08b-f1c1-428d-a953-edc6e3d66ccd",
+          "type": "both"
+        },
+        {
+          "id": "c1f5967d-cef6-4a68-9398-6890990b9fe7",
+          "type": "both"
+        },
+        {
+          "id": "32450308-423d-4d3a-827b-ceea966bd0c9",
+          "type": "both"
+        },
+        {
+          "id": "f8156e2b-ecce-4db7-85ab-c49f65e866c9",
+          "type": "both"
+        },
+        {
+          "id": "a4199f20-43c6-4900-afcf-644b407eade7",
+          "type": "both"
+        },
+        {
+          "id": "77b7ebe6-9148-42ef-a99a-873fdd73bbb8",
+          "type": "both"
+        },
+        {
+          "id": "f50a23dc-90c0-40a2-8b6d-08efbd41c796",
+          "type": "both"
+        },
+        {
+          "id": "8b29d393-221a-423a-b48b-1e164f5c5ec2",
+          "type": "both"
+        },
+        {
+          "id": "5943d4cf-5b27-4c9b-912b-9ae373bc9a5f",
+          "type": "both"
+        },
+        {
+          "id": "dc0265e2-edea-49f4-a24e-64e871ae2fd7",
+          "type": "both"
+        },
+        {
+          "id": "cead97fb-4c81-41c1-b264-03349591a1a4",
+          "type": "both"
+        },
+        {
+          "id": "f759a96a-f184-4e57-810d-66e26a5e13ab",
+          "type": "both"
+        },
+        {
+          "id": "9a11b061-26bf-4068-be02-68fee8f9d939",
+          "type": "both"
+        },
+        {
+          "id": "36142109-0307-4e92-8359-25157ca56386",
+          "type": "both"
+        },
+        {
+          "id": "7b0ecb65-6d62-428e-b016-7d49e69bb784",
+          "type": "both"
+        }
+      ]
+    },
+    "62ee4bb4-af93-471e-b1e0-a8a53c68acca": {
+      "oldId": "62ee4bb4-af93-471e-b1e0-a8a53c68acca",
+      "designerName": "Nicolas Ghesquière",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "cae7404f-6321-4c25-b909-7c028b03eda4",
+          "type": "both"
+        },
+        {
+          "id": "312ca9fc-89c9-44f8-96db-064fc4bcaaf5",
+          "type": "both"
+        },
+        {
+          "id": "c4bbea3f-a7a2-42ed-abc5-50a8a8e6f3ef",
+          "type": "both"
+        },
+        {
+          "id": "c5566615-5142-4ef2-b7e4-d338d7121eb1",
+          "type": "both"
+        },
+        {
+          "id": "11371b6a-5305-4e80-b3b2-cb2948145555",
+          "type": "both"
+        },
+        {
+          "id": "cf52d9a1-7b7d-42ac-98eb-87bf51d213df",
+          "type": "both"
+        },
+        {
+          "id": "d95f7236-d58f-4537-b7d4-3dcef581c196",
+          "type": "both"
+        },
+        {
+          "id": "c414f8ef-0247-453b-b948-7007f3856bf0",
+          "type": "both"
+        },
+        {
+          "id": "ab1b206a-9ccf-4763-afe4-d5e5bfab512d",
+          "type": "both"
+        },
+        {
+          "id": "e123aef4-ff40-4f22-bd14-0cafddd1d7ae",
+          "type": "both"
+        },
+        {
+          "id": "b7c2b9b8-c30b-4a8a-93dc-ed58e5299c33",
+          "type": "both"
+        },
+        {
+          "id": "2b35400a-2bfd-4b35-8158-819e5c1a3240",
+          "type": "both"
+        },
+        {
+          "id": "b6cd31f0-12b4-45ea-bc5c-de0397ca4fb7",
+          "type": "both"
+        },
+        {
+          "id": "9fabf5d1-053b-4fe7-b2e6-c4dc9360b990",
+          "type": "both"
+        },
+        {
+          "id": "a16e22cf-2502-4a6c-8b14-37550aedbabf",
+          "type": "both"
+        },
+        {
+          "id": "85a8dead-e670-4a89-bff9-e10d2900435e",
+          "type": "both"
+        },
+        {
+          "id": "eb3bcd07-1bfa-43db-9c05-7095398a4410",
+          "type": "both"
+        },
+        {
+          "id": "5a0bf207-246e-47e6-8972-9184d217a78f",
+          "type": "both"
+        },
+        {
+          "id": "9eb6cb62-8d09-46ef-8745-24d6168d1dc9",
+          "type": "both"
+        },
+        {
+          "id": "0ee6180f-4ed6-4791-9706-6ebc2fc117ed",
+          "type": "both"
+        },
+        {
+          "id": "7abdd195-47c6-4421-8e59-e940e10955de",
+          "type": "both"
+        },
+        {
+          "id": "8fe6914f-52b8-4673-bf88-218856e25aab",
+          "type": "both"
+        },
+        {
+          "id": "e4926f73-57dc-4612-8819-8a44e5254007",
+          "type": "both"
+        },
+        {
+          "id": "453d4831-cc5f-4c55-9808-4ff18eefae15",
+          "type": "both"
+        },
+        {
+          "id": "cf57365c-35d9-4830-a584-7e96e94c3ea2",
+          "type": "both"
+        },
+        {
+          "id": "5f8770f1-8f65-42bf-af25-5c6e33aaefe6",
+          "type": "both"
+        },
+        {
+          "id": "816f0892-9684-43d6-abc0-e73340ff54d2",
+          "type": "both"
+        },
+        {
+          "id": "d40846ce-0994-4685-b369-78caa3238d77",
+          "type": "both"
+        },
+        {
+          "id": "2c2fbb90-97aa-4abb-8e0a-2838e85603a6",
+          "type": "both"
+        },
+        {
+          "id": "205c727f-53a7-4ea1-a26e-7dc1285e3e0a",
+          "type": "both"
+        },
+        {
+          "id": "6600d581-9329-4ddf-a51f-3ecf452edc7c",
+          "type": "both"
+        }
+      ]
+    },
+    "c3f00fd8-c970-4405-87c6-a856fc4902eb": {
+      "oldId": "c3f00fd8-c970-4405-87c6-a856fc4902eb",
+      "designerName": "Miuccia Prada",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "4674fda8-653d-449a-ade7-ad2be0f562fc",
+          "type": "both"
+        }
+      ]
+    },
+    "50ea08be-7956-4f6d-b544-b9ac8971b959": {
+      "oldId": "50ea08be-7956-4f6d-b544-b9ac8971b959",
+      "designerName": "Michael Kors",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "280963fb-3c54-4c25-83b5-307a0f842a4c",
+          "type": "both"
+        },
+        {
+          "id": "41e5d12f-b2bb-4684-bbf7-502b04128917",
+          "type": "both"
+        },
+        {
+          "id": "0c38a00f-658e-4897-a058-a129fdf3ae75",
+          "type": "both"
+        },
+        {
+          "id": "6e9802fc-101e-487b-b281-00c211cd8375",
+          "type": "both"
+        },
+        {
+          "id": "d5409eea-bc6e-4403-b32d-242306180171",
+          "type": "both"
+        },
+        {
+          "id": "be3a5b25-c256-47e7-8fd4-4835879794d8",
+          "type": "both"
+        },
+        {
+          "id": "661e9380-fed2-4a39-bd30-e808a2dc82f6",
+          "type": "both"
+        },
+        {
+          "id": "a1e0284d-a377-4fc0-9948-5a79b2a3a7c5",
+          "type": "both"
+        },
+        {
+          "id": "e05fb15b-c611-4b63-aeb6-1b76234e0eb3",
+          "type": "both"
+        },
+        {
+          "id": "b80f662b-6ed5-48fb-ba96-4e517241f437",
+          "type": "both"
+        },
+        {
+          "id": "e116411e-a49f-4114-b777-9be3735b1094",
+          "type": "both"
+        },
+        {
+          "id": "0bb462bd-4c07-4fb1-a3da-2d3b275796ce",
+          "type": "both"
+        },
+        {
+          "id": "e41a965c-527d-47f2-8b8b-59200202a32d",
+          "type": "both"
+        },
+        {
+          "id": "1864658d-0c0e-468d-9da2-de5f7a0730e1",
+          "type": "both"
+        },
+        {
+          "id": "04e6c1e1-2d11-4183-9714-eefc2fd97758",
+          "type": "both"
+        },
+        {
+          "id": "b98e45d0-d8e9-4aec-bc1d-6c579b7834f6",
+          "type": "both"
+        }
+      ]
+    },
+    "d0821baa-badf-48a1-b9c8-82e1a214d7cf": {
+      "oldId": "d0821baa-badf-48a1-b9c8-82e1a214d7cf",
+      "designerName": "Georges Vuitton",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "d6605566-af26-47ca-bf99-55c50a1c79d6",
+          "type": "both"
+        },
+        {
+          "id": "11365a17-5214-4549-bca1-277996bea7be",
+          "type": "both"
+        },
+        {
+          "id": "bed74f6d-ce9c-454e-9740-c2486f655e66",
+          "type": "both"
+        },
+        {
+          "id": "6474c445-b4a0-4ba8-97f9-a70698d761e5",
+          "type": "both"
+        },
+        {
+          "id": "16d4653a-d92e-4716-8ca8-599a59d331e5",
+          "type": "both"
+        },
+        {
+          "id": "ae140922-9708-4649-96e3-be8c149c26df",
+          "type": "both"
+        },
+        {
+          "id": "2b5a64af-e6d2-440f-bd96-1ed16fdbb43b",
+          "type": "both"
+        },
+        {
+          "id": "afdd79e0-c939-42b4-8f45-11fa71a15b2b",
+          "type": "both"
+        },
+        {
+          "id": "185a1250-dd1c-41ad-a7f3-3a08a10e4c6f",
+          "type": "both"
+        },
+        {
+          "id": "f6b1f977-52f4-4285-aff0-dd1d91577c55",
+          "type": "both"
+        },
+        {
+          "id": "361d8165-3e74-4a33-831c-325b10c3ca6e",
+          "type": "both"
+        },
+        {
+          "id": "a44fa835-1dfa-4e37-b435-2e4d106ce5fd",
+          "type": "both"
+        },
+        {
+          "id": "9cbd245d-0908-43f4-84d0-47168c2730ec",
+          "type": "both"
+        },
+        {
+          "id": "a44febb8-be4b-4390-8b9f-df24fdf51a26",
+          "type": "both"
+        },
+        {
+          "id": "541b01c8-a0d9-4091-81b8-3ebeaf3ad36c",
+          "type": "both"
+        }
+      ]
+    },
+    "049ae4ec-e665-49cb-b89b-bbb929ed39c0": {
+      "oldId": "049ae4ec-e665-49cb-b89b-bbb929ed39c0",
+      "designerName": "Aldo Gucci",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "a820827d-cc41-4672-a003-14cb5a9ca07a",
+          "type": "both"
+        },
+        {
+          "id": "51a30d09-a953-45f7-beb4-e70311255c90",
+          "type": "both"
+        },
+        {
+          "id": "4ba22ded-efe5-4ccf-9571-21e29fc28fd8",
+          "type": "both"
+        },
+        {
+          "id": "f28fa2af-59e4-4a4d-8583-d2a550ac5192",
+          "type": "both"
+        },
+        {
+          "id": "c918e814-4858-433b-b5be-af9a205421bc",
+          "type": "both"
+        },
+        {
+          "id": "c0e85bd6-b928-41ea-a9e4-626f4a583bd8",
+          "type": "both"
+        },
+        {
+          "id": "47bc24fb-34d7-427b-9444-04d477e78d4a",
+          "type": "both"
+        },
+        {
+          "id": "6f232ee7-54f6-4737-bc7b-a47e9fdd3132",
+          "type": "both"
+        },
+        {
+          "id": "68f9987d-1f3e-490f-88ff-563bfa2fb016",
+          "type": "both"
+        },
+        {
+          "id": "61ea0349-945b-464e-b0da-2dc01b9992dd",
+          "type": "both"
+        },
+        {
+          "id": "93088681-7578-44dc-aa89-01afe3deb248",
+          "type": "both"
+        },
+        {
+          "id": "2256c334-0d8e-4e07-a4ba-115bc5365233",
+          "type": "both"
+        },
+        {
+          "id": "41ff374e-a4fd-40a5-b25d-4ed8e25eb0d3",
+          "type": "both"
+        },
+        {
+          "id": "66fd8a77-d9e6-4a8f-ba5b-d1324bcf86b2",
+          "type": "both"
+        },
+        {
+          "id": "b1041dc2-0339-4ff9-aeee-579148d67067",
+          "type": "both"
+        }
+      ]
+    },
+    "ceced058-cf96-4cfe-a182-871f344705b6": {
+      "oldId": "ceced058-cf96-4cfe-a182-871f344705b6",
+      "designerName": "Maurizio Gucci",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "8ed73b74-bad7-4a3a-985b-8ebcef08a22d",
+          "type": "both"
+        },
+        {
+          "id": "7abe9f1e-7e40-4258-8a93-1cba9152dbc6",
+          "type": "both"
+        },
+        {
+          "id": "b809ac0e-eb2b-4dcb-840b-240e84c9690d",
+          "type": "both"
+        },
+        {
+          "id": "b4efa721-2991-418e-bee6-0855e881376a",
+          "type": "both"
+        },
+        {
+          "id": "ad720235-6936-4d40-a334-061706f31d48",
+          "type": "both"
+        },
+        {
+          "id": "aa369b5f-caec-4309-b673-c41abcc9cff3",
+          "type": "both"
+        },
+        {
+          "id": "b856f384-f1cd-4ef7-bcab-b4661300286b",
+          "type": "both"
+        },
+        {
+          "id": "44f55467-26d9-4780-8778-f6d1f19dfc2d",
+          "type": "both"
+        },
+        {
+          "id": "9e48469a-bd95-41b6-8411-b95b726bb12b",
+          "type": "both"
+        },
+        {
+          "id": "fbfed5af-8d20-4664-8de9-42c9902c0820",
+          "type": "both"
+        },
+        {
+          "id": "f223d5f8-12b6-4870-bc1c-5ff79ed088cf",
+          "type": "both"
+        },
+        {
+          "id": "40cb98de-4b6b-456a-9a1e-9fe3da4e29d7",
+          "type": "both"
+        },
+        {
+          "id": "f4fcad69-4808-413a-a204-f2dbae7827ff",
+          "type": "both"
+        },
+        {
+          "id": "d217d4b7-9687-4ab3-9114-ba743d434985",
+          "type": "both"
+        },
+        {
+          "id": "2e2f565f-3b30-470b-b1dd-fab9ff670677",
+          "type": "both"
+        }
+      ]
+    },
+    "cd1f4e99-2322-49c0-9d4a-9080977cb8af": {
+      "oldId": "cd1f4e99-2322-49c0-9d4a-9080977cb8af",
+      "designerName": "Alber Elbaz",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "74a0c66d-9be6-4ae7-9a35-23168a28ef71",
+          "type": "both"
+        },
+        {
+          "id": "3802ef4c-a9f0-4aef-9cfa-bcb0ad6f9b19",
+          "type": "both"
+        },
+        {
+          "id": "4815f228-8df2-44d4-ae8c-377b0594325d",
+          "type": "both"
+        },
+        {
+          "id": "f5b3eafd-7693-4d9c-8ff0-5068849d8f47",
+          "type": "both"
+        },
+        {
+          "id": "70e8e0a3-00fd-45f8-b101-81dd6fd61014",
+          "type": "both"
+        },
+        {
+          "id": "c50a88c9-d369-4fda-bddc-0cc2843a050c",
+          "type": "both"
+        },
+        {
+          "id": "577eede5-0713-48ea-a260-d6c9ec7d505e",
+          "type": "both"
+        },
+        {
+          "id": "7776d346-8f40-414f-b332-19a03c05bf08",
+          "type": "both"
+        },
+        {
+          "id": "962827b7-774d-4e07-983d-134f76ef0ff8",
+          "type": "both"
+        },
+        {
+          "id": "a3035463-210c-45e1-ac1a-5d34d175d880",
+          "type": "both"
+        },
+        {
+          "id": "07f1f082-c4b6-4ad9-926d-4b03f20b69d2",
+          "type": "both"
+        },
+        {
+          "id": "9d3685e0-0af0-4fbe-9291-1e7db0653ed5",
+          "type": "both"
+        },
+        {
+          "id": "d61cb4b6-6de0-4c84-a8c2-50b733744f3e",
+          "type": "both"
+        },
+        {
+          "id": "7c7f9ca9-6237-46fc-b222-dbe071081402",
+          "type": "both"
+        },
+        {
+          "id": "1532a847-d5cf-410d-a587-cdc659116066",
+          "type": "both"
+        },
+        {
+          "id": "b2e28df0-3b77-494b-aada-e5a1d8965eab",
+          "type": "both"
+        },
+        {
+          "id": "d5e6c03d-df53-4b10-bf3c-2398d356b3c7",
+          "type": "both"
+        },
+        {
+          "id": "a04330bb-1c20-43ee-96bf-f941ddb7302f",
+          "type": "both"
+        },
+        {
+          "id": "2ca8fccf-2125-472f-82cb-70704a99a9a9",
+          "type": "both"
+        },
+        {
+          "id": "f0ae82b1-4361-43d9-9997-6d459021913c",
+          "type": "both"
+        },
+        {
+          "id": "2eb233dd-f92d-40ef-a7ea-205bea843861",
+          "type": "both"
+        },
+        {
+          "id": "5f7df8b6-e26e-4350-96ca-08a8feccf18a",
+          "type": "both"
+        },
+        {
+          "id": "436b5eae-bda7-4e5d-93ff-d63a8f06b54a",
+          "type": "both"
+        },
+        {
+          "id": "f753bc4c-9d4c-4859-bebe-2795fe2dfc04",
+          "type": "both"
+        },
+        {
+          "id": "da04916e-80e9-4a65-b7c5-bbbaae778b6a",
+          "type": "both"
+        },
+        {
+          "id": "01a6d799-af37-40d6-8628-23a460dfc9ab",
+          "type": "both"
+        },
+        {
+          "id": "09311333-9421-46ed-b311-05708e69d43c",
+          "type": "both"
+        },
+        {
+          "id": "3e0dc697-c4b3-4b2c-8612-5b5fde17fb8f",
+          "type": "both"
+        },
+        {
+          "id": "0b4db511-508e-4a83-9813-114056bd83c6",
+          "type": "both"
+        },
+        {
+          "id": "9ef2202d-50ed-43c9-9a2f-6d7900266b18",
+          "type": "both"
+        }
+      ]
+    },
+    "14abc2b2-396f-47f9-8307-a944d1f39fe0": {
+      "oldId": "14abc2b2-396f-47f9-8307-a944d1f39fe0",
+      "designerName": "Tom Ford",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "8b2b461f-8f4c-4b13-a528-aa15320d9150",
+          "type": "both"
+        },
+        {
+          "id": "229afabc-34a1-4808-8dc3-9cb8ab5023b3",
+          "type": "both"
+        },
+        {
+          "id": "12bc971e-24ba-41e1-9938-22aca93f5467",
+          "type": "both"
+        },
+        {
+          "id": "55383eaf-d45d-4fb5-aa56-e066a5cd7938",
+          "type": "both"
+        },
+        {
+          "id": "05e3bb86-fa00-4934-bea5-d2c98b8d81de",
+          "type": "both"
+        },
+        {
+          "id": "d49e1e16-e878-45e8-b589-cc8848bf7377",
+          "type": "both"
+        },
+        {
+          "id": "190be728-aa77-434d-84f5-8e7da5026f44",
+          "type": "both"
+        },
+        {
+          "id": "3dd5a505-e6bd-4791-9490-86e4d385c806",
+          "type": "both"
+        },
+        {
+          "id": "6180e66b-5d68-407f-8ccb-6e5b76936a36",
+          "type": "both"
+        },
+        {
+          "id": "e2443461-7a15-49cc-a9f4-035a5b3c0789",
+          "type": "both"
+        },
+        {
+          "id": "42df520b-563f-4d05-9b77-f187b7468c11",
+          "type": "both"
+        },
+        {
+          "id": "b954cff5-7582-4152-867f-04c701267604",
+          "type": "both"
+        },
+        {
+          "id": "47af8aa5-f836-444f-a36b-431c0e4e3d07",
+          "type": "both"
+        },
+        {
+          "id": "46e9d8e1-bc95-4186-9bd7-4ef6a0174c5e",
+          "type": "both"
+        },
+        {
+          "id": "c1072a8f-b36a-4cd9-906f-3a190bb4357e",
+          "type": "both"
+        }
+      ]
+    },
+    "6e2c9360-efa3-417d-89b6-94dbc61e2303": {
+      "oldId": "6e2c9360-efa3-417d-89b6-94dbc61e2303",
+      "designerName": "Stuart Vevers",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "6bef12bb-72a8-4f37-9fcd-851b4f89ad78",
+          "type": "both"
+        },
+        {
+          "id": "ba34581f-fccf-4017-96f2-b6dec7f7c7a0",
+          "type": "both"
+        },
+        {
+          "id": "f657d6b4-0f7f-43dc-962d-7f37a395ece9",
+          "type": "both"
+        },
+        {
+          "id": "ceb478a3-8329-4930-a8c0-a666cb028960",
+          "type": "both"
+        },
+        {
+          "id": "c24714f1-03ac-41c0-adf0-494c774dfc94",
+          "type": "both"
+        },
+        {
+          "id": "c034ff93-75f6-4c8f-9d4a-3e0d69c85e16",
+          "type": "both"
+        },
+        {
+          "id": "36aba6b3-3028-41cd-80f1-cabfae1fd6d1",
+          "type": "both"
+        },
+        {
+          "id": "1626034d-2519-4415-9e71-2ba400bfffb5",
+          "type": "both"
+        },
+        {
+          "id": "a50bf72a-be43-4995-8732-1f651a14aac8",
+          "type": "both"
+        },
+        {
+          "id": "bb74d1e3-49ee-42f6-a6b1-23283184927b",
+          "type": "both"
+        },
+        {
+          "id": "dfdc4f5f-3b9d-4d8a-ad21-f23ff42acf3b",
+          "type": "both"
+        },
+        {
+          "id": "de411afa-ce0a-4323-b662-e0a48c8ca8c3",
+          "type": "both"
+        },
+        {
+          "id": "e66125b1-c754-41da-84bb-df4c37850c8b",
+          "type": "both"
+        },
+        {
+          "id": "0276b185-9f8f-44b6-8a7f-5bb63dffcba0",
+          "type": "both"
+        },
+        {
+          "id": "9857e82e-a9e8-4154-8c64-fed7e1629bfe",
+          "type": "both"
+        }
+      ]
+    },
+    "473db2d1-1841-48f5-9209-e7859a4674d0": {
+      "oldId": "473db2d1-1841-48f5-9209-e7859a4674d0",
+      "designerName": "Renzo Rosso",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "174d5f85-38a6-4cf0-81bc-879e3eee1b5c",
+          "type": "both"
+        },
+        {
+          "id": "c4ede9f3-7378-4ec5-ac62-2b005319ce3c",
+          "type": "both"
+        },
+        {
+          "id": "0fe84363-c2c8-449f-b5d5-9ca21a677476",
+          "type": "both"
+        },
+        {
+          "id": "0bd4fd00-a83f-4a16-a026-55b347ea9e6e",
+          "type": "both"
+        },
+        {
+          "id": "52928af9-93a7-4219-b388-4d0e034174d1",
+          "type": "both"
+        },
+        {
+          "id": "a90596b2-9440-4769-9fdd-6360a868bedd",
+          "type": "both"
+        },
+        {
+          "id": "08b45f92-f4ff-480f-874d-4bdc2754060c",
+          "type": "both"
+        },
+        {
+          "id": "7ce1e4b9-e4b1-45f3-962c-97f85775309d",
+          "type": "both"
+        },
+        {
+          "id": "a8e6094e-27f7-4ede-97f1-20faac2e80fb",
+          "type": "both"
+        },
+        {
+          "id": "b7bb88f8-091d-412d-b073-765de81cf560",
+          "type": "both"
+        },
+        {
+          "id": "6298789c-ec9f-4e31-93c4-a6201877acde",
+          "type": "both"
+        },
+        {
+          "id": "c05cabdd-444e-42d2-84ed-ebfaf2301c7e",
+          "type": "both"
+        },
+        {
+          "id": "caae4f91-1e99-45de-a450-89313e6b8407",
+          "type": "both"
+        },
+        {
+          "id": "551f7079-ee88-4089-9c58-d4416fac8c57",
+          "type": "both"
+        },
+        {
+          "id": "bf4ef674-fffc-4e5a-91c7-7ac2fdf37240",
+          "type": "both"
+        }
+      ]
+    },
+    "3029baf9-16fe-45e1-abeb-f4df6343a414": {
+      "oldId": "3029baf9-16fe-45e1-abeb-f4df6343a414",
+      "designerName": "Consuelo Castiglioni",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "d7d2a352-48c9-4ab1-be7b-9f9cc46ded0c",
+          "type": "both"
+        },
+        {
+          "id": "d082c77c-503e-42ba-b522-c8e2df6ff976",
+          "type": "both"
+        },
+        {
+          "id": "9dfeb017-f1e5-45e8-811b-3b0cfbe28687",
+          "type": "both"
+        },
+        {
+          "id": "3e17361b-62c8-421d-9a8d-0c524bbc650b",
+          "type": "both"
+        },
+        {
+          "id": "0de2909e-6b32-41cd-9488-31bdfed724aa",
+          "type": "both"
+        },
+        {
+          "id": "d756198d-fbac-4b32-b9fd-f38ac301ebde",
+          "type": "both"
+        },
+        {
+          "id": "0ce58602-07ba-4389-998b-119ee28024db",
+          "type": "both"
+        },
+        {
+          "id": "79d74665-a7bf-4749-9d4f-d8ef5d2b68bd",
+          "type": "both"
+        },
+        {
+          "id": "f0996833-2da1-4c10-bae3-5c8a99de7b80",
+          "type": "both"
+        },
+        {
+          "id": "04f9044a-fb8a-4865-93bf-0d375eafdcd7",
+          "type": "both"
+        },
+        {
+          "id": "48ce84bd-a51d-4e07-b1a8-8237eacea489",
+          "type": "both"
+        },
+        {
+          "id": "f230304e-befc-4680-8242-ae818e57d64f",
+          "type": "both"
+        },
+        {
+          "id": "cdbf6cb0-da54-4ccd-8a6d-821bb7f43184",
+          "type": "both"
+        },
+        {
+          "id": "a663735a-ba0e-4ec5-a0ed-f09016fc3e27",
+          "type": "both"
+        },
+        {
+          "id": "606c54e4-e9a0-45a2-8b45-c48997211ca8",
+          "type": "both"
+        }
+      ]
+    },
+    "0a98f4fd-d607-47ce-81ce-76ca2d892d61": {
+      "oldId": "0a98f4fd-d607-47ce-81ce-76ca2d892d61",
+      "designerName": "Francesco Risso",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "468a2eeb-f799-4bb9-b109-3bdadaacfa5f",
+          "type": "both"
+        },
+        {
+          "id": "5874c5f1-d61c-458a-ac49-12c2249d6953",
+          "type": "both"
+        },
+        {
+          "id": "c897ccee-06d6-4fae-b28f-c9b8b4b7fada",
+          "type": "both"
+        },
+        {
+          "id": "2295aa28-747d-479a-a760-0634629cc6b5",
+          "type": "both"
+        },
+        {
+          "id": "b93fd8aa-06c0-4549-a3ef-983e9aec292a",
+          "type": "both"
+        },
+        {
+          "id": "797509a5-1e66-467a-8900-bf41b2f25edf",
+          "type": "both"
+        },
+        {
+          "id": "a80ad01b-4656-404b-8a75-6fd584ed5e59",
+          "type": "both"
+        },
+        {
+          "id": "0cc04cf9-eabc-4ceb-beda-2d2aacf5a42c",
+          "type": "both"
+        },
+        {
+          "id": "f0e0dc8e-1a65-48b4-bb8e-6ed959ee1eab",
+          "type": "both"
+        },
+        {
+          "id": "0ccf6f65-d95d-4e2d-af43-ec704f01031b",
+          "type": "both"
+        },
+        {
+          "id": "ed0c9184-8416-48c0-a09f-efefad93c0d6",
+          "type": "both"
+        },
+        {
+          "id": "1174f327-e19e-49c0-a696-cb4d405ef536",
+          "type": "both"
+        },
+        {
+          "id": "4b127017-bf2f-4f40-9c32-6498ba27d623",
+          "type": "both"
+        },
+        {
+          "id": "d356d129-b202-4797-9ae5-9c12f53e2e47",
+          "type": "both"
+        },
+        {
+          "id": "5914b124-5df2-4d41-a8f5-425d0c9c9204",
+          "type": "both"
+        }
+      ]
+    },
+    "1e475018-82ab-42aa-a30c-2690e8e0a952": {
+      "oldId": "1e475018-82ab-42aa-a30c-2690e8e0a952",
+      "designerName": "Jil Sander",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "347be843-a03d-479a-ae89-7f891e640af5",
+          "type": "both"
+        },
+        {
+          "id": "85290ffb-a0a9-4306-868d-d3f62ffe40d0",
+          "type": "both"
+        },
+        {
+          "id": "db347d07-1b32-45b4-9419-4087b3057373",
+          "type": "both"
+        },
+        {
+          "id": "c61931d3-120c-403c-9fec-c9bd45889e93",
+          "type": "both"
+        },
+        {
+          "id": "10a889fa-42b1-40a5-9ef9-4a2373daa17b",
+          "type": "both"
+        },
+        {
+          "id": "66d41280-5c17-42c0-9d2b-64fa680c1955",
+          "type": "both"
+        },
+        {
+          "id": "c3dbdb27-bc78-41dc-aa3c-28a99bb8d6d6",
+          "type": "both"
+        },
+        {
+          "id": "ac4c668c-54db-4845-80b0-4280f439be66",
+          "type": "both"
+        },
+        {
+          "id": "dce09a58-ee12-458f-974a-fe21710014b7",
+          "type": "both"
+        },
+        {
+          "id": "61815dbe-8d9b-4ce9-97e6-9a6bc157ce97",
+          "type": "both"
+        },
+        {
+          "id": "e21c958b-38cb-4727-a624-f48ca516bd3b",
+          "type": "both"
+        },
+        {
+          "id": "71037e2b-741a-401f-9641-7a5b3c61f42b",
+          "type": "both"
+        },
+        {
+          "id": "14f20090-c30e-48a9-a20c-02a60187eebc",
+          "type": "both"
+        },
+        {
+          "id": "5e46a419-9cb1-4550-a501-870caa1a0b79",
+          "type": "both"
+        },
+        {
+          "id": "42aaac52-8514-4663-957c-ddf0dd541c7d",
+          "type": "both"
+        }
+      ]
+    },
+    "5e776e52-f21e-4e74-911a-4f881d744326": {
+      "oldId": "5e776e52-f21e-4e74-911a-4f881d744326",
+      "designerName": "Rei Kawakubo",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "3008c447-8a68-47a8-a89c-d1918b169f52",
+          "type": "both"
+        },
+        {
+          "id": "26671193-6750-41bb-a332-fc29a0411e5a",
+          "type": "both"
+        },
+        {
+          "id": "b4bda86a-21c4-44d6-860b-c238bfcdfbd4",
+          "type": "both"
+        },
+        {
+          "id": "b5da29e5-3dfd-49b9-a82c-4d6aa0c9bc22",
+          "type": "both"
+        },
+        {
+          "id": "72d00147-5eb3-40af-8e15-55136e9fb41b",
+          "type": "both"
+        },
+        {
+          "id": "9d0e67c4-a3e9-4947-8f11-b2fe273d8dcc",
+          "type": "both"
+        },
+        {
+          "id": "e3ffa5da-83f0-402f-9f42-9bf9a7a66e47",
+          "type": "both"
+        },
+        {
+          "id": "40ce20ce-571c-4545-81e2-013c6fa04385",
+          "type": "both"
+        },
+        {
+          "id": "75e030a7-c7f6-4d93-a685-bb75a8582fba",
+          "type": "both"
+        },
+        {
+          "id": "63479353-610b-4a38-a07e-8f7127170297",
+          "type": "both"
+        },
+        {
+          "id": "ec66241c-ebff-4465-a221-d6a2f0a3d738",
+          "type": "both"
+        },
+        {
+          "id": "5edf2276-bad8-46c4-b641-281893a40f9b",
+          "type": "both"
+        },
+        {
+          "id": "198dbab7-b4cb-4c31-87b9-f9cd3bedda52",
+          "type": "both"
+        },
+        {
+          "id": "cd5e0d64-cd45-4339-bb75-ef79ff2cc0b3",
+          "type": "both"
+        },
+        {
+          "id": "17b21bea-1810-4181-9f07-632eb72f8027",
+          "type": "both"
+        },
+        {
+          "id": "e60b9ea6-0eba-4962-8c0f-3e00cd4e443c",
+          "type": "both"
+        },
+        {
+          "id": "11c117b3-388a-4e0f-83d5-9e7ffbf4f59a",
+          "type": "both"
+        },
+        {
+          "id": "b3bf3c84-d6e3-4377-8eb2-4f2d181efdc9",
+          "type": "both"
+        },
+        {
+          "id": "719fc056-7116-44a2-ab20-ff2fa34523e3",
+          "type": "both"
+        },
+        {
+          "id": "1d6e786e-f3ea-441a-be5c-1d5d48dd3677",
+          "type": "both"
+        },
+        {
+          "id": "04dc8528-358d-4474-a8aa-d0611a6d2302",
+          "type": "both"
+        },
+        {
+          "id": "90022780-5b1e-4031-a923-fa52524ba1c9",
+          "type": "both"
+        },
+        {
+          "id": "b806c4e0-8abe-4474-af0b-6fb373416e52",
+          "type": "both"
+        },
+        {
+          "id": "dd2c0564-2965-4f85-808f-6a14e296191f",
+          "type": "both"
+        },
+        {
+          "id": "001fce2c-063c-4481-88b2-d5792f00ac09",
+          "type": "both"
+        },
+        {
+          "id": "a3a2295a-8c46-4f30-909b-89d75f388b22",
+          "type": "both"
+        },
+        {
+          "id": "60eb7d8b-dc41-435f-9e0b-36a5738707a6",
+          "type": "both"
+        },
+        {
+          "id": "c28d829a-f35b-4cf2-a4c8-3cb3ba153eed",
+          "type": "both"
+        },
+        {
+          "id": "6f9d1ba1-c99b-4c80-95e3-236092c39fba",
+          "type": "both"
+        },
+        {
+          "id": "ddb63aed-2eea-4cee-b161-be6d32bfca56",
+          "type": "both"
+        }
+      ]
+    },
+    "f96d6172-371f-41e7-91c2-3cc49c606c51": {
+      "oldId": "f96d6172-371f-41e7-91c2-3cc49c606c51",
+      "designerName": "Jun Takahashi",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "0d34c0b8-9fe8-44d0-8683-7029493472f3",
+          "type": "both"
+        },
+        {
+          "id": "bd8e2d60-ca87-4ece-9bb3-f0da99e3e7a4",
+          "type": "both"
+        },
+        {
+          "id": "35d7d0a3-d93b-49f5-ba6e-63001a86c918",
+          "type": "both"
+        },
+        {
+          "id": "ff68cd56-cf4a-4cfa-bd31-3ddbe8059459",
+          "type": "both"
+        },
+        {
+          "id": "d130f284-decc-4bf8-975a-a5e5f99d5739",
+          "type": "both"
+        },
+        {
+          "id": "b1f902cd-97c8-4af8-8352-c2a5b575426e",
+          "type": "both"
+        },
+        {
+          "id": "8a6b8775-883f-4bcf-a046-b72bfbf786f9",
+          "type": "both"
+        },
+        {
+          "id": "7577a083-73d8-425a-88d4-88ca903d5639",
+          "type": "both"
+        },
+        {
+          "id": "deefa1fc-d629-4c7e-bd77-ada9b1136988",
+          "type": "both"
+        },
+        {
+          "id": "be59f8c1-d205-436e-b033-f43455ce7955",
+          "type": "both"
+        },
+        {
+          "id": "a0259ba6-817b-40bc-8100-2c0cb6528389",
+          "type": "both"
+        },
+        {
+          "id": "e6cd4623-89d8-4318-9e0f-0a5991926793",
+          "type": "both"
+        },
+        {
+          "id": "939326ed-83f2-42e9-9ab8-4af38f026c57",
+          "type": "both"
+        },
+        {
+          "id": "1d534703-fc3e-450e-88fd-e5e5b16e4dbf",
+          "type": "both"
+        },
+        {
+          "id": "5910eb59-0621-4378-b9f9-7bd69bcc5950",
+          "type": "both"
+        },
+        {
+          "id": "073e9d39-2f63-4561-8ac4-dd12f163a169",
+          "type": "both"
+        },
+        {
+          "id": "573e52ed-e025-42a9-a752-66e24ae33001",
+          "type": "both"
+        },
+        {
+          "id": "fb6ce1d6-98fa-4720-bd76-0fd6c9206990",
+          "type": "both"
+        },
+        {
+          "id": "ea9fcb07-63ee-43bd-bc81-9fa073dd7988",
+          "type": "both"
+        },
+        {
+          "id": "96145c2a-55d3-4c3d-8bf1-ce73e9f2cdae",
+          "type": "both"
+        },
+        {
+          "id": "5d15f574-4879-408d-9856-04e3a353508f",
+          "type": "both"
+        },
+        {
+          "id": "bf761a73-a502-462f-b2ab-8c9e9ee33c8c",
+          "type": "both"
+        },
+        {
+          "id": "efa24a5a-d022-447c-a03b-da231c84817e",
+          "type": "both"
+        },
+        {
+          "id": "450d2a67-fbb3-4e90-b1e4-0375d3faf2e8",
+          "type": "both"
+        },
+        {
+          "id": "1ed61c73-cb8f-4c7b-af3b-23fc73e4373d",
+          "type": "both"
+        },
+        {
+          "id": "d64e3054-438a-4735-aa29-ae194de604dc",
+          "type": "both"
+        },
+        {
+          "id": "ee7cf1d0-8b72-4ca1-a9a9-2075b4959c69",
+          "type": "both"
+        },
+        {
+          "id": "9e3505ad-901d-4271-bdff-044b96acd254",
+          "type": "both"
+        },
+        {
+          "id": "e6946cc0-88ac-4761-b953-f4e9ffd16ff8",
+          "type": "both"
+        },
+        {
+          "id": "35306f44-2ec3-4f6b-8f75-bcdb87a172b3",
+          "type": "both"
+        }
+      ]
+    },
+    "b90791a5-088a-4d72-b0a2-261f3c000c0b": {
+      "oldId": "b90791a5-088a-4d72-b0a2-261f3c000c0b",
+      "designerName": "Glenn Martens",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "469e7656-7a75-4659-a8ad-0ce84a22b936",
+          "type": "both"
+        },
+        {
+          "id": "27a2ea28-bd81-41e5-8016-fba8190893f8",
+          "type": "both"
+        },
+        {
+          "id": "b9d6d1c5-0cb1-4b1e-9441-34f57e1b9197",
+          "type": "both"
+        },
+        {
+          "id": "c8f5fe11-935d-43f6-a2e0-40d7edd6fdff",
+          "type": "both"
+        },
+        {
+          "id": "061988a0-552e-4f8e-8801-91c3884ae736",
+          "type": "both"
+        },
+        {
+          "id": "5cea825a-b605-42f7-92c7-acbd22b28231",
+          "type": "both"
+        },
+        {
+          "id": "adc14e75-100c-46a3-9f27-d26151c6bb13",
+          "type": "both"
+        },
+        {
+          "id": "ee933472-d256-4766-bb47-9a8aabac8093",
+          "type": "both"
+        },
+        {
+          "id": "173aa7b5-fc7a-4a51-bcb0-e52ee86f65eb",
+          "type": "both"
+        },
+        {
+          "id": "ee61ff9a-73d7-4f53-b082-ad1e7eb4956d",
+          "type": "both"
+        },
+        {
+          "id": "6ef44f87-b699-4793-a82d-00c4935ac79b",
+          "type": "both"
+        },
+        {
+          "id": "f7ef6c92-cd13-4687-823d-2e81ac957d6c",
+          "type": "both"
+        },
+        {
+          "id": "1c843dbb-cc73-4eb7-a836-852e9e609a35",
+          "type": "both"
+        },
+        {
+          "id": "a90d7a49-3a80-44ec-a0ed-51d69a0a349c",
+          "type": "both"
+        },
+        {
+          "id": "c67ce741-8a1e-4830-800d-40b49fa653b9",
+          "type": "both"
+        },
+        {
+          "id": "e3fb449f-5620-476c-8e38-66c8dea8c571",
+          "type": "both"
+        },
+        {
+          "id": "97c5643a-19df-476b-aa10-1ca8ac7ffa45",
+          "type": "both"
+        },
+        {
+          "id": "c87adc7b-9433-4e2e-88be-1fdc49ff22a7",
+          "type": "both"
+        },
+        {
+          "id": "6908c8f0-6beb-49a7-9629-88610c2dc94d",
+          "type": "both"
+        },
+        {
+          "id": "dfe534aa-a55d-4a2c-9dd9-0cb45599e6d5",
+          "type": "both"
+        },
+        {
+          "id": "7f517f7b-7b5e-49b3-87bf-1ec764626aa0",
+          "type": "both"
+        },
+        {
+          "id": "0bcca270-0337-4a1e-aa6a-5b93bdbae98a",
+          "type": "both"
+        },
+        {
+          "id": "3dbb67b2-b3a2-4b33-a4e6-3e5565713e23",
+          "type": "both"
+        },
+        {
+          "id": "216e8989-4ae5-4741-9da6-b4e0250289dc",
+          "type": "both"
+        },
+        {
+          "id": "e2180fb1-69e7-4592-8ec2-a397aa397fa7",
+          "type": "both"
+        },
+        {
+          "id": "8be20e83-1735-4fb8-ac0d-1e1f065c2d2b",
+          "type": "both"
+        },
+        {
+          "id": "ff0c98ae-fc2d-4df3-ae54-bfe5c8262376",
+          "type": "both"
+        },
+        {
+          "id": "eebbf89a-8463-4915-8e8b-7e88cbb943dc",
+          "type": "both"
+        },
+        {
+          "id": "3a858a42-2341-4100-8ede-2a1e0f43bff0",
+          "type": "both"
+        },
+        {
+          "id": "810fc07a-290a-4fb0-ba53-7eb8eb7faf0b",
+          "type": "both"
+        }
+      ]
+    },
+    "3fedcf4b-8231-429c-b324-a09e8c3e63d4": {
+      "oldId": "3fedcf4b-8231-429c-b324-a09e8c3e63d4",
+      "designerName": "Nigo",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "358d6b01-74a3-4f24-9692-2377d92934c3",
+          "type": "both"
+        },
+        {
+          "id": "38024bb9-ba51-44d9-8f4e-848006a5c1e3",
+          "type": "both"
+        },
+        {
+          "id": "52b9aa16-1575-4fe4-b500-9733e738bb08",
+          "type": "both"
+        },
+        {
+          "id": "15f52276-6f08-4a3c-8513-39affc566f3b",
+          "type": "both"
+        },
+        {
+          "id": "47a9f6f3-e43b-49c7-b764-767ff10447b2",
+          "type": "both"
+        },
+        {
+          "id": "59b5a9b1-2662-43f0-a6b7-16cd7440d310",
+          "type": "both"
+        },
+        {
+          "id": "75614f1a-44be-427b-85a8-a355cdf4dc0f",
+          "type": "both"
+        },
+        {
+          "id": "8e651b8a-2d2a-41c0-8ca5-c72d3892c0e5",
+          "type": "both"
+        },
+        {
+          "id": "bb19ecbe-b780-43aa-b37b-de974f9c5870",
+          "type": "both"
+        },
+        {
+          "id": "68ff8fd1-af10-4bab-8f65-ec885a4739f1",
+          "type": "both"
+        },
+        {
+          "id": "f8b4186f-da65-4fab-a0be-9723f8925bdf",
+          "type": "both"
+        },
+        {
+          "id": "fe04e6b3-25bc-48c4-9547-74be0cdfc155",
+          "type": "both"
+        },
+        {
+          "id": "ac484734-2fdf-47f0-be56-a9f49aabdbd3",
+          "type": "both"
+        },
+        {
+          "id": "446f7902-c210-4c3d-83eb-4662173669ea",
+          "type": "both"
+        },
+        {
+          "id": "3abf85fb-f26a-4b52-bf21-16e4a3194d6b",
+          "type": "both"
+        },
+        {
+          "id": "dbac1b47-a558-48b6-aea2-4ed69551d24d",
+          "type": "both"
+        },
+        {
+          "id": "e95923b9-0e52-45cc-a96d-853e3bd56847",
+          "type": "both"
+        },
+        {
+          "id": "1196d668-c644-460d-8c98-540c5ee5e483",
+          "type": "both"
+        },
+        {
+          "id": "16f94951-432f-4359-9871-be5b287fba92",
+          "type": "both"
+        },
+        {
+          "id": "1d5b7237-2182-4613-aeca-6ec24f18dfb2",
+          "type": "both"
+        },
+        {
+          "id": "a71c7a17-061f-4e45-8363-8f469affffde",
+          "type": "both"
+        },
+        {
+          "id": "cae7d5be-36c6-49b1-a765-1a03375fdd67",
+          "type": "both"
+        },
+        {
+          "id": "5268c5ae-4237-4c42-ab65-96ff2b66bce8",
+          "type": "both"
+        },
+        {
+          "id": "27c3ce6c-ffe6-4bd8-a81a-ffb27c681db0",
+          "type": "both"
+        },
+        {
+          "id": "e8a7d738-2c53-4dae-a110-b4b79b2c9168",
+          "type": "both"
+        },
+        {
+          "id": "2701b824-19c3-4e89-8062-261aca908098",
+          "type": "both"
+        },
+        {
+          "id": "28523cab-fed8-4b69-a963-3a8661fed1a0",
+          "type": "both"
+        },
+        {
+          "id": "162991ef-f596-4b26-ada7-749a8f8f139b",
+          "type": "both"
+        },
+        {
+          "id": "3b25f613-6097-4369-b061-f626b43b7d6b",
+          "type": "both"
+        },
+        {
+          "id": "309302c2-8428-41f1-bc52-e03416fc363c",
+          "type": "both"
+        }
+      ]
+    },
+    "09562530-8c78-4fe1-95eb-3bee6ea3f267": {
+      "oldId": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
+      "designerName": "Marc Jacobs",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "89cc863b-3c72-4db5-9dd1-558dacbc02e2",
+          "type": "both"
+        },
+        {
+          "id": "2da76df2-515c-447a-9f9b-75d2079321bf",
+          "type": "both"
+        },
+        {
+          "id": "de5c3574-1afb-4146-9259-0a7dd976948a",
+          "type": "both"
+        },
+        {
+          "id": "db0dbd1d-3826-4274-8920-dbb61037eb4f",
+          "type": "both"
+        },
+        {
+          "id": "d197b7ef-f239-40f1-80d0-e13315575d99",
+          "type": "both"
+        },
+        {
+          "id": "00e8d2aa-ebbb-4b70-9816-2035e20fb075",
+          "type": "both"
+        },
+        {
+          "id": "247a950f-12e6-4294-b54d-856358381174",
+          "type": "both"
+        },
+        {
+          "id": "4c88e857-7676-486e-9af2-d4b3e9c68394",
+          "type": "both"
+        },
+        {
+          "id": "d24dde6b-6674-439a-8863-21b4f46b66ca",
+          "type": "both"
+        },
+        {
+          "id": "5a855101-dea7-4f84-9ea3-973452870b02",
+          "type": "both"
+        },
+        {
+          "id": "4cfcd09e-a7a2-419a-9c0f-ed3e41f3c52a",
+          "type": "both"
+        },
+        {
+          "id": "240d4571-e83e-479d-af95-b639bd9d5375",
+          "type": "both"
+        },
+        {
+          "id": "deb02622-a6ca-40a2-b714-f2ee4fd8af15",
+          "type": "both"
+        },
+        {
+          "id": "35ba4a6e-88b6-426c-ae19-3f6b9d64ea78",
+          "type": "both"
+        },
+        {
+          "id": "248c6b93-4401-4763-8e31-a5b753fd0ec8",
+          "type": "both"
+        }
+      ]
+    },
+    "1a772d69-b073-446d-9663-ea5126a0d5a1": {
+      "oldId": "1a772d69-b073-446d-9663-ea5126a0d5a1",
+      "designerName": "Peter Do",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "c3dc760e-9120-47a9-aa82-3c445d53daf0",
+          "type": "both"
+        },
+        {
+          "id": "d82ff674-aeef-4c85-9c46-68e746d5eba1",
+          "type": "both"
+        },
+        {
+          "id": "680f099c-8fda-4408-9187-146023ad0cd9",
+          "type": "both"
+        },
+        {
+          "id": "91f5a16d-b99a-40e8-86ef-af3255b79969",
+          "type": "both"
+        },
+        {
+          "id": "aab8e23c-8f5f-4f54-ac86-077fe4daa31f",
+          "type": "both"
+        },
+        {
+          "id": "c8d05c2b-39fb-40a0-860e-48a585e8072b",
+          "type": "both"
+        },
+        {
+          "id": "a9b5de81-c623-45bb-9df2-aa7feb67b01e",
+          "type": "both"
+        },
+        {
+          "id": "024e4631-fc1d-4636-8905-e867933c4a66",
+          "type": "both"
+        },
+        {
+          "id": "86bc77f1-a834-43e6-a59e-6381923d55a5",
+          "type": "both"
+        },
+        {
+          "id": "a798f2f2-46f5-4de6-8e7c-76bd061fb592",
+          "type": "both"
+        },
+        {
+          "id": "a196ace5-fcd1-448c-aed5-498f566164ad",
+          "type": "both"
+        },
+        {
+          "id": "9170d89b-fda5-4521-ad2d-95c667c0b467",
+          "type": "both"
+        },
+        {
+          "id": "ff8088e0-3a36-452c-8c45-24d8110a1431",
+          "type": "both"
+        },
+        {
+          "id": "4d29b629-95c5-4fe3-b1f0-4bfa9bfe1c53",
+          "type": "both"
+        },
+        {
+          "id": "ce877bff-a053-49e3-a2b6-7657e2039661",
+          "type": "both"
+        }
+      ]
+    },
+    "33248d72-602b-4ef4-8608-625292369b0f": {
+      "oldId": "33248d72-602b-4ef4-8608-625292369b0f",
+      "designerName": "Christophe Lemaire",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "42db14e2-1818-4bea-90e7-c80ac93030b0",
+          "type": "both"
+        },
+        {
+          "id": "8dc19a22-77ab-4924-a4b7-ebba73b3b5d5",
+          "type": "both"
+        },
+        {
+          "id": "86f32ddc-061a-4dc0-92f1-f14530c90f3a",
+          "type": "both"
+        },
+        {
+          "id": "67a5d727-5108-4d25-8d82-f685780c9d6a",
+          "type": "both"
+        },
+        {
+          "id": "1b2f42c9-fc3f-429d-910f-6bf3aeffb2c4",
+          "type": "both"
+        },
+        {
+          "id": "43ed7ec1-b0b3-4cda-a6af-9ee83a57d290",
+          "type": "both"
+        },
+        {
+          "id": "6e88441e-8d59-40b8-a8eb-0424ca37c7d6",
+          "type": "both"
+        },
+        {
+          "id": "b8e1dbf8-1550-47a0-8eb9-3d267b23894d",
+          "type": "both"
+        },
+        {
+          "id": "f4da9d77-5d35-4cf4-87b3-563d3b2988cc",
+          "type": "both"
+        },
+        {
+          "id": "25669fee-4185-4e93-82de-7c86d4eeedae",
+          "type": "both"
+        },
+        {
+          "id": "93c818e3-a077-4c27-95dc-e57a272c721f",
+          "type": "both"
+        },
+        {
+          "id": "9cb78894-bc27-44a1-a9c2-79a2f53da0dc",
+          "type": "both"
+        },
+        {
+          "id": "185d5bdc-4684-4f52-860e-8463045621aa",
+          "type": "both"
+        },
+        {
+          "id": "81d174ea-33a1-4d8d-8f1b-5b058e3c8672",
+          "type": "both"
+        },
+        {
+          "id": "0e0ae261-ada2-486a-b3f0-ff7c403449cf",
+          "type": "both"
+        }
+      ]
+    },
+    "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb": {
+      "oldId": "86ff1480-0d6c-4bac-bd85-b1b23bfe20bb",
+      "designerName": "Jerry Lorenzo",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "3f654dbc-baa4-4c88-8201-18f33a3e4f22",
+          "type": "both"
+        },
+        {
+          "id": "e212217b-e43b-4b58-8523-b586f2136a98",
+          "type": "both"
+        },
+        {
+          "id": "5d6b1b5e-a752-4cff-ae6b-25d5073b3ae8",
+          "type": "both"
+        },
+        {
+          "id": "eb201844-a6db-49bb-8222-bb83b6ffe766",
+          "type": "both"
+        },
+        {
+          "id": "a33d64ce-8b92-4a5d-9415-12e5711a7a58",
+          "type": "both"
+        },
+        {
+          "id": "7b11f743-88bb-4bbb-9fa0-98b2f318612a",
+          "type": "both"
+        },
+        {
+          "id": "35a90506-34e0-4406-8619-e2306d8165b3",
+          "type": "both"
+        },
+        {
+          "id": "254253c8-5a6f-442a-a61c-f12dc1cfed67",
+          "type": "both"
+        },
+        {
+          "id": "3940a702-a235-4e4c-b78f-32e9a1056860",
+          "type": "both"
+        },
+        {
+          "id": "51600556-0b26-464c-a71e-db629043a8d6",
+          "type": "both"
+        },
+        {
+          "id": "8af662bd-7289-40ae-bb55-7fa6aa01b8d1",
+          "type": "both"
+        },
+        {
+          "id": "6f1cd71c-b685-4e12-88f2-642d0c97af9b",
+          "type": "both"
+        },
+        {
+          "id": "ad367c60-3c5f-45d7-b0f1-9645190509c5",
+          "type": "both"
+        },
+        {
+          "id": "aad1f41b-9741-4def-b5b3-1e3d47df17a9",
+          "type": "both"
+        },
+        {
+          "id": "c7269702-3745-47b8-beb8-4d4b6dcd34a9",
+          "type": "both"
+        }
+      ]
+    },
+    "866e28ed-97a5-462c-a36a-5d1fb0c8396f": {
+      "oldId": "866e28ed-97a5-462c-a36a-5d1fb0c8396f",
+      "designerName": "Emily Adams Bode",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "e70410c7-bb5a-40d2-80a2-07750bfd917e",
+          "type": "both"
+        },
+        {
+          "id": "f1e13a38-ae42-44c4-98fd-8e68e2cf3f61",
+          "type": "both"
+        },
+        {
+          "id": "b1b44b9b-3758-4ebe-a0db-bb24a9943a2f",
+          "type": "both"
+        },
+        {
+          "id": "0c92d63a-5a6b-40b2-9181-8f4d6829e982",
+          "type": "both"
+        },
+        {
+          "id": "442fe110-0841-4e50-9512-a3b75a5d4bb3",
+          "type": "both"
+        },
+        {
+          "id": "b2bacbcf-3d7d-4464-98ae-cde05271b731",
+          "type": "both"
+        },
+        {
+          "id": "7a58133d-3a1a-4348-949b-52400109bc81",
+          "type": "both"
+        },
+        {
+          "id": "b28f1c8e-db71-4c51-b5de-3be409fab785",
+          "type": "both"
+        },
+        {
+          "id": "058fe03b-279e-4daf-b068-38cf6ce9fd5b",
+          "type": "both"
+        },
+        {
+          "id": "688aa87f-00ed-422c-9c75-a240de5a783c",
+          "type": "both"
+        },
+        {
+          "id": "c05a5b56-1cb1-45b1-b509-334508b7f51d",
+          "type": "both"
+        },
+        {
+          "id": "88e8a7aa-35ee-4e55-a923-0d4a1899ad79",
+          "type": "both"
+        },
+        {
+          "id": "af6332c5-f531-4005-a942-978288c99937",
+          "type": "both"
+        },
+        {
+          "id": "b882d4ec-0e32-47ef-be53-dff41b1ff564",
+          "type": "both"
+        },
+        {
+          "id": "0f6a3dd9-7141-4d8f-a174-573161669efd",
+          "type": "both"
+        }
+      ]
+    },
+    "dda55774-a2ce-4a3d-8c58-583c216b730a": {
+      "oldId": "dda55774-a2ce-4a3d-8c58-583c216b730a",
+      "designerName": "Alexander McQueen",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "c90716c4-d52d-4a45-9db1-3956b10aa586",
+          "type": "both"
+        },
+        {
+          "id": "45bfb82f-e02d-4094-a01f-d6281e010b92",
+          "type": "both"
+        },
+        {
+          "id": "39bc2824-ce64-4604-ad75-31d2a1d283f6",
+          "type": "both"
+        },
+        {
+          "id": "71dcb68d-ea94-49d8-a794-e818b495c77d",
+          "type": "both"
+        },
+        {
+          "id": "fa9916b2-208d-4fc3-b214-9e070429d144",
+          "type": "both"
+        },
+        {
+          "id": "71565664-7687-42d2-b93f-6671c5becc84",
+          "type": "both"
+        },
+        {
+          "id": "6022ae2a-549f-4b64-9c2c-d0123f12941c",
+          "type": "both"
+        },
+        {
+          "id": "06057bd7-b78a-43bd-9383-3a9167c3783e",
+          "type": "both"
+        },
+        {
+          "id": "8192e065-e19f-4406-a76e-623f75be4bc0",
+          "type": "both"
+        },
+        {
+          "id": "7dff9d83-078a-4cf4-9861-ebf4d2b036c1",
+          "type": "both"
+        },
+        {
+          "id": "8691106c-f584-41f4-ad4d-99997ebe874c",
+          "type": "both"
+        },
+        {
+          "id": "5ffbc203-f7db-4eb1-9d7d-1506a5c7ce77",
+          "type": "both"
+        },
+        {
+          "id": "16c5f4d5-3d5f-404d-adea-28b091839b50",
+          "type": "both"
+        },
+        {
+          "id": "a8ef41e9-0ce0-42f1-bb43-3759c386768a",
+          "type": "both"
+        },
+        {
+          "id": "232b2d3c-fed2-43d5-998d-dfdd73a414c4",
+          "type": "both"
+        }
+      ]
+    },
+    "1e5da919-faab-4484-a54c-8f1ce82d5b5d": {
+      "oldId": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
+      "designerName": "Sarah Burton",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "360f449b-628c-4cc0-a7af-ecb040fee618",
+          "type": "both"
+        },
+        {
+          "id": "382f526e-7070-428f-b202-430199c2312c",
+          "type": "both"
+        },
+        {
+          "id": "132b1864-7af1-4ebb-bb11-034301010b42",
+          "type": "both"
+        },
+        {
+          "id": "6478dbf2-c74c-432b-9410-a5beb249b086",
+          "type": "both"
+        },
+        {
+          "id": "461cbac5-8e9b-483e-ad96-fdac8f070696",
+          "type": "both"
+        },
+        {
+          "id": "a09e38eb-79f9-4d84-88df-837405cca3e5",
+          "type": "both"
+        },
+        {
+          "id": "40b2bf11-c1e3-487a-a292-ecc73c28e6f8",
+          "type": "both"
+        },
+        {
+          "id": "71dea73c-aadb-4468-a99e-49a4e3e31b64",
+          "type": "both"
+        },
+        {
+          "id": "36be4474-9790-4728-a06f-f91aa131c930",
+          "type": "both"
+        },
+        {
+          "id": "bd289e9a-0717-4cb5-998e-16ec7bc9126e",
+          "type": "both"
+        },
+        {
+          "id": "0007415e-6e86-416c-ad09-73e5b95e45c4",
+          "type": "both"
+        },
+        {
+          "id": "3b60c079-9eb9-45f0-a63c-b260a7b97683",
+          "type": "both"
+        },
+        {
+          "id": "91b5d4a6-ada7-43e4-84b4-94c8bc98f17a",
+          "type": "both"
+        },
+        {
+          "id": "84d0e960-4792-4acf-8fb5-0ea13cf9a629",
+          "type": "both"
+        },
+        {
+          "id": "92d972fc-27a6-42a0-89a6-6b420b886445",
+          "type": "both"
+        }
+      ]
+    },
+    "aeeb27d3-33a3-4370-b3e4-e563c79b17d4": {
+      "oldId": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
+      "designerName": "Salvatore Ferragamo",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "c2efafc0-45ed-404f-85ac-4b77f3f53db0",
+          "type": "both"
+        },
+        {
+          "id": "b9605fe1-bd96-405a-b59e-e47d3fe3a845",
+          "type": "both"
+        },
+        {
+          "id": "7773706c-a07d-4f85-b9c8-494caa80c227",
+          "type": "both"
+        },
+        {
+          "id": "73d54f81-7dd9-422d-9d94-5a28ae651832",
+          "type": "both"
+        },
+        {
+          "id": "608e162f-435d-4d52-a976-36b7d961463d",
+          "type": "both"
+        },
+        {
+          "id": "c74681b1-0c8b-4b0c-a280-f2d70a6ae120",
+          "type": "both"
+        },
+        {
+          "id": "60730764-b365-4b16-b570-94a59ff0fe83",
+          "type": "both"
+        },
+        {
+          "id": "b2bef0a3-2799-41d5-bfe1-950db936adfa",
+          "type": "both"
+        },
+        {
+          "id": "80756139-fa27-4d9f-b904-03b21cd07bb0",
+          "type": "both"
+        },
+        {
+          "id": "09367002-29ba-4408-bec9-8138012fab35",
+          "type": "both"
+        },
+        {
+          "id": "71c8b18b-ada6-47e8-9290-d784cad21fd0",
+          "type": "both"
+        },
+        {
+          "id": "6ad3d2f7-5d75-4c0d-b360-820980b8ea17",
+          "type": "both"
+        },
+        {
+          "id": "63503050-f971-40fe-aa2f-ce62fd239b1f",
+          "type": "both"
+        },
+        {
+          "id": "b4e7b1bb-42ed-488a-b811-fdceccc018b3",
+          "type": "both"
+        },
+        {
+          "id": "89c2afdf-c4c7-4bd8-8ed3-bc93f41fa426",
+          "type": "both"
+        }
+      ]
+    },
+    "1dd57296-e0d1-41d3-8551-be79597b40aa": {
+      "oldId": "1dd57296-e0d1-41d3-8551-be79597b40aa",
+      "designerName": "Franco Moschino",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "2c0096f4-791d-4485-9722-a8c29aee593e",
+          "type": "both"
+        },
+        {
+          "id": "b3d9d331-018e-4a1c-bd3c-43230e88e7d7",
+          "type": "both"
+        },
+        {
+          "id": "2c822bb7-12ab-442a-b9e3-3ebcfa15cca3",
+          "type": "both"
+        },
+        {
+          "id": "aba0fcc1-1574-447e-ac02-4d7cf10e1bf0",
+          "type": "both"
+        },
+        {
+          "id": "01d49ed5-1e98-466f-aa42-df964295a431",
+          "type": "both"
+        },
+        {
+          "id": "8e1dba48-1985-43c7-9b59-7315095324ea",
+          "type": "both"
+        },
+        {
+          "id": "cbb8169f-4a2f-4b98-912e-97e45eb509cc",
+          "type": "both"
+        },
+        {
+          "id": "e26967e0-5866-4d0c-b6e8-5366f4d0192a",
+          "type": "both"
+        },
+        {
+          "id": "163cefc7-ef75-4f23-aba2-780137d56aad",
+          "type": "both"
+        },
+        {
+          "id": "3defd8ec-48a9-40d8-82d7-d411c87f168b",
+          "type": "both"
+        },
+        {
+          "id": "25bd357e-cd1d-47f4-adca-793476a9a9a6",
+          "type": "both"
+        },
+        {
+          "id": "a7c7093a-dfdc-441a-bc8c-935ba3e1623d",
+          "type": "both"
+        },
+        {
+          "id": "12a74e41-32e2-4467-bbf7-ce0dc87668aa",
+          "type": "both"
+        },
+        {
+          "id": "cef4e4a9-b66e-40f6-9814-8368abd7e220",
+          "type": "both"
+        },
+        {
+          "id": "4b8612d9-3ed5-4ba7-bdd0-add6c503b939",
+          "type": "both"
+        }
+      ]
+    },
+    "0e0d4241-6dba-4874-a971-3268fee55897": {
+      "oldId": "0e0d4241-6dba-4874-a971-3268fee55897",
+      "designerName": "Issey Miyake",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "9b225f8a-4e67-4d1d-8dae-54d44cbd722c",
+          "type": "both"
+        },
+        {
+          "id": "f971ae46-6079-454c-b82c-cc53a2ae75a5",
+          "type": "both"
+        },
+        {
+          "id": "36490174-2032-451f-8436-3ccaf2115986",
+          "type": "both"
+        },
+        {
+          "id": "1601b5ff-233c-4db7-9304-70d019d807c2",
+          "type": "both"
+        },
+        {
+          "id": "67823307-d3b6-4c9f-815e-61930a38d706",
+          "type": "both"
+        },
+        {
+          "id": "d48291f2-7980-4c77-9a8d-88fb64f2f83c",
+          "type": "both"
+        },
+        {
+          "id": "1e42d95c-6a50-4dc9-9eb1-e4a1179a70f0",
+          "type": "both"
+        },
+        {
+          "id": "59a759c6-c014-4d1e-aa9f-e523170e9887",
+          "type": "both"
+        },
+        {
+          "id": "e315b5e9-d0b6-45e3-a18f-df6ce62d2391",
+          "type": "both"
+        },
+        {
+          "id": "d6156239-4e46-4400-a2bb-de8d311fea03",
+          "type": "both"
+        },
+        {
+          "id": "045a11ce-b3c8-4d27-8fcd-5ce552103caa",
+          "type": "both"
+        },
+        {
+          "id": "296e61f1-083b-417f-945e-1ca2094ca1bf",
+          "type": "both"
+        },
+        {
+          "id": "59dc28c3-2b59-4e46-ac1b-71e0cea28ea6",
+          "type": "both"
+        },
+        {
+          "id": "b76d81a4-ac24-442e-9c02-c067a6a5d7d8",
+          "type": "both"
+        },
+        {
+          "id": "0d473edf-919f-4c1c-8b17-1fa7aace4f7a",
+          "type": "both"
+        }
+      ]
+    },
+    "f0a34c65-a960-4932-b0f4-b1a733cdd7ed": {
+      "oldId": "f0a34c65-a960-4932-b0f4-b1a733cdd7ed",
+      "designerName": "Domenico Dolce",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "bc7f50e7-80e6-4a8d-8e4f-737a23af35f1",
+          "type": "both"
+        },
+        {
+          "id": "c30cecca-3090-4b07-bdef-dc4565bd2f42",
+          "type": "both"
+        },
+        {
+          "id": "e94b8aed-0168-42f6-a853-5d580c6ccdfe",
+          "type": "both"
+        },
+        {
+          "id": "225eaa82-267f-4387-b4e2-8fbca5d7b229",
+          "type": "both"
+        },
+        {
+          "id": "f090a5aa-9311-4916-bcef-40d353ec73aa",
+          "type": "both"
+        },
+        {
+          "id": "9fe4b700-6b5a-4f6a-916f-e855a5c70cc7",
+          "type": "both"
+        },
+        {
+          "id": "3606f306-7411-450f-bcf9-b1f29104c140",
+          "type": "both"
+        },
+        {
+          "id": "f3bc2e21-1620-4d74-b2d2-501beca688b2",
+          "type": "both"
+        },
+        {
+          "id": "4056b593-9d52-40cb-a5f7-b7bc7e829b0a",
+          "type": "both"
+        },
+        {
+          "id": "42db8743-8f6c-4645-a5bd-7b681f639611",
+          "type": "both"
+        },
+        {
+          "id": "a825d510-05b8-44f6-abaa-e196231fa4e3",
+          "type": "both"
+        },
+        {
+          "id": "0481d051-6b2b-48e1-b5ee-252e07723b01",
+          "type": "both"
+        },
+        {
+          "id": "4a1fa5f1-36b5-439f-9906-fd4fe8e47af0",
+          "type": "both"
+        },
+        {
+          "id": "0388550c-710d-4852-b9a8-349e762ec974",
+          "type": "both"
+        },
+        {
+          "id": "2f2f7b8f-d09a-4632-a52d-9fd25c15406c",
+          "type": "both"
+        }
+      ]
+    },
+    "443ee067-2213-4307-9671-c19e09bf21d4": {
+      "oldId": "443ee067-2213-4307-9671-c19e09bf21d4",
+      "designerName": "Stefano Gabbana",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "e447b8cf-2e72-4a8e-9a59-16197aea210e",
+          "type": "both"
+        },
+        {
+          "id": "2571e1af-6624-4c43-b7c9-04e0baab3e80",
+          "type": "both"
+        },
+        {
+          "id": "697a1a07-85a1-4d5d-b739-0e5c6a7291b3",
+          "type": "both"
+        },
+        {
+          "id": "8f65e9a2-b23f-460c-ae6a-c6d346378cac",
+          "type": "both"
+        },
+        {
+          "id": "2b339f52-1940-4fd0-90d1-1ee815f398a9",
+          "type": "both"
+        },
+        {
+          "id": "4d2612a6-ff8d-4538-b17c-88e49b0f2eab",
+          "type": "both"
+        },
+        {
+          "id": "ab4d72de-7221-4790-b284-a329980a1113",
+          "type": "both"
+        },
+        {
+          "id": "8ef4edd3-a09b-4e44-8049-be3af3e4b15a",
+          "type": "both"
+        },
+        {
+          "id": "1e68a726-d9f3-432f-98a2-75b1349d2e73",
+          "type": "both"
+        },
+        {
+          "id": "28ab3101-9ddd-461f-b1ef-742c05cd3cea",
+          "type": "both"
+        },
+        {
+          "id": "e7f90f56-3b83-4e3e-ae9a-af7e1671708c",
+          "type": "both"
+        },
+        {
+          "id": "1be32f3f-4897-4561-82ec-d177a6236855",
+          "type": "both"
+        },
+        {
+          "id": "8d17d959-1946-41d2-98bb-fd0b6b63fb5b",
+          "type": "both"
+        },
+        {
+          "id": "9f3ca4b0-f82b-4370-b230-adef0c604448",
+          "type": "both"
+        },
+        {
+          "id": "fd9deb64-d416-49d0-8746-355b52d68340",
+          "type": "both"
+        }
+      ]
+    },
+    "04328830-5606-4cd5-b88f-7bc874623767": {
+      "oldId": "04328830-5606-4cd5-b88f-7bc874623767",
+      "designerName": "Thierry Mugler",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "9d859656-6f02-42e7-9976-32bd926ea026",
+          "type": "both"
+        },
+        {
+          "id": "84b6b200-12fd-491a-92e8-f868ecfe0769",
+          "type": "both"
+        },
+        {
+          "id": "aa9965a0-bdc2-4146-8f34-b6244dae7298",
+          "type": "both"
+        },
+        {
+          "id": "a98e551f-e26f-405d-80fb-1c8f849d502f",
+          "type": "both"
+        },
+        {
+          "id": "afebfd03-c2db-46ad-800f-b375fa9b1b28",
+          "type": "both"
+        },
+        {
+          "id": "a1ab19ec-bc9f-4c0f-85f1-2fa0b1668860",
+          "type": "both"
+        },
+        {
+          "id": "4e79a0ae-0f83-403a-a374-b507241d2320",
+          "type": "both"
+        },
+        {
+          "id": "6bc0f9de-d4b4-4db8-a35c-307c1b7be195",
+          "type": "both"
+        },
+        {
+          "id": "6c523d24-c99c-4fb3-8160-3992ef96903c",
+          "type": "both"
+        },
+        {
+          "id": "fa17bcf4-1e2c-4b33-b28a-02402f93694e",
+          "type": "both"
+        },
+        {
+          "id": "b8ae44f1-a682-4904-8372-56627a97afc1",
+          "type": "both"
+        },
+        {
+          "id": "c4757156-9cf0-4c7b-ad39-65c350d784e9",
+          "type": "both"
+        },
+        {
+          "id": "2d0408fb-dde2-4b97-8401-e22c88502ba2",
+          "type": "both"
+        },
+        {
+          "id": "69e301f8-9f0c-4565-aa2a-fc109f1a6f4f",
+          "type": "both"
+        },
+        {
+          "id": "d19dad45-930a-44c0-83f5-cf049e8e07d3",
+          "type": "both"
+        }
+      ]
+    },
+    "efdd7c16-7cf8-4e35-a378-d45d9fd94a01": {
+      "oldId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
+      "designerName": "Demna Gvasalia",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "f64726ff-1a30-4103-b583-f6408111703e",
+          "type": "both"
+        },
+        {
+          "id": "45f30ba7-65a8-4cf6-884a-7a24d86ca945",
+          "type": "both"
+        },
+        {
+          "id": "741be7c5-91ee-4cc7-91ef-752293427628",
+          "type": "both"
+        },
+        {
+          "id": "fb230a40-314d-4ace-93b3-ab6c647529e3",
+          "type": "both"
+        },
+        {
+          "id": "487da604-002e-4817-a173-ae2f9ac5b2ec",
+          "type": "both"
+        },
+        {
+          "id": "f3c1b4b8-b95d-4abf-a20a-414f5d52331a",
+          "type": "both"
+        },
+        {
+          "id": "21a50795-de47-4c1b-8ef0-5da8b4bd1b62",
+          "type": "both"
+        },
+        {
+          "id": "0273c948-1373-4667-add0-df8828b9eb26",
+          "type": "both"
+        },
+        {
+          "id": "63679f2e-d633-4a38-b1a2-b1bca6f0f2b4",
+          "type": "both"
+        },
+        {
+          "id": "5fbd9eaa-248d-4928-bb41-fd49c69f45b5",
+          "type": "both"
+        },
+        {
+          "id": "2ed5dd5b-5f5c-4d6d-9f79-d28283481b03",
+          "type": "both"
+        },
+        {
+          "id": "fafe021f-a2df-4834-9496-ff370e873340",
+          "type": "both"
+        },
+        {
+          "id": "471010e6-1fd7-4cd6-a6b3-9a87ee9ffb6b",
+          "type": "both"
+        },
+        {
+          "id": "3e7d855c-b691-4a7f-aa8f-7f7e38b59338",
+          "type": "both"
+        },
+        {
+          "id": "c3cab46e-bbfa-4a76-932a-d25a2024c773",
+          "type": "both"
+        }
+      ]
+    },
+    "b780392f-3fbf-475d-8291-4b05be489529": {
+      "oldId": "b780392f-3fbf-475d-8291-4b05be489529",
+      "designerName": "Helmut Lang",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "02521c1b-e29f-4280-b7b7-b449203bd178",
+          "type": "both"
+        },
+        {
+          "id": "dfa64df4-e452-4639-8b26-dfa050ec2e5a",
+          "type": "both"
+        },
+        {
+          "id": "943548fd-fdf4-43c9-b07b-df4df6364014",
+          "type": "both"
+        },
+        {
+          "id": "07f58bd0-75d9-42fb-82b4-eb865d9c0cfd",
+          "type": "both"
+        },
+        {
+          "id": "d6dbd115-bf34-4982-b6f7-13bb53f17553",
+          "type": "both"
+        },
+        {
+          "id": "b3f95aa1-4ba3-4a8d-b8e2-ddfcdef6d6d2",
+          "type": "both"
+        },
+        {
+          "id": "3bcf6057-736e-4bb7-a2bb-bdf8dffa31bf",
+          "type": "both"
+        },
+        {
+          "id": "177e00f5-57cf-4ce4-91ec-e200c7f5f314",
+          "type": "both"
+        },
+        {
+          "id": "9e9c71f4-a815-4d46-b6e3-e34ad142e61c",
+          "type": "both"
+        },
+        {
+          "id": "28a504dd-f5f1-49f6-8afd-d9093d1c9112",
+          "type": "both"
+        },
+        {
+          "id": "fcf58aef-c5df-4da6-a1c6-f7961b02dc4a",
+          "type": "both"
+        },
+        {
+          "id": "ad48b513-4950-40b4-a7a4-060edb08f013",
+          "type": "both"
+        },
+        {
+          "id": "0d534199-0000-49ab-9298-8c07b5f4e975",
+          "type": "both"
+        },
+        {
+          "id": "9e77a847-fae5-4f61-9117-ac4a37006e9c",
+          "type": "both"
+        },
+        {
+          "id": "ed7f0929-1bda-41b2-94e6-89eb8c76bb4f",
+          "type": "both"
+        }
+      ]
+    },
+    "c94c8b03-b1bc-401b-86d6-8a48c9caddb3": {
+      "oldId": "c94c8b03-b1bc-401b-86d6-8a48c9caddb3",
+      "designerName": "Ann Demeulemeester",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "75b79a12-2d63-45fc-8aed-42ea76440f52",
+          "type": "both"
+        },
+        {
+          "id": "439d643d-0ddb-4fa3-8661-6e512eeb774b",
+          "type": "both"
+        },
+        {
+          "id": "8d694c03-b455-4001-82af-32a2e96993ec",
+          "type": "both"
+        },
+        {
+          "id": "0efd4570-f713-4291-8287-bb425363b751",
+          "type": "both"
+        },
+        {
+          "id": "bfb5acac-b92a-49b6-babf-fedb84fd8a79",
+          "type": "both"
+        },
+        {
+          "id": "e6eddd71-667a-4586-bc1c-8ab669431709",
+          "type": "both"
+        },
+        {
+          "id": "99048d7a-0af8-4459-be03-34e88f3ab46e",
+          "type": "both"
+        },
+        {
+          "id": "67521774-d0ac-4c3a-9cac-4e89edbf4e22",
+          "type": "both"
+        },
+        {
+          "id": "e7553d3a-774a-48ad-a5af-55976df657a8",
+          "type": "both"
+        },
+        {
+          "id": "e38c430c-db5c-4034-ac81-70d365e10e84",
+          "type": "both"
+        },
+        {
+          "id": "b9abc989-34c9-4c86-9497-dc54a55ecc5d",
+          "type": "both"
+        },
+        {
+          "id": "a52e7969-5138-451c-8f5f-c05b857d70e2",
+          "type": "both"
+        },
+        {
+          "id": "430b8a0b-80c4-422e-bfa3-dff9a4638b46",
+          "type": "both"
+        },
+        {
+          "id": "409a67ee-3724-4785-82c4-496db3428a73",
+          "type": "both"
+        },
+        {
+          "id": "1640b0bc-7b4e-48f8-b5aa-2238a6fbfcdf",
+          "type": "both"
+        }
+      ]
+    },
+    "d03976f7-28a2-492b-b8cd-10ea2e56a272": {
+      "oldId": "d03976f7-28a2-492b-b8cd-10ea2e56a272",
+      "designerName": "Vivienne Westwood",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "325f0959-516c-4986-b1ec-360155ec49cb",
+          "type": "both"
+        },
+        {
+          "id": "663db07c-2a8e-4a07-abdc-696bebf98702",
+          "type": "both"
+        },
+        {
+          "id": "b2c9107e-c694-40a0-b4d7-e1e4cf2df560",
+          "type": "both"
+        },
+        {
+          "id": "6ef77dad-4e26-483d-9e7e-4b13109e26c9",
+          "type": "both"
+        },
+        {
+          "id": "501d00e7-e872-48fe-8b29-fbc4d0711992",
+          "type": "both"
+        },
+        {
+          "id": "a0da54af-e478-44e0-980a-50575c9cdc88",
+          "type": "both"
+        },
+        {
+          "id": "faf2a202-416f-4455-804a-ee02ea92186d",
+          "type": "both"
+        },
+        {
+          "id": "bc5cd90b-db89-4f87-93df-8e713ea5542c",
+          "type": "both"
+        },
+        {
+          "id": "53be0330-6c67-4b53-86c9-d70a1a517d78",
+          "type": "both"
+        },
+        {
+          "id": "77fd3507-b7eb-4168-8b8b-50b3e4b5b2c3",
+          "type": "both"
+        },
+        {
+          "id": "71c11d63-ca4c-4a7e-bcca-10452b626185",
+          "type": "both"
+        },
+        {
+          "id": "93a6c423-a763-417b-8cbd-d1faaa5373c4",
+          "type": "both"
+        },
+        {
+          "id": "4bb61bfd-051e-445c-84fb-80dab0de89ec",
+          "type": "both"
+        },
+        {
+          "id": "6300e7a2-70e6-4a62-9488-d41678ddbb7e",
+          "type": "both"
+        },
+        {
+          "id": "678bb2ff-c04b-4f03-b77a-c9f0f3bbc39a",
+          "type": "both"
+        }
+      ]
+    },
+    "2084a058-5a10-4083-bbcf-ed574a6e0bce": {
+      "oldId": "2084a058-5a10-4083-bbcf-ed574a6e0bce",
+      "designerName": "Walter Van Beirendonck",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "ada68774-3a1f-47fd-b944-0d41b2e45dfa",
+          "type": "both"
+        },
+        {
+          "id": "b9279b45-f1ca-4f37-b6a2-b3074b195642",
+          "type": "both"
+        },
+        {
+          "id": "3c9777cf-3aee-40a9-9533-f8d09439f1b4",
+          "type": "both"
+        },
+        {
+          "id": "9344ff7a-a625-46c1-be40-83517da575e4",
+          "type": "both"
+        },
+        {
+          "id": "0bad66ec-d54d-4aa1-893f-fe5eade58b6f",
+          "type": "both"
+        },
+        {
+          "id": "8be7f932-7112-4779-bdbd-3d8e2c98b373",
+          "type": "both"
+        },
+        {
+          "id": "3e1d5187-da18-4aca-ae43-3f289508bfd7",
+          "type": "both"
+        },
+        {
+          "id": "d0f8e523-ed16-49ac-a329-bbf37cbbef5e",
+          "type": "both"
+        },
+        {
+          "id": "586d0c5d-af4f-4953-9f22-dadcebda73e7",
+          "type": "both"
+        },
+        {
+          "id": "d46a0188-1f9c-4fda-bc65-6c27bbdd0c54",
+          "type": "both"
+        },
+        {
+          "id": "57d72919-a4a1-43fd-90a6-0378a97f350a",
+          "type": "both"
+        },
+        {
+          "id": "85cb6440-085b-46d9-b1a0-1c885e203ac4",
+          "type": "both"
+        },
+        {
+          "id": "692e42ff-9279-4adf-98fc-20a06c781f55",
+          "type": "both"
+        },
+        {
+          "id": "40c5a883-cdb0-4c8c-b68f-ce8066d79a34",
+          "type": "both"
+        },
+        {
+          "id": "196f9f5a-9393-4f35-8688-dd7b9c5e86c2",
+          "type": "both"
+        }
+      ]
+    },
+    "4a3e7917-2911-4597-8b25-02eac8744cb5": {
+      "oldId": "4a3e7917-2911-4597-8b25-02eac8744cb5",
+      "designerName": "John Galliano",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "78f5c290-089c-4c5d-b160-a45bcb1c0143",
+          "type": "both"
+        },
+        {
+          "id": "7fdbd497-acd0-4732-96bf-beccd7b6c91d",
+          "type": "both"
+        },
+        {
+          "id": "88f33783-3dbe-49e0-bba3-0895162839e4",
+          "type": "both"
+        },
+        {
+          "id": "bc3f90fd-97bb-4612-b67a-c88272131905",
+          "type": "both"
+        },
+        {
+          "id": "f29d6008-7a1b-4cc2-ba6c-aee5f8f3babd",
+          "type": "both"
+        },
+        {
+          "id": "35ff11f3-b9d1-486e-ad3b-bf2f173f26b6",
+          "type": "both"
+        },
+        {
+          "id": "62d9852a-71dd-4737-b875-92e5124eef4a",
+          "type": "both"
+        },
+        {
+          "id": "214fe857-7c90-4f73-80fa-0da8777251be",
+          "type": "both"
+        }
+      ]
+    },
+    "20dd8b1f-3b8e-400f-93ca-5fa3cef0e8fd": {
+      "oldId": "20dd8b1f-3b8e-400f-93ca-5fa3cef0e8fd",
+      "designerName": "Raf Simons",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "e88e5a42-19bb-47ac-a53c-932aedc6d59c",
+          "type": "both"
+        },
+        {
+          "id": "4a4a1912-b844-4b71-8e14-9ed9c03d3eca",
+          "type": "both"
+        },
+        {
+          "id": "8c981e93-293b-42ee-b6d3-e9c1c78fce80",
+          "type": "both"
+        },
+        {
+          "id": "193ab740-7573-48ba-9ad5-010dfccd1793",
+          "type": "both"
+        },
+        {
+          "id": "a572cf32-271f-4eea-9687-ee559ebb4046",
+          "type": "both"
+        },
+        {
+          "id": "64e1ce24-1ab2-4af9-a32d-7b780df20956",
+          "type": "both"
+        },
+        {
+          "id": "263fc925-2618-4830-8fb0-af152bf2d583",
+          "type": "both"
+        },
+        {
+          "id": "d746c9d8-9aa4-4c86-95cc-72f415c85816",
+          "type": "both"
+        },
+        {
+          "id": "ee8d6602-163a-4fd5-bb2d-893ed6223831",
+          "type": "both"
+        },
+        {
+          "id": "75fa53e9-275e-475a-9b0a-35ea256037c9",
+          "type": "both"
+        },
+        {
+          "id": "2844ac89-cf22-46eb-8a87-e7c5b875ac9e",
+          "type": "both"
+        },
+        {
+          "id": "f70c1688-14bd-473a-a2a0-4648d228c29d",
+          "type": "both"
+        },
+        {
+          "id": "ed2c3a12-e729-48e7-9fe8-5c89d38d1674",
+          "type": "both"
+        },
+        {
+          "id": "017bcd1e-e393-496b-a816-c85b7b3b09c2",
+          "type": "both"
+        },
+        {
+          "id": "8b9399ec-9794-42a6-8cf7-6f2086880546",
+          "type": "both"
+        },
+        {
+          "id": "11f3e126-bbd9-416a-81f8-50b4ea195233",
+          "type": "both"
+        }
+      ]
+    },
+    "0a95e39f-bf74-4b38-973c-148cf8e9cf71": {
+      "oldId": "0a95e39f-bf74-4b38-973c-148cf8e9cf71",
+      "designerName": "Martin Margiela",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "475b37e5-c183-45c6-9f30-bc741f6337dc",
+          "type": "both"
+        },
+        {
+          "id": "feacb52b-6ed6-4eda-a320-846bed065dff",
+          "type": "both"
+        },
+        {
+          "id": "36400e38-b596-49a7-9461-9be2c307ad3e",
+          "type": "both"
+        },
+        {
+          "id": "432d85d1-9fe9-49b3-919a-5667bdf34986",
+          "type": "both"
+        },
+        {
+          "id": "f7ff3b69-ed8f-457c-8994-e39372b78f84",
+          "type": "both"
+        },
+        {
+          "id": "a1a2da74-a36d-4488-9424-a2d7a0c510bd",
+          "type": "both"
+        },
+        {
+          "id": "10b315d6-f66f-4d7a-8c59-17be9608135d",
+          "type": "both"
+        },
+        {
+          "id": "a3a29801-b8ec-4209-be5f-abb8381d20b1",
+          "type": "both"
+        }
+      ]
+    },
+    "b1d8f217-a475-4f2a-8d0d-33bbda9fe335": {
+      "oldId": "b1d8f217-a475-4f2a-8d0d-33bbda9fe335",
+      "designerName": "Yohji Yamamoto",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "698d8bfc-7d08-49e9-b411-0dd7d7dd568b",
+          "type": "both"
+        },
+        {
+          "id": "b08cba81-219b-454c-b7f1-8d7a04d861c7",
+          "type": "both"
+        },
+        {
+          "id": "b84b7937-dbb2-4702-80ad-41c581f3caa9",
+          "type": "both"
+        },
+        {
+          "id": "eeb0f6c5-6f76-47ec-8994-ac5c437472a9",
+          "type": "both"
+        },
+        {
+          "id": "6ab6d94e-9094-4986-9da7-a0d6074a541b",
+          "type": "both"
+        },
+        {
+          "id": "b4dea44b-e972-4cdf-a072-8982a1216d50",
+          "type": "both"
+        },
+        {
+          "id": "85943350-3f82-473d-bd86-27094e7f6df0",
+          "type": "both"
+        },
+        {
+          "id": "7762e065-83df-48d4-ac1c-debcf25b4612",
+          "type": "both"
+        }
+      ]
+    },
+    "903ffc76-bb70-4ae0-b2ca-d88d5e912771": {
+      "oldId": "903ffc76-bb70-4ae0-b2ca-d88d5e912771",
+      "designerName": "Luke Meier",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "cb56afd4-e060-4b88-b26d-720c28222edd",
+          "type": "both"
+        },
+        {
+          "id": "6818d5db-5e2c-4ce3-b128-1bba37c5f65c",
+          "type": "both"
+        },
+        {
+          "id": "b44fa0a5-e70d-4194-a385-bee86ba89859",
+          "type": "both"
+        },
+        {
+          "id": "f3f9c0e0-4a72-4ebb-aacb-0c7c75dafeb1",
+          "type": "both"
+        },
+        {
+          "id": "c0c18ecb-8f86-4baf-a447-aa9774b37490",
+          "type": "both"
+        },
+        {
+          "id": "23dcb9a4-05a2-4336-942b-40f9e6ca9eb7",
+          "type": "both"
+        },
+        {
+          "id": "51efb51a-e7d4-4b0c-a90b-f4953e6087b0",
+          "type": "both"
+        },
+        {
+          "id": "5bdbc874-60de-47a7-91ce-e9124c8c1de3",
+          "type": "both"
+        },
+        {
+          "id": "9d43cfce-411f-456e-ac11-dc14415beccd",
+          "type": "both"
+        },
+        {
+          "id": "f02074ae-54c5-4380-b664-0732deb37b9b",
+          "type": "both"
+        },
+        {
+          "id": "529e2cf4-b153-4ea7-a049-6b0a40b89a85",
+          "type": "both"
+        },
+        {
+          "id": "74846ae1-7d02-49a4-980f-4df4cbd2ffbd",
+          "type": "both"
+        },
+        {
+          "id": "406cee89-c75c-4b85-9f23-2ee5ac740d15",
+          "type": "both"
+        },
+        {
+          "id": "5f2fa0eb-fec0-4c08-9c91-0b3d5961c553",
+          "type": "both"
+        },
+        {
+          "id": "a818b093-d036-47dd-aa70-be5ae9af32f2",
+          "type": "both"
+        },
+        {
+          "id": "3521cc67-a163-4182-b454-380546d083dd",
+          "type": "both"
+        },
+        {
+          "id": "1400a885-4faa-47a6-8875-30917bf4ccc4",
+          "type": "both"
+        },
+        {
+          "id": "838399b2-8c36-4927-aa81-839a1831a143",
+          "type": "both"
+        },
+        {
+          "id": "81776178-fe57-40ce-8e55-a1a4e18f06f5",
+          "type": "both"
+        },
+        {
+          "id": "fb133bd4-c1bf-41c4-896a-57ad947bb278",
+          "type": "both"
+        },
+        {
+          "id": "c9d00a2f-4b29-4559-99c4-dc32d16be187",
+          "type": "both"
+        }
+      ]
+    },
+    "79bc1d07-cf73-4269-9954-cb2d4260193b": {
+      "oldId": "79bc1d07-cf73-4269-9954-cb2d4260193b",
+      "designerName": "Lucie Meier",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "a2a11747-2039-4d13-9ce6-0fea1032d793",
+          "type": "both"
+        },
+        {
+          "id": "4339f55c-2b62-4cde-9646-d7133ceb3495",
+          "type": "both"
+        },
+        {
+          "id": "a4203430-93fd-411f-896b-21bbc0aabc03",
+          "type": "both"
+        },
+        {
+          "id": "601693ab-9501-4188-bbe0-0b0422780c8a",
+          "type": "both"
+        },
+        {
+          "id": "03338e20-c128-4998-a61e-9c4776ce1284",
+          "type": "both"
+        },
+        {
+          "id": "aaa96ed4-bdb2-4c17-90c8-1391d23d4b73",
+          "type": "both"
+        },
+        {
+          "id": "f2a91440-0138-43de-a2c6-b04175c97169",
+          "type": "both"
+        },
+        {
+          "id": "f596b12f-e96d-4663-a372-b74514374b10",
+          "type": "both"
+        },
+        {
+          "id": "4291b673-39f0-493e-910c-5a47e79cc646",
+          "type": "both"
+        },
+        {
+          "id": "6e6af5f7-cf23-40c0-8863-7fcadbd93809",
+          "type": "both"
+        },
+        {
+          "id": "b77f4898-537b-4674-9b68-eac5c3ef6883",
+          "type": "both"
+        },
+        {
+          "id": "eb5ccded-7b84-45aa-a0ba-446641ade223",
+          "type": "both"
+        },
+        {
+          "id": "7a67174d-3cb5-4539-a881-09cc03beab34",
+          "type": "both"
+        },
+        {
+          "id": "392ce995-dfdb-465e-82b0-ea708b1e150e",
+          "type": "both"
+        },
+        {
+          "id": "4bc28308-0495-4ab2-9009-d3e548f51e56",
+          "type": "both"
+        },
+        {
+          "id": "50316ebc-e2e1-4565-9ca5-6f53623cf308",
+          "type": "both"
+        },
+        {
+          "id": "280ed970-6db6-40a6-8f47-73b33a903a3e",
+          "type": "both"
+        },
+        {
+          "id": "2e3f6c8b-429a-402c-af91-1060d062fa11",
+          "type": "both"
+        },
+        {
+          "id": "5f513516-c2e5-40bf-a091-591f579b93a5",
+          "type": "both"
+        },
+        {
+          "id": "94608f0e-29fa-49bd-9cb9-4250d12e51da",
+          "type": "both"
+        },
+        {
+          "id": "d68be9d8-11c3-4a0c-8357-aa359ad0b11d",
+          "type": "both"
+        },
+        {
+          "id": "af2b7839-e7f9-49d9-8026-08354a82fe8b",
+          "type": "both"
+        },
+        {
+          "id": "4288de76-9ce2-4abf-9d6b-d21a056900f1",
+          "type": "both"
+        },
+        {
+          "id": "5022fa48-d15f-43d3-a5da-0224003aaa50",
+          "type": "both"
+        },
+        {
+          "id": "42f886ef-6b37-4591-8d39-60a8e903fb84",
+          "type": "both"
+        },
+        {
+          "id": "e582fd14-cdc9-4ddc-86d8-0eb0bdcc98e6",
+          "type": "both"
+        },
+        {
+          "id": "f39f20f7-cd62-4b80-9005-b929986b0f0e",
+          "type": "both"
+        },
+        {
+          "id": "e9fb97b4-18c7-430f-84ae-379f0728b8e2",
+          "type": "both"
+        }
+      ]
+    },
+    "cca588ce-625e-47f0-a47d-85153b7b044e": {
+      "oldId": "cca588ce-625e-47f0-a47d-85153b7b044e",
+      "designerName": "Gaston-Louis Vuitton",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "2083862c-b95b-48fb-95e4-7156166eb31e",
+          "type": "both"
+        },
+        {
+          "id": "895f95d5-ebb2-40c4-82ac-fcd3ad419eab",
+          "type": "both"
+        },
+        {
+          "id": "ca922afa-8522-4fe2-ae0d-90dd06346f49",
+          "type": "both"
+        },
+        {
+          "id": "989b22ec-e445-4733-89e3-0624d2810a9c",
+          "type": "both"
+        },
+        {
+          "id": "ed76d152-032c-4e7b-8873-a6d3844c9308",
+          "type": "both"
+        },
+        {
+          "id": "7ed17cf8-9c23-4ba2-944a-b9b574d98496",
+          "type": "both"
+        },
+        {
+          "id": "2954921f-4ac8-428f-86bf-5f5f0f105c0b",
+          "type": "both"
+        }
+      ]
+    },
+    "d534fa1c-949b-44de-a473-e7223e12cd30": {
+      "oldId": "d534fa1c-949b-44de-a473-e7223e12cd30",
+      "designerName": "Takahiro Miyashita",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "0380a288-25ee-41fb-93d2-d0a59ed67fa0",
+          "type": "both"
+        },
+        {
+          "id": "2b61a302-9c5b-444f-9c69-409fca2da77a",
+          "type": "both"
+        },
+        {
+          "id": "3087ee4c-686e-42fe-b96d-fe80fc8e2a1d",
+          "type": "both"
+        },
+        {
+          "id": "22437061-6ed2-4a82-bf45-266eb674101b",
+          "type": "both"
+        },
+        {
+          "id": "fee3de79-e327-4cf6-a59f-f263681775e0",
+          "type": "both"
+        },
+        {
+          "id": "2d0d74e6-094b-4e49-b9f7-f0082100cfe2",
+          "type": "both"
+        },
+        {
+          "id": "86b77005-021a-4e04-84b4-6c6eee024d51",
+          "type": "both"
+        },
+        {
+          "id": "c995db94-d6a0-4dc1-aad1-02a34ee7f14b",
+          "type": "both"
+        },
+        {
+          "id": "1e0020f0-ffe7-46cb-b9eb-265e8e6d8303",
+          "type": "both"
+        },
+        {
+          "id": "548a3be2-2dfe-423e-b9d2-61ab2d4f00ad",
+          "type": "both"
+        },
+        {
+          "id": "cd8a3677-f294-43ba-a5e2-d5ccf1058bc2",
+          "type": "both"
+        },
+        {
+          "id": "45444172-2be1-4765-b053-762733f5a41e",
+          "type": "both"
+        },
+        {
+          "id": "8c04737b-c89f-41e5-88b2-8e21052c0f7c",
+          "type": "both"
+        },
+        {
+          "id": "f06d4fcf-f944-4239-91ce-d8c6de5786a1",
+          "type": "both"
+        }
+      ]
+    },
+    "aef70abd-6517-479a-ba91-cd46a2dff8f4": {
+      "oldId": "aef70abd-6517-479a-ba91-cd46a2dff8f4",
+      "designerName": "Pierre Rainero",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "12165bfc-866b-4fdf-9363-5fee5c78c2d7",
+          "type": "both"
+        },
+        {
+          "id": "0fac50b9-7c02-4732-a2f0-aa15ef1d873d",
+          "type": "both"
+        },
+        {
+          "id": "a32716f4-11c8-402b-996b-0958da3c0c91",
+          "type": "both"
+        },
+        {
+          "id": "3ab951bb-8663-498d-b08a-4c08d046e0b3",
+          "type": "both"
+        },
+        {
+          "id": "07b3c85e-1964-4ec7-9d95-12ccc890882c",
+          "type": "both"
+        },
+        {
+          "id": "8f3a2cb1-abd4-49f6-b5a6-2b5955ffeaf2",
+          "type": "both"
+        },
+        {
+          "id": "d125b386-d78a-4d52-b287-f4745365ba09",
+          "type": "both"
+        },
+        {
+          "id": "8a66df5b-2584-415f-bd8b-a493ecd731a7",
+          "type": "both"
+        },
+        {
+          "id": "7d0a0622-3f71-405c-90c9-691c54c03944",
+          "type": "both"
+        },
+        {
+          "id": "779f6895-d1c3-48c6-a850-2888fc4ea98c",
+          "type": "both"
+        },
+        {
+          "id": "730d5d2b-eb4c-4646-84de-afe030698321",
+          "type": "both"
+        },
+        {
+          "id": "5fbf9c59-71af-453d-b2f8-ac7d4731e856",
+          "type": "both"
+        }
+      ]
+    },
+    "b211bbb2-ce40-4c01-b744-062b27581494": {
+      "oldId": "b211bbb2-ce40-4c01-b744-062b27581494",
+      "designerName": "Jacqueline Karachi",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "5c089ef2-06ea-403f-92d7-a21e489c9fc7",
+          "type": "both"
+        },
+        {
+          "id": "f54b9a53-1cda-4234-8263-5a14fac66c28",
+          "type": "both"
+        },
+        {
+          "id": "390759a6-d943-4951-b6e2-b67e2084fff2",
+          "type": "both"
+        },
+        {
+          "id": "6e54361f-dedb-420a-96b0-f561c43d1451",
+          "type": "both"
+        },
+        {
+          "id": "5ac44b8d-c1a4-48fc-8906-66c88f270652",
+          "type": "both"
+        },
+        {
+          "id": "eaa2e984-7afe-49dc-b5b4-4f44b6944f06",
+          "type": "both"
+        },
+        {
+          "id": "5edf098a-b6a9-4bb8-b03a-45de0c01a0a5",
+          "type": "both"
+        },
+        {
+          "id": "798c4f8c-2c75-4447-85ce-e2d6b9329d5c",
+          "type": "both"
+        },
+        {
+          "id": "271bfc0e-cdc6-44f4-8cd2-372f68c4dde0",
+          "type": "both"
+        },
+        {
+          "id": "668b8702-ef64-4bbb-acaa-1b13cc1a7120",
+          "type": "both"
+        },
+        {
+          "id": "c90cd777-ad3d-48e4-ac0d-428a4a408b08",
+          "type": "both"
+        },
+        {
+          "id": "965d8b7e-348c-4d0f-8323-b279667aea9b",
+          "type": "both"
+        }
+      ]
+    },
+    "c7429c62-eaca-417b-887e-d786285942a9": {
+      "oldId": "c7429c62-eaca-417b-887e-d786285942a9",
+      "designerName": "Marie-Christine Laroche",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "86948517-25b8-4618-a10b-e9c2bc3e56d0",
+          "type": "both"
+        },
+        {
+          "id": "5d2b544f-7d12-4b4d-8ab6-6e21414ea2ea",
+          "type": "both"
+        },
+        {
+          "id": "f04bdeab-5528-4c2e-8fe6-b9195298e6f8",
+          "type": "both"
+        },
+        {
+          "id": "41afcfcb-afcf-42d7-a8c3-8c3e47f38bc7",
+          "type": "both"
+        },
+        {
+          "id": "8b8a0f28-30e2-41f3-a087-8800fdbcac87",
+          "type": "both"
+        },
+        {
+          "id": "438b75d3-6fbb-4fd3-9482-0ae239ce31f3",
+          "type": "both"
+        },
+        {
+          "id": "705915ad-b4a7-43fa-8e8a-c56e28f98446",
+          "type": "both"
+        },
+        {
+          "id": "140f9c72-0d59-4758-918d-706b2942d192",
+          "type": "both"
+        },
+        {
+          "id": "c2338b22-5619-47fc-93bd-7311aee69cec",
+          "type": "both"
+        },
+        {
+          "id": "71190e61-5259-4dea-8571-d13e7132f782",
+          "type": "both"
+        },
+        {
+          "id": "55d0a7ec-8ea4-4319-8d22-79e385083b71",
+          "type": "both"
+        },
+        {
+          "id": "19a02b06-e638-4104-bdb1-c7c92956c199",
+          "type": "both"
+        }
+      ]
+    },
+    "61301534-1600-421f-bad1-1ddda9a16e50": {
+      "oldId": "61301534-1600-421f-bad1-1ddda9a16e50",
+      "designerName": "Carole Forestier-Kasapi",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "b986c08d-1c6b-4ee6-b32d-5e9343800d8b",
+          "type": "both"
+        },
+        {
+          "id": "6a4c05c0-bfbc-406e-8223-95442ba3dbf3",
+          "type": "both"
+        },
+        {
+          "id": "e2959c1d-691d-45e4-9314-7f6615d8d76d",
+          "type": "both"
+        },
+        {
+          "id": "585d0089-2e02-4b44-812a-24500a1d677e",
+          "type": "both"
+        },
+        {
+          "id": "e7b91cc4-e462-480b-a193-a3190dcc3199",
+          "type": "both"
+        },
+        {
+          "id": "2647e5d3-c195-408f-993e-27c69687aa8c",
+          "type": "both"
+        },
+        {
+          "id": "6afa0196-f6aa-466e-8046-4426878f8f89",
+          "type": "both"
+        },
+        {
+          "id": "86cd6e05-ad0e-40c2-b6fe-1e9d8f5ccbd0",
+          "type": "both"
+        },
+        {
+          "id": "4d733ea5-8d77-422a-b16b-219aa682a0f9",
+          "type": "both"
+        },
+        {
+          "id": "16f47b67-b2e8-4626-b9fd-3d39e4b53b63",
+          "type": "both"
+        },
+        {
+          "id": "b6445334-0104-4b72-894b-08ab7a21f92c",
+          "type": "both"
+        },
+        {
+          "id": "2d12f925-7c7b-4a5c-9aa6-2eb41ffcb857",
+          "type": "both"
+        }
+      ]
+    },
+    "08ca61c2-54f4-4eca-be32-0af115551378": {
+      "oldId": "08ca61c2-54f4-4eca-be32-0af115551378",
+      "designerName": "Cyrille Vigneron",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "59f5dafc-8320-4940-8276-a2779d17d864",
+          "type": "both"
+        },
+        {
+          "id": "d07696db-fa93-4f2c-98f7-a5a89296c869",
+          "type": "both"
+        },
+        {
+          "id": "d3faab04-3120-4c94-a9c2-6ea25965c478",
+          "type": "both"
+        },
+        {
+          "id": "4466d3fe-242c-41f1-8ee9-50962b32149d",
+          "type": "both"
+        },
+        {
+          "id": "88334935-2353-4ed9-ab06-665864890f4e",
+          "type": "both"
+        },
+        {
+          "id": "d5afb22a-1db5-4b15-941d-947b030070d5",
+          "type": "both"
+        },
+        {
+          "id": "945e025d-2aa0-447f-b2ba-b1d3e9def411",
+          "type": "both"
+        },
+        {
+          "id": "a5d33e4c-c120-4ed7-9017-f952d64ae34f",
+          "type": "both"
+        },
+        {
+          "id": "90e080a2-ba8f-4547-9a44-65b47a313bf7",
+          "type": "both"
+        },
+        {
+          "id": "c607b53c-a515-4029-9f29-a28b29e1d5c8",
+          "type": "both"
+        },
+        {
+          "id": "22492250-9bc8-41db-babf-7b89fd54b79c",
+          "type": "both"
+        },
+        {
+          "id": "88f30bc5-fbd0-4a4d-bcf3-e2ca851aeab2",
+          "type": "both"
+        }
+      ]
+    },
+    "2d52a8dd-cc4c-4853-a363-78ab49e79d36": {
+      "oldId": "2d52a8dd-cc4c-4853-a363-78ab49e79d36",
+      "designerName": "Jeanne Toussaint",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "8ae3476e-6557-4a6a-96ba-c5d945913ca6",
+          "type": "both"
+        },
+        {
+          "id": "42b6370a-1f31-434e-82d4-a67166ff1cb2",
+          "type": "both"
+        },
+        {
+          "id": "c41c38e8-a5b7-47f4-bbe0-0d0bd07247f8",
+          "type": "both"
+        },
+        {
+          "id": "77ff12f0-3952-4bb5-b334-30adc2742943",
+          "type": "both"
+        },
+        {
+          "id": "b1db0113-b20c-4661-abb2-d04e37786110",
+          "type": "both"
+        },
+        {
+          "id": "d463ced3-aa2b-4de6-aaf1-96da4d531405",
+          "type": "both"
+        },
+        {
+          "id": "631d5610-ff99-49cc-8fff-3cf4a4648097",
+          "type": "both"
+        },
+        {
+          "id": "df3104ca-c061-4014-90b7-5a7526985d59",
+          "type": "both"
+        },
+        {
+          "id": "f4842a5d-f12c-4af2-8778-f711f9003d9f",
+          "type": "both"
+        },
+        {
+          "id": "e4e1f1e2-b2a6-49f6-9adc-d4b6fc2940ea",
+          "type": "both"
+        },
+        {
+          "id": "d368b45e-a9fe-438d-b394-e5bef90db2f3",
+          "type": "both"
+        },
+        {
+          "id": "ff47f67e-0df8-480f-b559-5b977e67fd97",
+          "type": "both"
+        }
+      ]
+    },
+    "606a70d6-5aa6-40a1-b686-6decdb495b97": {
+      "oldId": "606a70d6-5aa6-40a1-b686-6decdb495b97",
+      "designerName": "Nicolas Bos",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "21997583-b5f5-425a-8e82-24053bc3d8d9",
+          "type": "both"
+        },
+        {
+          "id": "ad797c38-e7ee-447c-bb90-4089c6d69f91",
+          "type": "both"
+        },
+        {
+          "id": "18276fd9-3a0e-4633-af19-6285dbd5c9dc",
+          "type": "both"
+        },
+        {
+          "id": "a2623971-d54f-4273-9b61-3aa43f0d7a5f",
+          "type": "both"
+        },
+        {
+          "id": "eb872615-a210-4821-a607-0ad1d60f3248",
+          "type": "both"
+        },
+        {
+          "id": "16fe9f4d-c488-4785-985d-38f2d98425f0",
+          "type": "both"
+        },
+        {
+          "id": "7649101c-9541-4787-b1c4-883d6241cc95",
+          "type": "both"
+        },
+        {
+          "id": "19b8f84f-df20-4df7-b7f9-b6bc35068ba2",
+          "type": "both"
+        },
+        {
+          "id": "e310ad27-debf-4cbb-b70d-be5c14e72167",
+          "type": "both"
+        },
+        {
+          "id": "59828351-7c8f-405e-8590-906b6cbaebf8",
+          "type": "both"
+        },
+        {
+          "id": "5426c93f-d52b-4839-84e6-76e33f9f3716",
+          "type": "both"
+        },
+        {
+          "id": "dbdc6257-4d67-4d81-b043-ab947959d71f",
+          "type": "both"
+        },
+        {
+          "id": "8ba808e7-f882-4ac3-8025-fc332297e94e",
+          "type": "both"
+        },
+        {
+          "id": "e4aa8dbf-cc57-4eb1-9107-55866a413067",
+          "type": "both"
+        },
+        {
+          "id": "54f73f1a-b6ec-473e-91cd-1fc72916694e",
+          "type": "both"
+        },
+        {
+          "id": "ec82742c-ae4d-4fbe-a442-4509bedafc9c",
+          "type": "both"
+        },
+        {
+          "id": "779d9740-211e-4245-ab83-c356e7c96ec6",
+          "type": "both"
+        },
+        {
+          "id": "a10e0238-258c-4e33-af95-af903eecef50",
+          "type": "both"
+        },
+        {
+          "id": "b6b651ca-2e27-4c39-bf25-b11252674097",
+          "type": "both"
+        },
+        {
+          "id": "48839b03-473a-4dee-b2a3-b4ec9b9c3ded",
+          "type": "both"
+        },
+        {
+          "id": "b49e3e75-175b-4b8e-8702-92d8899756ac",
+          "type": "both"
+        },
+        {
+          "id": "0d14f64e-fcfa-4a55-939f-a7fdab502f76",
+          "type": "both"
+        },
+        {
+          "id": "8a2ba446-c14c-4689-aba7-b4f3e4160532",
+          "type": "both"
+        },
+        {
+          "id": "89b8b3b4-dc01-4cae-925e-69ef80115da9",
+          "type": "both"
+        }
+      ]
+    },
+    "846447ec-f8d6-484c-bfff-412588dd70a4": {
+      "oldId": "846447ec-f8d6-484c-bfff-412588dd70a4",
+      "designerName": "Claude Arpels",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "6c37eced-e599-472b-b1fe-9ece0999e8c6",
+          "type": "both"
+        },
+        {
+          "id": "011a1288-ca4e-481b-a7bf-e8557e07b4c3",
+          "type": "both"
+        },
+        {
+          "id": "3a516934-b298-490b-bd82-86c0274738bb",
+          "type": "both"
+        },
+        {
+          "id": "39cf0f47-fc6c-444f-8711-665cf9597024",
+          "type": "both"
+        },
+        {
+          "id": "f7af2908-279b-4ae0-b76b-351698a26cad",
+          "type": "both"
+        },
+        {
+          "id": "39dd5bbb-12b7-4db6-8f1b-177e1b8eafcf",
+          "type": "both"
+        },
+        {
+          "id": "1912b5dc-5905-4140-a3d4-0543b32b3cb9",
+          "type": "both"
+        },
+        {
+          "id": "0fc7ee45-2e97-43fc-aeaa-35b5f2568365",
+          "type": "both"
+        },
+        {
+          "id": "70a0be3f-cd65-427d-aafd-1b32424ef4aa",
+          "type": "both"
+        },
+        {
+          "id": "32e2fed8-eb87-4dbf-ab2b-b9bfcd050321",
+          "type": "both"
+        },
+        {
+          "id": "5cc04847-ef50-428a-9f22-90c43f44a46c",
+          "type": "both"
+        },
+        {
+          "id": "4a218dad-94a9-4555-8920-11638046f25e",
+          "type": "both"
+        }
+      ]
+    },
+    "803b88b3-336a-455c-a7c6-76b6e64d6a95": {
+      "oldId": "803b88b3-336a-455c-a7c6-76b6e64d6a95",
+      "designerName": "René Sim Lacaze",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "794c6a38-f0f8-4c2c-95e4-b267566f0d44",
+          "type": "both"
+        },
+        {
+          "id": "6a0d0c6c-b9f7-42e6-a259-4ddb115ef712",
+          "type": "both"
+        },
+        {
+          "id": "8d1d90b7-5f78-4e50-9a83-bfe046ad4b7e",
+          "type": "both"
+        },
+        {
+          "id": "cd1b2019-4c03-4ca0-b2dd-3a3f1997fd83",
+          "type": "both"
+        },
+        {
+          "id": "11ab7790-1205-4974-9033-e62d848ed5e3",
+          "type": "both"
+        },
+        {
+          "id": "78ea9f0f-ccc3-4d5e-9099-f8f6331529b2",
+          "type": "both"
+        },
+        {
+          "id": "61b3e364-098d-4926-bf20-c9ef33ae9865",
+          "type": "both"
+        },
+        {
+          "id": "89e035a8-5be6-49d1-a4c5-88f0c6324c81",
+          "type": "both"
+        },
+        {
+          "id": "97b0bcdf-f7b4-4c53-8879-ff25ada0d8d2",
+          "type": "both"
+        },
+        {
+          "id": "9e6267c0-7007-456e-af4b-f660018c1380",
+          "type": "both"
+        },
+        {
+          "id": "15bee347-9c99-4229-9d9d-f397345dcad5",
+          "type": "both"
+        },
+        {
+          "id": "976766da-6662-4015-8163-6f59f0e84bc4",
+          "type": "both"
+        }
+      ]
+    },
+    "403a5315-33a6-4f4b-8b12-32066234d060": {
+      "oldId": "403a5315-33a6-4f4b-8b12-32066234d060",
+      "designerName": "Zaim Kamal",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "cb470b1d-8cdc-495e-87d3-91c687250684",
+          "type": "both"
+        },
+        {
+          "id": "dc89e3aa-09bf-4ee5-ae55-18684678bf18",
+          "type": "both"
+        },
+        {
+          "id": "f1cef103-9724-410b-af3a-8307bd6304ad",
+          "type": "both"
+        },
+        {
+          "id": "85de210b-51a3-4da1-a8f2-8d6bc2e2f9e9",
+          "type": "both"
+        },
+        {
+          "id": "2133da61-c244-48a1-9399-67084064017c",
+          "type": "both"
+        },
+        {
+          "id": "a0ddfd24-93ff-48ef-81c5-895d8305bb79",
+          "type": "both"
+        },
+        {
+          "id": "13b9a434-7011-4408-a481-49ccd14406b9",
+          "type": "both"
+        },
+        {
+          "id": "16d3a976-450b-43a4-855e-c1c0baa875c4",
+          "type": "both"
+        },
+        {
+          "id": "951fb857-d86e-4b9a-90c5-fa25b0dd4ba1",
+          "type": "both"
+        },
+        {
+          "id": "09812e01-df2f-4614-9711-52a4590abe19",
+          "type": "both"
+        },
+        {
+          "id": "6e6edf96-5573-4e7d-9835-13f6269dfd73",
+          "type": "both"
+        },
+        {
+          "id": "5f5a0a49-a7b9-43c0-a81d-d8c522871e7b",
+          "type": "both"
+        }
+      ]
+    },
+    "c8b88578-5190-41aa-b942-829ba63bc8f4": {
+      "oldId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "8f286052-15ca-4e63-ab30-3ce69c3fcb50",
+          "type": "both"
+        },
+        {
+          "id": "0c838f46-6007-4df6-b6c7-69ceecf5b37c",
+          "type": "both"
+        },
+        {
+          "id": "ed97fcdc-3aef-4e7a-a94d-aa0b820dac28",
+          "type": "both"
+        },
+        {
+          "id": "17aabf2b-3e0f-497e-a94d-8f43ae64ebbe",
+          "type": "both"
+        },
+        {
+          "id": "6b5404e0-76df-46dd-bbd2-37bdb2b283a4",
+          "type": "both"
+        },
+        {
+          "id": "6fd5a496-16c1-4cca-850f-3b1b63fca0d6",
+          "type": "both"
+        },
+        {
+          "id": "9ab12114-a142-4215-841a-27ae97371137",
+          "type": "both"
+        },
+        {
+          "id": "89b3b0d9-e3bb-49c9-8567-27b73b12b91b",
+          "type": "both"
+        },
+        {
+          "id": "00d4a0ea-6d42-41fa-85e5-98f5a400ae7c",
+          "type": "both"
+        },
+        {
+          "id": "f0bf42ff-8aad-4aff-a26a-d0670499ff66",
+          "type": "both"
+        },
+        {
+          "id": "7d884ef4-d1f1-43c9-8a7c-6a192dd28f95",
+          "type": "both"
+        },
+        {
+          "id": "3eedc42d-b41c-4449-b349-ec3d79972446",
+          "type": "both"
+        }
+      ]
+    },
+    "f18c8ec3-6d4f-49d7-8ae9-fe696199ff82": {
+      "oldId": "f18c8ec3-6d4f-49d7-8ae9-fe696199ff82",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "c552e8dd-78ce-4795-9ac3-a97b91ff38f7",
+          "type": "both"
+        },
+        {
+          "id": "c272d2b8-de11-433d-9a6e-408f00cd2c31",
+          "type": "both"
+        },
+        {
+          "id": "086fe09e-0168-4d96-9b2d-0f6e37b570ed",
+          "type": "both"
+        },
+        {
+          "id": "129a9b24-441b-4f8f-b7d0-c987798fe7cd",
+          "type": "both"
+        },
+        {
+          "id": "e8559da9-7545-4d1c-a85e-5bb076fca76f",
+          "type": "both"
+        },
+        {
+          "id": "c80c3066-734a-48a5-9451-d2c3cd9954e7",
+          "type": "both"
+        },
+        {
+          "id": "55cb9e4b-07e6-4020-bf5f-c0420d36d221",
+          "type": "both"
+        },
+        {
+          "id": "5d9a42bc-32f6-471d-bfbe-27411947ab37",
+          "type": "both"
+        },
+        {
+          "id": "5d536739-deb1-4c87-830c-c07290d44232",
+          "type": "both"
+        },
+        {
+          "id": "d25bbfb1-2559-4a09-94bb-b84ed64b6051",
+          "type": "both"
+        },
+        {
+          "id": "7708b5e3-668a-46c4-9d7e-f0b8138ae8a0",
+          "type": "both"
+        },
+        {
+          "id": "bd73158d-5b0a-4135-9606-d742bc6b00f8",
+          "type": "both"
+        }
+      ]
+    },
+    "6900195d-eae9-44cd-8e7c-8c18aa2164ef": {
+      "oldId": "6900195d-eae9-44cd-8e7c-8c18aa2164ef",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "d85a8cb7-684e-4750-8931-db44a885dafc",
+          "type": "both"
+        },
+        {
+          "id": "fb0648cd-b18a-4808-b710-c98853ffb8d2",
+          "type": "both"
+        },
+        {
+          "id": "d76cc459-792c-4c17-a63f-eeb97955fd23",
+          "type": "both"
+        },
+        {
+          "id": "3db8ae77-c62b-4237-b141-91ce8cefaa46",
+          "type": "both"
+        },
+        {
+          "id": "1ffd2217-869c-49d2-99e5-af2335d12699",
+          "type": "both"
+        },
+        {
+          "id": "82ff3207-03fd-499f-85a6-2aed74f2feb8",
+          "type": "both"
+        },
+        {
+          "id": "63658be0-5ea3-42f2-84e1-87d185a4642b",
+          "type": "both"
+        },
+        {
+          "id": "1bba91dc-1557-4915-b506-7371f1511bac",
+          "type": "both"
+        },
+        {
+          "id": "bb4f3196-96c7-4456-80f2-579f1ca8d63b",
+          "type": "both"
+        },
+        {
+          "id": "069a30be-3f48-4317-aa39-e14662e21c55",
+          "type": "both"
+        },
+        {
+          "id": "b4c4a09c-f18e-4506-9c89-70e0cf2fcd39",
+          "type": "both"
+        },
+        {
+          "id": "5b2a54ab-c929-45d2-8744-23b13a391c0e",
+          "type": "both"
+        }
+      ]
+    },
+    "f3c735bf-aeda-42fa-bac4-8ed747334d5d": {
+      "oldId": "f3c735bf-aeda-42fa-bac4-8ed747334d5d",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "b8bb0c80-86ac-40e6-9837-93670db2d486",
+          "type": "both"
+        },
+        {
+          "id": "478e39ff-d421-45ff-b198-a255acd0c869",
+          "type": "both"
+        },
+        {
+          "id": "b9eb7748-c9ad-4f9b-aece-5c7b547562e3",
+          "type": "both"
+        },
+        {
+          "id": "b26d6cdd-4a80-4a03-bcdd-a55c45652435",
+          "type": "both"
+        },
+        {
+          "id": "f82669ee-fdd0-4749-8a90-bbff42d0b417",
+          "type": "both"
+        },
+        {
+          "id": "a188a6ea-5af3-4bed-97b4-feb56900c785",
+          "type": "both"
+        },
+        {
+          "id": "b8d8c926-30d7-400f-8189-902b3297f130",
+          "type": "both"
+        },
+        {
+          "id": "e4ef943e-87f6-4513-9aee-a0920f04dec8",
+          "type": "both"
+        },
+        {
+          "id": "2ac9cc61-d117-42bd-9ec5-71c670b5959f",
+          "type": "both"
+        },
+        {
+          "id": "d5958dc5-b211-4c35-94b0-d6ab3b8f09c6",
+          "type": "both"
+        },
+        {
+          "id": "8ffcb462-e25c-47c5-8561-6ab003561c99",
+          "type": "both"
+        },
+        {
+          "id": "d4dd0094-3586-4e02-96be-4399fb256ed1",
+          "type": "both"
+        }
+      ]
+    },
+    "9af5a21b-35d0-4f37-9853-de1f293106a6": {
+      "oldId": "9af5a21b-35d0-4f37-9853-de1f293106a6",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "c469d132-b2f0-44b3-8be9-75085465647f",
+          "type": "both"
+        },
+        {
+          "id": "b71ae489-1245-4f6e-b5fd-2e265d2003fe",
+          "type": "both"
+        },
+        {
+          "id": "1590c03f-7ae4-48b6-a577-479f52225245",
+          "type": "both"
+        },
+        {
+          "id": "1c66d824-d6ca-45dd-9006-168bf14c96fd",
+          "type": "both"
+        },
+        {
+          "id": "40084b61-afe0-4d2d-b5d2-c74de53eec07",
+          "type": "both"
+        },
+        {
+          "id": "e760c754-2762-458b-8a03-5250599fadde",
+          "type": "both"
+        },
+        {
+          "id": "b7239b47-5b2d-4353-b42b-72d236831327",
+          "type": "both"
+        },
+        {
+          "id": "6149b905-e6ef-4b25-be54-aad59b442165",
+          "type": "both"
+        },
+        {
+          "id": "e584de26-f81f-46a0-aa79-84412254742f",
+          "type": "both"
+        },
+        {
+          "id": "07ed6788-62ba-4c1a-b0fa-d3036563d1d7",
+          "type": "both"
+        },
+        {
+          "id": "69daa1c1-ea04-4f5c-9c8c-ff9dbcdddc53",
+          "type": "both"
+        },
+        {
+          "id": "b5c9d2a1-09a8-4cfb-8a3a-d1a756b84c05",
+          "type": "both"
+        }
+      ]
+    },
+    "5360d91e-4d67-442c-9488-d9da9317a2a3": {
+      "oldId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "4606505f-47c1-487b-bfdb-7d323135b6cc",
+          "type": "both"
+        },
+        {
+          "id": "9551f65a-5176-4aab-84f7-236a3b2bf97c",
+          "type": "both"
+        },
+        {
+          "id": "e0a595c8-234f-4379-9f41-b849e96cfc5b",
+          "type": "both"
+        },
+        {
+          "id": "8345862b-7391-4c4d-a8cc-32d6205e1193",
+          "type": "both"
+        },
+        {
+          "id": "6907c852-ce5f-4d1d-ad82-ab8f5ad1dac2",
+          "type": "both"
+        },
+        {
+          "id": "95b51d5c-0942-4bd8-9905-4856cccc1305",
+          "type": "both"
+        },
+        {
+          "id": "7c4a766c-d83a-4dc4-a8d9-99e0a22e4d5e",
+          "type": "both"
+        },
+        {
+          "id": "4c06623f-5d82-4a63-9fd9-f838bb735264",
+          "type": "both"
+        },
+        {
+          "id": "fa681336-2c5a-4591-be4d-c96c08f5abff",
+          "type": "both"
+        },
+        {
+          "id": "8d947ba9-8a69-468e-bd76-ad308d9da506",
+          "type": "both"
+        },
+        {
+          "id": "909fc3ca-6ee0-4de5-a6fc-0e0b94ee89fa",
+          "type": "both"
+        },
+        {
+          "id": "d36d8d9e-2a14-415d-abc9-ea83f41747e7",
+          "type": "both"
+        }
+      ]
+    },
+    "b4153c79-b77c-4c35-92f8-563c85fa6bac": {
+      "oldId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "757eb424-7005-4f10-a0ae-369d973a3280",
+          "type": "both"
+        },
+        {
+          "id": "bbb973de-39c9-4dca-939b-541a23f3de1c",
+          "type": "both"
+        },
+        {
+          "id": "d2339a47-cfc4-4d08-8f7a-38fccacc7186",
+          "type": "both"
+        },
+        {
+          "id": "b6011c5b-9b26-4fde-b93b-376ec0c37a39",
+          "type": "both"
+        },
+        {
+          "id": "2357e3db-d0fa-4aed-9d34-59e634060ddd",
+          "type": "both"
+        },
+        {
+          "id": "240f9f55-88b2-46ab-8085-8a6bf5887a65",
+          "type": "both"
+        },
+        {
+          "id": "18a0aff5-bd75-4b3e-bd31-51e3efbafe9f",
+          "type": "both"
+        },
+        {
+          "id": "828296b6-8aa3-4864-8bd6-24e2e8a0ccbc",
+          "type": "both"
+        },
+        {
+          "id": "f27ac849-ab57-43da-812b-878a6bd7dcbf",
+          "type": "both"
+        },
+        {
+          "id": "c4365f00-e256-46d3-a19d-8cee4655f674",
+          "type": "both"
+        },
+        {
+          "id": "50b2ab40-ba66-4fd6-946b-1855d8d9c9ff",
+          "type": "both"
+        },
+        {
+          "id": "8b9376b6-6862-4986-b74b-76099d2d4004",
+          "type": "both"
+        }
+      ]
+    },
+    "9d47ec1c-18f7-4171-9e0d-aafa700e1919": {
+      "oldId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "f577fdaa-1358-416e-b5fe-c21e099b0f69",
+          "type": "both"
+        },
+        {
+          "id": "33711b22-461c-4a26-a33c-9cdc4e14901c",
+          "type": "both"
+        },
+        {
+          "id": "fdc61527-156d-4b57-ba7e-4cd5f342dbec",
+          "type": "both"
+        },
+        {
+          "id": "171fb450-77b0-41ff-999f-79c23c7ae284",
+          "type": "both"
+        },
+        {
+          "id": "24807b4b-72a9-47db-9418-21b6f91b09bc",
+          "type": "both"
+        },
+        {
+          "id": "52e2a456-982f-4f9c-a26d-9d6959093639",
+          "type": "both"
+        },
+        {
+          "id": "9efcef75-0327-4474-aa72-1496712af5f1",
+          "type": "both"
+        },
+        {
+          "id": "e169affc-7313-4a4f-bf26-71cce5b96890",
+          "type": "both"
+        },
+        {
+          "id": "6cd1631f-979d-4623-84e0-0ddb34c91173",
+          "type": "both"
+        },
+        {
+          "id": "c5840cef-40a6-469b-8a39-c999438705fe",
+          "type": "both"
+        },
+        {
+          "id": "6bef970f-debf-4647-a9d4-c183c3301079",
+          "type": "both"
+        },
+        {
+          "id": "e17c38c4-2331-46b4-bdd5-61b32e380bd8",
+          "type": "both"
+        }
+      ]
+    },
+    "86d7cdda-d52d-4a84-968e-b8284ead3bc8": {
+      "oldId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "a582e51d-6f74-47af-8961-bc2fa9389d0e",
+          "type": "both"
+        },
+        {
+          "id": "ce9fadd0-1995-4c01-aed6-d0040853a709",
+          "type": "both"
+        },
+        {
+          "id": "824bfe31-f820-4df5-9145-4c6e5e933626",
+          "type": "both"
+        },
+        {
+          "id": "8a581050-3fe4-480f-b134-35dc294228dc",
+          "type": "both"
+        },
+        {
+          "id": "d4bd8c4c-840d-4014-a14e-1c952da233fd",
+          "type": "both"
+        },
+        {
+          "id": "f7652483-6e3d-427e-b867-9ac971d5c212",
+          "type": "both"
+        },
+        {
+          "id": "765406ec-b100-4c59-82b9-55758b9b8c97",
+          "type": "both"
+        },
+        {
+          "id": "cc798526-07b0-45e7-a5c3-1fdd3e4517fb",
+          "type": "both"
+        },
+        {
+          "id": "d4913bc2-b62b-4038-b3ce-9f87f1bdd1de",
+          "type": "both"
+        },
+        {
+          "id": "8f602a4e-6dbd-42b1-a358-d03497d92f32",
+          "type": "both"
+        },
+        {
+          "id": "10155ece-fdbd-442e-bc5a-8c5a5745028f",
+          "type": "both"
+        },
+        {
+          "id": "a31533eb-1888-4a9d-b583-3a9478ceabd3",
+          "type": "both"
+        }
+      ]
+    },
+    "d8c8c240-0949-4667-a5b8-afc11459a9ac": {
+      "oldId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "1a3780f2-4fc6-4d14-8655-dfa2e3bf7743",
+          "type": "both"
+        },
+        {
+          "id": "ab7ba23d-154e-4532-9cf8-a9e0b9bbd49f",
+          "type": "both"
+        },
+        {
+          "id": "1cdf0ca8-999f-415d-b45f-f1a9fdbb2305",
+          "type": "both"
+        },
+        {
+          "id": "f6468b78-27b8-469d-bbf3-ec321f04cc36",
+          "type": "both"
+        },
+        {
+          "id": "958dd606-e136-444e-bb0e-5b074cf00a98",
+          "type": "both"
+        },
+        {
+          "id": "3c8938d4-ec41-4415-9198-a55b4b8e0990",
+          "type": "both"
+        },
+        {
+          "id": "3cd3a6f4-3b72-407b-9bca-cc264d1d2feb",
+          "type": "both"
+        },
+        {
+          "id": "e8ac19b4-3c11-43da-84f0-d593ad2de0dc",
+          "type": "both"
+        },
+        {
+          "id": "3af93ea3-0a85-458d-9edc-c4822c77e3ae",
+          "type": "both"
+        },
+        {
+          "id": "a5ee2d9c-b688-492c-959a-2d8bf09f0010",
+          "type": "both"
+        },
+        {
+          "id": "bae9e8c7-0056-4ba6-80a1-1a4fe3cc3ecd",
+          "type": "both"
+        },
+        {
+          "id": "39cee3dd-3651-4787-a0e2-8db51b00df51",
+          "type": "both"
+        }
+      ]
+    },
+    "64ae214c-e612-47c2-a0f1-75a8ce1b9041": {
+      "oldId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "75c9b29c-2ec7-4108-b83e-9112a40553b7",
+          "type": "both"
+        },
+        {
+          "id": "370028ce-1d38-4a64-99c3-6135c9f169bb",
+          "type": "both"
+        },
+        {
+          "id": "c7e41085-4536-420e-823c-9d6f9bedd52d",
+          "type": "both"
+        },
+        {
+          "id": "944057e0-f05c-4a36-ac96-f71a4cdc3d74",
+          "type": "both"
+        },
+        {
+          "id": "0dce331d-47ad-47e2-a106-94e5fff011d0",
+          "type": "both"
+        },
+        {
+          "id": "d5945343-cce6-4c2a-bb50-9054c4c33ebc",
+          "type": "both"
+        },
+        {
+          "id": "c514da50-dec5-40b1-be26-3798fcfa2959",
+          "type": "both"
+        },
+        {
+          "id": "687f7cc0-f7a5-419d-96ad-87e6341dbfe9",
+          "type": "both"
+        },
+        {
+          "id": "e84e60af-7194-4137-bdfb-dfbbf236c02c",
+          "type": "both"
+        },
+        {
+          "id": "6f16cf65-b4ac-4b9c-a0e5-0fb1000ecc77",
+          "type": "both"
+        },
+        {
+          "id": "33e8d12e-395a-4b95-887b-ceab429a9e7b",
+          "type": "both"
+        },
+        {
+          "id": "f0692b21-052f-4eec-8753-8c10cfc797dc",
+          "type": "both"
+        }
+      ]
+    },
+    "1f42050f-ff0b-4044-8526-98f3512a26d5": {
+      "oldId": "1f42050f-ff0b-4044-8526-98f3512a26d5",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "971f40db-0be0-47bf-9a44-be61a5068f1c",
+          "type": "both"
+        },
+        {
+          "id": "1b34b73c-b0df-446c-a02d-cbc11f0dfd33",
+          "type": "both"
+        },
+        {
+          "id": "ccb02423-593f-49f2-bade-2df34c6dae86",
+          "type": "both"
+        },
+        {
+          "id": "c346dde1-925c-409b-9aaf-ce6d1de2098d",
+          "type": "both"
+        },
+        {
+          "id": "3c6d1555-746c-447f-90cd-b4ce00d16302",
+          "type": "both"
+        },
+        {
+          "id": "0336b7d7-8245-452e-a596-721cd47be91d",
+          "type": "both"
+        },
+        {
+          "id": "c2abeaf9-c9cb-4249-8a53-f6978e37d778",
+          "type": "both"
+        },
+        {
+          "id": "99144974-cd7a-46d1-807c-4a9d792ca26a",
+          "type": "both"
+        },
+        {
+          "id": "443afb57-698d-4f1d-bd71-159d421a8c37",
+          "type": "both"
+        },
+        {
+          "id": "ed6fb5a2-8d08-4aeb-aa35-89a43c39d7c7",
+          "type": "both"
+        }
+      ]
+    },
+    "ae8ba877-d13d-4c29-be15-89b7032fbb9f": {
+      "oldId": "ae8ba877-d13d-4c29-be15-89b7032fbb9f",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "9c4d308c-9643-4765-84c8-97dc4903e798",
+          "type": "both"
+        },
+        {
+          "id": "d6e20616-c9db-4dfa-ac02-ebe2a4adbaaa",
+          "type": "both"
+        },
+        {
+          "id": "e531ef1e-6755-4aa6-9c2c-59bfb18c62eb",
+          "type": "both"
+        },
+        {
+          "id": "0d9feb0b-3592-48fb-b741-6f4a44bd3947",
+          "type": "both"
+        },
+        {
+          "id": "3593bf17-0208-486b-9d87-1a062037ee20",
+          "type": "both"
+        },
+        {
+          "id": "d32520b5-5a70-498b-8188-eb8e978d0125",
+          "type": "both"
+        },
+        {
+          "id": "3a3bdf5b-3194-45b4-8ec7-9fb51505da1c",
+          "type": "both"
+        },
+        {
+          "id": "98a9d237-fe12-4987-945f-e1554c22e6ff",
+          "type": "both"
+        },
+        {
+          "id": "666b8150-46ec-427c-8850-8f521bbd9cd3",
+          "type": "both"
+        },
+        {
+          "id": "dade58a6-b66a-4137-bbca-9c8cdc4f8b86",
+          "type": "both"
+        }
+      ]
+    },
+    "5efbd993-8725-47b4-bba3-09cd2b75be37": {
+      "oldId": "5efbd993-8725-47b4-bba3-09cd2b75be37",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "d642bd4a-a2eb-479f-a58e-92e3e0e6d5a1",
+          "type": "both"
+        },
+        {
+          "id": "0167a13a-cfb9-4901-9d1b-b637cb3de623",
+          "type": "both"
+        },
+        {
+          "id": "d798d078-d5d3-4de3-b761-80da2c7ec086",
+          "type": "both"
+        },
+        {
+          "id": "fee0a108-10d5-4ebd-889c-5ef15a690983",
+          "type": "both"
+        },
+        {
+          "id": "7a561caf-c172-4ce2-a6f3-a99ccd60a154",
+          "type": "both"
+        },
+        {
+          "id": "6d7b3a55-db6e-4a5b-8a69-6cd6d0c53836",
+          "type": "both"
+        },
+        {
+          "id": "0e181fac-7c49-4602-8f3d-912a3df0519e",
+          "type": "both"
+        },
+        {
+          "id": "b0be6c46-7706-4ac0-ba61-71abbccb99b6",
+          "type": "both"
+        },
+        {
+          "id": "33f77653-47b2-4b67-844f-9413a67068f4",
+          "type": "both"
+        },
+        {
+          "id": "6b4732fe-ac03-4e58-9acd-d596dc284e2e",
+          "type": "both"
+        }
+      ]
+    },
+    "9174f753-30ee-4ff0-8330-704de490371f": {
+      "oldId": "9174f753-30ee-4ff0-8330-704de490371f",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "679883a9-23e8-44c5-af86-6d2b2a3a42b1",
+          "type": "both"
+        },
+        {
+          "id": "0093a476-db83-42a1-8afa-57bde282b26d",
+          "type": "both"
+        },
+        {
+          "id": "8b7c425b-cc18-4837-8290-92a4096da93c",
+          "type": "both"
+        },
+        {
+          "id": "2da8f08c-ac40-406b-8f08-ba90c7b6a2a6",
+          "type": "both"
+        },
+        {
+          "id": "4562ed75-3cdc-47ef-b618-67865fdad37c",
+          "type": "both"
+        },
+        {
+          "id": "147f1ae7-052c-47cb-a768-d4d658a9ba11",
+          "type": "both"
+        },
+        {
+          "id": "6c43883c-586b-4854-ac33-3d356cdb456c",
+          "type": "both"
+        },
+        {
+          "id": "2c655e19-f144-4d84-9afe-e36cda7e11c3",
+          "type": "both"
+        },
+        {
+          "id": "76d6a35a-e31a-4409-b2bc-1d5bfc6ab734",
+          "type": "both"
+        },
+        {
+          "id": "7ebff61c-cd85-492b-8f04-5583ff301ee2",
+          "type": "both"
+        }
+      ]
+    },
+    "f008ee73-54ad-4796-b5a4-40eff9f8a8ca": {
+      "oldId": "f008ee73-54ad-4796-b5a4-40eff9f8a8ca",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "62bbeb6a-15e6-42e0-a4b1-808d3e0973da",
+          "type": "both"
+        },
+        {
+          "id": "53fe34aa-1bd9-4edf-97e6-2d420ef43c9e",
+          "type": "both"
+        },
+        {
+          "id": "32d37504-2ccf-4bf5-be29-3b85835aa834",
+          "type": "both"
+        },
+        {
+          "id": "7ff31a4b-2c4e-4f44-80e3-7a7d4feafd58",
+          "type": "both"
+        },
+        {
+          "id": "c4a86f44-89b5-49b3-a6e0-af7639768d22",
+          "type": "both"
+        },
+        {
+          "id": "ddb50008-77d3-4bac-9873-4856d78fc90f",
+          "type": "both"
+        },
+        {
+          "id": "6262e8ae-243c-43c4-8870-a73fd5de5f14",
+          "type": "both"
+        },
+        {
+          "id": "bf27a7bd-2828-44fc-8d09-da52828019d2",
+          "type": "both"
+        },
+        {
+          "id": "41f95044-ffdf-4069-aa99-b6a2764c6799",
+          "type": "both"
+        },
+        {
+          "id": "701d95a6-24d1-4f04-a265-a0fe3be84e30",
+          "type": "both"
+        }
+      ]
+    },
+    "74b1131d-2776-404b-af1d-9432d17e2a2d": {
+      "oldId": "74b1131d-2776-404b-af1d-9432d17e2a2d",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "bf18abb3-4e47-4a00-a8ef-d62b3740c531",
+          "type": "both"
+        },
+        {
+          "id": "68e872a1-e3a0-45b0-9ed2-f577ca718896",
+          "type": "both"
+        },
+        {
+          "id": "351718bf-173b-4d31-80cc-a152ce4d631f",
+          "type": "both"
+        },
+        {
+          "id": "ba3b0a83-8056-44bf-a214-c1473469e753",
+          "type": "both"
+        },
+        {
+          "id": "55a7eddc-2701-4778-8eb4-e2263040dc09",
+          "type": "both"
+        },
+        {
+          "id": "4bfc0198-bc8f-4a6e-a5da-714aa76223b8",
+          "type": "both"
+        },
+        {
+          "id": "11d58f6c-d5f8-4e22-8c1e-67330c0237f4",
+          "type": "both"
+        },
+        {
+          "id": "9ee07c48-732f-443b-95df-e30c99c003a6",
+          "type": "both"
+        },
+        {
+          "id": "c4490dde-f534-4623-90d1-6d448a7c4cd3",
+          "type": "both"
+        },
+        {
+          "id": "1502ec52-6aa9-4e61-8ad9-7c57b9b1fce4",
+          "type": "both"
+        }
+      ]
+    },
+    "e0f5a1b9-8ec1-47ac-bc76-aac8a8d33e36": {
+      "oldId": "e0f5a1b9-8ec1-47ac-bc76-aac8a8d33e36",
+      "designerName": "Unknown Designer",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "52c3641f-2624-4ba9-8e9d-968b7b60967b",
+          "type": "both"
+        },
+        {
+          "id": "71536177-f4fa-4a5d-845a-4e238a35f33d",
+          "type": "both"
+        },
+        {
+          "id": "baffe78f-788a-42c6-9b99-a953373528e3",
+          "type": "both"
+        },
+        {
+          "id": "a39518fc-1789-4d36-8edb-6ae1117b2c1f",
+          "type": "both"
+        },
+        {
+          "id": "23e7f87e-a488-446e-ab8d-396837f7d23a",
+          "type": "both"
+        },
+        {
+          "id": "6c7336b9-8f21-4981-becc-b8764f9348d8",
+          "type": "both"
+        },
+        {
+          "id": "399c579f-b73d-488b-8ce5-65996b2f0564",
+          "type": "both"
+        },
+        {
+          "id": "8507c5b8-e0c2-4420-884f-295ff78135b2",
+          "type": "both"
+        },
+        {
+          "id": "982053fa-bae6-4e30-8832-e10091d589f4",
+          "type": "both"
+        },
+        {
+          "id": "e3da9db0-13b4-41fe-8bb2-f61608795a1d",
+          "type": "both"
+        }
+      ]
+    },
+    "fe79787d-de67-4877-ac5c-a5bd52a58b7b": {
+      "oldId": "fe79787d-de67-4877-ac5c-a5bd52a58b7b",
+      "designerName": "Kim Jones",
+      "brandName": "Unknown Brand",
+      "affectedTenures": [],
+      "affectedRelationships": [
+        {
+          "id": "4599ff09-7227-4837-a853-b979dcf045c0",
+          "type": "both"
+        },
+        {
+          "id": "d8157e17-bb01-49b9-8418-bd630204607a",
+          "type": "both"
+        },
+        {
+          "id": "a6b9633d-0401-4e5c-b0ff-f01098b13782",
+          "type": "both"
+        },
+        {
+          "id": "b6fa685a-c6fa-4428-8496-14147bd028b8",
+          "type": "both"
+        },
+        {
+          "id": "658de6dc-1825-4a87-805b-32c14bac27ae",
+          "type": "both"
+        },
+        {
+          "id": "9a023352-7e28-4290-ad8f-8308a3fe10a3",
+          "type": "both"
+        },
+        {
+          "id": "0b23881b-1f1a-4534-ab0b-96bc82e96a1b",
+          "type": "both"
+        },
+        {
+          "id": "6f3a0845-6e33-483b-bb52-edb9422337f1",
+          "type": "both"
+        },
+        {
+          "id": "2ee03813-3d88-4311-b194-c80652902bd4",
+          "type": "both"
+        },
+        {
+          "id": "adf1ff09-115e-4925-9028-b409b15f51f3",
+          "type": "both"
+        }
+      ]
+    }
+  },
   "summary": {
-    "totalMappings": 0,
-    "totalAffectedTenures": 0,
-    "totalAffectedRelationships": 0
+    "totalMappings": 77,
+    "totalAffectedTenures": 1,
+    "totalAffectedRelationships": 1114
   }
 }

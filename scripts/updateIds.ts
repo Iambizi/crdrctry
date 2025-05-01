@@ -1,66 +1,142 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import { fileURLToPath } from 'url';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { execSync } from 'node:child_process';
+import { validate as validateUUID } from 'uuid';
+import type { Brand, Designer, Relationship, Tenure } from '../src/types/fashion.js';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = dirname(__filename);
 
-// Read the main data file
-const mainDataPath = path.join(__dirname, '../src/data/fashionGenealogy.json');
-const mainData = JSON.parse(fs.readFileSync(mainDataPath, 'utf8'));
-
-// ID mappings
-const idMappings: { [key: string]: string } = {
-  // Brand ID mappings
-  'a8cff255-6ea5-4912-a82a-d5524e25b53a': '63cb5e65-2f24-4ac5-9c57-e2270f612d4e', // Vera Wang
-  'd36ddc62-5f4b-422a-9167-473edea6498d': 'cececf4e-866f-43b0-8e3e-49a0dbe3b1dc', // Versace
-  '7865-7902': '49c7458d-ff31-452e-987c-a4debd9870a7', // Ralph Lauren
-  '8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f': '49c7458d-ff31-452e-987c-a4debd9870a7', // Ralph Lauren's current UUID
-  // Add LTK Architecture mapping if found
-};
-
-interface Brand {
-  id: string;
-  name: string;
-  foundedYear: number;
-  founder: string;
-  parentCompany?: string;
-  category?: string;
-  headquarters?: string;
-  specialties?: string[];
-  pricePoint?: string;
-  markets?: string[];
-  website?: string;
-  hasHistoricalData?: boolean;
-  notes?: string;
-  lastCategorized?: string;
-  socialMedia?: {
-    instagram?: string;
-    twitter?: string;
-    facebook?: string;
-  };
-  confidence?: number;
-  verificationStatus?: string;
-  sources?: string[];
-  lastVerified?: string;
+function generateUUID(): string {
+  // Use macOS uuidgen command to generate UUID
+  return execSync('uuidgen').toString().trim().toLowerCase();
 }
 
-// Update brand IDs
-mainData.brands = mainData.brands.map((brand: Brand) => {
-  const newId = idMappings[brand.id];
-  if (newId) {
-    console.log(`Updating brand ID from ${brand.id} to ${newId}`);
-    return { ...brand, id: newId };
+function isValidUUID(id: string): boolean {
+  try {
+    return validateUUID(id);
+  } catch {
+    return false;
   }
-  // Handle old format IDs
-  if (brand.name === 'Ralph Lauren' && !brand.id.includes('-')) {
-    const newId = '49c7458d-ff31-452e-987c-a4debd9870a7';
-    console.log(`Updating Ralph Lauren ID from ${brand.id} to ${newId}`);
-    return { ...brand, id: newId };
-  }
-  return brand;
-});
+}
 
-// Write back to the main file
-fs.writeFileSync(mainDataPath, JSON.stringify(mainData, null, 2));
-console.log('Updates completed successfully!');
+function needsIdUpdate(id: string | undefined): boolean {
+  if (!id) return false;
+  // Check if it's a legacy hyphenated name (e.g., thomas-pink)
+  if (id.includes('-') && !id.includes('-', 9) && /^[a-z-]+$/.test(id)) return true;
+  // Check if it's a malformed UUID or other non-UUID format
+  return !isValidUUID(id);
+}
+
+function updateIds() {
+  // Load data
+  const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
+  const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8')) as {
+    brands: Brand[];
+    designers: Designer[];
+    tenures: Tenure[];
+    relationships: Relationship[];
+  };
+
+  // Track ID changes for updating references
+  const idMapping = new Map<string, string>();
+
+  // Update brand IDs
+  fashionGenealogyData.brands = fashionGenealogyData.brands.map(brand => {
+    if (brand.id && needsIdUpdate(brand.id)) {
+      const oldId = brand.id;
+      const newId = generateUUID();
+      idMapping.set(oldId, newId);
+      console.log(`Converting brand ID: ${oldId} -> ${newId} (${brand.name})`);
+      return { ...brand, id: newId };
+    }
+    return brand;
+  });
+
+  // Update designer IDs
+  fashionGenealogyData.designers = fashionGenealogyData.designers.map(designer => {
+    if (designer.id && needsIdUpdate(designer.id)) {
+      const oldId = designer.id;
+      const newId = generateUUID();
+      idMapping.set(oldId, newId);
+      console.log(`Converting designer ID: ${oldId} -> ${newId} (${designer.name})`);
+      return { ...designer, id: newId };
+    }
+    return designer;
+  });
+
+  // Update tenure references
+  fashionGenealogyData.tenures = fashionGenealogyData.tenures.map(tenure => {
+    let updated = false;
+    let newDesignerId = tenure.designerId;
+    let newBrandId = tenure.brandId;
+
+    // Check for legacy IDs in tenures
+    if (tenure.designerId && needsIdUpdate(tenure.designerId)) {
+      const oldId = tenure.designerId;
+      const newId = generateUUID();
+      idMapping.set(oldId, newId);
+      console.log(`Converting tenure designer ID: ${oldId} -> ${newId}`);
+      newDesignerId = newId;
+      updated = true;
+    }
+
+    if (tenure.brandId && needsIdUpdate(tenure.brandId)) {
+      const oldId = tenure.brandId;
+      const newId = generateUUID();
+      idMapping.set(oldId, newId);
+      console.log(`Converting tenure brand ID: ${oldId} -> ${newId}`);
+      newBrandId = newId;
+      updated = true;
+    }
+
+    // Check for mapped IDs
+    if (!updated) {
+      const mappedDesignerId = tenure.designerId ? idMapping.get(tenure.designerId) : undefined;
+      const mappedBrandId = tenure.brandId ? idMapping.get(tenure.brandId) : undefined;
+      if (mappedDesignerId || mappedBrandId) {
+        newDesignerId = mappedDesignerId || tenure.designerId;
+        newBrandId = mappedBrandId || tenure.brandId;
+        updated = true;
+      }
+    }
+
+    return updated ? { ...tenure, designerId: newDesignerId, brandId: newBrandId } : tenure;
+  });
+
+  // Update relationship references
+  fashionGenealogyData.relationships = fashionGenealogyData.relationships.map(rel => {
+    const newSourceId = rel.sourceDesignerId ? idMapping.get(rel.sourceDesignerId) : undefined;
+    const newTargetId = rel.targetDesignerId ? idMapping.get(rel.targetDesignerId) : undefined;
+    const newBrandId = rel.brandId ? idMapping.get(rel.brandId) : undefined;
+
+    if (newSourceId || newTargetId || newBrandId) {
+      return {
+        ...rel,
+        sourceDesignerId: newSourceId || rel.sourceDesignerId,
+        targetDesignerId: newTargetId || rel.targetDesignerId,
+        brandId: newBrandId || rel.brandId
+      };
+    }
+    return rel;
+  });
+
+  // Save backup
+  const backupPath = fashionGenealogyPath.replace('.json', '.backup.json');
+  writeFileSync(backupPath, readFileSync(fashionGenealogyPath));
+
+  // Save updated data
+  writeFileSync(fashionGenealogyPath, JSON.stringify(fashionGenealogyData, null, 2));
+
+  console.log('\nSummary:');
+  console.log(`- Updated ${idMapping.size} IDs`);
+  console.log('- Backup saved to: src/data/fashionGenealogy.backup.json');
+}
+
+try {
+  console.log('Updating legacy and malformed IDs...\n');
+  updateIds();
+} catch (error) {
+  console.error('Failed to update IDs:', error);
+}

@@ -8,31 +8,14 @@ const __dirname = dirname(__filename);
 
 interface EntityMapping {
   oldId: string;
-  designerName: string;
-  brandName: string;
-  affectedTenures: Array<{
-    id: string;
-    role: string;
-    startYear: number;
-    endYear: number | null;
-  }>;
-  affectedRelationships: Array<{
-    id: string;
-    type: 'source' | 'target' | 'both';
-  }>;
+  name: string;
+  type: 'designer' | 'brand';
+  affectedTenures: number;
+  affectedRelationships: number;
 }
 
-interface UpdatePlan {
-  mappings: { [key: string]: EntityMapping };
-  summary: {
-    totalMappings: number;
-    totalAffectedTenures: number;
-    totalAffectedRelationships: number;
-  };
-}
-
-function createUpdatePlan(): UpdatePlan {
-  // Load fashion genealogy data
+function analyzeAndFixSelfRefs() {
+  // Load data
   const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
   const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8')) as {
     brands: Brand[];
@@ -41,111 +24,92 @@ function createUpdatePlan(): UpdatePlan {
     relationships: Relationship[];
   };
 
-  // Create id-to-name mappings
-  const designerIdToName = new Map<string, string>();
-  const brandIdToName = new Map<string, string>();
+  // Create name lookup maps
+  const designerNames = new Map<string, string>();
+  const brandNames = new Map<string, string>();
+  fashionGenealogyData.designers.forEach(d => designerNames.set(d.id, d.name));
+  fashionGenealogyData.brands.forEach(b => brandNames.set(b.id, b.name));
 
-  fashionGenealogyData.designers.forEach(d => {
-    designerIdToName.set(d.id, d.name);
-  });
+  // Track self-referential entries
+  const selfRefs = new Map<string, EntityMapping>();
 
-  fashionGenealogyData.brands.forEach(b => {
-    brandIdToName.set(b.id, b.name);
-  });
-
-  const plan: UpdatePlan = {
-    mappings: {},
-    summary: {
-      totalMappings: 0,
-      totalAffectedTenures: 0,
-      totalAffectedRelationships: 0
-    }
-  };
-
-  // Find self-referential entries in tenures
-  fashionGenealogyData.tenures.forEach(tenure => {
+  // Check tenures for self-references
+  console.log('Analyzing tenures for self-references...');
+  const selfRefTenures = fashionGenealogyData.tenures.filter(tenure => {
     if (tenure.designerId === tenure.brandId) {
-      // This is a self-referential entry
-      const id = tenure.designerId;
-      
-      if (!plan.mappings[id]) {
-        const designerName = designerIdToName.get(id) || 'Unknown Designer';
-        const brandName = brandIdToName.get(id) || 'Unknown Brand';
-
-        plan.mappings[id] = {
-          oldId: id,
-          designerName,
-          brandName,
-          affectedTenures: [],
-          affectedRelationships: []
-        };
-        plan.summary.totalMappings++;
-      }
-
-      plan.mappings[id].affectedTenures.push({
-        id: tenure.id,
-        role: tenure.role,
-        startYear: tenure.startYear,
-        endYear: tenure.endYear
-      });
-      plan.summary.totalAffectedTenures++;
+      const designerName = designerNames.get(tenure.designerId) || 'Unknown Designer';
+      const mapping: EntityMapping = selfRefs.get(tenure.designerId) || {
+        oldId: tenure.designerId,
+        name: designerName,
+        type: 'designer',
+        affectedTenures: 0,
+        affectedRelationships: 0
+      };
+      mapping.affectedTenures++;
+      selfRefs.set(tenure.designerId, mapping);
+      return true;
     }
+    return false;
   });
 
-  // Find self-referential entries in relationships
-  fashionGenealogyData.relationships.forEach(rel => {
+  // Check relationships for self-references
+  console.log('Analyzing relationships for self-references...');
+  const selfRefRelationships = fashionGenealogyData.relationships.filter(rel => {
     if (rel.sourceDesignerId === rel.targetDesignerId) {
-      const id = rel.sourceDesignerId;
-      
-      if (!plan.mappings[id]) {
-        const designerName = designerIdToName.get(id) || 'Unknown Designer';
-        const brandName = brandIdToName.get(id) || 'Unknown Brand';
-
-        plan.mappings[id] = {
-          oldId: id,
-          designerName,
-          brandName,
-          affectedTenures: [],
-          affectedRelationships: []
-        };
-        plan.summary.totalMappings++;
-      }
-
-      plan.mappings[id].affectedRelationships.push({
-        id: rel.id,
-        type: 'both'
-      });
-      plan.summary.totalAffectedRelationships++;
+      const designerName = designerNames.get(rel.sourceDesignerId) || 'Unknown Designer';
+      const mapping: EntityMapping = selfRefs.get(rel.sourceDesignerId) || {
+        oldId: rel.sourceDesignerId,
+        name: designerName,
+        type: 'designer',
+        affectedTenures: 0,
+        affectedRelationships: 0
+      };
+      mapping.affectedRelationships++;
+      selfRefs.set(rel.sourceDesignerId, mapping);
+      return true;
     }
+    return false;
   });
 
-  // Save the plan
-  const planPath = join(__dirname, '../src/data/self_referential_update_plan.json');
-  writeFileSync(planPath, JSON.stringify(plan, null, 2));
+  // Remove self-referential relationships
+  console.log('\nRemoving self-referential entries...');
+  fashionGenealogyData.relationships = fashionGenealogyData.relationships.filter(
+    rel => rel.sourceDesignerId !== rel.targetDesignerId
+  );
 
-  return plan;
+  // Remove self-referential tenures
+  fashionGenealogyData.tenures = fashionGenealogyData.tenures.filter(
+    tenure => tenure.designerId !== tenure.brandId
+  );
+
+  // Save backup
+  const backupPath = fashionGenealogyPath.replace('.json', '.backup.json');
+  writeFileSync(backupPath, readFileSync(fashionGenealogyPath));
+
+  // Save updated data
+  writeFileSync(fashionGenealogyPath, JSON.stringify(fashionGenealogyData, null, 2));
+
+  // Generate report
+  console.log('\nSelf-referential entries found:');
+  for (const [id, mapping] of selfRefs.entries()) {
+    console.log(`\n${mapping.name} (${id}):`);
+    if (mapping.affectedTenures > 0) {
+      console.log(`- ${mapping.affectedTenures} tenure(s)`);
+    }
+    if (mapping.affectedRelationships > 0) {
+      console.log(`- ${mapping.affectedRelationships} relationship(s)`);
+    }
+  }
+
+  console.log('\nSummary:');
+  console.log(`- Removed ${selfRefTenures.length} self-referential tenures`);
+  console.log(`- Removed ${selfRefRelationships.length} self-referential relationships`);
+  console.log('- Backup saved to: src/data/fashionGenealogy.backup.json');
 }
 
-// Generate update plan
 try {
-  console.log('Analyzing self-referential entries...\n');
-  const plan = createUpdatePlan();
-  
-  console.log('Summary:');
-  console.log(`Total mappings found: ${plan.summary.totalMappings}`);
-  console.log(`Total affected tenures: ${plan.summary.totalAffectedTenures}`);
-  console.log(`Total affected relationships: ${plan.summary.totalAffectedRelationships}\n`);
-  
-  if (Object.keys(plan.mappings).length > 0) {
-    console.log('Sample mappings:');
-    Object.entries(plan.mappings).slice(0, 5).forEach(([oldId, mapping]) => {
-      console.log(`\n${oldId}:`);
-      console.log(`  → Name: ${mapping.designerName}`);
-      console.log(`  Affects: ${mapping.affectedTenures.length} tenure(s), ${mapping.affectedRelationships.length} relationship(s)`);
-    });
-  }
-  
-  console.log('\nDetailed plan saved to: src/data/self_referential_update_plan.json');
+  console.log('Analyzing and fixing self-referential entries...\n');
+  analyzeAndFixSelfRefs();
 } catch (error) {
-  console.error('Failed to create update plan:', error);
+  console.error('Failed to fix self-referential entries:', error);
 }

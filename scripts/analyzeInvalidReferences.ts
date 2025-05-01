@@ -13,34 +13,45 @@ interface InvalidReference {
     tenures: Array<{
       index: number;
       role: string;
-      brandId: string;
+      brandId?: string;
+      designerId?: string;
     }>;
     relationships: Array<{
       index: number;
       role: 'source' | 'target' | 'both';
-      brandId: string;
+      brandId?: string;
+      designerId?: string;
       otherDesignerId?: string;
     }>;
   };
-  patterns?: {
-    commonBrands: Array<{ brandId: string; count: number }>;
-    commonDesigners: Array<{ designerId: string; count: number }>;
-    timeframe?: { start: number; end: number };
+}
+
+interface CommonPattern {
+  type: 'self_ref_error' | 'designer_pattern' | 'brand_pattern';
+  description: string;
+  count: number;
+  details?: {
+    id: string;
+    name: string;
+    type: 'designer' | 'brand';
   };
 }
 
 interface AnalysisReport {
   invalidReferences: { [key: string]: InvalidReference };
+  selfReferentialEntries: Array<{
+    id: string;
+    name: string;
+    type: 'designer' | 'brand';
+    context: 'tenure' | 'relationship';
+    details: string;
+  }>;
+  commonPatterns: CommonPattern[];
   summary: {
     totalInvalidDesignerRefs: number;
     totalInvalidBrandRefs: number;
     totalAffectedTenures: number;
     totalAffectedRelationships: number;
-    commonPatterns: Array<{
-      type: string;
-      description: string;
-      count: number;
-    }>;
   };
 }
 
@@ -50,7 +61,6 @@ function isValidUUID(id: string): boolean {
 }
 
 function analyzeInvalidReferences(): AnalysisReport {
-  // Load data file
   const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
   const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8')) as {
     brands: Brand[];
@@ -59,217 +69,207 @@ function analyzeInvalidReferences(): AnalysisReport {
     relationships: Relationship[];
   };
 
-  // Create sets of valid IDs from the main data file
   const validDesignerIds = new Set(fashionGenealogyData.designers.map(d => d.id));
   const validBrandIds = new Set(fashionGenealogyData.brands.map(b => b.id));
 
-  const report: AnalysisReport = {
-    invalidReferences: {},
-    summary: {
-      totalInvalidDesignerRefs: 0,
-      totalInvalidBrandRefs: 0,
-      totalAffectedTenures: 0,
-      totalAffectedRelationships: 0,
-      commonPatterns: []
-    }
-  };
+  const designerNames = new Map<string, string>();
+  const brandNames = new Map<string, string>();
+  fashionGenealogyData.designers.forEach(d => designerNames.set(d.id, d.name));
+  fashionGenealogyData.brands.forEach(b => brandNames.set(b.id, b.name));
 
-  // Analyze tenures
+  const invalidReferences: { [key: string]: InvalidReference } = {};
+  const selfReferentialEntries: Array<{
+    id: string;
+    name: string;
+    type: 'designer' | 'brand';
+    context: 'tenure' | 'relationship';
+    details: string;
+  }> = [];
+
   fashionGenealogyData.tenures.forEach((tenure, index) => {
-    const invalidDesigner = !validDesignerIds.has(tenure.designerId) || !isValidUUID(tenure.designerId);
-    const invalidBrand = !validBrandIds.has(tenure.brandId) || !isValidUUID(tenure.brandId);
-    const isSelfReferential = tenure.designerId === tenure.brandId;
+    if (tenure.designerId === tenure.brandId) {
+      selfReferentialEntries.push({
+        id: tenure.designerId,
+        name: designerNames.get(tenure.designerId) || 'Unknown',
+        type: 'designer',
+        context: 'tenure',
+        details: `Role: ${tenure.role}, Start: ${tenure.startYear}${tenure.endYear ? `, End: ${tenure.endYear}` : ''}`
+      });
+    }
 
-    if (invalidDesigner || isSelfReferential) {
-      if (!report.invalidReferences[tenure.designerId]) {
-        report.invalidReferences[tenure.designerId] = {
+    if (!validDesignerIds.has(tenure.designerId)) {
+      if (!invalidReferences[tenure.designerId]) {
+        invalidReferences[tenure.designerId] = {
           type: 'designer',
           id: tenure.designerId,
           occurrences: { tenures: [], relationships: [] }
         };
-        report.summary.totalInvalidDesignerRefs++;
       }
-      report.invalidReferences[tenure.designerId].occurrences.tenures.push({
+      invalidReferences[tenure.designerId].occurrences.tenures.push({
         index,
         role: tenure.role,
         brandId: tenure.brandId
       });
-      report.summary.totalAffectedTenures++;
     }
 
-    if (invalidBrand) {
-      if (!report.invalidReferences[tenure.brandId]) {
-        report.invalidReferences[tenure.brandId] = {
+    if (!validBrandIds.has(tenure.brandId)) {
+      if (!invalidReferences[tenure.brandId]) {
+        invalidReferences[tenure.brandId] = {
           type: 'brand',
           id: tenure.brandId,
           occurrences: { tenures: [], relationships: [] }
         };
-        report.summary.totalInvalidBrandRefs++;
       }
-      report.invalidReferences[tenure.brandId].occurrences.tenures.push({
+      invalidReferences[tenure.brandId].occurrences.tenures.push({
         index,
         role: tenure.role,
-        brandId: tenure.brandId
+        designerId: tenure.designerId
       });
     }
   });
 
-  // Analyze relationships
   fashionGenealogyData.relationships.forEach((rel, index) => {
-    const invalidSource = !validDesignerIds.has(rel.sourceDesignerId) || !isValidUUID(rel.sourceDesignerId);
-    const invalidTarget = !validDesignerIds.has(rel.targetDesignerId) || !isValidUUID(rel.targetDesignerId);
-    const invalidBrand = !validBrandIds.has(rel.brandId) || !isValidUUID(rel.brandId);
-    const isSelfReferential = rel.sourceDesignerId === rel.targetDesignerId;
+    if (rel.sourceDesignerId === rel.targetDesignerId) {
+      selfReferentialEntries.push({
+        id: rel.sourceDesignerId,
+        name: designerNames.get(rel.sourceDesignerId) || 'Unknown',
+        type: 'designer',
+        context: 'relationship',
+        details: `Type: ${rel.type}`
+      });
+    }
 
-    if (invalidSource || isSelfReferential) {
-      if (!report.invalidReferences[rel.sourceDesignerId]) {
-        report.invalidReferences[rel.sourceDesignerId] = {
+    if (!validDesignerIds.has(rel.sourceDesignerId)) {
+      if (!invalidReferences[rel.sourceDesignerId]) {
+        invalidReferences[rel.sourceDesignerId] = {
           type: 'designer',
           id: rel.sourceDesignerId,
           occurrences: { tenures: [], relationships: [] }
         };
-        report.summary.totalInvalidDesignerRefs++;
       }
-      report.invalidReferences[rel.sourceDesignerId].occurrences.relationships.push({
+      invalidReferences[rel.sourceDesignerId].occurrences.relationships.push({
         index,
         role: 'source',
-        brandId: rel.brandId,
         otherDesignerId: rel.targetDesignerId
       });
-      report.summary.totalAffectedRelationships++;
     }
 
-    if (invalidTarget) {
-      if (!report.invalidReferences[rel.targetDesignerId]) {
-        report.invalidReferences[rel.targetDesignerId] = {
+    if (!validDesignerIds.has(rel.targetDesignerId)) {
+      if (!invalidReferences[rel.targetDesignerId]) {
+        invalidReferences[rel.targetDesignerId] = {
           type: 'designer',
           id: rel.targetDesignerId,
           occurrences: { tenures: [], relationships: [] }
         };
-        report.summary.totalInvalidDesignerRefs++;
       }
-      report.invalidReferences[rel.targetDesignerId].occurrences.relationships.push({
+      invalidReferences[rel.targetDesignerId].occurrences.relationships.push({
         index,
         role: 'target',
-        brandId: rel.brandId,
         otherDesignerId: rel.sourceDesignerId
-      });
-      report.summary.totalAffectedRelationships++;
-    }
-
-    if (invalidBrand) {
-      if (!report.invalidReferences[rel.brandId]) {
-        report.invalidReferences[rel.brandId] = {
-          type: 'brand',
-          id: rel.brandId,
-          occurrences: { tenures: [], relationships: [] }
-        };
-        report.summary.totalInvalidBrandRefs++;
-      }
-      report.invalidReferences[rel.brandId].occurrences.relationships.push({
-        index,
-        role: 'both',
-        brandId: rel.brandId,
-        otherDesignerId: invalidSource ? rel.targetDesignerId : rel.sourceDesignerId
       });
     }
   });
 
-  // Analyze patterns for each invalid reference
-  for (const [id, ref] of Object.entries(report.invalidReferences)) {
-    // Find common brands
-    const brandCounts = new Map<string, number>();
-    ref.occurrences.tenures.forEach(t => {
-      brandCounts.set(t.brandId, (brandCounts.get(t.brandId) || 0) + 1);
+  let totalInvalidDesignerRefs = 0;
+  let totalInvalidBrandRefs = 0;
+  let totalAffectedTenures = 0;
+  let totalAffectedRelationships = 0;
+
+  Object.values(invalidReferences).forEach(ref => {
+    if (ref.type === 'designer') totalInvalidDesignerRefs++;
+    if (ref.type === 'brand') totalInvalidBrandRefs++;
+    totalAffectedTenures += ref.occurrences.tenures.length;
+    totalAffectedRelationships += ref.occurrences.relationships.length;
+  });
+
+  const commonPatterns: CommonPattern[] = [];
+
+  if (selfReferentialEntries.length > 0) {
+    commonPatterns.push({
+      type: 'self_ref_error',
+      description: 'Self-referential entry',
+      count: selfReferentialEntries.length
     });
-    ref.occurrences.relationships.forEach(r => {
-      brandCounts.set(r.brandId, (brandCounts.get(r.brandId) || 0) + 1);
+  }
+
+  Object.values(invalidReferences)
+    .filter(ref => ref.type === 'brand')
+    .forEach(ref => {
+      commonPatterns.push({
+        type: 'brand_pattern',
+        description: `Single brand association: ${ref.id}`,
+        count: ref.occurrences.tenures.length + ref.occurrences.relationships.length,
+        details: {
+          id: ref.id,
+          name: brandNames.get(ref.id) || 'Unknown Brand',
+          type: 'brand'
+        }
+      });
     });
 
-    // Find common designers in relationships
-    const designerCounts = new Map<string, number>();
-    ref.occurrences.relationships.forEach(r => {
-      if (r.otherDesignerId) {
-        designerCounts.set(r.otherDesignerId, (designerCounts.get(r.otherDesignerId) || 0) + 1);
+  Object.values(invalidReferences)
+    .filter(ref => ref.type === 'designer')
+    .forEach(ref => {
+      if (ref.occurrences.relationships.length > 0) {
+        commonPatterns.push({
+          type: 'designer_pattern',
+          description: `Single designer relationship: ${ref.id}`,
+          count: ref.occurrences.relationships.length,
+          details: {
+            id: ref.id,
+            name: designerNames.get(ref.id) || 'Unknown Designer',
+            type: 'designer'
+          }
+        });
       }
     });
 
-    ref.patterns = {
-      commonBrands: Array.from(brandCounts.entries())
-        .map(([brandId, count]) => ({ brandId, count }))
-        .sort((a, b) => b.count - a.count),
-      commonDesigners: Array.from(designerCounts.entries())
-        .map(([designerId, count]) => ({ designerId, count }))
-        .sort((a, b) => b.count - a.count)
-    };
+  commonPatterns.sort((a, b) => b.count - a.count);
+
+  console.log('Analyzing invalid references...\n');
+  console.log('Summary:');
+  console.log(`Total invalid designer references: ${totalInvalidDesignerRefs}`);
+  console.log(`Total invalid brand references: ${totalInvalidBrandRefs}`);
+  console.log(`Total affected tenures: ${totalAffectedTenures}`);
+  console.log(`Total affected relationships: ${totalAffectedRelationships}\n`);
+
+  if (selfReferentialEntries.length > 0) {
+    console.log('Self-referential Entries:');
+    selfReferentialEntries.forEach(entry => {
+      console.log(`- ${entry.name} (${entry.id}):`);
+      console.log(`  Type: ${entry.type}, Context: ${entry.context}`);
+      console.log(`  Details: ${entry.details}\n`);
+    });
   }
 
-  // Identify common patterns
-  const patterns = new Map<string, number>();
-  for (const ref of Object.values(report.invalidReferences)) {
-    // Check for malformed UUIDs
-    if (!isValidUUID(ref.id)) {
-      const pattern = 'Malformed UUID';
-      patterns.set(pattern, (patterns.get(pattern) || 0) + 1);
-    }
+  console.log('Common Patterns:');
+  commonPatterns.forEach(pattern => {
+    console.log(`- ${pattern.description} (${pattern.count} occurrences)`);
+  });
 
-    // Check for self-referential entries
-    const hasSelfRef = ref.occurrences.relationships.some(r => 
-      r.otherDesignerId === ref.id || r.brandId === ref.id
-    );
-    if (hasSelfRef) {
-      const pattern = 'Self-referential entry';
-      patterns.set(pattern, (patterns.get(pattern) || 0) + 1);
+  const report: AnalysisReport = {
+    invalidReferences,
+    selfReferentialEntries,
+    commonPatterns,
+    summary: {
+      totalInvalidDesignerRefs,
+      totalInvalidBrandRefs,
+      totalAffectedTenures,
+      totalAffectedRelationships
     }
+  };
 
-    // Check for single brand/designer patterns
-    if (ref.patterns?.commonBrands.length === 1) {
-      const pattern = `Single brand association: ${ref.patterns.commonBrands[0].brandId}`;
-      patterns.set(pattern, (patterns.get(pattern) || 0) + 1);
-    }
-    if (ref.patterns?.commonDesigners.length === 1) {
-      const pattern = `Single designer relationship: ${ref.patterns.commonDesigners[0].designerId}`;
-      patterns.set(pattern, (patterns.get(pattern) || 0) + 1);
-    }
-  }
-
-  report.summary.commonPatterns = Array.from(patterns.entries())
-    .map(([description, count]) => ({
-      type: description.startsWith('Single brand') ? 'brand_pattern' : 
-            description === 'Malformed UUID' ? 'uuid_error' :
-            description === 'Self-referential entry' ? 'self_ref_error' :
-            'designer_pattern',
-      description,
-      count
-    }))
-    .sort((a, b) => b.count - a.count);
-
-  // Save the report
   const reportPath = join(__dirname, '../src/data/invalid_references_report.json');
-  writeFileSync(reportPath, JSON.stringify(report, null, 2));
+  const reportJson = JSON.stringify(report, null, 2);
+  console.log(`\nDetailed report saved to: ${reportPath}`);
+  writeFileSync(reportPath, reportJson);
 
   return report;
 }
 
-// Run analysis
 try {
   console.log('Analyzing invalid references...\n');
   const report = analyzeInvalidReferences();
-  
-  console.log('Summary:');
-  console.log(`Total invalid designer references: ${report.summary.totalInvalidDesignerRefs}`);
-  console.log(`Total invalid brand references: ${report.summary.totalInvalidBrandRefs}`);
-  console.log(`Total affected tenures: ${report.summary.totalAffectedTenures}`);
-  console.log(`Total affected relationships: ${report.summary.totalAffectedRelationships}\n`);
-  
-  if (report.summary.commonPatterns.length > 0) {
-    console.log('Common Patterns:');
-    report.summary.commonPatterns.forEach(pattern => {
-      console.log(`- ${pattern.description} (${pattern.count} occurrences)`);
-    });
-  }
-  
-  console.log('\nDetailed report saved to: src/data/invalid_references_report.json');
 } catch (error) {
   console.error('Failed to analyze invalid references:', error);
 }
