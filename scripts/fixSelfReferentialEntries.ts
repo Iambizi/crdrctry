@@ -1,15 +1,13 @@
-import { readFileSync, writeFileSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { Brand, Designer, Relationship, Tenure } from '../src/types/fashion';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import type { Brand, Designer, Relationship, Tenure } from '../src/types/fashion.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 interface EntityMapping {
   oldId: string;
-  newDesignerId: string;
-  newBrandId: string;
   designerName: string;
   brandName: string;
   affectedTenures: Array<{
@@ -34,11 +32,8 @@ interface UpdatePlan {
 }
 
 function createUpdatePlan(): UpdatePlan {
-  // Load all data files
+  // Load fashion genealogy data
   const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
-  const newDesignersPath = join(__dirname, '../src/data/updates/newDesigners.json');
-  const newBrandsPath = join(__dirname, '../src/data/updates/newBrands.json');
-
   const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8')) as {
     brands: Brand[];
     designers: Designer[];
@@ -46,29 +41,15 @@ function createUpdatePlan(): UpdatePlan {
     relationships: Relationship[];
   };
 
-  const newDesignersData = JSON.parse(readFileSync(newDesignersPath, 'utf-8')) as {
-    designers: Designer[];
-  };
-
-  const newBrandsData = JSON.parse(readFileSync(newBrandsPath, 'utf-8')) as {
-    brands: Brand[];
-  };
-
-  // Create name-to-id mappings
-  const designerNameToId = new Map<string, string>();
-  const brandNameToId = new Map<string, string>();
+  // Create id-to-name mappings
   const designerIdToName = new Map<string, string>();
   const brandIdToName = new Map<string, string>();
 
-  newDesignersData.designers.forEach(d => {
-    const normalizedName = d.name.toLowerCase().replace(/[^a-z0-9]/g, '-');
-    designerNameToId.set(normalizedName, d.id);
+  fashionGenealogyData.designers.forEach(d => {
     designerIdToName.set(d.id, d.name);
   });
 
-  newBrandsData.brands.forEach(b => {
-    const normalizedName = b.name.toLowerCase().replace(/[^a-z0-9]/g, '-');
-    brandNameToId.set(normalizedName, b.id);
+  fashionGenealogyData.brands.forEach(b => {
     brandIdToName.set(b.id, b.name);
   });
 
@@ -88,79 +69,51 @@ function createUpdatePlan(): UpdatePlan {
       const id = tenure.designerId;
       
       if (!plan.mappings[id]) {
-        // Try to find the proper UUIDs
-        let newDesignerId = '';
-        let newBrandId = '';
-        let designerName = '';
-        let brandName = '';
+        const designerName = designerIdToName.get(id) || 'Unknown Designer';
+        const brandName = brandIdToName.get(id) || 'Unknown Brand';
 
-        if (id.includes('-')) {
-          // This is a hyphenated name format
-          newDesignerId = designerNameToId.get(id) || '';
-          newBrandId = brandNameToId.get(id) || '';
-          designerName = designerIdToName.get(newDesignerId) || '';
-          brandName = brandIdToName.get(newBrandId) || '';
-        } else {
-          // This is a UUID format, try reverse lookup
-          designerName = designerIdToName.get(id) || '';
-          brandName = brandIdToName.get(id) || '';
-          if (designerName) {
-            const normalizedName = designerName.toLowerCase().replace(/[^a-z0-9]/g, '-');
-            newDesignerId = designerNameToId.get(normalizedName) || '';
-            newBrandId = brandNameToId.get(normalizedName) || '';
-          }
-        }
-
-        if (newDesignerId && newBrandId) {
-          plan.mappings[id] = {
-            oldId: id,
-            newDesignerId,
-            newBrandId,
-            designerName,
-            brandName,
-            affectedTenures: [],
-            affectedRelationships: []
-          };
-          plan.summary.totalMappings++;
-        }
+        plan.mappings[id] = {
+          oldId: id,
+          designerName,
+          brandName,
+          affectedTenures: [],
+          affectedRelationships: []
+        };
+        plan.summary.totalMappings++;
       }
 
-      if (plan.mappings[id]) {
-        plan.mappings[id].affectedTenures.push({
-          id: tenure.id,
-          role: tenure.role,
-          startYear: tenure.startYear,
-          endYear: tenure.endYear
-        });
-        plan.summary.totalAffectedTenures++;
-      }
+      plan.mappings[id].affectedTenures.push({
+        id: tenure.id,
+        role: tenure.role,
+        startYear: tenure.startYear,
+        endYear: tenure.endYear
+      });
+      plan.summary.totalAffectedTenures++;
     }
   });
 
-  // Find affected relationships
+  // Find self-referential entries in relationships
   fashionGenealogyData.relationships.forEach(rel => {
-    const sourceId = rel.sourceDesignerId;
-    const targetId = rel.targetDesignerId;
-    
-    if (plan.mappings[sourceId] && plan.mappings[targetId]) {
-      // Both source and target need updating
-      plan.mappings[sourceId].affectedRelationships.push({
+    if (rel.sourceDesignerId === rel.targetDesignerId) {
+      const id = rel.sourceDesignerId;
+      
+      if (!plan.mappings[id]) {
+        const designerName = designerIdToName.get(id) || 'Unknown Designer';
+        const brandName = brandIdToName.get(id) || 'Unknown Brand';
+
+        plan.mappings[id] = {
+          oldId: id,
+          designerName,
+          brandName,
+          affectedTenures: [],
+          affectedRelationships: []
+        };
+        plan.summary.totalMappings++;
+      }
+
+      plan.mappings[id].affectedRelationships.push({
         id: rel.id,
         type: 'both'
-      });
-      plan.summary.totalAffectedRelationships++;
-    } else if (plan.mappings[sourceId]) {
-      // Only source needs updating
-      plan.mappings[sourceId].affectedRelationships.push({
-        id: rel.id,
-        type: 'source'
-      });
-      plan.summary.totalAffectedRelationships++;
-    } else if (plan.mappings[targetId]) {
-      // Only target needs updating
-      plan.mappings[targetId].affectedRelationships.push({
-        id: rel.id,
-        type: 'target'
       });
       plan.summary.totalAffectedRelationships++;
     }
@@ -187,8 +140,7 @@ try {
     console.log('Sample mappings:');
     Object.entries(plan.mappings).slice(0, 5).forEach(([oldId, mapping]) => {
       console.log(`\n${oldId}:`);
-      console.log(`  → Designer: ${mapping.designerName} (${mapping.newDesignerId})`);
-      console.log(`  → Brand: ${mapping.brandName} (${mapping.newBrandId})`);
+      console.log(`  → Name: ${mapping.designerName}`);
       console.log(`  Affects: ${mapping.affectedTenures.length} tenure(s), ${mapping.affectedRelationships.length} relationship(s)`);
     });
   }

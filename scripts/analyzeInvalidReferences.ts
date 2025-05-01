@@ -1,7 +1,7 @@
-import { readFileSync, writeFileSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { Brand, Designer, Relationship, Tenure } from '../src/types/fashion';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import type { Brand, Designer, Relationship, Tenure } from '../src/types/fashion.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -44,12 +44,14 @@ interface AnalysisReport {
   };
 }
 
-function analyzeInvalidReferences(): AnalysisReport {
-  // Load data files
-  const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
-  const newDesignersPath = join(__dirname, '../src/data/updates/newDesigners.json');
-  const newBrandsPath = join(__dirname, '../src/data/updates/newBrands.json');
+function isValidUUID(id: string): boolean {
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  return uuidRegex.test(id);
+}
 
+function analyzeInvalidReferences(): AnalysisReport {
+  // Load data file
+  const fashionGenealogyPath = join(__dirname, '../src/data/fashionGenealogy.json');
   const fashionGenealogyData = JSON.parse(readFileSync(fashionGenealogyPath, 'utf-8')) as {
     brands: Brand[];
     designers: Designer[];
@@ -57,17 +59,9 @@ function analyzeInvalidReferences(): AnalysisReport {
     relationships: Relationship[];
   };
 
-  const newDesignersData = JSON.parse(readFileSync(newDesignersPath, 'utf-8')) as {
-    designers: Designer[];
-  };
-
-  const newBrandsData = JSON.parse(readFileSync(newBrandsPath, 'utf-8')) as {
-    brands: Brand[];
-  };
-
-  // Create sets of valid IDs
-  const validDesignerIds = new Set(newDesignersData.designers.map(d => d.id));
-  const validBrandIds = new Set(newBrandsData.brands.map(b => b.id));
+  // Create sets of valid IDs from the main data file
+  const validDesignerIds = new Set(fashionGenealogyData.designers.map(d => d.id));
+  const validBrandIds = new Set(fashionGenealogyData.brands.map(b => b.id));
 
   const report: AnalysisReport = {
     invalidReferences: {},
@@ -82,10 +76,11 @@ function analyzeInvalidReferences(): AnalysisReport {
 
   // Analyze tenures
   fashionGenealogyData.tenures.forEach((tenure, index) => {
-    const invalidDesigner = !validDesignerIds.has(tenure.designerId);
-    const invalidBrand = !validBrandIds.has(tenure.brandId);
+    const invalidDesigner = !validDesignerIds.has(tenure.designerId) || !isValidUUID(tenure.designerId);
+    const invalidBrand = !validBrandIds.has(tenure.brandId) || !isValidUUID(tenure.brandId);
+    const isSelfReferential = tenure.designerId === tenure.brandId;
 
-    if (invalidDesigner) {
+    if (invalidDesigner || isSelfReferential) {
       if (!report.invalidReferences[tenure.designerId]) {
         report.invalidReferences[tenure.designerId] = {
           type: 'designer',
@@ -121,11 +116,12 @@ function analyzeInvalidReferences(): AnalysisReport {
 
   // Analyze relationships
   fashionGenealogyData.relationships.forEach((rel, index) => {
-    const invalidSource = !validDesignerIds.has(rel.sourceDesignerId);
-    const invalidTarget = !validDesignerIds.has(rel.targetDesignerId);
-    const invalidBrand = !validBrandIds.has(rel.brandId);
+    const invalidSource = !validDesignerIds.has(rel.sourceDesignerId) || !isValidUUID(rel.sourceDesignerId);
+    const invalidTarget = !validDesignerIds.has(rel.targetDesignerId) || !isValidUUID(rel.targetDesignerId);
+    const invalidBrand = !validBrandIds.has(rel.brandId) || !isValidUUID(rel.brandId);
+    const isSelfReferential = rel.sourceDesignerId === rel.targetDesignerId;
 
-    if (invalidSource) {
+    if (invalidSource || isSelfReferential) {
       if (!report.invalidReferences[rel.sourceDesignerId]) {
         report.invalidReferences[rel.sourceDesignerId] = {
           type: 'designer',
@@ -136,14 +132,14 @@ function analyzeInvalidReferences(): AnalysisReport {
       }
       report.invalidReferences[rel.sourceDesignerId].occurrences.relationships.push({
         index,
-        role: invalidTarget ? 'both' : 'source',
+        role: 'source',
         brandId: rel.brandId,
         otherDesignerId: rel.targetDesignerId
       });
       report.summary.totalAffectedRelationships++;
     }
 
-    if (invalidTarget && !invalidSource) {
+    if (invalidTarget) {
       if (!report.invalidReferences[rel.targetDesignerId]) {
         report.invalidReferences[rel.targetDesignerId] = {
           type: 'designer',
@@ -211,6 +207,22 @@ function analyzeInvalidReferences(): AnalysisReport {
   // Identify common patterns
   const patterns = new Map<string, number>();
   for (const ref of Object.values(report.invalidReferences)) {
+    // Check for malformed UUIDs
+    if (!isValidUUID(ref.id)) {
+      const pattern = 'Malformed UUID';
+      patterns.set(pattern, (patterns.get(pattern) || 0) + 1);
+    }
+
+    // Check for self-referential entries
+    const hasSelfRef = ref.occurrences.relationships.some(r => 
+      r.otherDesignerId === ref.id || r.brandId === ref.id
+    );
+    if (hasSelfRef) {
+      const pattern = 'Self-referential entry';
+      patterns.set(pattern, (patterns.get(pattern) || 0) + 1);
+    }
+
+    // Check for single brand/designer patterns
     if (ref.patterns?.commonBrands.length === 1) {
       const pattern = `Single brand association: ${ref.patterns.commonBrands[0].brandId}`;
       patterns.set(pattern, (patterns.get(pattern) || 0) + 1);
@@ -223,7 +235,10 @@ function analyzeInvalidReferences(): AnalysisReport {
 
   report.summary.commonPatterns = Array.from(patterns.entries())
     .map(([description, count]) => ({
-      type: description.startsWith('Single brand') ? 'brand_pattern' : 'designer_pattern',
+      type: description.startsWith('Single brand') ? 'brand_pattern' : 
+            description === 'Malformed UUID' ? 'uuid_error' :
+            description === 'Self-referential entry' ? 'self_ref_error' :
+            'designer_pattern',
       description,
       count
     }))
