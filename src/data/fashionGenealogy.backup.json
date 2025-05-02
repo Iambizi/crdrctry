@@ -4705,13 +4705,40 @@
         "bonpoint.com",
         "vogue.com"
       ],
-      "verificationStatus": "UNVERIFIED",
-      "fieldVerification": {
-        "nationality": "UNVERIFIED",
-        "birthYear": "UNVERIFIED",
-        "signatureStyles": "UNVERIFIED",
-        "currentRole": "UNVERIFIED"
-      }
+      "verificationStatus": "UNVERIFIED"
+    },
+    {
+      "id": "12f1bc1f-2674-456c-84aa-a7cdac32f31e",
+      "name": "Giambattista Valli",
+      "birthYear": 1966,
+      "birthPlace": "Rome, Italy",
+      "nationality": "Italian",
+      "education": [
+        "Liceo Artistico",
+        "Central Saint Martins"
+      ],
+      "awards": [
+        "CFDA International Award Nominee 2014"
+      ],
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-Wear",
+        "Evening Wear"
+      ],
+      "notableCollaborations": [
+        "H&M (2019)",
+        "MAC Cosmetics (2015)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-12",
+      "sources": [
+        "vogue.com/fashion-shows/designer/giambattista-valli",
+        "businessoffashion.com/community/people/giambattista-valli"
+      ],
+      "createdAt": "2025-04-12T14:30:00.000Z",
+      "updatedAt": "2025-04-12T14:30:00.000Z"
     }
   ],
   "brands": [
@@ -8179,6 +8206,171 @@
         "vogue.com/article/antwerp-six-designers-fashion-history"
       ],
       "lastVerified": "2025-04-12"
+    },
+    {
+      "id": "1cad706e-71db-47fd-aaca-8ccbefaaa83c",
+      "name": "Giambattista Valli",
+      "foundedYear": 2005,
+      "founder": "Giambattista Valli",
+      "parentCompany": "Artémis",
+      "category": "luxury_fashion",
+      "headquarters": "Paris, France",
+      "specialties": [
+        "Haute Couture",
+        "Ready-to-Wear",
+        "Accessories"
+      ],
+      "pricePoint": "Luxury",
+      "markets": [
+        "Western Europe",
+        "North America",
+        "East Asia",
+        "Middle East"
+      ],
+      "distribution": [
+        "Flagship Stores",
+        "Luxury Department Stores",
+        "Online"
+      ],
+      "aesthetics": [
+        "Romantic",
+        "Feminine",
+        "Dramatic Volumes",
+        "Floral Motifs"
+      ],
+      "lastCategorized": "2025-04-12",
+      "socialMedia": {
+        "instagram": "@giambattistavalliparis",
+        "facebook": "giambattistavalli"
+      },
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "giambattistavalli.com",
+        "vogue.com/fashion-shows/designer/giambattista-valli",
+        "artemis.com/portfolio/giambattista-valli"
+      ],
+      "lastVerified": "2025-04-12"
+    },
+    {
+      "id": "21d9bef3-2083-4933-b435-329f13248c07",
+      "name": "James Mullen",
+      "birthYear": 1950,
+      "birthPlace": "Ireland",
+      "nationality": "Irish",
+      "education": [
+        "Business Studies"
+      ],
+      "specialties": [
+        "Menswear",
+        "Shirtmaking"
+      ],
+      "notableCollaborations": [
+        "LVMH Partnership (1999-2021)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.7,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-11",
+      "sources": [
+        "ft.com/content/a9b00fa6-c4f8-4a29-a1c8-95e25fc8731e",
+        "fashionnetwork.com/news/lvmh-sells-thomas-pink-shirtmaker-back-to-original-owners,1287042.html"
+      ],
+      "createdAt": "2025-04-11T14:30:00.000Z",
+      "updatedAt": "2025-04-11T14:30:00.000Z"
+    },
+    {
+      "id": "b65b2a45-a953-4680-849c-518050f9c47d",
+      "name": "Peter Mullen",
+      "birthYear": 1952,
+      "birthPlace": "Ireland",
+      "nationality": "Irish",
+      "education": [
+        "Business Studies"
+      ],
+      "specialties": [
+        "Menswear",
+        "Retail Strategy"
+      ],
+      "notableCollaborations": [
+        "LVMH Partnership (1999-2021)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.7,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-11",
+      "sources": [
+        "ft.com/content/a9b00fa6-c4f8-4a29-a1c8-95e25fc8731e",
+        "fashionnetwork.com/news/lvmh-sells-thomas-pink-shirtmaker-back-to-original-owners,1287042.html"
+      ],
+      "createdAt": "2025-04-11T14:30:00.000Z",
+      "updatedAt": "2025-04-11T14:30:00.000Z"
+    },
+    {
+      "id": "e5e1771c-c324-4224-a73c-19687bcacc40",
+      "name": "Marco Tomasetta",
+      "birthYear": 1982,
+      "birthPlace": "Italy",
+      "nationality": "Italian",
+      "education": [
+        "Istituto Europeo di Design, Milan"
+      ],
+      "specialties": [
+        "Leather Goods",
+        "Accessories",
+        "Luxury Design",
+        "Brand Strategy"
+      ],
+      "notableCollaborations": [
+        "Montblanc (2021-present)",
+        "Givenchy (2019-2021)",
+        "Prada (2016-2019)",
+        "Louis Vuitton (2014-2016)",
+        "Chloé (2011-2014)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "montblanc.com/press-releases/marco-tomasetta-creative-director",
+        "businessoffashion.com/articles/luxury/montblanc-appoints-marco-tomasetta-as-creative-director",
+        "wwd.com/accessories-news/leather-goods/montblanc-marco-tomasetta-creative-director-1234772745"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },
+    {
+      "id": "f18c8ec3-6d4f-49d7-8ae9-fe696199ff82",
+      "name": "Davide Cerrato",
+      "birthYear": 1972,
+      "birthPlace": "Turin, Italy",
+      "nationality": "Italian",
+      "education": [
+        "Politecnico di Torino"
+      ],
+      "specialties": [
+        "Watch Design",
+        "Luxury Timepieces",
+        "Product Development",
+        "Brand Strategy"
+      ],
+      "notableCollaborations": [
+        "Montblanc (2015-2021)",
+        "Tudor (2007-2015)",
+        "Panerai (2004-2007)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "hodinkee.com/articles/davide-cerrato-montblanc-watches",
+        "watchtime.com/featured/interview-montblanc-watch-director-davide-cerrato",
+        "europastar.com/news/davide-cerrato-appointed-managing-director-montblanc-watches"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
     }
   ],
   "tenures": [
@@ -9243,7 +9435,7 @@
     {
       "id": "8ba25481-5377-4420-aedc-378626c2aeb9",
       "designerId": "871be417-3ba1-44f4-bf50-1832be8ab40f",
-      "brandId": "d36ddc62-5f4b-422a-9167-473edea6498d",
+      "brandId": "cececf4e-866f-43b0-8e3e-49a0dbe3b1dc",
       "role": "Founder and Creative Director",
       "startYear": 1978,
       "endYear": 1997,
@@ -9255,7 +9447,7 @@
     {
       "id": "faed151d-abaf-4dfb-a7da-88ef77919f65",
       "designerId": "b981593b-e7ae-48c2-b3ea-1b849f72b6b4",
-      "brandId": "d36ddc62-5f4b-422a-9167-473edea6498d",
+      "brandId": "cececf4e-866f-43b0-8e3e-49a0dbe3b1dc",
       "role": "Chief Creative Officer",
       "startYear": 1997,
       "isCurrentRole": true,
@@ -15697,7 +15889,7 @@
     },
     {
       "id": "627dbec9-8c1d-4f2e-8c19-1cf7d7a3181e",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "department": "All Departments",
@@ -16338,7 +16530,7 @@
     },
     {
       "id": "202af8fb-2302-4420-9345-d6c143a24c88",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "startYear": 2021,
@@ -17197,7 +17389,7 @@
     },
     {
       "id": "63ca5cf2-c70f-4170-92cd-60ea9029edf3",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "department": "All Departments",
@@ -17988,7 +18180,7 @@
     },
     {
       "id": "c9bd0aa4-38bc-40e5-8e85-6ab0f7cb01b7",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "startYear": 2021,
@@ -18947,7 +19139,7 @@
     },
     {
       "id": "56225831-98a1-41cc-9c3f-95554c8b41a5",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "department": "All Departments",
@@ -19738,7 +19930,7 @@
     },
     {
       "id": "a08c9a48-8226-4565-89e7-1835ebaff53b",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "startYear": 2021,
@@ -20697,7 +20889,7 @@
     },
     {
       "id": "c74b213f-c6cf-415c-aadf-aaed5f5a33f0",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "department": "All Departments",
@@ -21488,7 +21680,7 @@
     },
     {
       "id": "e2d49297-8b08-4b57-ae0f-f9240fd5b9fd",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "startYear": 2021,
@@ -22447,7 +22639,7 @@
     },
     {
       "id": "c25e1959-8d3e-4fb2-ad2b-db1285b2cbcf",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "department": "All Departments",
@@ -23238,7 +23430,7 @@
     },
     {
       "id": "2a37c4ed-ee3d-411c-990c-4744bb3b2a6e",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "startYear": 2021,
@@ -24197,7 +24389,7 @@
     },
     {
       "id": "06b6edfa-91e2-408a-b46b-fffb3a38b7b4",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "department": "All Departments",
@@ -24988,7 +25180,7 @@
     },
     {
       "id": "0c3891ed-9724-446c-92a0-d16cd985cbcd",
-      "designerId": "c8b88578-5190-41aa-b942-829ba63bc8f4",
+      "designerId": "e5e1771c-c324-4224-a73c-19687bcacc40",
       "brandId": "0912f696-2859-4ae6-8425-f211d8e633a9",
       "role": "Creative Director",
       "startYear": 2021,
@@ -25519,7 +25711,7 @@
     {
       "id": "tnr-9",
       "designerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-      "brandId": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
+      "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "role": "Founder and Creative Director",
       "department": "All Departments",
       "startYear": 1990,
@@ -25530,7 +25722,7 @@
     {
       "id": "tnr-10",
       "designerId": "1d41e2c8-4fae-497d-b09d-acb5b63a490a",
-      "brandId": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
+      "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "role": "Design Director of Bridal",
       "department": "All Departments",
       "startYear": 2008,
@@ -25542,7 +25734,7 @@
     {
       "id": "tnr-11",
       "designerId": "16016dee-1ab2-4446-895c-73e4d6ef0ad8",
-      "brandId": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
+      "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "role": "Design Director of Ready-to-Wear",
       "department": "Ready-to-Wear",
       "startYear": 2012,
@@ -25554,7 +25746,7 @@
     {
       "id": "tnr-12",
       "designerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
-      "brandId": "a8cff255-6ea5-4912-a82a-d5524e25b53a",
+      "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "role": "Creative Director of Brand",
       "department": "All Departments",
       "startYear": 2016,
@@ -25565,7 +25757,7 @@
     {
       "id": "tnr-hist-004",
       "designerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
-      "brandId": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
+      "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
       "role": "Founder and Chief Creative Officer",
       "department": "All Departments",
       "startYear": 1967,
@@ -25581,8 +25773,8 @@
     },
     {
       "id": "tnr-gv-001",
-      "designerId": "c2e1dc38-29c8-4e6b-9a3e-c0652044a267",
-      "brandId": "59964ea3-5ffa-478f-a524-a9a0a926cb63",
+      "designerId": "e5cb3f42-8d16-4ac5-b927-f3d901e58a24",
+      "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "role": "Founder and Creative Director",
       "department": "All Departments",
       "startYear": 2005,
@@ -25600,7 +25792,7 @@
     {
       "id": "tnr-bc-001",
       "designerId": "5e9feab1-c688-4e37-b74e-9f522f9f5ea5",
-      "brandId": "d7956942-a53e-4845-8adc-3a2539367a99",
+      "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "role": "Creative Director",
       "department": "Menswear",
       "startYear": 1984,
@@ -25617,8 +25809,8 @@
     },
     {
       "id": "tnr-pm-001",
-      "designerId": "ee96e082-c314-4998-aa15-e14ae0341e52",
-      "brandId": "49a4e28e-4852-4433-b35e-8d4349d874ab",
+      "designerId": "b65b2a45-a953-4680-849c-518050f9c47d",
+      "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "role": "Founder",
       "department": "All Departments",
       "startYear": 1984,
@@ -26400,7 +26592,7 @@
       "id": "b2831d03-668f-4266-ae51-c51b361d03d8",
       "sourceDesignerId": "871be417-3ba1-44f4-bf50-1832be8ab40f",
       "targetDesignerId": "b981593b-e7ae-48c2-b3ea-1b849f72b6b4",
-      "brandId": "d36ddc62-5f4b-422a-9167-473edea6498d",
+      "brandId": "cececf4e-866f-43b0-8e3e-49a0dbe3b1dc",
       "type": "collaboration",
       "startYear": 1997,
       "description": "Co-Creative Directors at Versace",
@@ -26411,7 +26603,7 @@
       "id": "bb5b437e-9d06-4a9e-9dd2-2a40c287640f",
       "sourceDesignerId": "b981593b-e7ae-48c2-b3ea-1b849f72b6b4",
       "targetDesignerId": "ab4b7a4e-8d91-481b-a499-f6cb67f613e6",
-      "brandId": "d36ddc62-5f4b-422a-9167-473edea6498d",
+      "brandId": "cececf4e-866f-43b0-8e3e-49a0dbe3b1dc",
       "type": "collaboration",
       "startYear": 2013,
       "description": "Sandra Choi joined Versace as Creative Director",
@@ -26621,7 +26813,7 @@
       "id": "rel-7",
       "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
       "targetDesignerId": "1d41e2c8-4fae-497d-b09d-acb5b63a490a",
-      "brandId": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
+      "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
       "type": "mentorship",
       "startYear": 2008,
       "endYear": 2017,
@@ -26638,7 +26830,7 @@
       "id": "rel-8",
       "sourceDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
       "targetDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-      "brandId": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
+      "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
       "type": "mentorship",
       "startYear": 1987,
       "endYear": 1989,
@@ -26654,7 +26846,7 @@
       "id": "rel-9",
       "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
       "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
-      "brandId": "8f7e9c2d-1b3a-4e5f-9d8c-7b6a5c4d3e2f",
+      "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
       "type": "collaboration",
       "startYear": 2016,
       "endYear": null,
@@ -26687,7 +26879,7 @@
       "id": "rel-11",
       "sourceDesignerId": "1424ea9f-28f7-4661-b799-285914e5175c",
       "targetDesignerId": "c56a11ea-6b3a-4606-9436-87c216e443c2",
-      "brandId": "cececf4e-866f-43b0-8e3e-49a0dbe3b1dc",
+      "brandId": "7cfcf27a-878a-4623-90fc-d5d493985575",
       "type": "mentorship",
       "startYear": 1997,
       "endYear": 2001,
@@ -26703,7 +26895,7 @@
       "id": "rel-14",
       "sourceDesignerId": "69c7362e-b3cb-4f96-83e8-41d52548c09c",
       "targetDesignerId": "2e87d560-a7e5-4387-8386-2707f6b8f5d6",
-      "brandId": "f9f89df5-acf6-4344-a1cd-3f17c75ee787",
+      "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "type": "familial",
       "startYear": 1984,
       "endYear": 1999,
@@ -26719,7 +26911,7 @@
       "id": "rel-15",
       "sourceDesignerId": "3ee6bbed-96d0-452b-9089-42aa00c86d59",
       "targetDesignerId": "6f4de092-4350-4566-8655-1a7153a1362f",
-      "brandId": "f9f89df5-acf6-4344-a1cd-3f17c75ee787",
+      "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "type": "succession",
       "startYear": 2021,
       "endYear": null,
