@@ -5433,6 +5433,58 @@
       ],
       "createdAt": "2025-05-03T19:20:17.000Z",
       "updatedAt": "2025-05-03T19:20:17.000Z"
+    },
+    {
+      "id": "238d1664-707c-45e6-9d21-d0576a5e5130",
+      "name": "Ralph Lauren",
+      "currentRole": "Executive Chairman and Chief Creative Officer at Ralph Lauren Corporation",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Ralph Lauren is an American fashion designer, philanthropist, and business executive who founded the Ralph Lauren Corporation. Starting with a collection of ties in 1967, Lauren built one of fashion's most successful and recognizable global lifestyle brands. His aspirational yet accessible aesthetic has redefined American style, pioneering the concept of lifestyle branding.",
+      "nationality": "American",
+      "birthYear": 1939,
+      "education": [
+        "Baruch College (attended)",
+        "DeWitt Clinton High School"
+      ],
+      "awards": [
+        "CFDA Lifetime Achievement Award (1991)",
+        "CFDA American Fashion Legend Award (2007)",
+        "Chevalier de la Legion d'Honneur (2010)",
+        "James Smithson Bicentennial Medal (2014)",
+        "Honorary Knight Commander of the Order of the British Empire (2018)"
+      ],
+      "signatureStyles": [
+        "American heritage style",
+        "Preppy aesthetic",
+        "Western wear influence",
+        "Luxury sportswear",
+        "Classic Americana"
+      ],
+      "achievements": [
+        "Built global luxury lifestyle brand",
+        "Pioneered American sportswear",
+        "Established iconic Polo brand",
+        "Official outfitter of the U.S. Olympic Team",
+        "Created the Pink Pony Fund for cancer care"
+      ],
+      "socialMedia": {
+        "instagram": "ralphlauren",
+        "twitter": "RalphLauren",
+        "facebook": "RalphLauren",
+        "linkedin": "ralph-lauren-corporation"
+      },
+      "confidence": 0.95,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "ralphlauren.com",
+        "vogue.com/article/ralph-lauren-biography",
+        "cfda.com/members/ralph-lauren",
+        "forbes.com/profile/ralph-lauren"
+      ],
+      "lastVerified": "2025-05-03",
+      "createdAt": "2025-05-03T20:04:41.000Z",
+      "updatedAt": "2025-05-03T20:04:41.000Z"
     }
   ],
   "brands": [
@@ -24743,39 +24795,6 @@
       "department": "All Departments"
     },
     {
-      "id": "3e632026-91b8-4216-920d-73e9ea02cb60",
-      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-      "role": "Artistic Director",
-      "department": "All Categories",
-      "startYear": 2025,
-      "isCurrentRole": false,
-      "achievements": [
-        "Appointed as Gucci's new Artistic Director",
-        "First collection debut pending"
-      ],
-      "createdAt": "2025-04-12T01:35:40.293Z",
-      "updatedAt": "2025-04-12T01:35:40.296Z",
-      "endYear": 2025
-    },
-    {
-      "id": "60f44891-ea9a-4d5a-a9a1-9346af85b16a",
-      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-      "role": "Artistic Director",
-      "department": "All Categories",
-      "startYear": 2025,
-      "isCurrentRole": false,
-      "achievements": [
-        "Appointed as Gucci's new Artistic Director",
-        "First collection debut pending",
-        "Tasked with reinventing Gucci's aesthetic"
-      ],
-      "createdAt": "2025-04-12T01:47:31.919Z",
-      "updatedAt": "2025-04-12T01:47:31.920Z",
-      "endYear": 2025
-    },
-    {
       "id": "8f3b56ed-109f-4c1d-892e-0aeb062c7e60",
       "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
       "designerId": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
@@ -24790,23 +24809,6 @@
       ],
       "createdAt": "2025-04-12T01:47:31.920Z",
       "updatedAt": "2025-04-12T01:47:31.920Z"
-    },
-    {
-      "id": "7f09e5a7-9383-4200-947e-e18fab0c12e6",
-      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-      "role": "Artistic Director",
-      "department": "All Departments",
-      "startYear": 2025,
-      "isCurrentRole": false,
-      "achievements": [
-        "Appointed as Gucci's new Artistic Director",
-        "First collection debut pending",
-        "Tasked with reinventing Gucci's aesthetic"
-      ],
-      "createdAt": "2025-04-12T01:49:48.138Z",
-      "updatedAt": "2025-04-12T01:49:48.138Z",
-      "endYear": 2025
     },
     {
       "id": "8e70a737-13a2-4324-b9c1-ee15a69e89c2",
@@ -24824,23 +24826,6 @@
       ],
       "createdAt": "2025-04-12T01:49:48.139Z",
       "updatedAt": "2025-04-12T01:49:48.139Z"
-    },
-    {
-      "id": "f31e8a4f-d913-4b55-89e7-c83306790280",
-      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-      "role": "Artistic Director",
-      "department": "All Departments",
-      "startYear": 2025,
-      "isCurrentRole": false,
-      "achievements": [
-        "Appointed as Gucci's new Artistic Director",
-        "First collection debut pending",
-        "Tasked with reinventing Gucci's aesthetic"
-      ],
-      "createdAt": "2025-04-12T01:50:23.599Z",
-      "updatedAt": "2025-04-12T01:50:23.599Z",
-      "endYear": 2025
     },
     {
       "id": "b1e506ba-973f-47c1-a898-ed29c99d2027",
@@ -24879,7 +24864,7 @@
     {
       "id": "0db18dc1-3ec5-41ee-a589-93fef0ce32f8",
       "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+      "designerId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
       "role": "Creative Director",
       "department": "All Departments",
       "startYear": 2025,
@@ -26204,7 +26189,7 @@
     {
       "id": "rel-11",
       "sourceDesignerId": "1424ea9f-28f7-4661-b799-285914e5175c",
-      "targetDesignerId": "c56a11ea-6b3a-4606-9436-87c216e443c2",
+      "targetDesignerId": "12f1bc1f-2674-456c-84aa-a7cdac32f31e",
       "brandId": "7cfcf27a-878a-4623-90fc-d5d493985575",
       "type": "mentorship",
       "startYear": 1997,
@@ -26220,7 +26205,7 @@
     {
       "id": "rel-14",
       "sourceDesignerId": "21d9bef3-2083-4933-b435-329f13248c07",
-      "targetDesignerId": "2e87d560-a7e5-4387-8386-2707f6b8f5d6",
+      "targetDesignerId": "b65b2a45-a953-4680-849c-518050f9c47d",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "type": "familial",
       "startYear": 1984,
