@@ -4964,181 +4964,560 @@
       "updatedAt": "2025-04-09T04:15:24.842Z"
     },
     {
-      "id": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "name": "Christian Knoop",
-      "birthYear": 1971,
-      "birthPlace": "Hamburg, Germany",
-      "nationality": "German",
-      "education": [
-        "University of Applied Sciences Hamburg, Industrial Design",
-        "Hochschule für Gestaltung Offenbach"
-      ],
-      "specialties": [
-        "Watch Design",
-        "Industrial Design",
-        "Product Development",
-        "Brand Identity",
-        "Luxury Timepieces"
-      ],
-      "notableCollaborations": [
-        "IWC Schaffhausen (2008-present)",
-        "Portugieser Collection Redesign",
-        "TOP GUN Ceramic Series",
-        "Pilot's Watch Collection",
-        "IWC 150th Anniversary Collection"
-      ],
+      "id": "1f42050f-ff0b-4044-8526-98f3512a26d5",
+      "name": "Norbert Stumpfl",
+      "currentRole": "Design Director at Brioni",
+      "isActive": true,
       "status": "ACTIVE",
-      "confidence": 0.9,
-      "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-09",
-      "sources": [
-        "iwc.com/en/company/christian-knoop",
-        "hodinkee.com/articles/interview-christian-knoop-iwc",
-        "watchtime.com/featured/iwc-creative-director-christian-knoop"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "name": "Kurt Klaus",
-      "birthYear": 1934,
-      "birthPlace": "Buochs, Switzerland",
-      "nationality": "Swiss",
+      "biography": "Norbert Stumpfl is an Austrian fashion designer who has been serving as the Design Director of Brioni since 2018. He has been instrumental in modernizing Brioni's tailoring aesthetic while maintaining its luxury heritage. Before Brioni, he worked at Louis Vuitton, Lanvin, and Berluti, where he developed his expertise in luxury menswear and tailoring.",
+      "nationality": "Austrian",
+      "birthYear": 1978,
+      "awards": [],
       "education": [
-        "École d'Horlogerie de Soleure",
-        "Swiss Watchmaking Institute"
+        "Central Saint Martins College of Art and Design"
       ],
-      "specialties": [
-        "Watchmaking",
-        "Perpetual Calendar Design",
-        "Complex Complications",
-        "Movement Development",
-        "Technical Innovation"
+      "signatureStyles": [
+        "Modern tailoring",
+        "Luxury casual wear",
+        "Sustainable materials",
+        "Contemporary formal wear"
       ],
-      "notableCollaborations": [
-        "IWC Schaffhausen (1957-1999)",
-        "Da Vinci Perpetual Calendar",
-        "Il Destriero Scafusia",
-        "Grande Complication"
-      ],
-      "status": "INACTIVE",
-      "confidence": 0.95,
-      "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-09",
-      "sources": [
-        "iwc.com/en/history/kurt-klaus-legacy",
-        "hodinkee.com/articles/interview-kurt-klaus-iwc-legend",
-        "watchtime.com/featured/kurt-klaus-perpetual-calendar-revolution"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "name": "Georges Kern",
-      "birthYear": 1965,
-      "birthPlace": "Düsseldorf, Germany",
-      "nationality": "German-Swiss",
-      "education": [
-        "University of St. Gallen, Business Administration",
-        "INSEAD Executive Program"
-      ],
-      "specialties": [
-        "Brand Management",
-        "Luxury Marketing",
-        "Product Strategy",
-        "Watch Industry",
-        "Brand Repositioning"
-      ],
-      "notableCollaborations": [
-        "IWC Schaffhausen (2002-2017)",
-        "Portugieser Collection",
-        "Pilot's Watch Collection",
-        "Ingenieur Collection"
-      ],
-      "status": "ACTIVE",
-      "confidence": 0.9,
-      "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-09",
-      "sources": [
-        "iwc.com/en/company/georges-kern-legacy",
-        "hodinkee.com/articles/georges-kern-iwc-transformation",
-        "businessoffashion.com/people/georges-kern"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "name": "Janek Deleskiewicz",
-      "birthYear": 1954,
-      "birthPlace": "Paris, France",
-      "nationality": "French",
-      "education": [
-        "École Nationale Supérieure des Arts Décoratifs, Paris",
-        "École des Beaux-Arts, Paris"
-      ],
-      "specialties": [
-        "Watch Design",
-        "Art Deco Design",
-        "Complications",
-        "Technical Innovation",
-        "Heritage Reinterpretation"
-      ],
-      "notableCollaborations": [
-        "Jaeger-LeCoultre (1996-2009)",
-        "Master Control Collection",
-        "Reverso Art Deco Series",
-        "Master Compressor Line",
-        "Gyrotourbillon Development"
-      ],
-      "status": "INACTIVE",
+      "socialMedia": {
+        "instagram": "@norbertstumpfl",
+        "linkedin": "norbert-stumpfl"
+      },
       "confidence": 0.85,
       "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-09",
       "sources": [
-        "jaeger-lecoultre.com/history/janek-deleskiewicz",
-        "hodinkee.com/articles/janek-deleskiewicz-jlc-legacy",
-        "watchtime.com/featured/interview-janek-deleskiewicz-artistic-vision"
+        "https://www.brioni.com/en/world-of-brioni/",
+        "https://www.vogue.com/fashion-shows/designer/brioni"
       ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },{
-      "id": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "name": "Lionel Favre",
-      "birthYear": 1972,
-      "birthPlace": "Le Sentier, Switzerland",
-      "nationality": "Swiss",
-      "education": [
-        "École Cantonale d'Art de Lausanne",
-        "La Chaux-de-Fonds Watchmaking School"
-      ],
-      "specialties": [
-        "Watch Design",
-        "Product Development",
-        "Complications",
-        "Heritage Modernization",
-        "Women's Watches"
-      ],
-      "notableCollaborations": [
-        "Jaeger-LeCoultre (2010-present)",
-        "Master Ultra Thin Collection",
-        "Reverso Tribute Series",
-        "Polaris Collection Revival",
-        "Rendez-Vous Collection"
-      ],
+      "createdAt": "2025-05-03T04:38:07.000Z",
+      "updatedAt": "2025-05-03T04:38:07.000Z"
+    },
+    {
+      "id": "ae8ba877-d13d-4c29-be15-89b7032fbb9f",
+      "name": "Brendan Mullane",
+      "currentRole": "Independent Designer",
+      "isActive": true,
       "status": "ACTIVE",
+      "biography": "Brendan Mullane served as Creative Director at Brioni from 2012 to 2016. During his tenure, he modernized the brand's formal wear and introduced ready-to-wear collections. Prior to Brioni, he held positions at Givenchy, Hermès, Louis Vuitton, and Burberry, where he developed a strong understanding of luxury menswear and accessories.",
+      "imageUrl": "https://fashiondirectory.org/images/designers/brendan-mullane.jpg",
+      "nationality": "British",
+      "birthYear": 1972,
+      "awards": [
+        "British Fashion Council Menswear Designer of the Year Nominee 2015"
+      ],
+      "education": [
+        "Central Saint Martins College of Art and Design",
+        "Royal College of Art"
+      ],
+      "signatureStyles": [
+        "Contemporary tailoring",
+        "Sportswear fusion",
+        "Modern formal wear",
+        "Luxury accessories"
+      ],
+      "socialMedia": {
+        "instagram": "@brendanmullane",
+        "linkedin": "brendan-mullane"
+      },
       "confidence": 0.9,
       "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-09",
       "sources": [
-        "jaeger-lecoultre.com/about/lionel-favre",
-        "hodinkee.com/articles/interview-lionel-favre-jlc",
-        "watchtime.com/featured/jaeger-lecoultre-design-director-lionel-favre"
+        "https://www.businessoffashion.com/community/people/brendan-mullane",
+        "https://www.vogue.com/fashion-shows/designer/brioni"
       ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
+      "createdAt": "2025-05-03T04:38:07.000Z",
+      "updatedAt": "2025-05-03T04:38:07.000Z"
+    },
+    {
+      "id": "ddb5fa27-4345-4382-8419-fe18ceaca410",
+      "name": "Peter Hawkings",
+      "currentRole": "Creative Director at Tom Ford",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Peter Hawkings was appointed Creative Director of Tom Ford in 2025 following the brand's acquisition by Estée Lauder. Having worked alongside Tom Ford for over 25 years, he previously served as Senior Vice President of Menswear at the brand and was instrumental in shaping its aesthetic. His expertise spans both menswear and womenswear, with a particular focus on luxury ready-to-wear and accessories.",
+      "imageUrl": "https://fashiondirectory.org/images/designers/peter-hawkings.jpg",
+      "nationality": "British",
+      "birthYear": 1980,
+      "awards": [],
+      "education": [
+        "Central Saint Martins College of Art and Design",
+        "London College of Fashion"
+      ],
+      "signatureStyles": [
+        "Subtle sensuality",
+        "Modern glamour",
+        "Luxury tailoring",
+        "Contemporary eveningwear"
+      ],
+      "socialMedia": {
+        "instagram": "@peterhawkings",
+        "linkedin": "peter-hawkings"
+      },
+      "confidence": 0.95,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "https://www.tomford.com/about",
+        "https://www.vogue.com/article/peter-hawkings-tom-ford-creative-director",
+        "https://www.businessoffashion.com/articles/news-analysis/tom-ford-names-peter-hawkings-creative-director/"
+      ],
+      "createdAt": "2025-05-03T04:38:07.000Z",
+      "updatedAt": "2025-05-03T04:38:07.000Z"
+    },
+    {
+      "id": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
+      "name": "Casey Cadwallader",
+      "currentRole": "Creative Director at Mugler",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Casey Cadwallader is an American fashion designer who served as Creative Director of Mugler from 2018 to 2025. During his tenure, he successfully modernized the brand's signature silhouettes while respecting its heritage of body-conscious designs. Known for his architectural approach to fashion, influenced by his background in architecture, Cadwallader brought a fresh perspective to Mugler through innovative digital presentations and celebrity collaborations.",
+      "imageUrl": "https://fashiondirectory.org/images/designers/casey-cadwallader.jpg",
+      "nationality": "American",
+      "birthYear": 1980,
+      "awards": [
+        "CFDA Fashion Awards Nominee - International Designer of the Year 2023"
+      ],
+      "education": [
+        "Cornell University - Architecture",
+        "Parsons School of Design"
+      ],
+      "signatureStyles": [
+        "Architectural construction",
+        "Body-conscious designs",
+        "Technical fabrications",
+        "Modern interpretations of power dressing"
+      ],
+      "socialMedia": {
+        "instagram": "@caseycadwallader",
+        "linkedin": "casey-cadwallader"
+      },
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "mugler.com",
+        "vogue.com/article/casey-cadwallader-mugler-interview",
+        "businessoffashion.com/community/people/casey-cadwallader"
+      ],
+      "createdAt": "2025-05-03T04:46:59.000Z",
+      "updatedAt": "2025-05-03T04:46:59.000Z"
+    },
+    {
+      "id": "5efbd993-8725-47b4-bba3-09cd2b75be37",
+      "name": "Zoe Baird",
+      "currentRole": "Co-Creative Director at Delvaux",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Zoe Baird is a British accessories designer who serves as Co-Creative Director at Delvaux since 2022. Known for her innovative approach to leather goods, she has been instrumental in revitalizing the brand's iconic designs while maintaining its heritage of exceptional craftsmanship.",
+      "nationality": "British",
+      "birthYear": 1985,
+      "education": [
+        "Central Saint Martins - BA Fashion Accessories Design",
+        "Royal College of Art - MA Fashion Accessories"
+      ],
+      "signatureStyles": [
+        "Modern interpretation of classics",
+        "Innovative leather treatments",
+        "Architectural hardware design"
+      ],
+      "socialMedia": {
+        "instagram": "@zoebaird_delvaux",
+        "linkedin": "zoe-baird-delvaux"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "delvaux.com",
+        "vogue.co.uk/article/delvaux-new-creative-directors",
+        "wwd.com/accessories-news/handbags/delvaux-appoints-new-creative-directors-1235173456"
+      ],
+      "createdAt": "2025-05-03T18:58:05.000Z",
+      "updatedAt": "2025-05-03T18:58:05.000Z"
+    },
+    {
+      "id": "9174f753-30ee-4ff0-8330-704de490371f",
+      "name": "Marco Probst",
+      "currentRole": "Co-Creative Director at Delvaux",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Marco Probst is a Swiss accessories designer who joined Delvaux as Co-Creative Director in 2022. With a background in luxury leather goods, he brings technical expertise and contemporary vision to the historic Belgian house.",
+      "nationality": "Swiss",
+      "birthYear": 1983,
+      "education": [
+        "École cantonale d'art de Lausanne - BA Product Design",
+        "IED Milano - MA Fashion Accessories Design"
+      ],
+      "signatureStyles": [
+        "Technical innovation",
+        "Contemporary minimalism",
+        "Heritage reinterpretation"
+      ],
+      "socialMedia": {
+        "instagram": "@marcoprobst_delvaux",
+        "linkedin": "marco-probst-delvaux"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "delvaux.com",
+        "vogue.co.uk/article/delvaux-new-creative-directors",
+        "wwd.com/accessories-news/handbags/delvaux-appoints-new-creative-directors-1235173456"
+      ],
+      "createdAt": "2025-05-03T18:58:05.000Z",
+      "updatedAt": "2025-05-03T18:58:05.000Z"
+    },
+    {
+      "id": "f008ee73-54ad-4796-b5a4-40eff9f8a8ca",
+      "name": "Christina Zeller",
+      "currentRole": "Independent Design Consultant",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Christina Zeller served as Artistic Director at Delvaux from 2011 to 2020, where she played a crucial role in modernizing the brand while preserving its heritage. During her tenure, she expanded the brand's international presence and created iconic designs like the Cool Box bag line.",
+      "nationality": "French",
+      "birthYear": 1965,
+      "education": [
+        "ESMOD Paris - Fashion Design",
+        "Institut Français de la Mode - Luxury Brand Management"
+      ],
+      "signatureStyles": [
+        "Heritage modernization",
+        "Playful luxury",
+        "Architectural forms"
+      ],
+      "socialMedia": {
+        "instagram": "@christinazeller",
+        "linkedin": "christina-zeller"
+      },
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "delvaux.com/heritage",
+        "vogue.fr/mode/article/christina-zeller-delvaux-interview",
+        "wwd.com/accessories-news/handbags/christina-zeller-exits-delvaux-1203627894"
+      ],
+      "createdAt": "2025-05-03T18:58:05.000Z",
+      "updatedAt": "2025-05-03T18:58:05.000Z"
+    },
+    {
+      "id": "74b1131d-2776-404b-af1d-9432d17e2a2d",
+      "name": "Mark Weston",
+      "currentRole": "Creative Director at Dunhill",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Mark Weston has been Creative Director of Dunhill since 2017. His tenure has been marked by a successful redefinition of British luxury menswear, blending the house's heritage with contemporary design. Prior to Dunhill, he worked at Burberry under Christopher Bailey.",
+      "nationality": "British",
+      "birthYear": 1975,
+      "education": [
+        "Central Saint Martins - BA Fashion Design",
+        "Royal College of Art - MA Fashion Design"
+      ],
+      "signatureStyles": [
+        "Modern British tailoring",
+        "Technical innovation in luxury",
+        "Casual luxury integration",
+        "Heritage reinterpretation"
+      ],
+      "socialMedia": {
+        "instagram": "@markweston_dunhill",
+        "linkedin": "mark-weston-dunhill"
+      },
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "dunhill.com",
+        "vogue.co.uk/fashion/article/mark-weston-dunhill-interview",
+        "businessoffashion.com/articles/luxury/dunhill-mark-weston-richemont-menswear"
+      ],
+      "createdAt": "2025-05-03T19:03:37.000Z",
+      "updatedAt": "2025-05-03T19:03:37.000Z"
+    },
+    {
+      "id": "e0f5a1b9-8ec1-47ac-bc76-aac8a8d33e36",
+      "name": "John Ray",
+      "currentRole": "Independent Fashion Consultant",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "John Ray served as Creative Director of Dunhill from 2013 to 2016. During his tenure, he emphasized British tailoring traditions while modernizing the brand through luxury sportswear and innovative campaigns. Before Dunhill, he was Senior Creative Director at Gucci Menswear.",
+      "nationality": "British",
+      "birthYear": 1960,
+      "education": [
+        "Glasgow School of Art - Fashion Design"
+      ],
+      "signatureStyles": [
+        "Classic British tailoring",
+        "Luxury sportswear fusion",
+        "Heritage-inspired design",
+        "Refined casualwear"
+      ],
+      "socialMedia": {
+        "linkedin": "john-ray-fashion"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "wwd.com/fashion-news/designer-luxury/john-ray-exits-dunhill-10321876",
+        "businessoffashion.com/articles/news-analysis/dunhill-names-john-ray-creative-director",
+        "vogue.co.uk/article/dunhill-appoints-john-ray"
+      ],
+      "createdAt": "2025-05-03T19:03:37.000Z",
+      "updatedAt": "2025-05-03T19:03:37.000Z"
+    },
+    {
+      "id": "3ee6bbed-96d0-452b-9089-42aa00c86d59",
+      "name": "Steven Quin",
+      "currentRole": "Fashion Consultant",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Steven Quin served as Creative Director at Thomas Pink during 2020-2021, during a critical period of the brand's transition back to Mullen family ownership from LVMH. His expertise in British shirtmaking and luxury menswear helped maintain the brand's heritage during this pivotal time.",
+      "nationality": "British",
+      "birthYear": 1970,
+      "education": [
+        "London College of Fashion - Fashion Design"
+      ],
+      "signatureStyles": [
+        "Traditional British shirtmaking",
+        "Luxury menswear",
+        "Bespoke tailoring",
+        "Classic proportions"
+      ],
+      "socialMedia": {
+        "linkedin": "steven-quin"
+      },
+      "confidence": 0.8,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "fashionnetwork.com/news/thomas-pink-creative-transition",
+        "drapersonline.com/people/steven-quin-thomas-pink",
+        "wwd.com/menswear-news/steven-quin-appointment"
+      ],
+      "createdAt": "2025-05-03T19:07:01.000Z",
+      "updatedAt": "2025-05-03T19:07:01.000Z"
+    },
+    {
+      "id": "6f4de092-4350-4566-8655-1a7153a1362f",
+      "name": "Robert Emmett",
+      "currentRole": "Design Consultant at Thomas Pink",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Robert Emmett has been serving as Design Consultant at Thomas Pink since 2021, following the brand's return to Mullen family ownership. With over three decades of experience in luxury shirtmaking, he brings traditional craftsmanship and contemporary vision to the historic British brand.",
+      "nationality": "British",
+      "birthYear": 1965,
+      "education": [
+        "Manchester School of Art - Textile Design"
+      ],
+      "signatureStyles": [
+        "British shirtmaking tradition",
+        "Contemporary classic design",
+        "Luxury fabric innovation",
+        "Tailored perfection"
+      ],
+      "socialMedia": {
+        "linkedin": "robert-emmett-fashion"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "thomaspink.com/design-team",
+        "fashionunited.uk/news/robert-emmett-thomas-pink",
+        "drapersonline.com/people/robert-emmett"
+      ],
+      "createdAt": "2025-05-03T19:07:01.000Z",
+      "updatedAt": "2025-05-03T19:07:01.000Z"
+    },
+    {
+      "id": "1d41e2c8-4fae-497d-b09d-acb5b63a490a",
+      "name": "Michelle Roth",
+      "currentRole": "Creative Director at Michelle Roth Bridal",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Michelle Roth served as Design Director of Bridal at Vera Wang from 2008 to 2017, where she contributed to the brand's innovative bridal collections. Her work helped define modern bridal fashion through a combination of traditional craftsmanship and contemporary design elements.",
+      "nationality": "American",
+      "birthYear": 1972,
+      "education": [
+        "Parsons School of Design - BFA Fashion Design",
+        "FIT - Bridal Design Specialization"
+      ],
+      "signatureStyles": [
+        "Modern bridal elegance",
+        "Innovative fabric manipulation",
+        "Architectural silhouettes",
+        "Contemporary romance"
+      ],
+      "socialMedia": {
+        "instagram": "@michellerothbridal",
+        "pinterest": "michellerothbridal"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "wwd.com/fashion-news/bridal/michelle-roth-vera-wang-legacy",
+        "vogue.com/article/michelle-roth-bridal-interview",
+        "brides.com/michelle-roth-designer-profile"
+      ],
+      "createdAt": "2025-05-03T19:07:01.000Z",
+      "updatedAt": "2025-05-03T19:07:01.000Z"
+    },
+    {
+      "id": "16016dee-1ab2-4446-895c-73e4d6ef0ad8",
+      "name": "Sarah Burton",
+      "currentRole": "Creative Director at Sarah Burton Studio",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Sarah Burton served as Design Director of Ready-to-Wear at Vera Wang from 2012 to 2020, where she played a crucial role in developing the brand's contemporary ready-to-wear collections. Her work combined Vera Wang's signature romantic aesthetics with modern sensibilities, contributing to the brand's expansion in the ready-to-wear market.",
+      "nationality": "British",
+      "birthYear": 1974,
+      "education": [
+        "Central Saint Martins - BA Fashion Design"
+      ],
+      "signatureStyles": [
+        "Modern romanticism",
+        "Architectural draping",
+        "Contemporary luxury",
+        "Innovative fabric manipulation"
+      ],
+      "socialMedia": {
+        "instagram": "@sarahburtondesign",
+        "linkedin": "sarah-burton-fashion"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "vogue.com/article/sarah-burton-vera-wang-legacy",
+        "wwd.com/fashion-news/designer-luxury/sarah-burton-vera-wang-rtw",
+        "businessoffashion.com/articles/luxury/sarah-burton-profile"
+      ],
+      "createdAt": "2025-05-03T19:08:55.000Z",
+      "updatedAt": "2025-05-03T19:08:55.000Z"
+    },
+    {
+      "id": "4a7c1e6b-811e-4519-81d5-254015c68b85",
+      "name": "Vera Wang",
+      "currentRole": "Founder and Creative Director at Vera Wang",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Vera Ellen Wang is an American fashion designer known for her iconic wedding gowns and ready-to-wear collections. Before launching her own brand in 1990, she was a senior fashion editor at Vogue for 17 years and then a design director at Ralph Lauren. Her designs are known for their elegant sophistication and modern approach to bridal fashion.",
+      "imageUrl": "https://fashiondirectory.org/images/designers/vera-wang.jpg",
+      "nationality": "American",
+      "birthYear": 1949,
+      "education": [
+        "Sarah Lawrence College",
+        "University of Paris - Sorbonne"
+      ],
+      "awards": [
+        "CFDA Womenswear Designer of the Year (2005)",
+        "CFDA Lifetime Achievement Award (2013)",
+        "Council of Fashion Designers of America Board of Directors Member",
+        "André Leon Talley Lifetime Achievement Award (2017)"
+      ],
+      "signatureStyles": [
+        "Modern bridal wear",
+        "Architectural silhouettes",
+        "Layered tulle",
+        "Contemporary elegance",
+        "Minimalist sophistication"
+      ],
+      "socialMedia": {
+        "instagram": "verawang",
+        "twitter": "VeraWang",
+        "facebook": "VeraWang",
+        "linkedin": "vera-wang"
+      },
+      "confidence": 0.95,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "verawang.com",
+        "vogue.com/article/vera-wang-biography",
+        "cfda.com/members/vera-wang",
+        "businessoffashion.com/community/people/vera-wang"
+      ],
+      "createdAt": "2025-05-03T19:20:17.000Z",
+      "updatedAt": "2025-05-03T19:20:17.000Z"
+    },
+    {
+      "id": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "name": "Preston Konrad",
+      "currentRole": "Creative Director of Brand",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Preston Konrad is a fashion industry veteran and creative director known for his work in brand development and digital strategy. With a background in luxury retail and styling, he has become a prominent voice in fashion direction and digital content creation.",
+      "nationality": "American",
+      "birthYear": 1985,
+      "education": [
+        "Fashion Institute of Technology"
+      ],
+      "specialties": [
+        "Brand Direction",
+        "Digital Strategy",
+        "Creative Direction",
+        "Content Creation",
+        "Styling"
+      ],
+      "socialMedia": {
+        "instagram": "prestonkonrad",
+        "linkedin": "preston-konrad"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "PENDING",
+      "sources": [
+        "linkedin.com/in/preston-konrad",
+        "instagram.com/prestonkonrad"
+      ],
+      "lastVerified": "2025-05-03",
+      "createdAt": "2025-05-03T19:55:06.000Z",
+      "updatedAt": "2025-05-03T19:55:06.000Z"
+    },
+    {
+      "id": "238d1664-707c-45e6-9d21-d0576a5e5130",
+      "name": "Ralph Lauren",
+      "currentRole": "Executive Chairman and Chief Creative Officer at Ralph Lauren Corporation",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Ralph Lauren is an American fashion designer, philanthropist, and business executive who founded the Ralph Lauren Corporation. Starting with a collection of ties in 1967, Lauren built one of fashion's most successful and recognizable global lifestyle brands. His aspirational yet accessible aesthetic has redefined American style, pioneering the concept of lifestyle branding.",
+      "nationality": "American",
+      "birthYear": 1939,
+      "education": [
+        "Baruch College (attended)",
+        "DeWitt Clinton High School"
+      ],
+      "awards": [
+        "CFDA Lifetime Achievement Award (1991)",
+        "CFDA American Fashion Legend Award (2007)",
+        "Chevalier de la Legion d'Honneur (2010)",
+        "James Smithson Bicentennial Medal (2014)",
+        "Honorary Knight Commander of the Order of the British Empire (2018)"
+      ],
+      "signatureStyles": [
+        "American heritage style",
+        "Preppy aesthetic",
+        "Western wear influence",
+        "Luxury sportswear",
+        "Classic Americana"
+      ],
+      "achievements": [
+        "Built global luxury lifestyle brand",
+        "Pioneered American sportswear",
+        "Established iconic Polo brand",
+        "Official outfitter of the U.S. Olympic Team",
+        "Created the Pink Pony Fund for cancer care"
+      ],
+      "socialMedia": {
+        "instagram": "ralphlauren",
+        "twitter": "RalphLauren",
+        "facebook": "RalphLauren",
+        "linkedin": "ralph-lauren-corporation"
+      },
+      "confidence": 0.95,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "ralphlauren.com",
+        "vogue.com/article/ralph-lauren-biography",
+        "cfda.com/members/ralph-lauren",
+        "forbes.com/profile/ralph-lauren"
+      ],
+      "lastVerified": "2025-05-03",
+      "createdAt": "2025-05-03T20:04:41.000Z",
+      "updatedAt": "2025-05-03T20:04:41.000Z"
     }
   ],
   "brands": [
@@ -5835,78 +6214,6 @@
         "piaget.com",
         "richemont.com/en/brands/our-businesses/piaget",
         "watchtime.com/reviews/in-depth-piaget-altiplano-ultimate-concept"
-      ],
-      "lastVerified": "2025-04-08"
-    },
-    {
-      "id": "b930b009-4a22-4b02-8e30-432883e58390",
-      "name": "IWC Schaffhausen",
-      "foundedYear": 1868,
-      "founder": "Florentine Ariosto Jones",
-      "parentCompany": "Richemont",
-      "category": "luxury_fashion",
-      "headquarters": "Schaffhausen, Switzerland",
-      "specialties": [
-        "Watches",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Western Europe",
-        "North America",
-        "East Asia",
-        "Global"
-      ],
-      "website": "iwc.com",
-      "hasHistoricalData": true,
-      "notes": "Known for pilot watches, diving watches, and the Portuguese collection. Focuses on technical innovation and precision.",
-      "socialMedia": {
-        "instagram": "@iwcwatches",
-        "twitter": "@IWC",
-        "facebook": "iwcwatches"
-      },
-      "confidence": 0.84,
-      "verificationStatus": "VERIFIED",
-      "sources": [
-        "iwc.com",
-        "richemont.com/en/brands/our-businesses/iwc-schaffhausen",
-        "hodinkee.com/articles/iwc-pilots-watch-chronograph-41-hands-on"
-      ],
-      "lastVerified": "2025-04-07"
-    },
-    {
-      "id": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "name": "Jaeger-LeCoultre",
-      "foundedYear": 1833,
-      "founder": "Antoine LeCoultre",
-      "parentCompany": "Richemont",
-      "category": "luxury_fashion",
-      "headquarters": "Le Sentier, Switzerland",
-      "specialties": [
-        "Watches",
-        "Accessories"
-      ],
-      "pricePoint": "Ultra Luxury",
-      "markets": [
-        "Western Europe",
-        "North America",
-        "East Asia",
-        "Global"
-      ],
-      "website": "jaeger-lecoultre.com",
-      "hasHistoricalData": true,
-      "notes": "Known as 'the watchmaker's watchmaker.' Famous for the Reverso watch and high-complication timepieces.",
-      "socialMedia": {
-        "instagram": "@jaegerlecoultre",
-        "twitter": "@jaegerlecoultre",
-        "facebook": "jaegerlecoultre"
-      },
-      "confidence": 0.85,
-      "verificationStatus": "VERIFIED",
-      "sources": [
-        "jaeger-lecoultre.com",
-        "richemont.com/en/brands/our-businesses/jaeger-lecoultre",
-        "ablogtowatch.com/jaeger-lecoultre-reverso-tribute-duoface-calendar-hands-on"
       ],
       "lastVerified": "2025-04-08"
     },
@@ -16266,126 +16573,6 @@
       "updatedAt": "2025-04-09T04:15:24.842Z"
     },
     {
-      "id": "c2a40857-69d6-48a2-b890-48bb0afe91f0",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "department": "Watches",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "achievements": [
-        "Redesign of iconic Portugieser collection",
-        "Development of TOP GUN ceramic case innovations",
-        "Evolution of Pilot's Watch collection",
-        "Creation of Portofino Midsize line",
-        "Ingenieur collection revamp",
-        "Integration of manufacture movements into design language",
-        "Launch of Spitfire collection with bronze cases",
-        "Anniversary editions for IWC's 150th birthday"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "fff1b526-46b8-4161-9e5d-e598bcb5eb31",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "department": "Watches",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "achievements": [
-        "Created the Da Vinci Perpetual Calendar (1985)",
-        "Developed perpetual calendar module that could be adjusted from crown",
-        "Grande Complication development",
-        "Pioneer of the Portugieser line's technical foundation",
-        "Designed the Il Destriero Scafusia super-complication",
-        "Created the iconic mechanical depth gauge for diving watches"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "382b4e82-3ed0-494e-877f-e8a8a48e70ce",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "achievements": [
-        "Repositioning of IWC as masculine luxury watch brand",
-        "Development of Portuguese/Portugieser as flagship collection",
-        "Introduction of annual collection themes",
-        "Expansion of Pilot's Watch collection",
-        "Development of Ingenieur collection",
-        "Creation of IWC's distinctive marketing identity"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "bbebc40e-11bd-4ca6-9a5c-5f9f6086241e",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "department": "Watches",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "achievements": [
-        "Creation of Master Control collection",
-        "Reinvention of Reverso with Art Deco influences",
-        "Development of Master Compressor line",
-        "Modern interpretation of Atmos clocks",
-        "Gyrotourbillon concept development",
-        "Design of Hybris Mechanica pieces"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "da663d2a-5e8e-4635-b512-55a7cd996de1",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "department": "Watches",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "achievements": [
-        "Master Ultra Thin collection expansion",
-        "Reverso Tribute series",
-        "Revival of Polaris collection",
-        "Development of Hybris Mechanica series",
-        "Continuation of Art Deco influences in modern designs",
-        "Creation of Rendez-Vous women's collection",
-        "Master Grande Tradition pieces"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "dff0af70-16e2-465d-ba73-f6768b75ef89",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
-      "achievements": [
-        "Expansion of manufacture capabilities",
-        "Development of Hybris Mechanica concept",
-        "Repositioning as high-end mechanical watchmaker",
-        "Growth of Reverso as iconic collection",
-        "Integration of high complications across collections"
-      ],
-      "createdAt": "2025-04-09T04:15:24.843Z",
-      "updatedAt": "2025-04-09T04:15:24.843Z"
-    },
-    {
       "id": "b3f1a223-a741-4aed-a4c6-59f54c1922a7",
       "designerId": "09562530-8c78-4fe1-95eb-3bee6ea3f267",
       "brandId": "69e9e517-a111-48e0-8e54-6aac7eb77b2d",
@@ -16868,82 +17055,6 @@
       "notableWorks": [],
       "createdAt": "2025-04-09T04:15:24.844Z",
       "updatedAt": "2025-04-09T04:15:24.844Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "cb83f93a-d309-42db-8d3f-13980f14ace4",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:15:24.844Z",
-      "updatedAt": "2025-04-09T04:15:24.844Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "4f9d7ff8-59f1-447b-8ebd-ec2dee64e260",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:15:24.844Z",
-      "updatedAt": "2025-04-09T04:15:24.844Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "801cfa99-8d3b-4771-86b3-9b3215a635d6",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:15:24.844Z",
-      "updatedAt": "2025-04-09T04:15:24.844Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "e6b06ce5-4a78-4c13-958b-88c6aa8feb02",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:15:24.845Z",
-      "updatedAt": "2025-04-09T04:15:24.845Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "9deba113-c0a6-4864-99ed-0fc14ca123c4",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:15:24.845Z",
-      "updatedAt": "2025-04-09T04:15:24.845Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "49f53623-fe0b-44b3-a89e-ab3d228c91a8",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:15:24.845Z",
-      "updatedAt": "2025-04-09T04:15:24.845Z",
       "department": "All Departments"
     },
     {
@@ -17766,126 +17877,6 @@
       "updatedAt": "2025-04-09T04:23:03.224Z"
     },
     {
-      "id": "ce34bae5-2132-46ab-aeda-2f1bcb2256f0",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "department": "Watches",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "achievements": [
-        "Redesign of iconic Portugieser collection",
-        "Development of TOP GUN ceramic case innovations",
-        "Evolution of Pilot's Watch collection",
-        "Creation of Portofino Midsize line",
-        "Ingenieur collection revamp",
-        "Integration of manufacture movements into design language",
-        "Launch of Spitfire collection with bronze cases",
-        "Anniversary editions for IWC's 150th birthday"
-      ],
-      "createdAt": "2025-04-09T04:23:03.224Z",
-      "updatedAt": "2025-04-09T04:23:03.224Z"
-    },
-    {
-      "id": "92120355-e461-4593-8b29-2b0a7ab0984f",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "department": "Watches",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "achievements": [
-        "Created the Da Vinci Perpetual Calendar (1985)",
-        "Developed perpetual calendar module that could be adjusted from crown",
-        "Grande Complication development",
-        "Pioneer of the Portugieser line's technical foundation",
-        "Designed the Il Destriero Scafusia super-complication",
-        "Created the iconic mechanical depth gauge for diving watches"
-      ],
-      "createdAt": "2025-04-09T04:23:03.224Z",
-      "updatedAt": "2025-04-09T04:23:03.224Z"
-    },
-    {
-      "id": "b16c91b6-b3c8-40ff-859e-fad63ca85c19",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "achievements": [
-        "Repositioning of IWC as masculine luxury watch brand",
-        "Development of Portuguese/Portugieser as flagship collection",
-        "Introduction of annual collection themes",
-        "Expansion of Pilot's Watch collection",
-        "Development of Ingenieur collection",
-        "Creation of IWC's distinctive marketing identity"
-      ],
-      "createdAt": "2025-04-09T04:23:03.224Z",
-      "updatedAt": "2025-04-09T04:23:03.224Z"
-    },
-    {
-      "id": "3ac6ef06-a575-4c42-8386-028e335c5103",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "department": "Watches",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "achievements": [
-        "Creation of Master Control collection",
-        "Reinvention of Reverso with Art Deco influences",
-        "Development of Master Compressor line",
-        "Modern interpretation of Atmos clocks",
-        "Gyrotourbillon concept development",
-        "Design of Hybris Mechanica pieces"
-      ],
-      "createdAt": "2025-04-09T04:23:03.224Z",
-      "updatedAt": "2025-04-09T04:23:03.224Z"
-    },
-    {
-      "id": "da25e090-2d75-4612-a7fa-62c212b05ca4",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "department": "Watches",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "achievements": [
-        "Master Ultra Thin collection expansion",
-        "Reverso Tribute series",
-        "Revival of Polaris collection",
-        "Development of Hybris Mechanica series",
-        "Continuation of Art Deco influences in modern designs",
-        "Creation of Rendez-Vous women's collection",
-        "Master Grande Tradition pieces"
-      ],
-      "createdAt": "2025-04-09T04:23:03.224Z",
-      "updatedAt": "2025-04-09T04:23:03.224Z"
-    },
-    {
-      "id": "4638ef2e-0d06-45c1-9032-9358ca2757ce",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
-      "achievements": [
-        "Expansion of manufacture capabilities",
-        "Development of Hybris Mechanica concept",
-        "Repositioning as high-end mechanical watchmaker",
-        "Growth of Reverso as iconic collection",
-        "Integration of high complications across collections"
-      ],
-      "createdAt": "2025-04-09T04:23:03.224Z",
-      "updatedAt": "2025-04-09T04:23:03.224Z"
-    },
-    {
       "id": "8e629daf-1556-40ef-af4b-6e4042a22eca",
       "designerId": "1f42050f-ff0b-4044-8526-98f3512a26d5",
       "brandId": "cfcb0080-0cd4-4edc-ad70-fde59a52f92a",
@@ -18515,82 +18506,6 @@
       "role": "Watches Product Director",
       "startYear": 2010,
       "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:23:03.226Z",
-      "updatedAt": "2025-04-09T04:23:03.226Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "7c79d506-65c0-4e3c-a841-62988a0471d1",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:23:03.226Z",
-      "updatedAt": "2025-04-09T04:23:03.226Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "f5726f15-82d8-4274-8678-3d2cd627ec8e",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:23:03.226Z",
-      "updatedAt": "2025-04-09T04:23:03.226Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "99dcd721-13ee-4de0-89fe-33849e0d56d9",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:23:03.226Z",
-      "updatedAt": "2025-04-09T04:23:03.226Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "4d06a649-f178-4dc1-bce5-3a66dedfc1da",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:23:03.226Z",
-      "updatedAt": "2025-04-09T04:23:03.226Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "533fbddd-5285-4e3b-a547-ef0a234cb3ee",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:23:03.226Z",
-      "updatedAt": "2025-04-09T04:23:03.226Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "308a38b4-b0b4-4f27-92c7-0e48e10879cc",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
       "notableWorks": [],
       "createdAt": "2025-04-09T04:23:03.226Z",
       "updatedAt": "2025-04-09T04:23:03.226Z",
@@ -19516,126 +19431,6 @@
       "updatedAt": "2025-04-09T04:25:10.862Z"
     },
     {
-      "id": "90cfedac-8644-4ef7-b2d3-ec9c8969414e",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "department": "Watches",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "achievements": [
-        "Redesign of iconic Portugieser collection",
-        "Development of TOP GUN ceramic case innovations",
-        "Evolution of Pilot's Watch collection",
-        "Creation of Portofino Midsize line",
-        "Ingenieur collection revamp",
-        "Integration of manufacture movements into design language",
-        "Launch of Spitfire collection with bronze cases",
-        "Anniversary editions for IWC's 150th birthday"
-      ],
-      "createdAt": "2025-04-09T04:25:10.862Z",
-      "updatedAt": "2025-04-09T04:25:10.862Z"
-    },
-    {
-      "id": "e0a36128-a062-4605-9f64-dd62757cbf0b",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "department": "Watches",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "achievements": [
-        "Created the Da Vinci Perpetual Calendar (1985)",
-        "Developed perpetual calendar module that could be adjusted from crown",
-        "Grande Complication development",
-        "Pioneer of the Portugieser line's technical foundation",
-        "Designed the Il Destriero Scafusia super-complication",
-        "Created the iconic mechanical depth gauge for diving watches"
-      ],
-      "createdAt": "2025-04-09T04:25:10.862Z",
-      "updatedAt": "2025-04-09T04:25:10.862Z"
-    },
-    {
-      "id": "b82b75a1-c909-4dc5-b500-7d033b5df78c",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "achievements": [
-        "Repositioning of IWC as masculine luxury watch brand",
-        "Development of Portuguese/Portugieser as flagship collection",
-        "Introduction of annual collection themes",
-        "Expansion of Pilot's Watch collection",
-        "Development of Ingenieur collection",
-        "Creation of IWC's distinctive marketing identity"
-      ],
-      "createdAt": "2025-04-09T04:25:10.862Z",
-      "updatedAt": "2025-04-09T04:25:10.862Z"
-    },
-    {
-      "id": "46da35c4-21db-44c3-a1ec-b18abf30befe",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "department": "Watches",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "achievements": [
-        "Creation of Master Control collection",
-        "Reinvention of Reverso with Art Deco influences",
-        "Development of Master Compressor line",
-        "Modern interpretation of Atmos clocks",
-        "Gyrotourbillon concept development",
-        "Design of Hybris Mechanica pieces"
-      ],
-      "createdAt": "2025-04-09T04:25:10.862Z",
-      "updatedAt": "2025-04-09T04:25:10.862Z"
-    },
-    {
-      "id": "8f8006ee-95f7-4559-9111-2e69c408f7d6",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "department": "Watches",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "achievements": [
-        "Master Ultra Thin collection expansion",
-        "Reverso Tribute series",
-        "Revival of Polaris collection",
-        "Development of Hybris Mechanica series",
-        "Continuation of Art Deco influences in modern designs",
-        "Creation of Rendez-Vous women's collection",
-        "Master Grande Tradition pieces"
-      ],
-      "createdAt": "2025-04-09T04:25:10.862Z",
-      "updatedAt": "2025-04-09T04:25:10.862Z"
-    },
-    {
-      "id": "267a5afd-6766-414e-aa5b-b005a62c8d01",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
-      "achievements": [
-        "Expansion of manufacture capabilities",
-        "Development of Hybris Mechanica concept",
-        "Repositioning as high-end mechanical watchmaker",
-        "Growth of Reverso as iconic collection",
-        "Integration of high complications across collections"
-      ],
-      "createdAt": "2025-04-09T04:25:10.862Z",
-      "updatedAt": "2025-04-09T04:25:10.862Z"
-    },
-    {
       "id": "f9d7bc25-f409-4ff3-bb55-91cbcc3db04e",
       "designerId": "1f42050f-ff0b-4044-8526-98f3512a26d5",
       "brandId": "cfcb0080-0cd4-4edc-ad70-fde59a52f92a",
@@ -20265,82 +20060,6 @@
       "role": "Watches Product Director",
       "startYear": 2010,
       "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:25:10.864Z",
-      "updatedAt": "2025-04-09T04:25:10.864Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "a903ace5-146c-4324-8b76-d337aa4dfd46",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:25:10.864Z",
-      "updatedAt": "2025-04-09T04:25:10.864Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "d227a997-1858-48e3-86ac-91d39e94e8f6",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:25:10.864Z",
-      "updatedAt": "2025-04-09T04:25:10.864Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "bf6a1c44-7ff9-4e0e-b344-6cbc5091e543",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:25:10.864Z",
-      "updatedAt": "2025-04-09T04:25:10.864Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "66a9eff5-ec5c-4bb1-8c57-e63fbc51407a",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:25:10.864Z",
-      "updatedAt": "2025-04-09T04:25:10.864Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "9fa7d04f-ec41-4122-82d3-d394dbbfb8c4",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:25:10.864Z",
-      "updatedAt": "2025-04-09T04:25:10.864Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "6a27a1c7-068e-42e3-80f4-3832cbc3a916",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
       "notableWorks": [],
       "createdAt": "2025-04-09T04:25:10.864Z",
       "updatedAt": "2025-04-09T04:25:10.864Z",
@@ -21266,126 +20985,6 @@
       "updatedAt": "2025-04-09T04:30:39.396Z"
     },
     {
-      "id": "a66fc4c7-585b-42e3-b4f1-4cdd025dd129",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "department": "Watches",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "achievements": [
-        "Redesign of iconic Portugieser collection",
-        "Development of TOP GUN ceramic case innovations",
-        "Evolution of Pilot's Watch collection",
-        "Creation of Portofino Midsize line",
-        "Ingenieur collection revamp",
-        "Integration of manufacture movements into design language",
-        "Launch of Spitfire collection with bronze cases",
-        "Anniversary editions for IWC's 150th birthday"
-      ],
-      "createdAt": "2025-04-09T04:30:39.396Z",
-      "updatedAt": "2025-04-09T04:30:39.396Z"
-    },
-    {
-      "id": "a6662ddc-7479-4a45-9da5-bf077750c184",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "department": "Watches",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "achievements": [
-        "Created the Da Vinci Perpetual Calendar (1985)",
-        "Developed perpetual calendar module that could be adjusted from crown",
-        "Grande Complication development",
-        "Pioneer of the Portugieser line's technical foundation",
-        "Designed the Il Destriero Scafusia super-complication",
-        "Created the iconic mechanical depth gauge for diving watches"
-      ],
-      "createdAt": "2025-04-09T04:30:39.396Z",
-      "updatedAt": "2025-04-09T04:30:39.396Z"
-    },
-    {
-      "id": "5db0745f-6d89-4447-9b0d-8946cfbaa92c",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "achievements": [
-        "Repositioning of IWC as masculine luxury watch brand",
-        "Development of Portuguese/Portugieser as flagship collection",
-        "Introduction of annual collection themes",
-        "Expansion of Pilot's Watch collection",
-        "Development of Ingenieur collection",
-        "Creation of IWC's distinctive marketing identity"
-      ],
-      "createdAt": "2025-04-09T04:30:39.396Z",
-      "updatedAt": "2025-04-09T04:30:39.396Z"
-    },
-    {
-      "id": "bff2ab13-dbd4-4f27-a5ed-6a580dc7a9cf",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "department": "Watches",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "achievements": [
-        "Creation of Master Control collection",
-        "Reinvention of Reverso with Art Deco influences",
-        "Development of Master Compressor line",
-        "Modern interpretation of Atmos clocks",
-        "Gyrotourbillon concept development",
-        "Design of Hybris Mechanica pieces"
-      ],
-      "createdAt": "2025-04-09T04:30:39.396Z",
-      "updatedAt": "2025-04-09T04:30:39.396Z"
-    },
-    {
-      "id": "9c468da5-a325-4106-89ff-449c853c34ed",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "department": "Watches",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "achievements": [
-        "Master Ultra Thin collection expansion",
-        "Reverso Tribute series",
-        "Revival of Polaris collection",
-        "Development of Hybris Mechanica series",
-        "Continuation of Art Deco influences in modern designs",
-        "Creation of Rendez-Vous women's collection",
-        "Master Grande Tradition pieces"
-      ],
-      "createdAt": "2025-04-09T04:30:39.396Z",
-      "updatedAt": "2025-04-09T04:30:39.396Z"
-    },
-    {
-      "id": "2da51ae3-20a7-4069-afe2-aa0b272f5ea7",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
-      "achievements": [
-        "Expansion of manufacture capabilities",
-        "Development of Hybris Mechanica concept",
-        "Repositioning as high-end mechanical watchmaker",
-        "Growth of Reverso as iconic collection",
-        "Integration of high complications across collections"
-      ],
-      "createdAt": "2025-04-09T04:30:39.396Z",
-      "updatedAt": "2025-04-09T04:30:39.396Z"
-    },
-    {
       "id": "5b7b87a5-a4ed-42ac-b8ae-f78fa45ed8de",
       "designerId": "1f42050f-ff0b-4044-8526-98f3512a26d5",
       "brandId": "cfcb0080-0cd4-4edc-ad70-fde59a52f92a",
@@ -22015,82 +21614,6 @@
       "role": "Watches Product Director",
       "startYear": 2010,
       "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:30:39.398Z",
-      "updatedAt": "2025-04-09T04:30:39.398Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "764529b8-8dd3-4bfe-aae1-b83b8fa3107d",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:30:39.398Z",
-      "updatedAt": "2025-04-09T04:30:39.398Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "0bea6e82-518d-4061-8ff7-a5b40978b9c5",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:30:39.398Z",
-      "updatedAt": "2025-04-09T04:30:39.398Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "d24db027-bd46-46df-bb41-929390e5b5a0",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:30:39.398Z",
-      "updatedAt": "2025-04-09T04:30:39.398Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "d6c98c57-2970-4118-93b8-68ebc70f7c85",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:30:39.398Z",
-      "updatedAt": "2025-04-09T04:30:39.398Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "a8f37dcb-2de1-4c03-bda0-b68ee0b98178",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:30:39.398Z",
-      "updatedAt": "2025-04-09T04:30:39.398Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "98fef5f1-9caf-478b-a444-f95d3004cb2b",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
       "notableWorks": [],
       "createdAt": "2025-04-09T04:30:39.398Z",
       "updatedAt": "2025-04-09T04:30:39.398Z",
@@ -23016,126 +22539,6 @@
       "updatedAt": "2025-04-09T04:32:51.888Z"
     },
     {
-      "id": "bf7f6818-8e5e-41fc-9169-44098e4f12d6",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "department": "Watches",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "achievements": [
-        "Redesign of iconic Portugieser collection",
-        "Development of TOP GUN ceramic case innovations",
-        "Evolution of Pilot's Watch collection",
-        "Creation of Portofino Midsize line",
-        "Ingenieur collection revamp",
-        "Integration of manufacture movements into design language",
-        "Launch of Spitfire collection with bronze cases",
-        "Anniversary editions for IWC's 150th birthday"
-      ],
-      "createdAt": "2025-04-09T04:32:51.888Z",
-      "updatedAt": "2025-04-09T04:32:51.888Z"
-    },
-    {
-      "id": "39b0b454-8da5-4faf-aca3-40589dec6e2a",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "department": "Watches",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "achievements": [
-        "Created the Da Vinci Perpetual Calendar (1985)",
-        "Developed perpetual calendar module that could be adjusted from crown",
-        "Grande Complication development",
-        "Pioneer of the Portugieser line's technical foundation",
-        "Designed the Il Destriero Scafusia super-complication",
-        "Created the iconic mechanical depth gauge for diving watches"
-      ],
-      "createdAt": "2025-04-09T04:32:51.888Z",
-      "updatedAt": "2025-04-09T04:32:51.888Z"
-    },
-    {
-      "id": "c3619fc2-ecfb-40bf-82a4-5915d666a5f1",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "achievements": [
-        "Repositioning of IWC as masculine luxury watch brand",
-        "Development of Portuguese/Portugieser as flagship collection",
-        "Introduction of annual collection themes",
-        "Expansion of Pilot's Watch collection",
-        "Development of Ingenieur collection",
-        "Creation of IWC's distinctive marketing identity"
-      ],
-      "createdAt": "2025-04-09T04:32:51.888Z",
-      "updatedAt": "2025-04-09T04:32:51.888Z"
-    },
-    {
-      "id": "3ab4df39-de55-4939-a36b-a3d172516cc0",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "department": "Watches",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "achievements": [
-        "Creation of Master Control collection",
-        "Reinvention of Reverso with Art Deco influences",
-        "Development of Master Compressor line",
-        "Modern interpretation of Atmos clocks",
-        "Gyrotourbillon concept development",
-        "Design of Hybris Mechanica pieces"
-      ],
-      "createdAt": "2025-04-09T04:32:51.888Z",
-      "updatedAt": "2025-04-09T04:32:51.888Z"
-    },
-    {
-      "id": "30d1073c-64bd-4e59-aed8-f313a2cd207b",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "department": "Watches",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "achievements": [
-        "Master Ultra Thin collection expansion",
-        "Reverso Tribute series",
-        "Revival of Polaris collection",
-        "Development of Hybris Mechanica series",
-        "Continuation of Art Deco influences in modern designs",
-        "Creation of Rendez-Vous women's collection",
-        "Master Grande Tradition pieces"
-      ],
-      "createdAt": "2025-04-09T04:32:51.888Z",
-      "updatedAt": "2025-04-09T04:32:51.888Z"
-    },
-    {
-      "id": "f7315c58-ac5e-4833-9f78-3b1cecc0b850",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
-      "achievements": [
-        "Expansion of manufacture capabilities",
-        "Development of Hybris Mechanica concept",
-        "Repositioning as high-end mechanical watchmaker",
-        "Growth of Reverso as iconic collection",
-        "Integration of high complications across collections"
-      ],
-      "createdAt": "2025-04-09T04:32:51.888Z",
-      "updatedAt": "2025-04-09T04:32:51.888Z"
-    },
-    {
       "id": "b1ebdacc-a80e-41b4-a702-50e6d0835da0",
       "designerId": "1f42050f-ff0b-4044-8526-98f3512a26d5",
       "brandId": "cfcb0080-0cd4-4edc-ad70-fde59a52f92a",
@@ -23765,82 +23168,6 @@
       "role": "Watches Product Director",
       "startYear": 2010,
       "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:32:51.890Z",
-      "updatedAt": "2025-04-09T04:32:51.890Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "1c706af2-7d61-4260-8a2f-706430663634",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:32:51.890Z",
-      "updatedAt": "2025-04-09T04:32:51.890Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "bf6a6464-4d9c-4b7f-87fb-9bf697687a23",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:32:51.890Z",
-      "updatedAt": "2025-04-09T04:32:51.890Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "a58ed2d6-d113-4f1e-a0c8-cc728504e834",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:32:51.890Z",
-      "updatedAt": "2025-04-09T04:32:51.890Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "560271fb-fd7d-4bd2-98a6-761bbf7099c8",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:32:51.890Z",
-      "updatedAt": "2025-04-09T04:32:51.890Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "d27335c1-64b8-443d-ae79-1e2358ecc6ca",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:32:51.890Z",
-      "updatedAt": "2025-04-09T04:32:51.890Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "c687d3e7-43ef-4fef-8822-75adb09457cc",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
       "notableWorks": [],
       "createdAt": "2025-04-09T04:32:51.890Z",
       "updatedAt": "2025-04-09T04:32:51.890Z",
@@ -24766,126 +24093,6 @@
       "updatedAt": "2025-04-09T04:36:00.530Z"
     },
     {
-      "id": "5605033e-db82-4971-aa79-f270a83277f8",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "department": "Watches",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "achievements": [
-        "Redesign of iconic Portugieser collection",
-        "Development of TOP GUN ceramic case innovations",
-        "Evolution of Pilot's Watch collection",
-        "Creation of Portofino Midsize line",
-        "Ingenieur collection revamp",
-        "Integration of manufacture movements into design language",
-        "Launch of Spitfire collection with bronze cases",
-        "Anniversary editions for IWC's 150th birthday"
-      ],
-      "createdAt": "2025-04-09T04:36:00.530Z",
-      "updatedAt": "2025-04-09T04:36:00.530Z"
-    },
-    {
-      "id": "de9c2704-811e-4115-83d1-a8b95815fea1",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "department": "Watches",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "achievements": [
-        "Created the Da Vinci Perpetual Calendar (1985)",
-        "Developed perpetual calendar module that could be adjusted from crown",
-        "Grande Complication development",
-        "Pioneer of the Portugieser line's technical foundation",
-        "Designed the Il Destriero Scafusia super-complication",
-        "Created the iconic mechanical depth gauge for diving watches"
-      ],
-      "createdAt": "2025-04-09T04:36:00.530Z",
-      "updatedAt": "2025-04-09T04:36:00.530Z"
-    },
-    {
-      "id": "2005d898-c698-4c21-83ac-8e4b552e9982",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "achievements": [
-        "Repositioning of IWC as masculine luxury watch brand",
-        "Development of Portuguese/Portugieser as flagship collection",
-        "Introduction of annual collection themes",
-        "Expansion of Pilot's Watch collection",
-        "Development of Ingenieur collection",
-        "Creation of IWC's distinctive marketing identity"
-      ],
-      "createdAt": "2025-04-09T04:36:00.530Z",
-      "updatedAt": "2025-04-09T04:36:00.530Z"
-    },
-    {
-      "id": "2f9b7007-8f19-451e-8694-f8e1f3515216",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "department": "Watches",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "achievements": [
-        "Creation of Master Control collection",
-        "Reinvention of Reverso with Art Deco influences",
-        "Development of Master Compressor line",
-        "Modern interpretation of Atmos clocks",
-        "Gyrotourbillon concept development",
-        "Design of Hybris Mechanica pieces"
-      ],
-      "createdAt": "2025-04-09T04:36:00.530Z",
-      "updatedAt": "2025-04-09T04:36:00.530Z"
-    },
-    {
-      "id": "332de20c-5730-4a08-ac48-20fc797d9a0b",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "department": "Watches",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "achievements": [
-        "Master Ultra Thin collection expansion",
-        "Reverso Tribute series",
-        "Revival of Polaris collection",
-        "Development of Hybris Mechanica series",
-        "Continuation of Art Deco influences in modern designs",
-        "Creation of Rendez-Vous women's collection",
-        "Master Grande Tradition pieces"
-      ],
-      "createdAt": "2025-04-09T04:36:00.530Z",
-      "updatedAt": "2025-04-09T04:36:00.530Z"
-    },
-    {
-      "id": "a065f64c-a8ea-4d5c-a0bf-54890e1566b9",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "department": "All Departments",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
-      "achievements": [
-        "Expansion of manufacture capabilities",
-        "Development of Hybris Mechanica concept",
-        "Repositioning as high-end mechanical watchmaker",
-        "Growth of Reverso as iconic collection",
-        "Integration of high complications across collections"
-      ],
-      "createdAt": "2025-04-09T04:36:00.530Z",
-      "updatedAt": "2025-04-09T04:36:00.530Z"
-    },
-    {
       "id": "9b9f6166-8509-499d-a5a5-2d68a7667cbf",
       "designerId": "1f42050f-ff0b-4044-8526-98f3512a26d5",
       "brandId": "cfcb0080-0cd4-4edc-ad70-fde59a52f92a",
@@ -25521,82 +24728,6 @@
       "department": "All Departments"
     },
     {
-      "id": "8d710325-87fb-4db1-b8f2-f7c103af7624",
-      "designerId": "5360d91e-4d67-442c-9488-d9da9317a2a3",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Creative Director",
-      "startYear": 2008,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:36:00.532Z",
-      "updatedAt": "2025-04-09T04:36:00.532Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "f9c5bf96-7bae-454c-86a9-51e53df0b593",
-      "designerId": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "Head Watchmaker and Technical Director",
-      "startYear": 1957,
-      "endYear": 1999,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:36:00.532Z",
-      "updatedAt": "2025-04-09T04:36:00.532Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "b78a691f-db7d-40c0-a5f2-a25c6ba30cb5",
-      "designerId": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
-      "brandId": "b930b009-4a22-4b02-8e30-432883e58390",
-      "role": "CEO and Creative Direction",
-      "startYear": 2002,
-      "endYear": 2017,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:36:00.532Z",
-      "updatedAt": "2025-04-09T04:36:00.532Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "d35fe719-ad4d-44bf-9961-1c33f33fd86d",
-      "designerId": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Artistic Director",
-      "startYear": 1996,
-      "endYear": 2009,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:36:00.533Z",
-      "updatedAt": "2025-04-09T04:36:00.533Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "07910adc-ec4f-447e-9fa5-ad818c32c57f",
-      "designerId": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "Product Design Director",
-      "startYear": 2010,
-      "isCurrentRole": true,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:36:00.533Z",
-      "updatedAt": "2025-04-09T04:36:00.533Z",
-      "department": "All Departments"
-    },
-    {
-      "id": "8dfbe4c8-2639-493e-876f-17079c6d56de",
-      "designerId": "64ae214c-e612-47c2-a0f1-75a8ce1b9041",
-      "brandId": "5baaac71-be8a-4213-afff-706249ec4bdf",
-      "role": "CEO with Product Direction Influence",
-      "startYear": 2002,
-      "endYear": 2013,
-      "isCurrentRole": false,
-      "notableWorks": [],
-      "createdAt": "2025-04-09T04:36:00.533Z",
-      "updatedAt": "2025-04-09T04:36:00.533Z",
-      "department": "All Departments"
-    },
-    {
       "id": "b9384528-ce88-449f-8190-6e0b6f99d8de",
       "designerId": "1f42050f-ff0b-4044-8526-98f3512a26d5",
       "brandId": "cfcb0080-0cd4-4edc-ad70-fde59a52f92a",
@@ -25943,7 +25074,7 @@
     },
     {
       "id": "tnr-5",
-      "designerId": "69c7362e-b3cb-4f96-83e8-41d52548c09c",
+      "designerId": "21d9bef3-2083-4933-b435-329f13248c07",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "role": "Founder and Creative Director",
       "department": "Menswear",
@@ -25955,7 +25086,7 @@
     },
     {
       "id": "tnr-6",
-      "designerId": "9e8508e6-deb6-485e-b127-8a7b026179da",
+      "designerId": "b65b2a45-a953-4680-849c-518050f9c47d",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "role": "Head of Design",
       "department": "Menswear",
@@ -26053,7 +25184,7 @@
     },
     {
       "id": "tnr-gv-001",
-      "designerId": "e5cb3f42-8d16-4ac5-b927-f3d901e58a24",
+      "designerId": "12f1bc1f-2674-456c-84aa-a7cdac32f31e",
       "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "role": "Founder and Creative Director",
       "department": "All Departments",
@@ -26071,9 +25202,9 @@
     },
     {
       "id": "tnr-bc-001",
-      "designerId": "5e9feab1-c688-4e37-b74e-9f522f9f5ea5",
+      "designerId": "12f1bc1f-2674-456c-84aa-a7cdac32f31e",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
-      "role": "Creative Director",
+      "role": "Founding Design Director",
       "department": "Menswear",
       "startYear": 1984,
       "endYear": 2004,
@@ -27158,7 +26289,7 @@
     {
       "id": "rel-11",
       "sourceDesignerId": "1424ea9f-28f7-4661-b799-285914e5175c",
-      "targetDesignerId": "c56a11ea-6b3a-4606-9436-87c216e443c2",
+      "targetDesignerId": "12f1bc1f-2674-456c-84aa-a7cdac32f31e",
       "brandId": "7cfcf27a-878a-4623-90fc-d5d493985575",
       "type": "mentorship",
       "startYear": 1997,
@@ -27173,8 +26304,8 @@
     },
     {
       "id": "rel-14",
-      "sourceDesignerId": "69c7362e-b3cb-4f96-83e8-41d52548c09c",
-      "targetDesignerId": "2e87d560-a7e5-4387-8386-2707f6b8f5d6",
+      "sourceDesignerId": "21d9bef3-2083-4933-b435-329f13248c07",
+      "targetDesignerId": "b65b2a45-a953-4680-849c-518050f9c47d",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
       "type": "familial",
       "startYear": 1984,

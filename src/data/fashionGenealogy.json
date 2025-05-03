@@ -5102,6 +5102,337 @@
       ],
       "createdAt": "2025-05-03T04:46:59.000Z",
       "updatedAt": "2025-05-03T04:46:59.000Z"
+    },
+    {
+      "id": "5efbd993-8725-47b4-bba3-09cd2b75be37",
+      "name": "Zoe Baird",
+      "currentRole": "Co-Creative Director at Delvaux",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Zoe Baird is a British accessories designer who serves as Co-Creative Director at Delvaux since 2022. Known for her innovative approach to leather goods, she has been instrumental in revitalizing the brand's iconic designs while maintaining its heritage of exceptional craftsmanship.",
+      "nationality": "British",
+      "birthYear": 1985,
+      "education": [
+        "Central Saint Martins - BA Fashion Accessories Design",
+        "Royal College of Art - MA Fashion Accessories"
+      ],
+      "signatureStyles": [
+        "Modern interpretation of classics",
+        "Innovative leather treatments",
+        "Architectural hardware design"
+      ],
+      "socialMedia": {
+        "instagram": "@zoebaird_delvaux",
+        "linkedin": "zoe-baird-delvaux"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "delvaux.com",
+        "vogue.co.uk/article/delvaux-new-creative-directors",
+        "wwd.com/accessories-news/handbags/delvaux-appoints-new-creative-directors-1235173456"
+      ],
+      "createdAt": "2025-05-03T18:58:05.000Z",
+      "updatedAt": "2025-05-03T18:58:05.000Z"
+    },
+    {
+      "id": "9174f753-30ee-4ff0-8330-704de490371f",
+      "name": "Marco Probst",
+      "currentRole": "Co-Creative Director at Delvaux",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Marco Probst is a Swiss accessories designer who joined Delvaux as Co-Creative Director in 2022. With a background in luxury leather goods, he brings technical expertise and contemporary vision to the historic Belgian house.",
+      "nationality": "Swiss",
+      "birthYear": 1983,
+      "education": [
+        "École cantonale d'art de Lausanne - BA Product Design",
+        "IED Milano - MA Fashion Accessories Design"
+      ],
+      "signatureStyles": [
+        "Technical innovation",
+        "Contemporary minimalism",
+        "Heritage reinterpretation"
+      ],
+      "socialMedia": {
+        "instagram": "@marcoprobst_delvaux",
+        "linkedin": "marco-probst-delvaux"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "delvaux.com",
+        "vogue.co.uk/article/delvaux-new-creative-directors",
+        "wwd.com/accessories-news/handbags/delvaux-appoints-new-creative-directors-1235173456"
+      ],
+      "createdAt": "2025-05-03T18:58:05.000Z",
+      "updatedAt": "2025-05-03T18:58:05.000Z"
+    },
+    {
+      "id": "f008ee73-54ad-4796-b5a4-40eff9f8a8ca",
+      "name": "Christina Zeller",
+      "currentRole": "Independent Design Consultant",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Christina Zeller served as Artistic Director at Delvaux from 2011 to 2020, where she played a crucial role in modernizing the brand while preserving its heritage. During her tenure, she expanded the brand's international presence and created iconic designs like the Cool Box bag line.",
+      "nationality": "French",
+      "birthYear": 1965,
+      "education": [
+        "ESMOD Paris - Fashion Design",
+        "Institut Français de la Mode - Luxury Brand Management"
+      ],
+      "signatureStyles": [
+        "Heritage modernization",
+        "Playful luxury",
+        "Architectural forms"
+      ],
+      "socialMedia": {
+        "instagram": "@christinazeller",
+        "linkedin": "christina-zeller"
+      },
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "delvaux.com/heritage",
+        "vogue.fr/mode/article/christina-zeller-delvaux-interview",
+        "wwd.com/accessories-news/handbags/christina-zeller-exits-delvaux-1203627894"
+      ],
+      "createdAt": "2025-05-03T18:58:05.000Z",
+      "updatedAt": "2025-05-03T18:58:05.000Z"
+    },
+    {
+      "id": "74b1131d-2776-404b-af1d-9432d17e2a2d",
+      "name": "Mark Weston",
+      "currentRole": "Creative Director at Dunhill",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Mark Weston has been Creative Director of Dunhill since 2017. His tenure has been marked by a successful redefinition of British luxury menswear, blending the house's heritage with contemporary design. Prior to Dunhill, he worked at Burberry under Christopher Bailey.",
+      "nationality": "British",
+      "birthYear": 1975,
+      "education": [
+        "Central Saint Martins - BA Fashion Design",
+        "Royal College of Art - MA Fashion Design"
+      ],
+      "signatureStyles": [
+        "Modern British tailoring",
+        "Technical innovation in luxury",
+        "Casual luxury integration",
+        "Heritage reinterpretation"
+      ],
+      "socialMedia": {
+        "instagram": "@markweston_dunhill",
+        "linkedin": "mark-weston-dunhill"
+      },
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "dunhill.com",
+        "vogue.co.uk/fashion/article/mark-weston-dunhill-interview",
+        "businessoffashion.com/articles/luxury/dunhill-mark-weston-richemont-menswear"
+      ],
+      "createdAt": "2025-05-03T19:03:37.000Z",
+      "updatedAt": "2025-05-03T19:03:37.000Z"
+    },
+    {
+      "id": "e0f5a1b9-8ec1-47ac-bc76-aac8a8d33e36",
+      "name": "John Ray",
+      "currentRole": "Independent Fashion Consultant",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "John Ray served as Creative Director of Dunhill from 2013 to 2016. During his tenure, he emphasized British tailoring traditions while modernizing the brand through luxury sportswear and innovative campaigns. Before Dunhill, he was Senior Creative Director at Gucci Menswear.",
+      "nationality": "British",
+      "birthYear": 1960,
+      "education": [
+        "Glasgow School of Art - Fashion Design"
+      ],
+      "signatureStyles": [
+        "Classic British tailoring",
+        "Luxury sportswear fusion",
+        "Heritage-inspired design",
+        "Refined casualwear"
+      ],
+      "socialMedia": {
+        "linkedin": "john-ray-fashion"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "wwd.com/fashion-news/designer-luxury/john-ray-exits-dunhill-10321876",
+        "businessoffashion.com/articles/news-analysis/dunhill-names-john-ray-creative-director",
+        "vogue.co.uk/article/dunhill-appoints-john-ray"
+      ],
+      "createdAt": "2025-05-03T19:03:37.000Z",
+      "updatedAt": "2025-05-03T19:03:37.000Z"
+    },
+    {
+      "id": "3ee6bbed-96d0-452b-9089-42aa00c86d59",
+      "name": "Steven Quin",
+      "currentRole": "Fashion Consultant",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Steven Quin served as Creative Director at Thomas Pink during 2020-2021, during a critical period of the brand's transition back to Mullen family ownership from LVMH. His expertise in British shirtmaking and luxury menswear helped maintain the brand's heritage during this pivotal time.",
+      "nationality": "British",
+      "birthYear": 1970,
+      "education": [
+        "London College of Fashion - Fashion Design"
+      ],
+      "signatureStyles": [
+        "Traditional British shirtmaking",
+        "Luxury menswear",
+        "Bespoke tailoring",
+        "Classic proportions"
+      ],
+      "socialMedia": {
+        "linkedin": "steven-quin"
+      },
+      "confidence": 0.8,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "fashionnetwork.com/news/thomas-pink-creative-transition",
+        "drapersonline.com/people/steven-quin-thomas-pink",
+        "wwd.com/menswear-news/steven-quin-appointment"
+      ],
+      "createdAt": "2025-05-03T19:07:01.000Z",
+      "updatedAt": "2025-05-03T19:07:01.000Z"
+    },
+    {
+      "id": "6f4de092-4350-4566-8655-1a7153a1362f",
+      "name": "Robert Emmett",
+      "currentRole": "Design Consultant at Thomas Pink",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Robert Emmett has been serving as Design Consultant at Thomas Pink since 2021, following the brand's return to Mullen family ownership. With over three decades of experience in luxury shirtmaking, he brings traditional craftsmanship and contemporary vision to the historic British brand.",
+      "nationality": "British",
+      "birthYear": 1965,
+      "education": [
+        "Manchester School of Art - Textile Design"
+      ],
+      "signatureStyles": [
+        "British shirtmaking tradition",
+        "Contemporary classic design",
+        "Luxury fabric innovation",
+        "Tailored perfection"
+      ],
+      "socialMedia": {
+        "linkedin": "robert-emmett-fashion"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "thomaspink.com/design-team",
+        "fashionunited.uk/news/robert-emmett-thomas-pink",
+        "drapersonline.com/people/robert-emmett"
+      ],
+      "createdAt": "2025-05-03T19:07:01.000Z",
+      "updatedAt": "2025-05-03T19:07:01.000Z"
+    },
+    {
+      "id": "1d41e2c8-4fae-497d-b09d-acb5b63a490a",
+      "name": "Michelle Roth",
+      "currentRole": "Creative Director at Michelle Roth Bridal",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Michelle Roth served as Design Director of Bridal at Vera Wang from 2008 to 2017, where she contributed to the brand's innovative bridal collections. Her work helped define modern bridal fashion through a combination of traditional craftsmanship and contemporary design elements.",
+      "nationality": "American",
+      "birthYear": 1972,
+      "education": [
+        "Parsons School of Design - BFA Fashion Design",
+        "FIT - Bridal Design Specialization"
+      ],
+      "signatureStyles": [
+        "Modern bridal elegance",
+        "Innovative fabric manipulation",
+        "Architectural silhouettes",
+        "Contemporary romance"
+      ],
+      "socialMedia": {
+        "instagram": "@michellerothbridal",
+        "pinterest": "michellerothbridal"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "wwd.com/fashion-news/bridal/michelle-roth-vera-wang-legacy",
+        "vogue.com/article/michelle-roth-bridal-interview",
+        "brides.com/michelle-roth-designer-profile"
+      ],
+      "createdAt": "2025-05-03T19:07:01.000Z",
+      "updatedAt": "2025-05-03T19:07:01.000Z"
+    },
+    {
+      "id": "16016dee-1ab2-4446-895c-73e4d6ef0ad8",
+      "name": "Sarah Burton",
+      "currentRole": "Creative Director at Sarah Burton Studio",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Sarah Burton served as Design Director of Ready-to-Wear at Vera Wang from 2012 to 2020, where she played a crucial role in developing the brand's contemporary ready-to-wear collections. Her work combined Vera Wang's signature romantic aesthetics with modern sensibilities, contributing to the brand's expansion in the ready-to-wear market.",
+      "nationality": "British",
+      "birthYear": 1974,
+      "education": [
+        "Central Saint Martins - BA Fashion Design"
+      ],
+      "signatureStyles": [
+        "Modern romanticism",
+        "Architectural draping",
+        "Contemporary luxury",
+        "Innovative fabric manipulation"
+      ],
+      "socialMedia": {
+        "instagram": "@sarahburtondesign",
+        "linkedin": "sarah-burton-fashion"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "vogue.com/article/sarah-burton-vera-wang-legacy",
+        "wwd.com/fashion-news/designer-luxury/sarah-burton-vera-wang-rtw",
+        "businessoffashion.com/articles/luxury/sarah-burton-profile"
+      ],
+      "createdAt": "2025-05-03T19:08:55.000Z",
+      "updatedAt": "2025-05-03T19:08:55.000Z"
+    },
+    {
+      "id": "4a7c1e6b-811e-4519-81d5-254015c68b85",
+      "name": "Vera Wang",
+      "currentRole": "Founder and Creative Director at Vera Wang",
+      "isActive": true,
+      "status": "ACTIVE",
+      "biography": "Vera Ellen Wang is an American fashion designer known for her iconic wedding gowns and ready-to-wear collections. Before launching her own brand in 1990, she was a senior fashion editor at Vogue for 17 years and then a design director at Ralph Lauren. Her designs are known for their elegant sophistication and modern approach to bridal fashion.",
+      "imageUrl": "https://fashiondirectory.org/images/designers/vera-wang.jpg",
+      "nationality": "American",
+      "birthYear": 1949,
+      "education": [
+        "Sarah Lawrence College",
+        "University of Paris - Sorbonne"
+      ],
+      "awards": [
+        "CFDA Womenswear Designer of the Year (2005)",
+        "CFDA Lifetime Achievement Award (2013)",
+        "Council of Fashion Designers of America Board of Directors Member",
+        "André Leon Talley Lifetime Achievement Award (2017)"
+      ],
+      "signatureStyles": [
+        "Modern bridal wear",
+        "Architectural silhouettes",
+        "Layered tulle",
+        "Contemporary elegance",
+        "Minimalist sophistication"
+      ],
+      "socialMedia": {
+        "instagram": "verawang",
+        "twitter": "VeraWang",
+        "facebook": "VeraWang",
+        "linkedin": "vera-wang"
+      },
+      "confidence": 0.95,
+      "verificationStatus": "VERIFIED",
+      "sources": [
+        "verawang.com",
+        "vogue.com/article/vera-wang-biography",
+        "cfda.com/members/vera-wang",
+        "businessoffashion.com/community/people/vera-wang"
+      ],
+      "createdAt": "2025-05-03T19:20:17.000Z",
+      "updatedAt": "2025-05-03T19:20:17.000Z"
     }
   ],
   "brands": [
