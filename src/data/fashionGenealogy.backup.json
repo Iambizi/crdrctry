@@ -4739,6 +4739,406 @@
       ],
       "createdAt": "2025-04-12T14:30:00.000Z",
       "updatedAt": "2025-04-12T14:30:00.000Z"
+    },
+    {
+      "id": "21d9bef3-2083-4933-b435-329f13248c07",
+      "name": "James Mullen",
+      "birthYear": 1950,
+      "birthPlace": "Ireland",
+      "nationality": "Irish",
+      "education": [
+        "Business Studies"
+      ],
+      "specialties": [
+        "Menswear",
+        "Shirtmaking"
+      ],
+      "notableCollaborations": [
+        "LVMH Partnership (1999-2021)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.7,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-11",
+      "sources": [
+        "ft.com/content/a9b00fa6-c4f8-4a29-a1c8-95e25fc8731e",
+        "fashionnetwork.com/news/lvmh-sells-thomas-pink-shirtmaker-back-to-original-owners,1287042.html"
+      ],
+      "createdAt": "2025-04-11T14:30:00.000Z",
+      "updatedAt": "2025-04-11T14:30:00.000Z"
+    },
+    {
+      "id": "b65b2a45-a953-4680-849c-518050f9c47d",
+      "name": "Peter Mullen",
+      "birthYear": 1952,
+      "birthPlace": "Ireland",
+      "nationality": "Irish",
+      "education": [
+        "Business Studies"
+      ],
+      "specialties": [
+        "Menswear",
+        "Retail Strategy"
+      ],
+      "notableCollaborations": [
+        "LVMH Partnership (1999-2021)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.7,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-11",
+      "sources": [
+        "ft.com/content/a9b00fa6-c4f8-4a29-a1c8-95e25fc8731e",
+        "fashionnetwork.com/news/lvmh-sells-thomas-pink-shirtmaker-back-to-original-owners,1287042.html"
+      ],
+      "createdAt": "2025-04-11T14:30:00.000Z",
+      "updatedAt": "2025-04-11T14:30:00.000Z"
+    },
+    {
+      "id": "e5e1771c-c324-4224-a73c-19687bcacc40",
+      "name": "Marco Tomasetta",
+      "birthYear": 1982,
+      "birthPlace": "Italy",
+      "nationality": "Italian",
+      "education": [
+        "Istituto Europeo di Design, Milan"
+      ],
+      "specialties": [
+        "Leather Goods",
+        "Accessories",
+        "Luxury Design",
+        "Brand Strategy"
+      ],
+      "notableCollaborations": [
+        "Montblanc (2021-present)",
+        "Givenchy (2019-2021)",
+        "Prada (2016-2019)",
+        "Louis Vuitton (2014-2016)",
+        "Chloé (2011-2014)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "montblanc.com/press-releases/marco-tomasetta-creative-director",
+        "businessoffashion.com/articles/luxury/montblanc-appoints-marco-tomasetta-as-creative-director",
+        "wwd.com/accessories-news/leather-goods/montblanc-marco-tomasetta-creative-director-1234772745"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },
+    {
+      "id": "f18c8ec3-6d4f-49d7-8ae9-fe696199ff82",
+      "name": "Davide Cerrato",
+      "birthYear": 1972,
+      "birthPlace": "Turin, Italy",
+      "nationality": "Italian",
+      "education": [
+        "Politecnico di Torino"
+      ],
+      "specialties": [
+        "Watch Design",
+        "Luxury Timepieces",
+        "Product Development",
+        "Brand Strategy"
+      ],
+      "notableCollaborations": [
+        "Montblanc (2015-2021)",
+        "Tudor (2007-2015)",
+        "Panerai (2004-2007)"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "hodinkee.com/articles/davide-cerrato-montblanc-watches",
+        "watchtime.com/featured/interview-montblanc-watch-director-davide-cerrato",
+        "europastar.com/news/davide-cerrato-appointed-managing-director-montblanc-watches"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },
+    {
+      "id": "6900195d-eae9-44cd-8e7c-8c18aa2164ef",
+      "name": "Yves Piaget",
+      "birthYear": 1942,
+      "birthPlace": "La Côte-aux-Fées, Switzerland",
+      "nationality": "Swiss",
+      "education": [
+        "École d'Horlogerie de la Vallée de Joux"
+      ],
+      "specialties": [
+        "Watch Design",
+        "Jewelry Design",
+        "Luxury Brand Management",
+        "Watchmaking",
+        "High Jewelry"
+      ],
+      "notableCollaborations": [
+        "Piaget (1967-1999)",
+        "Piaget Rose Collection",
+        "Polo Watch Collection"
+      ],
+      "status": "INACTIVE",
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "piaget.com/history/yves-piaget-legacy",
+        "fondationdelahautehorlogerie.org/en/personalities/yves-piaget",
+        "watchtime.com/featured/interview-yves-piaget-heritage"
+      ],
+      "createdAt": "2025-04-09T04:23:03.224Z",
+      "updatedAt": "2025-04-09T04:23:03.224Z"
+    },
+    {
+      "id": "f3c735bf-aeda-42fa-bac4-8ed747334d5d",
+      "name": "Stéphanie Sivrière",
+      "birthYear": 1975,
+      "birthPlace": "Paris, France",
+      "nationality": "French",
+      "education": [
+        "École des Arts Décoratifs, Paris",
+        "École de la Chambre Syndicale de la Bijouterie"
+      ],
+      "specialties": [
+        "High Jewelry Design",
+        "Watch Design",
+        "Luxury Accessories",
+        "Gemology",
+        "Collection Development"
+      ],
+      "notableCollaborations": [
+        "Piaget (2016-present)",
+        "Sunny Side of Life Collection",
+        "Golden Oasis Collection",
+        "Wings of Light Collection"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "piaget.com/news/stephanie-sivriere-jewelry-design-director",
+        "luxurylondon.co.uk/watches/articles/stephanie-sivriere-piaget-interview",
+        "thejewelleryeditor.com/jewellery/piaget-golden-oasis-collection"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },
+    {
+      "id": "9af5a21b-35d0-4f37-9853-de1f293106a6",
+      "name": "Benjamin Comar",
+      "birthYear": 1970,
+      "birthPlace": "Geneva, Switzerland",
+      "nationality": "Swiss",
+      "education": [
+        "HEC Paris",
+        "École Supérieure d'Horlogerie de Genève"
+      ],
+      "specialties": [
+        "Watch Design",
+        "Product Development",
+        "Ultra-thin Movements",
+        "Luxury Marketing",
+        "Technical Innovation"
+      ],
+      "notableCollaborations": [
+        "Piaget (2010-present)",
+        "Altiplano Ultimate Concept",
+        "Polo Watch Collection",
+        "Emperador Coussin Series"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "piaget.com/about/benjamin-comar-watches",
+        "hodinkee.com/articles/interview-benjamin-comar-piaget",
+        "watchtime.com/featured/piaget-altiplano-ultimate-concept-development"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },
+    {
+      "id": "5360d91e-4d67-442c-9488-d9da9317a2a3",
+      "name": "Christian Knoop",
+      "birthYear": 1971,
+      "birthPlace": "Hamburg, Germany",
+      "nationality": "German",
+      "education": [
+        "University of Applied Sciences Hamburg, Industrial Design",
+        "Hochschule für Gestaltung Offenbach"
+      ],
+      "specialties": [
+        "Watch Design",
+        "Industrial Design",
+        "Product Development",
+        "Brand Identity",
+        "Luxury Timepieces"
+      ],
+      "notableCollaborations": [
+        "IWC Schaffhausen (2008-present)",
+        "Portugieser Collection Redesign",
+        "TOP GUN Ceramic Series",
+        "Pilot's Watch Collection",
+        "IWC 150th Anniversary Collection"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "iwc.com/en/company/christian-knoop",
+        "hodinkee.com/articles/interview-christian-knoop-iwc",
+        "watchtime.com/featured/iwc-creative-director-christian-knoop"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },
+    {
+      "id": "b4153c79-b77c-4c35-92f8-563c85fa6bac",
+      "name": "Kurt Klaus",
+      "birthYear": 1934,
+      "birthPlace": "Buochs, Switzerland",
+      "nationality": "Swiss",
+      "education": [
+        "École d'Horlogerie de Soleure",
+        "Swiss Watchmaking Institute"
+      ],
+      "specialties": [
+        "Watchmaking",
+        "Perpetual Calendar Design",
+        "Complex Complications",
+        "Movement Development",
+        "Technical Innovation"
+      ],
+      "notableCollaborations": [
+        "IWC Schaffhausen (1957-1999)",
+        "Da Vinci Perpetual Calendar",
+        "Il Destriero Scafusia",
+        "Grande Complication"
+      ],
+      "status": "INACTIVE",
+      "confidence": 0.95,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "iwc.com/en/history/kurt-klaus-legacy",
+        "hodinkee.com/articles/interview-kurt-klaus-iwc-legend",
+        "watchtime.com/featured/kurt-klaus-perpetual-calendar-revolution"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },
+    {
+      "id": "9d47ec1c-18f7-4171-9e0d-aafa700e1919",
+      "name": "Georges Kern",
+      "birthYear": 1965,
+      "birthPlace": "Düsseldorf, Germany",
+      "nationality": "German-Swiss",
+      "education": [
+        "University of St. Gallen, Business Administration",
+        "INSEAD Executive Program"
+      ],
+      "specialties": [
+        "Brand Management",
+        "Luxury Marketing",
+        "Product Strategy",
+        "Watch Industry",
+        "Brand Repositioning"
+      ],
+      "notableCollaborations": [
+        "IWC Schaffhausen (2002-2017)",
+        "Portugieser Collection",
+        "Pilot's Watch Collection",
+        "Ingenieur Collection"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "iwc.com/en/company/georges-kern-legacy",
+        "hodinkee.com/articles/georges-kern-iwc-transformation",
+        "businessoffashion.com/people/georges-kern"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },
+    {
+      "id": "86d7cdda-d52d-4a84-968e-b8284ead3bc8",
+      "name": "Janek Deleskiewicz",
+      "birthYear": 1954,
+      "birthPlace": "Paris, France",
+      "nationality": "French",
+      "education": [
+        "École Nationale Supérieure des Arts Décoratifs, Paris",
+        "École des Beaux-Arts, Paris"
+      ],
+      "specialties": [
+        "Watch Design",
+        "Art Deco Design",
+        "Complications",
+        "Technical Innovation",
+        "Heritage Reinterpretation"
+      ],
+      "notableCollaborations": [
+        "Jaeger-LeCoultre (1996-2009)",
+        "Master Control Collection",
+        "Reverso Art Deco Series",
+        "Master Compressor Line",
+        "Gyrotourbillon Development"
+      ],
+      "status": "INACTIVE",
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "jaeger-lecoultre.com/history/janek-deleskiewicz",
+        "hodinkee.com/articles/janek-deleskiewicz-jlc-legacy",
+        "watchtime.com/featured/interview-janek-deleskiewicz-artistic-vision"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
+    },{
+      "id": "d8c8c240-0949-4667-a5b8-afc11459a9ac",
+      "name": "Lionel Favre",
+      "birthYear": 1972,
+      "birthPlace": "Le Sentier, Switzerland",
+      "nationality": "Swiss",
+      "education": [
+        "École Cantonale d'Art de Lausanne",
+        "La Chaux-de-Fonds Watchmaking School"
+      ],
+      "specialties": [
+        "Watch Design",
+        "Product Development",
+        "Complications",
+        "Heritage Modernization",
+        "Women's Watches"
+      ],
+      "notableCollaborations": [
+        "Jaeger-LeCoultre (2010-present)",
+        "Master Ultra Thin Collection",
+        "Reverso Tribute Series",
+        "Polaris Collection Revival",
+        "Rendez-Vous Collection"
+      ],
+      "status": "ACTIVE",
+      "confidence": 0.9,
+      "verificationStatus": "VERIFIED",
+      "lastVerified": "2025-04-09",
+      "sources": [
+        "jaeger-lecoultre.com/about/lionel-favre",
+        "hodinkee.com/articles/interview-lionel-favre-jlc",
+        "watchtime.com/featured/jaeger-lecoultre-design-director-lionel-favre"
+      ],
+      "createdAt": "2025-04-09T04:15:24.842Z",
+      "updatedAt": "2025-04-09T04:15:24.842Z"
     }
   ],
   "brands": [
@@ -8251,126 +8651,6 @@
         "artemis.com/portfolio/giambattista-valli"
       ],
       "lastVerified": "2025-04-12"
-    },
-    {
-      "id": "21d9bef3-2083-4933-b435-329f13248c07",
-      "name": "James Mullen",
-      "birthYear": 1950,
-      "birthPlace": "Ireland",
-      "nationality": "Irish",
-      "education": [
-        "Business Studies"
-      ],
-      "specialties": [
-        "Menswear",
-        "Shirtmaking"
-      ],
-      "notableCollaborations": [
-        "LVMH Partnership (1999-2021)"
-      ],
-      "status": "ACTIVE",
-      "confidence": 0.7,
-      "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-11",
-      "sources": [
-        "ft.com/content/a9b00fa6-c4f8-4a29-a1c8-95e25fc8731e",
-        "fashionnetwork.com/news/lvmh-sells-thomas-pink-shirtmaker-back-to-original-owners,1287042.html"
-      ],
-      "createdAt": "2025-04-11T14:30:00.000Z",
-      "updatedAt": "2025-04-11T14:30:00.000Z"
-    },
-    {
-      "id": "b65b2a45-a953-4680-849c-518050f9c47d",
-      "name": "Peter Mullen",
-      "birthYear": 1952,
-      "birthPlace": "Ireland",
-      "nationality": "Irish",
-      "education": [
-        "Business Studies"
-      ],
-      "specialties": [
-        "Menswear",
-        "Retail Strategy"
-      ],
-      "notableCollaborations": [
-        "LVMH Partnership (1999-2021)"
-      ],
-      "status": "ACTIVE",
-      "confidence": 0.7,
-      "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-11",
-      "sources": [
-        "ft.com/content/a9b00fa6-c4f8-4a29-a1c8-95e25fc8731e",
-        "fashionnetwork.com/news/lvmh-sells-thomas-pink-shirtmaker-back-to-original-owners,1287042.html"
-      ],
-      "createdAt": "2025-04-11T14:30:00.000Z",
-      "updatedAt": "2025-04-11T14:30:00.000Z"
-    },
-    {
-      "id": "e5e1771c-c324-4224-a73c-19687bcacc40",
-      "name": "Marco Tomasetta",
-      "birthYear": 1982,
-      "birthPlace": "Italy",
-      "nationality": "Italian",
-      "education": [
-        "Istituto Europeo di Design, Milan"
-      ],
-      "specialties": [
-        "Leather Goods",
-        "Accessories",
-        "Luxury Design",
-        "Brand Strategy"
-      ],
-      "notableCollaborations": [
-        "Montblanc (2021-present)",
-        "Givenchy (2019-2021)",
-        "Prada (2016-2019)",
-        "Louis Vuitton (2014-2016)",
-        "Chloé (2011-2014)"
-      ],
-      "status": "ACTIVE",
-      "confidence": 0.85,
-      "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-09",
-      "sources": [
-        "montblanc.com/press-releases/marco-tomasetta-creative-director",
-        "businessoffashion.com/articles/luxury/montblanc-appoints-marco-tomasetta-as-creative-director",
-        "wwd.com/accessories-news/leather-goods/montblanc-marco-tomasetta-creative-director-1234772745"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
-    },
-    {
-      "id": "f18c8ec3-6d4f-49d7-8ae9-fe696199ff82",
-      "name": "Davide Cerrato",
-      "birthYear": 1972,
-      "birthPlace": "Turin, Italy",
-      "nationality": "Italian",
-      "education": [
-        "Politecnico di Torino"
-      ],
-      "specialties": [
-        "Watch Design",
-        "Luxury Timepieces",
-        "Product Development",
-        "Brand Strategy"
-      ],
-      "notableCollaborations": [
-        "Montblanc (2015-2021)",
-        "Tudor (2007-2015)",
-        "Panerai (2004-2007)"
-      ],
-      "status": "ACTIVE",
-      "confidence": 0.85,
-      "verificationStatus": "VERIFIED",
-      "lastVerified": "2025-04-09",
-      "sources": [
-        "hodinkee.com/articles/davide-cerrato-montblanc-watches",
-        "watchtime.com/featured/interview-montblanc-watch-director-davide-cerrato",
-        "europastar.com/news/davide-cerrato-appointed-managing-director-montblanc-watches"
-      ],
-      "createdAt": "2025-04-09T04:15:24.842Z",
-      "updatedAt": "2025-04-09T04:15:24.842Z"
     }
   ],
   "tenures": [
