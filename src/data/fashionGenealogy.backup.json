@@ -5435,39 +5435,6 @@
       "updatedAt": "2025-05-03T19:20:17.000Z"
     },
     {
-      "id": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
-      "name": "Preston Konrad",
-      "currentRole": "Creative Director of Brand",
-      "isActive": true,
-      "status": "ACTIVE",
-      "biography": "Preston Konrad is a fashion industry veteran and creative director known for his work in brand development and digital strategy. With a background in luxury retail and styling, he has become a prominent voice in fashion direction and digital content creation.",
-      "nationality": "American",
-      "birthYear": 1985,
-      "education": [
-        "Fashion Institute of Technology"
-      ],
-      "specialties": [
-        "Brand Direction",
-        "Digital Strategy",
-        "Creative Direction",
-        "Content Creation",
-        "Styling"
-      ],
-      "socialMedia": {
-        "instagram": "prestonkonrad",
-        "linkedin": "preston-konrad"
-      },
-      "confidence": 0.85,
-      "verificationStatus": "PENDING",
-      "sources": [
-        "linkedin.com/in/preston-konrad",
-        "instagram.com/prestonkonrad"
-      ],
-      "lastVerified": "2025-05-03",
-      "createdAt": "2025-05-03T19:55:06.000Z",
-      "updatedAt": "2025-05-03T19:55:06.000Z"
-    },
-    {
       "id": "238d1664-707c-45e6-9d21-d0576a5e5130",
       "name": "Ralph Lauren",
       "currentRole": "Executive Chairman and Chief Creative Officer at Ralph Lauren Corporation",
@@ -24828,39 +24795,6 @@
       "department": "All Departments"
     },
     {
-      "id": "3e632026-91b8-4216-920d-73e9ea02cb60",
-      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-      "role": "Artistic Director",
-      "department": "All Categories",
-      "startYear": 2025,
-      "isCurrentRole": false,
-      "achievements": [
-        "Appointed as Gucci's new Artistic Director",
-        "First collection debut pending"
-      ],
-      "createdAt": "2025-04-12T01:35:40.293Z",
-      "updatedAt": "2025-04-12T01:35:40.296Z",
-      "endYear": 2025
-    },
-    {
-      "id": "60f44891-ea9a-4d5a-a9a1-9346af85b16a",
-      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-      "role": "Artistic Director",
-      "department": "All Categories",
-      "startYear": 2025,
-      "isCurrentRole": false,
-      "achievements": [
-        "Appointed as Gucci's new Artistic Director",
-        "First collection debut pending",
-        "Tasked with reinventing Gucci's aesthetic"
-      ],
-      "createdAt": "2025-04-12T01:47:31.919Z",
-      "updatedAt": "2025-04-12T01:47:31.920Z",
-      "endYear": 2025
-    },
-    {
       "id": "8f3b56ed-109f-4c1d-892e-0aeb062c7e60",
       "brandId": "6c44cbf2-8571-4dbe-9c85-b74751f4913c",
       "designerId": "5cd5d94f-61c1-4c0c-9580-4de0bd8c9feb",
@@ -24875,23 +24809,6 @@
       ],
       "createdAt": "2025-04-12T01:47:31.920Z",
       "updatedAt": "2025-04-12T01:47:31.920Z"
-    },
-    {
-      "id": "7f09e5a7-9383-4200-947e-e18fab0c12e6",
-      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-      "role": "Artistic Director",
-      "department": "All Departments",
-      "startYear": 2025,
-      "isCurrentRole": false,
-      "achievements": [
-        "Appointed as Gucci's new Artistic Director",
-        "First collection debut pending",
-        "Tasked with reinventing Gucci's aesthetic"
-      ],
-      "createdAt": "2025-04-12T01:49:48.138Z",
-      "updatedAt": "2025-04-12T01:49:48.138Z",
-      "endYear": 2025
     },
     {
       "id": "8e70a737-13a2-4324-b9c1-ee15a69e89c2",
@@ -24909,23 +24826,6 @@
       ],
       "createdAt": "2025-04-12T01:49:48.139Z",
       "updatedAt": "2025-04-12T01:49:48.139Z"
-    },
-    {
-      "id": "f31e8a4f-d913-4b55-89e7-c83306790280",
-      "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-      "role": "Artistic Director",
-      "department": "All Departments",
-      "startYear": 2025,
-      "isCurrentRole": false,
-      "achievements": [
-        "Appointed as Gucci's new Artistic Director",
-        "First collection debut pending",
-        "Tasked with reinventing Gucci's aesthetic"
-      ],
-      "createdAt": "2025-04-12T01:50:23.599Z",
-      "updatedAt": "2025-04-12T01:50:23.599Z",
-      "endYear": 2025
     },
     {
       "id": "b1e506ba-973f-47c1-a898-ed29c99d2027",
@@ -24964,7 +24864,7 @@
     {
       "id": "0db18dc1-3ec5-41ee-a589-93fef0ce32f8",
       "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-      "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
+      "designerId": "efdd7c16-7cf8-4e35-a378-d45d9fd94a01",
       "role": "Creative Director",
       "department": "All Departments",
       "startYear": 2025,
@@ -25156,7 +25056,7 @@
     },
     {
       "id": "tnr-12",
-      "designerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "designerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
       "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "role": "Creative Director of Brand",
       "department": "All Departments",
@@ -25202,9 +25102,9 @@
     },
     {
       "id": "tnr-bc-001",
-      "designerId": "12f1bc1f-2674-456c-84aa-a7cdac32f31e",
+      "designerId": "b65b2a45-a953-4680-849c-518050f9c47d",
       "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
-      "role": "Founding Design Director",
+      "role": "Creative Director",
       "department": "Menswear",
       "startYear": 1984,
       "endYear": 2004,
@@ -26256,7 +26156,7 @@
     {
       "id": "rel-9",
       "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-      "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "targetDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
       "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
       "type": "collaboration",
       "startYear": 2016,
@@ -26367,7 +26267,7 @@
     {
       "id": "rel-18",
       "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-      "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "targetDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
       "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "type": "collaboration",
       "startYear": 2016,
