@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-05-03T21:07:47.491Z",
+  "timestamp": "2025-05-03T21:39:37.181Z",
   "nonUuidEntities": {
     "brands": [],
     "designers": [],
@@ -9,138 +9,7 @@
   "invalidReferences": {
     "tenures": [
       {
-        "index": 1163,
-        "tenure": {
-          "id": "3e632026-91b8-4216-920d-73e9ea02cb60",
-          "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-          "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-          "role": "Artistic Director",
-          "department": "All Categories",
-          "startYear": 2025,
-          "isCurrentRole": false,
-          "achievements": [
-            "Appointed as Gucci's new Artistic Director",
-            "First collection debut pending"
-          ],
-          "createdAt": "2025-04-12T01:35:40.293Z",
-          "updatedAt": "2025-04-12T01:35:40.296Z",
-          "endYear": 2025
-        }
-      },
-      {
-        "index": 1164,
-        "tenure": {
-          "id": "60f44891-ea9a-4d5a-a9a1-9346af85b16a",
-          "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-          "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-          "role": "Artistic Director",
-          "department": "All Categories",
-          "startYear": 2025,
-          "isCurrentRole": false,
-          "achievements": [
-            "Appointed as Gucci's new Artistic Director",
-            "First collection debut pending",
-            "Tasked with reinventing Gucci's aesthetic"
-          ],
-          "createdAt": "2025-04-12T01:47:31.919Z",
-          "updatedAt": "2025-04-12T01:47:31.920Z",
-          "endYear": 2025
-        }
-      },
-      {
-        "index": 1166,
-        "tenure": {
-          "id": "7f09e5a7-9383-4200-947e-e18fab0c12e6",
-          "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-          "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-          "role": "Artistic Director",
-          "department": "All Departments",
-          "startYear": 2025,
-          "isCurrentRole": false,
-          "achievements": [
-            "Appointed as Gucci's new Artistic Director",
-            "First collection debut pending",
-            "Tasked with reinventing Gucci's aesthetic"
-          ],
-          "createdAt": "2025-04-12T01:49:48.138Z",
-          "updatedAt": "2025-04-12T01:49:48.138Z",
-          "endYear": 2025
-        }
-      },
-      {
-        "index": 1168,
-        "tenure": {
-          "id": "f31e8a4f-d913-4b55-89e7-c83306790280",
-          "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-          "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-          "role": "Artistic Director",
-          "department": "All Departments",
-          "startYear": 2025,
-          "isCurrentRole": false,
-          "achievements": [
-            "Appointed as Gucci's new Artistic Director",
-            "First collection debut pending",
-            "Tasked with reinventing Gucci's aesthetic"
-          ],
-          "createdAt": "2025-04-12T01:50:23.599Z",
-          "updatedAt": "2025-04-12T01:50:23.599Z",
-          "endYear": 2025
-        }
-      },
-      {
-        "index": 1171,
-        "tenure": {
-          "id": "0db18dc1-3ec5-41ee-a589-93fef0ce32f8",
-          "brandId": "c625ccb7-3f02-4dd3-b085-72b6fbc68ce8",
-          "designerId": "da882a42-0199-4c57-9fe9-47bcd4684c7a",
-          "role": "Creative Director",
-          "department": "All Departments",
-          "startYear": 2025,
-          "isCurrentRole": true,
-          "achievements": [
-            "Appointed as Creative Director of Gucci in January 2025",
-            "First collection to be presented in September 2025"
-          ],
-          "createdAt": "2025-04-12T01:55:32.066Z",
-          "updatedAt": "2025-04-12T01:55:32.066Z"
-        }
-      },
-      {
-        "index": 1186,
-        "tenure": {
-          "id": "tnr-12",
-          "designerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
-          "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
-          "role": "Creative Director of Brand",
-          "department": "All Departments",
-          "startYear": 2016,
-          "isCurrentRole": true,
-          "createdAt": "2025-04-12T14:30:00.000Z",
-          "updatedAt": "2025-04-12T14:30:00.000Z"
-        }
-      },
-      {
-        "index": 1187,
-        "tenure": {
-          "id": "tnr-hist-004",
-          "designerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
-          "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
-          "role": "Founder and Chief Creative Officer",
-          "department": "All Departments",
-          "startYear": 1967,
-          "endYear": 2015,
-          "isCurrentRole": false,
-          "achievements": [
-            "Built global luxury lifestyle brand",
-            "Pioneered American sportswear",
-            "Established iconic Polo brand"
-          ],
-          "createdAt": "2025-04-12T14:30:00.000Z",
-          "updatedAt": "2025-04-12T14:30:00.000Z"
-        }
-      },
-      {
-        "index": 1188,
+        "index": 1184,
         "tenure": {
           "id": "tnr-gv-001",
           "designerId": "e5cb3f42-8d16-4ac5-b927-f3d901e58a24",
@@ -161,7 +30,7 @@
         }
       },
       {
-        "index": 1189,
+        "index": 1185,
         "tenure": {
           "id": "tnr-bc-001",
           "designerId": "5e9feab1-c688-4e37-b74e-9f522f9f5ea5",
@@ -182,121 +51,6 @@
         }
       }
     ],
-    "relationships": [
-      {
-        "index": 91,
-        "relationship": {
-          "id": "rel-8",
-          "sourceDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
-          "targetDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-          "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
-          "type": "mentorship",
-          "startYear": 1987,
-          "endYear": 1989,
-          "description": "Wang worked as design director at Ralph Lauren before founding her own company",
-          "confidence": 0.9,
-          "createdAt": "2025-04-12T14:30:00Z",
-          "updatedAt": "2025-04-12T14:30:00Z",
-          "collaborationProjects": [
-            "Ralph Lauren womenswear collections"
-          ]
-        }
-      },
-      {
-        "index": 92,
-        "relationship": {
-          "id": "rel-9",
-          "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-          "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
-          "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
-          "type": "collaboration",
-          "startYear": 2016,
-          "endYear": null,
-          "description": "Creative partnership focusing on brand identity and visual direction",
-          "confidence": 0.9,
-          "createdAt": "2025-04-12T14:30:00Z",
-          "updatedAt": "2025-04-12T14:30:00Z",
-          "collaborationProjects": [
-            "Brand identity refresh",
-            "Digital strategy"
-          ]
-        }
-      },
-      {
-        "index": 94,
-        "relationship": {
-          "id": "rel-11",
-          "sourceDesignerId": "1424ea9f-28f7-4661-b799-285914e5175c",
-          "targetDesignerId": "c56a11ea-6b3a-4606-9436-87c216e443c2",
-          "brandId": "7cfcf27a-878a-4623-90fc-d5d493985575",
-          "type": "mentorship",
-          "startYear": 1997,
-          "endYear": 2001,
-          "description": "Giambattista Valli served as Art Director at Lacroix before establishing his own couture house",
-          "createdAt": "2025-04-12T04:54:38.130Z",
-          "updatedAt": "2025-04-12T04:54:38.130Z",
-          "collaborationProjects": [
-            "Ready-to-wear collections",
-            "Jeans line"
-          ]
-        }
-      },
-      {
-        "index": 95,
-        "relationship": {
-          "id": "rel-14",
-          "sourceDesignerId": "21d9bef3-2083-4933-b435-329f13248c07",
-          "targetDesignerId": "2e87d560-a7e5-4387-8386-2707f6b8f5d6",
-          "brandId": "7c4dfce9-65b1-4686-b0c8-3822ee4b40db",
-          "type": "familial",
-          "startYear": 1984,
-          "endYear": 1999,
-          "description": "James and Peter Mullen were brothers who co-founded Thomas Pink and established its design aesthetic",
-          "createdAt": "2025-04-12T04:54:38.131Z",
-          "updatedAt": "2025-04-12T04:54:38.131Z",
-          "collaborationProjects": [
-            "Original shirt designs",
-            "Jermyn Street store concept"
-          ]
-        }
-      },
-      {
-        "index": 98,
-        "relationship": {
-          "id": "rel-17",
-          "sourceDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
-          "targetDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-          "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
-          "type": "mentorship",
-          "startYear": 1987,
-          "endYear": 1989,
-          "description": "Wang worked as design director at Ralph Lauren before founding her own company",
-          "createdAt": "2025-04-12T04:54:38.132Z",
-          "updatedAt": "2025-04-12T04:54:38.132Z",
-          "collaborationProjects": [
-            "Ralph Lauren womenswear collections"
-          ]
-        }
-      },
-      {
-        "index": 99,
-        "relationship": {
-          "id": "rel-18",
-          "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-          "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
-          "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
-          "type": "collaboration",
-          "startYear": 2016,
-          "endYear": null,
-          "description": "Creative partnership focusing on brand identity and visual direction",
-          "createdAt": "2025-04-12T04:54:38.132Z",
-          "updatedAt": "2025-04-12T04:54:38.132Z",
-          "collaborationProjects": [
-            "Brand identity refresh",
-            "Digital strategy"
-          ]
-        }
-      }
-    ]
+    "relationships": []
   }
 }
