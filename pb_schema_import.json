@@ -39,7 +39,7 @@
           "type": "number",
           "system": false,
           "required": false,
-          "min": 1800,
+          "min": 1500,
           "noDecimal": true
         },
         {
@@ -48,7 +48,7 @@
           "type": "number",
           "system": false,
           "required": false,
-          "min": 1800,
+          "min": 1500,
           "noDecimal": true
         },
         {
@@ -95,7 +95,7 @@
           "type": "select",
           "system": false,
           "required": true,
-          "values": ["ACTIVE", "RETIRED", "DECEASED"]
+          "values": ["ACTIVE", "INACTIVE", "RETIRED", "DECEASED"]
         },
         {
           "id": "field_verificationStatus",
@@ -159,8 +159,8 @@
           "name": "foundedYear",
           "type": "number",
           "system": false,
-          "required": false,
-          "min": 1800,
+          "required": true,
+          "min": 1500,
           "noDecimal": true
         },
         {
@@ -360,12 +360,22 @@
           "pattern": ""
         },
         {
+          "id": "field_department",
+          "name": "department",
+          "type": "text",
+          "system": false,
+          "required": false,
+          "min": 0,
+          "max": 255,
+          "pattern": ""
+        },
+        {
           "id": "field_startYear",
           "name": "startYear",
           "type": "number",
           "system": false,
-          "required": true,
-          "min": 1800,
+          "required": false,
+          "min": 1500,
           "noDecimal": true
         },
         {
@@ -374,13 +384,41 @@
           "type": "number",
           "system": false,
           "required": false,
-          "min": 1800,
+          "min": 1500,
           "noDecimal": true
+        },
+        {
+          "id": "field_isCurrentRole",
+          "name": "isCurrentRole",
+          "type": "bool",
+          "system": false,
+          "required": false
         },
         {
           "id": "field_achievements",
           "name": "achievements",
           "type": "json",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "field_notableWorks",
+          "name": "notableWorks",
+          "type": "json",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "field_notableCollections",
+          "name": "notableCollections",
+          "type": "json",
+          "system": false,
+          "required": false
+        },
+        {
+          "id": "field_impactDescription",
+          "name": "impactDescription",
+          "type": "editor",
           "system": false,
           "required": false
         },
@@ -391,22 +429,6 @@
           "system": false,
           "required": true,
           "values": ["VERIFIED", "UNVERIFIED", "PENDING"]
-        },
-        {
-          "id": "field_confidence",
-          "name": "confidence",
-          "type": "number",
-          "system": false,
-          "required": false,
-          "min": 0,
-          "max": 1
-        },
-        {
-          "id": "field_sources",
-          "name": "sources",
-          "type": "json",
-          "system": false,
-          "required": false
         }
       ],
       "listRule": "",

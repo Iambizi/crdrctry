@@ -1,4 +1,4 @@
-import { Brand as BaseBrand, Designer as BaseDesigner, Tenure as BaseTenure, Relationship as BaseRelationship, Department, RelationshipType, DesignerStatus } from '../../types/fashion';
+import { Brand as BaseBrand, Designer as BaseDesigner, Tenure as BaseTenure, Relationship as BaseRelationship, Department, RelationshipType, DesignerStatus, VerificationStatus } from '../../types/fashion';
 
 // Base type for PocketBase records
 interface BaseRecord {
@@ -18,6 +18,7 @@ export interface Designer extends Omit<BaseDesigner, keyof BaseRecord> {
   collectionName: "fd_designers";
   name: string;
   status: DesignerStatus;
+  verificationStatus: VerificationStatus;
   isActive: boolean;
   currentRole?: string;
   biography?: string;
@@ -47,6 +48,7 @@ export interface Brand extends Omit<BaseBrand, keyof BaseRecord> {
   website?: string;
   socialMedia?: Record<string, string>;
   logoUrl?: string;
+  verificationStatus: VerificationStatus;
 }
 
 export interface Tenure extends Omit<BaseTenure, keyof BaseRecord> {
@@ -66,6 +68,7 @@ export interface Tenure extends Omit<BaseTenure, keyof BaseRecord> {
   notableWorks?: string[];
   notableCollections?: string[];
   impactDescription?: string;
+  verificationStatus: VerificationStatus;
 }
 
 export interface Relationship extends Omit<BaseRelationship, keyof BaseRecord> {
@@ -82,6 +85,7 @@ export interface Relationship extends Omit<BaseRelationship, keyof BaseRecord> {
   endYear?: number;
   description?: string;
   collaborationProjects?: string[];
+  verificationStatus: VerificationStatus;
 }
 
 // Type helper for creating new records - omit PocketBase system fields
@@ -99,6 +103,7 @@ export type CreateTenure = {
   notableWorks?: string[];
   notableCollections?: string[];
   impactDescription?: string;
+  verificationStatus: VerificationStatus;
 };
 
 export type CreateRelationship = {
@@ -110,7 +115,8 @@ export type CreateRelationship = {
   endYear?: number;
   description?: string;
   collaborationProjects?: string[];
+  verificationStatus: VerificationStatus;
 };
 
 // Re-export types from fashion.ts for convenience
-export { Department, RelationshipType, DesignerStatus };
+export { Department, RelationshipType, DesignerStatus, VerificationStatus };

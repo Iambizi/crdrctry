@@ -50,6 +50,7 @@
     "@types/node": "^22.14.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "chalk": "^5.4.1",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
     "ts-node": "^10.9.2",

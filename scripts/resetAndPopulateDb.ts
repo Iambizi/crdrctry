@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 
 // Import our source of truth types
-import { CreateDesigner, CreateBrand, CreateTenure, CreateRelationship, DesignerStatus, Department, RelationshipType } from '../src/database/types/types';
+import { CreateDesigner, CreateBrand, CreateTenure, CreateRelationship, DesignerStatus, Department, RelationshipType, VerificationStatus } from '../src/database/types/types';
 import { FashionGenealogyData } from '../src/types/fashion';
 
 // Load environment variables
@@ -78,7 +78,13 @@ async function main() {
 
     // Load the fashion genealogy data
     const dataPath = join(__dirname, '../src/data/fashionGenealogy.json');
-    const data = JSON.parse(readFileSync(dataPath, 'utf-8')) as FashionGenealogyData;
+    const data: FashionGenealogyData = JSON.parse(readFileSync(dataPath, 'utf-8'));
+
+    console.log(`\nSource data counts:`);
+    console.log(`Brands: ${data.brands.length}`);
+    console.log(`Designers: ${data.designers.length}`);
+    console.log(`Tenures: ${data.tenures.length}`);
+    console.log(`Relationships: ${data.relationships.length}\n`);
 
     // Transform and extract data
     const brandsToCreate = new Map<string, CreateBrand>();
@@ -111,7 +117,8 @@ async function main() {
         category: category as 'luxury_fashion' | 'design_studio' | 'collaboration_line' | 'historical_retail' | 'designer_label' | 'educational_institution' | 'collaboration_partner',
         website: brand.website || '',
         socialMedia: brand.socialMedia || {},
-        logoUrl: brand.logoUrl || ''
+        logoUrl: brand.logoUrl || '',
+        verificationStatus: VerificationStatus.verified // Add required field
       });
     }
 
@@ -130,21 +137,38 @@ async function main() {
         awards: designer.awards || [],
         education: designer.education || [],
         signatureStyles: designer.signatureStyles || [],
-        socialMedia: designer.socialMedia || {}
+        socialMedia: designer.socialMedia || {},
+        verificationStatus: VerificationStatus.verified // Add required field
       });
     }
+
+    // Store brand and designer names for logging
+    const brandNames = Array.from(brandsToCreate.keys()).sort();
+    const designerNames = designers.map(d => d.name).sort();
+
+    console.log(`Brand names (${brandNames.length}):`);
+    console.log(brandNames.join('\n'));
+    console.log(`\nDesigner names (${designerNames.length}):`);
+    console.log(designerNames.join('\n'));
 
     // Populate brands and designers first to get their IDs
     const brandIdMap = await populateCollection('fd_brands', Array.from(brandsToCreate.values()));
     const designerIdMap = await populateCollection('fd_designers', designers);
 
     // Process tenures with the new IDs
+    console.log(`\nProcessing ${data.tenures.length} tenures...`);
+    let missingDesignerCount = 0;
+    let missingBrandCount = 0;
+    let missingIdCount = 0;
+
     for (const tenure of data.tenures) {
       const designer = data.designers.find(d => d.id === tenure.designerId);
       const brand = data.brands.find(b => b.id === tenure.brandId);
 
       if (!designer || !brand) {
-        console.warn(`⚠️  Skipping tenure: missing designer or brand reference`);
+        console.warn(`⚠️  Skipping tenure: missing ${!designer ? 'designer' : 'brand'} reference`);
+        if (!designer) missingDesignerCount++;
+        if (!brand) missingBrandCount++;
         continue;
       }
 
@@ -152,7 +176,8 @@ async function main() {
       const brandId = brandIdMap.get(brand.name);
 
       if (!designerId || !brandId) {
-        console.warn(`⚠️  Skipping tenure: could not find new IDs for ${designer.name} or ${brand.name}`);
+        console.warn(`⚠️  Skipping tenure: could not find new IDs for ${designer.name} at ${brand.name}`);
+        missingIdCount++;
         continue;
       }
 
@@ -167,9 +192,17 @@ async function main() {
         achievements: tenure.achievements || [],
         notableWorks: tenure.notableWorks || [],
         notableCollections: tenure.notableCollections || [],
-        impactDescription: tenure.impactDescription || ''
+        impactDescription: tenure.impactDescription || '',
+        verificationStatus: VerificationStatus.verified
       });
     }
+
+    console.log(`\nTenure processing summary:`)
+    console.log(`Total tenures in source data: ${data.tenures.length}`);
+    console.log(`Skipped due to missing designer: ${missingDesignerCount}`);
+    console.log(`Skipped due to missing brand: ${missingBrandCount}`);
+    console.log(`Skipped due to missing new IDs: ${missingIdCount}`);
+    console.log(`Total tenures to create: ${tenures.length}`);
 
     // Process relationships with the new IDs
     for (const relationship of data.relationships) {
@@ -199,7 +232,8 @@ async function main() {
         startYear: relationship.startYear,
         endYear: relationship.endYear,
         description: relationship.description || '',
-        collaborationProjects: relationship.collaborationProjects || []
+        collaborationProjects: relationship.collaborationProjects || [],
+        verificationStatus: VerificationStatus.verified
       });
     }
 
