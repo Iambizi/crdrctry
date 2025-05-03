@@ -25056,7 +25056,7 @@
     },
     {
       "id": "tnr-12",
-      "designerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "designerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
       "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "role": "Creative Director of Brand",
       "department": "All Departments",
@@ -26156,7 +26156,7 @@
     {
       "id": "rel-9",
       "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-      "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "targetDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
       "brandId": "49c7458d-ff31-452e-987c-a4debd9870a7",
       "type": "collaboration",
       "startYear": 2016,
@@ -26267,7 +26267,7 @@
     {
       "id": "rel-18",
       "sourceDesignerId": "4a7c1e6b-811e-4519-81d5-254015c68b85",
-      "targetDesignerId": "3d2438e7-2e4b-48a7-9915-0df84e78b487",
+      "targetDesignerId": "238d1664-707c-45e6-9d21-d0576a5e5130",
       "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
       "type": "collaboration",
       "startYear": 2016,
