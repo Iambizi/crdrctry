@@ -1,12 +1,12 @@
-import PocketBase, { ClientResponseError } from 'pocketbase';
+import PocketBase from 'pocketbase';
 import { readFileSync } from 'fs';
-import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 import dotenv from 'dotenv';
 
 // Import our source of truth types
-import { CreateDesigner, CreateBrand, CreateTenure, CreateRelationship, DesignerStatus, Department, RelationshipType, VerificationStatus } from '../src/database/types/types';
-import { FashionGenealogyData } from '../src/types/fashion';
+import { CreateDesigner, CreateBrand, CreateTenure, CreateRelationship, Department, RelationshipType } from '../src/database/types/types';
+import { FashionGenealogyData, DesignerStatus, VerificationStatus } from '../src/types/fashion';
 
 // Load environment variables
 dotenv.config();
@@ -17,20 +17,28 @@ const __dirname = dirname(__filename);
 // Initialize PocketBase
 const pb = new PocketBase(process.env.POCKETBASE_URL);
 
-async function populateCollection<T extends Record<string, unknown>>(collectionName: string, data: T[]) {
-  console.log(`\n📥 Populating ${collectionName}...`);
+async function populateCollection<T extends Record<string, unknown>>(
+  pb: PocketBase,
+  collectionName: string,
+  data: T[],
+  createdRecords: Map<string, string>,
+  nameToOriginalIdMap: Map<string, string>
+): Promise<Map<string, string>> {
   try {
-    const createdRecords = new Map<string, string>();
-    const nameToOriginalIdMap = new Map<string, string>();
+    console.log(`\n📥 Populating ${collectionName}...`);
 
     for (const item of data) {
       try {
-        console.log('Inserting item:', JSON.stringify(item, null, 2));
+        console.log(`Creating ${collectionName} item:`, JSON.stringify(item, null, 2));
         const record = await pb.collection(collectionName).create(item);
         
         // Store the mapping between name and new ID for brands and designers
         if ('name' in item && typeof item.name === 'string') {
           createdRecords.set(item.name, record.id);
+          if (collectionName === 'fd_brands') {
+            const brandItem = item as unknown as { id?: string, name: string };
+            nameToOriginalIdMap.set(brandItem.name, brandItem.id || '');
+          }
         }
 
         // Store mapping between original ID and new ID if available
@@ -38,25 +46,19 @@ async function populateCollection<T extends Record<string, unknown>>(collectionN
           nameToOriginalIdMap.set(item.id, record.id);
         }
 
-        process.stdout.write('.');
+        process.stdout.write('✓');
       } catch (error) {
-        if (error instanceof ClientResponseError && error.response?.data?.name?.code === 'validation_not_unique') {
-          const itemName = 'name' in item && typeof item.name === 'string' ? item.name : 'unknown';
-          console.warn(`⚠️  Duplicate name found for ${itemName}, skipping...`);
-          // If this is a duplicate, try to get the existing record's ID
-          try {
-            const existingRecords = await pb.collection(collectionName).getList(1, 1, {
-              filter: `name = "${itemName}"`
-            });
-            if (existingRecords.items.length > 0) {
-              createdRecords.set(itemName, existingRecords.items[0].id);
-            }
-          } catch (lookupError) {
-            console.error(`❌ Error looking up existing record:`, lookupError);
-          }
+        console.error(`\n❌ Error creating ${collectionName} item:`, item);
+        if (error instanceof Error) {
+          console.error('Error details:', {
+            message: error.message,
+            name: error.name,
+            stack: error.stack
+          });
         } else {
-          throw error;
+          console.error('Unknown error:', error);
         }
+        process.stdout.write('X');
       }
     }
     console.log('\n✅ Population complete');
@@ -152,8 +154,8 @@ async function main() {
     console.log(designerNames.join('\n'));
 
     // Populate brands and designers first to get their IDs
-    const brandIdMap = await populateCollection('fd_brands', Array.from(brandsToCreate.values()));
-    const designerIdMap = await populateCollection('fd_designers', designers);
+    const brandIdMap = await populateCollection(pb, 'fd_brands', Array.from(brandsToCreate.values()), new Map<string, string>(), new Map<string, string>());
+    const designerIdMap = await populateCollection(pb, 'fd_designers', designers, new Map<string, string>(), new Map<string, string>());
 
     // Process tenures with the new IDs
     console.log(`\nProcessing ${data.tenures.length} tenures...`);
@@ -238,8 +240,8 @@ async function main() {
     }
 
     // Populate tenures and relationships
-    await populateCollection('fd_tenures', tenures);
-    await populateCollection('fd_relationships', relationships);
+    await populateCollection(pb, 'fd_tenures', tenures, new Map<string, string>(), new Map<string, string>());
+    await populateCollection(pb, 'fd_relationships', relationships, new Map<string, string>(), new Map<string, string>());
 
     console.log('\n🎉 Database population complete!');
   } catch (error) {

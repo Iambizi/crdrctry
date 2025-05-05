@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-05-05T02:30:48.945Z",
+  "nonUuidEntities": {
+    "brands": [],
+    "designers": [],
+    "tenures": [],
+    "relationships": []
+  },
+  "invalidReferences": {
+    "tenures": [],
+    "relationships": []
+  }
+}
