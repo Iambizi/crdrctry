@@ -3919,35 +3919,34 @@
     {
       "id": "1e5da919-faab-4484-a54c-8f1ce82d5b5d",
       "name": "Sarah Burton",
-      "status": "ACTIVE",
+      "currentRole": "Creative Director at Sarah Burton Studio",
       "isActive": true,
-      "createdAt": "2025-04-09T02:53:33.927Z",
-      "updatedAt": "2025-04-09T02:53:33.927Z",
+      "status": "ACTIVE",
+      "biography": "Sarah Burton served as Design Director of Ready-to-Wear at Vera Wang from 2012 to 2020, where she played a crucial role in developing the brand's contemporary ready-to-wear collections. Her work combined Vera Wang's signature romantic aesthetics with modern sensibilities, contributing to the brand's expansion in the ready-to-wear market.",
       "nationality": "British",
       "birthYear": 1974,
-      "currentRole": "Former Creative Director at Alexander McQueen",
       "education": [
-        "Central Saint Martins"
-      ],
-      "awards": [
-        "Designer of the Year at British Fashion Awards (2011)",
-        "Order of the British Empire (OBE) for services to fashion (2012)"
+        "Central Saint Martins - BA Fashion Design"
       ],
       "signatureStyles": [
-        "Romantic gothicism",
-        "Impeccable tailoring",
-        "Natural motifs",
-        "Dramatic silhouettes",
-        "Artisanal techniques"
+        "Modern romanticism",
+        "Architectural draping",
+        "Contemporary luxury",
+        "Innovative fabric manipulation"
       ],
-      "socialMedia": {},
-      "confidence": 0.91,
+      "socialMedia": {
+        "instagram": "@sarahburtondesign",
+        "linkedin": "sarah-burton-fashion"
+      },
+      "confidence": 0.85,
+      "verificationStatus": "VERIFIED",
       "sources": [
-        "alexandermcqueen.com",
-        "vogue.com",
-        "businessoffashion.com"
+        "vogue.com/article/sarah-burton-vera-wang-legacy",
+        "wwd.com/fashion-news/designer-luxury/sarah-burton-vera-wang-rtw",
+        "businessoffashion.com/articles/luxury/sarah-burton-profile"
       ],
-      "verificationStatus": "VERIFIED"
+      "createdAt": "2025-05-03T19:08:55.000Z",
+      "updatedAt": "2025-05-03T19:08:55.000Z"
     },
     {
       "id": "aeeb27d3-33a3-4370-b3e4-e563c79b17d4",
@@ -5357,38 +5356,6 @@
       ],
       "createdAt": "2025-05-03T19:07:01.000Z",
       "updatedAt": "2025-05-03T19:07:01.000Z"
-    },
-    {
-      "id": "16016dee-1ab2-4446-895c-73e4d6ef0ad8",
-      "name": "Sarah Burton",
-      "currentRole": "Creative Director at Sarah Burton Studio",
-      "isActive": true,
-      "status": "ACTIVE",
-      "biography": "Sarah Burton served as Design Director of Ready-to-Wear at Vera Wang from 2012 to 2020, where she played a crucial role in developing the brand's contemporary ready-to-wear collections. Her work combined Vera Wang's signature romantic aesthetics with modern sensibilities, contributing to the brand's expansion in the ready-to-wear market.",
-      "nationality": "British",
-      "birthYear": 1974,
-      "education": [
-        "Central Saint Martins - BA Fashion Design"
-      ],
-      "signatureStyles": [
-        "Modern romanticism",
-        "Architectural draping",
-        "Contemporary luxury",
-        "Innovative fabric manipulation"
-      ],
-      "socialMedia": {
-        "instagram": "@sarahburtondesign",
-        "linkedin": "sarah-burton-fashion"
-      },
-      "confidence": 0.85,
-      "verificationStatus": "VERIFIED",
-      "sources": [
-        "vogue.com/article/sarah-burton-vera-wang-legacy",
-        "wwd.com/fashion-news/designer-luxury/sarah-burton-vera-wang-rtw",
-        "businessoffashion.com/articles/luxury/sarah-burton-profile"
-      ],
-      "createdAt": "2025-05-03T19:08:55.000Z",
-      "updatedAt": "2025-05-03T19:08:55.000Z"
     },
     {
       "id": "4a7c1e6b-811e-4519-81d5-254015c68b85",
@@ -8819,41 +8786,6 @@
       "lastVerified": "2025-04-12"
     },
     {
-      "id": "da0b678d-2d4a-4d94-bdf0-53b75ccfaa63",
-      "name": "Walter Van Beirendonck",
-      "foundedYear": 1983,
-      "founder": "Walter Van Beirendonck",
-      "parentCompany": "Independent",
-      "category": "designer_label",
-      "headquarters": "Antwerp, Belgium",
-      "specialties": [
-        "Menswear",
-        "Ready-to-Wear",
-        "Accessories"
-      ],
-      "pricePoint": "Luxury",
-      "markets": [
-        "Western Europe",
-        "East Asia",
-        "North America"
-      ],
-      "website": "waltervanbeirendonck.com",
-      "hasHistoricalData": true,
-      "notes": "Eponymous designer label launched by Walter Van Beirendonck in 1983; part of the Antwerp Six movement.",
-      "lastCategorized": "2025-04-12",
-      "socialMedia": {
-        "instagram": "@waltervanbeirendonck_official"
-      },
-      "confidence": 0.8,
-      "verificationStatus": "VERIFIED",
-      "sources": [
-        "waltervanbeirendonck.com",
-        "antwerpfashion.be/designers/walter-van-beirendonck",
-        "vogue.com/fashion-shows/designer/walter-van-beirendonck"
-      ],
-      "lastVerified": "2025-04-12"
-    },
-    {
       "id": "6aaa8d1a-cafd-4503-a9f0-2e75a3404044",
       "name": "Royal Academy of Fine Arts Antwerp",
       "foundedYear": 1663,
@@ -8889,6 +8821,7 @@
       "parentCompany": "Artémis",
       "category": "luxury_fashion",
       "headquarters": "Paris, France",
+      "website": "giambattistavalli.com",
       "specialties": [
         "Haute Couture",
         "Ready-to-Wear",
@@ -25038,18 +24971,6 @@
       "department": "All Departments",
       "startYear": 2008,
       "endYear": 2017,
-      "isCurrentRole": false,
-      "createdAt": "2025-04-12T14:30:00.000Z",
-      "updatedAt": "2025-04-12T14:30:00.000Z"
-    },
-    {
-      "id": "tnr-11",
-      "designerId": "16016dee-1ab2-4446-895c-73e4d6ef0ad8",
-      "brandId": "63cb5e65-2f24-4ac5-9c57-e2270f612d4e",
-      "role": "Design Director of Ready-to-Wear",
-      "department": "Ready-to-Wear",
-      "startYear": 2012,
-      "endYear": 2020,
       "isCurrentRole": false,
       "createdAt": "2025-04-12T14:30:00.000Z",
       "updatedAt": "2025-04-12T14:30:00.000Z"
