@@ -108,19 +108,27 @@ async function main() {
       };
 
       const category = categoryMap[brand.category || ''] || 'luxury_fashion';
+      const pricePoint = brand.pricePoint || undefined;
 
       brandsToCreate.set(brand.name, {
         name: brand.name,
-        description: '', // This will be added later
-        foundedYear: brand.foundedYear || 0,
+        description: brand.notes || '',
+        foundedYear: brand.foundedYear,
         founder: brand.founder || '',
-        headquarters: brand.headquarters || '',
         parentCompany: brand.parentCompany || '',
         category: category as 'luxury_fashion' | 'design_studio' | 'collaboration_line' | 'historical_retail' | 'designer_label' | 'educational_institution' | 'collaboration_partner',
+        headquarters: brand.headquarters || '',
+        specialties: brand.specialties || [],
+        pricePoint: pricePoint,
+        markets: brand.markets || [],
         website: brand.website || '',
+        hasHistoricalData: brand.hasHistoricalData || false,
         socialMedia: brand.socialMedia || {},
-        logoUrl: brand.logoUrl || '',
-        verificationStatus: VerificationStatus.verified // Add required field
+        confidence: brand.confidence || 0,
+        verificationStatus: VerificationStatus.verified,
+        sources: brand.sources || [],
+        lastVerified: brand.lastVerified || new Date().toISOString(),
+        logoUrl: brand.logoUrl || ''
       });
     }
 
