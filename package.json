@@ -19,8 +19,14 @@
     "convert-data": "NODE_OPTIONS='--loader ts-node/esm' ts-node scripts/convertFieldNames.ts",
     "migrate:fields": "tsx scripts/migrateFieldsToCamelCase.ts",
     "db:reset": "tsx scripts/resetAndPopulateDb.ts",
-    "db:schema": "tsx scripts/importSchema.ts"
+    "db:schema": "tsx scripts/importSchema.ts",
+    "db:migrate": "tsx scripts/resetAndPopulate2.ts",
+    "db:migrate:dry-run": "tsx scripts/resetAndPopulate2.ts --dry-run",
+    "db:migrate:force": "tsx scripts/resetAndPopulate2.ts --delete",
+    "db:migrate:update": "tsx scripts/resetAndPopulate2.ts --no-skip"
   },
+  "description": "Fashion Directory - A database of fashion industry relationships",
+  "readme": "# Fashion Directory Database Scripts\n\n## Migration Scripts\n\n### Safe Migration (Recommended)\n```bash\nyarn db:migrate\n```\nSafely updates the database, preserving existing data and skipping duplicates.\n\n### Dry Run\n```bash\nyarn db:migrate:dry\n```\nPreviews changes without modifying the database.\n\n### Force Update\n```bash\nyarn db:migrate:force\n```\nDeletes existing data before migration. Use with caution.\n\n### Update All\n```bash\nyarn db:migrate:update\n```\nUpdates all records, including duplicates.\n\nFor more details, see the documentation.",
   "dependencies": {
     "@apollo/server": "^4.12.0",
     "@graphql-tools/schema": "^10.0.23",
