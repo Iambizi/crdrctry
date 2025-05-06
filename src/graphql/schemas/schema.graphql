@@ -58,6 +58,7 @@ type Relationship {
   description: String
   impact: String
   collaborationProjects: [String!]
+  verificationStatus: VerificationStatus!
 }
 
 enum DesignerStatus {
@@ -85,40 +86,295 @@ enum Department {
   allDepartments
 }
 
+enum VerificationStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+}
+
 scalar JSON
+
+input CreateDesignerInput {
+  name: String!
+  status: DesignerStatus!
+  isActive: Boolean!
+  currentRole: String
+  biography: String
+  imageUrl: String
+  nationality: String
+  birthYear: Int
+  deathYear: Int
+  awards: [String!]
+  education: [String!]
+  signatureStyles: [String!]
+  socialMedia: JSON
+}
+
+input UpdateDesignerInput {
+  name: String
+  status: DesignerStatus
+  isActive: Boolean
+  currentRole: String
+  biography: String
+  imageUrl: String
+  nationality: String
+  birthYear: Int
+  deathYear: Int
+  awards: [String!]
+  education: [String!]
+  signatureStyles: [String!]
+  socialMedia: JSON
+}
+
+input CreateBrandInput {
+  name: String!
+  description: String
+  foundedYear: Int!
+  headquarters: String
+  parentCompany: String
+  category: String!
+  website: String
+  socialMedia: JSON
+  logoUrl: String
+}
+
+input UpdateBrandInput {
+  name: String
+  description: String
+  foundedYear: Int
+  headquarters: String
+  parentCompany: String
+  category: String
+  website: String
+  socialMedia: JSON
+  logoUrl: String
+}
+
+input CreateTenureInput {
+  designerId: ID!
+  brandId: ID!
+  role: String!
+  department: Department!
+  startYear: Int!
+  endYear: Int
+  isCurrentRole: Boolean!
+  achievements: [String!]
+  notableWorks: [String!]
+  notableCollections: [String!]
+  impactDescription: String
+}
+
+input UpdateTenureInput {
+  role: String
+  department: Department
+  startYear: Int
+  endYear: Int
+  isCurrentRole: Boolean
+  achievements: [String!]
+  notableWorks: [String!]
+  notableCollections: [String!]
+  impactDescription: String
+}
+
+input CreateRelationshipInput {
+  sourceDesigner: ID!
+  targetDesigner: ID!
+  brand: ID!
+  type: RelationshipType!
+  startYear: Int
+  endYear: Int
+  description: String
+  collaborationProjects: [String!]
+  verificationStatus: VerificationStatus!
+}
+
+input UpdateRelationshipInput {
+  sourceDesigner: ID
+  targetDesigner: ID
+  brand: ID
+  type: RelationshipType
+  startYear: Int
+  endYear: Int
+  description: String
+  collaborationProjects: [String!]
+  verificationStatus: VerificationStatus
+}
+
+input DesignerFilter {
+  search: String
+  status: DesignerStatus
+  isActive: Boolean
+  nationality: String
+  birthYearRange: YearRange
+  hasAwards: Boolean
+}
+
+input BrandFilter {
+  search: String
+  category: String
+  foundedYearRange: YearRange
+  hasParentCompany: Boolean
+}
+
+input TenureFilter {
+  department: Department
+  yearRange: YearRange
+  isCurrentRole: Boolean
+}
+
+input RelationshipFilter {
+  type: RelationshipType
+  yearRange: YearRange
+  sourceDesigner: ID
+  targetDesigner: ID
+  brand: ID
+}
+
+input YearRange {
+  start: Int
+  end: Int
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+type DesignerConnection {
+  edges: [DesignerEdge!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type DesignerEdge {
+  node: Designer!
+  cursor: String!
+}
+
+type BrandConnection {
+  edges: [BrandEdge!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type BrandEdge {
+  node: Brand!
+  cursor: String!
+}
+
+type TenureConnection {
+  edges: [TenureEdge!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type TenureEdge {
+  node: Tenure!
+  cursor: String!
+}
+
+type RelationshipConnection {
+  edges: [RelationshipEdge!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type RelationshipEdge {
+  node: Relationship!
+  cursor: String!
+}
+
+type MutationResponse {
+  success: Boolean!
+  message: String
+  code: String
+}
+
+type DesignerMutationResponse {
+  success: Boolean!
+  message: String
+  code: String
+  designer: Designer
+}
+
+type BrandMutationResponse {
+  success: Boolean!
+  message: String
+  code: String
+  brand: Brand
+}
+
+type TenureMutationResponse {
+  success: Boolean!
+  message: String
+  code: String
+  tenure: Tenure
+}
+
+type RelationshipMutationResponse {
+  success: Boolean!
+  message: String
+  code: String
+  relationship: Relationship
+}
 
 type Query {
   designer(id: ID!): Designer
   designers(
-    status: DesignerStatus
-    isActive: Boolean
-    limit: Int
-    offset: Int
-  ): [Designer!]!
-  
+    first: Int
+    after: String
+    last: Int
+    before: String
+    filter: DesignerFilter
+  ): DesignerConnection!
+
   brand(id: ID!): Brand
   brands(
-    category: String
-    limit: Int
-    offset: Int
-  ): [Brand!]!
-  
+    first: Int
+    after: String
+    last: Int
+    before: String
+    filter: BrandFilter
+  ): BrandConnection!
+
   tenure(id: ID!): Tenure
   tenures(
-    designerId: ID
-    brandId: ID
-    department: Department
-    limit: Int
-    offset: Int
-  ): [Tenure!]!
-  
+    first: Int
+    after: String
+    last: Int
+    before: String
+    filter: TenureFilter
+  ): TenureConnection!
+
   relationship(id: ID!): Relationship
   relationships(
-    sourceDesignerId: ID
-    targetDesignerId: ID
-    brandId: ID
-    type: RelationshipType
-    limit: Int
-    offset: Int
-  ): [Relationship!]!
+    first: Int
+    after: String
+    last: Int
+    before: String
+    filter: RelationshipFilter
+  ): RelationshipConnection!
+
+  searchDesigners(query: String!): [Designer!]!
+  searchBrands(query: String!): [Brand!]!
+}
+
+type Mutation {
+  createDesigner(input: CreateDesignerInput!): DesignerMutationResponse!
+  updateDesigner(id: ID!, input: UpdateDesignerInput!): DesignerMutationResponse!
+  deleteDesigner(id: ID!): MutationResponse!
+
+  createBrand(input: CreateBrandInput!): BrandMutationResponse!
+  updateBrand(id: ID!, input: UpdateBrandInput!): BrandMutationResponse!
+  deleteBrand(id: ID!): MutationResponse!
+
+  createTenure(input: CreateTenureInput!): TenureMutationResponse!
+  updateTenure(id: ID!, input: UpdateTenureInput!): TenureMutationResponse!
+  deleteTenure(id: ID!): MutationResponse!
+
+  createRelationship(input: CreateRelationshipInput!): RelationshipMutationResponse!
+  updateRelationship(id: ID!, input: UpdateRelationshipInput!): RelationshipMutationResponse!
+  deleteRelationship(id: ID!): MutationResponse!
 }
