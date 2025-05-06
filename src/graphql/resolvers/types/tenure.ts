@@ -6,7 +6,7 @@ import { createConnection } from '../pagination';
 import { 
   TenureQueryArgs, 
   CreateTenureInput, 
-  UpdateTenureInput 
+  UpdateTenureInput,
 } from './inputs';
 
 export const TenureResolvers = {

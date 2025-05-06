@@ -37,6 +37,14 @@ export interface RelationshipFilter {
   yearRange?: YearRange;
   sourceDesigner?: string;
   targetDesigner?: string;
+  brand?: string;
+}
+
+export interface ConnectionArgs {
+  first?: number;
+  after?: string;
+  last?: number;
+  before?: string;
 }
 
 export interface CreateBrandInput {
@@ -100,6 +108,7 @@ export interface CreateRelationshipInput {
   description?: string;
   collaborationProjects?: string[];
   verificationStatus: VerificationStatus;
+  brand?: string;
 }
 
 export interface UpdateRelationshipInput {
@@ -110,6 +119,39 @@ export interface UpdateRelationshipInput {
   endYear?: number;
   description?: string;
   collaborationProjects?: string[];
+  verificationStatus?: VerificationStatus;
+  brand?: string;
+}
+
+export interface CreateDesignerInput {
+  name: string;
+  biography?: string;
+  nationality?: string;
+  birthYear?: number;
+  deathYear?: number;
+  education?: string[];
+  awards?: string[];
+  isActive: boolean;
+  status: DesignerStatus;
+  imageUrl?: string;
+  websiteUrl?: string;
+  socialMedia?: Record<string, string>;
+  verificationStatus: VerificationStatus;
+}
+
+export interface UpdateDesignerInput {
+  name?: string;
+  biography?: string;
+  nationality?: string;
+  birthYear?: number;
+  deathYear?: number;
+  education?: string[];
+  awards?: string[];
+  isActive?: boolean;
+  status?: DesignerStatus;
+  imageUrl?: string;
+  websiteUrl?: string;
+  socialMedia?: Record<string, string>;
   verificationStatus?: VerificationStatus;
 }
 
@@ -135,4 +177,12 @@ export interface RelationshipQueryArgs {
   last?: number;
   before?: string;
   filter?: RelationshipFilter;
+}
+
+export interface DesignerQueryArgs {
+  first?: number;
+  after?: string;
+  last?: number;
+  before?: string;
+  filter?: DesignerFilter;
 }

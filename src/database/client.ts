@@ -80,6 +80,9 @@ export async function withTransaction<T>(
   }
 }
 
+// Export the PocketBase instance
+export const pb = await initPocketBase();
+
 // CLI execution
 if (import.meta.url === `file://${process.argv[1]}`) {
   (async () => {

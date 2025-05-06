@@ -3,6 +3,12 @@ import { pb } from '../client';
 import { ResolverContext } from '../types';
 import { handleError } from '../utils';
 import { createConnection } from '../pagination';
+import { 
+  DesignerFilter,
+  CreateDesignerInput, 
+  UpdateDesignerInput,
+  ConnectionArgs 
+} from './inputs';
 
 export const DesignerResolvers = {
   Query: {
@@ -15,7 +21,7 @@ export const DesignerResolvers = {
       }
     },
 
-    designers: async (_: unknown, args: any) => {
+    designers: async (_: unknown, args: ConnectionArgs & { filter?: DesignerFilter }) => {
       try {
         const { first, after, last, before, filter } = args;
         let queryFilter = '';
@@ -55,7 +61,7 @@ export const DesignerResolvers = {
   },
 
   Mutation: {
-    createDesigner: async (_: unknown, { input }: { input: any }, context: ResolverContext) => {
+    createDesigner: async (_: unknown, { input }: { input: CreateDesignerInput }, context: ResolverContext) => {
       try {
         if (!context.isAuthenticated) {
           throw new Error('Authentication required');
@@ -68,15 +74,22 @@ export const DesignerResolvers = {
           designer: record as Designer,
         };
       } catch (error) {
+        if (error instanceof Error) {
+          return {
+            success: false,
+            message: `Failed to create designer: ${error.message}`,
+            code: 'CREATION_FAILED',
+          };
+        }
         return {
           success: false,
-          message: `Failed to create designer: ${error.message}`,
-          code: error.code,
+          message: 'Failed to create designer: Unknown error',
+          code: 'UNKNOWN_ERROR',
         };
       }
     },
 
-    updateDesigner: async (_: unknown, { id, input }: { id: string; input: any }, context: ResolverContext) => {
+    updateDesigner: async (_: unknown, { id, input }: { id: string; input: UpdateDesignerInput }, context: ResolverContext) => {
       try {
         if (!context.isAuthenticated) {
           throw new Error('Authentication required');
@@ -89,10 +102,17 @@ export const DesignerResolvers = {
           designer: record as Designer,
         };
       } catch (error) {
+        if (error instanceof Error) {
+          return {
+            success: false,
+            message: `Failed to update designer: ${error.message}`,
+            code: 'UPDATE_FAILED',
+          };
+        }
         return {
           success: false,
-          message: `Failed to update designer: ${error.message}`,
-          code: error.code,
+          message: 'Failed to update designer: Unknown error',
+          code: 'UNKNOWN_ERROR',
         };
       }
     },
@@ -109,10 +129,17 @@ export const DesignerResolvers = {
           message: 'Designer deleted successfully',
         };
       } catch (error) {
+        if (error instanceof Error) {
+          return {
+            success: false,
+            message: `Failed to delete designer: ${error.message}`,
+            code: 'DELETION_FAILED',
+          };
+        }
         return {
           success: false,
-          message: `Failed to delete designer: ${error.message}`,
-          code: error.code,
+          message: 'Failed to delete designer: Unknown error',
+          code: 'UNKNOWN_ERROR',
         };
       }
     },
@@ -133,7 +160,7 @@ export const DesignerResolvers = {
     relationships: async (parent: Designer) => {
       try {
         const result = await pb.collection('fd_relationships').getList(1, 50, {
-          filter: `sourceDesignerId = "${parent.id}" || targetDesignerId = "${parent.id}"`,
+          filter: `sourceDesigner = "${parent.id}" || targetDesigner = "${parent.id}"`,
         });
         return result.items as Relationship[];
       } catch (error) {

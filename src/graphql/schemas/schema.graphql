@@ -348,6 +348,8 @@ type Query {
     filter: TenureFilter
   ): TenureConnection!
 
+  activeTenures(brandId: ID, designerId: ID): [Tenure!]!
+
   relationship(id: ID!): Relationship
   relationships(
     first: Int

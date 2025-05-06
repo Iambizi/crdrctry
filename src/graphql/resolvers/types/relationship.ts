@@ -1,12 +1,13 @@
-import { Designer, Relationship } from '../../../database/types/types';
+import { Designer, Relationship, Brand } from '../../../database/types/types';
 import { pb } from '../client';
 import { ResolverContext } from '../types';
 import { handleError } from '../utils';
 import { createConnection } from '../pagination';
 import { 
-  RelationshipQueryArgs, 
+  RelationshipFilter,
   CreateRelationshipInput, 
-  UpdateRelationshipInput 
+  UpdateRelationshipInput,
+  ConnectionArgs 
 } from './inputs';
 
 export const RelationshipResolvers = {
@@ -20,7 +21,7 @@ export const RelationshipResolvers = {
       }
     },
 
-    relationships: async (_: unknown, args: RelationshipQueryArgs) => {
+    relationships: async (_: unknown, args: ConnectionArgs & { filter?: RelationshipFilter }) => {
       try {
         const { first, after, last, before, filter } = args;
         let queryFilter = '';
@@ -30,36 +31,13 @@ export const RelationshipResolvers = {
           if (filter.type) conditions.push(`type = "${filter.type}"`);
           if (filter.sourceDesigner) conditions.push(`sourceDesigner = "${filter.sourceDesigner}"`);
           if (filter.targetDesigner) conditions.push(`targetDesigner = "${filter.targetDesigner}"`);
-          
-          if (filter.yearRange) {
-            const { start, end } = filter.yearRange;
-            if (start) conditions.push(`year >= ${start}`);
-            if (end) conditions.push(`year <= ${end}`);
-          }
-          
-          if (filter.search) {
-            conditions.push(`description ~ "${filter.search}" || source ~ "${filter.search}"`);
-          }
-          
+          if (filter.brand) conditions.push(`brand = "${filter.brand}"`);
           queryFilter = conditions.join(' && ');
         }
 
         return createConnection<Relationship>('fd_relationships', queryFilter, { first, after, last, before });
       } catch (error) {
         return handleError('Error fetching relationships', error);
-      }
-    },
-
-    designerRelationships: async (parent: Designer) => {
-      try {
-        const result = await pb.collection('fd_relationships').getList(1, 50, {
-          filter: `sourceDesigner = "${parent.id}" || targetDesigner = "${parent.id}"`,
-        });
-        console.log(' Found relationships for designer:', result.items.length);
-        return result.items as Relationship[];
-      } catch (error) {
-        console.error(' Error fetching designer relationships:', error);
-        return [];
       }
     },
   },
@@ -71,23 +49,15 @@ export const RelationshipResolvers = {
           throw new Error('Authentication required');
         }
 
-        // Validate that both designers exist and are different
-        if (input.sourceDesigner === input.targetDesigner) {
-          throw new Error('Designer cannot have a relationship with themselves');
-        }
-
+        // Validate that designers exist
         await Promise.all([
           pb.collection('fd_designers').getOne(input.sourceDesigner),
           pb.collection('fd_designers').getOne(input.targetDesigner),
         ]);
 
-        // Check for duplicate relationship
-        const existingRelationships = await pb.collection('fd_relationships').getList(1, 1, {
-          filter: `(sourceDesigner = "${input.sourceDesigner}" && targetDesigner = "${input.targetDesigner}") || (sourceDesigner = "${input.targetDesigner}" && targetDesigner = "${input.sourceDesigner}")`,
-        });
-
-        if (existingRelationships.items.length > 0) {
-          throw new Error('A relationship between these designers already exists');
+        // If brand is provided, validate it exists
+        if (input.brand) {
+          await pb.collection('fd_brands').getOne(input.brand);
         }
 
         const record = await pb.collection('fd_relationships').create(input);
@@ -122,30 +92,16 @@ export const RelationshipResolvers = {
           throw new Error('Authentication required');
         }
 
-        const currentRelationship = await pb.collection('fd_relationships').getOne(id);
-
-        // If updating designers, validate they exist and are different
-        if (input.sourceDesigner || input.targetDesigner) {
-          const newSourceDesigner = input.sourceDesigner || currentRelationship.sourceDesigner;
-          const newTargetDesigner = input.targetDesigner || currentRelationship.targetDesigner;
-
-          if (newSourceDesigner === newTargetDesigner) {
-            throw new Error('Designer cannot have a relationship with themselves');
-          }
-
-          await Promise.all([
-            pb.collection('fd_designers').getOne(newSourceDesigner),
-            pb.collection('fd_designers').getOne(newTargetDesigner),
-          ]);
-
-          // Check for duplicate relationship
-          const existingRelationships = await pb.collection('fd_relationships').getList(1, 1, {
-            filter: `id != "${id}" && ((sourceDesigner = "${newSourceDesigner}" && targetDesigner = "${newTargetDesigner}") || (sourceDesigner = "${newTargetDesigner}" && targetDesigner = "${newSourceDesigner}"))`,
-          });
-
-          if (existingRelationships.items.length > 0) {
-            throw new Error('A relationship between these designers already exists');
-          }
+        // If designers are being updated, validate they exist
+        if (input.sourceDesigner) {
+          await pb.collection('fd_designers').getOne(input.sourceDesigner);
+        }
+        if (input.targetDesigner) {
+          await pb.collection('fd_designers').getOne(input.targetDesigner);
+        }
+        // If brand is being updated, validate it exists
+        if (input.brand) {
+          await pb.collection('fd_brands').getOne(input.brand);
         }
 
         const record = await pb.collection('fd_relationships').update(id, input);
@@ -199,7 +155,7 @@ export const RelationshipResolvers = {
   },
 
   Relationship: {
-    designer: async (parent: Relationship) => {
+    sourceDesigner: async (parent: Relationship) => {
       try {
         const record = await pb.collection('fd_designers').getOne(parent.sourceDesigner);
         return record as Designer;
@@ -208,12 +164,21 @@ export const RelationshipResolvers = {
       }
     },
 
-    relatedDesigner: async (parent: Relationship) => {
+    targetDesigner: async (parent: Relationship) => {
       try {
         const record = await pb.collection('fd_designers').getOne(parent.targetDesigner);
         return record as Designer;
       } catch (error) {
         return handleError('Error fetching related designer', error);
+      }
+    },
+
+    brand: async (parent: Relationship) => {
+      try {
+        const record = await pb.collection('fd_brands').getOne(parent.brand);
+        return record as Brand;
+      } catch (error) {
+        return handleError('Error fetching relationship brand', error);
       }
     },
   },

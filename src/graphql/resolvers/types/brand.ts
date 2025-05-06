@@ -4,9 +4,10 @@ import { ResolverContext } from '../types';
 import { handleError } from '../utils';
 import { createConnection } from '../pagination';
 import { 
-  BrandQueryArgs, 
+  BrandFilter,
   CreateBrandInput, 
-  UpdateBrandInput 
+  UpdateBrandInput,
+  ConnectionArgs 
 } from './inputs';
 
 export const BrandResolvers = {
@@ -20,7 +21,7 @@ export const BrandResolvers = {
       }
     },
 
-    brands: async (_: unknown, args: BrandQueryArgs) => {
+    brands: async (_: unknown, args: ConnectionArgs & { filter: BrandFilter }) => {
       try {
         const { first, after, last, before, filter } = args;
         let queryFilter = '';
@@ -155,7 +156,7 @@ export const BrandResolvers = {
           filter: `brandId = "${parent.id}"`,
         });
         
-        const designerIds = [...new Set(tenures.items.map(t => t.designerId))];
+        const designerIds = [...new Set(tenures.items.map(t => t.designerId as string))];
         const designers = await Promise.all(
           designerIds.map(id => pb.collection('fd_designers').getOne(id))
         );
