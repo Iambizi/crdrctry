@@ -153,7 +153,7 @@ export const BrandResolvers = {
     designers: async (parent: Brand) => {
       try {
         const tenures = await pb.collection('fd_tenures').getList(1, 50, {
-          filter: `brandId = "${parent.id}"`,
+          filter: `field_brand = "${parent.id}"`,
         });
         
         const designerIds = [...new Set(tenures.items.map(t => t.designerId as string))];
@@ -170,7 +170,7 @@ export const BrandResolvers = {
     tenures: async (parent: Brand) => {
       try {
         const result = await pb.collection('fd_tenures').getList(1, 50, {
-          filter: `brandId = "${parent.id}"`,
+          filter: `field_brand = "${parent.id}"`,
         });
         return result.items as Tenure[];
       } catch (error) {

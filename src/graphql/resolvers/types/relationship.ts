@@ -28,12 +28,13 @@ export const RelationshipResolvers = {
         
         if (filter) {
           const conditions = [];
-          if (filter.type) conditions.push(`type = "${filter.type}"`);
-          if (filter.sourceDesigner) conditions.push(`sourceDesigner = "${filter.sourceDesigner}"`);
-          if (filter.targetDesigner) conditions.push(`targetDesigner = "${filter.targetDesigner}"`);
-          if (filter.brand) conditions.push(`brand = "${filter.brand}"`);
+          if (filter.type) conditions.push(`field_type = "${filter.type}"`);
+          if (filter.sourceDesigner) conditions.push(`field_sourceDesigner = "${filter.sourceDesigner}"`);
+          if (filter.targetDesigner) conditions.push(`field_targetDesigner = "${filter.targetDesigner}"`);
+          if (filter.brand) conditions.push(`field_brand = "${filter.brand}"`);
           queryFilter = conditions.join(' && ');
         }
+        console.log('Query filter:', queryFilter);
 
         return createConnection<Relationship>('fd_relationships', queryFilter, { first, after, last, before });
       } catch (error) {
@@ -155,9 +156,36 @@ export const RelationshipResolvers = {
   },
 
   Relationship: {
+    type: (parent: Record<string, string>) => {
+      const type = parent.field_type || parent.type;
+      if (!type || !['mentorship', 'succession', 'collaboration', 'familial'].includes(type)) {
+        throw new Error(`Invalid relationship type: ${type}`);
+      }
+      return type;
+    },
+    startYear: (parent: Record<string, number>) => {
+      const year = parent.field_startYear || parent.startYear;
+      return typeof year === 'number' ? year : null;
+    },
+    endYear: (parent: Record<string, number>) => {
+      const year = parent.field_endYear || parent.endYear;
+      return typeof year === 'number' ? year : null;
+    },
+    description: (parent: Record<string, string>) => parent.field_description || parent.description || null,
+    collaborationProjects: (parent: Record<string, string[]>) => parent.field_collaborationProjects || parent.collaborationProjects || [],
+    verificationStatus: (parent: Record<string, string>) => {
+      const status = parent.field_verificationStatus || parent.verificationStatus;
+      if (!status || !['PENDING', 'VERIFIED', 'REJECTED'].includes(status)) {
+        return 'PENDING';
+      }
+      return status;
+    },
     sourceDesigner: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('fd_designers').getOne(parent.sourceDesigner);
+        if (!parent.field_sourceDesigner) {
+          throw new Error('No source designer ID found');
+        }
+        const record = await pb.collection('fd_designers').getOne(parent.field_sourceDesigner);
         return record as Designer;
       } catch (error) {
         return handleError('Error fetching relationship designer', error);
@@ -166,7 +194,10 @@ export const RelationshipResolvers = {
 
     targetDesigner: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('fd_designers').getOne(parent.targetDesigner);
+        if (!parent.field_targetDesigner) {
+          throw new Error('No target designer ID found');
+        }
+        const record = await pb.collection('fd_designers').getOne(parent.field_targetDesigner);
         return record as Designer;
       } catch (error) {
         return handleError('Error fetching related designer', error);
@@ -175,7 +206,10 @@ export const RelationshipResolvers = {
 
     brand: async (parent: Relationship) => {
       try {
-        const record = await pb.collection('fd_brands').getOne(parent.brand);
+        if (!parent.field_brand) {
+          throw new Error('No brand ID found');
+        }
+        const record = await pb.collection('fd_brands').getOne(parent.field_brand);
         return record as Brand;
       } catch (error) {
         return handleError('Error fetching relationship brand', error);

@@ -77,15 +77,17 @@ export interface Relationship extends Omit<BaseRelationship, keyof BaseRecord> {
   updated: string;
   collectionId: string;
   collectionName: "fd_relationships";
-  sourceDesigner: string;
-  targetDesigner: string;
-  brand: string;
-  type: RelationshipType;
-  startYear?: number;
-  endYear?: number;
-  description?: string;
-  collaborationProjects?: string[];
-  verificationStatus: VerificationStatus;
+  field_sourceDesigner: string;
+  field_targetDesigner: string;
+  field_brand: string;
+  field_type: RelationshipType;
+  field_startYear?: number;
+  field_endYear?: number;
+  field_description?: string;
+  field_collaborationProjects?: string[];
+  field_verificationStatus: VerificationStatus;
+  field_confidence?: number;
+  field_sources?: string[];
 }
 
 // Type helper for creating new records - omit PocketBase system fields

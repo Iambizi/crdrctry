@@ -146,10 +146,21 @@ export const DesignerResolvers = {
   },
 
   Designer: {
+    awards: (parent: Designer) => parent.awards || [],
+    education: (parent: Designer) => parent.education || [],
+    signatureStyles: (parent: Designer) => parent.signatureStyles || [],
+    birthYear: (parent: Designer) => parent.birthYear || null,
+    deathYear: (parent: Designer) => parent.deathYear || null,
+    nationality: (parent: Designer) => parent.nationality || null,
+    biography: (parent: Designer) => parent.biography || null,
+    currentRole: (parent: Designer) => parent.currentRole || null,
+    imageUrl: (parent: Designer) => parent.imageUrl || null,
+    socialMedia: (parent: Designer) => parent.socialMedia || null,
+
     tenures: async (parent: Designer) => {
       try {
         const result = await pb.collection('fd_tenures').getList(1, 50, {
-          filter: `designerId = "${parent.id}"`,
+          filter: `field_designer = "${parent.id}"`,
         });
         return result.items as Tenure[];
       } catch (error) {
@@ -160,7 +171,7 @@ export const DesignerResolvers = {
     relationships: async (parent: Designer) => {
       try {
         const result = await pb.collection('fd_relationships').getList(1, 50, {
-          filter: `sourceDesigner = "${parent.id}" || targetDesigner = "${parent.id}"`,
+          filter: `field_sourceDesigner = "${parent.id}" || field_targetDesigner = "${parent.id}"`,
         });
         return result.items as Relationship[];
       } catch (error) {

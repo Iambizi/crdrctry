@@ -27,21 +27,21 @@ export const TenureResolvers = {
         
         if (filter) {
           const conditions = [];
-          if (filter.department) conditions.push(`department = "${filter.department}"`);
-          if (filter.isActive !== undefined) conditions.push(`isActive = ${filter.isActive}`);
-          if (filter.brandId) conditions.push(`brandId = "${filter.brandId}"`);
-          if (filter.designerId) conditions.push(`designerId = "${filter.designerId}"`);
+          if (filter.department) conditions.push(`field_department = "${filter.department}"`);
+          if (filter.isActive !== undefined) conditions.push(`field_isActive = ${filter.isActive}`);
+          if (filter.brandId) conditions.push(`field_brand = "${filter.brandId}"`);
+          if (filter.designerId) conditions.push(`field_designer = "${filter.designerId}"`);
           
           if (filter.startYearRange) {
             const { start, end } = filter.startYearRange;
-            if (start) conditions.push(`startYear >= ${start}`);
-            if (end) conditions.push(`startYear <= ${end}`);
+            if (start) conditions.push(`field_startYear >= ${start}`);
+            if (end) conditions.push(`field_startYear <= ${end}`);
           }
           
           if (filter.endYearRange) {
             const { start, end } = filter.endYearRange;
-            if (start) conditions.push(`endYear >= ${start}`);
-            if (end) conditions.push(`endYear <= ${end}`);
+            if (start) conditions.push(`field_endYear >= ${start}`);
+            if (end) conditions.push(`field_endYear <= ${end}`);
           }
           
           if (filter.search) {
@@ -59,9 +59,9 @@ export const TenureResolvers = {
 
     activeTenures: async (_: unknown, { brandId, designerId }: { brandId?: string; designerId?: string }) => {
       try {
-        const conditions = ['isActive = true'];
-        if (brandId) conditions.push(`brandId = "${brandId}"`);
-        if (designerId) conditions.push(`designerId = "${designerId}"`);
+        const conditions = ['field_isActive = true'];
+        if (brandId) conditions.push(`field_brand = "${brandId}"`);
+        if (designerId) conditions.push(`field_designer = "${designerId}"`);
 
         const result = await pb.collection('fd_tenures').getList(1, 50, {
           filter: conditions.join(' && '),

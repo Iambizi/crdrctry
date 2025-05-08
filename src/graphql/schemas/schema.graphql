@@ -56,7 +56,6 @@ type Relationship {
   startYear: Int
   endYear: Int
   description: String
-  impact: String
   collaborationProjects: [String!]
   verificationStatus: VerificationStatus!
 }
