@@ -192,18 +192,18 @@ async function main() {
       }
 
       tenures.push({
-        designer: designerId,
-        brand: brandId,
-        role: tenure.role || '',
-        department: tenure.department || Department.allDepartments,
-        startYear: tenure.startYear,
-        endYear: tenure.endYear === null ? undefined : tenure.endYear,
-        isCurrentRole: !tenure.endYear,
-        achievements: tenure.achievements || [],
-        notableWorks: tenure.notableWorks || [],
-        notableCollections: tenure.notableCollections || [],
-        impactDescription: tenure.impactDescription || '',
-        verificationStatus: VerificationStatus.verified
+        field_designer: designerId,
+        field_brand: brandId,
+        field_role: tenure.role || '',
+        field_department: tenure.department || Department.allDepartments,
+        field_startYear: tenure.startYear,
+        field_endYear: tenure.endYear === null ? undefined : tenure.endYear,
+        field_isCurrentRole: !tenure.endYear,
+        field_achievements: tenure.achievements || [],
+        field_notableWorks: tenure.notableWorks || [],
+        field_notableCollections: tenure.notableCollections || [],
+        field_impactDescription: tenure.impactDescription || '',
+        field_verificationStatus: VerificationStatus.verified
       });
     }
 

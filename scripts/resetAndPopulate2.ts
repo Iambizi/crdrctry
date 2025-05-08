@@ -250,18 +250,18 @@ async function main(options: MigrationOptions = {
       }
 
       tenures.push({
-        designer: designerId,
-        brand: brandId,
-        role: tenure.role || '',
-        department: tenure.department || Department.allDepartments,
-        startYear: tenure.startYear,
-        endYear: tenure.endYear || undefined,
-        isCurrentRole: !tenure.endYear,
-        achievements: tenure.achievements || [],
-        notableWorks: tenure.notableWorks || [],
-        notableCollections: tenure.notableCollections || [],
-        impactDescription: tenure.impactDescription || '',
-        verificationStatus: VerificationStatus.verified
+        field_designer: designerId,
+        field_brand: brandId,
+        field_role: tenure.role || '',
+        field_department: tenure.department || Department.allDepartments,
+        field_startYear: tenure.startYear,
+        field_endYear: tenure.endYear || undefined,
+        field_isCurrentRole: !tenure.endYear,
+        field_achievements: tenure.achievements || [],
+        field_notableWorks: tenure.notableWorks || [],
+        field_notableCollections: tenure.notableCollections || [],
+        field_impactDescription: tenure.impactDescription || '',
+        field_verificationStatus: VerificationStatus.verified
       });
     }
 

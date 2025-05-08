@@ -57,18 +57,18 @@ export interface Tenure extends Omit<BaseTenure, keyof BaseRecord> {
   updated: string;
   collectionId: string;
   collectionName: "fd_tenures";
-  designer: string;
-  brand: string;
-  role: string;
-  department: Department;
-  startYear: number;
-  endYear?: number;
-  isCurrentRole: boolean;
-  achievements?: string[];
-  notableWorks?: string[];
-  notableCollections?: string[];
-  impactDescription?: string;
-  verificationStatus: VerificationStatus;
+  field_designer: string;
+  field_brand: string;
+  field_role: string;
+  field_department: Department;
+  field_startYear: number;
+  field_endYear?: number;
+  field_isCurrentRole: boolean;
+  field_achievements?: string[];
+  field_notableWorks?: string[];
+  field_notableCollections?: string[];
+  field_impactDescription?: string;
+  field_verificationStatus: VerificationStatus;
 }
 
 export interface Relationship extends Omit<BaseRelationship, keyof BaseRecord> {
@@ -94,18 +94,18 @@ export interface Relationship extends Omit<BaseRelationship, keyof BaseRecord> {
 export type CreateDesigner = Omit<Designer, keyof BaseRecord>;
 export type CreateBrand = Omit<Brand, keyof BaseRecord>;
 export type CreateTenure = {
-  designer: string;
-  brand: string;
-  role: string;
-  department: Department;
-  startYear: number;
-  endYear?: number;
-  isCurrentRole: boolean;
-  achievements?: string[];
-  notableWorks?: string[];
-  notableCollections?: string[];
-  impactDescription?: string;
-  verificationStatus: VerificationStatus;
+  field_designer: string;
+  field_brand: string;
+  field_role: string;
+  field_department: Department;
+  field_startYear: number;
+  field_endYear?: number;
+  field_isCurrentRole: boolean;
+  field_achievements?: string[];
+  field_notableWorks?: string[];
+  field_notableCollections?: string[];
+  field_impactDescription?: string;
+  field_verificationStatus: VerificationStatus;
 };
 
 export type CreateRelationship = {

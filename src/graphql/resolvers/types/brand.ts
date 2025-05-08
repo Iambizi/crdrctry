@@ -150,13 +150,21 @@ export const BrandResolvers = {
   },
 
   Brand: {
+    description: (parent: Brand) => parent.description || null,
+    foundedYear: (parent: Brand) => parent.foundedYear || null,
+    headquarters: (parent: Brand) => parent.headquarters || null,
+    parentCompany: (parent: Brand) => parent.parentCompany || null,
+    website: (parent: Brand) => parent.website || null,
+    socialMedia: (parent: Brand) => parent.socialMedia || null,
+    logoUrl: (parent: Brand) => parent.logoUrl || null,
+
     designers: async (parent: Brand) => {
       try {
         const tenures = await pb.collection('fd_tenures').getList(1, 50, {
           filter: `field_brand = "${parent.id}"`,
         });
         
-        const designerIds = [...new Set(tenures.items.map(t => t.designerId as string))];
+        const designerIds = [...new Set(tenures.items.map(t => t.field_designer as string))];
         const designers = await Promise.all(
           designerIds.map(id => pb.collection('fd_designers').getOne(id))
         );

@@ -45,7 +45,7 @@ export const TenureResolvers = {
           }
           
           if (filter.search) {
-            conditions.push(`title ~ "${filter.search}" || notes ~ "${filter.search}"`);
+            conditions.push(`field_role ~ "${filter.search}" || field_impactDescription ~ "${filter.search}"`);
           }
           
           queryFilter = conditions.join(' && ');
@@ -178,9 +178,19 @@ export const TenureResolvers = {
   },
 
   Tenure: {
+    role: (parent: Tenure) => parent.role || null,
+    department: (parent: Tenure) => parent.department || null,
+    startYear: (parent: Tenure) => parent.startYear || null,
+    endYear: (parent: Tenure) => parent.endYear || null,
+    isCurrentRole: (parent: Tenure) => parent.isCurrentRole || false,
+    achievements: (parent: Tenure) => parent.achievements || [],
+    notableWorks: (parent: Tenure) => parent.notableWorks || [],
+    notableCollections: (parent: Tenure) => parent.notableCollections || [],
+    impactDescription: (parent: Tenure) => parent.impactDescription || null,
+
     brand: async (parent: Tenure) => {
       try {
-        const record = await pb.collection('fd_brands').getOne(parent.brandId);
+        const record = await pb.collection('fd_brands').getOne(parent.field_brand);
         return record as Brand;
       } catch (error) {
         return handleError('Error fetching tenure brand', error);
@@ -189,7 +199,7 @@ export const TenureResolvers = {
 
     designer: async (parent: Tenure) => {
       try {
-        const record = await pb.collection('fd_designers').getOne(parent.designerId);
+        const record = await pb.collection('fd_designers').getOne(parent.field_designer);
         return record as Designer;
       } catch (error) {
         return handleError('Error fetching tenure designer', error);
