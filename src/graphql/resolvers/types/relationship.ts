@@ -157,24 +157,24 @@ export const RelationshipResolvers = {
 
   Relationship: {
     type: (parent: Record<string, string>) => {
-      const type = parent.field_type || parent.type;
+      const type = parent.type;
       if (!type || !['mentorship', 'succession', 'collaboration', 'familial'].includes(type)) {
         throw new Error(`Invalid relationship type: ${type}`);
       }
       return type;
     },
     startYear: (parent: Record<string, number>) => {
-      const year = parent.field_startYear || parent.startYear;
+      const year = parent.startYear;
       return typeof year === 'number' ? year : null;
     },
     endYear: (parent: Record<string, number>) => {
-      const year = parent.field_endYear || parent.endYear;
+      const year = parent.endYear;
       return typeof year === 'number' ? year : null;
     },
-    description: (parent: Record<string, string>) => parent.field_description || parent.description || null,
-    collaborationProjects: (parent: Record<string, string[]>) => parent.field_collaborationProjects || parent.collaborationProjects || [],
+    description: (parent: Record<string, string>) => parent.description || null,
+    collaborationProjects: (parent: Record<string, string[]>) => parent.collaborationProjects || [],
     verificationStatus: (parent: Record<string, string>) => {
-      const status = parent.field_verificationStatus || parent.verificationStatus;
+      const status = parent.verificationStatus;
       if (!status || !['PENDING', 'VERIFIED', 'REJECTED'].includes(status)) {
         return 'PENDING';
       }
@@ -220,15 +220,19 @@ export const RelationshipResolvers = {
       }
     },
 
-    brand: async (parent: Relationship) => {
+    brand: async (parent: Record<string, string | number | boolean | null>) => {
       try {
-        if (!parent.field_brand) {
-          throw new Error('No brand ID found');
+        const brandId = parent.brand;
+        if (!brandId || typeof brandId !== 'string') {
+          console.warn('No valid brand ID found in relationship:', parent.id);
+          return null;
         }
-        const record = await pb.collection('fd_brands').getOne(parent.field_brand);
+        console.log('Fetching brand with ID:', brandId);
+        const record = await pb.collection('fd_brands').getOne(brandId);
         return record as Brand;
       } catch (error) {
-        return handleError('Error fetching relationship brand', error);
+        console.error(`Error fetching relationship brand (${parent.id}):`, error);
+        return null;
       }
     },
   },

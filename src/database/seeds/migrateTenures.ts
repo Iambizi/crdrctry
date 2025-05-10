@@ -1,4 +1,4 @@
-import { Tenure, CreateTenure } from "../types/types";
+import { Tenure, CreateTenure, VerificationStatus, Department } from "../types/types";
 import path from "path";
 import fs from "fs/promises";
 import { fileURLToPath } from 'url';
@@ -32,6 +32,7 @@ interface RawTenure {
   notableWorks?: string[];
   notableCollections?: string[];
   impactDescription?: string;
+  verificationStatus?: string;
 }
 
 async function loadTenureData(): Promise<Tenure[]> {
@@ -101,13 +102,13 @@ async function authenticateAdmin() {
 async function validateTenure(tenure: CreateTenure): Promise<string[]> {
   const errors: string[] = [];
 
-  if (!tenure.designer) {
+  if (!tenure.field_designer) {
     errors.push("Designer is required");
   }
-  if (!tenure.brand) {
+  if (!tenure.field_brand) {
     errors.push("Brand is required");
   }
-  if (!tenure.startYear) {
+  if (!tenure.field_startYear) {
     errors.push("Start year is required");
   }
 
@@ -179,17 +180,18 @@ export async function migrateTenures(): Promise<void> {
       const designer = await pb.collection('fd_designers').getOne(designerRecord.id);
 
       const tenureData: CreateTenure = {
-        designer: designer.name,
-        brand: brand.name,
-        role: designer.currentRole,
-        department: designer.department || 'allDepartments',
-        startYear: tenure.startYear,
-        endYear: tenure.endYear || undefined,
-        isCurrentRole: !tenure.endYear,
-        achievements: designer.achievements || [],
-        notableWorks: designer.notableWorks || [],
-        notableCollections: [],
-        impactDescription: ''
+        field_designer: designer.id,
+        field_brand: brand.id,
+        field_role: tenure.role || 'Creative Director',
+        field_department: tenure.department || Department.allDepartments,
+        field_startYear: tenure.startYear,
+        field_endYear: tenure.endYear || undefined,
+        field_isCurrentRole: tenure.isCurrentRole ?? !tenure.endYear,
+        field_achievements: tenure.achievements || [],
+        field_notableWorks: tenure.notableWorks || [],
+        field_notableCollections: tenure.notableCollections || [],
+        field_impactDescription: tenure.impactDescription || '',
+        field_verificationStatus: tenure.verificationStatus?.toLowerCase() === 'verified' ? VerificationStatus.verified : VerificationStatus.unverified
       };
 
       const validationErrors = await validateTenure(tenureData);
