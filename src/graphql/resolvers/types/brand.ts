@@ -160,29 +160,63 @@ export const BrandResolvers = {
 
     designers: async (parent: Brand) => {
       try {
-        const tenures = await pb.collection('fd_tenures').getList(1, 50, {
-          filter: `field_brand = "${parent.id}"`,
+        console.log('DEBUG: Brand parent object:', JSON.stringify(parent, null, 2));
+        console.log('DEBUG: Attempting to fetch tenures for brand:', parent.id);
+        
+        // Fetch tenures for this brand
+        console.log('DEBUG: Fetching tenures with filter:', `brand = "${parent.id}"`);
+        const tenures = await pb.collection('fd_tenures').getList(1, 100, {
+          filter: `brand = "${parent.id}"`,
+          sort: '-startYear',
+          $cancelKey: parent.id, // Use brand ID as cancel key to prevent auto-cancellation conflicts
         });
         
-        const designerIds = [...new Set(tenures.items.map(t => t.field_designer as string))];
-        const designers = await Promise.all(
-          designerIds.map(id => pb.collection('fd_designers').getOne(id))
-        );
+        console.log('DEBUG: Raw tenures response:', JSON.stringify(tenures, null, 2));
         
-        return designers as Designer[];
+        if (tenures.items.length === 0) {
+          console.log('DEBUG: No tenures found for brand:', parent.id);
+          return [];
+        }
+        
+        // Extract unique designer IDs
+        const designerIds = [...new Set(tenures.items.map(t => t.designer))];
+        console.log('DEBUG: Extracted designer IDs:', designerIds);
+        
+        if (designerIds.length === 0) {
+          console.log('DEBUG: No designer IDs found in tenures');
+          return [];
+        }
+        
+        if (designerIds.length === 0) {
+          console.log('DEBUG: No designers found for brand:', parent.id);
+          return [];
+        }
+
+        // Fetch all designers in one batch instead of individually
+        console.log('DEBUG: Fetching designers with filter:', `id ?~ "${designerIds.join('|')}"`);        
+        const designers = await pb.collection('fd_designers').getList(1, designerIds.length, {
+          filter: designerIds.map(id => `id = "${id}"`).join(' || '),
+          $cancelKey: `designers-${parent.id}`, // Unique cancel key for designer fetch
+        });
+        
+        console.log('DEBUG: Fetched designers:', designers.items.map(d => ({ id: d.id, name: d.name })));
+        return designers.items as Designer[];
       } catch (error) {
-        return handleError('Error fetching brand designers', error);
+        console.error('DEBUG: Error in designers resolver:', error);
+        return [];
       }
     },
 
     tenures: async (parent: Brand) => {
       try {
-        const result = await pb.collection('fd_tenures').getList(1, 50, {
-          filter: `field_brand = "${parent.id}"`,
+        const result = await pb.collection('fd_tenures').getList(1, 100, {
+          filter: `brand = "${parent.id}"`,
+          sort: '-startYear',
         });
         return result.items as Tenure[];
       } catch (error) {
-        return handleError('Error fetching brand tenures', error);
+        console.error('Error fetching brand tenures:', error);
+        return [];
       }
     },
   },

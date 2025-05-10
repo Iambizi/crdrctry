@@ -28,10 +28,10 @@ export const RelationshipResolvers = {
         
         if (filter) {
           const conditions = [];
-          if (filter.type) conditions.push(`field_type = "${filter.type}"`);
-          if (filter.sourceDesigner) conditions.push(`field_sourceDesigner = "${filter.sourceDesigner}"`);
-          if (filter.targetDesigner) conditions.push(`field_targetDesigner = "${filter.targetDesigner}"`);
-          if (filter.brand) conditions.push(`field_brand = "${filter.brand}"`);
+          if (filter.type) conditions.push(`type = "${filter.type}"`);
+          if (filter.sourceDesigner) conditions.push(`sourceDesigner = "${filter.sourceDesigner}"`);
+          if (filter.targetDesigner) conditions.push(`targetDesigner = "${filter.targetDesigner}"`);
+          if (filter.brand) conditions.push(`brand = "${filter.brand}"`);
           queryFilter = conditions.join(' && ');
         }
         console.log('Query filter:', queryFilter);
@@ -180,27 +180,43 @@ export const RelationshipResolvers = {
       }
       return status;
     },
-    sourceDesigner: async (parent: Relationship) => {
+    sourceDesigner: async (parent: Record<string, string | number | boolean | null>) => {
       try {
-        if (!parent.field_sourceDesigner) {
-          throw new Error('No source designer ID found');
+        const designerId = parent.sourceDesigner as string;
+        if (!designerId) {
+          console.warn('No source designer ID found in relationship:', parent.id);
+          return null;
         }
-        const record = await pb.collection('fd_designers').getOne(parent.field_sourceDesigner);
+        console.log('Fetching source designer with ID:', designerId);
+        const record = await pb.collection('fd_designers').getOne(designerId);
+        if (!record) {
+          console.warn(`Designer not found with ID: ${designerId}`);
+          return null;
+        }
         return record as Designer;
       } catch (error) {
-        return handleError('Error fetching relationship designer', error);
+        console.error(`Error fetching source designer (${parent.id}):`, error);
+        return null;
       }
     },
 
-    targetDesigner: async (parent: Relationship) => {
+    targetDesigner: async (parent: Record<string, string | number | boolean | null>) => {
       try {
-        if (!parent.field_targetDesigner) {
-          throw new Error('No target designer ID found');
+        const designerId = parent.targetDesigner as string;
+        if (!designerId) {
+          console.warn('No target designer ID found in relationship:', parent.id);
+          return null;
         }
-        const record = await pb.collection('fd_designers').getOne(parent.field_targetDesigner);
+        console.log('Fetching target designer with ID:', designerId);
+        const record = await pb.collection('fd_designers').getOne(designerId);
+        if (!record) {
+          console.warn(`Designer not found with ID: ${designerId}`);
+          return null;
+        }
         return record as Designer;
       } catch (error) {
-        return handleError('Error fetching related designer', error);
+        console.error(`Error fetching target designer (${parent.id}):`, error);
+        return null;
       }
     },
 

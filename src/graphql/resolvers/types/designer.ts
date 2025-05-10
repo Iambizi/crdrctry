@@ -160,22 +160,27 @@ export const DesignerResolvers = {
     tenures: async (parent: Designer) => {
       try {
         const result = await pb.collection('fd_tenures').getList(1, 50, {
-          filter: `field_designer = "${parent.id}"`,
+          filter: `designer = "${parent.id}"`,
+          expand: 'brand',
+          sort: '-startYear'
         });
         return result.items as Tenure[];
       } catch (error) {
-        return handleError('Error fetching designer tenures', error);
+        console.error('Error fetching designer tenures:', error);
+        return [];
       }
     },
 
     relationships: async (parent: Designer) => {
       try {
         const result = await pb.collection('fd_relationships').getList(1, 50, {
-          filter: `field_sourceDesigner = "${parent.id}" || field_targetDesigner = "${parent.id}"`,
+          filter: `sourceDesigner = "${parent.id}" || targetDesigner = "${parent.id}"`,
+          sort: '-startYear'
         });
         return result.items as Relationship[];
       } catch (error) {
-        return handleError('Error fetching designer relationships', error);
+        console.error('Error fetching designer relationships:', error);
+        return [];
       }
     },
   },

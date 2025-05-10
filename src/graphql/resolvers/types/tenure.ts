@@ -27,25 +27,25 @@ export const TenureResolvers = {
         
         if (filter) {
           const conditions = [];
-          if (filter.department) conditions.push(`field_department = "${filter.department}"`);
-          if (filter.isActive !== undefined) conditions.push(`field_isActive = ${filter.isActive}`);
-          if (filter.brandId) conditions.push(`field_brand = "${filter.brandId}"`);
-          if (filter.designerId) conditions.push(`field_designer = "${filter.designerId}"`);
+          if (filter.department) conditions.push(`department = "${filter.department}"`);
+          if (filter.isActive !== undefined) conditions.push(`isCurrentRole = ${filter.isActive}`);
+          if (filter.brandId) conditions.push(`brand = "${filter.brandId}"`);
+          if (filter.designerId) conditions.push(`designer = "${filter.designerId}"`);
           
           if (filter.startYearRange) {
             const { start, end } = filter.startYearRange;
-            if (start) conditions.push(`field_startYear >= ${start}`);
-            if (end) conditions.push(`field_startYear <= ${end}`);
+            if (start) conditions.push(`startYear >= ${start}`);
+            if (end) conditions.push(`startYear <= ${end}`);
           }
           
           if (filter.endYearRange) {
             const { start, end } = filter.endYearRange;
-            if (start) conditions.push(`field_endYear >= ${start}`);
-            if (end) conditions.push(`field_endYear <= ${end}`);
+            if (start) conditions.push(`endYear >= ${start}`);
+            if (end) conditions.push(`endYear <= ${end}`);
           }
           
           if (filter.search) {
-            conditions.push(`field_role ~ "${filter.search}" || field_impactDescription ~ "${filter.search}"`);
+            conditions.push(`role ~ "${filter.search}" || impactDescription ~ "${filter.search}"`);
           }
           
           queryFilter = conditions.join(' && ');
@@ -59,9 +59,9 @@ export const TenureResolvers = {
 
     activeTenures: async (_: unknown, { brandId, designerId }: { brandId?: string; designerId?: string }) => {
       try {
-        const conditions = ['field_isActive = true'];
-        if (brandId) conditions.push(`field_brand = "${brandId}"`);
-        if (designerId) conditions.push(`field_designer = "${designerId}"`);
+        const conditions = ['isCurrentRole = true'];
+        if (brandId) conditions.push(`brand = "${brandId}"`);
+        if (designerId) conditions.push(`designer = "${designerId}"`);
 
         const result = await pb.collection('fd_tenures').getList(1, 50, {
           filter: conditions.join(' && '),
@@ -188,21 +188,35 @@ export const TenureResolvers = {
     notableCollections: (parent: Tenure) => parent.notableCollections || [],
     impactDescription: (parent: Tenure) => parent.impactDescription || null,
 
-    brand: async (parent: Tenure) => {
+    brand: async (parent: Record<string, string>) => {
       try {
-        const record = await pb.collection('fd_brands').getOne(parent.field_brand);
+        const brandId = parent.brand;
+        if (!brandId) {
+          console.warn('No brand ID found in tenure:', parent.id);
+          return null;
+        }
+        console.log('Fetching brand with ID:', brandId);
+        const record = await pb.collection('fd_brands').getOne(brandId);
         return record as Brand;
       } catch (error) {
-        return handleError('Error fetching tenure brand', error);
+        console.error(`Error fetching tenure brand (${parent.id}):`, error);
+        return null;
       }
     },
 
-    designer: async (parent: Tenure) => {
+    designer: async (parent: Record<string, string>) => {
       try {
-        const record = await pb.collection('fd_designers').getOne(parent.field_designer);
+        const designerId = parent.designer;
+        if (!designerId) {
+          console.warn('No designer ID found in tenure:', parent.id);
+          return null;
+        }
+        console.log('Fetching designer with ID:', designerId);
+        const record = await pb.collection('fd_designers').getOne(designerId);
         return record as Designer;
       } catch (error) {
-        return handleError('Error fetching tenure designer', error);
+        console.error(`Error fetching tenure designer (${parent.id}):`, error);
+        return null;
       }
     },
   },
