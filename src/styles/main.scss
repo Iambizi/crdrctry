@@ -1,0 +1,32 @@
+// Abstracts - Global variables and mixins
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base - Global reset and base styles
+@import 'base/reset';
+
+// Note: Component styles will be imported directly in their respective .tsx files
+// using CSS Modules (.module.scss) for proper scoping and co-location
+
+// Example component import in a .tsx file:
+// import styles from './ComponentName.module.scss';
+
+// Global utility classes
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Print styles
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
