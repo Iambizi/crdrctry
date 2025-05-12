@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: $sidebar-width;
+  background-color: $color-background;
+  border-right: 1px solid rgba($color-primary, 0.1);
+  padding: $spacing-medium;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.logo {
+  padding: $spacing-medium 0;
+  margin-bottom: $spacing-large;
+  
+  h1 {
+    @include heading-2;
+    color: $color-primary;
+  }
+
+  span {
+    font-size: $font-size-small;
+    color: $color-secondary;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-small;
+}
+
+.navSection {
+  margin-bottom: $spacing-large;
+
+  h2 {
+    font-size: $font-size-small;
+    color: $color-secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: $spacing-small;
+  }
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: $spacing-small;
+  padding: $spacing-small;
+  border-radius: $border-radius-small;
+  color: $color-primary;
+  text-decoration: none;
+  transition: all $transition-fast;
+
+  &:hover {
+    background-color: rgba($color-accent, 0.05);
+    color: $color-accent;
+  }
+
+  &.active {
+    background-color: rgba($color-accent, 0.1);
+    color: $color-accent;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.main {
+  flex: 1;
+  margin-left: $sidebar-width;
+  padding: $spacing-medium;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-medium;
+  background-color: $color-background;
+  border-bottom: 1px solid rgba($color-primary, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: $z-index-dropdown;
+
+  h1 {
+    @include heading-2;
+  }
+}
+
+.search {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 $spacing-xlarge;
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: $spacing-small;
+    padding-left: $spacing-xlarge;
+    border: 1px solid rgba($color-primary, 0.1);
+    border-radius: $border-radius-small;
+    background-color: rgba($color-primary, 0.02);
+    transition: all $transition-fast;
+
+    &:focus {
+      outline: none;
+      border-color: $color-accent;
+      background-color: $color-background;
+    }
+  }
+
+  svg {
+    position: absolute;
+    left: $spacing-small;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-secondary;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: $spacing-small;
+}
+
+// Responsive styles
+@include md {
+  .sidebar {
+    width: 64px;
+    padding: $spacing-small;
+
+    .logo {
+      text-align: center;
+      
+      span {
+        display: none;
+      }
+    }
+
+    .navItem span {
+      display: none;
+    }
+  }
+
+  .main {
+    margin-left: 64px;
+  }
+}
