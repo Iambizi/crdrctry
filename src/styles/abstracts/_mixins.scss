@@ -23,6 +23,12 @@
   }
 }
 
+@mixin md-down {
+  @media (max-width: #{$breakpoint-md - 1px}) {
+    @content;
+  }
+}
+
 // Flex mixins
 @mixin flex-center {
   display: flex;

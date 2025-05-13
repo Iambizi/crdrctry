@@ -1,0 +1,47 @@
+.searchBar {
+  position: relative;
+  width: 300px;
+
+  input {
+    width: 100%;
+    padding: 8px 12px;
+    padding-left: 36px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    font-size: 14px;
+    color: #111;
+    transition: all 150ms ease;
+    background: white;
+
+    &::placeholder {
+      color: #999;
+    }
+
+    &:hover {
+      border-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: rgb(59, 130, 246);
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+    }
+  }
+
+  .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: #999;
+    pointer-events: none;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      stroke-width: 1.5;
+    }
+  }
+}
