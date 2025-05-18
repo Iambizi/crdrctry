@@ -101,7 +101,7 @@ export async function migrateBrands(): Promise<void> {
         category: brand.category,
         hasHistoricalData: brand.hasHistoricalData,
         notes: brand.notes,
-        lastCategorized: brand.lastCategorized
+        verificationStatus: brand.verificationStatus || 'UNVERIFIED'
       };
 
       const validationErrors = await validateBrand(transformedBrand);

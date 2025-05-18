@@ -106,6 +106,7 @@ export async function migrateDesigners(): Promise<void> {
         education: designer.education || [],
         signatureStyles: designer.signatureStyles || [],
         socialMedia: designer.socialMedia || {},
+        verificationStatus: designer.verificationStatus || 'pending',
       };
 
       const validationErrors = await validateDesigner(transformedDesigner);

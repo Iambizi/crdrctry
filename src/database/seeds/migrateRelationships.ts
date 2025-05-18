@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs/promises';
 import { fileURLToPath } from 'url';
 import { withTransaction } from "../client";
-import { CreateRelationship, RelationshipType } from "../types/types";
+import { CreateRelationship, RelationshipType, VerificationStatus } from "../types/types";
 
 const __filename = fileURLToPath(import.meta.url);
 
@@ -67,7 +67,8 @@ function transformRelationship(
     startYear: relationship.startYear,
     endYear: relationship.endYear,
     description: relationship.description,
-    collaborationProjects: relationship.collaborationProjects || []
+    collaborationProjects: relationship.collaborationProjects || [],
+    verificationStatus: VerificationStatus.unverified
   };
 }
 
