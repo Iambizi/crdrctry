@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import styles from './VerificationDashboard.module.scss';
 import VerificationCard from '../VerificationCard/VerificationCard';
 
@@ -65,16 +66,36 @@ export default function VerificationDashboard({
     );
   };
 
-  const handleBatchApprove = () => {
-    // TODO: Implement batch approve logic
-    console.log('Approving:', selectedItems);
-    setSelectedItems([]);
+  const [isBatchProcessing, setIsBatchProcessing] = useState(false);
+
+  const handleBatchApprove = async () => {
+    if (selectedItems.length === 0) return;
+    
+    setIsBatchProcessing(true);
+    try {
+      await Promise.all(selectedItems.map(id => onApprove(id)));
+      toast.success(`Successfully approved ${selectedItems.length} items`);
+      setSelectedItems([]);
+    } catch (error) {
+      toast.error(`Failed to approve some items: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    } finally {
+      setIsBatchProcessing(false);
+    }
   };
 
-  const handleBatchReject = () => {
-    // TODO: Implement batch reject logic
-    console.log('Rejecting:', selectedItems);
-    setSelectedItems([]);
+  const handleBatchReject = async () => {
+    if (selectedItems.length === 0) return;
+
+    setIsBatchProcessing(true);
+    try {
+      await Promise.all(selectedItems.map(id => onReject(id)));
+      toast.success(`Successfully rejected ${selectedItems.length} items`);
+      setSelectedItems([]);
+    } catch (error) {
+      toast.error(`Failed to reject some items: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    } finally {
+      setIsBatchProcessing(false);
+    }
   };
 
   return (
@@ -102,22 +123,24 @@ export default function VerificationDashboard({
       <div className={styles.container}>
       {selectedItems.length > 0 && (
         <div className={styles.batchActions}>
-          <span>{selectedItems.length} items selected</span>
-          <div className={styles.buttons}>
-            <button
-              onClick={handleBatchReject}
-              className={`${styles.button} ${styles.reject}`}
-            >
-              Reject Selected
-            </button>
-            <button
-              onClick={handleBatchApprove}
-              className={`${styles.button} ${styles.approve}`}
-            >
-              Approve Selected
-            </button>
-          </div>
+        <span>{selectedItems.length} items selected</span>
+        <div className={styles.buttons}>
+          <button
+            onClick={handleBatchReject}
+            className={`${styles.button} ${styles.reject}`}
+            disabled={isBatchProcessing}
+          >
+            {isBatchProcessing ? 'Rejecting...' : 'Reject Selected'}
+          </button>
+          <button
+            onClick={handleBatchApprove}
+            className={`${styles.button} ${styles.approve}`}
+            disabled={isBatchProcessing}
+          >
+            {isBatchProcessing ? 'Approving...' : 'Approve Selected'}
+          </button>
         </div>
+      </div>
       )}
 
       <div className={styles.header}>

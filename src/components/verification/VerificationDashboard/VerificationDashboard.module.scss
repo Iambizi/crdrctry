@@ -33,7 +33,7 @@
     
 
     .button {
-      padding: 6px 12px;
+      padding: 6px 16px;
       border-radius: 6px;
       font-size: 13px;
       font-weight: $font-weight-medium;
@@ -43,21 +43,52 @@
       cursor: pointer;
       transition: all 150ms ease;
       height: 32px;
-      display: flex;
+      min-width: 80px;
+      display: inline-flex;
       align-items: center;
+      justify-content: center;
 
-      &:hover {
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        
+        &:hover {
+          background: white;
+        }
+      }
+
+      &:hover:not(:disabled) {
         border-color: rgba($color-primary, 0.2);
+        background: rgba($color-primary, 0.05);
+      }
+
+      &.reject {
+        background: white;
+        color: #ef4444;
+        border: 1px solid #ef4444;
+
+        &:hover:not(:disabled) {
+          background: #fef2f2;
+        }
+      }
+
+      &.approve {
+        background: #10b981;
+        color: white;
+        border: 1px solid #059669;
+
+        &:hover:not(:disabled) {
+          background: #059669;
+        }
       }
 
       &.primary {
-        background: $color-accent;
-        border-color: $color-accent;
+        background: $color-primary;
         color: white;
+        border: 1px solid darken($color-primary, 5%);
 
-        &:hover {
-          background: darken($color-accent, 10%);
-          border-color: darken($color-accent, 10%);
+        &:hover:not(:disabled) {
+          background: darken($color-primary, 5%);
         }
       }
     }
