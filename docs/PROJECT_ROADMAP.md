@@ -85,25 +85,31 @@
   - [ ] Batch upload functionality
 - [ ] DesignerCard Component (optional)
 
-## 🔹 Phase 2: Systemization & AI Integration
+## 🔹 Phase 2: AI Integration & Data Pipeline
 
-### 4. AI Agent System Design
-- [ ] Data Source Definition:
-  - [ ] News articles
-  - [ ] Press releases
-  - [ ] Social media
-  - [ ] Industry publications
-- [ ] AI Pipeline Design:
+### 4. FashionNewsAgent Implementation
+- [ ] Data Source Integration:
+  - [ ] Business of Fashion (BoF) API
+  - [ ] Women's Wear Daily (WWD) RSS
+  - [ ] Vogue Runway scraper
+  - [ ] Source priority system
+- [ ] Data Processing Pipeline:
   ```typescript
-  interface AIAgent {
-    fetchNews(): Promise<NewsItem[]>;
-    extractInfo(news: NewsItem): Promise<FashionUpdate>;
-    scoreConfidence(update: FashionUpdate): number;
-    submitUpdate(update: FashionUpdate): Promise<void>;
+  interface FashionNewsAgent {
+    // Core functionality
+    monitorSources(): Promise<void>;
+    processUpdate(raw: NewsItem): Promise<FashionUpdate>;
+    validateUpdate(update: FashionUpdate): Promise<VerificationResult>;
+    submitForReview(update: FashionUpdate): Promise<string>;
+    
+    // Monitoring
+    getSourceStats(): Promise<SourceStats>;
+    getConfidenceMetrics(): Promise<ConfidenceMetrics>;
   }
   ```
-- [ ] Source Monitoring Setup
-- [ ] Validation Rules Definition
+- [ ] NLP Processing Setup
+- [ ] Cross-Reference System
+- [ ] Confidence Scoring Implementation
 
 ### 5. API Layer Implementation
 - [x] GraphQL API Implementation
@@ -161,15 +167,17 @@
 - Set up PocketBase
 - Implement basic admin interface
 
-### Week 3-4: API & Systems
-- Build API layer
-- Design AI agent system
-- Create documentation
+### Week 3-4: AI Agent & Data Pipeline
+- Implement FashionNewsAgent core
+- Set up data source integrations
+- Build validation pipeline
+- Create monitoring system
 
-### Week 5-6: UX & Integration
-- Implement state management
-- Set up visualization framework
-- Begin AI agent implementation
+### Week 5-6: Verification System
+- Enhance verification dashboard
+- Implement review interface
+- Set up analytics tracking
+- Deploy monitoring tools
 
 ## Success Metrics
 - [ ] 100% data verification
