@@ -94,7 +94,6 @@ export default function VerificationDashboard({
             onClick={() => setActiveTab(tab.value)}
           >
             {tab.label}
-            <span className={styles.count}>{tab.count}</span>
           </button>
         ))}
       </div>

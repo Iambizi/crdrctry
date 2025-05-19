@@ -70,6 +70,7 @@ export default function VerificationCard({
       <div className={styles.header}>
         <div>
           <h3>{type} Update</h3>
+          <div className={styles.title}>{title}</div>
           <div className={styles.timestamp}>{timestamp}</div>
         </div>
         <div className={`${styles.badge} ${styles[status]}`}>
@@ -78,8 +79,25 @@ export default function VerificationCard({
       </div>
 
       <div className={styles.section}>
-        <h4>Title</h4>
-        <div>{title}</div>
+        <h4>Original Data</h4>
+        <pre className={styles.codeBlock}>
+          {JSON.stringify({
+            name: differences.find(d => d.field === 'name')?.original || '',
+            nationality: differences.find(d => d.field === 'nationality')?.original || '',
+            is_active: differences.find(d => d.field === 'is_active')?.original || '',
+          }, null, 2)}
+        </pre>
+      </div>
+
+      <div className={styles.section}>
+        <h4>Proposed Changes</h4>
+        <pre className={styles.codeBlock}>
+          {JSON.stringify({
+            name: differences.find(d => d.field === 'name')?.modified || '',
+            nationality: differences.find(d => d.field === 'nationality')?.modified || '',
+            is_active: differences.find(d => d.field === 'is_active')?.modified || '',
+          }, null, 2)}
+        </pre>
       </div>
 
       <div className={styles.section}>
@@ -94,10 +112,15 @@ export default function VerificationCard({
           </thead>
           <tbody>
             {differences.map((diff) => (
-              <tr key={diff.field}>
+              <tr 
+                key={diff.field} 
+                className={diff.original !== diff.modified ? styles.changed : ''}
+              >
                 <td>{diff.field}</td>
                 <td>{diff.original}</td>
-                <td className={styles.modified}>{diff.modified}</td>
+                <td className={diff.original !== diff.modified ? styles.modified : ''}>
+                  {diff.modified}
+                </td>
               </tr>
             ))}
           </tbody>

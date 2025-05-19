@@ -114,7 +114,7 @@
   border: 1px solid rgba($color-primary, 0.08);
 
   &.pending {
-    border-bottom: 2px solid rgb(246, 221, 59);
+    border-bottom: 2px solid rgb(246, 174, 59);
   }
 
   &.verified {
@@ -136,6 +136,18 @@
     font-size: 32px;
     font-weight: 500;
     color: #111;
+    
+    &.pending {
+      color: rgb(246, 184, 59);
+    }
+    
+    &.verified {
+      color: rgb(34, 197, 94);
+    }
+    
+    &.rejected {
+      color: rgb(239, 68, 68);
+    }
   }
 }
 

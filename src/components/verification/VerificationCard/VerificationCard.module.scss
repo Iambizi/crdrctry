@@ -1,37 +1,57 @@
 .card {
-  @include card;
-  margin-bottom: $spacing-large;
-  max-width: $verification-card-width;
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: $spacing-medium;
+  margin-bottom: 24px;
 
   h3 {
-    font-size: $font-size-large;
-    font-weight: $font-weight-medium;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin: 0 0 4px;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+  }
+
+  .timestamp {
+    font-size: 13px;
+    color: #666;
   }
 }
 
 .badge {
-  font-size: $font-size-small;
-  padding: $spacing-small $spacing-medium;
-  border-radius: $border-radius-small;
-  background-color: rgba($color-warning, 0.1);
-  color: $color-warning;
-  font-weight: $font-weight-medium;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+
+  &.pending {
+    background-color: rgb(255, 247, 237);
+    color: rgb(246, 184, 59);
+  }
 
   &.verified {
-    background-color: rgba($color-success, 0.1);
-    color: $color-success;
+    background-color: rgba(34, 197, 94, 0.1);
+    color: rgb(34, 197, 94);
   }
 
   &.rejected {
-    background-color: rgba($color-error, 0.1);
-    color: $color-error;
+    background-color: rgba(239, 68, 68, 0.1);
+    color: rgb(239, 68, 68);
   }
 }
 
@@ -42,75 +62,93 @@
 }
 
 .section {
-  margin-bottom: $spacing-large;
+  margin-bottom: 24px;
 
   h4 {
-    font-size: $font-size-small;
-    color: $color-secondary;
+    font-size: 13px;
+    color: #666;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: $spacing-small;
+    margin-bottom: 8px;
+  }
+
+  .codeBlock {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #334155;
+    margin: 0;
+    white-space: pre-wrap;
   }
 }
 
 .diffTable {
   width: 100%;
   border-collapse: collapse;
-  margin: $spacing-medium 0;
-  font-size: $font-size-small;
+  margin: 16px 0;
+  font-size: 14px;
+  background: white;
+  border-radius: 8px;
 
   th {
     text-align: left;
-    padding: $spacing-small;
-    border-bottom: 1px solid rgba($color-primary, 0.1);
-    color: $color-secondary;
-    font-weight: $font-weight-medium;
-  }
-
-  td {
-    padding: $spacing-small;
-    border-bottom: 1px solid rgba($color-primary, 0.05);
-
-    &.modified {
-      color: $color-accent;
-      font-weight: $font-weight-medium;
+    padding: 12px;
+    background: #f9fafb;
+    color: #666;
+    font-weight: 500;
+    
+    &:first-child {
+      border-top-left-radius: 8px;
+    }
+    
+    &:last-child {
+      border-top-right-radius: 8px;
     }
   }
 
-  tr:last-child td {
-    border-bottom: none;
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #111;
+
+    &.modified {
+      color: rgb(124, 58, 237);
+      font-weight: 500;
+    }
+  }
+
+  tr {
+    &.changed {
+      background-color: rgb(254, 252, 232);
+    }
+
+    &:last-child td {
+      border-bottom: none;
+    }
   }
 }
 
 .confidenceScore {
   display: flex;
   align-items: center;
-  gap: $spacing-medium;
-  margin: $spacing-medium 0;
+  gap: 16px;
+  margin: 16px 0;
 
   .score {
-    font-size: $font-size-large;
-    font-weight: $font-weight-bold;
-
-    &.high {
-      color: $color-confidence-high;
-    }
-
-    &.medium {
-      color: $color-confidence-medium;
-    }
-
-    &.low {
-      color: $color-confidence-low;
-    }
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(34, 197, 94);
   }
 
   .source {
-    font-size: $font-size-small;
-    color: $color-secondary;
+    font-size: 14px;
+    color: #666;
     
     a {
-      color: $color-accent;
+      color: rgb(59, 130, 246);
       text-decoration: none;
       
       &:hover {
@@ -131,33 +169,35 @@
 
 .actions {
   display: flex;
-  gap: $spacing-medium;
-  margin-top: $spacing-large;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
 
   button {
-    flex: 1;
-    padding: $spacing-small $spacing-medium;
-    border-radius: $border-radius-small;
-    font-weight: $font-weight-medium;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
     cursor: pointer;
-    transition: all $transition-fast;
-    border: none;
+    transition: all 150ms ease;
 
     &.reject {
-      background-color: rgba($color-error, 0.1);
-      color: $color-error;
+      background-color: rgb(254, 242, 242);
+      color: rgb(239, 68, 68);
+      border: none;
 
       &:hover {
-        background-color: rgba($color-error, 0.2);
+        background-color: rgb(254, 226, 226);
       }
     }
 
     &.approve {
-      background-color: $color-success;
+      background-color: rgb(34, 197, 94);
       color: white;
+      border: none;
 
       &:hover {
-        background-color: darken($color-success, 5%);
+        background-color: rgb(22, 163, 74);
       }
     }
 
