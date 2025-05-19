@@ -5,6 +5,7 @@ import { Toaster } from 'react-hot-toast';
 import toast from 'react-hot-toast';
 import styles from './VerificationDashboard.module.scss';
 import VerificationCard from '../VerificationCard/VerificationCard';
+import { exportToCSV } from '../../../utils/exportUtils';
 
 type Status = 'pending' | 'verified' | 'rejected';
 
@@ -51,6 +52,8 @@ export default function VerificationDashboard({
 }: VerificationDashboardProps) {
   const [activeTab, setActiveTab] = useState<Status>('pending');
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
+  const [isBatchProcessing, setIsBatchProcessing] = useState(false);
+  const [isExporting, setIsExporting] = useState(false);
 
   const tabs: TabItem[] = [
     { label: 'Pending', value: 'pending', count: stats.pending },
@@ -65,8 +68,6 @@ export default function VerificationDashboard({
       prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
     );
   };
-
-  const [isBatchProcessing, setIsBatchProcessing] = useState(false);
 
   const handleBatchApprove = async () => {
     if (selectedItems.length === 0) return;
@@ -95,6 +96,31 @@ export default function VerificationDashboard({
       toast.error(`Failed to reject some items: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
       setIsBatchProcessing(false);
+    }
+  };
+
+  const handleExport = async () => {
+    setIsExporting(true);
+    try {
+      // TODO: Replace with actual data from your state/props
+      const dataToExport = updates.map(item => ({
+        id: item.id,
+        type: item.type,
+        title: item.title,
+        timestamp: item.timestamp,
+        status: item.status,
+        confidenceScore: item.confidenceScore,
+        source: item.source,
+        differences: item.differences
+      }));
+
+      const timestamp = new Date().toISOString().split('T')[0];
+      exportToCSV(dataToExport, `verification-data-${timestamp}.csv`);
+      toast.success('Data exported successfully');
+    } catch (error) {
+      toast.error(`Failed to export data: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    } finally {
+      setIsExporting(false);
     }
   };
 
@@ -149,7 +175,13 @@ export default function VerificationDashboard({
           <p>Review and verify AI suggested updates</p>
         </div>
         <div className={styles.headerRight}>
-          <button className={styles.button}>Export</button>
+          <button 
+            className={styles.button} 
+            onClick={handleExport}
+            disabled={isExporting}
+          >
+            {isExporting ? 'Exporting...' : 'Export'}
+          </button>
           <button className={`${styles.button} ${styles.primary}`}>View All</button>
         </div>
       </div>
