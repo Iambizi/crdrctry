@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
 import styles from './VerificationDashboard.module.scss';
 import VerificationCard from '../VerificationCard/VerificationCard';
 
@@ -48,6 +49,7 @@ export default function VerificationDashboard({
   onReject,
 }: VerificationDashboardProps) {
   const [activeTab, setActiveTab] = useState<Status>('pending');
+  const [selectedItems, setSelectedItems] = useState<string[]>([]);
 
   const tabs: TabItem[] = [
     { label: 'Pending', value: 'pending', count: stats.pending },
@@ -57,8 +59,67 @@ export default function VerificationDashboard({
 
   const filteredUpdates = updates.filter((update) => update.status === activeTab);
 
+  const handleSelect = (id: string) => {
+    setSelectedItems((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+    );
+  };
+
+  const handleBatchApprove = () => {
+    // TODO: Implement batch approve logic
+    console.log('Approving:', selectedItems);
+    setSelectedItems([]);
+  };
+
+  const handleBatchReject = () => {
+    // TODO: Implement batch reject logic
+    console.log('Rejecting:', selectedItems);
+    setSelectedItems([]);
+  };
+
   return (
-    <div className={styles.container}>
+    <>
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: '#333',
+            color: '#fff',
+          },
+          success: {
+            style: {
+              background: '#15803d',
+            },
+          },
+          error: {
+            style: {
+              background: '#b91c1c',
+            },
+          },
+        }}
+      />
+      <div className={styles.container}>
+      {selectedItems.length > 0 && (
+        <div className={styles.batchActions}>
+          <span>{selectedItems.length} items selected</span>
+          <div className={styles.buttons}>
+            <button
+              onClick={handleBatchReject}
+              className={`${styles.button} ${styles.reject}`}
+            >
+              Reject Selected
+            </button>
+            <button
+              onClick={handleBatchApprove}
+              className={`${styles.button} ${styles.approve}`}
+            >
+              Approve Selected
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className={styles.header}>
         <div className={styles.headerLeft}>
           <h1>Verification Dashboard</h1>
@@ -104,6 +165,8 @@ export default function VerificationDashboard({
             <VerificationCard
               key={update.id}
               {...update}
+              selected={selectedItems.includes(update.id)}
+              onSelect={handleSelect}
               onApprove={() => onApprove(update.id)}
               onReject={() => onReject(update.id)}
             />
@@ -120,5 +183,6 @@ export default function VerificationDashboard({
         )}
       </div>
     </div>
+    </>
   );
 }

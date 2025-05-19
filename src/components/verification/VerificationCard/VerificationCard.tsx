@@ -1,6 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { SmartEntryEditor } from '../SmartEntryEditor/SmartEntryEditor';
+import toast from 'react-hot-toast';
 import styles from './VerificationCard.module.scss';
 
 type UpdateType = 'Designer' | 'Brand' | 'Acquisition';
@@ -13,31 +15,38 @@ interface Difference {
 }
 
 interface VerificationCardProps {
+  id: string;
   type: UpdateType;
   title: string;
+  timestamp: string;
+  status: Status;
   differences: Difference[];
   confidenceScore: number;
   source: string;
   evidence: string;
-  timestamp: string;
-  status?: Status;
+  selected?: boolean;
+  onSelect?: (id: string) => void;
   onApprove?: () => void;
   onReject?: () => void;
 }
 
 export default function VerificationCard({
+  id,
   type,
   title,
+  timestamp,
+  status,
   differences,
   confidenceScore,
   source,
   evidence,
-  timestamp,
-  status = 'pending',
+  selected,
+  onSelect,
   onApprove,
   onReject,
 }: VerificationCardProps) {
   const [isLoading, setIsLoading] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
 
   const getConfidenceLevel = (score: number) => {
     if (score >= 80) return 'high';
@@ -50,6 +59,9 @@ export default function VerificationCard({
     setIsLoading(true);
     try {
       await onApprove();
+      toast.success('Update approved successfully');
+    } catch (error) {
+      toast.error(`Failed to approve update: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
       setIsLoading(false);
     }
@@ -60,13 +72,55 @@ export default function VerificationCard({
     setIsLoading(true);
     try {
       await onReject();
+      toast.success('Update rejected');
+    } catch (error) {
+      toast.error(`Failed to reject update: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
       setIsLoading(false);
     }
   };
 
+  const handleEdit = () => {
+    setIsEditing(true);
+  };
+
+  const handleSave = async (updatedData: { name: string; nationality?: string; is_active?: boolean }) => {
+    setIsLoading(true);
+    try {
+      // TODO: Implement save logic
+      console.log('Saving:', updatedData);
+      toast.success('Changes saved successfully');
+      setIsEditing(false);
+    } catch (error) {
+      toast.error(`Failed to save changes: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleCancel = () => {
+    setIsEditing(false);
+  };
+
+  if (isEditing) {
+    return (
+      <SmartEntryEditor
+        data={{
+          name: title,
+          nationality: differences.find(d => d.field === 'nationality')?.modified || '',
+          is_active: differences.find(d => d.field === 'is_active')?.modified === 'true'
+        }}
+        onSave={handleSave}
+        onCancel={handleCancel}
+      />
+    );
+  }
+
   return (
-    <div className={styles.card}>
+    <div 
+      className={`${styles.card} ${selected ? styles.selected : ''}`}
+      onClick={() => onSelect?.(id)}
+    >
       <div className={styles.header}>
         <div>
           <h3>{type} Update</h3>
@@ -131,8 +185,25 @@ export default function VerificationCard({
       <div className={styles.section}>
         <h4>Confidence Score</h4>
         <div className={styles.confidenceScore}>
-          <div className={`${styles.score} ${styles[getConfidenceLevel(confidenceScore)]}`}>
-            {confidenceScore}%
+          <div 
+            className={`${styles.scoreBar} ${styles[getConfidenceLevel(confidenceScore)]}`}
+            title={`${getConfidenceLevel(confidenceScore).toUpperCase()} confidence: ${confidenceScore}%`}
+          >
+            <div 
+              className={styles.scoreProgress} 
+              style={{ width: `${confidenceScore}%` }}
+              role="progressbar"
+              aria-valuenow={confidenceScore}
+              aria-valuemin={0}
+              aria-valuemax={100}
+            >
+              {confidenceScore}%
+            </div>
+          </div>
+          <div className={styles.confidenceLabel}>
+            {getConfidenceLevel(confidenceScore) === 'high' && 'High confidence: Quick approval recommended'}
+            {getConfidenceLevel(confidenceScore) === 'medium' && 'Medium confidence: Review changes carefully'}
+            {getConfidenceLevel(confidenceScore) === 'low' && 'Low confidence: Needs thorough verification'}
           </div>
           <div className={styles.source}>
             Source: <a href={source} target="_blank" rel="noopener noreferrer">{source}</a>
@@ -148,15 +219,20 @@ export default function VerificationCard({
       {status === 'pending' && (
         <div className={styles.actions}>
           <button
-            className={styles.reject}
+            onClick={handleEdit}
+            className={`${styles.button} ${styles.edit}`}
+          >
+            Edit
+          </button>
+          <button
             onClick={handleReject}
-            disabled={isLoading}
+            className={`${styles.button} ${styles.reject}`}
           >
             Reject
           </button>
           <button
-            className={styles.approve}
             onClick={handleApprove}
+            className={`${styles.button} ${styles.approve}`}
             disabled={isLoading}
           >
             Approve
