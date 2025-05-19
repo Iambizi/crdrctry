@@ -78,26 +78,27 @@ export default function VerificationCard({
         </div>
       </div>
 
-      <div className={styles.section}>
-        <h4>Original Data</h4>
-        <pre className={styles.codeBlock}>
-          {JSON.stringify({
-            name: differences.find(d => d.field === 'name')?.original || '',
-            nationality: differences.find(d => d.field === 'nationality')?.original || '',
-            is_active: differences.find(d => d.field === 'is_active')?.original || '',
-          }, null, 2)}
-        </pre>
-      </div>
-
-      <div className={styles.section}>
-        <h4>Proposed Changes</h4>
-        <pre className={styles.codeBlock}>
-          {JSON.stringify({
-            name: differences.find(d => d.field === 'name')?.modified || '',
-            nationality: differences.find(d => d.field === 'nationality')?.modified || '',
-            is_active: differences.find(d => d.field === 'is_active')?.modified || '',
-          }, null, 2)}
-        </pre>
+      <div className={styles.compareSection}>
+        <div>
+          <h4>Original Data</h4>
+          <pre className={styles.codeBlock}>
+            {JSON.stringify({
+              name: differences.find(d => d.field === 'name')?.original || '',
+              nationality: differences.find(d => d.field === 'nationality')?.original || '',
+              is_active: differences.find(d => d.field === 'is_active')?.original || '',
+            }, null, 2)}
+          </pre>
+        </div>
+        <div>
+          <h4>Proposed Changes</h4>
+          <pre className={styles.codeBlock}>
+            {JSON.stringify({
+              name: differences.find(d => d.field === 'name')?.modified || '',
+              nationality: differences.find(d => d.field === 'nationality')?.modified || '',
+              is_active: differences.find(d => d.field === 'is_active')?.modified || '',
+            }, null, 2)}
+          </pre>
+        </div>
       </div>
 
       <div className={styles.section}>
